@@ -1,0 +1,59 @@
+{
+ "id": 16045670465917,
+ "title": "Pokemon - Deck Crafter's Collection - Meowth ex",
+ "handle": "pokemon-deck-crafters-collection-meowth-ex",
+ "body_html": "<p>The Pokémon TCG: Deck Crafter's Collection—Meowth ex gives players 40 tournament-staple cards to build or upgrade a competitive deck, anchored by a foil reprint of Meowth ex.</p><p>The Pokémon TCG: Deck Crafter's Collection—Meowth ex includes:</p><ul>\n<li>1 foil Meowth ex card</li>\n<li>39 tournam",
+ "published_at": "2026-09-28T10:30:40+01:00",
+ "created_at": "2026-09-28T10:30:37+01:00",
+ "updated_at": "2026-10-02T08:35:51+01:00",
+ "vendor": "Pokemon",
+ "product_type": "Deck Crafter's Collection",
+ "tags": [
+  "No Free Shipping",
+  "Pokemon",
+  "Trading Card Game"
+ ],
+ "variants": [
+  {
+   "id": 58777892716925,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": "POK1010681101",
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": false,
+   "price": "9.95",
+   "grams": 250,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 16045670465917,
+   "created_at": "2026-09-28T10:30:37+01:00",
+   "updated_at": "2026-10-02T08:35:51+01:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 82480401711485,
+   "created_at": "2026-09-28T10:30:37+01:00",
+   "position": 1,
+   "updated_at": "2026-09-28T10:30:40+01:00",
+   "product_id": 16045670465917,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0553/8178/6724/files/product-image_6be1d3e1-08c3-420d-8329-adaea24d7c2f.jpg?v=1790587840",
+   "width": 800,
+   "height": 800
+  }
+ ],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}

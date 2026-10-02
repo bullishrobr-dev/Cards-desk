@@ -1,0 +1,163 @@
+{
+ "host": "cardsbybeard.eu",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 39,
+ "pokemon_collections": [
+  [
+   "japans-sealed",
+   41
+  ],
+  [
+   "pokemon",
+   247
+  ],
+  [
+   "pokemon-accessoires",
+   63
+  ],
+  [
+   "chinees-sealed",
+   15
+  ],
+  [
+   "engels-booster-boxen-op-voorraad",
+   4
+  ],
+  [
+   "engels-sealed",
+   161
+  ],
+  [
+   "engelse-singles-auto",
+   317
+  ],
+  [
+   "japans",
+   113
+  ],
+  [
+   "japanse-booster-boxen-op-voorraad-kopie",
+   45
+  ],
+  [
+   "japanse-singles-auto",
+   420
+  ],
+  [
+   "pokemon-sealed-producten",
+   222
+  ],
+  [
+   "pok-mon-single",
+   317
+  ],
+  [
+   "single",
+   738
+  ],
+  [
+   "pokemon-slabs-psa-10",
+   20
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:89666748749:ProductListController:8ae0cbb3cef40d3b93f9204a5860890e\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 213,
+ "pokemon_titles": [
+  "Pokémon TCG - 30th Celebration - Poster Collection",
+  "Pokémon TCG - 30th Celebration - ex Box",
+  "Pokémon TCG - 30th Celebration - Binder Collection",
+  "Pokémon TCG - 30th Celebration - Tin",
+  "Pokémon TCG - 30th Celebration - Futuristic Box [PRE-ORDER Japans] (Expected xxxx)",
+  "Pokémon TCG - 30th Celebration - Espeon ex and Umbreon ex Premium Deck Set [PRE-ORDER Japans] (Expected 19-10-2026)",
+  "Pokémon TCG - 30th Celebration - Booster Box [PRE-ORDER Japans] (Expected 16-10-2026)",
+  "Glaceon VSTAR [217/172] (S12a: VSTAR Universe)",
+  "Magikarp [080/073] (SV1a: Triplet Beat)",
+  "Nihil Zero Booster Pack",
+  "Storm Emeralda Booster Pack",
+  "Abyss Eye Booster Pack"
+ ],
+ "preorder_like": [
+  [
+   "Pokémon TCG - 30th Celebration - Futuristic Box [PRE-ORDER Japans] (Expected xxxx)",
+   []
+  ],
+  [
+   "Pokémon TCG - 30th Celebration - Espeon ex and Umbreon ex Premium Deck Set [PRE-ORDER Japans] (Expected 19-10-2026)",
+   []
+  ],
+  [
+   "Pokémon TCG - 30th Celebration - Booster Box [PRE-ORDER Japans] (Expected 16-10-2026)",
+   []
+  ],
+  [
+   "Mega Symphonia Booster Pack",
+   []
+  ],
+  [
+   "Ninja Spinner Booster Pack",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "EU": "n Magic Andere TCG Outlet Verkoop aan ons Over ons Over ons Alles over Over ons → Over ons Contact Herroepen & retour Inloggen Land/regio Nederland | EUR € België EUR € Duitsland EUR € Nederland EUR € Slovenië SEK kr Zweden SEK kr Taal Nederlands Nederlands English Svenska Instagram TikTok Pokémon Sealed Engels → Sealed Japans → Sealed Chinees → Slabs → Merchandise → Bekijk alle sealed → Bekijk al"
+ },
+ "cart_item": [
+  "Mega Brave Booster Pack",
+  "2.49",
+  200,
+  200
+ ],
+ "rates_Netherlands": [
+  200,
+  [
+   [
+    "DHL Brievenbuspost",
+    "4.85",
+    "EUR"
+   ],
+   [
+    "DHL pakketzending Track & Trace",
+    "6.95",
+    "EUR"
+   ],
+   [
+    "PostNL pakketzending Track & Trace",
+    "7.95",
+    "EUR"
+   ],
+   [
+    "DHL Pakketzending Aangetekent",
+    "9.95",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Land/regio wordt niet ondersteund\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

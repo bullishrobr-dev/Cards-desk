@@ -1,0 +1,78 @@
+{
+ "host": "www.trolltradercards.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 704,
+ "pokemon_collections": [
+  [
+   "pokemon-booster-boxes",
+   37
+  ],
+  [
+   "pokemon-booster-pack",
+   67
+  ],
+  [
+   "pokemon-tins-and-box-sets",
+   39
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:108172214604:ProductListController:fce71e9c5c0e3d92bdfe16864be7e641\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 0,
+ "pokemon_titles": [],
+ "preorder_like": [],
+ "policy_code": 200,
+ "policy_snips": {
+  "Europe": "pping is simple! £2.00 Tracked UK £6.00 Tracked EU and ROW** **Please note that we are unable to ship sealed products containing MTG cards outside of Europe** EU Update! As of July 1st 2026, imports into countries within the EU will carry a flat customs duty of 3€, regardless of IOSS. This flat rate is stackable and will be applied for each item type (Harmonised Tariff Code) within the shipment. E",
+  "EU": "CKS All Repacks DEALS Back DEALS New Arrivals Top Sellers Featured Deals Clearance Shipping policy Shipping is simple! £2.00 Tracked UK £6.00 Tracked EU and ROW** **Please note that we are unable to ship sealed products containing MTG cards outside of Europe** EU Update! As of July 1st 2026, imports into countries within the EU will carry a flat customs duty of 3€, regardless of IOSS. This flat ra",
+  "IOSS": "TG cards outside of Europe** EU Update! As of July 1st 2026, imports into countries within the EU will carry a flat customs duty of 3€, regardless of IOSS. This flat rate is stackable and will be applied for each item type (Harmonised Tariff Code) within the shipment. Examples of different item types are, but not limited to: Trading cards Plastic and Trading Card Sleeves Deck boxes Dice Please not",
+  "customs": " ship sealed products containing MTG cards outside of Europe** EU Update! As of July 1st 2026, imports into countries within the EU will carry a flat customs duty of 3€, regardless of IOSS. This flat rate is stackable and will be applied for each item type (Harmonised Tariff Code) within the shipment. Examples of different item types are, but not limited to: Trading cards Plastic and Trading Card "
+ },
+ "cart_item": [
+  "Otherworldly Journey (16)",
+  "0.32",
+  4,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Tracked UK",
+    "2.00",
+    "GBP"
+   ],
+   [
+    "Tracked UK Plus 10 Random Rares",
+    "3.50",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Country/region not supported\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

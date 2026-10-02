@@ -1,0 +1,18 @@
+{
+ "id": 60469510205,
+ "name": "South Light TCG Limited",
+ "city": "Gibraltar",
+ "province": "",
+ "country": "GI",
+ "currency": "GBP",
+ "domain": "southernlight.store",
+ "url": "https://southernlight.store",
+ "myshopify_domain": "015588-ce.myshopify.com",
+ "description": "Gibraltar's First established Japanese & Korean TCG collectables store. Small family business based on strong family values. By collectors, for collectors. ",
+ "ships_to_countries": [],
+ "money_format": "£{{amount}}",
+ "published_collections_count": 37,
+ "published_products_count": 42,
+ "shopify_pay_enabled_card_brands": [],
+ "offers_shop_pay_installments": false
+}

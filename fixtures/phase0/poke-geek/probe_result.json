@@ -1,0 +1,208 @@
+{
+ "host": "www.poke-geek.fr",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 286,
+ "pokemon_collections": [
+  [
+   "carte-pokemon-go-fr",
+   2
+  ],
+  [
+   "carte-pokemon-promo",
+   32
+  ],
+  [
+   "carte-pokemon-vmax-climax-s8b",
+   87
+  ],
+  [
+   "cartes",
+   5342
+  ],
+  [
+   "cartes-s10b-poke-go-jpn",
+   1
+  ],
+  [
+   "cartes-pokemon",
+   287
+  ],
+  [
+   "cases-pokemon",
+   5
+  ],
+  [
+   "coffrets-pokemon",
+   222
+  ],
+  [
+   "cp6-expansion-pack-20th-anniversary-cartes-pokemon-japonaises",
+   2
+  ],
+  [
+   "collections-displays-pokemon-japonais",
+   55
+  ],
+  [
+   "pokemon-couronne-stellaire-ev-7",
+   15
+  ],
+  [
+   "pokebox-mini-tin-francaise",
+   102
+  ],
+  [
+   "pokebox-mini-tin-anglaise",
+   7
+  ],
+  [
+   "pokemon-go",
+   29
+  ],
+  [
+   "pokemon-tempete-argentee-eb12",
+   5
+  ],
+  [
+   "pokemon-jcc-30e-anniversaire-2026-produits-disponibilites",
+   22
+  ],
+  [
+   "produits-scelles-fr",
+   526
+  ],
+  [
+   "s10b-pokemon-go-s10b",
+   16
+  ],
+  [
+   "sv2a-pokemon-card-151",
+   11
+  ],
+  [
+   "sv4a-shiny-treasure-ex-cartes-japonaises",
+   0
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:57311559839:ProductListController:0fc13cd70557d0a4af7e2244f0a88ba2\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 250,
+ "pokemon_titles": [
+  "Pack Pokémon 30 ans FR – Bundle 6 Boosters + Mini Snap et Sleeves",
+  "Pack Pokémon 30 ans FR – Mini Tin + 25 Toploaders Gamegenic",
+  "Pokémon – Duo Pack Ectoplasma – Chaos Ascendant / Nuit Noire – Français",
+  "Pack Pokémon Premiers Partenaires Série 2 FR – Mini Snap + Sleeves Clairière Enchantée",
+  "Lugia 97/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Gromago 87/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Zamazenta 86/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Noacier 83/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Miaouss 80/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Reshiram 8/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Yveltal 79/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise",
+  "Baggiguane 78/103 — M6A – 30th CELEBRATION — Carte Pokémon japonaise"
+ ],
+ "preorder_like": [],
+ "policy_code": 200,
+ "policy_snips": {
+  "Espa": "es Tapis de jeux Protections Plexi Jeux Jeux Jeux de société Jeux d'ambiance Jeux enfants Jeux famille Jeux pour initiés Blog Langue Français English Español Deutsch Italiano Nederlands Rechercher Rechercher un produit, une extension ou une licence… Poke-Geek Rechercher Rechercher un produit, une extension ou une licence… Langue Français English Español Deutsch Italiano Nederlands Compte Panier 0 "
+ },
+ "cart_item": [
+  "Pack Pokémon Premiers Partenaires Série 2 FR – Mini Snap + Sleeves Clairière Enchantée",
+  "45.90",
+  595,
+  200
+ ],
+ "rates_France": [
+  200,
+  [
+   [
+    "Livraison en Point Relais Mondial Relay (la carte de sélection s'affichera après le paiement)",
+    "3.49",
+    "EUR"
+   ],
+   [
+    "Livraison en Point Relais Chronopost (Shop2Shop)",
+    "7.49",
+    "EUR"
+   ],
+   [
+    "Livraison en Point Relais Colissimo (la carte de sélection s'affichera après le paiement)",
+    "10.40",
+    "EUR"
+   ],
+   [
+    "Livraison UPS Standard",
+    "12.50",
+    "EUR"
+   ],
+   [
+    "La poste - Colissimo Recommandé Domicile - 48 heures (Délais Transporteurs)",
+    "13.40",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  [
+   [
+    "Livraison UPS",
+    "33.00",
+    "EUR"
+   ],
+   [
+    "La poste - Colissimo International contre signature",
+    "42.50",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Livraison en Point Relais Mondial Relay (la carte de sélection s'affichera après le paiement)",
+    "6.99",
+    "EUR"
+   ],
+   [
+    "Livraison UPS Standard",
+    "11.25",
+    "EUR"
+   ],
+   [
+    "CTT express Post Signed",
+    "14.49",
+    "EUR"
+   ],
+   [
+    "La poste - Colissimo",
+    "17.00",
+    "EUR"
+   ],
+   [
+    "Livraison en Point Relais Colissimo (la carte de sélection s'affichera après le paiement)",
+    "18.00",
+    "EUR"
+   ]
+  ]
+ ]
+}

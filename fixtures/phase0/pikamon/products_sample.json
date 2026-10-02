@@ -1,0 +1,61 @@
+{
+ "id": 10367287820617,
+ "title": "Pokémon TCG: Destined Rivals - Elite Trainer Box - English",
+ "handle": "pokemon-tcg-destined-rivals-elite-trainer-box-english",
+ "body_html": "<p>The <strong>Pokémon TCG: Scarlet &amp; Violet—Destined Rivals Elite Trainer Box</strong> is the English-language ETB for one of the most sought-after Scarlet &amp; Violet era sets, where Team Rocket's schemes bring a wave of fan-favourite Trainer's Pokémon into the spotlight. Every box is <strong",
+ "published_at": "2026-09-15T22:54:54+02:00",
+ "created_at": "2026-08-30T20:41:07+02:00",
+ "updated_at": "2026-10-02T09:36:55+02:00",
+ "vendor": "Pokémon",
+ "product_type": "Elite Trainer Box",
+ "tags": [
+  "Destined Rivals",
+  "Elite Trainer Box",
+  "English",
+  "ETB",
+  "Scarlet & Violet"
+ ],
+ "variants": [
+  {
+   "id": 55176357577033,
+   "title": "Sealed",
+   "option1": "Sealed",
+   "option2": null,
+   "option3": null,
+   "sku": "PKM-EN-DRI-ETB-S",
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": true,
+   "price": "125.00",
+   "grams": 900,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 10367287820617,
+   "created_at": "2026-08-30T20:41:07+02:00",
+   "updated_at": "2026-10-02T09:36:55+02:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 77781111832905,
+   "created_at": "2026-09-15T22:54:44+02:00",
+   "position": 1,
+   "updated_at": "2026-09-15T22:54:45+02:00",
+   "product_id": 10367287820617,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0721/5811/8206/files/2008825-d8bb13e0.jpg?v=1789505685",
+   "width": 960,
+   "height": 960
+  }
+ ],
+ "options": [
+  {
+   "name": "Condition",
+   "position": 1,
+   "values": [
+    "Sealed"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": 11053244711179,
+ "title": "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Umbreon (S-Chinesisch)",
+ "handle": "pokemon-tcg-csv9-5-terastal-gathering-coin-set-umbreon-s-chinesisch",
+ "body_html": "<p>Das <strong>Terastal Gathering Coin Set Umbreon</strong> aus der chinesischen Pokémon-TCG-Serie CSV9.5 kombiniert einen Booster mit einer Sammelmünze im Nachtara-Design. Bei GeeksHeaven bekommst Du das original versiegelte Set aus dem asiatischen Pokémon-Sortiment.</p><h3>Inhalt / Lieferumfang</h",
+ "published_at": "2026-10-01T11:28:12+02:00",
+ "created_at": "2026-10-01T10:43:34+02:00",
+ "updated_at": "2026-10-02T09:37:33+02:00",
+ "vendor": "The Pokémon Company",
+ "product_type": "",
+ "tags": [
+  "Neustes"
+ ],
+ "variants": [
+  {
+   "id": 53405641867531,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": "6942600404656 B-4-4",
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": true,
+   "price": "14.99",
+   "grams": 350,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 11053244711179,
+   "created_at": "2026-10-01T10:43:34+02:00",
+   "updated_at": "2026-10-02T09:37:33+02:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 70264511037707,
+   "created_at": "2026-10-01T11:01:37+02:00",
+   "position": 1,
+   "updated_at": "2026-10-01T11:01:40+02:00",
+   "product_id": 11053244711179,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0424/2620/4320/files/pokemon_terastal_gathering_coin_set_umbreon_chn_d573e2cf-d298-48ea-9455-5f7bd75ab006.png?v=1790845300",
+   "width": 1080,
+   "height": 1080
+  }
+ ],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}

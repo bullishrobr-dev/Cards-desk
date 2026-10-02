@@ -1,0 +1,29 @@
+{
+ "id": 95186813265,
+ "name": "TodoHits",
+ "city": "Villanueva del Río Segura, Murcia",
+ "province": "Murcia",
+ "country": "ES",
+ "currency": "EUR",
+ "domain": "todohits.com",
+ "url": "https://todohits.com",
+ "myshopify_domain": "1fm1u6-d0.myshopify.com",
+ "description": "Descubre los mejores productos TCG en tu tienda de confianza. Pokémon, One Piece, Lorcana, Dragon Ball y muchos más te esperan.",
+ "ships_to_countries": [
+  "AD",
+  "ES",
+  "FR",
+  "PT"
+ ],
+ "money_format": "€{{amount_with_comma_separator}}",
+ "published_collections_count": 12,
+ "published_products_count": 944,
+ "shopify_pay_enabled_card_brands": [
+  "visa",
+  "maestro",
+  "master",
+  "american_express",
+  "unionpay"
+ ],
+ "offers_shop_pay_installments": false
+}

@@ -1,0 +1,111 @@
+{
+ "host": "baruzcard.it",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 92,
+ "pokemon_collections": [
+  [
+   "pokemon",
+   631
+  ],
+  [
+   "tutti-i-pokemon",
+   313
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:70153601291:ProductListController:c10a39fa2fefc023ab119a69984a2e34\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 102,
+ "pokemon_titles": [
+  "Pokémon 30° Anniversario Sealed Case 10x Set Allenatore Fuoriclasse ITA",
+  "Pokémon 30° Anniversario – Minitin 1 Pezzo assortito",
+  "Pokémon Storm Emerald M6 Booster Box 30 Bustine – JAP",
+  "Pokémon Tin da Collezione Megaforze – Case 6x - Mega Dragonite-ex, Mega Darkrai-ex e Mega Zeraora-ex ITA",
+  "Pokémon Case 12x Blister 2 Buste Gengar, Marshadow e Mimikyu ITA",
+  "Pokémon Blister 2 Buste Gengar, Marshadow e Mimikyu ITA",
+  "Pokémon Tin da Collezione Megaforze – Bundle 3x - Mega Dragonite-ex, Mega Darkrai-ex e Mega Zeraora-ex ITA",
+  "Pokemon Collezione Illustrazione Primi Compagni d'Avventura Serie 3 ITA - Case da 6 Collezioni",
+  "Bundle Pokémon Zygarde EX x2 + Primi Compagni d'Avventura Serie 3 - Collezione Illustrazione (ITA)",
+  "Pokémon Blister 2 Buste - Zarude ITA",
+  "Pokemon Collezione Illustrazione Primi Compagni d'Avventura - Serie 3 ITA",
+  "Pokémon Buio Pesto Bundle Box Display 36 Buste + Set Allenatore ITA"
+ ],
+ "preorder_like": [
+  [
+   "Bundle Pokémon Zygarde EX x2 + Primi Compagni d'Avventura Serie 3 - Collezione Illustrazione (ITA)",
+   []
+  ],
+  [
+   "Pokémon Blister 2 Buste - Zarude ITA",
+   []
+  ],
+  [
+   "Pokemon Collezione Illustrazione Primi Compagni d'Avventura - Serie 3 ITA",
+   []
+  ],
+  [
+   "Pokemon Sealed Case Caos Nascente Set Allenatore Fuoriclasse ITA",
+   []
+  ],
+  [
+   "Pokémon Set Allenatore Fuoriclasse Caos Nascente ITA",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "EU": "ferma recesso Invio in corso… ✓ Recesso ricevuto Riferimento: Una conferma è stata inviata a . Controllare anche la cartella spam. Powered by Revoq – EU Withdrawal Button 5% DI SCONTO - ISCRIVITI ALLA NEWSLETTER ! Iscriviti oggi per ricevere offerte esclusive, report sulle tendenze e aggiornamenti. e uno sconto del 5 % sul tuo primo ordine Inserire l'indirizzo e-mail... Iscriviti BaruZcard è lo sh"
+ },
+ "cart_item": [
+  "Dark Sylveon V SWSH 134 PROMO ITA",
+  "15.00",
+  0,
+  200
+ ],
+ "rates_Italy": [
+  200,
+  [
+   [
+    "Standard 24/48h - Non Assicurata",
+    "7.90",
+    "EUR"
+   ],
+   [
+    "Spedizione Assicurata",
+    "10.00",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Paese o area geografica non supportati\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Standard Internazionale",
+    "15.00",
+    "EUR"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "host": "zatu.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products",
+   "Disallow: /products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /collections/*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart",
+   "Disallow: /carts",
+   "Disallow: /carts"
+  ],
+  "crawl_delay": [
+   "Crawl-delay: 10",
+   "Crawl-delay: 10"
+  ]
+ },
+ "n_collections": 2000,
+ "pokemon_collections": [
+  [
+   "accessories-pokemon",
+   177
+  ],
+  [
+   "available-japanese-pokemon",
+   1
+  ],
+  [
+   "pokemon-pre-orders",
+   0
+  ],
+  [
+   "available-top-selling-pokemon-products",
+   0
+  ],
+  [
+   "best-sellers-pokemon",
+   70
+  ],
+  [
+   "booster-boxes-pokemon",
+   93
+  ],
+  [
+   "booster-packs-pokemon",
+   97
+  ],
+  [
+   "events-pokemon-events",
+   36
+  ],
+  [
+   "pokemon-japanese",
+   130
+  ],
+  [
+   "japanese-pokemon-hot-air-arena",
+   2
+  ],
+  [
+   "pokemon-old-maid",
+   52
+  ],
+  [
+   "japanese-pokemon-paradise-dragona",
+   2
+  ],
+  [
+   "japanese-pokemon-stellar-miracle",
+   2
+  ],
+  [
+   "japanese-pokemon-super-electric-breaker",
+   2
+  ],
+  [
+   "japanese-pokemon-terastal-festival",
+   2
+  ],
+  [
+   "japanese-pokemon-battle-partners",
+   2
+  ],
+  [
+   "japanese-booster-boxes",
+   46
+  ],
+  [
+   "japanese-pokemon-booster-packs",
+   26
+  ],
+  [
+   "japanese-pokemon-tcg-1",
+   130
+  ],
+  [
+   "pokemon-korean",
+   62
+  ],
+  [
+   "new-releases-pokemon",
+   1
+  ],
+  [
+   "new-releases-pokemon-tcg",
+   1
+  ],
+  [
+   "other-sealed-product-pokemon",
+   194
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:91699708282:ProductListController:d96f756fe3a901f2d391cafe57ff230c\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 72,
+ "pokemon_titles": [
+  "Cubone CBB3C 0407/07",
+  "Darkrai CP5_JA 024/036",
+  "Tornadus SVP 210 - Holo",
+  "Torchic MEP 056 - Holo",
+  "Amarys PRE 132/131 - Holo",
+  "Team Rocket's Ariana DRI 224/182 - Holo",
+  "Minun BW5 40/108",
+  "Bulbasaur SV2A_JA 166/165 - Holo",
+  "Eevee SWSH9TG TG11/TG30 - Holo",
+  "Plusle BW5 39/108",
+  "Zekrom CEL25C 114_A - Holo",
+  "Celebi XYP XY187 - Holo"
+ ],
+ "preorder_like": [
+  [
+   "Pokemon Delta Reign Pre-Release: 24th October 2026 (Event Ticket)",
+   []
+  ],
+  [
+   "Pokemon Delta Reign Pre-Release: 30th October 2026 (Event Ticket)",
+   []
+  ],
+  [
+   "Pokemon Delta Reign Pre-Release: 25th October 2026 (Event Ticket)",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "Gibraltar": "and (EUR €) France (EUR €) French Guiana (GBP £) French Polynesia (XPF Fr) Gabon (GBP £) Gambia (GBP £) Georgia (GBP £) Germany (EUR €) Ghana (GBP £) Gibraltar (GBP £) Greece (EUR €) Greenland (DKK kr.) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guinea (GBP £) Guyana (GYD $) Haiti (GBP £) Honduras (HNL L) Hong Kong SAR (HKD $) Hungary (HUF Ft) Iceland (ISK kr) India (GBP £) Indonesia (I",
+  "Spain": "one (GBP £) Singapore (USD $) Sint Maarten (ANG ƒ) Slovakia (EUR €) Slovenia (EUR €) Solomon Islands (GBP £) South Africa (GBP £) South Korea (KRW ₩) Spain (EUR €) Sri Lanka (GBP £) St. Kitts & Nevis (GBP £) St. Lucia (XCD $) St. Vincent & Grenadines (XCD $) Sudan (GBP £) Suriname (GBP £) Sweden (SEK kr) Switzerland (CHF CHF) Taiwan (TWD $) Tanzania (GBP £) Thailand (THB ฿) Togo (GBP £) Trinidad &",
+  "International": "will be dispatched the following working day. Excludes Bank Holidays. We reserve the right to upgrade any order to a courier service where necessary. International Delivery Zatu currently delivers to the countries listed below using our postal and courier partners Evri, Fedex and DPD: Country Estimated Transit Time (Working Days) Country Estimated Transit Time (Working Days) Albania 3-7 Days Jorda",
+  "Europe": "r courier service has been complete, and in some circumstances this may take up to 28 working days from the original point of dispatch. Delivery into Europe Following the UK's departure from the European Union, Zatu is operating under an IOSS (International One Stop Shop) delivery system to our EU customers. IOSS is available on all shipments to the EU under with an intrinsic value of under €‎150 ",
+  "EU": ", get 5% off - use code ZATU5 4.8 average review score of 48,000+ reviews Search Clear Country/region United Kingdom (GBP £) Albania (ALL L) Andorra (EUR €) Angola (GBP £) Antigua & Barbuda (XCD $) Argentina (GBP £) Aruba (AWG ƒ) Australia (AUD $) Austria (EUR €) Bahamas (BSD $) Bahrain (GBP £) Bangladesh (GBP £) Barbados (BBD $) Belarus (GBP £) Belgium (EUR €) Belize (BZD $) Benin (GBP £) Bermuda",
+  "IOSS": "rking days from the original point of dispatch. Delivery into Europe Following the UK's departure from the European Union, Zatu is operating under an IOSS (International One Stop Shop) delivery system to our EU customers. IOSS is available on all shipments to the EU under with an intrinsic value of under €‎150 (intrinsic meaning the value of the goods i.e. ex VAT). Zatu will charge and collect VAT",
+  "customs": "ad, your order will be shipped using a Delivery Duty Unpaid (DDU) delivery method. DDU delivery terms mean the receiver/customer will be contacted by customs once their shipment arrives and will have to settle any charges for customs to release the shipment and have it delivered to the customer. EU customers will not be charged VAT at checkout, but instead may be subject to import VAT upon their g"
+ },
+ "cart_item": [
+  "*B Grade* Kingdom Rush - 3D Tower Expansion (EN)",
+  "2.99",
+  845,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Evri Standard (Tracked)",
+    "2.99",
+    "GBP"
+   ],
+   [
+    "Evri Next Day (Tracked)",
+    "3.99",
+    "GBP"
+   ],
+   [
+    "Royal Mail Standard (Tracked 48)",
+    "3.99",
+    "GBP"
+   ],
+   [
+    "DPD Next Working Day Tracked",
+    "5.49",
+    "GBP"
+   ],
+   [
+    "Royal Mail Next Day (Tracked 24)",
+    "5.49",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  [
+   [
+    "FedEx International Connect",
+    "17.06",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "International Tracked",
+    "9.50",
+    "GBP"
+   ],
+   [
+    "FedEx International Connect",
+    "9.63",
+    "GBP"
+   ],
+   [
+    "Geopost Tracked",
+    "19.49",
+    "GBP"
+   ]
+  ]
+ ]
+}

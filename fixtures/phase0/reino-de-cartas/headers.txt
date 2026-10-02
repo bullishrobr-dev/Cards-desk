@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+x-powered-by: PHP/8.3.33
+x-dns-prefetch-control: on
+content-type: application/json; charset=UTF-8
+x-robots-tag: noindex
+link: <https://reinodecartas.com/wp-json/>; rel="https://api.w.org/"
+x-content-type-options: nosniff
+access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+access-control-allow-headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+x-wp-total: 24
+x-wp-totalpages: 1
+last-modified: Wed, 30 Sep 2026 16:59:33 GMT
+allow: GET
+access-control-allow-methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+access-control-allow-credentials: true
+vary: Origin
+date: Fri, 02 Oct 2026 07:35:50 GMT
+server: LiteSpeed
+platform: hostinger
+panel: hpanel
+content-security-policy: upgrade-insecure-requests
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+

@@ -1,0 +1,161 @@
+{
+ "host": "metamorphcenter.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 81,
+ "pokemon_collections": [
+  [
+   "30th-celebration",
+   7
+  ],
+  [
+   "blisters-pokemon",
+   5
+  ],
+  [
+   "booster-bundle-pokemon",
+   16
+  ],
+  [
+   "cajas-de-sobres-pokemon-tcg",
+   116
+  ],
+  [
+   "cajas-sobres-coreanos-pokemon-tcg",
+   40
+  ],
+  [
+   "cajas-de-sobres-japoneses-pokemon",
+   46
+  ],
+  [
+   "cartas-gradeadas-pokemon",
+   60
+  ],
+  [
+   "colecciones-especiales-pokemon",
+   33
+  ],
+  [
+   "elite-trainer-box-pokemon",
+   25
+  ],
+  [
+   "gift-box-pokemon",
+   3
+  ],
+  [
+   "latas-pokemon",
+   12
+  ],
+  [
+   "ofertas-cartas-pokemon-tcg",
+   30
+  ],
+  [
+   "pokemon-tcg",
+   333
+  ],
+  [
+   "cartas-pokemon-151",
+   15
+  ],
+  [
+   "sobres-coreanos-pokemon-tcg",
+   24
+  ],
+  [
+   "sobres-japoneses-pokemon",
+   16
+  ],
+  [
+   "sobres-pokemon",
+   59
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:91674247510:ProductListController:feb48bf2b7de51cf8db32e33a5bd2211\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 118,
+ "pokemon_titles": [
+  "Colección Sylveon ex Celebración 30.º Aniversario 30C - Español",
+  "ETB Celebración 30.º Aniversario 30C - Español",
+  "[ DAÑADA ] ETB Celebración 30.º Aniversario 30C - Español",
+  "Lata Celebración 30.º Aniversario 30C - Español",
+  "Colección Greninja ex Celebración 30.º Aniversario 30C - Español",
+  "Colección con Póster Celebración 30.º Aniversario 30C - Español",
+  "[ RESERVA ] Caja 30th Anniversary Celebration M6a - Japonés",
+  "[ DAÑADA ] ETB Pitch Black ME05 - Inglés",
+  "Caja Llamas Obsidianas SV3 - Español",
+  "Caja Mascarada Crepuscular SV6 - Español",
+  "Caja Fuerzas Temporales SV5 - Español",
+  "Caja Pitch Black ME05 - Inglés"
+ ],
+ "preorder_like": [
+  [
+   "[ RESERVA ] Caja 30th Anniversary Celebration M6a - Japonés",
+   []
+  ],
+  [
+   "[ DAÑADA ] First Partner Illustration Collection Serie 3 - Español",
+   []
+  ],
+  [
+   "First Partner Illustration Collection Serie 3 - Español",
+   []
+  ],
+  [
+   "[ RESERVA ] First Partner Illustration Collection Serie 2 - Español",
+   []
+  ],
+  [
+   "Blíster pack sobre Caos Creciente - Español",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "España": " OUTLET Metamorph Center Buscando… EUR € País Alemania (EUR €) Austria (EUR €) Bélgica (EUR €) Chequia (CZK Kč) Dinamarca (DKK kr.) Eslovenia (EUR €) España (EUR €) Estonia (EUR €) Finlandia (EUR €) Francia (EUR €) Hungría (HUF Ft) Irlanda (EUR €) Italia (EUR €) Letonia (EUR €) Lituania (EUR €) Luxemburgo (EUR €) Países Bajos (EUR €) Polonia (PLN zł) Portugal (EUR €) Reino Unido (GBP £) Suecia (SE",
+  "Espa": " Pitch Black › Popular Chaos Rising › Perfect Order › Más vendido Ascended Heroes › Megaevoluciones › Ver todo Pokémon → Caja Llamas Obsidianas SV3 - Español €199,95 Caja Fuerzas Temporales SV5 - Español €199,95 Colección Ursaluna Luna Carmesí ex - Español €44,95 Minilata Esplendor de Paldea - Español €14,95 Lata Megapotencia - Español €34,95 Caja Storm Emeralda M6 - Coreano €62,95 Sobre Storm Eme",
+  "Europa": "tamorph Center , nos comprometemos a entregar tus pedidos de forma rápida y eficiente. Actualmente, realizamos envíos a toda España, varios países de Europa. Los plazos de entrega estimados oscilan entre 3 y 5 días laborables . Destinos y plazos de entrega Destino Plazo estimado de entrega Transportista España (Península y Baleares) 24-72 horas laborables Correos Europa (países de la UE) 3 - 5 día",
+  "EU": "s accesorios → Álbumes › Fundas › Toploaders › Protectores acrílicos › Todos los accesorios → Ultra PRO › Vault X › OUTLET Metamorph Center Buscando… EUR € País Alemania (EUR €) Austria (EUR €) Bélgica (EUR €) Chequia (CZK Kč) Dinamarca (DKK kr.) Eslovenia (EUR €) España (EUR €) Estonia (EUR €) Finlandia (EUR €) Francia (EUR €) Hungría (HUF Ft) Irlanda (EUR €) Italia (EUR €) Letonia (EUR €) Lituan",
+  "aduana": " Tiempo de preparación: los pedidos se procesan en 1-2 días laborables tras la confirmación del pago. Retrasos: los envíos pueden verse afectados por aduanas, clima o temporadas de alta demanda. Socio logístico: trabajamos con Correos , el operador postal oficial en España. Costes de envío Los gastos de envío se calculan según peso, dimensiones y destino. Verás el importe exacto al finalizar tu co",
+  "Canarias": "de la UE , algunos pedidos pueden estar sujetos a tasas aduaneras adicionales , según la legislación local. En territorios fuera de la UE (como Islas Canarias, Ceuta, Melilla, EE. UU., etc. ), puede haber impuestos de aduana o IVA , que deben ser pagados por el destinatario al recibir el paquete . El pago de estos cargos no está incluido en el precio del pedido y es responsabilidad del cliente. Co"
+ },
+ "cart_item": [
+  "Sobre Juntos de Aventuras SV09 - Español",
+  "5.95",
+  500,
+  200
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Correos | Envío Express 24h - 72h",
+    "4.95",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"El país o la región no se admite.\"]}"
+ ]
+}

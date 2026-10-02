@@ -1,0 +1,98 @@
+{
+ "host": "www.pokedealtcg.es",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 29,
+ "pokemon_collections": [
+  [
+   "pokemon-coreano",
+   5
+  ],
+  [
+   "pokemon-japones",
+   12
+  ],
+  [
+   "sobres-sueltos",
+   0
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:97110982981:ProductListController:53292e261904806da170ca352b062300\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 113,
+ "pokemon_titles": [
+  "POKEBALL TIN OTOÑO H24",
+  "POKEBALL TIN OTOÑO E25",
+  "POKEBALL TIN D24",
+  "POKEMON TERASTAL GATHERING CAJA CSV9.5C (CHINO)",
+  "ELITE TRAINER BOX 151 POKEMON CENTER",
+  "MOCHILA 3D PIKACHU POKEMON 30CM",
+  "MOCHILA 3D POKEMON 30CM NEGRA",
+  "SACO POKEMON 25CM NEGRO",
+  "PORTATODO POKEMON TRIPLE",
+  "SET CANTIMPLORA ALUMINIO + TAZA CERAMICA POKEMON",
+  "SANDWICHERA + CANTIMPLORA ALUMINIO POKEMON 500ML",
+  "SET ESPECIAL POKEMON CENTER PIKACHU HIROSHIMA"
+ ],
+ "preorder_like": [
+  [
+   "MEGA SYMPHONIA BOOSTER BOX 30 SOBRES COREANO",
+   []
+  ],
+  [
+   "STAR BIRTH BOOSTER BOX 30 SOBRES (JAPONES)",
+   []
+  ],
+  [
+   "DISPLAY 10 MINI TINS ASCENDED HEROES",
+   []
+  ],
+  [
+   "MINI TINS ASCENDED HEROES",
+   []
+  ],
+  [
+   "LATAS MEGA CHARIZARD SPRINX EX TINS EN",
+   []
+  ]
+ ],
+ "policy_code": 404,
+ "policy_snips": {},
+ "cart_item": [
+  "ALBUM PEQUEÑO 4-POCKET EXO-TEC® ZIP BINDER VALUTX",
+  "19.95",
+  380000,
+  200
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Estándar",
+    "6.95",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"El país o la región no se admite.\"]}"
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "host": "pokefamily.nl",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 72,
+ "pokemon_collections": [
+  [
+   "rip-ship",
+   139
+  ],
+  [
+   "puzzels-boeken",
+   42
+  ],
+  [
+   "dekbedden-handdoeken",
+   6
+  ],
+  [
+   "pokemon",
+   479
+  ],
+  [
+   "kleding",
+   8
+  ],
+  [
+   "pokemon-knuffels",
+   35
+  ],
+  [
+   "school-accessoires",
+   3
+  ],
+  [
+   "pokemon-booster-box",
+   68
+  ],
+  [
+   "booster-pack",
+   43
+  ],
+  [
+   "elite-trainer-box",
+   40
+  ],
+  [
+   "v-box",
+   49
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:81712972120:ProductListController:ca839031ee36b7b386e33583611066c3\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 250,
+ "pokemon_titles": [
+  "Topps  Manchester City Collector Tin 2007",
+  "Topps Chelsea Collector Tin 2027",
+  "Topps  Manchester United Collector Tin 2027",
+  "Topps Chrome MLS Soccer Value Box 2026",
+  "TOPPS MLS CHROME 2026 - HOBBY BOX",
+  "Pull Game PSA graded kaarten",
+  "Pokémon Ascended Heroes ex Tin",
+  "Pokémon 3D Eraser Blister Back to School",
+  "Pokémon Alakazam V Box",
+  "Gundam Card Game Steel Requiem GD03 Booster",
+  "One Piece OP-17 4TH Anniversary Boosterpack",
+  "One Piece  OP-17 4TH Anniversary Boosterbox"
+ ],
+ "preorder_like": [
+  [
+   "Pokémon Chinese Gem Pack Vol. 4 Booster Pack",
+   []
+  ],
+  [
+   "Pokémon Chinese Gem Pack Vol. 4 Booster Box",
+   []
+  ],
+  [
+   "Pokémon Storm Emeralda Boosterbox (JP)",
+   []
+  ],
+  [
+   "Topps Chrome NBA Updates 2025/26 Hobby Box",
+   []
+  ],
+  [
+   "Magic: The Gathering – Secrets of Strixhaven Commander Deck",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "Europe": "end op basis van het gewicht van de artikelen en hun bestemming. Verzending binnen de EU Levertijd: Wij leveren bestellingen in alle landen binnen de Europese Unie. De levertijd is afhankelijk van de bestemming en de gekozen verzendmethode. U ontvangt een schatting van de levertijd tijdens het afrekenproces. Verzendmethodes Thuisbezorgd: Uw bestelling wordt direct bij u thuis afgeleverd door onze ",
+  "EU": " Snel toevoegen Digitale cadeaukaart - PokeFamily Aanbiedingsprijs Van €10,00 Livestreams Pullgame Pokémon Rip & Ship Sport TCG Rip & Ship PokeFamily EUR € Land België (EUR €) Bulgarije (EUR €) Denemarken (DKK kr.) Duitsland (EUR €) Estland (EUR €) Finland (EUR €) Frankrijk (EUR €) Griekenland (EUR €) Hongarije (HUF Ft) Ierland (EUR €) Italië (EUR €) Kroatië (EUR €) Letland (EUR €) Litouwen (EUR €"
+ },
+ "cart_item": [
+  "One Piece OP-17 4TH Anniversary Boosterpack",
+  "17.99",
+  0,
+  200
+ ],
+ "rates_Netherlands": [
+  200,
+  [
+   [
+    "Standaard",
+    "7.95",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Land/regio wordt niet ondersteund\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Standard",
+    "12.95",
+    "EUR"
+   ]
+  ]
+ ]
+}

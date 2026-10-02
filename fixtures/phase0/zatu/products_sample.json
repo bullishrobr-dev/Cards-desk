@@ -1,0 +1,63 @@
+{
+ "id": 16218854982010,
+ "title": "Cubone CBB3C 0407/07",
+ "handle": "cubone-cbb3c-0407-07",
+ "body_html": "",
+ "published_at": "2026-10-01T14:35:54+01:00",
+ "created_at": "2026-10-01T14:35:52+01:00",
+ "updated_at": "2026-10-02T08:37:34+01:00",
+ "vendor": "Pokemon",
+ "product_type": "Trading Card Games",
+ "tags": [
+  "Basic Pokemon",
+  "Chinese Gem Pack 3",
+  "Fighting Type",
+  "Pokémon",
+  "Pokémon TCG",
+  "TCG Singles",
+  "Trading Card Game"
+ ],
+ "variants": [
+  {
+   "id": 57333358494074,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": "SINGLE-POK-CBB3C-0407",
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": false,
+   "price": "85.00",
+   "grams": 23,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 16218854982010,
+   "created_at": "2026-10-01T14:35:53+01:00",
+   "updated_at": "2026-10-02T08:37:34+01:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 85165792657786,
+   "created_at": "2026-10-01T14:35:57+01:00",
+   "position": 1,
+   "updated_at": "2026-10-01T14:35:59+01:00",
+   "product_id": 16218854982010,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0916/9970/8282/files/SINGLE-POK-CBB3C-0407.jpg?v=1790861759",
+   "width": 500,
+   "height": 500
+  }
+ ],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}

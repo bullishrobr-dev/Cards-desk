@@ -1,0 +1,261 @@
+{
+ "host": "www.titancards.co.uk",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 276,
+ "pokemon_collections": [
+  [
+   "pokemon-accessories",
+   246
+  ],
+  [
+   "japanese-booster-boxes",
+   76
+  ],
+  [
+   "pokemon-celebrations",
+   92
+  ],
+  [
+   "chinese-pokemon-booster-boxes",
+   11
+  ],
+  [
+   "chinese-pokemon-sealed-products",
+   4
+  ],
+  [
+   "collection-boxes",
+   178
+  ],
+  [
+   "japanese-pokemon-cards",
+   0
+  ],
+  [
+   "pokemon-tcg-booster-boxes-korean",
+   48
+  ],
+  [
+   "official-flipping-coins",
+   13
+  ],
+  [
+   "other-pokemon-cards",
+   12
+  ],
+  [
+   "paldean-fates-pokemon-cards-scarlet-violet",
+   326
+  ],
+  [
+   "phantasmal-flames-pokemon-cards-mega-evolution-series",
+   130
+  ],
+  [
+   "pokemon",
+   75
+  ],
+  [
+   "pokemon-151-cards",
+   208
+  ],
+  [
+   "pokemon-black-bolt-white-flare",
+   4
+  ],
+  [
+   "pokemon-black-friday-deals",
+   11
+  ],
+  [
+   "card-singles",
+   0
+  ],
+  [
+   "pokemon-go-tcg",
+   88
+  ],
+  [
+   "pokemon-go-s10b-jp",
+   32
+  ],
+  [
+   "mcdonalds-2016-collection",
+   12
+  ],
+  [
+   "mcdonalds-collection-2021",
+   50
+  ],
+  [
+   "pokemon-mcdonalds-collection-2019",
+   12
+  ],
+  [
+   "pokemon-online-codes",
+   0
+  ],
+  [
+   "pokemon-paradox-rift-cards-scarlet-violet",
+   421
+  ],
+  [
+   "plush",
+   2
+  ],
+  [
+   "pokemon-scarlet-violet-black-bolt-single-cards",
+   172
+  ],
+  [
+   "pokemon-scarlet-violet-white-flare-single-cards",
+   173
+  ],
+  [
+   "pokemon-sealed-products",
+   654
+  ],
+  [
+   "pokemon-30th-anniversary-singles",
+   158
+  ],
+  [
+   "chaos-rising-singles",
+   122
+  ],
+  [
+   "pokemon-tcg-mega-evolution-perfect-order",
+   124
+  ],
+  [
+   "pokemon-pitch-black-singles",
+   120
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-destined-rivals",
+   244
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-journey-together-singles",
+   190
+  ],
+  [
+   "pokemon-the-movie-2000",
+   228
+  ],
+  [
+   "pokemon-singles-uk",
+   661
+  ],
+  [
+   "surging-sparks",
+   9
+  ],
+  [
+   "pokemon-tcg-ascended-heroes-sealed-products",
+   8
+  ],
+  [
+   "pokemon-tcg-black-bolt-white-flare-sealed-products",
+   20
+  ],
+  [
+   "sealed-booster-packs",
+   191
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:79523971402:ProductListController:96a368816f2e7445f4aead059ae04912\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 250,
+ "pokemon_titles": [
+  "Magikarp 030/030 Illustration Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Arceus VSTAR 029/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Mew VMAX 028/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Raikou 027/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Zacian V 026/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Pikachu & Zekrom Tag Team GX 025/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Buzzwole GX 024/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Solgaleo GX 023/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Greninja BREAK 022/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Mega Gardevoir EX 021/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Genesect EX 020/030 Rare Pokemon Card (30th Anniversary Classic Collection)",
+  "Rayquaza EX 019/030 Rare Pokemon Card (30th Anniversary Classic Collection)"
+ ],
+ "preorder_like": [
+  [
+   "Korean Pokémon Mega Dream Mystery Box (Includes Mega Dream High Class Booster Box + 20 Korean Booster Packs)",
+   []
+  ],
+  [
+   "Pokémon 30th Celebration Booster Pack | Simplified Chinese TCG",
+   []
+  ],
+  [
+   "Pokémon 30th Celebration Booster Box | Simplified Chinese TCG",
+   []
+  ],
+  [
+   "Pokemon TCG 30th Anniversary Japanese Booster Box M6A",
+   []
+  ],
+  [
+   "Korean Pokémon Mystery Box (Includes High Class Booster Box + 15 Mixed Boosters + Titan Ultra Rare Pack)",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {},
+ "cart_item": [
+  "Pokémon Storm Emeralda M6 Korean Booster Box – 30 Packs",
+  "49.99",
+  250,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Free Tracked 48",
+    "0.00",
+    "USD"
+   ],
+   [
+    "Royal Mail Tracked 24",
+    "5.00",
+    "USD"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Country/region not supported\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "International Tracked",
+    "17.00",
+    "USD"
+   ]
+  ]
+ ]
+}

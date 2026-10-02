@@ -1,0 +1,47 @@
+{
+ "id": 9540506190062,
+ "title": "Pokémon TCG Delta Reign Pre-release - 24/10/2026",
+ "handle": "pokemon-tcg-delta-reign-pre-release-24-10-2026",
+ "body_html": "<p>Join us on for our Pokémon TCG Pre-release event,  Pokémon Trading Card Game in person at our Gaming Centre.</p>\n<h3 data-start=\"609\" data-end=\"626\">Event Details</h3>\n<ul data-start=\"627\" data-end=\"876\">\n<li data-start=\"627\" data-end=\"657\">\n<strong data-start=\"629\" data-end=\"639\">Entry:</strong>",
+ "published_at": "2026-09-28T16:37:01+01:00",
+ "created_at": "2026-09-28T16:33:05+01:00",
+ "updated_at": "2026-10-02T08:38:14+01:00",
+ "vendor": "TCV Gaming Centre",
+ "product_type": "",
+ "tags": [
+  "Back-In-Stock",
+  "Event",
+  "Notify-Me-Button"
+ ],
+ "variants": [
+  {
+   "id": 49656216584430,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": null,
+   "requires_shipping": false,
+   "taxable": true,
+   "featured_image": null,
+   "available": false,
+   "price": "27.50",
+   "grams": 0,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 9540506190062,
+   "created_at": "2026-09-28T16:33:05+01:00",
+   "updated_at": "2026-10-02T08:38:14+01:00"
+  }
+ ],
+ "images": [],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}

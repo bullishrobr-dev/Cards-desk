@@ -1,0 +1,129 @@
+{
+ "host": "www.totalcards.net",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 2000,
+ "pokemon_collections": [
+  [
+   "featured-pokemon",
+   100
+  ],
+  [
+   "gaming-centre-event-available-booster-packs-pokemon",
+   1
+  ],
+  [
+   "get-5-off-selected-pokemon-products",
+   10
+  ],
+  [
+   "lego-pokemon",
+   2
+  ],
+  [
+   "new-pokemon",
+   388
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:55381786724:ProductListController:176ac8835df8c0c06119946b0e6f6ae2\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 16,
+ "pokemon_titles": [
+  "Pokemon - Deck Crafter's Collection - Meowth ex",
+  "Pokémon - Mega Evolution: Delta Reign Pre-Release Event - Wednesday 6pm (28/10/26)",
+  "Pokémon - Mega Evolution: Delta Reign Pre-Release Event - Saturday 1pm (31/10/26)",
+  "Pokemon - Mega Evolution - Pitch Black - Pokemon Center Elite Trainer Box",
+  "Pokemon - MEP Black Star Promos - Moltres - MEP096",
+  "Pokemon - MEP Black Star Promos - Articuno - MEP097",
+  "Pokemon - MEP Black Star Promos - Zapdos - MEP098",
+  "Pokemon - MEP Black Star Promos - Greninja ex - MEP099",
+  "Pokemon - Greninja ex - Oversized Promo Card (MEP 099)",
+  "Pokemon - Evolving Skies - Rayquaza VMAX 218/203 - Beckett 9.5",
+  "Pokemon - Ascended Heroes - Pikachu ex 276/217 - ACE 10 GEM MINT",
+  "Pokemon - Black Star Promos - Mega Charizard X ex MEP023 - ACE 10 GEM MINT"
+ ],
+ "preorder_like": [
+  [
+   "Pokémon - Mega Evolution: Delta Reign Pre-Release Event - Wednesday 6pm (28/10/26)",
+   []
+  ],
+  [
+   "Pokémon - Mega Evolution: Delta Reign Pre-Release Event - Saturday 1pm (31/10/26)",
+   []
+  ],
+  [
+   "Pokemon - Evolving Skies - Rayquaza VMAX 218/203 - Beckett 9.5",
+   []
+  ],
+  [
+   "Pokemon - Ascended Heroes - Pikachu ex 276/217 - ACE 10 GEM MINT",
+   []
+  ],
+  [
+   "Pokemon - Black Star Promos - Mega Charizard X ex MEP023 - ACE 10 GEM MINT",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "International": "er if you would like the courier to do this you can select this option in the MyDPD app and request your safe place before another delivery with DPD. International Shipping: International orders may take longer to process and deliver due to customs clearance and varying shipping times. Please allow up to 30 working days for delivery. Shipping Rates: Shipping rates are calculated based on the weigh",
+  "customs": " request your safe place before another delivery with DPD. International Shipping: International orders may take longer to process and deliver due to customs clearance and varying shipping times. Please allow up to 30 working days for delivery. Shipping Rates: Shipping rates are calculated based on the weight of the package, the shipping method selected, and the destination. You can view the shipp",
+  "duties": "quirements. If there is any issues with any products you ordered, we will reach out to you. International Shipping: For international orders, customs duties, taxes, and fees may apply upon delivery. These charges are the responsibility of the customer and are not included in the shipping cost. Returns: Please refer to our Returns Policy for information on returning items purchased online. Contact "
+ },
+ "cart_item": [
+  "Gamegenic - Magic The Gathering - Reality Fracture - Bastion 100+ XL - Charge the Sanctum",
+  "10.95",
+  200,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Royal Mail 48 Tracked Parcel",
+    "3.75",
+    "GBP"
+   ],
+   [
+    "Royal Mail 24 Tracked Parcel",
+    "4.95",
+    "GBP"
+   ],
+   [
+    "DPD Expresspak",
+    "6.45",
+    "GBP"
+   ],
+   [
+    "DPD Weekend Expresspak",
+    "8.45",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  []
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

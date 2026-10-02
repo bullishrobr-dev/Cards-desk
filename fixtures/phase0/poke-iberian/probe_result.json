@@ -1,0 +1,168 @@
+{
+ "host": "pokeiberiancoleccionables.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /collections/*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /*/collections/*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart",
+   "Disallow: /carts",
+   "Disallow: /carts"
+  ],
+  "crawl_delay": [
+   "Crawl-delay: 10",
+   "Crawl-delay: 10"
+  ]
+ },
+ "n_collections": 48,
+ "pokemon_collections": [
+  [
+   "30-aniversary-celebration",
+   20
+  ],
+  [
+   "booster-box-pokemon",
+   10
+  ],
+  [
+   "booster-bundle-pokemon",
+   6
+  ],
+  [
+   "caja-36-sobres-pokemon",
+   11
+  ],
+  [
+   "caja-de-cartas-pokemon-original",
+   13
+  ],
+  [
+   "caja-para-guardar-cartas-pokemon",
+   2
+  ],
+  [
+   "caja-pokemon",
+   8
+  ],
+  [
+   "cajas-de-sobres-pokemon",
+   14
+  ],
+  [
+   "carta-pokemon-psa-10",
+   12
+  ],
+  [
+   "cartas-sueltas-pokemon",
+   23
+  ],
+  [
+   "elite-trainer-box-pokemon",
+   7
+  ],
+  [
+   "etb-pokemon",
+   13
+  ],
+  [
+   "latas-cartas-pokemon",
+   3
+  ],
+  [
+   "pokemon-aura-seeker",
+   1
+  ],
+  [
+   "pokemon-booster-pack-box",
+   36
+  ],
+  [
+   "pokemon-center",
+   7
+  ],
+  [
+   "pokemon-etb-protector",
+   4
+  ],
+  [
+   "pokemon-tcg",
+   21
+  ],
+  [
+   "pokemon-trading-card-game",
+   121
+  ],
+  [
+   "psa-pokemon",
+   17
+  ],
+  [
+   "sobre-pokemon",
+   4
+  ],
+  [
+   "ultra-premium-collection-pokemon",
+   7
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:90267582731:ProductListController:5e142728e16ef93a2fd1ed134166eb7a\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 123
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 13,
+ "pokemon_titles": [
+  "UPC 30 Aniversario, Celebraciones Pokémon, Inglés ( Próximamente )",
+  "ETB 30 Aniversario, Celebraciones Pokémon, Español (con pequeñas roturas en el plástico) ideal para abrir",
+  "UPC 30 Aniversario, Celebraciones Pokémon",
+  "ETB 30 Aniversario, Celebraciones Pokémon",
+  "Carta Pokemon Iron crown ex Japonés , PSA 10",
+  "Carta Pokemon Infernape LvX MGC 8",
+  "ETB Perfect Order Pokemon center+protector acrílico",
+  "Pack exclusivo de USA , Prismatic Evolutions , ETB + Pokeball , Ingles ( La de la imagen )",
+  "ETB Mega Evolution ,Lucario  Pokémon Center.",
+  "ETB Mega Evolution , Gardevoir , Pokémon Center",
+  "ETB Phantasmal Flames , Pokémon Center",
+  "ETB Surging Sparks , Pokemon Center"
+ ],
+ "preorder_like": [
+  [
+   "UPC 30 Aniversario, Celebraciones Pokémon",
+   []
+  ]
+ ],
+ "policy_code": 404,
+ "policy_snips": {
+  "España": " pokemon Caja de sobres Pokémon Pokemon ETB Protector ONE PIECE TODO INGLÉS PROTECTORES DE CARTAS POKEMON CARTAS GRADEADAS Iniciar sesión País/región España | EUR € España EUR € Estados Unidos USD $ Facebook Instagram TikTok POKEMON TCG Era Mega evoluciones Mega Evolution Phantasmal Flames Ascended Heroes Perfect Order Chaos Rising Pitch Black 30 Aniversario Delta Reign Aura Seeker Era Escarlata y",
+  "Espa": " pokemon Caja de sobres Pokémon Pokemon ETB Protector ONE PIECE TODO INGLÉS PROTECTORES DE CARTAS POKEMON CARTAS GRADEADAS Iniciar sesión País/región España | EUR € España EUR € Estados Unidos USD $ Facebook Instagram TikTok POKEMON TCG Era Mega evoluciones Mega Evolution Phantasmal Flames Ascended Heroes Perfect Order Chaos Rising Pitch Black 30 Aniversario Delta Reign Aura Seeker Era Escarlata y",
+  "EU": "ta vacío Seguir comprando ¿Tienes una cuenta? Inicia sesión para finalizar tus compras con mayor rapidez. Tu carrito Cargando... Total estimado €0,00 EUR Impuestos incluidos. Descuentos y envío calculados en la pantalla de pago. Pagar pedido POKEMON TCG POKEMON TCG Era Mega evoluciones Era Mega evoluciones Mega Evolution Phantasmal Flames Ascended Heroes Perfect Order Chaos Rising Pitch Black 30 A"
+ },
+ "cart_item": [
+  "Protector Acrílico para ETB",
+  "14.95",
+  900,
+  200
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Exprés",
+    "6.00",
+    "USD"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"El país o la región no se admite.\"]}"
+ ]
+}

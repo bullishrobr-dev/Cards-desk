@@ -1,0 +1,22 @@
+{
+ "id": 42426204320,
+ "name": "Geeksheaven",
+ "city": "Erftstadt",
+ "country": "DE",
+ "currency": "EUR",
+ "domain": "geeksheaven.de",
+ "url": "https://geeksheaven.de",
+ "myshopify_domain": "geeksheaven-test.myshopify.com",
+ "description": "Entdecke bei GeeksHeaven eine riesige Auswahl an Pokémon, One Piece & Magic: The Gathering Sammelkarten, Zubehör & Events. Top Preise, schneller Versand & exklusive Events warten auf dich. Jetzt deine Lieblingskarten shoppen & Teil der Community werden!",
+ "ships_to_countries": [
+  "DE",
+  "LU"
+ ],
+ "money_format": "€{{amount_with_comma_separator}}",
+ "published_collections_count": 123,
+ "published_products_count": 2753,
+ "shopify_pay_enabled_card_brands": [
+  "unionpay"
+ ],
+ "offers_shop_pay_installments": false
+}

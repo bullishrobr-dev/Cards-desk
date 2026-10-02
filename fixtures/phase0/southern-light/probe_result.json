@@ -1,0 +1,89 @@
+{
+ "host": "southernlight.store",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 37,
+ "pokemon_collections": [
+  [
+   "pokemon-plushie",
+   39
+  ],
+  [
+   "pokemon",
+   25
+  ],
+  [
+   "pokemon-plushies",
+   10
+  ],
+  [
+   "japanese-tcg",
+   27
+  ],
+  [
+   "pokemon-chinese",
+   2
+  ],
+  [
+   "pokemon-english",
+   2
+  ],
+  [
+   "pokemon-korean",
+   0
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:60469510205:ProductListController:1a5f14685c86402971f145dc84d7280f\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 42
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 8,
+ "pokemon_titles": [
+  "Pokémon Leisure Time Series Figure Set - SLOWPOKE",
+  "Pokémon Leisure Time Series Figure Set - MUNCHLAX",
+  "Pokémon Leisure Time Series Figure Set - ROWLET",
+  "Pokémon Leisure Time Series Figure Set - PIKACHU",
+  "Pokémon Leisure Time Series Figure Set - MEOWTH",
+  "Pokémon Leisure Time Series Figure Set - CHARMANDER",
+  "Pokemon Simplified Chinese Display Set Gift Blind Box (Eevee)",
+  "Authentic LITWICK Pokémon Fit"
+ ],
+ "preorder_like": [],
+ "policy_code": 200,
+ "policy_snips": {},
+ "cart_item": [
+  "Pokemon Simplified Chinese Display Set Gift Blind Box (Eevee)",
+  "19.00",
+  0,
+  200
+ ],
+ "rates_Gibraltar": [
+  200,
+  [
+   [
+    "Local Delivery",
+    "0.00",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

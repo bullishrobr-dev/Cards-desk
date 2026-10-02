@@ -1,0 +1,13 @@
+Sitemap: https://www.chaoscards.co.uk/sitemap.xml
+
+User-agent:*
+Crawl-delay:3
+Disallow:/evocms/
+Disallow:/search/
+Disallow:/quickbuy/
+Disallow:/images/
+Disallow:/productreviews/
+Disallow:/basket
+Disallow:/klarna
+Disallow:/currency/
+Disallow:/acts

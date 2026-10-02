@@ -1,0 +1,55 @@
+{
+ "id": 10917228249421,
+ "title": "Pokémon TCG - 30th Celebration - Poster Collection",
+ "handle": "pokemon-tcg-30th-celebration-poster-collection",
+ "body_html": "<p dir=\"ltr\">Vier 30 jaar Pokémon met deze collectie vol legendarische klassiekers en boosters uit de speciale 30th Celebration-set. Geschikt voor verzamelaars, spelers en als cadeau.</p>\n<p dir=\"ltr\"><strong>Inhoud:</strong></p>\n<ul dir=\"ltr\">\n<li>3 foil promokaarten: Articuno, Zapdos en Moltres</l",
+ "published_at": "2026-09-27T11:06:59+02:00",
+ "created_at": "2026-09-26T20:26:24+02:00",
+ "updated_at": "2026-10-02T09:35:34+02:00",
+ "vendor": "Pokémon",
+ "product_type": "",
+ "tags": [],
+ "variants": [
+  {
+   "id": 54845855596877,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": null,
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": false,
+   "price": "44.95",
+   "grams": 2100,
+   "compare_at_price": null,
+   "position": 1,
+   "product_id": 10917228249421,
+   "created_at": "2026-09-26T20:26:24+02:00",
+   "updated_at": "2026-10-02T09:35:34+02:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 93961907667277,
+   "created_at": "2026-09-26T20:26:41+02:00",
+   "position": 1,
+   "updated_at": "2026-09-26T20:26:43+02:00",
+   "product_id": 10917228249421,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0896/6674/8749/files/895553.png?v=1790447203",
+   "width": 300,
+   "height": 300
+  }
+ ],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": 89666748749,
+ "name": "CardsByBeard",
+ "city": "Pijnacker",
+ "country": "NL",
+ "currency": "EUR",
+ "domain": "cardsbybeard.eu",
+ "url": "https://cardsbybeard.eu",
+ "myshopify_domain": "xrqpif-vy.myshopify.com",
+ "description": "Maak je collectie compleet bij CardsByBeard! Vind Pokémon en Magic: The Gathering producten zoals Booster Boxen, Elite Trainer Boxen, MTG Commander Decks, Singles en meer. Snel geleverd in Nederland en België.",
+ "ships_to_countries": [
+  "BE",
+  "DE",
+  "NL",
+  "SE",
+  "SI"
+ ],
+ "money_format": "€{{amount_with_comma_separator}}",
+ "published_collections_count": 39,
+ "published_products_count": 401,
+ "shopify_pay_enabled_card_brands": [
+  "visa",
+  "maestro",
+  "master",
+  "american_express",
+  "unionpay"
+ ],
+ "offers_shop_pay_installments": false
+}

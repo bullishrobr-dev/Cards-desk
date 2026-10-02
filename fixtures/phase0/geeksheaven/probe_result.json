@@ -1,0 +1,145 @@
+{
+ "host": "geeksheaven.de",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 123,
+ "pokemon_collections": [
+  [
+   "pokemon-booster-koreanisch",
+   1
+  ],
+  [
+   "pokemon-japan-exlusive",
+   30
+  ],
+  [
+   "pokemon-displays-japanisch",
+   42
+  ],
+  [
+   "pokemon-einzelkarten-japanisch",
+   35
+  ],
+  [
+   "pokemon-japanisch",
+   138
+  ],
+  [
+   "pokemon-tcg",
+   712
+  ],
+  [
+   "pokemon-booster",
+   99
+  ],
+  [
+   "pokemon-displays",
+   122
+  ],
+  [
+   "pokemon-trainer-boxen",
+   68
+  ],
+  [
+   "pokemon-spezial-kollektionen",
+   223
+  ],
+  [
+   "pokemon-tins",
+   89
+  ],
+  [
+   "pokemon-zubehor",
+   371
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:42426204320:ProductListController:980e0047df099f0568689df14b8a812d\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 40,
+ "pokemon_titles": [
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Umbreon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Sylveon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Leafeon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Glaceon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Jolteon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Flareon (S-Chinesisch)",
+  "Pokemon TCG CSV9.5 – Terastal Gathering Coin Set Eevee (S-Chinesisch)",
+  "Pokemon Pre-Release Delta-Herrschaft im GeeksHeaven - 24.10.2025 12:00Uhr",
+  "Pokemon Cup – GeeksHeaven  Samstag, 14.11.2026 | Anmeldung: ab 11:30Uhr",
+  "Pokemon Inferno X M2 Booster (koreanisch)",
+  "Pokemon Inferno X Booster Display (koreanisch)",
+  "Pokemon Heat Wave Booster Display (koreanisch)"
+ ],
+ "preorder_like": [
+  [
+   "Pokemon Pre-Release Delta-Herrschaft im GeeksHeaven - 24.10.2025 12:00Uhr",
+   []
+  ],
+  [
+   "Pokémon 30 Jahre – Ordner-Kollektion (deutsch)*ACHTUNG MAX. 2 pro Person",
+   []
+  ],
+  [
+   "Pokémon 30 Jahre – 2er-Pack-Blister Evoli (deutsch) *Limitiert auf 2 pro Person",
+   []
+  ],
+  [
+   "Pokémon 30 Jahre – Top-Trainer-Box (deutsch) *LIMITIERT 1 pro Person",
+   []
+  ],
+  [
+   "Pokémon Mega Forces Tin 130 – Mega-Dragoran ex (deutsch)",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "EU": "arben Citadel Shade Farben Citadel Technical Farben The Army Painter StarCraft Tabletop Vorbestellungen Sale und Angebote Turniere Blog Eventkalender EUR Region und Sprache Land/Region Keine Ergebnisse gefunden Deutschland EUR € Luxemburg EUR € Österreich EUR € Tabletop Tabletop Vorbestellungen Vorbestellungen Suche Mehr Sammelkarten & Zubehör Untermenü Sammelkarten & Zubehör anzeigen Pokemon alle"
+ },
+ "cart_item": [
+  "Pokemon Inferno X M2 Booster (koreanisch)",
+  "2.99",
+  300,
+  200
+ ],
+ "rates_Germany": [
+  200,
+  [
+   [
+    "DHL Kleines Päckchen",
+    "4.99",
+    "EUR"
+   ],
+   [
+    "Sealed Sammler Versand",
+    "14.99",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  []
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

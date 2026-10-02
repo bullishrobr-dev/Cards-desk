@@ -1,0 +1,113 @@
+{
+ "host": "obsidia-tcg.store",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products",
+   "Disallow: /products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote",
+   "Disallow: /collections/*/products/*-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-remote"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart",
+   "Disallow: /carts",
+   "Disallow: /cart"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 87,
+ "pokemon_collections": [
+  [
+   "japanese-tcg",
+   27
+  ],
+  [
+   "poke-ball",
+   0
+  ],
+  [
+   "pokemon-tcg",
+   539
+  ],
+  [
+   "pokemon-tcg-simplified-chinese",
+   17
+  ],
+  [
+   "sword-shield-pokemon-go",
+   13
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:86664413526:ProductListController:e0c427830505cf687132070e996417b3\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 163,
+ "pokemon_titles": [
+  "Pokemon TCG: Delta Reign - Build and Battle Box",
+  "Pokemon TCG: Delta Reign - Booster Bundle",
+  "Pokemon TCG: Delta Reign - 3 Pack Blister",
+  "Pokemon TCG: Delta Reign - Sleeved Booster Pack",
+  "Pokemon TCG: Delta Reign - 1 Pack Blister",
+  "Pokemon TCG: Prismatic Evolutions - Elite Trainer Box",
+  "Pokemon TCG: Eevee & Friends: Dream Illustrating Figures [Simplified Chinese]",
+  "Pokemon TCG: Enhanced 2-Pack Blister (Gengar)",
+  "Pokemon TCG: Gem Pack Vol. 6 Booster Box CBB6C [Simplified Chinese]",
+  "Pokemon TCG: Pitch Black - Elite Trainer Box + Acrylic Case Bundle",
+  "Pokemon TCG: 30th Celebration - Greninja ex Tin",
+  "Pokemon TCG: 30th Celebration - Sylveon ex Tin"
+ ],
+ "preorder_like": [
+  [
+   "Pokemon TCG: Delta Reign - Build and Battle Box",
+   []
+  ],
+  [
+   "Pokemon TCG: Delta Reign - Booster Bundle",
+   []
+  ],
+  [
+   "Pokemon TCG: Delta Reign - 3 Pack Blister",
+   []
+  ],
+  [
+   "Pokemon TCG: Delta Reign - Sleeved Booster Pack",
+   []
+  ],
+  [
+   "Pokemon TCG: Delta Reign - 1 Pack Blister",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {},
+ "cart_item": [
+  "Ultra Pro - Elite Series: Eevee - 9 Pocket Zip PRO-Binder",
+  "26.95",
+  870,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Express",
+    "2.99",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Country/region not supported\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

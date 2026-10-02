@@ -1,0 +1,89 @@
+{
+ "host": "todohits.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 12,
+ "pokemon_collections": [
+  [
+   "pokemon",
+   628
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:95186813265:ProductListController:9a57111ba49f427771e1988dacaeb59f\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 177,
+ "pokemon_titles": [
+  "Blister 2 Sobres Promo Gengar | POKÉMON | Español",
+  "Binder Collection 30 Aniversario | POKÉMON | Español",
+  "[Reserva] Booster Box 30 Aniversario | POKÉMON | Japonés",
+  "[Reserva] Sobre 30 Aniversario | POKÉMON | Japonés",
+  "Blister 2 Sobres 30 Aniversario | POKÉMON | Inglés",
+  "Binder Collection 30 Aniversario | POKÉMON | Inglés",
+  "Caja Especial Sylveon/Greninja ex | POKÉMON | Inglés",
+  "Poster Collection 30 Aniversario | POKÉMON | Inglés",
+  "Extra",
+  "Caja Especial Sylveon/Greninja ex | POKÉMON | Español",
+  "ETB 30 Aniversario Pokemon | Elite Trainer Box | POKÉMON | Español",
+  "Lata Sylveon/Greninja Ex 30 Aniversario | 4 Sobres | POKÉMON | Español"
+ ],
+ "preorder_like": [
+  [
+   "[Reserva] Booster Box 30 Aniversario | POKÉMON | Japonés",
+   []
+  ],
+  [
+   "[Reserva] Sobre 30 Aniversario | POKÉMON | Japonés",
+   []
+  ],
+  [
+   "Booster Box Storm Emerald | POKÉMON | Japonés",
+   []
+  ],
+  [
+   "Sobre Base Set Dawn of Palpagos | Palworld | Inglés",
+   []
+  ],
+  [
+   "Booster Box Pitch Black | POKÉMON | Inglés",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "Gibraltar": "onia EUR € Esuatini EUR € Etiopía ETB Br Filipinas PHP ₱ Finlandia EUR € Fiyi FJD $ Francia EUR € Gabón XOF Fr Gambia GMD D Georgia EUR € Ghana EUR € Gibraltar GBP £ Granada XCD $ Grecia EUR € Groenlandia DKK kr. Guadalupe EUR € Guatemala GTQ Q Guayana Francesa EUR € Guernesey GBP £ Guinea GNF Fr Guinea Ecuatorial XAF CFA Guinea-Bisáu XOF Fr Guyana GYD $ Haití EUR € Honduras HNL L Hungría HUF Ft I",
+  "España": "Acceso Buscar Búsquedas Populares Pokémon One Piece Dragon Ball INICIO POKÉMON ONE PIECE DRAGON BALL LORCANA OTROS TCG ACCESORIOS SORTEOS País/región España | EUR € Buscar Afganistán AFN ؋ Albania ALL L Alemania EUR € Andorra EUR € Angola EUR € Anguila XCD $ Antigua y Barbuda XCD $ Arabia Saudí SAR ر.س Argelia DZD د.ج Argentina EUR € Armenia AMD դր. Aruba AWG ƒ Australia AUD $ Austria EUR € Azerba",
+  "Espa": "Acceso Buscar Búsquedas Populares Pokémon One Piece Dragon Ball INICIO POKÉMON ONE PIECE DRAGON BALL LORCANA OTROS TCG ACCESORIOS SORTEOS País/región España | EUR € Buscar Afganistán AFN ؋ Albania ALL L Alemania EUR € Andorra EUR € Angola EUR € Anguila XCD $ Antigua y Barbuda XCD $ Arabia Saudí SAR ر.س Argelia DZD د.ج Argentina EUR € Armenia AMD դր. Aruba AWG ƒ Australia AUD $ Austria EUR € Azerba",
+  "EU": "scar Búsquedas Populares Pokémon One Piece Dragon Ball INICIO POKÉMON ONE PIECE DRAGON BALL LORCANA OTROS TCG ACCESORIOS SORTEOS País/región España | EUR € Buscar Afganistán AFN ؋ Albania ALL L Alemania EUR € Andorra EUR € Angola EUR € Anguila XCD $ Antigua y Barbuda XCD $ Arabia Saudí SAR ر.س Argelia DZD د.ج Argentina EUR € Armenia AMD դր. Aruba AWG ƒ Australia AUD $ Austria EUR € Azerbaiyán AZN "
+ },
+ "cart_item": [
+  "Blister 2 Sobres Promo Gengar | POKÉMON | Español",
+  "14.99",
+  200,
+  422
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ],
+ "rates_Gibraltar": [
+  200,
+  []
+ ]
+}

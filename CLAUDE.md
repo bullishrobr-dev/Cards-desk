@@ -11,7 +11,8 @@ Phase 0 (verify and research). No application code yet. Phase 1 starts only afte
 ## Non-negotiables
 
 - **Never invent endpoints, selectors, dates or shipping facts.** Verify live. If you can't, mark it `UNVERIFIED` and say so.
-- **No purchasing behaviour, ever.** That means no auto-checkout, no add-to-cart in production code and no queue bypass.
+- **No purchasing behaviour, ever.** That means no auto-checkout, no add-to-cart in production code and no queue bypass. Shopify robots.txt disallows `/cart/`, so ship-to flags are manual config (see `SOURCES.md`).
+- **Bot challenges are failures, not data.** A 429/403 "Verifying your connection" page, or an Imperva challenge served with HTTP 200, must never be parsed as an empty catalogue.
 - **Ship-to regions are Gibraltar (primary) and Spain (fallback).** Andorra is out of scope. Retailer flags are `ships_gi` and `ships_es`, each `yes | no | unknown`.
 - **Config, not code.** Categories, publishers, tiers, exclusions, score weights and watchlists live in `config/rules.yaml`.
 - **Shared vs personal data.** Personal tables (watchlist, overrides, pins, notifications, push subscriptions) carry `owner_id`.

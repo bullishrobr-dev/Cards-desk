@@ -1,0 +1,20 @@
+{
+ "id": 86664413526,
+ "name": "Obsidia TCG",
+ "city": "Doncaster",
+ "province": "England",
+ "country": "GB",
+ "currency": "GBP",
+ "domain": "obsidia-tcg.store",
+ "url": "https://obsidia-tcg.store",
+ "myshopify_domain": "empcat-nn.myshopify.com",
+ "description": "Shop the ultimate Pokémon TCG collection at Obsidia TCG! From booster packs to exclusive bundles, we have everything to enhance your deck. Order Yours Now!",
+ "ships_to_countries": [
+  "GB"
+ ],
+ "money_format": "£{{amount}}",
+ "published_collections_count": 87,
+ "published_products_count": 689,
+ "shopify_pay_enabled_card_brands": [],
+ "offers_shop_pay_installments": false
+}

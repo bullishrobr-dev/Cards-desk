@@ -1,0 +1,254 @@
+{
+ "host": "thecardvault.co.uk",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products",
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products",
+   "Disallow: /recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart",
+   "Disallow: /carts",
+   "Disallow: /carts"
+  ],
+  "crawl_delay": [
+   "Crawl-delay: 10",
+   "Crawl-delay: 10"
+  ]
+ },
+ "n_collections": 873,
+ "pokemon_collections": [
+  [
+   "pokemon-tcg-burning-shadows-sealed-products-the-card-vault",
+   1
+  ],
+  [
+   "pokemon-tcg-sealed-japanese-booster-boxes",
+   51
+  ],
+  [
+   "pokemon-tcg-japanese-collection-boxes",
+   0
+  ],
+  [
+   "pokemon-tcg-mini-portfolio",
+   5
+  ],
+  [
+   "pokemon-day-pokemon-tcg-flash-sale",
+   58
+  ],
+  [
+   "pokemon-tcg-bundles",
+   0
+  ],
+  [
+   "pokemon-tcg-display-cases",
+   11
+  ],
+  [
+   "pokemon-tcg-mega-evolution-me01-mega-evolution",
+   7
+  ],
+  [
+   "pokemon-tcg-mega-evolution-me02-phantasmal-flames-sealed-products",
+   5
+  ],
+  [
+   "pokemon-tcg-mega-evolution-me02-5-ascended-heroes",
+   9
+  ],
+  [
+   "pokemon-tcg-mystery-boxes",
+   0
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-sv10-destined-rivals-sealed-products",
+   10
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-sv11-black-bolt-white-flare",
+   13
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-journey-together-sealed-products",
+   13
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-the-glory-of-team-rocket-products",
+   0
+  ],
+  [
+   "pokemon-tcg-sealed-products",
+   666
+  ],
+  [
+   "accessories-pokemon",
+   39
+  ],
+  [
+   "pokemon-trading-card-game-premium-checklane-and-triple-blister-packs",
+   61
+  ],
+  [
+   "pokemon-booster-boxes-the-card-vault",
+   90
+  ],
+  [
+   "pokemon-tcg-booster-bundles",
+   17
+  ],
+  [
+   "pokemon-trading-card-game-sealed-booster-packs",
+   73
+  ],
+  [
+   "pokemon-tcg-sealed-collection-boxes",
+   128
+  ],
+  [
+   "pokemon-tcg-collectors-chests",
+   6
+  ],
+  [
+   "pokemon-trading-card-game-sealed-decks",
+   55
+  ],
+  [
+   "pokemon-trading-card-game-elite-trainer-boxes",
+   48
+  ],
+  [
+   "pokemon-featured-products",
+   666
+  ],
+  [
+   "pokemon-tcg-japanese-sealed-products",
+   88
+  ],
+  [
+   "pokemon-new-releases",
+   47
+  ],
+  [
+   "pokemon-pre-orders",
+   0
+  ],
+  [
+   "pokemon-tcg-all-products",
+   666
+  ],
+  [
+   "pokemon-tcg-azure-legends-tins",
+   4
+  ],
+  [
+   "pokemon-tcg-holiday-calendars",
+   4
+  ],
+  [
+   "pokemon-tcg-scarlet-violet",
+   29
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-base-set",
+   15
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-paldea-evolved",
+   10
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-obsidian-flames",
+   11
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-151",
+   11
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-paradox-rift-sealed-products",
+   10
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-paldean-fates",
+   7
+  ],
+  [
+   "pokemon-tcg-scarlet-violet-sv5-temporal-forces-products",
+   11
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:53002436801:ProductListController:2ab53618daa8748cdfc52e78e238a802\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 16,
+ "pokemon_titles": [
+  "Pokémon TCG Delta Reign Pre-release - 24/10/2026",
+  "Pokémon TCG Open Play! - 30/10/2026",
+  "Pokémon TCG Open Play! - 23/10/2026",
+  "Pokémon TCG Open Play! - 16/10/2026",
+  "Pokémon TCG Open Play! - 09/10/2026",
+  "Pokémon TCG Open Play! - 02/10/2026",
+  "Pokemon TCG - Mega Evolution - League Battle Deck - Mega Lucario ex",
+  "Pokémon TCG League Cup - 19/09/2026",
+  "Pokémon TCG Open Play! - 18/09/2026",
+  "Pokémon TCG League Challenge - 21/11/2026",
+  "Pokémon TCG League Challenge - 10/10/2026",
+  "Pokémon TCG League Challenge - 12/09/2026"
+ ],
+ "preorder_like": [
+  [
+   "Pokémon TCG Delta Reign Pre-release - 24/10/2026",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "Gibraltar": "Estonia (EUR €) Falkland Islands (FKP £) Faroe Islands (DKK kr.) Finland (EUR €) France (EUR €) French Guiana (EUR €) Georgia (GBP £) Germany (EUR €) Gibraltar (GBP £) Greece (EUR €) Greenland (DKK kr.) Grenada (XCD $) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guyana (USD $) Haiti (GBP £) Honduras (HNL L) Hong Kong SAR (GBP £) Hungary (HUF Ft) Iceland (ISK kr) India (INR ₹) Indonesia (",
+  "Spain": "n Marino (EUR €) Saudi Arabia (SAR ر.س) Serbia (RSD РСД) Singapore (SGD $) Sint Maarten (ANG ƒ) Slovakia (EUR €) Slovenia (EUR €) South Korea (KRW ₩) Spain (EUR €) Sri Lanka (LKR ₨) St. Barthélemy (EUR €) St. Kitts & Nevis (XCD $) St. Lucia (XCD $) St. Martin (EUR €) St. Pierre & Miquelon (EUR €) St. Vincent & Grenadines (XCD $) Svalbard & Jan Mayen (GBP £) Sweden (SEK kr) Switzerland (CHF CHF) Ta",
+  "EU": "Over £50! 🤑 Earn Reward Points On Every Purchase! 🏷️ UK Retailer Price Match - T&Cs Apply Wishlist GB (GBP £) Menu Afghanistan (AFN ؋) Åland Islands (EUR €) Albania (ALL L) Andorra (EUR €) Anguilla (XCD $) Antigua & Barbuda (XCD $) Argentina (USD $) Armenia (AMD դր.) Aruba (AWG ƒ) Australia (AUD $) Austria (EUR €) Azerbaijan (AZN ₼) Bahamas (BSD $) Bahrain (GBP £) Bangladesh (BDT ৳) Barbados (BBD "
+ },
+ "cart_item": [
+  "Pokemon TCG - Mega Evolution - League Battle Deck - Mega Lucario ex",
+  "29.95",
+  300,
+  200
+ ],
+ "rates_United Kingdom": [
+  200,
+  [
+   [
+    "Royal Mail Tracked 48",
+    "3.95",
+    "GBP"
+   ],
+   [
+    "Royal Mail Tracked 24",
+    "4.95",
+    "GBP"
+   ],
+   [
+    "DPD Next Day Delivery (Weekday Delivery)",
+    "6.95",
+    "GBP"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  []
+ ],
+ "rates_Spain": [
+  200,
+  []
+ ]
+}

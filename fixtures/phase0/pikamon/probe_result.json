@@ -1,0 +1,131 @@
+{
+ "host": "pikamon.eu",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 22,
+ "pokemon_collections": [
+  [
+   "all-pokemon-products",
+   168
+  ],
+  [
+   "pokemon",
+   169
+  ],
+  [
+   "box-sets-1",
+   50
+  ],
+  [
+   "pokemon-chinese",
+   20
+  ],
+  [
+   "pokemon-english",
+   106
+  ],
+  [
+   "pokemon-japanese",
+   60
+  ],
+  [
+   "pokemon-korean",
+   15
+  ],
+  [
+   "pokemon-pet-protectors",
+   19
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:72158118206:ProductListController:295fa707e2487732c9760ddfb16c37f9\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 186
+ },
+ "cond_etag": 304,
+ "pokemon_in_p1": 170,
+ "pokemon_titles": [
+  "Pokémon TCG: Destined Rivals - Elite Trainer Box - English",
+  "Pokémon TCG: Inferno X - Booster Box - Korean",
+  "Pokémon TCG: Pokémon Center Hiroshima Special Box - Box Set - Japanese",
+  "Pokémon TCG: Pokémon Center Fukuoka Special Box - Box Set - Japanese",
+  "Pokémon TCG: Storm Emeralda - Booster Box - Korean",
+  "Pokémon TCG: Storm Emeralda - Booster Box - Japanese",
+  "Pokémon Pikachu on the Ball (FUT20 001) English 🇬🇧 Futsal Promo Card",
+  "Pokémon TCG: Evolving Skies 6 Booster Box Case - Booster Box - English",
+  "Pokémon TCG: Hiroshima's Pikachu (SV-P 261) - PSA 10 - Japanese",
+  "Pokémon TCG: Detective Pikachu (SV-P 098) - PSA 10 - Japanese",
+  "Pokémon Lost Origin Booster Box - English",
+  "Pokémon Magikarp (M-P 040) Korean 🇰🇷 Promo Card"
+ ],
+ "preorder_like": [
+  [
+   "Pokémon TCG: Inferno X - Booster Box - Korean",
+   []
+  ],
+  [
+   "Pokémon Pikachu on the Ball (FUT20 001) English 🇬🇧 Futsal Promo Card",
+   []
+  ],
+  [
+   "Pokémon TCG: Detective Pikachu (SV-P 098) - PSA 10 - Japanese",
+   []
+  ],
+  [
+   "Pokémon Lost Origin Booster Box - English",
+   []
+  ],
+  [
+   "Pokémon Magikarp (M-P 040) Korean 🇰🇷 Promo Card",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "Spain": "and (EUR €) Norway (EUR €) Poland (PLN zł) Portugal (EUR €) Romania (RON Lei) Singapore (EUR €) Slovakia (EUR €) Slovenia (EUR €) South Korea (EUR €) Spain (EUR €) Sweden (SEK kr) Switzerland (EUR €) United Arab Emirates (EUR €) United Kingdom (EUR €) Account 0 × × Pikamon 0 Pokemon · 145 + Booster Boxes 84 › Elite Trainer Boxes 19 › Booster Packs 6 › Box Sets 41 › Tins 5 › Premium Collections 12 ",
+  "EU": "→ ACRYLIC Heimdall TCG Heimdall® Pokémon Booster Box Acrylic Display Case – Rhino Strength €19,95 Shop → Website language EN DE 93 in stock · Insured EU shipping · 14-day returns · sealed Other TCG PET Protectors Accessories New Arrivals 💶 Sell your Collection 💶 EN DE Australia (EUR €) Austria (EUR €) Belgium (EUR €) Bulgaria (EUR €) Canada (EUR €) Croatia (EUR €) Cyprus (EUR €) Czechia (CZK Kč) D"
+ },
+ "cart_item": [
+  "Heimdall® Pokémon Booster Box Acrylic Display Case – Rhino Strength",
+  "19.95",
+  500,
+  200
+ ],
+ "rates_Netherlands": [
+  200,
+  [
+   [
+    "Tracked & insured — up to 5 kg",
+    "14.95",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  422,
+  "{\"country\":[\"Country/region not supported\"]}"
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Tracked & insured — up to 5 kg",
+    "18.95",
+    "EUR"
+   ]
+  ]
+ ]
+}

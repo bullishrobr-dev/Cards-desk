@@ -1,0 +1,275 @@
+{
+ "host": "www.pokemillon.com",
+ "robots": {
+  "code": 200,
+  "disallow_products_json": [
+   "Disallow: /recommendations/products",
+   "Disallow: /*/recommendations/products"
+  ],
+  "disallow_cart": [
+   "Disallow: /cart/",
+   "Disallow: /*/cart/",
+   "Disallow: /cart.js"
+  ],
+  "crawl_delay": []
+ },
+ "n_collections": 271,
+ "pokemon_collections": [
+  [
+   "accesorios",
+   111
+  ],
+  [
+   "cajas-de-sobres",
+   178
+  ],
+  [
+   "cajas-misteriosas-de-pokemon",
+   10
+  ],
+  [
+   "cajas-misteriosas",
+   31
+  ],
+  [
+   "cajas-tematicas",
+   184
+  ],
+  [
+   "cajas-elite-de-entrenador",
+   30
+  ],
+  [
+   "cartas-gradeadas-pokemon",
+   124
+  ],
+  [
+   "cartas-pokemon",
+   352
+  ],
+  [
+   "cartas-pokemon-chino",
+   97
+  ],
+  [
+   "pokemon-cartas-coreano",
+   136
+  ],
+  [
+   "cartas-pokemon-inglesas",
+   352
+  ],
+  [
+   "cartas-pokemon-japon",
+   136
+  ],
+  [
+   "otros-idiomas",
+   0
+  ],
+  [
+   "pokemon",
+   972
+  ],
+  [
+   "cartas",
+   64
+  ],
+  [
+   "fundas",
+   59
+  ],
+  [
+   "latas-y-minilatas",
+   80
+  ],
+  [
+   "mazos-y-barajas-pokemon-1",
+   47
+  ],
+  [
+   "mcdonalds",
+   9
+  ],
+  [
+   "battle-styles",
+   7
+  ],
+  [
+   "brilliant-stars",
+   16
+  ],
+  [
+   "eternos-30-aniversario-eternals-30th-anniversary",
+   55
+  ],
+  [
+   "celebrations",
+   25
+  ],
+  [
+   "pokemon-center",
+   58
+  ],
+  [
+   "darkness-ablaze",
+   6
+  ],
+  [
+   "pokemon-go",
+   17
+  ],
+  [
+   "llamas-obsidianas",
+   20
+  ],
+  [
+   "evoluciones-de-paldea",
+   17
+  ],
+  [
+   "rebel-clash",
+   4
+  ],
+  [
+   "shining-fates",
+   6
+  ],
+  [
+   "shrouded-fable",
+   9
+  ],
+  [
+   "sword-shield",
+   16
+  ],
+  [
+   "vivid-voltage",
+   5
+  ],
+  [
+   "sobres-y-blisters",
+   176
+  ],
+  [
+   "albumes",
+   8
+  ],
+  [
+   "ancient-origins",
+   0
+  ],
+  [
+   "base-set",
+   54
+  ],
+  [
+   "tormenta-celestial",
+   3
+  ],
+  [
+   "cosmic-eclipse",
+   3
+  ],
+  [
+   "guardians-rising",
+   2
+  ]
+ ],
+ "products_json": {
+  "code": 200,
+  "etag": "W/\"page_cache:60880453878:ProductListController:c25c6f20a23903bbf7d9dbc715c01666\"",
+  "last_modified": null,
+  "cache": null,
+  "count_p1": 250
+ },
+ "cond_etag": 200,
+ "pokemon_in_p1": 226,
+ "pokemon_titles": [
+  "Magic x PlayStation | Secret Lair Horizon: Into the Forbidden West",
+  "Magic x PlayStation | Secret Lair The Last of Us: Part II",
+  "Blister Gengar 2 Sobre Oscuridad Absoluta Caos Creciente | Pitch Black Chaos Rising",
+  "Digimon | Booster Box 24 Sobre Chivalrous XIII EX-13 Extra",
+  "Weiß Schwarz | Booster Box 10 Sobre Goddess Of Victory: Nikke vol 2",
+  "Caja Slim 15 Sobres Stellar Crystal",
+  "Lillie (SM-P 80) Sun & Moon Promos",
+  "Magic | Fracture Commander Deck",
+  "Magic | Bundle 9 Sobres Reality Fracture",
+  "Magic | Play Booster 30 Sobres Reality Fracture",
+  "Sobre Fossil 1st Edition \"Lapras\" 1999-2000",
+  "Sobre Neo Discovery (1st Edition)"
+ ],
+ "preorder_like": [
+  [
+   "Magic | Fracture Commander Deck",
+   []
+  ],
+  [
+   "Magic | Bundle 9 Sobres Reality Fracture",
+   []
+  ],
+  [
+   "Magic | Play Booster 30 Sobres Reality Fracture",
+   []
+  ],
+  [
+   "Caja Premium Umbreon & Espeon Pokémon 30th Anniversary",
+   []
+  ],
+  [
+   "Caja 20 Sobres Pokémon 30th Anniversary",
+   []
+  ]
+ ],
+ "policy_code": 200,
+ "policy_snips": {
+  "España": "vas Gradeo ★★★★★ \"Llegó en 2 días y perfectamente embalado. Mi Charizard PSA 10 es una joya.\" — Carlos M. ★★★★★ \"La mejor tienda de cartas Pokémon en España. Precios justos y atención increíble.\" — Laura G. ★★★★★ \"Pedí una caja misteriosa y superó todas mis expectativas. ¡Repetirá seguro!\" — Marcos P. ★★★★★ \"Envío ultrarrápido y el producto en perfectas condiciones. 100% recomendado.\" — Sara L. ★★",
+  "Espa": "e de Entrenador Cajas Temáticas Cajas Misteriosas Latas Cartas Gradeadas Vintage Pokémon Center Mazos y Barajas McDonalds Todos los Productos Idiomas Español - Inglés Japonés - Coreano Chino - Otros Megaevolución Megaevolución Llamas Fantasmales Héroes Ascendentes Equilibrio Perfecto Caos Creciente Oscuridad Absoluta 30.º Aniversario Dominio Delta Escarlata y Púrpura Escarlata y Púrpura Evolucione"
+ },
+ "cart_item": [
+  "Kings League | Sobres Season 1 2024",
+  "2.99",
+  900,
+  200
+ ],
+ "rates_Spain": [
+  200,
+  [
+   [
+    "Envío 24-48h",
+    "4.50",
+    "EUR"
+   ],
+   [
+    "🚚 Envío Certificado + 100 Fundas ✅",
+    "6.30",
+    "EUR"
+   ],
+   [
+    "🚀 Envío Express",
+    "6.90",
+    "EUR"
+   ],
+   [
+    "🚀 Envío Express + 100 Fundas ✅",
+    "8.69",
+    "EUR"
+   ],
+   [
+    "🚀 Envío Express Seguro 200€ 🔒",
+    "30.00",
+    "EUR"
+   ]
+  ]
+ ],
+ "rates_Gibraltar": [
+  200,
+  [
+   [
+    "🚚 Envío Certificado",
+    "19.90",
+    "EUR"
+   ]
+  ]
+ ]
+}

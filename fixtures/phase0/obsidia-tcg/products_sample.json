@@ -1,0 +1,57 @@
+{
+ "id": 11195812020566,
+ "title": "Pokemon TCG: Delta Reign - Build and Battle Box",
+ "handle": "pokemon-tcg-delta-reign-build-and-battle-box",
+ "body_html": "<h2>Build a 40 Card Deck with Four Delta Reign Booster Packs</h2>\n<p>The <strong>Pokémon TCG: Delta Reign Build and Battle Box</strong> is designed around quick deck building and play, combining four Delta Reign booster packs with a 40-card ready-to-play deck. The deck includes one of four unique fo",
+ "published_at": "2026-08-21T11:51:27+01:00",
+ "created_at": "2026-08-21T08:41:12+01:00",
+ "updated_at": "2026-10-02T05:27:55+01:00",
+ "vendor": "OBSIDIA TCG",
+ "product_type": "TCG-POKEMON-EN",
+ "tags": [
+  "Build & Battle"
+ ],
+ "variants": [
+  {
+   "id": 55055163654486,
+   "title": "Default Title",
+   "option1": "Default Title",
+   "option2": null,
+   "option3": null,
+   "sku": null,
+   "requires_shipping": true,
+   "taxable": true,
+   "featured_image": null,
+   "available": false,
+   "price": "24.95",
+   "grams": 185,
+   "compare_at_price": "0.00",
+   "position": 1,
+   "product_id": 11195812020566,
+   "created_at": "2026-08-21T08:41:12+01:00",
+   "updated_at": "2026-10-02T05:27:55+01:00"
+  }
+ ],
+ "images": [
+  {
+   "id": 84113339613526,
+   "created_at": "2026-08-21T11:35:09+01:00",
+   "position": 1,
+   "updated_at": "2026-08-21T11:35:13+01:00",
+   "product_id": 11195812020566,
+   "variant_ids": [],
+   "src": "https://cdn.shopify.com/s/files/1/0866/6441/3526/files/DeltaReignBoosterBundle1_394bf698-0413-4cf2-b47d-0b9a32de53fa.webp?v=1787308513",
+   "width": 1501,
+   "height": 1501
+  }
+ ],
+ "options": [
+  {
+   "name": "Title",
+   "position": 1,
+   "values": [
+    "Default Title"
+   ]
+  }
+ ]
+}
