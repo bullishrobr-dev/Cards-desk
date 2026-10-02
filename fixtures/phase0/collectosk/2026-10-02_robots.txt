@@ -1,0 +1,19 @@
+User-agent: YouBot
+Disallow: /
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: */feed/
+Disallow: /*?feed=
+Disallow: /*/comments/
+Disallow: /comments/feed/
+Disallow: /*?replytocom
+Disallow: /*?share
+Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json
+
+Sitemap: https://www.collectosk.com/sitemaps.xml
+Sitemap: https://www.collectosk.com/de/sitemaps.xml
+Sitemap: https://www.collectosk.com/es/sitemaps.xml
+Sitemap: https://www.collectosk.com/fr/sitemaps.xml
+Sitemap: https://www.collectosk.com/it/sitemaps.xml

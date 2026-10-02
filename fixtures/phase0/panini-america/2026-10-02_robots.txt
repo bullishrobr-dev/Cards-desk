@@ -1,0 +1,109 @@
+User-Agent: *
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: Slurp
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: Googlebot
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: Googlebot-image
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: AdsBot-Google
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: GPTBot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Allow Anthropic's Claude crawler
+User-agent: ClaudeBot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Allow Google's AI/Gemini crawler
+User-agent: Google-Extended
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Allow Perplexity AI crawler
+User-agent: PerplexityBot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Allow Common Crawl (used by many AI systems)
+User-agent: CCBot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Allow Bing/Copilot crawler
+User-agent: bingbot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: KimiBot
+Disallow: /
+
+User-agent: Kimi-User
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+User-agent: Kimi-SearchBot
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+# Crawl-delay for aggressive crawlers
+User-agent: *
+Crawl-delay: 1
+Disallow: /cdn-cgi/
+Disallow: /upload/invoice/
+Disallow: /upload/tax/
+Disallow: /support/*.pdf
+
+Sitemap: https://assets.paniniamerica.net/sitemap.xml

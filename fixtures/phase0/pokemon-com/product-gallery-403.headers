@@ -1,0 +1,10 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 403 
+content-type: text/html
+cache-control: no-cache, no-store
+content-length: 968
+x-iinfo: 47-53846828-0 0NNN RT(1790926242516 51) q(0 -1 -1 306) r(3 -1) B15(11,3411755,0) U24
+set-cookie: visid_incap_2884021=W6tnq7wwRiS+4EuJ0ZpiGqJdv2oAAAAAQUIPAAAAAADi1a3wlQQiJ7L+G1bELniw; expires=Fri, 01 Oct 2027 09:39:03 GMT; HttpOnly; path=/; Domain=.pokemon.com
+set-cookie: incap_ses_1093_2884021=26pAFHLz+iKdgD9LyB0rD6Jdv2oAAAAA0gTNss5qjeX9JmjzOqR1vA==; path=/; Domain=.pokemon.com
+

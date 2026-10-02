@@ -1,0 +1,111 @@
+[
+ {
+  "id": "mep",
+  "name": "MEP Black Star Promos",
+  "cardCount": {
+   "total": 89,
+   "official": 0
+  }
+ },
+ {
+  "id": "B1",
+  "name": "Mega Rising",
+  "logo": "https://assets.tcgdex.net/en/tcgp/B1/logo",
+  "symbol": "https://assets.tcgdex.net/univ/tcgp/B1/symbol",
+  "cardCount": {
+   "total": 331,
+   "official": 226
+  }
+ },
+ {
+  "id": "me02",
+  "name": "Phantasmal Flames",
+  "logo": "https://assets.tcgdex.net/en/me/me02/logo",
+  "cardCount": {
+   "total": 130,
+   "official": 94
+  }
+ },
+ {
+  "id": "B1a",
+  "name": "Crimson Blaze",
+  "cardCount": {
+   "total": 103,
+   "official": 69
+  }
+ },
+ {
+  "id": "B2",
+  "name": "Fantastical Parade",
+  "logo": "https://assets.tcgdex.net/en/tcgp/B2/logo",
+  "symbol": "https://assets.tcgdex.net/univ/tcgp/B2/symbol",
+  "cardCount": {
+   "total": 234,
+   "official": 155
+  }
+ },
+ {
+  "id": "me02.5",
+  "name": "Ascended Heroes",
+  "logo": "https://assets.tcgdex.net/en/me/me02.5/logo",
+  "symbol": "https://assets.tcgdex.net/univ/me/me02.5/symbol",
+  "cardCount": {
+   "total": 295,
+   "official": 217
+  }
+ },
+ {
+  "id": "B2a",
+  "name": "Paldean Wonders",
+  "cardCount": {
+   "total": 131,
+   "official": 93
+  }
+ },
+ {
+  "id": "me03",
+  "name": "Perfect Order",
+  "logo": "https://assets.tcgdex.net/en/me/me03/logo",
+  "symbol": "https://assets.tcgdex.net/univ/me/me03/symbol",
+  "cardCount": {
+   "total": 124,
+   "official": 88
+  }
+ },
+ {
+  "id": "me04",
+  "name": "Chaos Rising",
+  "logo": "https://assets.tcgdex.net/en/me/me04/logo",
+  "symbol": "https://assets.tcgdex.net/univ/me/me04/symbol",
+  "cardCount": {
+   "total": 122,
+   "official": 86
+  }
+ },
+ {
+  "id": "me05",
+  "name": "Pitch Black",
+  "logo": "https://assets.tcgdex.net/en/me/me05/logo",
+  "symbol": "https://assets.tcgdex.net/univ/me/me05/symbol",
+  "cardCount": {
+   "total": 120,
+   "official": 84
+  }
+ },
+ {
+  "id": "30th",
+  "name": "30th Celebration",
+  "cardCount": {
+   "total": 158,
+   "official": 128
+  }
+ },
+ {
+  "id": "30th-c",
+  "name": "30th Classic Collection",
+  "cardCount": {
+   "total": 30,
+   "official": 0
+  }
+ }
+]

@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:29:23 GMT
+content-type: text/html
+cf-ray: a441fee71894f933-IAD
+cf-cache-status: DYNAMIC
+access-control-allow-origin: https://nft.paniniamerica.net
+cache-control: no-cache
+last-modified: Wed, 23 Sep 2026 09:23:48 GMT
+server: cloudflare
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+vary: Accept-Encoding
+via: 1.1 db129cda1d3ba1b67c3281d54906cdcc.cloudfront.net (CloudFront)
+permissions-policy: geolocation=(self "https://nft.paniniamerica.net"), microphone=()
+content-security-policy: default-src 'self' *.paniniamerica.net *.goupshot.com https://*.signifyd.com https://analytics.google.com https://*.cardinalcommerce.com https://events.goupshot.com:3000 https://*.googleapis.com https://*.facebook.net https://cdns.us1.gigya.com https://*.kaptcha.com https://r2.trackedweb.net https://*.braintree-api.com https://*.braintreegateway.com https://www.paypal.com https://*.google-analytics.com https://stats.g.doubleclick.net https://*.onfido.com https://kg668dbov0.execute-api.us-east-1.amazonaws.com wss://sync.onfido.com; connect-src 'self' blob: *.paniniamerica.net *.goupshot.com https://*.signifyd.com https://analytics.google.com https://*.cardinalcommerce.com https://events.goupshot.com:3000 https://*.googleapis.com https://*.facebook.net https://cdns.us1.gigya.com https://*.kaptcha.com https://r2.trackedweb.net https://*.braintree-api.com https://*.braintreegateway.com https://www.paypal.com https://*.google-analytics.com https://stats.g.doubleclick.net https://*.onfido.com https://kg668dbov0.execute-api.us-east-1.amazonaws.com wss://sync.onfido.com https://*.cardinaltrusted.com https://challenges.cloudflare.com https://api.web3modal.org wss://relay.walletconnect.com wss://relay.walletconnect.org https://explorer-api.walletconnect.com wss://www.walletlink.org https://*.wallet.coinbase.com https://pulse.walletconnect.org https://eth.drpc.org https://eth.llamarpc.com https://rpc.walletconnect.org; img-src 'self' https://imgs.signifyd.com https://*.online-metrix.net https://media.goupshot.com https://translate.google.com https://www.gstatic.com https://*.paniniamerica.net https://quickchart.io https://assets.braintreegateway.com blob: data: https://www.google.com https://www.facebook.com https://*.paypal.com https://*.googleapis.com https://api.web3modal.org; script-src https: 'unsafe-inline' 'unsafe-eval' https://cdn.goupshot.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://api.goupshot.com https://cdns.us1.gigya.com https://*.googleapis.com https://static.client.cardinaltrusted.com; style-src https: 'unsafe-inline' https://nft.paniniamerica.net https://www.paniniamerica.net https://translate.googleapis.com https://cdn.goupshot.com https://fonts.googleapis.com https://assets.braintreegateway.com https://assets.onfido.com https://challenges.cloudflare.com; frame-src 'self' mailto: https://www.google.com https://www.youtube.com https://cdns.us1.gigya.com https://bid.g.doubleclick.net https://td.doubleclick.net https://assets.braintreegateway.com https://*.kaptcha.com https://*.paypal.com https://*.cardinalcommerce.com https://blog.paniniamerica.net https://*.onfido.com https://h.online-metrix.net https://imgs.signifyd.com https://www.googletagmanager.com https://ui2.tipalti.com https://*.cypheme.com https://challenges.cloudflare.com; worker-src 'self' blob:; font-src 'self' data: https://fonts.gstatic.com https://cdn.goupshot.com https://fonts.reown.com; media-src 'self' blob: *.paniniamerica.net *.goupshot.com https://*.signifyd.com https://analytics.google.com https://*.cardinalcommerce.com https://events.goupshot.com:3000 https://*.googleapis.com https://*.facebook.net https://cdns.us1.gigya.com https://*.kaptcha.com https://r2.trackedweb.net https://*.braintree-api.com https://*.braintreegateway.com https://www.paypal.com https://*.google-analytics.com https://stats.g.doubleclick.net https://*.onfido.com https://kg668dbov0.execute-api.us-east-1.amazonaws.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self' https://www.paypal.com
+referrer-policy: no-referrer-when-downgrade
+x-amz-cf-id: dBRVD3zKg-a8RfeqdYV2SHFPvPQ8SkFTlu2sF5npjWg_uQo0019cEQ==
+x-amz-cf-pop: IAD61-P13
+x-amz-server-side-encryption: AES256
+x-amz-version-id: N.yeRNQlm_cDArzg5Q8rJLBEdakjbLIH
+x-cache: RefreshHit from cloudfront
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+set-cookie: __cf_bm=FpIzlSO2.4JPLX1gUKyoNWHORSIskbFuHS.otPPdYP4-1790926163.0560443-1.0.1.1-_1ZPU5zTuyN6jSQwsdsiWVaAo7m.7.5FF109kFKv3xMhJXIKdjtFI05b7mo1CpkRBiSzBMGb3W3URyFCahe1rBpkk0q2FINhjMOieF1XIOvRf.iCMWD1Uka7kzJhFXPg; HttpOnly; SameSite=None; Secure; Path=/; Domain=paniniamerica.net; Expires=Fri, 02 Oct 2026 07:59:23 GMT
+
