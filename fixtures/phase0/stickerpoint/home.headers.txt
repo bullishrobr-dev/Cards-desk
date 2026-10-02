@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Fri, 02 Oct 2026 07:34:27 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: cookie_test=please_accept_for_session; expires=Sun, 01 Nov 2026 07:34:27 GMT; Max-Age=2592000; path=/; domain=.stickerpoint.es
+Cache-Control: max-age=0
+Expires: Fri, 02 Oct 2026 07:34:27 GMT
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'self';
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+

@@ -1,0 +1,54 @@
+<!-- https://www.waxstat.com/2026-soccer-cards-release-calendar 2026-10-02: client-side AngularJS template, no rows server-rendered -->
+            <div class="tags" ng-repeat="d in tags.box_types">
+                    <span>{{d.name}}</span>
+                    <i class="fas fa-times" ng-click="removeTags('box_types', d.id)"></i>
+                  </div>
+  
+                </div>
+              </div>
+              <div ng-hide="suggestions.length <= 0">
+                <h6 class="my-3 text-white">Total search results: {{total_results | number}}</h6>
+                <div class="table-responsive">
+                  <table class="table table-hover table-striped" style="margin: 0 !important;">
+                    <thead>
+                      <tr>
+                        <!-- <th></th> -->
+                        <th class="text-center">#</th>
+                        <th class="text-left" style='width: 40%; min-width: 250px'>Product Name</th>
+                        <th class="text-right">UPC</th>
+                        <th class="text-right">Release Date</th>
+                        <th class="text-right"style='width: 7%'>Year</th>
+                        <th class="text-right">Sport</th>
+                        <th class="text-right">Type</th>
+                        <th class="text-right">Brand</th>
+                        <th class="text-right">Avg Price</th>
+                        <th class="text-center">Last 7 Days</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center" ng-repeat="b in suggestions track by b.id">
+                        <td class="align-middle">{{$index + 1}}</td>
+                        <td class="align-middle text-left">
+                          <!-- <img class="mr-2" style="width: 25%; max-height: 120px" alt="{{b.name}}" src="{{b.box_image ? b.box_image : no_image_url}}"> -->
+                          <a ng-mousedown="addBoxHistory(b.slug)" href="/boxes/{{b.slug}}">{{b.name}}</a>
+                          <!-- <div class="d-flex p-0">
+                            <a class="text-success mr-3" href="/boxes/{{b.slug}}#break-data" ng-if="b.is_pyt">Break Data</a>
+                            <a class="text-success" href="/boxes/{{b.slug}}/checklist" ng-if="b.is_public_checklist">Checklist</a>
+                          </div> -->
+                        </td>
+                        <td class="align-middle text-right white-space-nowrap">
+                          <div ng-repeat="upc in b.upcs">
+                            {{upc}}
+                          </div>
+                        </td>
+                        <td class="align-middle text-right white-space-nowrap" data-sort="{{b.release_date}}">
+                          {{b.release_date}}
+                        </td>
+                        <td class="text-right align-middle white-space-nowrap">
+                          <a href="/waxtracker/all/{{b.league_year_name}}/all/all">{{b.league_year_name}}</a>
+                        </td>
+                        <td class="text-right align-middle white-space-nowrap">
+                          <a href="/waxtracker/{{b.sport_type_slug}}/all/all/all">{{b.sport_type_name}}</a>
+                        </td>
+                        <td class="text-right align-middle white-space-nowrap">
+                          <a href="/waxtracker/all/all/all/{{b.box_type_slug}}">{{b.box_type_name

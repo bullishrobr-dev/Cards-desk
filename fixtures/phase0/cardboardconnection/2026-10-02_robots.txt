@@ -1,0 +1,42 @@
+# Sitemap
+Sitemap: https://www.cardboardconnection.com/sitemap_index.xml
+
+# All Bots
+User-agent: *
+Disallow: /images/e/*
+Disallow: /sports-collectibles-*
+Disallow: /partners/*
+Disallow: /?*
+Disallow: /*.htm$
+
+User-agent: Googlebot
+Disallow: /images/e/*
+Disallow: /sports-collectibles-*
+Disallow: /partners/*
+Disallow: /?*
+Disallow: /*.htm$
+
+
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Disallow: /images/e/*
+Disallow: /sports-collectibles-*
+Disallow: /partners/*
+Disallow: /?*
+Disallow: /*.htm$
+
+User-agent: Googlebot-Smartphone
+Disallow: /images/e/*
+Disallow: /sports-collectibles-*
+Disallow: /partners/*
+Disallow: /?*
+Disallow: /*.htm$
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /

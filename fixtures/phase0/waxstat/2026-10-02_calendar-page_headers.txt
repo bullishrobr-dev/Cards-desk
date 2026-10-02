@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:34:04 GMT
+content-type: text/html; charset=utf-8
+cache-control: no-store
+expires: 2025-10-02 00:34:04 -0700
+link: </assets/application-8e9f82f25f6a68da1cbe2cad749fabd0b9837869ae0e48313788873c780616ee.css>; rel=preload; as=style; nopush,</packs/js/runtime-10987258353873e4b5d6.js>; rel=preload; as=script; nopush,</packs/js/vendors-jquery-b793297212a97ab3d2d3.js>; rel=preload; as=script; nopush,</packs/js/vendors-angular-0fef2cdf-34b70064ab96e3e0ed6d.js>; rel=preload; as=script; nopush,</packs/js/vendors-angular-76f2ed34-b3d946ed27e21ea9889e.js>; rel=preload; as=script; nopush,</packs/js/vendors-chartjs-553ac44c5a38a9829c1a.js>; rel=preload; as=script; nopush,</packs/js/vendors-libs-cdd60c62-ed7319ec8c516e9f4dd3.js>; rel=preload; as=script; nopush,</packs/js/vendors-libs-ba5cce0a-be34fa61fd4f995ba19e.js>; rel=preload; as=script; nopush,</packs/js/vendors-libs-b63e7516-a0332cbd4a4e8db15c44.js>; rel=preload; as=script; nopush,</packs/js/vendors-libs-3e3507c7-aaef57a3de8d057fa23a.js>; rel=preload; as=script; nopush,</packs/js/vendors-libs-27545368-d514a05002b716e45bfe.js>; rel=preload; as=script; nopush
+nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+pragma: no-cache
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=r6%2FlBy7nCiB7YbNs6oHZvujyapC8JsQRnaQOqyVziMQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1790926444"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=r6%2FlBy7nCiB7YbNs6oHZvujyapC8JsQRnaQOqyVziMQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1790926444"
+server: cloudflare
+set-cookie: active_record=AmDWFT4hAo7j22Eynh%2Fz9aSS%2Fe8d7inyV1iobIpGa83%2FsiJXJ78FfjShTp2aAROEQ45C9eciCDkpS4WR8GvA8kugNw%2BQpRTF8m8StV8948ty9qUR5wIDPA%2Fl8qOg2lL0ifeUqnziHOKd4i%2FGpaorB1UWzFXAgqg1Vt6VGv4hXIGgRy7lWJie7oUZBPXwaXYKO85agXchKSnsZMEyZOL42s7AVtqzSlICEEL45QKntro5EPfGXx9OxJEmpS6qv9iByyyE4C6nc4AKYuRaPJTQsbephzu1--n4rtKd4nO4Zndbnu--6sWyrEyHaZ4kinALnet3Mg%3D%3D; path=/; httponly; samesite=lax
+vary: Accept
+via: 2.0 heroku-router
+x-content-type-options: nosniff
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-request-id: 6b827d3a-064e-388c-222b-0929383bf3ef
+x-runtime: 0.068698
+x-xss-protection: 0
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a44205c6386cf01a-IAD
+alt-svc: h3=":443"; ma=86400
+

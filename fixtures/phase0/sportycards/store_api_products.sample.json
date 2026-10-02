@@ -1,0 +1,456 @@
+{
+ "_source": "https://sportycards.it/wp-json/wc/store/v1/products?per_page=3&orderby=date&order=desc",
+ "_fetched": "2026-10-02",
+ "products": [
+  {
+   "id": 131190,
+   "name": "PREORDER: Panini National Treasures Road to FIFA World Cup 2026 &#8211; Hobby Box",
+   "slug": "preorder-panini-national-treasures-road-to-fifa-world-cup-2026-hobby-box",
+   "parent": 0,
+   "type": "variable",
+   "variation": "",
+   "permalink": "https://sportycards.it/prodotto/preorder-panini-national-treasures-road-to-fifa-world-cup-2026-hobby-box/",
+   "sku": "",
+   "short_description": "<p><strong style=\"letter-spacing: 0px\"><strong>Data di rilascio stimata: ?/07/2026</strong></strong></p>\n<p><strong>Contenuto Hobby Box: </strong>1 pacchetto per box, 10 carte per pacchetto, 8 autogra",
+   "description": "<p>Il set inaugura un nuovo capitolo della prestigiosa linea dedicata al percorso verso il Mondiale 2026, confermando l’impronta premium introdotta prima di Qatar 2022. Il set base comprende 150 carte numerate a /99, affiancate da rare parallel fino alle esclusive 1/1 Platinum e alle printing plate,…[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "189900",
+    "regular_price": "189900",
+    "sale_price": "189900",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "€",
+    "currency_suffix": ""
+   },
+   "price_html": "<div class=\"price\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>1.899,00</span></div>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 131194,
+     "src": "https://sportycards.it/wp-content/uploads/2026/06/1-9.jpg",
+     "thumbnail": "https://sportycards.it/wp-content/uploads/2026/06/1-9-300x400.jpg",
+     "srcset": "https://sportycards.it/wp-content/uploads/2026/06/1-9.jpg 850w, https://sportycards.it/wp-content/uploads/2026/06/1-9-230x300.jpg 230w, https://sportycards.it/wp-content/uploads/2026/06/1-9-784x1024.jpg 784w, https://sportycards.it/wp-content/uploads/2026/06/1-9-768x1003.jpg 768w, https://sportycards.it/wp-content/uploads/2026/06/1-9-600x784.jpg 600w",
+     "sizes": "(max-width: 850px) 100vw, 850px",
+     "name": "1",
+     "alt": ""
+    }
+   ],
+   "categories": [
+    {
+     "id": 418,
+     "name": "Box",
+     "slug": "box",
+     "link": "https://sportycards.it/categoria-prodotto//box/"
+    },
+    {
+     "id": 1966,
+     "name": "Preordini",
+     "slug": "preordini",
+     "link": "https://sportycards.it/categoria-prodotto//box/preordini/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 3624,
+     "name": "2026",
+     "slug": "2026",
+     "link": "https://sportycards.it/tag-prodotto/2026/"
+    },
+    {
+     "id": 2117,
+     "name": "FIFA",
+     "slug": "fifa",
+     "link": "https://sportycards.it/tag-prodotto/fifa/"
+    },
+    {
+     "id": 1669,
+     "name": "Hobby Box",
+     "slug": "hobby-box",
+     "link": "https://sportycards.it/tag-prodotto/hobby-box/"
+    },
+    {
+     "id": 3673,
+     "name": "National Treasures",
+     "slug": "national-treasures",
+     "link": "https://sportycards.it/tag-prodotto/national-treasures/"
+    },
+    {
+     "id": 1642,
+     "name": "panini",
+     "slug": "panini",
+     "link": "https://sportycards.it/tag-prodotto/panini/"
+    },
+    {
+     "id": 3674,
+     "name": "Road to",
+     "slug": "road-to",
+     "link": "https://sportycards.it/tag-prodotto/road-to/"
+    },
+    {
+     "id": 1673,
+     "name": "World Cup",
+     "slug": "world-cup",
+     "link": "https://sportycards.it/tag-prodotto/world-cup/"
+    }
+   ],
+   "attributes": [
+    {
+     "id": 24,
+     "name": "BOX 📦",
+     "taxonomy": "pa_box",
+     "has_variations": true,
+     "terms": [
+      {
+       "id": 2550,
+       "name": "⚡Black Friday",
+       "slug": "%e2%9a%a1black-friday"
+      },
+      {
+       "id": 1798,
+       "name": "🔴 Apri in live",
+       "slug": "apri-in-live"
+      },
+      {
+       "id": 1799,
+       "name": "🚚 Spedito a casa",
+       "slug": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "id": 131191,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "apri-in-live"
+      }
+     ]
+    },
+    {
+     "id": 131192,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "has_options": true,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "sold_individually": false,
+   "add_to_cart": {
+    "text": "Scegli",
+    "description": "Seleziona le opzioni per &ldquo;PREORDER: Panini National Treasures Road to FIFA World Cup 2026 &#8211; Hobby Box&rdquo;",
+    "url": "https://sportycards.it/prodotto/preorder-panini-national-treasures-road-to-fifa-world-cup-2026-hobby-box/",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "extensions": {}
+  },
+  {
+   "id": 130926,
+   "name": "Topps Argentina Team Set 2025/26 &#8211; Hobby Box",
+   "slug": "topps-argentina-team-set-2025-26-hobby-box",
+   "parent": 0,
+   "type": "variable",
+   "variation": "",
+   "permalink": "https://sportycards.it/prodotto/topps-argentina-team-set-2025-26-hobby-box/",
+   "sku": "",
+   "short_description": "<p><strong>Contenuto Hobby Box:</strong> 6 pacchetti per box, 5 carte per pacchetto, 1 autografo ogni 2 box, 2 parallele numerate.</p>",
+   "description": "<p>Una collezione ufficiale dedicata interamente alla nazionale argentina, pensata per celebrare la storia, i campioni del presente e i talenti emergenti dell’Albiceleste. Il set combina un design moderno in stile Chrome con una selezione di carte che include stelle affermate, giovani promesse e leg…[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "8500",
+    "regular_price": "8500",
+    "sale_price": "8500",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "€",
+    "currency_suffix": ""
+   },
+   "price_html": "<div class=\"price\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>85,00</span></div>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 130934,
+     "src": "https://sportycards.it/wp-content/uploads/2026/06/1.jpg",
+     "thumbnail": "https://sportycards.it/wp-content/uploads/2026/06/1-300x400.jpg",
+     "srcset": "https://sportycards.it/wp-content/uploads/2026/06/1.jpg 850w, https://sportycards.it/wp-content/uploads/2026/06/1-230x300.jpg 230w, https://sportycards.it/wp-content/uploads/2026/06/1-784x1024.jpg 784w, https://sportycards.it/wp-content/uploads/2026/06/1-768x1003.jpg 768w, https://sportycards.it/wp-content/uploads/2026/06/1-600x784.jpg 600w",
+     "sizes": "(max-width: 850px) 100vw, 850px",
+     "name": "1",
+     "alt": ""
+    }
+   ],
+   "categories": [
+    {
+     "id": 418,
+     "name": "Box",
+     "slug": "box",
+     "link": "https://sportycards.it/categoria-prodotto//box/"
+    },
+    {
+     "id": 1959,
+     "name": "Calcio",
+     "slug": "calcio",
+     "link": "https://sportycards.it/categoria-prodotto//box/calcio/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 3204,
+     "name": "2025/26",
+     "slug": "2025-26",
+     "link": "https://sportycards.it/tag-prodotto/2025-26/"
+    },
+    {
+     "id": 2503,
+     "name": "Argentina",
+     "slug": "argentina",
+     "link": "https://sportycards.it/tag-prodotto/argentina/"
+    },
+    {
+     "id": 1669,
+     "name": "Hobby Box",
+     "slug": "hobby-box",
+     "link": "https://sportycards.it/tag-prodotto/hobby-box/"
+    },
+    {
+     "id": 1971,
+     "name": "Team Set",
+     "slug": "team-set",
+     "link": "https://sportycards.it/tag-prodotto/team-set/"
+    },
+    {
+     "id": 1419,
+     "name": "TOPPS",
+     "slug": "topps",
+     "link": "https://sportycards.it/tag-prodotto/topps/"
+    }
+   ],
+   "attributes": [
+    {
+     "id": 24,
+     "name": "BOX 📦",
+     "taxonomy": "pa_box",
+     "has_variations": true,
+     "terms": [
+      {
+       "id": 2550,
+       "name": "⚡Black Friday",
+       "slug": "%e2%9a%a1black-friday"
+      },
+      {
+       "id": 1798,
+       "name": "🔴 Apri in live",
+       "slug": "apri-in-live"
+      },
+      {
+       "id": 1799,
+       "name": "🚚 Spedito a casa",
+       "slug": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "id": 130927,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "apri-in-live"
+      }
+     ]
+    },
+    {
+     "id": 130928,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "has_options": true,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "sold_individually": false,
+   "add_to_cart": {
+    "text": "Scegli",
+    "description": "Seleziona le opzioni per &ldquo;Topps Argentina Team Set 2025/26 &#8211; Hobby Box&rdquo;",
+    "url": "https://sportycards.it/prodotto/topps-argentina-team-set-2025-26-hobby-box/",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "extensions": {}
+  },
+  {
+   "id": 130782,
+   "name": "Topps Signature Class Basketball 2025/26 &#8211; Value Box",
+   "slug": "topps-signature-class-basketball-2025-26-value-box",
+   "parent": 0,
+   "type": "variable",
+   "variation": "",
+   "permalink": "https://sportycards.it/prodotto/topps-signature-class-basketball-2025-26-value-box/",
+   "sku": "",
+   "short_description": "<p><strong>Contenuto Value Box:</strong> 6 pacchetti per box, 7 carte per pacchetto.</p>",
+   "description": "<p>Topps Signature Class Basketball <span style=\"letter-spacing: 0px\">2025/26 </span><span style=\"letter-spacing: 0px\">segna il debutto ufficiale NBA di uno dei nuovi brand più promettenti di Topps, dopo la prima apparizione nel football nel 2024. Il set base è composto da 150 carte, incluse 50 rook…[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "4900",
+    "regular_price": "4900",
+    "sale_price": "4900",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "€",
+    "currency_suffix": ""
+   },
+   "price_html": "<div class=\"price\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>49,00</span></div>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 130785,
+     "src": "https://sportycards.it/wp-content/uploads/2026/05/1-18.jpg",
+     "thumbnail": "https://sportycards.it/wp-content/uploads/2026/05/1-18-300x400.jpg",
+     "srcset": "https://sportycards.it/wp-content/uploads/2026/05/1-18.jpg 850w, https://sportycards.it/wp-content/uploads/2026/05/1-18-230x300.jpg 230w, https://sportycards.it/wp-content/uploads/2026/05/1-18-784x1024.jpg 784w, https://sportycards.it/wp-content/uploads/2026/05/1-18-768x1003.jpg 768w, https://sportycards.it/wp-content/uploads/2026/05/1-18-600x784.jpg 600w",
+     "sizes": "(max-width: 850px) 100vw, 850px",
+     "name": "1",
+     "alt": ""
+    }
+   ],
+   "categories": [
+    {
+     "id": 1945,
+     "name": "BASKET",
+     "slug": "basket",
+     "link": "https://sportycards.it/categoria-prodotto//box/basket/"
+    },
+    {
+     "id": 418,
+     "name": "Box",
+     "slug": "box",
+     "link": "https://sportycards.it/categoria-prodotto//box/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 3204,
+     "name": "2025/26",
+     "slug": "2025-26",
+     "link": "https://sportycards.it/tag-prodotto/2025-26/"
+    },
+    {
+     "id": 1946,
+     "name": "basketball",
+     "slug": "basketball",
+     "link": "https://sportycards.it/tag-prodotto/basketball/"
+    },
+    {
+     "id": 3669,
+     "name": "Signature Class",
+     "slug": "signature-class",
+     "link": "https://sportycards.it/tag-prodotto/signature-class/"
+    },
+    {
+     "id": 1419,
+     "name": "TOPPS",
+     "slug": "topps",
+     "link": "https://sportycards.it/tag-prodotto/topps/"
+    },
+    {
+     "id": 2338,
+     "name": "Value Box",
+     "slug": "value-box",
+     "link": "https://sportycards.it/tag-prodotto/value-box/"
+    }
+   ],
+   "attributes": [
+    {
+     "id": 24,
+     "name": "BOX 📦",
+     "taxonomy": "pa_box",
+     "has_variations": true,
+     "terms": [
+      {
+       "id": 2550,
+       "name": "⚡Black Friday",
+       "slug": "%e2%9a%a1black-friday"
+      },
+      {
+       "id": 1798,
+       "name": "🔴 Apri in live",
+       "slug": "apri-in-live"
+      },
+      {
+       "id": 1799,
+       "name": "🚚 Spedito a casa",
+       "slug": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "id": 130783,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "apri-in-live"
+      }
+     ]
+    },
+    {
+     "id": 130784,
+     "attributes": [
+      {
+       "name": "BOX 📦",
+       "value": "spedito-a-casa"
+      }
+     ]
+    }
+   ],
+   "has_options": true,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "sold_individually": false,
+   "add_to_cart": {
+    "text": "Scegli",
+    "description": "Seleziona le opzioni per &ldquo;Topps Signature Class Basketball 2025/26 &#8211; Value Box&rdquo;",
+    "url": "https://sportycards.it/prodotto/topps-signature-class-basketball-2025-26-value-box/",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "extensions": {}
+  }
+ ]
+}

@@ -1,0 +1,279 @@
+{
+ "_source": "https://tacticgames.fr/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 11235833381207,
+   "title": "2026 Topps Chrome Tennis – Hobby Box",
+   "handle": "2026-topps-chrome-tennis-hobby-box",
+   "body_html": "<h2>2026 Topps Chrome Tennis – Hobby Box</h2><p>Retrouvez l’univers du tennis dans cette édition 2026 de Topps Chrome. Ouvrez les paquets un à un pour découvrir des cartes aux finitions Chrome et partir à la recherche des joueurs et joueuses qui vous intéressent.</p><h3>Contenu de la boîte</h3><ul>\n…[truncated]",
+   "published_at": "2026-10-01T14:22:11+02:00",
+   "created_at": "2026-10-01T14:22:09+02:00",
+   "updated_at": "2026-10-02T09:26:25+02:00",
+   "vendor": "Tacticgames",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55219481084247,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "179.90",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11235833381207,
+     "created_at": "2026-10-01T14:22:10+02:00",
+     "updated_at": "2026-10-02T09:26:25+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 82435180986711,
+     "created_at": "2026-10-01T14:19:47+02:00",
+     "position": 1,
+     "updated_at": "2026-10-01T14:19:50+02:00",
+     "product_id": 11235833381207,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0571/1295/3008/files/ddc82c4ff26bfa6ab6aa56f6bfa2a0b48c43016b_ecom_26TCTN_FGC7121_HOBBY__1.webp?v=1790857190",
+     "width": 700,
+     "height": 1034
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11235792716119,
+   "title": "2026 Topps Chrome Star Wars – Breaker Delight Box",
+   "handle": "2026-topps-chrome-star-wars-breaker-delight-box",
+   "body_html": "<h2>2026 Topps Chrome Star Wars – Breaker Delight Box</h2>\n<p>Explorez la galaxie Star Wars à travers les cartes Topps Chrome 2026. Cette boîte concentre l’ouverture dans un seul paquet de 12 cartes, avec des personnages de toute la saga et des illustrations originales aux finitions Chrome.</p>\n<h3>…[truncated]",
+   "published_at": "2026-10-01T13:52:36+02:00",
+   "created_at": "2026-10-01T13:52:34+02:00",
+   "updated_at": "2026-10-02T09:26:25+02:00",
+   "vendor": "Tacticgames",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55218899550551,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "459.90",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11235792716119,
+     "created_at": "2026-10-01T13:52:34+02:00",
+     "updated_at": "2026-10-02T09:26:25+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 82434680848727,
+     "created_at": "2026-10-01T13:51:22+02:00",
+     "position": 1,
+     "updated_at": "2026-10-01T13:51:24+02:00",
+     "product_id": 11235792716119,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0571/1295/3008/files/98d592742db9106aeac5f92e55c65b12dd19acf7.avif?v=1790855484",
+     "width": 1440,
+     "height": 1920
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": [
+  {
+   "id": 11222236365143,
+   "title": "Pack Panini FIFA World Cup Korea Japan 2002",
+   "handle": "pack-fifa-world-cup-korea-japan-panini-trading-card-2002",
+   "body_html": "<h2>Pack Panini FIFA World Cup 2002 Corée/Japon</h2><p>Replongez dans la Coupe du monde de football 2002 avec ce pack de cartes Panini Trading Cards. À ouvrir pour découvrir ses cartes ou à ajouter à une collection consacrée au football et au Mondial Corée/Japon.</p><ul>\n<li>\n<strong>Collection :</s…[truncated]",
+   "published_at": "2026-09-25T13:58:48+02:00",
+   "created_at": "2026-09-25T13:58:47+02:00",
+   "updated_at": "2026-10-02T09:26:25+02:00",
+   "vendor": "Tacticgames",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55162586792279,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "19.90",
+     "grams": 100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11222236365143,
+     "created_at": "2026-09-25T13:58:47+02:00",
+     "updated_at": "2026-10-02T09:26:25+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 82306166948183,
+     "created_at": "2026-09-25T14:00:10+02:00",
+     "position": 1,
+     "updated_at": "2026-09-25T14:00:57+02:00",
+     "product_id": 11222236365143,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0571/1295/3008/files/FullSizeRender_56961174-e7c0-4638-a990-9c4417c72d7d.heic?v=1790337657",
+     "width": 1706,
+     "height": 2386
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11177580855639,
+   "title": "Topps Flagship Premier League 2026/27 - Hobby Box",
+   "handle": "topps-flagship-premier-league-2026-27-hobby-box",
+   "body_html": "<p>La <strong>Topps Flagship Premier League 2026/27 Hobby Box</strong> est le format ultime pour les collectionneurs exigeants — un contenu premium exclusif, des chasses profondes et les plus grands hits de la collection phare de la saison.</p>\n<h3>Contenu de la boîte</h3>\n<ul>\n<li>\n<strong>8 Hobby …[truncated]",
+   "published_at": "2026-09-12T16:11:21+02:00",
+   "created_at": "2026-09-12T16:11:20+02:00",
+   "updated_at": "2026-10-02T09:26:25+02:00",
+   "vendor": "Tacticgames",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 54996329660759,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "289.90",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11177580855639,
+     "created_at": "2026-09-12T16:11:20+02:00",
+     "updated_at": "2026-10-02T09:26:25+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 82000280682839,
+     "created_at": "2026-09-12T16:08:57+02:00",
+     "position": 1,
+     "updated_at": "2026-09-12T16:09:01+02:00",
+     "product_id": 11177580855639,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0571/1295/3008/files/4386a7dc815ae38bffdeec35a179603420b6ac86_HOBBY_BOX_LF_3D.webp?v=1789222141",
+     "width": 2465,
+     "height": 3508
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11177571385687,
+   "title": "2027 Topps Flagship Premier League - Value Box",
+   "handle": "2027-topps-flagship-premier-league-value-box",
+   "body_html": "<p>La <strong>Topps Flagship Premier League 2026/27 Value Box</strong> est une boîte d'entrée premium idéale pour les collectionneurs souhaitant découvrir la collection phare de la saison avec un excellent rapport qualité/prix.</p>\n<h3>Insertions &amp; parallèles</h3>\n<p>Chaque boîte renferme une sé…[truncated]",
+   "published_at": "2026-09-12T16:02:11+02:00",
+   "created_at": "2026-09-12T16:02:09+02:00",
+   "updated_at": "2026-10-02T09:26:25+02:00",
+   "vendor": "Tacticgames",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 54996315963735,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "29.90",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11177571385687,
+     "created_at": "2026-09-12T16:02:09+02:00",
+     "updated_at": "2026-10-02T09:26:25+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 82000363749719,
+     "created_at": "2026-09-12T16:14:18+02:00",
+     "position": 1,
+     "updated_at": "2026-09-12T16:14:21+02:00",
+     "product_id": 11177571385687,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0571/1295/3008/files/232e8dccbcd35f9f75ecd91c9ca17eed6816c5b8_PL26_VB1Z_VALUE_BOX.webp?v=1789222461",
+     "width": 871,
+     "height": 1015
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

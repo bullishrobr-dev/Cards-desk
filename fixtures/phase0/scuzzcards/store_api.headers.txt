@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:32:22 GMT
+content-type: application/json; charset=UTF-8
+vary: Accept-Encoding
+x-powered-by: PHP/8.3.33
+x-robots-tag: noindex
+x-content-type-options: nosniff
+access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+access-control-allow-headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+x-wp-total: 405
+x-wp-totalpages: 135
+link: <https://scuzzcards.com/wp-json/wc/store/v1/products?per_page=3&page=2#038;orderby=date&#038;order=desc>; rel="next"
+last-modified: Sat, 26 Sep 2026 11:47:20 GMT
+allow: GET
+access-control-allow-methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+access-control-allow-credentials: true
+cache-control: public, max-age=0
+expires: Fri, 02 Oct 2026 07:32:22 GMT
+platform: hostinger
+panel: hpanel
+content-security-policy: upgrade-insecure-requests
+vary: Origin
+server: hcdn
+alt-svc: h3=":443"; ma=86400
+x-hcdn-request-id: 94068b6647769ae486e60e128cdec4c0-srv-edge3
+x-hcdn-cache-status: DYNAMIC
+x-hcdn-upstream-rt: 1.226
+

@@ -1,0 +1,34 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:26:20 GMT
+content-type: application/json; charset=utf-8
+x-download-options: noopen
+cf-cache-status: DYNAMIC
+set-cookie: cart_currency=EUR; path=/; expires=Fri, 16 Oct 2026 07:26:20 GMT; SameSite=Lax
+set-cookie: _shopify_essential=:AaD7gb9-AAEAa4-vdYL0b3UwLeUnSGGVA5qOxa8HsX3TPE_2Tw9LZYeHDW4vn37GremgynGxV6ej6VlQ1H8lFNJ04QE:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+x-request-id: aa84c629-f7a0-43a6-8fd5-0d4fc85f6989-1790925979
+etag: W/"page_cache:78240940356:ProductListController:130f8722eaa094097c12d1ba2ce52759"
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+shopify-complexity-score: 648
+shopify-complexity-score-v2: 648
+x-frame-options: DENY
+content-security-policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+access-control-allow-origin: *
+strict-transport-security: max-age=7889238
+x-permitted-cross-domain-policies: none
+vary: Accept
+vary: accept-encoding
+cdn-cache-control: no-cache, no-store
+content-language: de-DE
+link: </.well-known/ucp>; rel="ucp"; version="2026-08-25"
+powered-by: Shopify
+server-timing: processing;dur=653;desc="gc:9", db;dur=24, db_async;dur=237.89, asn;desc="396982", edge;desc="IAD", country;desc="US", servedBy;desc="6h4z", requestID;desc="aa84c629-f7a0-43a6-8fd5-0d4fc85f6989-1790925979", _y;desc="00000000-0000-0000-5000-000000000000", _s;desc="00000000-0000-0000-5000-000000000000", _cmp;desc="3.ampS_US_t_t_ipdukF6wRLW8UnR-9zpHfQ", _cta;desc="1", _ye;desc="1822483580", _se;desc="1790927780", compressionLevel;desc="5", compressionTime;dur=23.996
+x-dc: gcp-us-east1,gcp-us-east1,gcp-us-east1
+x-xss-protection: 1; mode=block
+alt-svc: h3=":443"; ma=86400
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w%2Fq5aDruObnI36KQdpzRNywtCQJEn46rQ%2BeRuO8MKoRabmt38%2FTiPdUAUn8TfMLjMa9HGUFm38X3qfuioLSsGDpQlUQT49BSN8CyRjvjw1eTGbLaVlUIbmUtm08Ylrk%3D"}]}
+x-content-type-options: nosniff
+cf-ray: a441fa6ba95956cd-IAD
+

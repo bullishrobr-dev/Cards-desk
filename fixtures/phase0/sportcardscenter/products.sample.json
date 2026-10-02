@@ -1,0 +1,421 @@
+{
+ "_source": "https://sportcardscenter.com/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 16055984488792,
+   "title": "Topps Chrome Tennis 2026 Value Box",
+   "handle": "topps-chrome-tennis-2026-value-box",
+   "body_html": "<p><b>Topps Chrome Tennis 2026 Value Box</b><span> </span>ofrece una forma más accesible de entrar en una de las colecciones de tenis más completas de Topps, manteniendo toda la esencia de Chrome: estrellas actuales, rookies, leyendas, Refractors, paralelos numerados, Short Prints y la posibilidad d…[truncated]",
+   "published_at": "2026-10-01T10:50:50+02:00",
+   "created_at": "2026-10-01T10:48:27+02:00",
+   "updated_at": "2026-10-02T09:26:36+02:00",
+   "vendor": "SportCardsCenter",
+   "product_type": "",
+   "tags": [
+    "autografos originales topps",
+    "cajas de cromos topps",
+    "Cajas selladas Topps",
+    "cajas Topps",
+    "Cajas Topps España",
+    "cajas topps futbol",
+    "cajas Topps para coleccionistas",
+    "cartas",
+    "Comprar cajas Topps",
+    "cromos",
+    "Topps",
+    "Trading cards"
+   ],
+   "variants": [
+    {
+     "id": 58607890399576,
+     "title": "Abrir en directo",
+     "option1": "Abrir en directo",
+     "option2": null,
+     "option3": null,
+     "sku": "887521153916",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "32.50",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16055984488792,
+     "created_at": "2026-10-01T10:48:28+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    },
+    {
+     "id": 58607890432344,
+     "title": "Enviar sellado",
+     "option1": "Enviar sellado",
+     "option2": null,
+     "option3": null,
+     "sku": "887521153916",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "32.50",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 16055984488792,
+     "created_at": "2026-10-01T10:48:28+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 93046129426776,
+     "created_at": "2026-10-01T10:50:15+02:00",
+     "position": 1,
+     "updated_at": "2026-10-01T10:50:18+02:00",
+     "product_id": 16055984488792,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0808/0755/9512/files/c95b592f5ab627e213d4747741473585370eec35_ecom_26TCTN_FGC8151SE_53CEE_VBX.webp?v=1790844618",
+     "width": 719,
+     "height": 1008
+    }
+   ],
+   "options": [
+    {
+     "name": "Metodo de envio",
+     "position": 1,
+     "values": [
+      "Abrir en directo",
+      "Enviar sellado"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16046717272408,
+   "title": "Topps Chrome Tennis 2026 Breaker’s Delight Box",
+   "handle": "topps-chrome-tennis-2026-breaker-s-delight-box",
+   "body_html": "<p>La<span> </span><b>Topps Chrome Tennis 2026 Breaker’s Delight Box</b><span> </span>lleva el concepto Chrome Tennis hacia una apertura mucho más concentrada en hits.</p>\n<p>Frente a las 96 cartas de una Hobby Box convencional, Breaker’s Delight concentra la experiencia en<span> </span><b>un único …[truncated]",
+   "published_at": "2026-09-28T11:38:27+02:00",
+   "created_at": "2026-09-28T11:37:12+02:00",
+   "updated_at": "2026-10-02T09:26:36+02:00",
+   "vendor": "SportCardsCenter",
+   "product_type": "",
+   "tags": [
+    "autografos originales topps",
+    "cajas de cromos topps",
+    "Cajas selladas Topps",
+    "cajas Topps",
+    "Cajas Topps España",
+    "cajas topps futbol",
+    "cajas Topps para coleccionistas",
+    "cartas",
+    "Comprar cajas Topps",
+    "cromos",
+    "Topps",
+    "Trading cards"
+   ],
+   "variants": [
+    {
+     "id": 58584661721432,
+     "title": "Abrir en directo",
+     "option1": "Abrir en directo",
+     "option2": null,
+     "option3": null,
+     "sku": "887521153916",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "150.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16046717272408,
+     "created_at": "2026-09-28T11:37:13+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    },
+    {
+     "id": 58584661754200,
+     "title": "Enviar sellado",
+     "option1": "Enviar sellado",
+     "option2": null,
+     "option3": null,
+     "sku": "887521153916",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "150.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 16046717272408,
+     "created_at": "2026-09-28T11:37:13+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 92989794713944,
+     "created_at": "2026-09-28T11:38:03+02:00",
+     "position": 1,
+     "updated_at": "2026-09-28T11:38:05+02:00",
+     "product_id": 16046717272408,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0808/0755/9512/files/26TCTN_FGC7120_BREAKER.webp?v=1790588285",
+     "width": 1946,
+     "height": 1381
+    }
+   ],
+   "options": [
+    {
+     "name": "Metodo de envio",
+     "position": 1,
+     "values": [
+      "Abrir en directo",
+      "Enviar sellado"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": [
+  {
+   "id": 16003868459352,
+   "title": "Topps Flagship Premier League 2026/27 Value Box",
+   "handle": "topps-flagship-premier-league-2026-27-value-box",
+   "body_html": "<div class=\"gs\">\n<div class=\"\">\n<div class=\"ii gt\" id=\":24x\">\n<div class=\"a3s aiL\" id=\":24w\">\n<div id=\"avWBGd-78\">\n<div class=\"gs\">\n<div class=\"\">\n<div class=\"ii gt\" id=\":1ap\">\n<div class=\"a3s aiL\" id=\":1aq\">\n<div id=\"avWBGd-388\">\n<div class=\"gs\">\n<div class=\"\">\n<div class=\"ii gt\" id=\":1ab\">\n<div cl…[truncated]",
+   "published_at": "2026-09-14T14:11:54+02:00",
+   "created_at": "2026-09-14T14:10:44+02:00",
+   "updated_at": "2026-10-02T09:26:36+02:00",
+   "vendor": "SportCardsCenter",
+   "product_type": "",
+   "tags": [
+    "autografos originales topps",
+    "cajas de cromos topps",
+    "Cajas selladas Topps",
+    "cajas Topps",
+    "Cajas Topps España",
+    "cajas topps futbol",
+    "cajas Topps para coleccionistas",
+    "cartas",
+    "Comprar cajas Topps",
+    "cromos",
+    "Topps",
+    "Trading cards"
+   ],
+   "variants": [
+    {
+     "id": 58467354706264,
+     "title": "Enviar Sellado",
+     "option1": "Enviar Sellado",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "30.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16003868459352,
+     "created_at": "2026-09-14T14:10:44+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 92750981103960,
+     "created_at": "2026-09-14T14:11:39+02:00",
+     "position": 1,
+     "updated_at": "2026-09-14T14:11:44+02:00",
+     "product_id": 16003868459352,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0808/0755/9512/files/VALUEBOX_RF_3D.png?v=1789387904",
+     "width": 1517,
+     "height": 1705
+    }
+   ],
+   "options": [
+    {
+     "name": "Metodo de envio",
+     "position": 1,
+     "values": [
+      "Enviar Sellado"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15956225524056,
+   "title": "Topps Merlin Premier League 2025/26 - Hobby Box (Single Pack)",
+   "handle": "topps-merlin-premier-league-2025-26-hobby-box-single-pack",
+   "body_html": "<p>La<span> </span><b>Topps Premier League Merlin 2025/26 Hobby Box</b><span> </span>marca el regreso de una de las colecciones más icónicas del fútbol moderno. Merlin combina el diseño clásico que revolucionó el coleccionismo en los años 90 con la tecnología Chrome actual, ofreciendo una experienci…[truncated]",
+   "published_at": "2026-08-24T16:53:42+02:00",
+   "created_at": "2026-08-24T16:50:05+02:00",
+   "updated_at": "2026-10-02T09:26:36+02:00",
+   "vendor": "SportCardsCenter",
+   "product_type": "",
+   "tags": [
+    "autografos originales topps",
+    "cajas de cromos topps",
+    "Cajas selladas Topps",
+    "cajas Topps",
+    "Cajas Topps España",
+    "cajas topps futbol",
+    "cajas Topps para coleccionistas",
+    "cartas",
+    "Comprar cajas Topps",
+    "cromos",
+    "Topps",
+    "Trading cards"
+   ],
+   "variants": [
+    {
+     "id": 58264293605720,
+     "title": "Abrir en directo",
+     "option1": "Abrir en directo",
+     "option2": null,
+     "option3": null,
+     "sku": "746134191169",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "13.50",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15956225524056,
+     "created_at": "2026-08-24T16:50:05+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    },
+    {
+     "id": 58264293638488,
+     "title": "Enviar sellado",
+     "option1": "Enviar sellado",
+     "option2": null,
+     "option3": null,
+     "sku": "746134191169",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "13.50",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 15956225524056,
+     "created_at": "2026-08-24T16:50:05+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 92270085013848,
+     "created_at": "2026-08-24T17:00:12+02:00",
+     "position": 1,
+     "updated_at": "2026-08-24T17:00:16+02:00",
+     "product_id": 15956225524056,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0808/0755/9512/files/Disenosintitulo_4.png?v=1787583616",
+     "width": 1314,
+     "height": 1800
+    }
+   ],
+   "options": [
+    {
+     "name": "Metodo de envio",
+     "position": 1,
+     "values": [
+      "Abrir en directo",
+      "Enviar sellado"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15915271455064,
+   "title": "Panini LaLiga Megacracks 2026/27",
+   "handle": "panini-laliga-megacracks-2026-27",
+   "body_html": "<h1><b>Panini Megacracks LaLiga 2026/27 | Trading Cards</b></h1>\n<p>La<span> </span><b>Panini Megacracks LaLiga 2026/27</b><span> </span>celebra nada menos que el<span> </span><b>25º aniversario de Megacracks</b>, una de las colecciones de trading cards de fútbol más importantes y longevas de España…[truncated]",
+   "published_at": "2026-08-06T10:58:00+02:00",
+   "created_at": "2026-08-06T10:54:29+02:00",
+   "updated_at": "2026-10-02T09:26:36+02:00",
+   "vendor": "SportCardsCenter",
+   "product_type": "",
+   "tags": [
+    "autografos originales topps",
+    "cajas de cromos topps",
+    "Cajas selladas Topps",
+    "cajas Topps",
+    "Cajas Topps España",
+    "cajas topps futbol",
+    "cajas Topps para coleccionistas",
+    "cartas",
+    "Comprar cajas Topps",
+    "cromos",
+    "panini",
+    "Topps",
+    "Trading cards"
+   ],
+   "variants": [
+    {
+     "id": 58584718442840,
+     "title": "Segunda Edición",
+     "option1": "Segunda Edición",
+     "option2": null,
+     "option3": null,
+     "sku": "PAN_0434",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "75.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15915271455064,
+     "created_at": "2026-09-28T11:58:34+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    },
+    {
+     "id": 58584718475608,
+     "title": "Primera Edición",
+     "option1": "Primera Edición",
+     "option2": null,
+     "option3": null,
+     "sku": "PAN_0435",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "75.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 15915271455064,
+     "created_at": "2026-09-28T11:58:34+02:00",
+     "updated_at": "2026-10-02T09:26:36+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 91920491446616,
+     "created_at": "2026-08-06T10:55:51+02:00",
+     "position": 1,
+     "updated_at": "2026-08-06T10:56:32+02:00",
+     "product_id": 15915271455064,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0808/0755/9512/files/IMG_0477.jpg?v=1786006592",
+     "width": 1206,
+     "height": 1198
+    }
+   ],
+   "options": [
+    {
+     "name": "Rareza",
+     "position": 1,
+     "values": [
+      "Segunda Edición",
+      "Primera Edición"
+     ]
+    }
+   ]
+  }
+ ]
+}

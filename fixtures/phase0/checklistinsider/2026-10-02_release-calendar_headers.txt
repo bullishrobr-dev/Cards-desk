@@ -1,0 +1,31 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:33:11 GMT
+content-type: text/html; charset=UTF-8
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+pragma: no-cache
+cache-control: public, max-age=86400, must-revalidate, no-store
+x-dns-prefetch-control: on
+vary: Accept-Encoding
+x-litespeed-cache: hit
+x-xss-protection: 1; mode=block
+content-security-policy: upgrade-insecure-requests
+referrer-policy: same-origin
+cross-origin-embedder-policy: credentialless
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+permissions-policy: accelerometer=(), autoplay=(self), camera=(), clipboard-read=(self), clipboard-write=(self), display-capture=(), encrypted-media=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zhHZVmJ72OHuXSXTlJJsOw%2FMMeeIz%2BnGD97wVcTHG6RB5IWD7l4PQ%2BEKboBPhvDhTHOGA%2FtAPmqfTTfGOY8xOmAQri8z9niBR7igMCjU5BCXvv3eBFXTesNM%2FgL0Jrt7mgB78dNS%2B%2Be7nWs%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+expect-ct: max-age=86400, enforce
+x-frame-options: SAMEORIGIN
+content-encoding: zstd
+server: cloudflare
+cf-ray: a442047ceca7d6d0-IAD
+alt-svc: h3=":443"; ma=86400
+

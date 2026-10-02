@@ -1,0 +1,140 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "ECONOMY SELECT",
+      "presentment_name": "ECONOMY SELECT",
+      "code": "ESI",
+      "price": "41.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-08",
+      "delivery_range": [
+       "2026-10-08",
+       "2026-10-08"
+      ],
+      "delivery_days": [
+       4,
+       4
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     },
+     {
+      "name": "EXPRESS WORLDWIDE",
+      "presentment_name": "EXPRESS WORLDWIDE",
+      "code": "WPX",
+      "price": "49.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-06",
+      "delivery_range": [
+       "2026-10-06",
+       "2026-10-06"
+      ],
+      "delivery_days": [
+       2,
+       2
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "ECONOMY SELECT",
+      "presentment_name": "ECONOMY SELECT",
+      "code": "ESI",
+      "price": "41.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-07",
+      "delivery_range": [
+       "2026-10-07",
+       "2026-10-07"
+      ],
+      "delivery_days": [
+       3,
+       3
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     },
+     {
+      "name": "EXPRESS WORLDWIDE",
+      "presentment_name": "EXPRESS WORLDWIDE",
+      "code": "WPX",
+      "price": "49.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-05",
+      "delivery_range": [
+       "2026-10-05",
+       "2026-10-05"
+      ],
+      "delivery_days": [
+       1,
+       1
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

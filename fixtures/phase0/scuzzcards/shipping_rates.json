@@ -1,0 +1,34 @@
+{
+ "_method": "WC Store API: GET /cart (Nonce+Cart-Token), POST /cart/add-item, POST /cart/update-customer {shipping_address:{country,postcode}}; DELETE /cart/items; no checkout",
+ "results": {
+  "GI": {
+   "rates": [],
+   "errors": []
+  },
+  "ES": {
+   "rates": [
+    [
+     "Envío Ordinario",
+     "200",
+     "EUR"
+    ],
+    [
+     "Envío Certificado",
+     "700",
+     "EUR"
+    ],
+    [
+     "Vinted Go",
+     "300",
+     "EUR"
+    ],
+    [
+     "Envio InPost Punto Pack/Taquilla",
+     "500",
+     "EUR"
+    ]
+   ],
+   "errors": []
+  }
+ }
+}

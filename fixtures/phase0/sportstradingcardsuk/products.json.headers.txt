@@ -1,0 +1,36 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 02 Oct 2026 07:26:09 GMT
+content-type: application/json; charset=utf-8
+x-download-options: noopen
+x-request-id: 4ae0d158-8964-4b35-a8c2-286b1b3f2973-1790925969
+etag: W/"page_cache:10666377297:ProductListController:1f4a1dd42498b54b2f079452fe88bc17"
+cf-cache-status: DYNAMIC
+set-cookie: cart_currency=GBP; path=/; expires=Fri, 16 Oct 2026 07:26:09 GMT
+set-cookie: _shopify_essential=:AaD7gZe8AAEAmkJ8brL_fZYdxeZFhAAx-RXYy3kqn_8uSv2_RZruhxf3-gYXLmi83xFvmgdoSHAUaK-Xh0w1rvwkdOc:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+set-cookie: _shopify_analytics=:AaD7gZfYAAEA0T62BEpkniAEz3uRgSbQmD4jq986S1LTfsIq84UW0bpZDglB9IJLgNJ1b3NH_S1VNa4SsKvsYYgvMzI:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+set-cookie: _shopify_marketing=:AaD7gZfZAAEAbHCMEGbEsiaIFrHHsEdN5sJLCrkr2jOLzeh_eCNYYj0YcDi-9j6aPGy8QgriEf3wqqbJV_3-oZI1noE:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+shopify-complexity-score: 44
+shopify-complexity-score-v2: 44
+x-frame-options: DENY
+content-security-policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+access-control-allow-origin: *
+strict-transport-security: max-age=7889238
+x-permitted-cross-domain-policies: none
+vary: Accept
+vary: accept-encoding
+cdn-cache-control: no-cache, no-store
+content-language: en-GB
+link: </.well-known/ucp>; rel="ucp"; version="2026-08-25"
+powered-by: Shopify
+server-timing: processing;dur=50;desc="gc:1", db;dur=21, db_async;dur=6.879, asn;desc="396982", edge;desc="IAD", country;desc="US", servedBy;desc="gvzr", requestID;desc="4ae0d158-8964-4b35-a8c2-286b1b3f2973-1790925969", _y;desc="72b1bd33-c553-437a-a4b0-353df16760ae", _s;desc="65ac6a0a-6eae-41b7-966f-c5cc15c5a3a5", _cmp;desc="3.AMPS_US_f_f_uw-2rn3eS4yheYxbj5qATQ", _cta;desc="1", _ye;desc="1822483569", _se;desc="1790927769", compressionLevel;desc="5"
+x-dc: gcp-us-east1,gcp-us-east1,gcp-us-east1
+x-xss-protection: 1; mode=block
+alt-svc: h3=":443"; ma=86400
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Fh%2B0%2FRMDBFA5g9HOoXE6HaD1mWWceSLq2HEFULUD6Zcc6gcXHUQoBx85IEope5%2BCdm%2F5CaYYUJ%2F%2FNEDQO5idZ1bUetg%2FMA%2FoY5YUkGaRYSi2Kp4HyJLMxQM95%2B0dX4JvM6PreqnLybQOJg%3D%3D"}]}
+x-content-type-options: nosniff
+cf-ray: a441fa2c1ca2ad11-IAD
+

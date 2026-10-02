@@ -1,0 +1,80 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "DHL Express Worldwide",
+      "presentment_name": "DHL Express Worldwide",
+      "code": "WPX",
+      "price": "48.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-02",
+      "delivery_range": [
+       "2026-10-02",
+       "2026-10-02"
+      ],
+      "delivery_days": [
+       0,
+       0
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "DHL Express Worldwide",
+      "presentment_name": "DHL Express Worldwide",
+      "code": "WPX",
+      "price": "53.00",
+      "source": "DHL Commerce",
+      "delivery_date": "2026-10-02",
+      "delivery_range": [
+       "2026-10-02",
+       "2026-10-02"
+      ],
+      "delivery_days": [
+       0,
+       0
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

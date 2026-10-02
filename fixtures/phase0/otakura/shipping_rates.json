@@ -1,0 +1,69 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 422,
+   "body": {
+    "country": [
+     "Paese o area geografica non supportati"
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "BRT Express (From 2 to 6 days)",
+      "presentment_name": "BRT Express (From 2 to 6 days)",
+      "code": "BRT Express (From 2 to 6 days)",
+      "price": "30.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     },
+     {
+      "name": "Express FedEx (1-2 giorni)",
+      "presentment_name": "Express FedEx (1-2 giorni)",
+      "code": "Express FedEx (1-2 giorni)",
+      "price": "44.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "Spedizione express FedEx, 1-2 giorni lavorativi.",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

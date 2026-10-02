@@ -1,0 +1,71 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Standard International",
+      "presentment_name": "Standard International",
+      "code": "Standard International",
+      "price": "30.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "EUR",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": null,
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Standard International",
+      "presentment_name": "Standard International",
+      "code": "Standard International",
+      "price": "20.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [
+       2,
+       8
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "EUR",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "_source": "https://getsportscards.co.uk/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 15052450464120,
+   "title": "Tiger Woods Funko Pop 2025 '' Sun Day Red '' Golf #05 - Graded PSA 9",
+   "handle": "tiger-woods-funko-pop-2025-sun-day-red-golf-05-graded-psa-9",
+   "body_html": "<p>A great addition for Tiger Woods, golf, Funko Pop and sports memorabilia collectors.</p>\n<p>Add one of golf's most iconic names to your collection with this Tiger Woods “Sun Day Red” Funko Pop, professionally graded PSA 9 and encapsulated for protection and display.</p>\n<p>PSA Graded 9 - Cert No.…[truncated]",
+   "published_at": "2026-09-07T13:33:20+01:00",
+   "created_at": "2026-09-07T13:23:20+01:00",
+   "updated_at": "2026-10-02T08:26:02+01:00",
+   "vendor": "Funko",
+   "product_type": "Graded Funko Pop",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55652480909688,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "02108567",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": true,
+     "price": "80.00",
+     "grams": 700,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15052450464120,
+     "created_at": "2026-09-07T13:23:20+01:00",
+     "updated_at": "2026-10-02T08:26:02+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 76350568431992,
+     "created_at": "2026-09-07T13:17:30+01:00",
+     "position": 1,
+     "updated_at": "2026-09-07T13:17:35+01:00",
+     "product_id": 15052450464120,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0626/2482/5543/files/02108567-front.jpg?v=1788783455",
+     "width": 2801,
+     "height": 4261
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15049771450744,
+   "title": "2025 Leaf Vivid Baseball Proof Pack 1/1",
+   "handle": "2025-leaf-vivid-baseball-proof-pack-1-1",
+   "body_html": "<p>- Each pack contains one random 1/1 proof card from the 2025 Leaf Vivid Baseball set<br>- All cards are from the Leaf Vivid Baseball 2025 set and features proof quality!</p>\n<p>Pack Break:<br>- (1) 1/1 Proof Card</p>…[truncated]",
+   "published_at": "2026-08-26T10:42:51+01:00",
+   "created_at": "2026-08-26T10:42:50+01:00",
+   "updated_at": "2026-10-02T08:26:02+01:00",
+   "vendor": "Leaf",
+   "product_type": "Collectible Trading Cards",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55640747377016,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "14.99",
+     "grams": 300,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15049771450744,
+     "created_at": "2026-08-26T10:42:50+01:00",
+     "updated_at": "2026-10-02T08:26:02+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 76305199366520,
+     "created_at": "2026-08-26T10:39:31+01:00",
+     "position": 1,
+     "updated_at": "2026-08-26T10:40:16+01:00",
+     "product_id": 15049771450744,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0626/2482/5543/files/imgi_97_s-l1600.jpg?v=1787737216",
+     "width": 1200,
+     "height": 1600
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": [
+  {
+   "id": 15048955167096,
+   "title": "2025-26 Panini Select Road to FIFA World Cup Soccer Blaster Box",
+   "handle": "2025-26-panini-select-road-to-fifa-world-cup-soccer-blaster-box",
+   "body_html": "<p><meta charset=\"utf-8\"><strong><span>Box Contents:</span></strong></p>\n<ul>\n<li>\n<span>6 Packs Per Box,</span><span>4 Cards Per Pack, </span><span>24 Cards Total Per Box</span>\n</li>\n<li>\n<p class=\"isSelectedEnd\"><strong><span>On average, each box contains:</span></strong></p>\n<ul>\n<li><span>3 Ins…[truncated]",
+   "published_at": "2026-08-21T20:50:20+01:00",
+   "created_at": "2026-08-21T20:50:19+01:00",
+   "updated_at": "2026-10-02T08:26:02+01:00",
+   "vendor": "Panini",
+   "product_type": "Collectible Trading Cards",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55637418836344,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": false,
+     "available": true,
+     "price": "39.99",
+     "grams": 400,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15048955167096,
+     "created_at": "2026-08-21T20:50:19+01:00",
+     "updated_at": "2026-10-02T08:26:02+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 76287003951480,
+     "created_at": "2026-08-21T20:46:51+01:00",
+     "position": 1,
+     "updated_at": "2026-08-21T20:46:55+01:00",
+     "product_id": 15048955167096,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0626/2482/5543/files/imgi_2_2526SelectRTWC_BL_CardSample_Square.jpg?v=1787341615",
+     "width": 3000,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15048954675576,
+   "title": "2026 Topps Merlin Premier League Value Blaster Box",
+   "handle": "2026-topps-merlin-premier-league-value-blaster-box",
+   "body_html": "<p class=\"mb-spacing-4 body-2\">Contents:</p>\n<p class=\"mb-spacing-4 body-2\">-7 Packs per Box, 4 Cards per Pack , 28 Cards Total per box </p>\n<p class=\"mb-spacing-4 body-2\">-1 Guaranteed Numbered Card per box</p>\n<p class=\"mb-spacing-4 body-2\"><meta charset=\"utf-8\">- 3 Exclusive Raywave Parallels,  1…[truncated]",
+   "published_at": "2026-08-21T20:42:32+01:00",
+   "created_at": "2026-08-21T20:42:30+01:00",
+   "updated_at": "2026-10-02T08:26:02+01:00",
+   "vendor": "Topps",
+   "product_type": "Collectible Trading Cards",
+   "tags": [
+    "Blaster Box",
+    "Soccer"
+   ],
+   "variants": [
+    {
+     "id": 55637416182136,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "FS0006493-DB",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": false,
+     "price": "34.99",
+     "grams": 400,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15048954675576,
+     "created_at": "2026-08-21T20:42:30+01:00",
+     "updated_at": "2026-10-02T08:26:02+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 76286994088312,
+     "created_at": "2026-08-21T20:39:28+01:00",
+     "position": 1,
+     "updated_at": "2026-08-21T20:39:32+01:00",
+     "product_id": 15048954675576,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0626/2482/5543/files/imgi_102_2526-merlinepl-blaster-box.jpg?v=1787341172",
+     "width": 1286,
+     "height": 1800
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15035548205432,
+   "title": "2026 Topps Finest Premier League EPL Soccer Hobby Box",
+   "handle": "2026-topps-finest-premier-league-epl-soccer-hobby-box",
+   "body_html": "<p>Box Contents:</p>\n<ul>\n<li>2 Guaranteed Autos per box</li>\n<li><span>6 Packs Per Box, 10 Cards Per Pack, Total 60 Cards per box</span></li>\n<li><span>12 Inserts, and 4-5 Numbered Cards, on average!</span></li>\n</ul>\n<p>The first ever Premier League Finest football cards collection marks the debut…[truncated]",
+   "published_at": "2026-06-21T18:13:41+01:00",
+   "created_at": "2026-06-21T18:13:39+01:00",
+   "updated_at": "2026-10-02T08:26:02+01:00",
+   "vendor": "Topps",
+   "product_type": "Collectible Trading Cards",
+   "tags": [],
+   "variants": [
+    {
+     "id": 55586275819896,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": false,
+     "available": false,
+     "price": "305.00",
+     "grams": 700,
+     "compare_at_price": "365.00",
+     "position": 1,
+     "product_id": 15035548205432,
+     "created_at": "2026-06-21T18:13:40+01:00",
+     "updated_at": "2026-10-02T08:26:02+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 76051144475000,
+     "created_at": "2026-06-21T18:11:14+01:00",
+     "position": 1,
+     "updated_at": "2026-06-21T18:15:25+01:00",
+     "product_id": 15035548205432,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0626/2482/5543/files/2026-Topps-Finest-Premier-League-EPL-Soccer-Hob-56.jpg?v=1782062125",
+     "width": 761,
+     "height": 761
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

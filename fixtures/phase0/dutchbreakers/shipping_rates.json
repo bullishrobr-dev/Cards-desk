@@ -1,0 +1,75 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 422,
+   "body": {
+    "country": [
+     "Country/region not supported"
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Standard DHL",
+      "presentment_name": "Standard DHL",
+      "code": "Standard DHL",
+      "price": "23.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [
+       3,
+       5
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     },
+     {
+      "name": "Package with insurance",
+      "presentment_name": "Package with insurance",
+      "code": "Package with insurance",
+      "price": "26.00",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [
+       3,
+       5
+      ],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "USD",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

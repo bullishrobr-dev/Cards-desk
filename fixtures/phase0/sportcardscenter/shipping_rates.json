@@ -1,0 +1,45 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 422,
+   "body": {
+    "country": [
+     "El país o la región no se admite."
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Estándar",
+      "presentment_name": "Estándar",
+      "code": "Estándar",
+      "price": "4.50",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "EUR",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

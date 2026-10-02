@@ -1,0 +1,317 @@
+{
+ "_source": "https://deichcards.de/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 15696699883844,
+   "title": "Upper Deck Splendor Hockey Hobby Box 2025/2026",
+   "handle": "upper-deck-splendor-hockey-hobby-box-2025-2026",
+   "body_html": "<div style=\"color: inherit;\">\n<p>Nach einer achtjährigen Pause kehrt Splendor Hockey mit voller Kraft zurück! Dieses Produkt, bei dem jede Box eine Premium-Karte enthält, umfasst ein Basisset mit 50 Motiven, das die Spitzenklasse des Eishockeys versammelt. Freuen Sie sich auf die aktuellen Topstars …[truncated]",
+   "published_at": "2026-10-01T16:52:18+02:00",
+   "created_at": "2026-10-01T16:50:16+02:00",
+   "updated_at": "2026-10-02T09:26:20+02:00",
+   "vendor": "Upper Deck",
+   "product_type": "Eishockey",
+   "tags": [
+    "2025/2026",
+    "Eishockey",
+    "Hobby Box",
+    "neu",
+    "NHL",
+    "Upper Deck"
+   ],
+   "variants": [
+    {
+     "id": 57360156066116,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "DCS-EIS0110",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "580.00",
+     "grams": 160,
+     "compare_at_price": "580.00",
+     "position": 1,
+     "product_id": 15696699883844,
+     "created_at": "2026-10-01T16:50:16+02:00",
+     "updated_at": "2026-10-02T09:26:20+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 88071762575684,
+     "created_at": "2026-10-01T16:35:54+02:00",
+     "position": 1,
+     "updated_at": "2026-10-01T16:35:56+02:00",
+     "product_id": 15696699883844,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0782/4094/0356/files/upper_deck_splendor_hockey_hobby_box_2025_2026.png?v=1790865356",
+     "width": 1500,
+     "height": 1500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15693963755844,
+   "title": "Topps Chrome Tennis Breaker Delight Box 2026",
+   "handle": "topps-chrome-tennis-breaker-delight-box-2026",
+   "body_html": "<p><em><strong>Limitiert auf 3 Boxen / Haushalt.</strong></em><br><em><strong>Mehrfachbestellungen werden storniert.</strong></em></p>\n<p>Topps Chrome Tennis kehrt mit einem völlig neuen Design und einem globalen Lineup zurück, das einige der größten Namen des Sports zusammen mit aufstrebenden Stars…[truncated]",
+   "published_at": "2026-10-01T10:41:55+02:00",
+   "created_at": "2026-09-29T16:14:00+02:00",
+   "updated_at": "2026-10-02T09:26:20+02:00",
+   "vendor": "Topps",
+   "product_type": "Tennis",
+   "tags": [
+    "2026",
+    "garantiert Autographs",
+    "Hobby Box",
+    "Local Store",
+    "neu",
+    "Tennis",
+    "Topps"
+   ],
+   "variants": [
+    {
+     "id": 57345016824132,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "DCS-TEN0005",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "205.00",
+     "grams": 0,
+     "compare_at_price": "205.00",
+     "position": 1,
+     "product_id": 15693963755844,
+     "created_at": "2026-09-29T16:14:00+02:00",
+     "updated_at": "2026-10-02T09:26:20+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 88048682762564,
+     "created_at": "2026-09-29T16:13:51+02:00",
+     "position": 1,
+     "updated_at": "2026-09-29T16:13:54+02:00",
+     "product_id": 15693963755844,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0782/4094/0356/files/topps_chrome_tennis_2026_breaker_delight.png?v=1790691234",
+     "width": 1500,
+     "height": 1500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": [
+  {
+   "id": 15691643978052,
+   "title": "Topps Royalty Premier League Hobby Box 2025/2026",
+   "handle": "topps-royalty-premier-league-hobby-box-2025-2026",
+   "body_html": "<div class=\"flex flex-col space-y-6\">\n<div class=\"relative\">\n<div class=\"overflow-hidden transition-all duration-200 ease-expressive-standard h-full\">\n<p class=\"mb-spacing-4 body-2 body-2 mb-spacing-4\">Als Schaufenster für einige der prestigeträchtigsten Inhalte im Topps-Portfolio konzipiert, verbin…[truncated]",
+   "published_at": "2026-09-26T11:24:07+02:00",
+   "created_at": "2026-09-26T11:01:32+02:00",
+   "updated_at": "2026-10-02T09:26:20+02:00",
+   "vendor": "Topps",
+   "product_type": "Fussball",
+   "tags": [
+    "2025/2026",
+    "Fussball",
+    "garantiert Autographs",
+    "Hobby Box",
+    "neu",
+    "Topps"
+   ],
+   "variants": [
+    {
+     "id": 57332355793220,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "DCS-FUS0244",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "1500.00",
+     "grams": 0,
+     "compare_at_price": "1500.00",
+     "position": 1,
+     "product_id": 15691643978052,
+     "created_at": "2026-09-26T11:01:32+02:00",
+     "updated_at": "2026-10-02T09:26:20+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 88027153137988,
+     "created_at": "2026-09-26T11:18:16+02:00",
+     "position": 1,
+     "updated_at": "2026-09-26T11:18:19+02:00",
+     "product_id": 15691643978052,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0782/4094/0356/files/Topps-Royalty-Premier-League-Hobby-Box-2025-26.png?v=1790414299",
+     "width": 1500,
+     "height": 1500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15672647680324,
+   "title": "Topps Flagship Premier League Hobby Box 2026/2027",
+   "handle": "topps-flagship-hobby-premier-league-hobby-box-2026-2027",
+   "body_html": "<p><b>Maximal 6 Boxen pro Haushalt. Das Limit gilt über alle Bestellungen hinweg. Bei Verstößen behalten wir uns vor, alle Bestellungen zu stornieren und den Account von zukünftigen limitierten Produkten auszuschließen.</b></p>\n<p>Aufgebaut auf einer der bedeutendsten Hobby-Marken, vereint diese Ver…[truncated]",
+   "published_at": "2026-09-17T10:39:30+02:00",
+   "created_at": "2026-09-15T11:28:36+02:00",
+   "updated_at": "2026-10-02T09:26:20+02:00",
+   "vendor": "Topps",
+   "product_type": "Fussball",
+   "tags": [
+    "2026/2027",
+    "Fussball",
+    "garantiert Autographs",
+    "Hobby Box",
+    "neu",
+    "Topps"
+   ],
+   "variants": [
+    {
+     "id": 57269120696644,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "DCS-FUS0239",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "190.00",
+     "grams": 280,
+     "compare_at_price": "190.00",
+     "position": 1,
+     "product_id": 15672647680324,
+     "created_at": "2026-09-15T11:28:36+02:00",
+     "updated_at": "2026-10-02T09:26:20+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 87857103274308,
+     "created_at": "2026-09-16T11:18:56+02:00",
+     "position": 1,
+     "updated_at": "2026-09-16T11:18:59+02:00",
+     "product_id": 15672647680324,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0782/4094/0356/files/topps_flagship_premier_league_hobby_box_2026_2027.png?v=1789550339",
+     "width": 1500,
+     "height": 1500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15441411375428,
+   "title": "Topps Flagship Uefa Club Competitions Hanger Box 2025/2026",
+   "handle": "topps-flagship-uefa-club-competitions-hanger-box-2025-2026",
+   "body_html": "<p>Topps UEFA Club Competitions kehrt zur Saison 2025/26 zurück und eröffnet ein neues Hobby-Jahr für die spannendsten Fußballwettbewerbe der Welt.</p>\n<p><span>Sammle Fußball Trading Cards aus allen drei UEFA Clubwettbewerben der Männer.: Conference League, Europa League, Champions League. Im Durch…[truncated]",
+   "published_at": "2026-09-06T13:12:52+02:00",
+   "created_at": "2026-01-23T15:48:26+01:00",
+   "updated_at": "2026-10-02T09:26:20+02:00",
+   "vendor": "Topps",
+   "product_type": "Fussball",
+   "tags": [
+    "Blaster Box",
+    "Booster Pack",
+    "Chance auf Autographs",
+    "Fussball",
+    "pfingsten26",
+    "POS",
+    "Sale",
+    "Topps"
+   ],
+   "variants": [
+    {
+     "id": 56283384742212,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "DCS-FUS0171",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "12.00",
+     "grams": 60,
+     "compare_at_price": "15.00",
+     "position": 1,
+     "product_id": 15441411375428,
+     "created_at": "2026-01-23T15:48:26+01:00",
+     "updated_at": "2026-10-02T09:26:20+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83695601353028,
+     "created_at": "2026-01-27T11:11:12+01:00",
+     "position": 1,
+     "updated_at": "2026-01-27T11:11:15+01:00",
+     "product_id": 15441411375428,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0782/4094/0356/files/topps_flagship_ucc_hanger_box_2025_2026.jpg?v=1769508675",
+     "width": 1500,
+     "height": 1500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

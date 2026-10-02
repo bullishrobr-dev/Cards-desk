@@ -1,0 +1,298 @@
+{
+ "_source": "https://sportscardsworldwide.com/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 15697066819908,
+   "title": "Topps Williams 2026 Collection Hobby Box",
+   "handle": "topps-williams-2026-collection-hobby-box",
+   "body_html": "<p class=\"mb-spacing-4 body-2 body-2 mb-spacing-4\"><strong>This is a preorder </strong></p>\n<p class=\"mb-spacing-4 body-2 body-2 mb-spacing-4\"><strong><br>1 Guaranteed Auto Per Box</strong></p>\n<p class=\"mb-spacing-4 body-2 body-2 mb-spacing-4\">Introducing the Topps Williams 2026 Collection. Own a p…[truncated]",
+   "published_at": "2026-10-01T22:29:16+01:00",
+   "created_at": "2026-10-01T22:29:14+01:00",
+   "updated_at": "2026-10-02T08:26:16+01:00",
+   "vendor": "Sports Cards Worldwide",
+   "product_type": "Sports Card",
+   "tags": [],
+   "variants": [
+    {
+     "id": 57363933462852,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "TOPF1WIL-HB",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": true,
+     "price": "255.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15697066819908,
+     "created_at": "2026-10-01T22:29:14+01:00",
+     "updated_at": "2026-10-02T08:26:16+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 88074979770692,
+     "created_at": "2026-10-01T22:25:01+01:00",
+     "position": 1,
+     "updated_at": "2026-10-01T22:25:04+01:00",
+     "product_id": 15697066819908,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0787/7014/3556/files/Williams.png?v=1790889904",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15694740422980,
+   "title": "Futera Formula E 2025/26 Hobby Master Case",
+   "handle": "futera-formula-e-2025-26-hobby-master-case",
+   "body_html": "<p>We’re pleased to announce the launch of Formula E 2025/26!<br>An iconic new release featuring some of the stars of the 2025/26 Formula E season, this Limited Edition collection delivers exclusive cards, ultra-low print runs, and on-card autographs.<br><br> <br>Formula E 2025/26:<br>Includes on ca…[truncated]",
+   "published_at": "2026-09-30T08:48:40+01:00",
+   "created_at": "2026-09-30T08:47:37+01:00",
+   "updated_at": "2026-10-02T08:26:16+01:00",
+   "vendor": "Sports Cards Worldwide",
+   "product_type": "Sports Card",
+   "tags": [
+    "availability:Active",
+    "brand:Futera",
+    "format:Hobby Box",
+    "league:Formula E",
+    "sport:Racing"
+   ],
+   "variants": [
+    {
+     "id": 57347355967812,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "FUTFE-MAC",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": true,
+     "price": "2200.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15694740422980,
+     "created_at": "2026-09-30T08:47:37+01:00",
+     "updated_at": "2026-10-02T08:26:16+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 88055728439620,
+     "created_at": "2026-09-30T08:48:50+01:00",
+     "position": 1,
+     "updated_at": "2026-09-30T08:48:52+01:00",
+     "product_id": 15694740422980,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0787/7014/3556/files/FEMasterCase.png?v=1790754532",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": [
+  {
+   "id": 15683236430148,
+   "title": "Club Legacyz 5th Edition Back to School Soccer Case",
+   "handle": "club-legacyz-5th-edition-back-to-school-soccer-case",
+   "body_html": "<h3 class=\"GTSHeaderBar\"><strong>2026 Club Legacyz 5th Edition - Back to School Soccer Cards Box Break:</strong></h3>\n<ul type=\"disc\">\n<li>\n<span class=\"Blue\"><strong>(1)</strong></span><strong> Limited Edition Card, <em>max #'d to 200</em></strong>\n</li>\n</ul>\n<h3 class=\"GTSHeaderBar\"><strong>2026 …[truncated]",
+   "published_at": "2026-09-21T19:03:02+01:00",
+   "created_at": "2026-09-21T19:01:10+01:00",
+   "updated_at": "2026-10-02T08:26:16+01:00",
+   "vendor": "Sports Cards Worldwide",
+   "product_type": "Sports Card",
+   "tags": [
+    "brand:Club Legacy",
+    "format:Case",
+    "sport:Soccer"
+   ],
+   "variants": [
+    {
+     "id": 57305426395460,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "CLB2S-C",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": false,
+     "price": "1999.99",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15683236430148,
+     "created_at": "2026-09-21T19:01:10+01:00",
+     "updated_at": "2026-10-02T08:26:16+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 87914255122756,
+     "created_at": "2026-09-21T19:02:30+01:00",
+     "position": 1,
+     "updated_at": "2026-09-21T19:02:33+01:00",
+     "product_id": 15683236430148,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0787/7014/3556/files/IconsBack.png?v=1790013753",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15683236233540,
+   "title": "Club Legacyz 5th Edition Back to School Soccer Box",
+   "handle": "club-legacyz-5th-edition-back-to-school-soccer-box",
+   "body_html": "<h3 class=\"GTSHeaderBar\"><strong>2026 Club Legacyz 5th Edition - Back to School Soccer Cards Box Break:</strong></h3>\n<ul type=\"disc\">\n<li>\n<span class=\"Blue\"><strong>(1)</strong></span><strong> Limited Edition Card, <em>max #'d to 200</em></strong>\n</li>\n</ul>\n<h3 class=\"GTSHeaderBar\"><strong>2026 …[truncated]",
+   "published_at": "2026-09-21T19:00:44+01:00",
+   "created_at": "2026-09-21T19:00:41+01:00",
+   "updated_at": "2026-10-02T08:26:16+01:00",
+   "vendor": "Sports Cards Worldwide",
+   "product_type": "Sports Card",
+   "tags": [
+    "brand:Club Legacy",
+    "format:Box",
+    "sport:Soccer"
+   ],
+   "variants": [
+    {
+     "id": 57305426035012,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "CLB2S-HB",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": false,
+     "price": "199.99",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15683236233540,
+     "created_at": "2026-09-21T19:00:42+01:00",
+     "updated_at": "2026-10-02T08:26:16+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 87914237329732,
+     "created_at": "2026-09-21T18:58:11+01:00",
+     "position": 1,
+     "updated_at": "2026-09-21T18:58:14+01:00",
+     "product_id": 15683236233540,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0787/7014/3556/files/IconsBackHB.png?v=1790013494",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15683223060804,
+   "title": "Panini Immaculate Soccer 2022/23 Hobby Case",
+   "handle": "panini-immaculate-soccer-2022-23-hobby-case",
+   "body_html": "<div>\n<strong>2022–23 Panini Immaculate Soccer</strong> continues the brand’s reputation for high-end craftsmanship and premium content, offering a mix of club and country representation across a <strong>200-card base set</strong>. Each <strong>seven-card Hobby box</strong> contains <strong>five hit…[truncated]",
+   "published_at": "2026-09-21T18:32:18+01:00",
+   "created_at": "2026-09-21T18:32:16+01:00",
+   "updated_at": "2026-10-02T08:26:16+01:00",
+   "vendor": "Sports Cards Worldwide",
+   "product_type": "Sports Card",
+   "tags": [
+    "brand:Panini",
+    "format:Case",
+    "sport:Soccer",
+    "year:2022/23"
+   ],
+   "variants": [
+    {
+     "id": 57305377997124,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PANIMAC22-HC",
+     "requires_shipping": true,
+     "taxable": false,
+     "available": true,
+     "price": "6099.99",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15683223060804,
+     "created_at": "2026-09-21T18:32:16+01:00",
+     "updated_at": "2026-10-02T08:26:16+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 87914101702980,
+     "created_at": "2026-09-21T18:31:09+01:00",
+     "position": 1,
+     "updated_at": "2026-09-21T18:31:11+01:00",
+     "product_id": 15683223060804,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0787/7014/3556/files/immauclate2223.png?v=1790011871",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

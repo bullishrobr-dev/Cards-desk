@@ -1,0 +1,600 @@
+{
+ "_source": "https://scuzzcards.com/wp-json/wc/store/v1/products?per_page=3&orderby=date&order=desc",
+ "_fetched": "2026-10-02",
+ "products": [
+  {
+   "id": 6576,
+   "name": "Topps Manchester United Soccer Collector Tin 2026/2027",
+   "slug": "topps-manchester-united-soccer-collector-tin-2026-2027",
+   "parent": 0,
+   "type": "simple",
+   "variation": "",
+   "permalink": "https://scuzzcards.com/producto/topps-manchester-united-soccer-collector-tin-2026-2027/",
+   "sku": "",
+   "short_description": "<ul>\n<li>Lata de coleccionista con 35 cartas del Manchester United,\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autograph",
+   "description": "<p>Topps Manchester United Soccer Collector Tin 2026/2027</p>\n<p>Lata de coleccionista con 35 cartas del Manchester United,</p>\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autographs in lucky tins!</li>\n<li>Cartas Gold Va…[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "3400",
+    "regular_price": "3400",
+    "sale_price": "3400",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "",
+    "currency_suffix": " €"
+   },
+   "price_html": "<span class=\"woocommerce-Price-amount amount\">34,00&nbsp;<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></span> <small class=\"woocommerce-price-suffix\">I.V.A Incluido</small>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 6577,
+     "src": "https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin.webp",
+     "thumbnail": "https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-300x300.webp",
+     "srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin.webp 480w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-214x300.webp 214w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-9x12.webp 9w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-17x24.webp 17w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-26x36.webp 26w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-34x48.webp 34w",
+     "sizes": "(max-width: 480px) 100vw, 480px",
+     "thumbnail_srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-300x300.webp 300w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-150x150.webp 150w, https://scuzzcards.com/wp-content/uploads/2026/09/man-u-tin-100x100.webp 100w",
+     "thumbnail_sizes": "(max-width: 300px) 100vw, 300px",
+     "name": "Topps Manchester United Soccer Collector Tin 2026/2027",
+     "alt": "Topps Manchester United Soccer Collector Tin 2026/2027"
+    }
+   ],
+   "categories": [
+    {
+     "id": 84,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-category/deportes/futbol/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 110,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-tag/futbol/"
+    },
+    {
+     "id": 56,
+     "name": "Manchester United",
+     "slug": "manchester-united",
+     "link": "https://scuzzcards.com/product-tag/manchester-united/"
+    },
+    {
+     "id": 330,
+     "name": "Premier League",
+     "slug": "premier-league",
+     "link": "https://scuzzcards.com/product-tag/premier-league/"
+    },
+    {
+     "id": 111,
+     "name": "Topps",
+     "slug": "topps",
+     "link": "https://scuzzcards.com/product-tag/topps/"
+    }
+   ],
+   "brands": [],
+   "attributes": [
+    {
+     "id": 13,
+     "name": "Categorias",
+     "taxonomy": "pa_categorias",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 344,
+       "name": "Lata",
+       "slug": "lata"
+      }
+     ]
+    },
+    {
+     "id": 14,
+     "name": "Ligas",
+     "taxonomy": "pa_ligas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 320,
+       "name": "Premier League",
+       "slug": "premier-league"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "name": "Marcas",
+     "taxonomy": "pa_marcas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 257,
+       "name": "Topps",
+       "slug": "topps"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "name": "Temporada",
+     "taxonomy": "pa_temporada",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 473,
+       "name": "2027 26/27",
+       "slug": "2027-26-27"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "name": "Equipos de fútbol",
+     "taxonomy": "pa_equipos-de-futbol",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 331,
+       "name": "Chelsea FC",
+       "slug": "chelsea-fc"
+      }
+     ]
+    }
+   ],
+   "variations": [],
+   "grouped_products": [],
+   "has_options": false,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "stock_availability": {
+    "text": "",
+    "class": "in-stock"
+   },
+   "sold_individually": false,
+   "weight": "0.200",
+   "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+   },
+   "formatted_weight": "0,2 kg",
+   "formatted_dimensions": "N/D",
+   "add_to_cart": {
+    "text": "Añadir al carrito",
+    "description": "Añadir al carrito: &ldquo;Topps Manchester United Soccer Collector Tin 2026/2027&rdquo;",
+    "url": "/wp-json/wc/store/v1/products?per_page=3&#038;orderby=date&#038;order=desc&#038;add-to-cart=6576",
+    "single_text": "Añadir al carrito",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "is_password_protected": false,
+   "extensions": {},
+   "_links": {
+    "self": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products/6576",
+      "targetHints": {
+       "allow": [
+        "GET"
+       ]
+      }
+     }
+    ],
+    "collection": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products"
+     }
+    ],
+    "related": [
+     {
+      "embeddable": true,
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products?related=6576&per_page=10"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6569,
+   "name": "Topps Chelsea Soccer Collector Tin 2026/2027",
+   "slug": "topps-chelsea-soccer-collector-tin-2026-2027",
+   "parent": 0,
+   "type": "simple",
+   "variation": "",
+   "permalink": "https://scuzzcards.com/producto/topps-chelsea-soccer-collector-tin-2026-2027/",
+   "sku": "",
+   "short_description": "<ul>\n<li>Lata de coleccionista con 35 cartas del Chelsea,\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autographs in lucky",
+   "description": "<p>Topps Chelsea Soccer Collector Tin 2026/2027</p>\n<p>Lata de coleccionista con 35 cartas del Chelsea,</p>\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autographs in lucky tins!</li>\n<li>Cartas Gold Vault Limited Edition …[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "3400",
+    "regular_price": "3400",
+    "sale_price": "3400",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "",
+    "currency_suffix": " €"
+   },
+   "price_html": "<span class=\"woocommerce-Price-amount amount\">34,00&nbsp;<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></span> <small class=\"woocommerce-price-suffix\">I.V.A Incluido</small>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 6571,
+     "src": "https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin.webp",
+     "thumbnail": "https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-300x300.webp",
+     "srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin.webp 480w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-214x300.webp 214w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-9x12.webp 9w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-17x24.webp 17w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-26x36.webp 26w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-34x48.webp 34w",
+     "sizes": "(max-width: 480px) 100vw, 480px",
+     "thumbnail_srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-300x300.webp 300w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-150x150.webp 150w, https://scuzzcards.com/wp-content/uploads/2026/09/chelsea-tin-100x100.webp 100w",
+     "thumbnail_sizes": "(max-width: 300px) 100vw, 300px",
+     "name": "Topps Chelsea Soccer Collector Tin 2026/2027",
+     "alt": "Topps Chelsea Soccer Collector Tin 2026/2027"
+    }
+   ],
+   "categories": [
+    {
+     "id": 84,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-category/deportes/futbol/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 110,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-tag/futbol/"
+    },
+    {
+     "id": 54,
+     "name": "Manchester City",
+     "slug": "manchester-city",
+     "link": "https://scuzzcards.com/product-tag/manchester-city/"
+    },
+    {
+     "id": 330,
+     "name": "Premier League",
+     "slug": "premier-league",
+     "link": "https://scuzzcards.com/product-tag/premier-league/"
+    },
+    {
+     "id": 111,
+     "name": "Topps",
+     "slug": "topps",
+     "link": "https://scuzzcards.com/product-tag/topps/"
+    }
+   ],
+   "brands": [],
+   "attributes": [
+    {
+     "id": 13,
+     "name": "Categorias",
+     "taxonomy": "pa_categorias",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 344,
+       "name": "Lata",
+       "slug": "lata"
+      }
+     ]
+    },
+    {
+     "id": 14,
+     "name": "Ligas",
+     "taxonomy": "pa_ligas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 320,
+       "name": "Premier League",
+       "slug": "premier-league"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "name": "Marcas",
+     "taxonomy": "pa_marcas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 257,
+       "name": "Topps",
+       "slug": "topps"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "name": "Temporada",
+     "taxonomy": "pa_temporada",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 473,
+       "name": "2027 26/27",
+       "slug": "2027-26-27"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "name": "Equipos de fútbol",
+     "taxonomy": "pa_equipos-de-futbol",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 331,
+       "name": "Chelsea FC",
+       "slug": "chelsea-fc"
+      }
+     ]
+    }
+   ],
+   "variations": [],
+   "grouped_products": [],
+   "has_options": false,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "stock_availability": {
+    "text": "",
+    "class": "in-stock"
+   },
+   "sold_individually": false,
+   "weight": "0.200",
+   "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+   },
+   "formatted_weight": "0,2 kg",
+   "formatted_dimensions": "N/D",
+   "add_to_cart": {
+    "text": "Añadir al carrito",
+    "description": "Añadir al carrito: &ldquo;Topps Chelsea Soccer Collector Tin 2026/2027&rdquo;",
+    "url": "/wp-json/wc/store/v1/products?per_page=3&#038;orderby=date&#038;order=desc&#038;add-to-cart=6569",
+    "single_text": "Añadir al carrito",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "is_password_protected": false,
+   "extensions": {},
+   "_links": {
+    "self": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products/6569",
+      "targetHints": {
+       "allow": [
+        "GET"
+       ]
+      }
+     }
+    ],
+    "collection": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products"
+     }
+    ],
+    "related": [
+     {
+      "embeddable": true,
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products?related=6569&per_page=10"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6563,
+   "name": "Topps Manchester City Soccer Collector Tin 2026/2027",
+   "slug": "topps-manchester-soccer-collector-tin-2026-2027",
+   "parent": 0,
+   "type": "simple",
+   "variation": "",
+   "permalink": "https://scuzzcards.com/producto/topps-manchester-soccer-collector-tin-2026-2027/",
+   "sku": "",
+   "short_description": "<ul>\n<li>Lata de coleccionista con 35 cartas del Manchester City,\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autographs ",
+   "description": "<p>Topps Manchester City Soccer Collector Tin 2026/2027</p>\n<p>Lata de coleccionista con 35 cartas del Manchester City,</p>\n<ul>\n<li style=\"list-style-type: none\">\n<ul>\n<li>2 Numbered Parallels,</li>\n<li>3 Limited edition cards,</li>\n<li>Look for Autographs in lucky tins!</li>\n<li>Cartas Gold Vault …[truncated]",
+   "on_sale": false,
+   "prices": {
+    "price": "3400",
+    "regular_price": "3400",
+    "sale_price": "3400",
+    "price_range": null,
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ",",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "",
+    "currency_suffix": " €"
+   },
+   "price_html": "<span class=\"woocommerce-Price-amount amount\">34,00&nbsp;<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></span> <small class=\"woocommerce-price-suffix\">I.V.A Incluido</small>",
+   "average_rating": "0",
+   "review_count": 0,
+   "images": [
+    {
+     "id": 6564,
+     "src": "https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc.webp",
+     "thumbnail": "https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-300x300.webp",
+     "srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc.webp 818w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-300x300.webp 300w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-150x150.webp 150w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-768x768.webp 768w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-12x12.webp 12w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-24x24.webp 24w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-36x36.webp 36w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-48x48.webp 48w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-600x600.webp 600w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-100x100.webp 100w",
+     "sizes": "(max-width: 818px) 100vw, 818px",
+     "thumbnail_srcset": "https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-300x300.webp 300w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-150x150.webp 150w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-768x768.webp 768w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-12x12.webp 12w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-24x24.webp 24w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-36x36.webp 36w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-48x48.webp 48w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-600x600.webp 600w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc-100x100.webp 100w, https://scuzzcards.com/wp-content/uploads/2026/09/701248060001_pp_01_mcfc.webp 818w",
+     "thumbnail_sizes": "(max-width: 300px) 100vw, 300px",
+     "name": "Topps Manchester City Soccer Collector Tin 2026/2027",
+     "alt": "Topps Manchester City Soccer Collector Tin 2026/2027"
+    }
+   ],
+   "categories": [
+    {
+     "id": 84,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-category/deportes/futbol/"
+    }
+   ],
+   "tags": [
+    {
+     "id": 110,
+     "name": "Fútbol",
+     "slug": "futbol",
+     "link": "https://scuzzcards.com/product-tag/futbol/"
+    },
+    {
+     "id": 54,
+     "name": "Manchester City",
+     "slug": "manchester-city",
+     "link": "https://scuzzcards.com/product-tag/manchester-city/"
+    },
+    {
+     "id": 330,
+     "name": "Premier League",
+     "slug": "premier-league",
+     "link": "https://scuzzcards.com/product-tag/premier-league/"
+    },
+    {
+     "id": 111,
+     "name": "Topps",
+     "slug": "topps",
+     "link": "https://scuzzcards.com/product-tag/topps/"
+    }
+   ],
+   "brands": [],
+   "attributes": [
+    {
+     "id": 13,
+     "name": "Categorias",
+     "taxonomy": "pa_categorias",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 344,
+       "name": "Lata",
+       "slug": "lata"
+      }
+     ]
+    },
+    {
+     "id": 14,
+     "name": "Ligas",
+     "taxonomy": "pa_ligas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 320,
+       "name": "Premier League",
+       "slug": "premier-league"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "name": "Marcas",
+     "taxonomy": "pa_marcas",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 257,
+       "name": "Topps",
+       "slug": "topps"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "name": "Temporada",
+     "taxonomy": "pa_temporada",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 473,
+       "name": "2027 26/27",
+       "slug": "2027-26-27"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "name": "Equipos de fútbol",
+     "taxonomy": "pa_equipos-de-futbol",
+     "has_variations": false,
+     "terms": [
+      {
+       "id": 274,
+       "name": "Manchester City",
+       "slug": "manchester-city"
+      }
+     ]
+    }
+   ],
+   "variations": [],
+   "grouped_products": [],
+   "has_options": false,
+   "is_purchasable": true,
+   "is_in_stock": true,
+   "is_on_backorder": false,
+   "low_stock_remaining": null,
+   "stock_availability": {
+    "text": "",
+    "class": "in-stock"
+   },
+   "sold_individually": false,
+   "weight": "0.200",
+   "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+   },
+   "formatted_weight": "0,2 kg",
+   "formatted_dimensions": "N/D",
+   "add_to_cart": {
+    "text": "Añadir al carrito",
+    "description": "Añadir al carrito: &ldquo;Topps Manchester City Soccer Collector Tin 2026/2027&rdquo;",
+    "url": "/wp-json/wc/store/v1/products?per_page=3&#038;orderby=date&#038;order=desc&#038;add-to-cart=6563",
+    "single_text": "Añadir al carrito",
+    "minimum": 1,
+    "maximum": 9999,
+    "multiple_of": 1
+   },
+   "is_password_protected": false,
+   "extensions": {},
+   "_links": {
+    "self": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products/6563",
+      "targetHints": {
+       "allow": [
+        "GET"
+       ]
+      }
+     }
+    ],
+    "collection": [
+     {
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products"
+     }
+    ],
+    "related": [
+     {
+      "embeddable": true,
+      "href": "https://scuzzcards.com/wp-json/wc/store/v1/products?related=6563&per_page=10"
+     }
+    ]
+   }
+  }
+ ]
+}

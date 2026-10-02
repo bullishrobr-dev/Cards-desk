@@ -1,0 +1,68 @@
+{
+ "_method": "POST /cart/add.js (1 item) then GET /cart/shipping_rates.json?shipping_address[country]=..&[zip]=..; cart cleared; no checkout",
+ "_fetched": "2026-10-02",
+ "results": {
+  "GI": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Royal Mail International Tracked",
+      "presentment_name": "Royal Mail International Tracked",
+      "code": "Royal Mail International Tracked",
+      "price": "19.99",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "GBP",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  },
+  "ES": {
+   "status": 200,
+   "body": {
+    "shipping_rates": [
+     {
+      "name": "Royal Mail International Tracked",
+      "presentment_name": "Royal Mail International Tracked",
+      "code": "Royal Mail International Tracked",
+      "price": "19.99",
+      "source": "shopify",
+      "delivery_date": null,
+      "delivery_range": null,
+      "delivery_days": [],
+      "compare_price": null,
+      "phone_required": false,
+      "currency": "GBP",
+      "delivery_category": null,
+      "using_merchant_account": null,
+      "description": "",
+      "additional_data": null,
+      "incoterm": null,
+      "shipment_options": null,
+      "charge_items": null,
+      "has_restrictions": null,
+      "rating_classification": null,
+      "accepts_instructions": false,
+      "metafields": null
+     }
+    ]
+   }
+  }
+ }
+}

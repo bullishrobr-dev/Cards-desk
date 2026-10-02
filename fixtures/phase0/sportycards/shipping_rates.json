@@ -1,0 +1,19 @@
+{
+ "_method": "WC Store API: GET /cart (Nonce+Cart-Token), POST /cart/add-item, POST /cart/update-customer {shipping_address:{country,postcode}}; DELETE /cart/items; no checkout",
+ "results": {
+  "GI": {
+   "rates": [],
+   "errors": []
+  },
+  "ES": {
+   "rates": [
+    [
+     "Tariffa unica",
+     "1500",
+     "EUR"
+    ]
+   ],
+   "errors": []
+  }
+ }
+}

@@ -1,0 +1,5 @@
+# Sitemap
+Sitemap: https://www.checklistinsider.com/sitemap_index.xml
+
+User-agent: *
+Disallow: /cdn-cgi/

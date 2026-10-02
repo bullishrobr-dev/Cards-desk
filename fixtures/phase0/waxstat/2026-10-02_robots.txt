@@ -1,0 +1,12 @@
+User-agent: *
+Sitemap: https://www.waxstat.com/sitemaps/listings.xml
+Sitemap: https://www.waxstat.com/sitemaps/raffles.xml
+Sitemap: https://www.waxstat.com/sitemaps/raffles-image.xml
+Sitemap: https://www.waxstat.com/sitemaps/boxes.xml
+Sitemap: https://www.waxstat.com/sitemaps/boxes-image.xml
+Sitemap: https://www.waxstat.com/sitemaps/sports.xml
+Sitemap: https://www.waxstat.com/sitemaps/brands.xml
+Sitemap: https://www.waxstat.com/sitemaps/years.xml
+Sitemap: https://www.waxstat.com/sitemaps/browse-by-sport.xml
+Sitemap: https://www.waxstat.com/sitemaps/browse-by-brand.xml
+Sitemap: https://www.waxstat.com/sitemaps/release-dates.xml

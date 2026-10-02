@@ -1,0 +1,130 @@
+{
+ "_source": "https://otakura.com/products.json?limit=250",
+ "_fetched": "2026-10-02",
+ "_note": "first 2 products of response + up to 3 football/F1 products; body_html truncated",
+ "products_head": [
+  {
+   "id": 16104919499086,
+   "title": "30th Celebration: ex Box Greninja ex - Pokémon TCG (ENG)",
+   "handle": "30th-celebration-ex-box-greninja-ex-pokemon-tcg-eng",
+   "body_html": "<h2>Quattro buste, una promo olografica e la carta gigante di Greninja ex</h2>\n<p>L'<strong>ex Box Greninja ex</strong> del 30th Celebration in lingua inglese è il classico box che unisce buste da aprire e un pezzo da mettere in mostra. Il vero protagonista è la carta gigante olografica di Greninja …[truncated]",
+   "published_at": "2026-09-29T21:38:09+02:00",
+   "created_at": "2026-09-29T11:49:13+02:00",
+   "updated_at": "2026-10-02T09:26:22+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Giochi di Carte Collezionabili",
+   "tags": [
+    "30th Celebration",
+    "Collezioni",
+    "English",
+    "Greninja",
+    "Pokemon"
+   ],
+   "variants": [
+    {
+     "id": 60999614824782,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PK10463-E-GRE",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "46.90",
+     "grams": 350,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16104919499086,
+     "created_at": "2026-09-29T11:49:13+02:00",
+     "updated_at": "2026-10-02T09:26:22+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 74641877238094,
+     "created_at": "2026-09-29T11:49:36+02:00",
+     "position": 1,
+     "updated_at": "2026-09-29T11:49:36+02:00",
+     "product_id": 16104919499086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0781/2425/3518/files/30th-celebration-ex-box-greninja-ex-eng.webp?v=1790675376",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16101100618062,
+   "title": "Bundle 2 ex Tin Sylveon ex + Greninja ex - 30th Celebration Pokémon TCG (ENG)",
+   "handle": "30th-celebration-bundle-2-ex-tin-sylveon-greninja-pokemon-tcg-eng",
+   "body_html": "<h2>Bundle 2 ex Tin: giorno e notte del 30th Celebration, insieme</h2>\n<p>Le due ex Tin dell'espansione <strong>30th Celebration</strong> sono nate come coppia: <strong>Sylveon ex</strong> è il giorno, <strong>Greninja ex</strong> è la notte. Questo bundle in lingua inglese le mette insieme a un pre…[truncated]",
+   "published_at": "2026-09-29T18:28:24+02:00",
+   "created_at": "2026-09-27T18:57:56+02:00",
+   "updated_at": "2026-10-02T09:26:22+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Giochi di Carte Collezionabili",
+   "tags": [
+    "30th Celebration",
+    "Bundles",
+    "English",
+    "Greninja",
+    "Pokemon",
+    "Sylveon",
+    "Tin"
+   ],
+   "variants": [
+    {
+     "id": 60976483303758,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "BND-PK10466-E-2TIN",
+     "requires_shipping": true,
+     "taxable": true,
+     "available": false,
+     "price": "96.00",
+     "grams": 800,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16101100618062,
+     "created_at": "2026-09-27T18:57:56+02:00",
+     "updated_at": "2026-10-02T09:26:22+02:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 74620127215950,
+     "created_at": "2026-09-28T15:24:29+02:00",
+     "position": 1,
+     "updated_at": "2026-09-28T15:24:29+02:00",
+     "product_id": 16101100618062,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0781/2425/3518/files/30th-celebration-bundle-2-ex-tin-eng.webp?v=1790601869",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ],
+ "products_football_f1": []
+}
