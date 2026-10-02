@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 403 
+date: Fri, 02 Oct 2026 07:24:07 GMT
+content-type: text/html; charset=UTF-8
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+expires: Thu, 01 Jan 1970 00:00:01 GMT
+referrer-policy: same-origin
+x-frame-options: SAMEORIGIN
+set-cookie: __cf_bm=wUWKv.wxN5._qMEwN7O7r6iqgklk8WY1HzismClx3mM-1790925847.127667-1.0.1.1-mqcrb1gUpiwVVgv_cQs_XSRQtvYCfuoVJz7rySHkq8V0PShDNHey2U0PaJ9YJchvY1PvU4kdePISMJbRByJAPus0xzK4bwgVHmSa4p91Y.uE_VqVCIDokzo6S649vE825sSYtXHsr7Lsx_239GUriQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=topps.com; Expires=Fri, 02 Oct 2026 07:54:07 GMT
+access-control-allow-headers: Content-Type, X-Requested-With, Authorization
+access-control-allow-methods: *
+access-control-allow-origin: *
+server: cloudflare
+cf-ray: a441f7308aa116af-IAD
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+cache-control: private, s-maxage=0
+content-type: text/html; charset=utf-8
+x-instance-id: vmss-lb-20003RV
+set-cookie: __Secure-SID=xdqfjnmewdyvakvo0chej2si; path=/; secure; HttpOnly; SameSite=Lax
+set-cookie: __Secure-SID=xdqfjnmewdyvakvo0chej2si; path=/; secure; HttpOnly; SameSite=Lax
+set-cookie: __AjaxRequestVerificationToken_Lw__=Xi2NcjYjH7epqI078+kFUsnV6nUOuhGv8wULa8ma9hOlyVcv1gn6xYERtlgH7/bX4alW4ogqiNZSBQWNkeIsJ3qb2NP+NdxS6Oy8MFsHbr8gRVdF; path=/; secure; HttpOnly; SameSite=Lax
+feature-policy: midi 'self'; microphone 'self'; camera 'self'
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: script-src 'self' *.stripe.com *.stripecdn.com *.hcaptcha.com *.stripe.network vimeo.com *.vimeocdn.com *.vimeo.com *.gamespress.com secure.worldpay.com gamespress.matomo.cloud www.youtube.com www.youtube-nocookie.com *.googleapis.com www.gstatic.com *.facebook.net *.facebook.com *.fbcdn.net code.jquery.com cdnjs.cloudflare.com cdn.jsdelivr.net *.bootstrapcdn.com www.googletagmanager.com *.google-analytics.com platform.twitter.com *.google.com  blob: 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' *.stripe.com *.stripecdn.com *.hcaptcha.com *.stripe.network vimeo.com *.vimeocdn.com *.vimeo.com *.gamespress.com secure.worldpay.com gamespress.matomo.cloud www.youtube.com www.youtube-nocookie.com *.googleapis.com www.gstatic.com *.facebook.net *.facebook.com *.fbcdn.net code.jquery.com cdnjs.cloudflare.com cdn.jsdelivr.net *.bootstrapcdn.com www.googletagmanager.com *.google-analytics.com platform.twitter.com *.google.com  blob: 'unsafe-inline' 'unsafe-eval'; style-src 'self' *.bootstrapcdn.com fonts.googleapis.com cdn.jsdelivr.net *.typekit.net 'unsafe-inline'; font-src 'self' https:; frame-src 'self' https:; navigate-to 'self' https:; connect-src 'self' https:;
+permissions-policy: geolocation=(self)
+x-content-type-options: nosniff
+x-ua-compatible: IE=Edge,chrome=1
+date: Fri, 02 Oct 2026 07:24:04 GMT
+content-length: 41227
+
