@@ -58,9 +58,9 @@ describe('dispatcher', () => {
     const enabledCalendars = sources.sources.filter((s) => s.enabled).length;
     expect(fetches.length).toBeGreaterThan(enabledCalendars);
     expect(first.seeded).toBe(fetches.length);
-    // Zatu has two collection paths: the second waits for Zatu's 10 s delay.
+    // Zatu: two collection paths and its meta.json, 10 s apart (Zatu's delay).
     const zatu = fetches.filter((m) => m.body.type === 'fetch' && m.body.unit.sourceId === 'zatu').map((m) => m.delaySeconds);
-    expect(zatu).toEqual([0, 10]);
+    expect(zatu).toEqual([0, 10, 20]);
     // Nothing is queued twice while leased.
     const q2 = fakeQueue();
     await dispatch({ db, queue: q2.queue, rules, sources, now: new Date('2026-10-05T10:35:00Z'), llmEnabled: false });
@@ -184,5 +184,23 @@ describe('hot polling and going live', () => {
     expect((await runMaintenance(db, rules, new Date('2026-10-14T21:59:00Z'))).wentLive).toBe(0);
     expect((await runMaintenance(db, rules, new Date('2026-10-14T22:01:00Z'))).wentLive).toBe(1);
     expect((await runMaintenance(db, rules, new Date('2026-10-14T23:00:00Z'))).wentLive).toBe(0);
+  });
+});
+
+describe('shipping hint from /meta.json', () => {
+  const metaMsg: FetchMsg = { type: 'fetch', sourceKind: 'retailer', unitKind: 'root', unit: { sourceId: 'zatu', url: 'https://zatu.com/meta.json', key: 'meta', expected: 'json' } };
+  const zatuMeta = 'fixtures/meta/zatu-meta.json';
+
+  it('records the hint quietly the first time, and raises shipping_reverify when Gibraltar drops off', async () => {
+    const routes = (body: Route) => ({ 'https://zatu.com/robots.txt': robotsOk, 'https://zatu.com/meta.json': body });
+    await runFetchJob(runner('2026-10-05T10:00:00Z', routes({ file: zatuMeta, headers: { 'content-type': 'application/json' } })).deps, metaMsg);
+    expect(await db.prepare(`SELECT meta_ships_to FROM retailers WHERE id = 'zatu'`).first<string>('meta_ships_to')).toBe('GI:1,ES:1');
+    expect(await db.prepare(`SELECT COUNT(*) AS n FROM events WHERE type = 'shipping_reverify'`).first<number>('n')).toBe(0);
+
+    const withoutGi = JSON.stringify({ ships_to_countries: ['ES', 'FR', 'GB'] });
+    await runFetchJob(runner('2026-10-12T10:00:00Z', routes({ body: withoutGi, headers: { 'content-type': 'application/json' } })).deps, metaMsg);
+    expect(await db.prepare(`SELECT COUNT(*) AS n FROM events WHERE type = 'shipping_reverify'`).first<number>('n')).toBe(1);
+    // The configured flag is untouched: a person re-verifies.
+    expect(await db.prepare(`SELECT ships_gi FROM retailers WHERE id = 'zatu'`).first<string>('ships_gi')).toBe('yes');
   });
 });

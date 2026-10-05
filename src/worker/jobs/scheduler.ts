@@ -1,5 +1,5 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
-import { calendarRootUnit, retailerListingUnit, retailerRootUnits } from '../adapters/registry.ts';
+import { calendarRootUnit, retailerListingUnit, retailerMetaUnit, retailerRootUnits } from '../adapters/registry.ts';
 import { addMinutes, dropInstant } from '../time.ts';
 import { MAX_DELAY_SECONDS, type JobMessage, type JobQueue } from './types.ts';
 
@@ -66,6 +66,19 @@ export async function dispatch(deps: DispatchDeps): Promise<{ queued: number; se
         unitKind: 'root',
         url: unit.url,
         cadenceMinutes: rules.cadence.retailer_minutes,
+      });
+    }
+    const meta = retailerMetaUnit(r);
+    if (meta) {
+      roots.push({
+        message: { type: 'fetch', sourceKind: 'retailer', unitKind: 'root', unit: meta },
+        host: new URL(meta.url).host,
+        crawlDelay: r.crawl_delay_seconds,
+        sourceId: r.id,
+        unitKey: meta.key,
+        unitKind: 'root',
+        url: meta.url,
+        cadenceMinutes: rules.cadence.shipping_check_minutes,
       });
     }
   }

@@ -245,6 +245,7 @@ cadence:
   final_minutes: 15 # within the final window
   hot_window_hours: 48
   final_window_hours: 2
+  shipping_check_minutes: 10080 # weekly look at each Shopify shop's /meta.json ship-to list
 
 alerts:
   lead_times_minutes: [1440, 60, 10] # T-24h, T-1h, T-10m, plus "live"

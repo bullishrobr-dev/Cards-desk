@@ -1,5 +1,5 @@
 import type { Retailer, RulesConfig, Source, SourcesConfig } from '../../shared/config/schema.ts';
-import { nextPageUnit, parseCalendar, parseRetailer, PAGE_SIZE } from '../adapters/registry.ts';
+import { nextPageUnit, parseCalendar, parseRetailer, parseShipsTo, PAGE_SIZE } from '../adapters/registry.ts';
 import type { ListingObservation, ParseResult, ReleaseObservation, Unit } from '../adapters/types.ts';
 import { nextBackoff } from '../fetch/backoff.ts';
 import { politeFetch } from '../fetch/polite-fetch.ts';
@@ -50,6 +50,25 @@ async function robotsFor(deps: RunnerDeps, url: URL): Promise<RobotsPolicy | 'un
 function findSource(deps: RunnerDeps, msg: Extract<JobMessage, { type: 'fetch' }>): { source?: Source; retailer?: Retailer } {
   if (msg.sourceKind === 'calendar') return { source: deps.sources.sources.find((s) => s.id === msg.unit.sourceId) };
   return { retailer: deps.sources.retailers.find((r) => r.id === msg.unit.sourceId) };
+}
+
+/**
+ * Compares a shop's public ship-to list with what we saw last time. A change to Gibraltar or
+ * Spain raises "shipping_reverify": the flags in config came from a manual check and are only
+ * changed by a person, never by this hint.
+ */
+async function checkShipsTo(deps: RunnerDeps, r: Retailer, now: { gi: boolean; es: boolean }) {
+  const { db } = deps;
+  const ts = deps.now.toISOString();
+  const summary = `GI:${now.gi ? 1 : 0},ES:${now.es ? 1 : 0}`;
+  const prev = await db.prepare('SELECT meta_ships_to FROM retailers WHERE id = ?').bind(r.id).first<string | null>('meta_ships_to');
+  const writes = [db.prepare('UPDATE retailers SET meta_ships_to = ?, meta_checked_at = ? WHERE id = ?').bind(summary, ts, r.id)];
+  if (prev && prev !== summary) {
+    writes.push(
+      db.prepare('INSERT INTO events (type, source_id, payload, created_at) VALUES (?, ?, ?, ?)').bind('shipping_reverify', r.id, JSON.stringify({ before: prev, after: summary, configured: { gi: r.ships_gi.value, es: r.ships_es.value } }), ts),
+    );
+  }
+  await db.batch(writes);
 }
 
 export async function runFetchJob(deps: RunnerDeps, msg: Extract<JobMessage, { type: 'fetch' }>): Promise<{ outcome: Outcome; stats?: IngestStats; error?: string }> {
@@ -120,6 +139,8 @@ export async function runFetchJob(deps: RunnerDeps, msg: Extract<JobMessage, { t
           const releases = parsed.items.filter((i): i is ReleaseObservation => i.kind === 'release');
           if (releases.length) stats = await ingestReleases(ingestDeps, { id: source.id, categories: source.categories, precedence: source.precedence }, releases);
           for (const f of parsed.followUps) followUps.push({ unit: f, kind: 'followup' });
+        } else if (retailer && unit.key === 'meta') {
+          await checkShipsTo(deps, retailer, parseShipsTo(res.body));
         } else if (retailer) {
           parsed = parseRetailer(retailer, unit, res.body);
           stats = await ingestListings(ingestDeps, retailer, parsed.items.filter((i): i is ListingObservation => i.kind === 'listing'));

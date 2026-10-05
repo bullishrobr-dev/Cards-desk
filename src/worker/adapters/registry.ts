@@ -35,6 +35,20 @@ export function retailerRootUnits(r: Retailer): Unit[] {
   return []; // magento-panini: adapter not built yet (disabled in config)
 }
 
+/** Shopify's public shop metadata: its ship-to country list, a hint (not proof) of GI/ES shipping. */
+export function retailerMetaUnit(r: Retailer): Unit | null {
+  if (r.platform !== 'shopify') return null;
+  return { sourceId: r.id, url: new URL('/meta.json', r.base_url).toString(), key: 'meta', expected: 'json' };
+}
+
+/** Reads ships_to_countries into GI/ES membership. */
+export function parseShipsTo(body: string): { gi: boolean; es: boolean } {
+  const json = JSON.parse(body) as { ships_to_countries?: unknown };
+  if (!Array.isArray(json.ships_to_countries)) throw new Error('meta.json has no ships_to_countries');
+  const list = json.ships_to_countries as string[];
+  return { gi: list.includes('GI'), es: list.includes('ES') };
+}
+
 /** A single product, polled often when its release is close. Derived from the stored listing URL. */
 export function retailerListingUnit(r: Retailer, listingUrl: string, externalId: string): Unit | null {
   if (r.platform === 'shopify') {
