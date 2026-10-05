@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
-import type { DropDetail, DropSummary, SourceHealth } from '../shared/api-types.ts';
+import { useEffect, useMemo, useState } from 'react';
+import type { DropDetail, DropSummary, NotificationItem, SourceHealth } from '../shared/api-types.ts';
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ShipTag } from './components.tsx';
 import { dateLabel, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
-import { Link, useApi } from './lib.tsx';
+import { Link, navigate, useApi } from './lib.tsx';
+import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
 
 export interface AppConfig {
   timezone: string;
@@ -144,9 +145,17 @@ function sourceName(id: string) {
 
 export function DetailView({ id, config }: { id: string; config: AppConfig }) {
   const { data: d, error } = useApi<DropDetail>(`/api/drops/${encodeURIComponent(id)}`);
+  const [watched, setWatched] = useState<boolean | null>(null);
+  useEffect(() => setWatched(d?.watched ?? null), [d]);
   if (error) return <Notice tone="error">{error}</Notice>;
   if (!d) return <Empty>Loading…</Empty>;
   const tolerance = config.rules.rrp.tolerance;
+  const toggleWatch = async () => {
+    const next = !watched;
+    setWatched(next);
+    const res = await fetch(`/api/watch/${encodeURIComponent(d.releaseId)}`, { method: next ? 'POST' : 'DELETE' });
+    if (!res.ok) setWatched(!next);
+  };
   return (
     <article className="detail">
       <Link to="/" className="back">‹ Upcoming</Link>
@@ -167,6 +176,15 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
         {d.season ? <span>{d.season}</span> : null}
         {d.tier ? <span>{d.tier} line</span> : null}
       </div>
+      <div className="actions">
+        <button type="button" className={watched ? 'btn on' : 'btn'} aria-pressed={Boolean(watched)} onClick={toggleWatch}>
+          {watched ? '★ Watching' : '☆ Watch'}
+        </button>
+        {d.startsAt && (d.precision === 'day' || d.precision === 'time') ? (
+          <a className="btn" href={`/api/drops/${encodeURIComponent(d.id)}/ics`}>Add to calendar</a>
+        ) : null}
+      </div>
+      {watched ? <p className="small muted">You will be alerted 24 hours, 1 hour and 10 minutes before, when it goes live, and if the date moves.</p> : null}
 
       <h2>Where to buy</h2>
       {d.products.length === 0 ? <Empty>No shop lists this yet. It will appear here as soon as one does.</Empty> : null}
@@ -269,9 +287,149 @@ export function SettingsView({ config }: { config: AppConfig }) {
       <div className="view-head">
         <h1>Settings</h1>
       </div>
+      <PushSettings />
+      <CalendarSettings />
       <h2>Buying rules</h2>
       <p className="small muted">These come from config/rules.yaml in the repository. Change them there; the app is rebuilt on deploy.</p>
       <pre className="rules">{JSON.stringify(config.rules, null, 2)}</pre>
     </section>
+  );
+}
+
+export function NotificationsView({ onRead }: { onRead: () => void }) {
+  const { data, error, reload } = useApi<{ unread: number; items: NotificationItem[] }>('/api/notifications');
+  useEffect(() => {
+    if (data) setBadge(data.unread);
+  }, [data]);
+  const markAll = async () => {
+    await fetch('/api/notifications/read', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' });
+    reload();
+    onRead();
+  };
+  const open = async (n: NotificationItem) => {
+    if (!n.read_at) {
+      await fetch('/api/notifications/read', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: n.id }) });
+      onRead();
+    }
+    const path = n.url ? new URL(n.url, window.location.origin).pathname : '/';
+    navigate(path);
+  };
+  return (
+    <section>
+      <div className="view-head">
+        <h1>Alerts</h1>
+        {data?.unread ? (
+          <button type="button" className="chip" onClick={markAll}>
+            Mark all read
+          </button>
+        ) : null}
+      </div>
+      {error ? <Notice tone="error">{error}</Notice> : null}
+      {data && data.items.length === 0 ? <Empty>No alerts yet. Watch a drop to get alerts before it goes live.</Empty> : null}
+      {data?.items.map((n) => (
+        <button key={n.id} type="button" className={`alert-row${n.read_at ? '' : ' unread'}${n.critical ? ' critical' : ''}`} onClick={() => open(n)}>
+          <div className="alert-title">{n.title}</div>
+          <div className="small">{n.body}</div>
+          <div className="small muted">{formatStamp(n.created_at)}</div>
+        </button>
+      ))}
+    </section>
+  );
+}
+
+interface PushStatus {
+  subscriptions: Array<{ id: string; status: 'active' | 'dead'; user_agent: string | null; created_at: string; last_sent_at: string | null; last_confirmed_at: string | null; dead_at: string | null }>;
+  emailFallback: boolean;
+}
+
+function deviceName(ua: string | null): string {
+  if (!ua) return 'Unknown device';
+  if (/iPhone/.test(ua)) return 'iPhone';
+  if (/iPad/.test(ua)) return 'iPad';
+  if (/Android/.test(ua)) return 'Android';
+  if (/Macintosh/.test(ua)) return 'Mac';
+  if (/Windows/.test(ua)) return 'Windows';
+  return 'Browser';
+}
+
+function PushSettings() {
+  const [state, setState] = useState<PushState | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const status = useApi<PushStatus>('/api/push/status');
+  useEffect(() => {
+    pushState().then(setState);
+  }, []);
+  const enable = async () => {
+    setMessage(null);
+    const r = await turnOnPush();
+    setMessage(r.ok ? 'Notifications are on for this device.' : r.message);
+    setState(await pushState());
+    status.reload();
+  };
+  const test = async (critical: boolean) => {
+    const res = await fetch(`/api/push/test${critical ? '?critical=1' : ''}`, { method: 'POST' });
+    const r = (await res.json()) as { pushed?: number; emailed?: number };
+    setMessage(res.ok ? `Test sent: ${r.pushed ?? 0} push, ${r.emailed ?? 0} email.` : 'The test could not be sent.');
+    window.setTimeout(status.reload, 4000);
+  };
+  const subs = status.data?.subscriptions ?? [];
+  return (
+    <div className="card">
+      <h3>Notifications</h3>
+      {state === 'needs-home-screen' ? (
+        <Notice tone="info">
+          On iPhone and iPad, notifications only work from the Home Screen app. Tap the Share button, choose <strong>Add to Home Screen</strong>, then open Card Desk Drops from your Home Screen and come back here.
+        </Notice>
+      ) : null}
+      {state === 'denied' ? <Notice tone="error">Notifications are blocked for this app in your device settings.</Notice> : null}
+      {state === 'unsupported' ? <Notice tone="error">This browser cannot receive push notifications.</Notice> : null}
+      {state === 'off' || state === 'on' ? (
+        <div className="actions">
+          <button type="button" className={state === 'on' ? 'btn' : 'btn primary'} onClick={enable}>
+            {state === 'on' ? 'Re-register this device' : 'Turn on notifications'}
+          </button>
+          {state === 'on' ? (
+            <>
+              <button type="button" className="btn" onClick={() => test(false)}>Send a test</button>
+              <button type="button" className="btn" onClick={() => test(true)}>Test critical (email fallback)</button>
+            </>
+          ) : null}
+        </div>
+      ) : null}
+      {message ? <p className="small">{message}</p> : null}
+      <h4>Devices</h4>
+      {subs.length === 0 ? <p className="small muted">No device is subscribed yet.</p> : null}
+      {subs.map((s) => (
+        <div key={s.id} className="small device">
+          <span className={`dot dot-${s.status === 'active' ? 'ok' : 'failing'}`} aria-hidden="true" /> {s.status === 'active' ? 'Subscribed' : 'Dead: re-subscribe on that device'} ·{' '}
+          {deviceName(s.user_agent)} · last confirmed delivery {relativeFromNow(s.last_confirmed_at)}
+        </div>
+      ))}
+      <p className="small muted">Email fallback for critical alerts: {status.data?.emailFallback ? 'on' : 'not configured'}.</p>
+    </div>
+  );
+}
+
+function CalendarSettings() {
+  const { data } = useApi<{ feedUrl: string | null }>('/api/calendar');
+  const [copied, setCopied] = useState(false);
+  if (!data) return null;
+  return (
+    <div className="card">
+      <h3>Calendar</h3>
+      {data.feedUrl ? (
+        <>
+          <p className="small">Subscribe to this address in your calendar app to see watched drops. Events move when dates slip.</p>
+          <code className="feed">{data.feedUrl}</code>
+          <div className="actions">
+            <button type="button" className="btn" onClick={() => navigator.clipboard.writeText(data.feedUrl ?? '').then(() => setCopied(true))}>{copied ? 'Copied' : 'Copy address'}</button>
+            <a className="btn" href={data.feedUrl.replace(/^https:/, 'webcal:')}>Subscribe</a>
+          </div>
+          <p className="small muted">Keep this address private: anyone with it can read your watched drops.</p>
+        </>
+      ) : (
+        <p className="small muted">The calendar feed is not configured yet.</p>
+      )}
+    </div>
   );
 }

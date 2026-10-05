@@ -136,3 +136,18 @@ main { padding: 12px 16px; }
 .muted { color: var(--muted); }
 .small { font-size: 0.8rem; }
 .rules { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; font-size: 0.75rem; overflow-x: auto; max-height: 60vh; }
+
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.btn { display: inline-block; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 10px; padding: 8px 14px; font-size: 0.9rem; cursor: pointer; }
+.btn.on { border-color: var(--pokemon); color: var(--pokemon); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 14px 10px; margin-top: 12px; }
+.card h4 { font-size: 0.85rem; margin: 12px 0 4px; }
+.device { margin: 4px 0; }
+.feed { display: block; font-size: 0.75rem; padding: 8px; background: var(--panel-2); border-radius: 8px; overflow-wrap: anywhere; }
+.alert-row { display: block; width: 100%; text-align: left; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin-bottom: 8px; color: var(--text); cursor: pointer; }
+.alert-row.unread { border-left: 3px solid var(--accent); }
+.alert-row.critical.unread { border-left-color: var(--bad); }
+.alert-title { font-weight: 600; }
+.alert-row:not(.unread) { opacity: 0.75; }
+.tab .count { display: inline-block; min-width: 18px; margin-left: 4px; padding: 0 5px; border-radius: 999px; background: var(--bad); color: #fff; font-size: 0.7rem; font-weight: 700; line-height: 18px; }
