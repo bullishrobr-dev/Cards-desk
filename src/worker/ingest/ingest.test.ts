@@ -75,6 +75,8 @@ describe('sports: calendars then shops', () => {
     expect(rows.some((r) => /baseball|basketball|disney|tennis/i.test(r.name))).toBe(false);
     const f1 = rows.filter((r) => /chrome formula 1/i.test(r.name));
     expect(f1).toHaveLength(1); // collectosk and Checklist Insider agree on one release
+    // "World Cup 26" (collectosk) and "World Cup 2026 … Guide" (Checklist Insider) are one release.
+    expect(rows.filter((r) => /national treasures road to fifa/i.test(r.name))).toHaveLength(1);
     expect(f1[0]).toMatchObject({ starts_at: '2026-10-15', confidence: 'confirmed_date' });
   });
 

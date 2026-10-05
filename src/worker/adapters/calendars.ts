@@ -41,7 +41,9 @@ export function parseCollectosk(body: string, maxConfidence: Confidence): ParseR
     const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((m) => m[1] ?? '');
     const href = cells[1]?.match(/href="([^"]+)"/)?.[1] ?? null;
     // Strip emoji and the "(Pre-order)" note from names.
-    const title = textOf(cells[1] ?? '').replace(/\(pre-?order\)/i, '').replace(/[\p{Extended_Pictographic}️]/gu, '').trim();
+    const title = textOf(cells[1] ?? '').replace(/\(pre-?order\)/i, '').replace(/[\p{Extended_Pictographic}️]/gu, '')
+      .replace(/\s+(Soccer|Racing|Football|Trading)?\s*Cards\s*$/i, '')
+      .trim();
     return release(title, href, textOf(cells[0] ?? ''), maxConfidence, textOf(cells[3] ?? '') || null);
   });
   return { items, followUps: [] };
@@ -53,7 +55,7 @@ export function parseChecklistInsider(body: string, maxConfidence: Confidence): 
   const re = /<div class="release-date-stamp[^"]*"[^>]*><time datetime="([^"]+)">[\s\S]*?<\/div>\s*<a href="[^"]+">[\s\S]*?<\/a>\s*<a href="([^"]+)">([^<]+)<\/a>/g;
   const items = [...body.matchAll(re)].map((m) =>
     release(
-      decodeEntities(m[3] ?? '').replace(/\s+Checklist( Guide)?$/i, '').trim(),
+      decodeEntities(m[3] ?? '').replace(/\s+(Checklist( and)?\s+)?Guide$|\s+Checklist$/i, '').trim(),
       m[2] ?? null,
       (m[1] ?? '').slice(0, 10),
       maxConfidence,

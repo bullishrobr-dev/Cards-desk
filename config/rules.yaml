@@ -108,6 +108,7 @@ normalise:
     pokémon: pokemon
     collectors: collector
     pre order: preorder
+    world cup 26: world cup 2026
   # Words that never distinguish one release from another.
   noise: [box, boxes, preorder, reserva, precommande, précommande, trading, cards, card, tcg, sealed, english, ingles, inglés, anglais, anglaise, eng, en, version, new, the, of, and, edition, soccer, football, racing, sports, sport, ecom, international, display]
 
@@ -189,6 +190,7 @@ categories:
       - { rule: Japanese-language, keywords: [japanese, japones, japonés, japonais, japanisch, giapponese, jpn, jp] }
       - { rule: Other non-English languages, keywords: [chinese, chinois, korean, coreano, español, espanol, castellano, francais, français, deutsch, italiano, simplified chinese, traditional chinese, vf] }
       - { rule: Mini tins, keywords: [mini lata, mini latas] }
+      - { rule: Promo card packs, keywords: [card with 2 booster packs, card with 3 booster packs, booster packs & coin] }
     languages: [en]
     # Pokémon items with no recognised box type are excluded rather than guessed.
     require_configuration: true

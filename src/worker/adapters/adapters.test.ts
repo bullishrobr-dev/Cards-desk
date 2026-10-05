@@ -35,6 +35,7 @@ describe('parse utilities', () => {
     ['Early November 2026', '2026-11-01', 'month'],
     ['Mid to late November 2026', '2026-11-01', 'month'],
     ['TBD', null, 'unknown'],
+    ['January 9th 1999', '1999-01-09', 'day'],
     ['31/02/2026', null, 'unknown'],
   ])('parseDate(%s)', (raw, date, precision) => {
     expect(parseDate(raw)).toEqual({ date, precision });
@@ -60,7 +61,7 @@ describe('collectosk', () => {
   it('reads Topps Chrome F1 with its date and category', () => {
     const f1 = r.find((x) => x.title.includes('TOPPS Chrome Formula 1'));
     expect(f1).toMatchObject({ date: '2026-10-15', precision: 'day', confidence: 'confirmed_date', categoryHint: 'Racing' });
-    expect(f1?.title).toBe('2026 TOPPS Chrome Formula 1 Racing Cards');
+    expect(f1?.title).toBe('2026 TOPPS Chrome Formula 1');
   });
 
   it('keeps TBD rows as announced with no date', () => {
@@ -79,6 +80,10 @@ describe('collectosk', () => {
 
 describe('Checklist Insider', () => {
   const r = releases(parseChecklistInsider(fx('checklistinsider/response.html'), 'confirmed_date').items);
+  it('strips a bare "Guide" suffix too', () => {
+    expect(r.some((x) => /\bGuide$/.test(x.title))).toBe(false);
+  });
+
   it('reads dated releases and strips "Checklist Guide"', () => {
     expect(r.length).toBeGreaterThan(30);
     expect(r[0]).toMatchObject({ title: '2026 Topps Atlassian Williams Racing', date: '2026-10-01', precision: 'day' });

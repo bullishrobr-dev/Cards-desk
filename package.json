@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "types": "wrangler types",
     "db:migrate:local": "wrangler d1 migrations apply card_desk --local",
-    "db:migrate:remote": "wrangler d1 migrations apply card_desk --remote"
+    "db:migrate:remote": "wrangler d1 migrations apply card_desk --remote",
+    "seed:local": "vitest run --config vitest.seed.config.ts && wrangler d1 migrations apply card_desk --local && wrangler d1 execute card_desk --local --file .wrangler/seed.sql"
   },
   "engines": {
     "node": ">=22"

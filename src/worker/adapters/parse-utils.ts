@@ -33,27 +33,27 @@ export interface ParsedDate {
  */
 export function parseDate(raw: string): ParsedDate {
   const s = raw.trim().toLowerCase().replace(/,/g, ' ').replace(/\s+/g, ' ');
-  let m = s.match(/\b(20\d\d)-(\d{1,2})-(\d{1,2})\b/);
+  let m = s.match(/\b((?:19|20)\d\d)-(\d{1,2})-(\d{1,2})\b/);
   if (m) {
     const [y, mo, d] = [Number(m[1]), Number(m[2]), Number(m[3])];
     return valid(y, mo, d) ? { date: iso(y, mo, d), precision: 'day' } : { date: null, precision: 'unknown' };
   }
-  m = s.match(/\b([a-z]+)\.? (\d{1,2})(?:st|nd|rd|th)? (20\d\d)\b/);
+  m = s.match(/\b([a-z]+)\.? (\d{1,2})(?:st|nd|rd|th)? ((?:19|20)\d\d)\b/);
   if (m && MONTHS[m[1] ?? ''] !== undefined) {
     const [y, mo, d] = [Number(m[3]), MONTHS[m[1] ?? ''] ?? 0, Number(m[2])];
     if (valid(y, mo, d)) return { date: iso(y, mo, d), precision: 'day' };
   }
-  m = s.match(/\b(\d{1,2})(?:st|nd|rd|th)? ([a-z]+)\.? (20\d\d)\b/);
+  m = s.match(/\b(\d{1,2})(?:st|nd|rd|th)? ([a-z]+)\.? ((?:19|20)\d\d)\b/);
   if (m && MONTHS[m[2] ?? ''] !== undefined) {
     const [y, mo, d] = [Number(m[3]), MONTHS[m[2] ?? ''] ?? 0, Number(m[1])];
     if (valid(y, mo, d)) return { date: iso(y, mo, d), precision: 'day' };
   }
-  m = s.match(/\b(\d{1,2})[/.](\d{1,2})[/.](20\d\d)\b/);
+  m = s.match(/\b(\d{1,2})[/.](\d{1,2})[/.]((?:19|20)\d\d)\b/);
   if (m) {
     const [y, mo, d] = [Number(m[3]), Number(m[2]), Number(m[1])];
     if (valid(y, mo, d)) return { date: iso(y, mo, d), precision: 'day' };
   }
-  m = s.match(/\b([a-z]+) (20\d\d)\b/);
+  m = s.match(/\b([a-z]+) ((?:19|20)\d\d)\b/);
   if (m && MONTHS[m[1] ?? ''] !== undefined) {
     return { date: iso(Number(m[2]), MONTHS[m[1] ?? ''] ?? 1, 1), precision: 'month' };
   }

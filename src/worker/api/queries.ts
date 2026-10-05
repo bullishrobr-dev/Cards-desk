@@ -1,7 +1,7 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
 import type { Confidence, DropDetail, DropSummary, ListingView, Money, Precision, ProductView, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
 import { convertMinor, placeholders } from '../ingest/util.ts';
-import { addMinutes, dropInstant } from '../time.ts';
+import { addMinutes, dropInstant, localDate } from '../time.ts';
 
 type Rates = Record<string, number>;
 
@@ -79,7 +79,10 @@ function ratio(priceMinor: number, priceCurrency: string, rrpMinor: number | nul
 function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | null, rates: Rates, tz: string): DropSummary {
   const mine = listings.filter((l) => l.release_id === d.release_id);
   const shipsTo = (l: ListingRow, r: 'gi' | 'es') => (r === 'gi' ? l.ships_gi : l.ships_es) !== 'no';
-  const buyable = mine.filter((l) => l.price_minor !== null && (l.available || l.is_preorder) && (!region || shipsTo(l, region)));
+  const priced = mine.filter((l) => l.price_minor !== null && (!region || shipsTo(l, region)));
+  // Prefer prices you can act on (in stock or pre-order open); fall back to any listed price.
+  const open = priced.filter((l) => l.available || l.is_preorder);
+  const buyable = open.length ? open : priced;
   let best: DropSummary['bestPrice'] = null;
   let bestRatio: number | null = null;
   for (const l of buyable) {
@@ -123,8 +126,9 @@ export async function listDrops(db: D1Database, rules: RulesConfig, q: DropQuery
   const conditions = [`d.kind = 'release'`, q.view === 'live' ? `d.status = 'live'` : `d.status = 'upcoming'`];
   const binds: unknown[] = [];
   if (q.view === 'upcoming') {
-    conditions.push(`(d.starts_at IS NULL OR d.starts_at <= ?)`);
-    binds.push(addMinutes(now, 120 * 1440).toISOString());
+    // Not yet live (maintenance flips status hourly; this keeps a just-passed date out meanwhile).
+    conditions.push(`(d.starts_at IS NULL OR (d.starts_at <= ? AND d.starts_at >= ?))`);
+    binds.push(addMinutes(now, 120 * 1440).toISOString(), localDate(now, rules.owner.timezone));
   }
   if (q.category) {
     conditions.push('r.category = ?');
