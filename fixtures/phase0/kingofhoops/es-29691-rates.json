@@ -1,0 +1,38 @@
+{
+ "slug": "kingofhoops",
+ "host": "kingofhoops.co.uk",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "2025-26 Panini NOIR Basketball Hobby Box",
+   "variant_id": 56745474261370,
+   "price": 849.99,
+   "grams": 300
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Express International",
+     "price": "9.99",
+     "currency": "GBP",
+     "delivery_days": [
+      2,
+      11
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

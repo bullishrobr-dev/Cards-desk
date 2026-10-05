@@ -1,0 +1,35 @@
+{
+ "slug": "sportcardscenter",
+ "host": "sportcardscenter.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Topps Arsenal FC Collector Tin 2026/27",
+   "variant_id": 58614826369368,
+   "price": 28.0,
+   "grams": 0
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Estándar",
+     "price": "4.50",
+     "currency": "EUR",
+     "delivery_days": []
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

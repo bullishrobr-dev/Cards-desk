@@ -1,0 +1,35 @@
+{
+ "slug": "sportscardsworldwide",
+ "host": "sportscardsworldwide.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Topps Williams 2026 Collection Hobby Box",
+   "variant_id": 57363933462852,
+   "price": 255.0,
+   "grams": 0
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Royal Mail International Tracked",
+     "price": "19.99",
+     "currency": "GBP",
+     "delivery_days": []
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

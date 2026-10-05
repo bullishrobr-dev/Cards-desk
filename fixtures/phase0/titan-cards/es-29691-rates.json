@@ -1,0 +1,47 @@
+{
+ "slug": "titan-cards",
+ "host": "www.titancards.co.uk",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Pokemon Mini Mystery Bundle",
+   "variant_id": 47430425739594,
+   "price": 24.99,
+   "grams": 93
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "International Standard (Non-Tracked)",
+     "price": "13.00",
+     "currency": "USD",
+     "delivery_days": [
+      3,
+      5
+     ]
+    },
+    {
+     "name": "International Tracked",
+     "price": "17.00",
+     "currency": "USD",
+     "delivery_days": [
+      3,
+      5
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

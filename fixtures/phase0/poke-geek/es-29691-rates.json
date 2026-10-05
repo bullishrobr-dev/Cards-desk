@@ -1,0 +1,68 @@
+{
+ "slug": "poke-geek",
+ "host": "www.poke-geek.fr",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Pack Pokémon Premiers Partenaires Série 2 FR – Mini Snap + Sleeves Clairière Enchantée",
+   "variant_id": 59002688176460,
+   "price": 45.9,
+   "grams": 595
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Livraison en Point Relais Mondial Relay (la carte de sélection s'affichera après le paiement)",
+     "price": "6.99",
+     "currency": "EUR",
+     "delivery_days": [
+      2,
+      6
+     ]
+    },
+    {
+     "name": "Livraison UPS Standard",
+     "price": "11.25",
+     "currency": "EUR",
+     "delivery_days": []
+    },
+    {
+     "name": "CTT express Post Signed",
+     "price": "14.49",
+     "currency": "EUR",
+     "delivery_days": [
+      3,
+      5
+     ]
+    },
+    {
+     "name": "La poste - Colissimo",
+     "price": "17.00",
+     "currency": "EUR",
+     "delivery_days": [
+      3,
+      5
+     ]
+    },
+    {
+     "name": "Livraison en Point Relais Colissimo (la carte de sélection s'affichera après le paiement)",
+     "price": "18.00",
+     "currency": "EUR",
+     "delivery_days": []
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

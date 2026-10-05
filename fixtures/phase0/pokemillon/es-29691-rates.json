@@ -1,0 +1,74 @@
+{
+ "slug": "pokemillon",
+ "host": "www.pokemillon.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Pack 5 Sobres Pokémon TCG",
+   "variant_id": 53160321581379,
+   "price": 27.9,
+   "grams": 24
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Envío 24-48h",
+     "price": "4.50",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      2
+     ]
+    },
+    {
+     "name": "🚚 Envío Certificado + 100 Fundas ✅",
+     "price": "6.30",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      3
+     ]
+    },
+    {
+     "name": "🚀 Envío Express",
+     "price": "6.90",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      2
+     ]
+    },
+    {
+     "name": "🚀 Envío Express + 100 Fundas ✅",
+     "price": "8.69",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      2
+     ]
+    },
+    {
+     "name": "🚀 Envío Express Seguro 200€ 🔒",
+     "price": "30.00",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      2
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

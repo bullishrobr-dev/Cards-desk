@@ -1,0 +1,53 @@
+{
+ "slug": "total-cards",
+ "host": "www.totalcards.net",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "Pokemon - 30th Celebration - Simplified Chinese - Magikarp - 165/103",
+   "variant_id": 58720205767037,
+   "price": 74.95,
+   "grams": 2
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Royal Mail - Tracked AirMail (Letter)",
+     "price": "5.50",
+     "currency": "GBP",
+     "delivery_days": []
+    },
+    {
+     "name": "Royal Mail - Tracked and Signed AirMail (Letter)",
+     "price": "5.96",
+     "currency": "GBP",
+     "delivery_days": []
+    },
+    {
+     "name": "Royal Mail - Tracked AirMail Heavy Weight",
+     "price": "16.35",
+     "currency": "GBP",
+     "delivery_days": []
+    },
+    {
+     "name": "Royal Mail - Tracked AirMail Heavy Weight Extra Comp",
+     "price": "18.90",
+     "currency": "GBP",
+     "delivery_days": []
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

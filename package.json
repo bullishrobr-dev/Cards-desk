@@ -1,0 +1,40 @@
+{
+  "name": "card-desk-drops",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Personal PWA tracking trading-card drops for a collector in Gibraltar.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.web.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "types": "wrangler types",
+    "db:migrate:local": "wrangler d1 migrations apply card_desk --local",
+    "db:migrate:remote": "wrangler d1 migrations apply card_desk --remote"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "hono": "^4.13.13",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.62.5",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.147.0",
+    "yaml": "^2.9.1"
+  }
+}

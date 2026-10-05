@@ -1,0 +1,12 @@
+{
+ "slug": "southern-light",
+ "host": "southernlight.store",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:29:23Z",
+  "products_http": 200,
+  "error": "no available variant",
+  "clear_http": 200
+ }
+}

@@ -1,0 +1,197 @@
+# Card Desk Drops: buying rules.
+#
+# This is the single place to change what the app tracks and how it ranks drops.
+# It is validated at build time (src/shared/config/schema.ts); a bad edit fails the build.
+# Keyword matching is case- and accent-insensitive, on whole words or phrases.
+#
+# Items marked "REVIEW" are my defaults where the brief gave no specific value. Change freely.
+
+version: 1
+
+owner:
+  timezone: Europe/Gibraltar
+  # Country and province only. Street addresses never go in this public repo.
+  ship_to:
+    - { region: gi, label: Gibraltar, country: GI, priority: 1 }
+    - { region: es, label: Spain (Málaga), country: ES, province: MA, priority: 2 }
+
+# Shown next to prices as notes. Never folded into the RRP gate.
+cost_notes:
+  - id: gi-transaction-tax
+    applies_to: { region: gi, from: any }
+    text: >-
+      Gibraltar Transaction Tax (replaced import duty on 15 Jul 2026): 15% standard rate in 2026,
+      on price plus shipping. Postal handling fees after the treaty are unconfirmed.
+    source: https://www.gibraltar.gov.gi/press-releases/government-corrects-transaction-tax-misinformation-2012026-11816
+    verified_at: 2026-10-02
+  - id: es-from-uk
+    applies_to: { region: es, from: uk }
+    text: >-
+      UK to Spain: 21% IVA on import, plus a €3 EU customs duty per item line on parcels up to €150
+      (until 1 Jul 2028), plus the carrier's handling fee.
+    source: https://taxation-customs.ec.europa.eu/news/guidance-and-legal-text-temporary-flat-fee-low-value-imports-which-will-apply-until-1-july-2028-2026-06-08_en
+    verified_at: 2026-10-02
+  - id: es-from-eu
+    applies_to: { region: es, from: eu }
+    text: EU shop to Spain, with IVA included at checkout and no customs charges.
+    source: https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en
+    verified_at: 2026-10-02
+
+rrp:
+  tolerance: 1.05 # sealed product passes the gate at or below RRP × 1.05
+  estimate:
+    # With no known or owner-entered RRP, estimate it as the median of the first prices
+    # seen across shops, and label it "Estimated RRP".
+    method: median_first_seen
+    min_retailers: 2
+  known: [] # filled only with verified values (see docs/phase0/es-recheck-and-rrp.md)
+
+publishers:
+  topps:
+    label: Topps / Fanatics
+    aliases: [topps, fanatics]
+    tier_multiplier: 1.0
+  panini:
+    label: Panini
+    aliases: [panini]
+    tier_multiplier: 0.85 # REVIEW: Topps is "weighted higher"; this is how much
+  pokemon:
+    label: The Pokémon Company
+    aliases: [pokemon, pokémon, the pokemon company, tpci]
+    tier_multiplier: 1.0
+
+# Applies to every category. These are not sealed product.
+global_exclude:
+  - rule: Graded or single cards
+    keywords: [psa 10, psa 9, bgs, cgc, graded, slab, slabbed, single card, auto card]
+  - rule: Baseball
+    keywords: [baseball, mlb]
+
+categories:
+  football:
+    label: Football
+    enabled: true
+    publishers: [topps, panini]
+    match: [football, soccer, fútbol, futbol, uefa, champions league, premier league, la liga, laliga, bundesliga, serie a, fifa, world cup, euro 2028, mls, nwsl, club competitions]
+    exclude:
+      - { rule: Stickers, keywords: [sticker, stickers, album, cromos] }
+      - { rule: Match Attax / Turbo Attax, keywords: [match attax, turbo attax] }
+      - { rule: Retail blasters and hangers, keywords: [blaster, hanger] }
+    languages: [en, any] # sports cards are language-neutral
+    weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
+    tiers:
+      - tier: Flagship
+        points_pct: 100
+        lines: [topps chrome, chrome, finest, merlin, inception, stadium club chrome, sapphire]
+      - tier: Premium # REVIEW
+        points_pct: 75
+        lines: [national treasures, flawless, immaculate, dynasty, museum collection, tier one]
+      - tier: Mid # REVIEW
+        points_pct: 40
+        lines: [prizm, select, obsidian, topps knockout, deco, chrome tin]
+      - tier: Base
+        points_pct: 15
+        lines: [topps, panini]
+    configurations:
+      - { id: hobby, label: Hobby / Breaker, points_pct: 100, keywords: [hobby, breaker, breakers delight, breaker's delight] }
+      - { id: jumbo, label: Jumbo, points_pct: 75, keywords: [jumbo] }
+      - { id: collector, label: Collector box / tin, points_pct: 55, keywords: [collector tin, collector box, collectors box] } # REVIEW
+      - { id: mega, label: Mega, points_pct: 50, keywords: [mega box, mega] }
+      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box, fat pack] }
+
+  f1:
+    label: Formula 1
+    enabled: true
+    publishers: [topps, panini]
+    match: [formula 1, formula one, f1, grand prix, mclaren, ferrari racing, williams racing, red bull racing, racing cards]
+    exclude:
+      - { rule: Stickers, keywords: [sticker, stickers, album] }
+      - { rule: Turbo Attax, keywords: [turbo attax] }
+      - { rule: Retail blasters and hangers, keywords: [blaster, hanger] }
+    languages: [en, any]
+    weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
+    tiers:
+      - tier: Flagship
+        points_pct: 100
+        lines: [topps chrome f1, chrome formula 1, chrome f1, chrome sapphire, finest, dynasty]
+      - tier: Mid # REVIEW
+        points_pct: 40
+        lines: [carbon, eccellenza, team set, williams racing, mclaren]
+      - tier: Base
+        points_pct: 15
+        lines: [topps formula 1, topps f1, flagship]
+    configurations:
+      - { id: hobby, label: Hobby / Breaker, points_pct: 100, keywords: [hobby, breaker, breakers delight, breaker's delight] }
+      - { id: jumbo, label: Jumbo, points_pct: 75, keywords: [jumbo] }
+      - { id: mega, label: Mega, points_pct: 50, keywords: [mega box, mega] }
+      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box] }
+
+  pokemon:
+    label: Pokémon TCG
+    enabled: true
+    publishers: [pokemon]
+    match: [pokemon, pokémon, mega evolution, elite trainer box, booster bundle]
+    exclude:
+      - { rule: Single packs, keywords: [single pack, booster pack, sleeved booster, 1 pack, checklane, check lane] }
+      - { rule: Blisters, keywords: [blister, 3 pack blister, 3-pack blister] }
+      - { rule: Mini tins, keywords: [mini tin, mini-tin, mini tins] }
+      - { rule: Japanese-language, keywords: [japanese, japones, japonés, japonais, japanisch, giapponese, jpn, jp] }
+      - { rule: Other non-English languages, keywords: [chinese, korean, español, espanol, castellano, francais, français, deutsch, italiano, simplified chinese, traditional chinese] }
+    languages: [en]
+    weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
+    tiers:
+      - tier: Premium collection
+        points_pct: 100
+        lines: [ultra premium collection, super premium collection, premium collection, pokemon center elite trainer box]
+      - tier: Special set # REVIEW: add special-set names as they are announced
+        points_pct: 85
+        lines: [30th celebration, ascended heroes]
+      - tier: Main set
+        points_pct: 50
+        lines: [mega evolution]
+    configurations:
+      - { id: booster_box, label: Booster box / display, points_pct: 100, keywords: [booster box, booster display, display box, 36 pack, 36-pack, 36 booster] }
+      - { id: etb, label: Elite Trainer Box, points_pct: 75, keywords: [elite trainer box, etb] }
+      - { id: booster_bundle, label: Booster bundle, points_pct: 50, keywords: [booster bundle] }
+      - { id: other, label: Other sealed, points_pct: 25, keywords: [collection, box, tin] }
+
+  ufc:
+    label: UFC
+    enabled: false # in config only; no adapter is built in v1
+    publishers: [topps, panini]
+    match: [ufc]
+    languages: [en, any]
+    weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
+
+scarcity:
+  # Points are a share of the category's scarcity weight; the total is capped at 100%.
+  signals:
+    - { id: print_to_order, label: Print-to-order, points_pct: 100, keywords: [print to order, print-to-order, topps now, on-demand, on demand] }
+    - { id: timed_window, label: Timed window, points_pct: 75, keywords: [limited time, timed release, 24 hour, 48 hour, 72 hour] }
+    - { id: numbered, label: Numbered / limited run, points_pct: 60, keywords: [numbered, limited edition, limited run] }
+    - { id: purchase_limit, label: Retailer purchase limit, points_pct: 40, keywords: [limit 1, limit 2, max 1, max 2, one per customer, one per household] }
+
+relevance:
+  watchlist_players: [Lamine Yamal, Endrick, Pau Cubarsí, Florian Wirtz, Francesco Camarda]
+  watchlist_player_points_pct: 100
+  rookie_class_points_pct: 50
+  manual_tag_points_pct: 100
+
+labels:
+  priority_min: 75
+  watch_min: 50
+
+cadence:
+  calendar_minutes: 1440
+  retailer_minutes: 360
+  hot_minutes: 60 # watched, or due within the hot window
+  final_minutes: 15 # within the final window
+  hot_window_hours: 48
+  final_window_hours: 2
+
+alerts:
+  lead_times_minutes: [1440, 60, 10] # T-24h, T-1h, T-10m, plus "live"
+  critical: [t_minus_60, t_minus_10, live, date_changed_watched]
+  receipt_timeout_minutes: 5
+  source_failures_before_alert: 2
+  weekly_brief: { weekday: 0, local_time: '18:00', days_ahead: 14 } # Sunday 18:00 Europe/Gibraltar

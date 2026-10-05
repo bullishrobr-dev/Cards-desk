@@ -1,0 +1,38 @@
+{
+ "slug": "metamorph-center",
+ "host": "metamorphcenter.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:29:23Z",
+  "products_http": 200,
+  "item": {
+   "title": "VaultX EXO-TEC Zip Binder 4 Pockets Sunrise Yellow - Álbum 160 Cartas",
+   "variant_id": 55578673414486,
+   "price": 22.95,
+   "grams": 100
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Correos | Envío Express 24h - 72h",
+     "price": "4.95",
+     "currency": "EUR",
+     "delivery_days": [
+      1,
+      3
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

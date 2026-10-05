@@ -1,0 +1,37 @@
+// Main Worker: PWA + API + scheduler. Protected end to end by Cloudflare Access.
+// IDs marked REPLACE are filled in when the owner's Cloudflare account exists (see docs/deploy.md).
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "card-desk-drops",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2026-10-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  // Free plan: the cron only dispatches; each fetch job runs in its own queue invocation.
+  "triggers": { "crons": ["*/15 * * * *"] },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "card_desk", "database_id": "REPLACE", "migrations_dir": "migrations" }
+  ],
+  "kv_namespaces": [{ "binding": "KV", "id": "REPLACE" }],
+  "queues": {
+    "producers": [{ "binding": "JOBS", "queue": "card-desk-jobs" }],
+    "consumers": [{ "queue": "card-desk-jobs", "max_batch_size": 1, "max_retries": 2 }]
+  },
+  // Exact-time alerts (T-24h, T-1h, T-10m, live) are scheduled as Durable Object alarms.
+  "durable_objects": { "bindings": [{ "name": "ALARMS", "class_name": "AlertScheduler" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["AlertScheduler"] }],
+  "vars": {
+    "APP_ENV": "production",
+    "CLAUDE_MATCH_MODEL": "claude-haiku-4-5",
+    "PUBLIC_BASE_URL": "REPLACE"
+  },
+  "observability": { "enabled": true },
+  "upload_source_maps": true
+  // Secrets (wrangler secret put): ACCESS_TEAM_DOMAIN, ACCESS_AUD, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY,
+  // VAPID_SUBJECT, RESEND_API_KEY, ALERT_EMAIL, SENTRY_DSN, ANTHROPIC_API_KEY, RECEIPT_TOKEN, ICAL_TOKEN
+}

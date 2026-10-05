@@ -1,0 +1,31 @@
+{
+ "slug": "sportycards",
+ "host": "sportycards.it",
+ "_method": "WC Store API: GET /cart (Nonce+Cart-Token), POST /cart/add-item, POST /cart/update-customer {shipping_address:{country,state,postcode}}; DELETE /cart/items; no checkout, no personal data.",
+ "checked_utc": "2026-10-05T07:27:52Z",
+ "item": {
+  "id": 130928,
+  "http": 200,
+  "name": "Topps Argentina Team Set 2025/26 &#8211; Hobby Box",
+  "is_in_stock": true,
+  "price": "8500",
+  "variation": "BOX 📦: 🚚 Spedito a casa"
+ },
+ "add_http": 201,
+ "update_http": 200,
+ "needs_shipping": true,
+ "shipping_address_echo": {
+  "country": "ES",
+  "state": "MA",
+  "postcode": "29691"
+ },
+ "rates": [
+  [
+   "Tariffa unica",
+   "1500",
+   "EUR"
+  ]
+ ],
+ "errors": [],
+ "clear_http": 200
+}

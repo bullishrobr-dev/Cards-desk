@@ -1,0 +1,335 @@
+# Card Desk Drops: where data comes from.
+#
+# Every entry here was verified live in Phase 0 (see SOURCES.md and docs/phase0/).
+# Ship-to flags come from a one-off manual cart check. The app never adds to cart; it only
+# watches each Shopify shop's /meta.json country list and flags a change for re-verification.
+
+version: 1
+user_agent: 'CardDeskDrops/0.1 (personal release tracker)'
+
+sources:
+  - id: collectosk
+    label: collectosk release calendar
+    adapter: collectosk
+    role: calendar
+    enabled: true
+    categories: [football, f1]
+    urls:
+      - https://www.collectosk.com/wp-json/wp/v2/pages?slug=new-release-calendar&_fields=id,modified_gmt,link,content
+    cadence_minutes: 1440
+    crawl_delay_seconds: 2
+    max_confidence: confirmed_date
+    precedence: 2
+    notes: Primary sports calendar. Covers Europe-only Topps releases. RSS is disallowed by robots.txt.
+
+  - id: checklistinsider
+    label: Checklist Insider release calendar
+    adapter: checklistinsider
+    role: calendar
+    enabled: true
+    categories: [football, f1]
+    urls: [https://www.checklistinsider.com/release-calendar]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 2
+    max_confidence: confirmed_date
+    precedence: 3
+    notes: US-centric cross-check. No conditional GET.
+
+  - id: press-pokemon-na
+    label: Pokémon press site (schedule)
+    adapter: press-pokemon-na
+    role: calendar
+    enabled: true
+    categories: [pokemon]
+    urls: [https://press.pokemon.com/en/Items/Schedule/Pokemon-Trading-Card-Game?types=3]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 5
+    max_confidence: confirmed_date
+    precedence: 1
+    notes: Official. Set names and release dates. robots.txt Crawl-Delay 5.
+
+  - id: press-pokemon-eu
+    label: Pokémon EU press site
+    adapter: press-pokemon-eu
+    role: calendar
+    enabled: true
+    categories: [pokemon]
+    urls: [https://pokemon.gamespress.com/en-GB/]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 5
+    max_confidence: confirmed_date
+    precedence: 1
+    notes: Official UK/EU dates and prereleases.
+
+  - id: pc-zendesk
+    label: Pokémon Center pre-order dates article
+    adapter: pc-zendesk
+    role: signal
+    enabled: true
+    categories: [pokemon]
+    urls: [https://support.pokemoncenter.com/api/v2/help_center/en-us/articles/4407702295572.json]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 2
+    max_confidence: announced
+    precedence: 2
+    notes: Lineup and ship-window signal only. Pokémon Center UK ships to UK addresses only.
+
+  - id: serebii
+    label: Serebii English set list
+    adapter: serebii
+    role: calendar
+    enabled: true
+    categories: [pokemon]
+    urls: [https://www.serebii.net/card/english.shtml]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 2
+    max_confidence: announced
+    precedence: 3
+    notes: Secondary cross-check.
+
+  - id: ecb-fx
+    label: ECB euro reference rates
+    adapter: ecb-fx
+    role: reference
+    enabled: true
+    categories: []
+    urls: [https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml]
+    cadence_minutes: 1440
+    crawl_delay_seconds: 0
+    max_confidence: rumoured
+    precedence: 9
+    notes: Daily GBP/EUR/USD conversion.
+
+retailers:
+  # ---- Sports: ship to Gibraltar ----
+  - id: sportscardsworldwide
+    name: Sports Cards Worldwide
+    country: GB
+    currency: GBP
+    base_url: https://sportscardsworldwide.com
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: Royal Mail International Tracked £19.99 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Royal Mail International Tracked £19.99 }
+    preorder: { tags: ['status:Pre-Order'] }
+    notes: Shipping policy says the shop covers customs and import fees.
+
+  - id: sportscardsdirect
+    name: Sports Cards Direct
+    country: GB
+    currency: GBP
+    base_url: https://www.sportscardsdirect.co.uk
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: DHL Economy 41.00 / Express 49.00 (quoted in USD) }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: DHL Economy 41.00 / Express 49.00 (quoted in USD) }
+    preorder: { tags: [PRE-ORDER], title_suffixes: ['- Pre-Order'] }
+
+  - id: sportstradingcardsuk
+    name: Sports Trading Cards UK
+    country: GB
+    currency: GBP
+    base_url: https://sportstradingcardsuk.com
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: DHL Express 48.00 (quoted in USD); buyer pays duties }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: DHL Express 53.00 (quoted in USD) }
+    preorder: { title_prefixes: ['Pre Order - '] }
+
+  - id: kingofhoops
+    name: King of Hoops
+    country: GB
+    currency: GBP
+    base_url: https://kingofhoops.co.uk
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: £9.99 at cart; policy says £14.99 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: £9.99 at cart }
+    notes: Mostly basketball; small catalogue.
+
+  - id: tacticgames
+    name: Tacticgames
+    country: FR
+    currency: EUR
+    base_url: https://tacticgames.fr
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: Standard International €30 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: €20 }
+    preorder: { tags: [Précommande] }
+
+  - id: panini-uk
+    name: Panini UK
+    country: GB
+    currency: GBP
+    base_url: https://www.panini.co.uk
+    platform: magento-panini
+    enabled: false # adapter built once category paths are captured; HTML only
+    categories: [football]
+    paths: []
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: Delivery page lists Gibraltar; £20 minimum order; 3–5 working days }
+    ships_es: { value: unknown }
+
+  # ---- Sports: Spain only ----
+  - id: dutchbreakers
+    name: DutchBreakers
+    country: NL
+    currency: EUR
+    base_url: https://dutchbreakers.com
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: DHL 23.00 / insured 26.00 (quoted in USD) }
+
+  - id: sportcardscenter
+    name: Sport Cards Center
+    country: ES
+    currency: EUR
+    base_url: https://sportcardscenter.com
+    platform: shopify
+    enabled: true
+    categories: [football, f1]
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Estándar €4.50 }
+    preorder: { body_date_regex: 'RELEASE DATE:\s*(\d{1,2}/\d{1,2}/\d{4})' }
+
+  - id: sportycards
+    name: SportyCards
+    country: IT
+    currency: EUR
+    base_url: https://sportycards.it
+    platform: woocommerce
+    enabled: true
+    categories: [football, f1]
+    paths: ['/wp-json/wc/store/v1/products']
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Gibraltar accepted but no rates returned }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Tariffa unica €15 }
+    preorder: { title_prefixes: ['PREORDER:'] }
+
+  - id: panini-es
+    name: Panini España
+    country: ES
+    currency: EUR
+    base_url: https://www.panini.es
+    platform: magento-panini
+    enabled: false # adapter built once category paths are captured; HTML only
+    categories: [football]
+    paths: []
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Gibraltar not in list of countries served }
+    ships_es: { value: 'yes', verified_at: 2026-10-02 }
+
+  # ---- Pokémon: ship to Gibraltar ----
+  - id: zatu
+    name: Zatu
+    country: GB
+    currency: GBP
+    base_url: https://zatu.com
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/booster-boxes-pokemon/products.json', '/collections/pokemon-pre-orders/products.json']
+    crawl_delay_seconds: 10
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: FedEx International Connect £17.06–21.97 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: International Tracked £9.50–10.29; IOSS for EU under €150 }
+
+  - id: pokemillon
+    name: Pokemillon
+    country: ES
+    currency: EUR
+    base_url: https://www.pokemillon.com
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/cartas-pokemon-inglesas/products.json']
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: Envío Certificado €19.90 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: from €4.50 (24–48 h) }
+    preorder: { tags: [Reserva] }
+    english_markers: [inglés, ingles]
+
+  - id: poke-geek
+    name: Poke-Geek
+    country: FR
+    currency: EUR
+    base_url: https://www.poke-geek.fr
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/etb-anglaise/products.json']
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: UPS €33.00 / Colissimo International €42.50 }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Mondial Relay €6.99 / UPS €11.25 }
+    english_markers: [anglais, anglaise, english]
+    notes: Small English range.
+
+  - id: southern-light
+    name: Southern Light TCG
+    country: GI
+    currency: GBP
+    base_url: https://southernlight.store
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/pokemon-english/products.json']
+    ships_gi: { value: 'yes', verified_at: 2026-10-02, note: Local delivery £0 (shop in Gibraltar) }
+    ships_es: { value: 'no', verified_at: 2026-10-02 }
+    notes: Mostly Japanese/Chinese/Korean stock; English range is tiny.
+
+  # ---- Pokémon: Spain only ----
+  - id: total-cards
+    name: Total Cards
+    country: GB
+    currency: GBP
+    base_url: https://totalcards.net
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/new-pokemon/products.json']
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: No rates returned on three items }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Royal Mail AirMail £5.27 to Heavy £16.35 }
+    preorder: { tags: [pre-order], body_date_regex: 'Release Date:\s*([0-9]{1,2}(?:st|nd|rd|th)?\s+[A-Za-z]+\s+[0-9]{4}|[0-9]{1,2}/[0-9]{1,2}/[0-9]{4})' }
+
+  - id: pikamon
+    name: Pikamon
+    country: NL
+    currency: EUR
+    base_url: https://pikamon.eu
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/pokemon-english/products.json']
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Tracked and insured €18.95 }
+    preorder: { tags: ['pre-order*'] }
+    english_markers: [english]
+
+  - id: metamorph-center
+    name: Metamorph Center
+    country: ES
+    currency: EUR
+    base_url: https://metamorphcenter.com
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/elite-trainer-box-pokemon/products.json']
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: Correos Express €4.95 }
+    preorder: { title_prefixes: ['[ RESERVA ]'] }
+    english_markers: [inglés, ingles]
+
+  - id: titan-cards
+    name: Titan Cards
+    country: GB
+    currency: GBP
+    base_url: https://titancards.co.uk
+    platform: shopify
+    enabled: true
+    categories: [pokemon]
+    paths: ['/collections/pokemon/products.json']
+    ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
+    ships_es: { value: 'yes', verified_at: 2026-10-02, note: International Tracked ~17 (quoted in USD) }
+    notes: Policy says quantities may be limited per household.

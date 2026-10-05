@@ -1,0 +1,38 @@
+{
+ "slug": "tacticgames",
+ "host": "tacticgames.fr",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "2026 Topps Chrome Tennis – Hobby Box",
+   "variant_id": 55219481084247,
+   "price": 179.9,
+   "grams": 1100
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "Standard International",
+     "price": "20.00",
+     "currency": "EUR",
+     "delivery_days": [
+      2,
+      8
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}

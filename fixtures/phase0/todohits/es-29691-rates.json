@@ -1,0 +1,33 @@
+{
+ "slug": "todohits",
+ "host": "todohits.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:27:37Z",
+  "products_http": 200,
+  "item": {
+   "title": "[Reserva] Booster Box 30 Aniversario | POKÉMON | Japonés",
+   "variant_id": 55098299220305,
+   "price": 209.99,
+   "grams": 500
+  },
+  "add_http": 422,
+  "add_body": "{\"status\":422,\"message\":\"El artículo '[Reserva] Booster Box 30 Aniversario | POKÉMON | Japonés' ya está agotado.\",\"description\":\"El artículo '[Reserva] Booster Box 30 Aniversario | POKÉMON | Japonés' ya está agotado.\"}",
+  "clear_http": 200
+ },
+ "es_retry_other_item": {
+  "label": "ES MA 29691 (other item)",
+  "checked_utc": "2026-10-05T07:27:57Z",
+  "products_http": 429,
+  "error": "products.json 429 <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    ",
+  "clear_http": 429
+ },
+ "gi": {
+  "label": "GI GX11 1AA (fresh cart)",
+  "checked_utc": "2026-10-05T07:28:26Z",
+  "products_http": 429,
+  "error": "products.json 429 <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    ",
+  "clear_http": 429
+ }
+}

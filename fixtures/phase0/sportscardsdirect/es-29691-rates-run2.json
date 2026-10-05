@@ -1,0 +1,47 @@
+{
+ "slug": "sportscardsdirect",
+ "host": "www.sportscardsdirect.co.uk",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:29:23Z",
+  "products_http": 200,
+  "item": {
+   "title": "Topps Neon Marvel 2026 Hobby Box - Pre-Order",
+   "variant_id": 58773580841334,
+   "price": 274.99,
+   "grams": 277
+  },
+  "add_http": 200,
+  "query": {
+   "shipping_address[country]": "Spain",
+   "shipping_address[province]": "MA",
+   "shipping_address[zip]": "29691"
+  },
+  "result": {
+   "http": 200,
+   "rates": [
+    {
+     "name": "ECONOMY SELECT",
+     "price": "42.00",
+     "currency": "USD",
+     "delivery_days": [
+      3,
+      3
+     ]
+    },
+    {
+     "name": "EXPRESS WORLDWIDE",
+     "price": "49.00",
+     "currency": "USD",
+     "delivery_days": [
+      1,
+      1
+     ]
+    }
+   ],
+   "body": null
+  },
+  "clear_http": 200
+ }
+}
