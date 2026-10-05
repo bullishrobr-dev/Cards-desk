@@ -71,6 +71,26 @@ describe('classification: in scope', () => {
     expect(classify({ ...base, variantTitle: 'Español' }, ctx).excludedRule).toBe('Other non-English languages');
   });
 
+  it('keeps a booster box that mentions its booster packs', () => {
+    const c = classify({ title: 'Pokemon TCG: Mega Evolution Delta Reign - Booster Box (36 Booster Packs)' }, POKEMON);
+    expect(c).toMatchObject({ configuration: 'booster_box', excludedRule: null });
+  });
+
+  it('recognises Spanish box names', () => {
+    const c = classify({ title: 'Caja 36 Sobres Equilibrio Perfecto | Perfect Order', variantTitle: 'Inglés' }, { ...POKEMON, englishMarkers: ['inglés'] });
+    expect(c).toMatchObject({ configuration: 'booster_box', excludedRule: null });
+  });
+
+  it('keeps "Order" in a set name while dropping "Pre-Order"', () => {
+    const c = classify({ title: 'Pokemon TCG: Mega Evolution Perfect Order - Booster Box - Pre-Order' }, POKEMON);
+    expect(c.subject).toEqual(['evolution', 'mega', 'order', 'perfect']);
+  });
+
+  it('excludes a half-box variant of a full-box listing', () => {
+    const c = classify({ title: 'Caja 36 Sobres Origen Perdido | Lost Origin', variantTitle: 'Caja 18 Inglés' }, { ...POKEMON, englishMarkers: ['inglés'] });
+    expect(c.excludedRule).toBe('Half boxes');
+  });
+
   it('flags watchlist players', () => {
     const c = classify({ title: 'Topps Chrome UCC 2025/26 Lamine Yamal Edition Hobby Box' }, SPORTS);
     expect(c.players).toEqual(['Lamine Yamal']);
@@ -93,9 +113,18 @@ describe('classification: noise is excluded, never silently dropped', () => {
     ['3-pack blister', { title: 'Pokémon TCG: Lost Origin (SS11) - 3-Pack Blister - English' }, POKEMON, 'Blisters'],
     ['PET protector looks like a booster box', { title: 'Heimdall® Pokémon PET Protector – English Booster Box 36', productType: 'PET Protector' }, POKEMON, 'Accessories and supplies'],
     ['acrylic display case', { title: 'Heimdall® Pokémon Booster Box Acrylic Display Case – Rhino Strength', productType: 'Acrylic' }, POKEMON, 'Accessories and supplies'],
-    ['Chinese single card', { title: 'Pokemon - 30th Celebration - Simplified Chinese - Mew ex - 135/103', productType: 'Single Card' }, POKEMON, 'Graded or single cards'],
+    ['Chinese single card', { title: 'Pokemon - 30th Celebration - Simplified Chinese - Mew ex - 135/103', productType: 'Single Card' }, POKEMON, 'Other non-English languages'],
     ['damaged ETB', { title: '[ DAÑADA ] ETB Pitch Black ME05 - Inglés', productType: 'ETB Pokémon TCG' }, POKEMON, 'Damaged stock'],
     ['mystery bundle', { title: 'Pokemon Mini Mystery Bundle', productType: 'Pokemon' }, POKEMON, 'Mystery and repacks'],
+    ['autographed single with card number', { title: 'Topps Patrick Vieira 07/25 Autograph Orange Wave #CA-PV 2026 Chrome Premier League' }, SPORTS, 'Graded or single cards'],
+    ['vintage pack with no box type', { title: 'Pack Panini FIFA World Cup Korea Japan 2002' }, SPORTS, 'Single packs'],
+    ['Spanish 5-pack', { title: 'Pack 5 Sobres Pokémon TCG', variantTitle: 'Inglés' }, POKEMON, 'Single packs'],
+    ['Megacracks (kids game)', { title: 'Panini LaLiga Megacracks 2026/27', variantTitle: 'Primera Edición' }, SPORTS, 'Match Attax / Turbo Attax'],
+    ['Liga Este stickers', { title: 'Panini Liga Este 2026/27 - Caja de 50 sobres', tags: ['Fútbol'] }, SPORTS, 'Stickers'],
+    ['Disney box tagged Fútbol', { title: 'Topps Chrome Disney 2026 - Value Box', tags: ['Fútbol'] }, SPORTS, 'Other sports and entertainment'],
+    ['Monopoly board game', { title: 'Panini Monopoly Prizm FIFA World Cup 2026 &#8211; Board Game' }, SPORTS, 'Games and toys'],
+    ['Spanish mini tin', { title: 'Mini Lata Vibrant Paldea', variantTitle: 'Mini Lata Inglés' }, POKEMON, 'Mini tins'],
+    ['Pokémon with no box type', { title: 'Electrode Hisui V', variantTitle: 'Inglés' }, POKEMON, 'Unrecognised product type'],
   ];
   for (const [name, input, ctx, rule] of cases) {
     it(name, () => expect(classify(input, ctx).excludedRule).toBe(rule));

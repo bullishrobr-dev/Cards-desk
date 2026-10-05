@@ -63,22 +63,30 @@ publishers:
 # Applies to every category. Matched against the title, variant name and product type
 # (never shop tags, which are too noisy: one shop tags every product "Español - Inglés").
 global_exclude:
-  - rule: Graded or single cards
-    keywords: [psa 10, psa 9, bgs, cgc, beckett 9, beckett 10, graded, slab, slabs, slabbed, single card, singles, auto card, oversized, promo card, living set, grading]
-  - rule: Accessories and supplies
-    keywords: [protector, pet protector, display case, acrylic, toploader, toploaders, top loader, topload, sleeves, binder, one touch, magnetic holder, card holder, storage box, deck box, playmat, supplies]
   - rule: Group breaks and live openings
     keywords: ['break #', pick your team, random team, filler, abrir en directo, apri in live, live opening, solo directo]
+  - rule: Graded or single cards
+    # Keywords wrapped in slashes are regular expressions on the normalised title.
+    keywords: [psa 10, psa 9, bgs, cgc, beckett 9, beckett 10, graded, slab, slabs, slabbed, single card, singles, auto card, autograph card, oversized, promo card, living set, grading, '/#[a-z0-9]/']
+  - rule: Accessories and supplies
+    keywords: [protector, pet protector, display case, acrylic, toploader, toploaders, top loader, topload, sleeves, binder, one touch, magnetic holder, card holder, storage box, deck box, playmat, supplies]
+  - rule: Games and toys
+    keywords: [board game, monopoly, figure, plush, puzzle]
   - rule: Mystery and repacks
     keywords: [mystery, repack, random packs, lote especial]
   - rule: Damaged stock
     keywords: [damaged, dañada, danada, imperfections, daño en caja]
   - rule: Single packs
-    keywords: [single pack, hobby pack, booster pack, sleeved booster, premium pack, eco pack, starter pack, sobre]
+    keywords: [single pack, hobby pack, booster pack, sleeved booster, premium pack, eco pack, starter pack, value pack, sobre]
+  - rule: Single packs
+    when_no_configuration: true # "Pack …" with no recognised box type is a pack
+    keywords: [pack, packs]
   - rule: Cases (multiple boxes) # REVIEW: cases are sealed, but priced per case not per box
-    keywords: [hobby case, master case, mini case, box case, full case, international case]
-  - rule: Baseball and other sports
-    keywords: [baseball, mlb, basketball, nba, wnba, hockey, nhl, nfl, tennis, golf, wwe, ufc, snooker]
+    keywords: [hobby case, master case, mini case, box case, full case, international case, caja 10 bundles, 10 bundles]
+  - rule: Half boxes
+    keywords: [half booster box, caja 18, 18 sobres, 18 booster]
+  - rule: Other sports and entertainment
+    keywords: [baseball, mlb, basketball, nba, wnba, hockey, nhl, nfl, tennis, golf, wwe, ufc, snooker, formula e, disney, star wars, marvel, dc comics, harry potter, wrestling]
 
 # Text normalisation applied to every title before matching, on both sides of a match.
 normalise:
@@ -94,8 +102,9 @@ normalise:
     boosterbox: booster box
     pokémon: pokemon
     collectors: collector
+    pre order: preorder
   # Words that never distinguish one release from another.
-  noise: [box, boxes, pre, order, preorder, pre-order, reserva, precommande, précommande, trading, cards, card, tcg, sealed, english, ingles, inglés, anglais, anglaise, eng, en, version, new, the, of, and, edition, soccer, football, racing, sports, sport, ecom, international, display]
+  noise: [box, boxes, preorder, reserva, precommande, précommande, trading, cards, card, tcg, sealed, english, ingles, inglés, anglais, anglaise, eng, en, version, new, the, of, and, edition, soccer, football, racing, sports, sport, ecom, international, display]
 
 categories:
   football:
@@ -108,7 +117,8 @@ categories:
     match_taxonomy: [football, soccer, calcio, fussball, fútbol]
     exclude:
       - { rule: Stickers, keywords: [sticker, stickers, album, cromos] }
-      - { rule: Match Attax / Turbo Attax, keywords: [match attax, turbo attax] }
+      - { rule: Match Attax / Turbo Attax, keywords: [match attax, turbo attax, adrenalyn, megacracks, megacrack] }
+      - { rule: Stickers, keywords: [liga este, caja de 50 sobres] }
       - { rule: Retail blasters and hangers, keywords: [blaster, hanger] }
     languages: [en, any] # sports cards are language-neutral
     weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
@@ -141,6 +151,7 @@ categories:
     exclude:
       - { rule: Stickers, keywords: [sticker, stickers, album] }
       - { rule: Turbo Attax, keywords: [turbo attax] }
+      - { rule: Other racing series, keywords: [formula e, nascar, indycar, motogp] }
       - { rule: Retail blasters and hangers, keywords: [blaster, hanger] }
     languages: [en, any]
     weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
@@ -171,8 +182,11 @@ categories:
       - { rule: Blisters, keywords: [blister, 3 pack blister, 3-pack blister] }
       - { rule: Mini tins, keywords: [mini tin, mini-tin, mini tins] }
       - { rule: Japanese-language, keywords: [japanese, japones, japonés, japonais, japanisch, giapponese, jpn, jp] }
-      - { rule: Other non-English languages, keywords: [chinese, korean, español, espanol, castellano, francais, français, deutsch, italiano, simplified chinese, traditional chinese] }
+      - { rule: Other non-English languages, keywords: [chinese, chinois, korean, coreano, español, espanol, castellano, francais, français, deutsch, italiano, simplified chinese, traditional chinese, vf] }
+      - { rule: Mini tins, keywords: [mini lata, mini latas] }
     languages: [en]
+    # Pokémon items with no recognised box type are excluded rather than guessed.
+    require_configuration: true
     weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
     tiers:
       - tier: Premium collection
@@ -185,10 +199,10 @@ categories:
         points_pct: 50
         lines: [mega evolution]
     configurations:
-      - { id: booster_box, label: Booster box / display, points_pct: 100, keywords: [booster box, booster display, display box, 36 pack, 36-pack, 36 booster] }
-      - { id: etb, label: Elite Trainer Box, points_pct: 75, keywords: [elite trainer box, etb] }
+      - { id: booster_box, label: Booster box / display, points_pct: 100, keywords: [booster box, booster display, display box, 36 pack, 36-pack, 36 booster, caja 36 sobres, caja de 36 sobres, 36 sobres] }
+      - { id: etb, label: Elite Trainer Box, points_pct: 75, keywords: [elite trainer box, etb, caja entrenador de elite, coffret dresseur d elite] }
       - { id: booster_bundle, label: Booster bundle, points_pct: 50, keywords: [booster bundle] }
-      - { id: other, label: Other sealed, points_pct: 25, keywords: [collection, box, tin] }
+      - { id: other, label: Other sealed, points_pct: 25, keywords: [premium collection, ultra premium, collection, coffret, box, tin, lata, maletin] }
 
   ufc:
     label: UFC

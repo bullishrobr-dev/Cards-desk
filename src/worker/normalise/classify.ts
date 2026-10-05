@@ -31,11 +31,19 @@ export interface Classification {
   subject: string[];
 }
 
+interface CompiledRule {
+  rule: string;
+  phrases: string[];
+  patterns: RegExp[];
+  whenNoConfiguration: boolean;
+}
+
 interface CompiledCategory {
   id: string;
   match: string[];
   matchTaxonomy: string[];
-  exclude: Array<{ rule: string; keywords: string[] }>;
+  exclude: CompiledRule[];
+  requireConfiguration: boolean;
   publishers: Array<{ id: string; aliases: string[] }>;
   tiers: Array<{ tier: string; pct: number; lines: string[] }>;
   configurations: Array<{ id: string; keywords: string[] }>;
@@ -46,11 +54,19 @@ export interface Classifier {
   normaliser: Normaliser;
 }
 
+const isPattern = (k: string) => k.length > 2 && k.startsWith('/') && k.endsWith('/');
+
 export function createClassifier(rules: RulesConfig): Classifier {
   const n = createNormaliser(rules.normalise.synonyms);
   const kw = (list: string[]) => list.map((k) => n.keyword(k)).filter(Boolean);
   const noise = new Set(kw(rules.normalise.noise).flatMap((k) => k.split(' ')));
-  const globalExclude = rules.global_exclude.map((r) => ({ rule: r.rule, keywords: kw(r.keywords) }));
+  const compileRule = (r: { rule: string; keywords: string[]; when_no_configuration: boolean }): CompiledRule => ({
+    rule: r.rule,
+    phrases: kw(r.keywords.filter((k) => !isPattern(k))),
+    patterns: r.keywords.filter(isPattern).map((k) => new RegExp(k.slice(1, -1))),
+    whenNoConfiguration: r.when_no_configuration,
+  });
+  const globalExclude = rules.global_exclude.map(compileRule);
 
   const categories = new Map<string, CompiledCategory>();
   for (const [id, c] of Object.entries(rules.categories)) {
@@ -59,7 +75,8 @@ export function createClassifier(rules: RulesConfig): Classifier {
       id,
       match: kw(c.match),
       matchTaxonomy: kw(c.match_taxonomy),
-      exclude: c.exclude.map((e) => ({ rule: e.rule, keywords: kw(e.keywords) })),
+      exclude: c.exclude.map(compileRule),
+      requireConfiguration: c.require_configuration,
       publishers: c.publishers.map((p) => ({ id: p, aliases: kw(rules.publishers[p]?.aliases ?? [p]) })),
       tiers: c.tiers.map((t) => ({ tier: t.tier, pct: t.points_pct, lines: kw(t.lines) })),
       configurations: c.configurations.map((cfg) => ({ id: cfg.id, keywords: kw(cfg.keywords) })),
@@ -86,32 +103,15 @@ export function createClassifier(rules: RulesConfig): Classifier {
       const hits = c.match.filter((k) => n.has(main, k)).length + c.matchTaxonomy.filter((k) => n.has(taxonomy, k)).length;
       if (hits > 0 && (!best || hits > best.hits)) best = { c, hits };
     }
+    // A source that only carries one category (e.g. a shop's English Pokémon collection) implies it.
+    if (!best && ctx.categories.length === 1) {
+      const only = categories.get(ctx.categories[0] ?? '');
+      if (only) best = { c: only, hits: 0 };
+    }
     if (!best) return empty;
     const cat = best.c;
 
-    // 2. Exclusions: global first, then the category's own.
-    let excludedRule: string | null = null;
-    for (const r of [...globalExclude, ...cat.exclude]) {
-      if (r.keywords.some((k) => n.has(main, k))) {
-        excludedRule = r.rule;
-        break;
-      }
-    }
-    if (!excludedRule && ctx.englishMarkers?.length) {
-      const markers = kw(ctx.englishMarkers);
-      if (!markers.some((m) => n.has(main, m))) excludedRule = 'Not confirmed English-language';
-    }
-
-    // 3. Publisher: an alias in the title or vendor; a single-publisher category defaults to it.
-    const vendorText = n.text(input.vendor ?? '');
-    let publisher = cat.publishers.find((p) => p.aliases.some((a) => n.has(main, a) || n.has(vendorText, a)))?.id ?? null;
-    if (!publisher && cat.publishers.length === 1) publisher = cat.publishers[0]?.id ?? null;
-    if (!publisher && !excludedRule) excludedRule = 'Publisher not in scope';
-
-    // 4. Season: "2025-26" or a bare year.
-    const season = titleText.match(/\b20\d\d-\d\d\b/)?.[0] ?? titleText.match(/\b20\d\d\b/)?.[0] ?? null;
-
-    // 5. Configuration: first listed (strongest) whose keyword appears.
+    // 2. Configuration: first listed (strongest) whose keyword appears.
     let configuration: string | null = null;
     let configPhrase: string | null = null;
     for (const cfg of cat.configurations) {
@@ -122,6 +122,30 @@ export function createClassifier(rules: RulesConfig): Classifier {
         break;
       }
     }
+
+    // 3. Exclusions: the category's own (more specific) first, then global. The first match is named.
+    let excludedRule: string | null = null;
+    for (const r of [...cat.exclude, ...globalExclude]) {
+      if (r.whenNoConfiguration && configuration) continue;
+      if (r.phrases.some((k) => n.has(main, k)) || r.patterns.some((re) => re.test(main))) {
+        excludedRule = r.rule;
+        break;
+      }
+    }
+    if (!excludedRule && ctx.englishMarkers?.length) {
+      const markers = kw(ctx.englishMarkers);
+      if (!markers.some((m) => n.has(main, m))) excludedRule = 'Not confirmed English-language';
+    }
+    if (!excludedRule && cat.requireConfiguration && !configuration) excludedRule = 'Unrecognised product type';
+
+    // 4. Publisher: an alias in the title or vendor; a single-publisher category defaults to it.
+    const vendorText = n.text(input.vendor ?? '');
+    let publisher = cat.publishers.find((p) => p.aliases.some((a) => n.has(main, a) || n.has(vendorText, a)))?.id ?? null;
+    if (!publisher && cat.publishers.length === 1) publisher = cat.publishers[0]?.id ?? null;
+    if (!publisher && !excludedRule) excludedRule = 'Publisher not in scope';
+
+    // 5. Season: "2025-26" or a bare year.
+    const season = titleText.match(/\b20\d\d-\d\d\b/)?.[0] ?? titleText.match(/\b20\d\d\b/)?.[0] ?? null;
 
     // 6. Line and tier: the longest matching line phrase across all tiers.
     let line: string | null = null;

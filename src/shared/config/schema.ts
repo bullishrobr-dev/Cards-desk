@@ -26,6 +26,14 @@ const Weights = z
     message: 'score weights must add up to 100',
   });
 
+/** An exclusion rule. Keywords wrapped in slashes ("/#[a-z0-9]/") are regular expressions. */
+const ExcludeRule = z.object({
+  rule: z.string(),
+  keywords: z.array(z.string().min(1)).min(1),
+  /** Only applies when no box configuration was recognised. */
+  when_no_configuration: z.boolean().default(false),
+});
+
 /** A keyword rule matched case- and accent-insensitively against a normalised title. */
 const Keywords = z.array(z.string().min(1)).default([]);
 
@@ -39,9 +47,9 @@ const Category = z.object({
   /** Shop product types and tags that also place an item in the category. */
   match_taxonomy: Keywords,
   /** Titles matching any of these are excluded from the category, with the rule shown in the UI. */
-  exclude: z
-    .array(z.object({ rule: z.string(), keywords: z.array(z.string().min(1)).min(1) }))
-    .default([]),
+  exclude: z.array(ExcludeRule).default([]),
+  /** Exclude items whose box type is not recognised (used for Pokémon). */
+  require_configuration: z.boolean().default(false),
   /** Only these product languages are in scope. */
   languages: z.array(z.string()).default(['en']),
   weights: Weights,
@@ -136,7 +144,7 @@ export const RulesConfig = z.object({
     noise: z.array(z.string()),
   }),
   /** Exclusions that apply to every category (non-sealed items, graded slabs, etc.). */
-  global_exclude: z.array(z.object({ rule: z.string(), keywords: z.array(z.string().min(1)).min(1) })),
+  global_exclude: z.array(ExcludeRule),
   scarcity: z.object({
     signals: z.array(
       z.object({
