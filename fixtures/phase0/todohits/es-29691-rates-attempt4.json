@@ -1,0 +1,31 @@
+{
+ "slug": "todohits",
+ "host": "todohits.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:47:09Z",
+  "item": {
+   "title": "Mega Clefable y Mega Gengar 2026 Tin | 4 Sobres | POKÉMON | Inglés",
+   "variant_id": 54079117427025,
+   "price": 32.99,
+   "grams": 500
+  },
+  "add_http": 429,
+  "add_body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Verifying your connection...</title>\n\n    <style type=\"text/css\">\n        *{box-sizing:border-box;margin:0;padding:0}html{font-family:\"Helvetic",
+  "clear_http": 429
+ },
+ "gi": {
+  "label": "GI GX11 1AA (fresh cart)",
+  "checked_utc": "2026-10-05T07:47:34Z",
+  "item": {
+   "title": "Mega Clefable y Mega Gengar 2026 Tin | 4 Sobres | POKÉMON | Inglés",
+   "variant_id": 54079117427025,
+   "price": 32.99,
+   "grams": 500
+  },
+  "add_http": 429,
+  "add_body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Verifying your connection...</title>\n\n    <style type=\"text/css\">\n        *{box-sizing:border-box;margin:0;padding:0}html{font-family:\"Helvetic",
+  "clear_http": 429
+ }
+}

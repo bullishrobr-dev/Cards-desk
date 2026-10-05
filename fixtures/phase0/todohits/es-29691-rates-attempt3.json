@@ -1,0 +1,31 @@
+{
+ "slug": "todohits",
+ "host": "todohits.com",
+ "_method": "Fresh cookie jar; POST /cart/add.js (1 in-stock item); GET /cart/shipping_rates.json; POST /cart/clear.js; no checkout, no personal data.",
+ "es": {
+  "label": "ES MA 29691",
+  "checked_utc": "2026-10-05T07:46:03Z",
+  "item": {
+   "title": "Booster Box Storm Emerald | POKÉMON | Coreano",
+   "variant_id": 54783982076241,
+   "price": 69.99,
+   "grams": 500
+  },
+  "add_http": 422,
+  "add_body": "{\"status\":422,\"message\":\"El artículo 'Booster Box Storm Emerald | POKÉMON | Coreano' ya está agotado.\",\"description\":\"El artículo 'Booster Box Storm Emerald | POKÉMON | Coreano' ya está agotado.\"}",
+  "clear_http": 200
+ },
+ "gi": {
+  "label": "GI GX11 1AA (fresh cart)",
+  "checked_utc": "2026-10-05T07:46:18Z",
+  "item": {
+   "title": "Booster Box Storm Emerald | POKÉMON | Coreano",
+   "variant_id": 54783982076241,
+   "price": 69.99,
+   "grams": 500
+  },
+  "add_http": 429,
+  "add_body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Verifying your connection...</title>\n\n    <style type=\"text/css\">\n        *{box-sizing:border-box;margin:0;padding:0}html{font-family:\"Helvetic",
+  "clear_http": 429
+ }
+}
