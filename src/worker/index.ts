@@ -1,4 +1,5 @@
 import { Hono } from 'hono';
+import * as Sentry from '@sentry/cloudflare';
 import { rules, sources } from '../shared/config/index.ts';
 import { createClassifier } from './normalise/classify.ts';
 import { dispatch } from './jobs/scheduler.ts';
@@ -10,6 +11,7 @@ import type { JobMessage } from './jobs/types.ts';
 import { api } from './api/routes.ts';
 
 export { AlertScheduler } from './alerts/scheduler-do.ts';
+import { sentryOptions } from './sentry.ts';
 
 // Built once per isolate: compiling the rules is the expensive part, not using them.
 const classifier = createClassifier(rules);
@@ -31,7 +33,7 @@ async function handleJob(msg: JobMessage, env: Env): Promise<void> {
   }
 }
 
-export default {
+const handler = {
   fetch: app.fetch,
   async scheduled(controller, env, ctx) {
     await dispatch({ db: env.DB, queue: env.JOBS, rules, sources, now: new Date(controller.scheduledTime), llmEnabled: Boolean(env.ANTHROPIC_API_KEY) });
@@ -46,3 +48,6 @@ export default {
     }
   },
 } satisfies ExportedHandler<Env>;
+
+// Errors go to Sentry when SENTRY_DSN is set; without it the wrapper does nothing.
+export default Sentry.withSentry(sentryOptions, handler);

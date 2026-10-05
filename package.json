@@ -23,6 +23,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
     "@block65/webcrypto-web-push": "^2.0.0",
+    "@sentry/cloudflare": "^11.4.0",
     "hono": "^4.13.13",
     "jose": "^6.2.12",
     "react": "^19.3.0",
