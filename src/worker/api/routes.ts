@@ -150,3 +150,36 @@ api.get('/calendar', (c) => {
   const base = (c.env.PUBLIC_BASE_URL ?? '').replace(/\/$/, '');
   return c.json({ feedUrl: base && c.env.ICAL_TOKEN ? `${base}/ical/${c.env.ICAL_TOKEN}.ics` : null });
 });
+
+/**
+ * Phase 1 step 1: is Topps reachable from Cloudflare's network? (From the build sandbox every
+ * Topps host returned a Cloudflare WAF 403.) Three requests, robots.txt first, run on demand.
+ */
+api.get('/diagnostics/topps', async (c) => {
+  const ua = sources.user_agent;
+  const out: Array<{ url: string; status: number | null; note: string }> = [];
+  for (const host of ['https://www.topps.com', 'https://uk.topps.com']) {
+    const probe = async (path: string) => {
+      try {
+        const res = await fetch(`${host}${path}`, { headers: { 'user-agent': ua, accept: '*/*' }, redirect: 'manual' });
+        const body = await res.text();
+        const blocked = res.headers.get('cf-mitigated') || /you have been blocked|Just a moment/i.test(body.slice(0, 4000));
+        out.push({ url: `${host}${path}`, status: res.status, note: blocked ? 'blocked by bot protection' : res.headers.get('content-type') ?? '' });
+        return { ok: res.ok && !blocked, body };
+      } catch (e) {
+        out.push({ url: `${host}${path}`, status: null, note: e instanceof Error ? e.message : String(e) });
+        return { ok: false, body: '' };
+      }
+    };
+    const robots = await probe('/robots.txt');
+    if (!robots.ok) continue;
+    // Only probe the feeds robots.txt allows.
+    const { isAllowed, parseRobots } = await import('../fetch/robots.ts');
+    const policy = parseRobots(robots.body, ua);
+    for (const path of ['/products.json?limit=1', '/release-calendar']) {
+      if (isAllowed(policy, path)) await probe(path);
+      else out.push({ url: `${host}${path}`, status: null, note: 'disallowed by robots.txt; not fetched' });
+    }
+  }
+  return c.json(out);
+});
