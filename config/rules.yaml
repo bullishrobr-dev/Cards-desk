@@ -44,7 +44,12 @@ rrp:
     # seen across shops, and label it "Estimated RRP".
     method: median_first_seen
     min_retailers: 2
-  known: [] # filled only with verified values (see docs/phase0/es-recheck-and-rrp.md)
+  # Verified values only (docs/phase0/es-recheck-and-rrp.md). UK RRPs as published by
+  # Asmodee UK, the official UK Pokémon TCG distributor, on 5 Oct 2026.
+  known:
+    - { category: pokemon, configuration: etb, currency: GBP, amount: 49.99, source: 'https://www.asmodee.co.uk/', verified_at: 2026-10-05, note: Same on all seven Mega Evolution-era ETBs and 30th Celebration }
+    - { category: pokemon, configuration: booster_bundle, currency: GBP, amount: 24.99, source: 'https://www.asmodee.co.uk/', verified_at: 2026-10-05 }
+    - { category: pokemon, configuration: booster_box, currency: GBP, amount: 154.44, source: 'https://www.asmodee.co.uk/', verified_at: 2026-10-05, note: 'Derived: 36 packs × £4.29 pack RRP; no whole-box RRP is published' }
 
 publishers:
   topps:
