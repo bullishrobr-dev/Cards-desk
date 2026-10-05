@@ -1,0 +1,9 @@
+{
+ "url": "https://zatu.com/collections/booster-boxes-pokemon/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:91699708282:ProductListController:f362c8a32efa81f56201a89726414f31\""
+ }
+}

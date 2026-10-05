@@ -1,0 +1,10 @@
+{
+ "url": "https://support.pokemoncenter.com/api/v2/help_center/en-us/articles/4407702295572.json",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "cache-control": "max-age=0, private, must-revalidate",
+  "content-type": "application/json; charset=utf-8",
+  "etag": "W/\"5f23a6d12851cbcf6dce18778af614cd\""
+ }
+}

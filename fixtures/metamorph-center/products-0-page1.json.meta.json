@@ -1,0 +1,9 @@
+{
+ "url": "https://metamorphcenter.com/collections/elite-trainer-box-pokemon/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:91674247510:ProductListController:397587b4ae54a01d9b79a1b9c4a4a9af\""
+ }
+}

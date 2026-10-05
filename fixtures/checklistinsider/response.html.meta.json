@@ -1,0 +1,9 @@
+{
+ "url": "https://www.checklistinsider.com/release-calendar",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "cache-control": "public, max-age=86400, must-revalidate, no-store",
+  "content-type": "text/html; charset=UTF-8"
+ }
+}

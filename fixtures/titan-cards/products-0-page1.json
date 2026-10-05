@@ -1,0 +1,2232 @@
+{
+ "products": [
+  {
+   "id": 8606688018762,
+   "title": "Pokemon Mini Mystery Bundle",
+   "handle": "pokemon-mini-mystery-box",
+   "body_html": "<p>Our mini Pokemon Mystery Bundle contains 3x English Pokemon TCG Booster Packs from random sets plus an extra item such as an EX, GX or V card or perhaps a Japanese or Korean booster pack or official pin badge or flip coin!</p>\n<p>All products included are new and authentic.</p>\n<p>Mystery Boxes are pre-packed and contents are randomly comprised of items mentioned above.</p>\n<p>We currently have four different sizes of Mystery Box to choose from be sure to check them all out!</p>",
+   "published_at": "2023-12-14T06:08:38+00:00",
+   "created_at": "2023-12-14T06:08:38+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Mini",
+    "Pokemon",
+    "Pokemon Mystery Box"
+   ],
+   "variants": [
+    {
+     "id": 47430425739594,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-TC-MYSTERY-BOX-MINI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "35.00",
+     "grams": 93,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 8606688018762,
+     "created_at": "2023-12-14T06:08:38+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8720764993866,
+   "title": "Pokemon Booster Pack & Ultra Rare Card Bundle (EX, V, VMAX or VSTAR)",
+   "handle": "pokemon-booster-pack-ultra-rare-card-bundle-ex-v-vmax-or-vstar",
+   "body_html": "This bundle contains one Pokemon Booster Pack at random, each booster pack contains 10 Pokemon Cards! Which pack will you get?<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Also included one random Ultra Rare Pokemon Card - this could be a V, VMAX, VSTAR or EX Card and is always guaranteed to be Ultra Rare! A fantastic gift for any Pokemon fan.",
+   "published_at": "2024-03-14T10:15:29+00:00",
+   "created_at": "2024-03-14T10:15:29+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon Card Bundle",
+    "Pokemon Mystery Bundle"
+   ],
+   "variants": [
+    {
+     "id": 47763816546634,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-BNDL-BPUR",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "13.00",
+     "grams": 30,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8720764993866,
+     "created_at": "2024-03-14T10:15:31+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8606894555466,
+   "title": "Japanese Pokémon Card Mystery Bundle – 4 Sealed Booster Packs | Authentic Random Packs from Japan",
+   "handle": "japanese-pokemon-booster-packs-4-pack",
+   "body_html": "<p data-start=\"163\" data-end=\"460\">Give the gift of surprise with our <strong data-start=\"198\" data-end=\"246\">Japanese Pokémon Booster Pack Mystery Bundle</strong>! Each bundle contains <strong data-start=\"269\" data-end=\"314\">4 authentic, factory-sealed booster packs</strong> from a mix of Japanese Pokémon TCG expansions. The fun starts the moment they open it — and the thrill of what’s inside makes it unforgettable.</p>\n<ul data-start=\"462\" data-end=\"812\">\n<li data-start=\"462\" data-end=\"512\">\n<p data-start=\"464\" data-end=\"512\"><strong data-start=\"464\" data-end=\"499\">4 sealed Japanese booster packs</strong> per bundle</p>\n</li>\n<li data-start=\"513\" data-end=\"563\">\n<p data-start=\"515\" data-end=\"563\">Selected from a variety of exciting expansions</p>\n</li>\n<li data-start=\"564\" data-end=\"616\">\n<p data-start=\"566\" data-end=\"616\">All cards and packaging in <strong data-start=\"593\" data-end=\"614\">Japanese language</strong></p>\n</li>\n<li data-start=\"617\" data-end=\"679\">\n<p data-start=\"619\" data-end=\"679\">Sourced from trusted Japanese suppliers — <strong data-start=\"661\" data-end=\"677\">100% genuine</strong></p>\n</li>\n<li data-start=\"680\" data-end=\"733\">\n<p data-start=\"682\" data-end=\"733\">UK-based dispatch for fast, customs-free delivery</p>\n</li>\n<li data-start=\"734\" data-end=\"812\">\n<p data-start=\"736\" data-end=\"812\"><strong data-start=\"736\" data-end=\"810\">Ideal for birthdays, Christmas, or any Pokémon fan who loves surprises</strong></p>\n</li>\n</ul>\n<p data-start=\"814\" data-end=\"100",
+   "published_at": "2023-12-14T08:58:34+00:00",
+   "created_at": "2023-12-14T08:58:34+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Booster Pack Bundle",
+    "Japanese Pokemon Cards",
+    "Pokemon Sealed Products",
+    "Pokemon. Pokemon: Japanese Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 47430782255434,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-4BOOSTER",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "22.00",
+     "grams": 50,
+     "compare_at_price": "22.00",
+     "position": 1,
+     "product_id": 8606894555466,
+     "created_at": "2023-12-14T08:58:34+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8710409290058,
+   "title": "Pokemon 5x Random ULTRA RARE Cards Bundle (V/VSTAR/VMAX or EX Cards)",
+   "handle": "pokemon-5x-random-ultra-rare-cards-bundle-v-vstar-vmax-or-ex-cards",
+   "body_html": "<p>1x Pack containing 5x Standard Sized Pokemon Trading Cards - All cards will be EX, V, VSTAR Cards or VMAX Cards. You will get five of them at random!</p>\n<p>These Ultra Rare Pokemon Cards cards are powerful in the Pokemon Trading Card Game, and also highly collectible in their own right. The cards in this listing often include Mythical and Legendary Pokemon Cards.</p>\n<p>One pack containing 5 different EX/V/VSTAR or VMAX Pokemon Cards will be sent at random. Cards may vary from those on the picture.</p>",
+   "published_at": "2024-03-07T00:21:42+00:00",
+   "created_at": "2024-03-07T00:21:42+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon Card Bundle",
+    "Pokemon Mystery Bundle"
+   ],
+   "variants": [
+    {
+     "id": 47737956073802,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-URX5-BUNDLE",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "17.00",
+     "grams": 40,
+     "compare_at_price": "22.00",
+     "position": 1,
+     "product_id": 8710409290058,
+     "created_at": "2024-03-07T00:21:43+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15252147962186,
+   "title": "Pokemon TCG Mega Evolution Phantasmal Flames Booster Pack",
+   "handle": "pokemon-tcg-mega-evolution-phantasmal-flames-booster-pack",
+   "body_html": "<p>1x Sealed Booster Pack from the Mega Evolution Phantasmal Flames expansion of the Pokemon Trading Card Game. Each pack contains 10 additional game cards.</p>\n<p><em>Choose your Pokémon partners and prepare for the biggest battles with the Pokémon Trading Card Game (TCG): Mega Evolution Phantasmal Flames Booster Pack range! Searing blue flames rip across a dark battlefield as Mega Charizard X ex soars up and looks down upon its opponents! With a deep chill to rival the heat, the shadowy figure of Mega Gengar ex slowly rises into view, and both Pokémon prepare to attack.</em></p>",
+   "published_at": "2025-11-10T09:37:02+00:00",
+   "created_at": "2025-11-10T09:37:00+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Booster Pack",
+    "Booster Packs",
+    "Pokemon Booster Pack",
+    "Pokemon. Pokemon: Sealed Booster Packs",
+    "Sealed Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 53269675868490,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK1010190119-1PK",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "16.00",
+     "grams": 25,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15252147962186,
+     "created_at": "2025-11-10T09:37:00+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15252834582858,
+   "title": "Pokemon TCG Mega Evolution Base Set",
+   "handle": "pokemon-tcg-mega-evolution-base-set",
+   "body_html": "<p>1x Sealed Booster Pack from the Mega Evolution Base Set of the Pokémon Trading Card Game. Each booster pack contains 10 additional game cards. </p>",
+   "published_at": "2025-11-10T15:41:19+00:00",
+   "created_at": "2025-11-10T15:41:18+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon Booster Pack",
+    "Pokemon. Pokemon: Sealed Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 53272048369994,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK1010057125-1PK",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "13.00",
+     "grams": 20,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15252834582858,
+     "created_at": "2025-11-10T15:41:18+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10167574430026,
+   "title": "Pokemon TCG Battle Partners SV9 Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-battle-partners-sv9-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"311\" data-end=\"618\" class=\"\">Step into the world of Pokémon battles like never before with the <strong data-start=\"377\" data-end=\"431\">Pokémon TCG Battle Partners SV9 Korean Booster Box</strong>! Packed with <strong data-start=\"445\" data-end=\"472\">30 sealed booster packs</strong>, each containing <strong data-start=\"490\" data-end=\"526\">5 authentic Korean Pokémon cards</strong>, this box is a must-have for collectors, trainers, and fans of the Scarlet &amp; Violet series.</p>\n<p data-start=\"620\" data-end=\"888\" class=\"\"><strong data-start=\"620\" data-end=\"643\">Battle Partners SV9</strong> brings new synergy, powerful EX cards, and exclusive Korean print designs you won’t find in English sets. Whether you're chasing ultra rares, expanding your deck, or gifting a Pokémon lover, this booster box delivers excitement with every pack.</p>\n<hr data-start=\"890\" data-end=\"893\" class=\"\">\n<h3 data-start=\"895\" data-end=\"915\" class=\"\">✅ What’s Inside:</h3>\n<ul data-start=\"916\" data-end=\"1154\">\n<li data-start=\"916\" data-end=\"951\" class=\"\">\n<p data-start=\"918\" data-end=\"951\" class=\"\">30 factory-sealed booster packs</p>\n</li>\n<li data-start=\"952\" data-end=\"994\" class=\"\">\n<p data-start=\"954\" data-end=\"994\" class=\"\">5 cards per pack – <strong data-start=\"973\" data-end=\"992\">150 total cards</strong></p>\n</li>\n<li data-start=\"995\" data-end=\"1046\" class=\"\">\n<p data-start=\"997\" data-end=\"1046\" class=\"\">Official <strong data-start=\"1006\" data-end=\"1024\">Korean edition</strong> Pokémon T",
+   "published_at": "2025-05-02T11:40:01+01:00",
+   "created_at": "2025-05-02T11:40:01+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50796711215434,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV9-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "83.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10167574430026,
+     "created_at": "2025-05-02T11:40:03+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15563998560586,
+   "title": "Mega Evolution Perfect Order Booster Pack | Pokémon TCG Mega Evolution Pack",
+   "handle": "mega-evolution-perfect-order-booster-pack",
+   "body_html": "<p><strong>Discover powerful Mega Evolutions with every pack!</strong></p>\n<p>Step into the world of <strong>Mega Evolution – Perfect Order</strong>, where balance and strength unite under the watch of <strong>Mega Zygarde ex</strong>. This expansion showcases a city in harmony, protected by powerful Pokémon and filled with exciting pulls from across the Mega Evolution series.</p>\n<p><strong>⚡ Pack Contents:</strong></p>\n<ul>\n<li>1 × Mega Evolution Perfect Order Booster Pack</li>\n<li>10 Pokémon TCG game cards per pack</li>\n<li>Includes 1 Basic Energy + 1 Pokémon TCG Live code card</li>\n<li>Cards vary by pack</li>\n</ul>\n<p><strong>🌆 Expansion Highlights:</strong></p>\n<ul>\n<li>Features Mega Zygarde ex — the embodiment of unity and order</li>\n<li>Includes Mega Clefable ex, Mega Starmie ex, and Meowth ex</li>\n<li>Part of the Mega Evolution Pokémon TCG series</li>\n<li>Great entry point for collectors and casual openings</li>\n</ul>\n<p><strong>🎁 Perfect for Collectors &amp; Gifts</strong></p>\n<p>Ideal for Pokémon fans, collectors, and gift buyers looking for a single pack opening experience. A great way to explore the Mega Evolution series without committing to a full booster box.</p>\n<p><strong>🛡️ Titan Cards Authentication</strong></p>\n<p>All packs are sourced and inspected by Titan Cards to ensure authenticity and quality, helping protect collectors from counterfeit products.</p>",
+   "published_at": "2026-03-25T11:33:31+00:00",
+   "created_at": "2026-03-25T11:33:30+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon. Pokemon: Sealed Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 61428003799370,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK1010380119-1PK",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "10.00",
+     "grams": 25,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15563998560586,
+     "created_at": "2026-03-25T11:33:30+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8749702086986,
+   "title": "Pokemon 5x Random ULTRA RARE Japanese Cards Bundle (V/VSTAR/VMAX or EX Cards)",
+   "handle": "pokemon-5x-random-ultra-rare-japanese-cards-bundle-v-vstar-vmax-or-ex-cards",
+   "body_html": "1x Pack containing 5x Standard Sized Japanese Pokemon Trading Cards - All cards will be EX, V, VSTAR Cards or VMAX Cards. You will get five of them at random!<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">These Ultra Rare Pokemon Cards cards are powerful in the Pokemon Trading Card Game, and also highly collectible in their own right.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">One pack containing 5 different EX/V/VSTAR or VMAX Pokemon Cards will be sent at random. Cards may vary from those on the picture.",
+   "published_at": "2024-04-05T15:56:58+01:00",
+   "created_at": "2024-04-05T15:56:58+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Japanese Pokemon Card",
+    "Japanese Pokemon Cards",
+    "Pokemon Mystery Bundle"
+   ],
+   "variants": [
+    {
+     "id": 47867419165002,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "14.00",
+     "grams": 25,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8749702086986,
+     "created_at": "2024-04-05T15:56:59+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216980250954,
+   "title": "Pokémon TCG Heatwave Arena SV9a Korean Booster Box",
+   "handle": "pokemon-tcg-heatwave-arena-sv9a-korean-booster-box",
+   "body_html": "<p data-start=\"477\" data-end=\"777\">Turn up the heat with <strong data-start=\"499\" data-end=\"517\">Heatwave Arena</strong>, a fiery expansion from the Scarlet &amp; Violet era, now available in Korean! This set focuses on <strong data-start=\"613\" data-end=\"634\">Fire-type Pokémon</strong>, bringing explosive energy and powerful artwork to the battlefield, along with useful new Trainer and Stadium cards to shake up your strategy.</p>\n<p data-start=\"779\" data-end=\"1066\">Each sealed booster box contains 30 Korean-language packs, with 5 randomly selected cards per pack. Heatwave Arena is ideal for collectors and players alike, offering a variety of <strong data-start=\"959\" data-end=\"972\">Art Rares</strong>, <strong data-start=\"974\" data-end=\"986\">EX cards</strong>, and potential <strong data-start=\"1002\" data-end=\"1018\">Secret Rares</strong> with blazing visuals and strong gameplay value.</p>\n<p data-start=\"1068\" data-end=\"1086\"><strong data-start=\"1068\" data-end=\"1086\">What’s Inside:</strong></p>\n<ul data-start=\"1087\" data-end=\"1338\">\n<li data-start=\"1087\" data-end=\"1126\">\n<p data-start=\"1089\" data-end=\"1126\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1127\" data-end=\"1167\">\n<p data-start=\"1129\" data-end=\"1167\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1168\" data-end=\"1218\">\n<p data-start=\"1170\" data-end=\"1218\">Expansion Code: SV9a (Scarlet &amp; Violet Series)</p>\n</li>\n<li data-start=\"1219\" data-end=\"1277\">\n<p data-start=\"1221\" data-end=\"127",
+   "published_at": "2025-06-03T13:07:31+01:00",
+   "created_at": "2025-06-03T13:07:31+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50983643251018,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV9A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "73.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216980250954,
+     "created_at": "2025-06-03T13:07:32+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123246010698,
+   "title": "Pokemon TCG Scarlet & Violet 151 SV2A Korean Booster Box (20 Booster Packs)",
+   "handle": "pokemon-tcg-scarlet-violet-151-korean-booster-box-20-booster-packs",
+   "body_html": "<p data-start=\"263\" data-end=\"378\" class=\"\">🔥 <strong data-start=\"266\" data-end=\"375\">Relive the nostalgia and chase the classics with the Pokémon TCG Scarlet &amp; Violet 151 Korean Booster Box!</strong> 🔥</p>\n<p data-start=\"380\" data-end=\"743\" class=\"\">This highly sought-after set celebrates the <strong data-start=\"424\" data-end=\"448\">original 151 Pokémon</strong>, bringing fan favorites like <strong data-start=\"478\" data-end=\"525\">Charizard, Blastoise, Venusaur, and Pikachu</strong> back into the spotlight—with a modern twist. Whether you're a long-time collector or a new Trainer looking to experience the magic of Kanto, this Korean booster box is a must-have addition to your Pokémon TCG journey.</p>\n<p data-start=\"745\" data-end=\"965\" class=\"\">Each box contains <strong data-start=\"763\" data-end=\"797\">20 sealed Korean booster packs</strong>, and each pack comes with <strong data-start=\"824\" data-end=\"835\">7 cards</strong>—giving you more chances to pull rare holographics, stunning artwork, and powerful cards from the <strong data-start=\"933\" data-end=\"964\">Scarlet &amp; Violet 151 series</strong>.</p>\n<p data-start=\"967\" data-end=\"987\" class=\"\"><strong data-start=\"967\" data-end=\"987\">What’s included:</strong></p>\n<ul data-start=\"988\" data-end=\"1239\">\n<li data-start=\"988\" data-end=\"1037\" class=\"\">\n<p data-start=\"990\" data-end=\"1037\" class=\"\">📦 1x Scarlet &amp; Violet 151 Korean Booster Box</p>\n</li>\n<li data-start=\"1038\" data-end=\"1069\" class=\"\">\n<p data-start=\"1040\" data",
+   "published_at": "2025-04-02T17:02:00+01:00",
+   "created_at": "2025-04-02T17:02:00+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602081976650,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV2A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "274.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123246010698,
+     "created_at": "2025-04-02T17:02:02+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10051516596554,
+   "title": "Pokemon TCG Supercharged Breaker SV8 Booster Box | 30x Super Electric Breaker Booster Packs | Korean version of Surging Sparks",
+   "handle": "pokemon-tcg-supercharged-breaker-sv8-booster-box-30x-supercharged-breaker-booster-packs-korean-pokemon-cards",
+   "body_html": "<p>Unleash the ultimate power with the Pokemon TCG Supercharged Breaker (Super Electric Breaker) SV8 Booster Box! With 30 Supercharged Breaker Booster Packs, each containing 5 Korean Pokemon cards at random, you'll have an electrifying collection in no time. Catch them all and be the coolest trainer around!</p>",
+   "published_at": "2025-02-26T09:10:50+00:00",
+   "created_at": "2025-02-26T09:10:50+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50362530365770,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV-SCB-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "79.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10051516596554,
+     "created_at": "2025-02-26T09:10:52+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15219135643978,
+   "title": "Pokémon TCG Scarlet & Violet Black Bolt SV11B Korean Booster Box (20 Booster Packs)",
+   "handle": "pokemon-tcg-scarlet-violet-black-bolt-sv11b-korean-booster-box-20-booster-packs",
+   "body_html": "<p data-start=\"351\" data-end=\"724\"><strong data-start=\"351\" data-end=\"399\">Unleash the storm with <em data-start=\"376\" data-end=\"396\">Pokémon Black Bolt</em>!</strong> ⚡<br data-start=\"401\" data-end=\"404\">Part of the <em data-start=\"416\" data-end=\"434\">Scarlet &amp; Violet</em> series, this electrifying Korean expansion brings high-voltage excitement to your collection with powerful Pokémon, bold new artwork, and stunning card designs exclusive to the Korean release. Perfect for collectors and fans seeking something truly special from the Pokémon TCG universe.</p>\n<p data-start=\"726\" data-end=\"968\">Each <strong data-start=\"731\" data-end=\"757\">Black Bolt Booster Box</strong> includes <strong data-start=\"767\" data-end=\"802\">20 factory-sealed booster packs</strong>, with <strong data-start=\"809\" data-end=\"836\">7 random cards per pack</strong>. Discover rare holo cards, Pokémon ex, and beautiful full-art designs — every pack offers a fresh surge of energy and excitement!</p>\n<hr data-start=\"970\" data-end=\"973\">\n<p data-start=\"975\" data-end=\"1000\"><strong data-start=\"975\" data-end=\"998\">Product Highlights:</strong></p>\n<ul data-start=\"1001\" data-end=\"1423\">\n<li data-start=\"1001\" data-end=\"1082\">\n<p data-start=\"1003\" data-end=\"1082\">⚡ <strong data-start=\"1005\" data-end=\"1044\">Official Korean Pokémon TCG product</strong> from the <em data-start=\"1054\" data-end=\"1072\">Scarlet &amp; Violet</em> series.</p>\n</li>\n<li data-start=\"1083\" data-end=\"1163\">\n<p data-start=\"1085\" data-end=\"116",
+   "published_at": "2025-10-24T11:00:54+01:00",
+   "created_at": "2025-10-24T11:00:52+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53134159741258,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-SV11B-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "79.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15219135643978,
+     "created_at": "2025-10-24T11:00:52+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15219075613002,
+   "title": "Pokemon TCG Mega Brave m1L Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-mega-brave-m1l-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"287\" data-end=\"641\"><strong data-start=\"287\" data-end=\"357\">Step into the next chapter of adventure with <em data-start=\"334\" data-end=\"354\">Pokémon Mega Brave</em>!</strong><br data-start=\"357\" data-end=\"360\">This Korean-exclusive expansion brings bold new cards and stunning artwork to the <em data-start=\"442\" data-end=\"460\">Scarlet &amp; Violet</em> series. Packed with powerful Pokémon and dazzling holo cards, <em data-start=\"523\" data-end=\"535\">Mega Brave</em> is a must-have for collectors and fans looking to experience the latest in Korean Pokémon TCG releases.</p>\n<p data-start=\"643\" data-end=\"912\">Each <strong data-start=\"648\" data-end=\"674\">Mega Brave Booster Box</strong> contains <strong data-start=\"684\" data-end=\"719\">30 factory-sealed booster packs</strong>, with <strong data-start=\"726\" data-end=\"753\">5 random cards per pack</strong>. From exciting new Pokémon to secret rares, every pack offers the thrill of discovery — making this an excellent choice for both collectors and gift-givers.</p>\n<hr data-start=\"914\" data-end=\"917\">\n<p data-start=\"919\" data-end=\"944\"><strong data-start=\"919\" data-end=\"942\">Product Highlights:</strong></p>\n<ul data-start=\"945\" data-end=\"1328\">\n<li data-start=\"945\" data-end=\"1026\">\n<p data-start=\"947\" data-end=\"1026\">⚡ <strong data-start=\"949\" data-end=\"988\">Official Korean Pokémon TCG product</strong> from the <em data-start=\"998\" data-end=\"1016\">Scarlet &amp; Violet</em> series.</p>\n</li>\n<li data-start=\"1027\" data-end=\"1",
+   "published_at": "2025-10-24T10:32:17+01:00",
+   "created_at": "2025-10-24T10:32:15+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53134008189258,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-M1L-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "62.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15219075613002,
+     "created_at": "2025-10-24T10:32:15+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15680121209162,
+   "title": "Mega Evolution Chaos Rising Booster Pack | Pokémon TCG Mega Evolution Pack",
+   "handle": "pokemon-tcg-chaos-rising-booster-pack",
+   "body_html": "<p data-start=\"0\" data-end=\"70\">Unleash chaos and uncover devastating Mega Evolutions with every pack!</p>\n<p data-start=\"72\" data-end=\"379\">Enter the turbulent world of Mega Evolution – Chaos Rising, where unstable energy surges across the battlefield and powerful Pokémon clash in explosive fashion. This expansion brings together fierce Mega Evolution Pokémon, intense rivalries, and some of the most exciting pulls in the Mega Evolution series.</p>\n<p data-start=\"381\" data-end=\"397\">⚡ Pack Contents:</p>\n<ul data-start=\"399\" data-end=\"568\">\n<li data-start=\"399\" data-end=\"447\">1 × Mega Evolution Chaos Rising Booster Pack</li>\n<li data-start=\"448\" data-end=\"486\">10 Pokémon TCG game cards per pack</li>\n<li data-start=\"487\" data-end=\"545\">Includes 1 Basic Energy + 1 Pokémon TCG Live code card</li>\n<li data-start=\"546\" data-end=\"568\">Cards vary by pack</li>\n</ul>\n<p data-start=\"570\" data-end=\"594\">🔥 Expansion Highlights:</p>\n<ul data-start=\"596\" data-end=\"871\">\n<li data-start=\"596\" data-end=\"664\">Features powerful Mega Evolution Pokémon and high-impact battles</li>\n<li data-start=\"665\" data-end=\"740\">Includes exciting ex cards, rare holographics, and collector favourites</li>\n<li data-start=\"741\" data-end=\"790\">Part of the Mega Evolution Pokémon TCG series</li>\n<li data-start=\"791\" data-end=\"871\">Perfect for quick openings, collecting, and expanding your binder collection</li>\n</ul>\n<p data-start=\"873\" data-end=\"906\">🎁 Perfect for Collectors &amp; Gifts</p>\n<p data-start=\"908\" da",
+   "published_at": "2026-05-27T13:43:06+01:00",
+   "created_at": "2026-05-27T13:43:05+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon Booster Pack",
+    "Pokemon Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 61926910263626,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-ME04-BOOSTER",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "10.00",
+     "grams": 25,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15680121209162,
+     "created_at": "2026-05-27T13:43:05+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15219123093834,
+   "title": "Pokémon TCG Mega Symphonia m1S Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-mega-symphonia-m1s-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"294\" data-end=\"671\"><strong data-start=\"294\" data-end=\"371\">Strike a perfect chord of power and beauty with <em data-start=\"344\" data-end=\"368\">Pokémon Mega Symphonia</em>!</strong><br data-start=\"371\" data-end=\"374\">Part of the <em data-start=\"386\" data-end=\"404\">Scarlet &amp; Violet</em> series, this Korean-exclusive expansion showcases breathtaking artwork, powerful new Pokémon, and elegant designs that capture the essence of harmony in battle. Collectors and players alike will love the premium quality and distinct appeal of Korean Pokémon cards.</p>\n<p data-start=\"673\" data-end=\"896\">Each <strong data-start=\"678\" data-end=\"708\">Mega Symphonia Booster Box</strong> includes <strong data-start=\"718\" data-end=\"753\">30 factory-sealed booster packs</strong>, with <strong data-start=\"760\" data-end=\"787\">5 random cards per pack</strong>. From sparkling holos to secret rares, every pack offers the thrill of uncovering something extraordinary.</p>\n<hr data-start=\"898\" data-end=\"901\">\n<p data-start=\"903\" data-end=\"928\"><strong data-start=\"903\" data-end=\"926\">Product Highlights:</strong></p>\n<ul data-start=\"929\" data-end=\"1329\">\n<li data-start=\"929\" data-end=\"1011\">\n<p data-start=\"931\" data-end=\"1011\">🎶 <strong data-start=\"934\" data-end=\"973\">Official Korean Pokémon TCG product</strong> from the <em data-start=\"983\" data-end=\"1001\">Scarlet &amp; Violet</em> series.</p>\n</li>\n<li data-start=\"1012\" data-end=\"1092\">\n<p data-start=\"1014\" data-end=\"1092\">📦 <strong data-st",
+   "published_at": "2025-10-24T10:53:16+01:00",
+   "created_at": "2025-10-24T10:53:14+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53134127071562,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-M1S-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "61.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15219123093834,
+     "created_at": "2025-10-24T10:53:14+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123303911754,
+   "title": "Pokemon TCG Ruler of the Black Flame SV3 Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-ruler-of-the-black-flame-sv3-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"171\" data-end=\"319\" class=\"\"><strong data-start=\"171\" data-end=\"247\">Pokémon TCG – Ruler of the Black Flame SV3 Korean Booster Box (30 Packs)</strong><br data-start=\"247\" data-end=\"250\">🔥 The flames are rising—and a new ruler is here to claim the throne!</p>\n<p data-start=\"321\" data-end=\"650\" class=\"\">The <strong data-start=\"325\" data-end=\"353\">Ruler of the Black Flame</strong> Korean Booster Box is the <strong data-start=\"380\" data-end=\"432\">Korean edition of the iconic Obsidian Flames set</strong> from the Scarlet &amp; Violet series! With <strong data-start=\"472\" data-end=\"499\">30 sealed booster packs</strong>, each containing <strong data-start=\"517\" data-end=\"528\">5 cards</strong>, this set delivers explosive pulls, stunning artwork, and powerful new Pokémon ready to shake up your collection or deck.</p>\n<p data-start=\"652\" data-end=\"887\" class=\"\">Look out for fiery fan favorites like <strong data-start=\"690\" data-end=\"716\">Dark Tera Charizard EX</strong>, along with brand-new cards and Korean-exclusive excitement. Whether you’re a collector, battler, or just love the thrill of cracking packs, this box brings serious heat.</p>\n<p data-start=\"889\" data-end=\"907\" class=\"\"><strong data-start=\"889\" data-end=\"907\">What’s inside:</strong></p>\n<ul data-start=\"908\" data-end=\"1152\">\n<li data-start=\"908\" data-end=\"938\" class=\"\">\n<p data-start=\"910\" data-end=\"938\" class=\"\">🔥 30 Korean booster packs</p>\n</li>\n<li data-start=\"939\" data-end=\"980\" class=\"\">\n<p data-sta",
+   "published_at": "2025-04-02T17:18:23+01:00",
+   "created_at": "2025-04-02T17:18:23+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602182902090,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV3-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "117.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123303911754,
+     "created_at": "2025-04-02T17:18:24+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216734753098,
+   "title": "Pokemon TCG Terastal Festival EX SV8A Korean Booster Box",
+   "handle": "pokemon-tcg-terastal-festival-ex-sv8a-korean-booster-box",
+   "body_html": "<p data-start=\"504\" data-end=\"787\">Celebrate the brilliance of the <strong data-start=\"536\" data-end=\"557\">Terastal Festival</strong> with this high-class Korean booster box! As part of the Scarlet &amp; Violet series, this set focuses on powerful <strong data-start=\"668\" data-end=\"693\">Terastallized Pokémon</strong> in stunning new forms, with shimmering crystal-like artwork and premium-quality card designs.</p>\n<p data-start=\"789\" data-end=\"967\">This is a <strong data-start=\"799\" data-end=\"817\">high-class set</strong>, meaning each pack is loaded with hits — including guaranteed holographics, Art Rares, and a high chance of pulling powerful EX or Secret Rare cards.</p>\n<p data-start=\"969\" data-end=\"1185\">You’ll find fan-favourite Terastal forms like <strong data-start=\"1015\" data-end=\"1036\">Tera Charizard EX</strong>, <strong data-start=\"1038\" data-end=\"1059\">Tera Tyranitar EX</strong>, and many more. Perfect for collectors, this box delivers an exciting and rewarding unboxing experience from start to finish.</p>\n<p data-start=\"1187\" data-end=\"1205\"><strong data-start=\"1187\" data-end=\"1205\">What’s Inside:</strong></p>\n<ul data-start=\"1206\" data-end=\"1512\">\n<li data-start=\"1206\" data-end=\"1256\">\n<p data-start=\"1208\" data-end=\"1256\">10x High-Class Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1257\" data-end=\"1317\">\n<p data-start=\"1259\" data-end=\"1317\">10 Cards Per Pack – Multiple Holos and EX Cards Included</p>\n</li>\n<li data-start=\"1318\" data-end=\"1384\">\n<p data-",
+   "published_at": "2025-06-03T10:13:12+01:00",
+   "created_at": "2025-06-03T10:13:12+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50982538707274,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV8A",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "97.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216734753098,
+     "created_at": "2025-06-03T10:13:14+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15307091542346,
+   "title": "Pokemon TCG Mega Inferno. X Korean Booster Box | M2 | 30 Booster Packs",
+   "handle": "pokemon-tcg-mega-inferno-x-korean-booster-box-m2-30-booster-packs",
+   "body_html": "<div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] thread-sm:[--thread-content-margin:--spacing(6)] thread-lg:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\">\n<div class=\"[--thread-content-max-width:40rem] thread-lg:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\">\n<div class=\"flex max-w-full flex-col grow\">\n<div data-message-author-role=\"assistant\" data-message-id=\"c232550f-2ac9-417c-89df-959478c2ee6b\" dir=\"auto\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" data-message-model-slug=\"gpt-5-1\">\n<div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\">\n<div class=\"markdown prose dark:prose-invert w-full break-words light markdown-new-styling\">\n<p data-start=\"218\" data-end=\"591\">Turn up the heat with the <strong data-start=\"244\" data-end=\"298\">Pokemon TCG Mega Inferno X Korean Booster Box (M2)</strong> — an explosive release from the <strong data-start=\"331\" data-end=\"353\">Mega Evolution era</strong>, perfect for collectors who love chasing fiery artwork and powerful hits. This sealed booster box contains <strong data-start=\"461\" data-end=\"488\">30 Korean booster packs</strong>, and each pack includes <strong data-start=\"513\" data-end=\"524\">5 cards</strong>, giving you 150 t",
+   "published_at": "2025-11-30T20:07:34+00:00",
+   "created_at": "2025-11-30T20:07:33+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53487678882122,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-M2-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "69.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15307091542346,
+     "created_at": "2025-11-30T20:07:33+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123365253450,
+   "title": "Pokemon TCG Night Wanderer SV6A Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-night-wanderer-sv6a-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"143\" data-end=\"265\" class=\"\"><strong data-start=\"143\" data-end=\"210\">Pokémon TCG – Night Wanderer SV6A Korean Booster Box (30 Packs)</strong><br data-start=\"210\" data-end=\"213\">🌙 Shadows fall… and the <strong data-start=\"238\" data-end=\"256\">Night Wanderer</strong> awakens.</p>\n<p data-start=\"267\" data-end=\"601\" class=\"\">The <strong data-start=\"271\" data-end=\"313\">Night Wanderer SV6A Korean Booster Box</strong> invites you into the mysterious side of the <strong data-start=\"358\" data-end=\"378\">Scarlet &amp; Violet</strong> series. With <strong data-start=\"392\" data-end=\"412\">30 booster packs</strong> and <strong data-start=\"417\" data-end=\"437\">5 cards per pack</strong>, this Korean-language set introduces a lineup of dark, dazzling, and powerful cards—perfect for Trainers who love strategy, mystery, and a touch of the unexpected.</p>\n<p data-start=\"603\" data-end=\"899\" class=\"\">This set features exciting new cards like <strong data-start=\"645\" data-end=\"655\">Perrin</strong>, <strong data-start=\"657\" data-end=\"673\">Kingambit EX</strong>, and other nighttime-themed Pokémon ready to sneak their way into your collection or deck. Whether you're hunting rare hits or expanding your sealed Korean TCG lineup, <em data-start=\"842\" data-end=\"858\">Night Wanderer</em> is a thrilling rip from start to finish.</p>\n<p data-start=\"901\" data-end=\"919\" class=\"\"><strong data-start=\"901\" data-end=\"919\">What’s inside:</strong></p>\n<ul data-start=\"920\" data-end=\"1190\">\n<li data-start=",
+   "published_at": "2025-04-02T17:48:40+01:00",
+   "created_at": "2025-04-02T17:48:40+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602371449162,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV6A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "76.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123365253450,
+     "created_at": "2025-04-02T17:48:41+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15412756513098,
+   "title": "Pokémon TCG Mega Dream Korean Booster Box | Korean Version of Ascended Heroes | 10 High-Class Packs",
+   "handle": "pokemon-tcg-mega-dream-korean-booster-box-korean-version-of-ascended-heroes-10-high-class-packs",
+   "body_html": "<p data-start=\"173\" data-end=\"516\"><strong data-start=\"173\" data-end=\"218\">Pokémon TCG Mega Dream Korean Booster Box</strong> brings the Mega Evolution Series to life in its Korean release, <strong data-start=\"283\" data-end=\"303\">Mega Dream (M2A)</strong> — the Korean equivalent of the English set <strong data-start=\"347\" data-end=\"366\">Ascended Heroes</strong>. This is a high-class product designed for collectors who appreciate premium pack structure, standout Pokémon, and modern Mega Evolution-era artwork.</p>\n<p data-start=\"518\" data-end=\"866\">Each booster box contains <strong data-start=\"544\" data-end=\"582\">10 high-class Korean booster packs</strong>, with <strong data-start=\"589\" data-end=\"610\">10 cards per pack</strong>, offering an enhanced opening experience compared to standard releases. Mega Dream follows <strong data-start=\"702\" data-end=\"720\">Mega Inferno X</strong>, the Charizard-featured Korean set, and continues the progression of the Mega Evolution storyline with powerful themes and fan-favourite Pokémon.</p>\n<p data-start=\"868\" data-end=\"1102\">The set features a strong lineup of iconic Pokémon including <strong data-start=\"929\" data-end=\"989\">Dragonite, Mewtwo, Ho-Oh, Pikachu, Hawlucha, and Lucario</strong>, making it an excellent choice for collectors who enjoy recognisable Pokémon and visually striking modern cards.</p>\n<p data-start=\"1104\" data-end=\"1280\">Ideal for sealed collection, premium pack openings, or as a standout gift for Pokémon fans, Mega Dream",
+   "published_at": "2026-01-22T10:29:18+00:00",
+   "created_at": "2026-01-22T10:29:17+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 60914079367498,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-M2A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "110.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15412756513098,
+     "created_at": "2026-01-22T10:29:17+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15888317055306,
+   "title": "Pokemon TCG Mega Evolution Pitch Black Booster Pack",
+   "handle": "pokemon-tcg-mega-evolution-pitch-black-booster-pack",
+   "body_html": "<p class=\"isSelectedEnd\"><span>Discover the excitement of the </span><strong><span>Pokémon TCG: Mega Evolution – Pitch Black</span></strong><span> expansion with a single sealed booster pack.</span></p>\n<p class=\"isSelectedEnd\"><span>Each booster pack contains a selection of cards from the Mega Evolution: Pitch Black set, giving you the chance to uncover powerful Pokémon ex, beautiful illustration cards, exciting Trainer cards and other highly collectible additions for your Pokémon TCG collection.</span></p>\n<p class=\"isSelectedEnd\"><span>Whether you're adding to your binder, upgrading your favourite deck or simply enjoying the thrill of opening Pokémon packs, every booster offers the possibility of an incredible pull.</span></p>\n<h3><span>Contents</span></h3>\n<ul data-spread=\"false\">\n<li><span>1 × Sealed Pokémon TCG: Mega Evolution – Pitch Black Booster Pack</span></li>\n</ul>\n<h3><span>Why Buy From Titan Cards?</span></h3>\n<ul data-spread=\"false\">\n<li><span>✅ 100% genuine, factory-sealed Pokémon product</span></li>\n<li><span>✅ Carefully packaged to arrive in excellent condition</span></li>\n<li><span>✅ Trusted UK Pokémon TCG retailer</span></li>\n<li><span>✅ Fast dispatch from our UK warehouse</span></li>\n</ul>\n<p><span>Ideal for collectors, players and Pokémon fans looking to experience the Mega Evolution: Pitch Black expansion one pack at a time.</span></p>",
+   "published_at": "2026-07-11T18:15:58+01:00",
+   "created_at": "2026-07-11T18:15:57+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon. Pokemon: Sealed Booster Packs"
+   ],
+   "variants": [
+    {
+     "id": 62686957306186,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-ME05-1PK",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "10.00",
+     "grams": 25,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15888317055306,
+     "created_at": "2026-07-11T18:15:57+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9623026729290,
+   "title": "Pokemon TCG Battle Partners SV9 Japanese Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-battle-partners-sv9-japanese-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"152\" data-end=\"413\">Unleash the power of dynamic duos with the <strong data-start=\"195\" data-end=\"251\">Pokémon TCG Battle Partners SV9 Japanese Booster Box</strong>! This highly anticipated set introduces thrilling new Pokémon combinations, stunning full-art cards, and powerful mechanics that will shake up the battlefield.</p>\n<p data-start=\"415\" data-end=\"772\">Inside this factory-sealed booster box, you'll find <strong data-start=\"467\" data-end=\"487\">30 booster packs</strong>, each packed with potential rare and powerful Pokémon, including EX cards, Trainer cards, and more. Whether you're a collector hunting for ultra-rare cards or a competitive player looking to enhance your deck, <strong data-start=\"698\" data-end=\"721\">Battle Partners SV9</strong> offers an exciting mix of strategy and surprise.</p>\n<h3 data-start=\"774\" data-end=\"801\"><strong data-start=\"778\" data-end=\"799\">Product Features:</strong></h3>\n<p data-start=\"802\" data-end=\"1066\">✅ <strong data-start=\"804\" data-end=\"849\">Official Japanese Pokémon TCG Booster Box</strong><br data-start=\"849\" data-end=\"852\">✅ <strong data-start=\"854\" data-end=\"882\">30 Booster Packs Per Box</strong><br data-start=\"882\" data-end=\"885\">✅ <strong data-start=\"887\" data-end=\"947\">Chance to pull powerful EX cards and rare full-art cards</strong><br data-start=\"947\" data-end=\"950\">✅ <strong data-start=\"952\" data-end=\"1005\">New Battle Partner mechanics for dynamic gameplay</strong><br data-start=\"1005\" data-end=\"1008\">✅ <str",
+   "published_at": "2024-12-23T11:12:21+00:00",
+   "created_at": "2024-12-23T11:12:21+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Japanese Pokemon Booster Box",
+    "Japanese Pokemon Products",
+    "Pokemon Japanese Sealed Product",
+    "Pokemon. Pokemon: Japanese Booster Boxes"
+   ],
+   "variants": [
+    {
+     "id": 49755802370378,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-SVBP-BBOXX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "109.00",
+     "grams": 250,
+     "compare_at_price": "124.00",
+     "position": 1,
+     "product_id": 9623026729290,
+     "created_at": "2024-12-23T11:12:23+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10051540812106,
+   "title": "Pokemon TCG Paradise Dragona SV7A Korean Booster Box | 30x Paradise Dragona Booster Packs | Korean Pokemon Cards",
+   "handle": "pokemon-tcg-paradise-dragona-sv7a-booster-box-30x-paradise-dragona-booster-packs-korean-pokemon-cards",
+   "body_html": "<p>Experience the joy of collecting with our Pokemon TCG Paradise Dragona SV7A Booster Box! Each box contains 30x Paradise Dragona Booster Packs, with 5 Korean Pokemon Cards in each pack. Get ready to catch 'em all! (Note: Contents may vary, but the fun is always guaranteed!)</p>",
+   "published_at": "2025-02-26T09:30:34+00:00",
+   "created_at": "2025-02-26T09:30:34+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50362586956106,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV-PD-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "62.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10051540812106,
+     "created_at": "2025-02-26T09:30:36+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10313818145098,
+   "title": "Pokemon TCG Glory of Team Rocket SV10 Korean Booster Box",
+   "handle": "pokemon-tcg-glory-of-team-rocket-sv10-korean-booster-box",
+   "body_html": "<p data-start=\"184\" data-end=\"561\">Step into the shadows with <strong data-start=\"294\" data-end=\"318\">Glory of Team Rocket</strong>, the thrilling <em data-start=\"334\" data-end=\"340\">sv10</em> expansion from the Scarlet &amp; Violet series – now available in this Korean-language booster box! Packed with classic villains, powerful Pokémon, and stunning artwork, this set is perfect for collectors and battlers alike.</p>\n<p data-start=\"563\" data-end=\"763\">This <strong data-start=\"568\" data-end=\"590\">sealed booster box</strong> includes <strong data-start=\"600\" data-end=\"631\">30 individual booster packs</strong>, each containing <strong data-start=\"649\" data-end=\"678\">5 randomly selected cards</strong>, offering endless surprises and a chance to uncover rare and exclusive Korean cards.</p>\n<p data-start=\"765\" data-end=\"1099\"><strong data-start=\"765\" data-end=\"785\">Product Details:</strong><br data-start=\"785\" data-end=\"788\">✔ 1x Sealed Korean Booster Box – Glory of Team Rocket (sv10)<br data-start=\"848\" data-end=\"851\">✔ 30x Booster Packs per Box<br data-start=\"878\" data-end=\"881\">✔ 5x Cards per Pack (150 total)<br data-start=\"912\" data-end=\"915\">✔ Korean language release – authentic and imported<br data-start=\"965\" data-end=\"968\">✔ Verified by Titan Cards for authenticity and quality<br data-start=\"1022\" data-end=\"1025\">✔ A fantastic gift for collectors or fans of Team Rocket’s iconic legacy</p>",
+   "published_at": "2025-07-30T13:28:30+01:00",
+   "created_at": "2025-07-30T13:28:29+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 51421192651082,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV10-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "73.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10313818145098,
+     "created_at": "2025-07-30T13:28:29+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15343735734602,
+   "title": "Pokemon TCG Korean Booster Mega Mystery Bundle | 2 Booster Boxes | 10 Mixed Booster Packs",
+   "handle": "pokemon-tcg-korean-booster-mega-mystery-bundle-2-booster-boxes-10-mixed-booster-packs",
+   "body_html": "<p data-start=\"717\" data-end=\"952\">Step into the world of <strong data-start=\"740\" data-end=\"774\">authentic Korean Pokémon cards</strong> with this <strong data-start=\"785\" data-end=\"815\">Mega Korean Pokémon Bundle</strong>, curated for collectors, gift buyers, and fans looking to experience a wide variety of modern Pokémon TCG expansions in one premium set.</p>\n<p data-start=\"954\" data-end=\"1143\">This bundle includes <strong data-start=\"975\" data-end=\"1010\">two sealed Korean Booster Boxes</strong> chosen at random paired with <strong data-start=\"1023\" data-end=\"1057\">ten mixed Korean Booster Packs</strong>, these packs will be completely at random and will be from at least 5 different sets offering an exciting combination of structured box openings and surprise pack pulls. We'll always try to include as much variety as possible in these individual packs subject to stock, but it'll never be less than 5 different sets.</p>\n<h3 data-start=\"1150\" data-end=\"1172\">🔹 What’s Included</h3>\n<ul data-start=\"1173\" data-end=\"1370\">\n<li data-start=\"1173\" data-end=\"1260\">\n<p data-start=\"1175\" data-end=\"1260\"><strong data-start=\"1175\" data-end=\"1217\">2× Sealed Korean Pokémon Booster Boxes</strong><br data-start=\"1217\" data-end=\"1220\">(Official Korean Pokémon TCG products)</p>\n</li>\n<li data-start=\"1261\" data-end=\"1370\">\n<p data-start=\"1263\" data-end=\"1370\"><strong data-start=\"1263\" data-end=\"1305\">10× Mixed Korean Pokémon Booster Packs</strong><br data-start=\"1305\" data-end=\"1308\">A varied",
+   "published_at": "2025-12-15T11:01:28+00:00",
+   "created_at": "2025-12-15T11:01:28+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Booster Pack",
+    "Korean Pokemon Booster",
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53598701715786,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-MEGABUNDLE",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "131.00",
+     "grams": 450,
+     "compare_at_price": "110.00",
+     "position": 1,
+     "product_id": 15343735734602,
+     "created_at": "2025-12-15T11:01:28+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10051561259338,
+   "title": "Pokemon TCG Stellar Miracle SV7 Korean Booster Box | 30x Stellar Miracle Booster Packs | Korean Pokemon Cards",
+   "handle": "pokemon-tcg-stellar-miracle-sv7-korean-booster-box-30x-stellar-miracle-booster-packs-korean-pokemon-cards",
+   "body_html": "<p>Unleash your inner collector with the Pokemon TCG Stellar Miracle SV7 Korean Booster Box. Packed with 30x Stellar Miracle Booster Packs, each containing 5 Korean Pokemon Cards, this box is a must-have for any serious Pokemon fan. Catch 'em all and let the fun begin!</p>",
+   "published_at": "2025-02-26T09:49:20+00:00",
+   "created_at": "2025-02-26T09:49:20+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50362627785034,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV-SM-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "90.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10051561259338,
+     "created_at": "2025-02-26T09:49:22+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10048436109642,
+   "title": "Pokemon TCG Stellar Miracle SV7 Booster Box | 30x Stellar Miracle Booster Packs | Japanese Pokemon Cards",
+   "handle": "pokemon-tcg-stellar-miracle-sv7-booster-box-30x-stellar-miracle-booster-packs-japanese-pokemon-cards",
+   "body_html": "<p>Take your Pokemon game to the next level with the Pokemon TCG Stellar Miracle SV7 Booster Box! This box contains 30x Stellar Miracle Booster Packs of Japanese Pokemon Cards for all your collecting or playing needs. Unleash the power of these rare and unique cards and become a Pokemon master!</p>",
+   "published_at": "2025-02-25T08:46:20+00:00",
+   "created_at": "2025-02-25T08:46:20+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Japanese Pokemon Booster Box",
+    "Pokemon. Pokemon: Japanese Booster Boxes"
+   ],
+   "variants": [
+    {
+     "id": 50353121952074,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-SM-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "109.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10048436109642,
+     "created_at": "2025-02-25T08:46:21+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10167566827850,
+   "title": "Pokemon TCG Crimson Haze SV5A Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-crimson-haze-sv5a-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"258\" data-end=\"565\" class=\"\">Unleash the fire of the Scarlet &amp; Violet era with the <strong data-start=\"312\" data-end=\"364\">Pokémon TCG Crimson Haze SV5A Korean Booster Box</strong>! This exciting booster box includes <strong data-start=\"401\" data-end=\"436\">30 factory-sealed booster packs</strong>, each containing <strong data-start=\"454\" data-end=\"490\">5 authentic Korean Pokémon cards</strong>—perfect for collectors, competitive players, and Pokémon fans of all ages.</p>\n<p data-start=\"567\" data-end=\"949\" class=\"\">Crimson Haze SV5A is part of the <strong data-start=\"600\" data-end=\"627\">Scarlet &amp; Violet Series</strong>, featuring powerful new Pokémon, vibrant alternate art cards, and stunning Korean exclusives not found in English sets. Whether you're looking to <strong data-start=\"774\" data-end=\"813\">expand your Pokémon card collection</strong>, pull rare <strong data-start=\"825\" data-end=\"837\">EX cards</strong>, or gift something special to a Pokémon enthusiast, this Korean booster box delivers both value and excitement.</p>\n<p data-start=\"951\" data-end=\"1080\" class=\"\">A fantastic international addition to any Pokémon TCG collection, this box offers a <strong data-start=\"1035\" data-end=\"1063\">fresh opening experience</strong> with every pack.</p>\n<hr data-start=\"1082\" data-end=\"1085\" class=\"\">\n<p data-start=\"1087\" data-end=\"1104\" class=\"\"><strong data-start=\"1087\" data-end=\"1104\">Key Features:</strong></p>\n<ul data-start=\"1105\" data-end=\"1454\">\n<li dat",
+   "published_at": "2025-05-02T11:34:56+01:00",
+   "created_at": "2025-05-02T11:34:56+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50796690506058,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV5A-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "69.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10167566827850,
+     "created_at": "2025-05-02T11:34:58+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123351720266,
+   "title": "Pokemon TCG Violet EX SV1V Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-violet-ex-sv1v-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"173\" data-end=\"358\" class=\"\"><strong data-start=\"173\" data-end=\"235\">Pokémon TCG – Violet EX SV1V Korean Booster Box (30 Packs)</strong><br data-start=\"235\" data-end=\"238\">🔮 Step into the future of Pokémon with the <strong data-start=\"282\" data-end=\"295\">Violet EX</strong> expansion—packed with powerful cards and fan-favorite Pokémon!</p>\n<p data-start=\"360\" data-end=\"681\" class=\"\">The <strong data-start=\"364\" data-end=\"401\">Violet EX SV1V Korean Booster Box</strong> features <strong data-start=\"411\" data-end=\"438\">30 sealed booster packs</strong>, each containing <strong data-start=\"456\" data-end=\"467\">5 cards</strong> from the Scarlet &amp; Violet series. This exciting Korean-language set introduces <strong data-start=\"547\" data-end=\"566\">Paradox Pokémon</strong>, <strong data-start=\"568\" data-end=\"584\">Tera Pokémon</strong>, and game-changing <strong data-start=\"604\" data-end=\"616\">EX cards</strong>—bringing new strategies and stunning designs to your collection.</p>\n<p data-start=\"683\" data-end=\"949\" class=\"\">Keep an eye out for <strong data-start=\"703\" data-end=\"718\">Miraidon EX</strong>, one of the set’s biggest stars, along with popular picks like <strong data-start=\"782\" data-end=\"798\">Gardevoir EX</strong>, <strong data-start=\"800\" data-end=\"810\">Klefki</strong>, and more! Whether you’re building a competitive deck or hunting for collectible hits, <em data-start=\"898\" data-end=\"909\">Violet EX</em> is a must-have for any serious Trainer.</p>\n<p data-st",
+   "published_at": "2025-04-02T17:39:38+01:00",
+   "created_at": "2025-04-02T17:39:38+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602300506442,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV1V",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "90.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123351720266,
+     "created_at": "2025-04-02T17:39:40+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8606688051530,
+   "title": "Pokemon Silver Mystery Bundle (Medium)",
+   "handle": "pokemon-silver-mystery-box",
+   "body_html": "<p data-start=\"76\" data-end=\"158\"><strong data-start=\"76\" data-end=\"158\">Discover the excitement of the unknown with our Silver Pokémon Mystery Bundle!</strong></p>\n<p data-start=\"163\" data-end=\"504\">Each bundle contains a carefully selected assortment of Pokémon TCG products, which may include booster packs from a variety of different Pokémon expansions, blister packs, collection boxes, pin badges, and other Pokémon-themed items. Some bundles may also feature Japanese or Korean Pokémon booster packs for an extra collecting experience.</p>\n<p data-start=\"509\" data-end=\"577\">Every item included is brand new and sourced from trusted suppliers.</p>\n<p data-start=\"582\" data-end=\"882\">Silver Pokémon Mystery Bundles are pre-packed, and the contents of each bundle are selected at random, making every opening a unique surprise. Whether you're expanding your collection, hunting for exciting packs, or searching for a gift for a Pokémon fan, there's always something fun waiting inside.</p>\n<p data-start=\"887\" data-end=\"1034\"><strong data-start=\"887\" data-end=\"903\">Please note:</strong> Bundle contents vary and may differ from the examples listed above. Specific products, packs, and expansions cannot be guaranteed.</p>",
+   "published_at": "2023-12-14T06:08:41+00:00",
+   "created_at": "2023-12-14T06:08:41+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon",
+    "Pokemon Mystery Box",
+    "Silver"
+   ],
+   "variants": [
+    {
+     "id": 47430425772362,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-TC-MYSTERY-BOX-MEDIUM",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "124.00",
+     "grams": 500,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 8606688051530,
+     "created_at": "2023-12-14T06:08:41+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16021433024842,
+   "title": "Pokemon TCG 30th Anniversary Japanese Booster Box M6A",
+   "handle": "pokemon-tcg-30th-anniversary-m6a-japanese-booster-box",
+   "body_html": "<p>Celebrate three decades of the Pokémon Trading Card Game with the spectacular <strong>Pokémon TCG 30th Celebration Japanese Booster Box</strong>.</p>\n<p>Released in Japan as part of Pokémon's official 30th Anniversary celebrations, <strong>30th Celebration (M6a)</strong> looks back across the history of the Pokémon TCG while introducing brand-new artwork, special card treatments and an exciting new rarity.</p>\n<p>Each booster pack contains <strong>6 holographic cards</strong>, with every pack guaranteed to include <strong>one special Pikachu card</strong> and <strong>one Basic Energy card</strong>. There are an incredible <strong>30 different Pikachu illustrations to collect</strong>, each created by a different illustrator in celebration of the TCG's 30-year history.</p>\n<p>The set also introduces the new <strong>FUR (Futuristic Rare)</strong> rarity, including striking anniversary cards featuring <strong>Mew ex</strong> and <strong>Mewtwo ex</strong>, with artwork created by graphic artist YOSHIROTTEN.</p>\n<p>Collectors can also discover <strong>30 specially presented cards representing memorable moments from the Pokémon TCG's history</strong>, including iconic Pokémon such as Charizard, Lugia and Dark Tyranitar, alongside legendary Pokémon from across multiple generations.</p>\n<h3>Product Features</h3>\n<ul>\n<li>\n<p><strong>Official Japanese Pokémon TCG release</strong></p>\n</li>\n<li>\n<p><strong>Pokémon TCG 30th Celebration – M6a</strong></p>\n</li>\n<li>\n<p><strong>20 boo",
+   "published_at": "2026-09-08T09:30:00+01:00",
+   "created_at": "2026-09-08T09:29:58+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon. Pokemon: Japanese Booster Boxes"
+   ],
+   "variants": [
+    {
+     "id": 63458916532554,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-30A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "248.00",
+     "grams": 350,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 16021433024842,
+     "created_at": "2026-09-08T09:29:58+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216697528650,
+   "title": "Pokemon TCG Cyber Judge SV5M Korean Booster Box",
+   "handle": "pokemon-tcg-cyber-judge-sv5m-korean-booster-box",
+   "body_html": "<p data-start=\"542\" data-end=\"853\">Enter a high-tech battleground with the <strong data-start=\"582\" data-end=\"597\">Cyber Judge</strong> expansion — part of the Scarlet &amp; Violet series and packed with futuristic, machine-inspired Pokémon! This Korean-language booster box features standout cards like <strong data-start=\"762\" data-end=\"776\">Iron Crown</strong>, <strong data-start=\"778\" data-end=\"794\">Iron Boulder</strong>, and other powerful Future Pokémon from the Paldea region.</p>\n<p data-start=\"855\" data-end=\"1083\">Each sealed booster box contains 30 booster packs, with 5 randomly selected cards per pack. Expect to find holographic cards, Art Rares, and exciting new mechanics that make this set a favourite for collectors and players alike.</p>\n<p data-start=\"1085\" data-end=\"1103\"><strong data-start=\"1085\" data-end=\"1103\">What’s Inside:</strong></p>\n<ul data-start=\"1104\" data-end=\"1349\">\n<li data-start=\"1104\" data-end=\"1141\">\n<p data-start=\"1106\" data-end=\"1141\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1142\" data-end=\"1180\">\n<p data-start=\"1144\" data-end=\"1180\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1181\" data-end=\"1229\">\n<p data-start=\"1183\" data-end=\"1229\">Expansion Code: SV5M (Scarlet &amp; Violet Series)</p>\n</li>\n<li data-start=\"1230\" data-end=\"1290\">\n<p data-start=\"1232\" data-end=\"1290\">Features Future Pokémon like Iron Crown and Iron Boulder</p>\n</li>\n<li data-start=\"1291\" data-end=\"1349\">\n<p data-start=\"1293\" data-end=\"",
+   "published_at": "2025-06-03T09:37:35+01:00",
+   "created_at": "2025-06-03T09:37:35+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50982281380170,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV5M-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "69.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216697528650,
+     "created_at": "2025-06-03T09:37:36+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216717910346,
+   "title": "Pokemon TCG Mask of Change Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-mask-of-change-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"483\" data-end=\"815\">Step into the mysterious world of the <strong data-start=\"521\" data-end=\"534\">Teal Mask</strong> with the <strong data-start=\"544\" data-end=\"562\">Mask of Change</strong> expansion — part of the Scarlet &amp; Violet series and the <strong data-start=\"619\" data-end=\"679\">Korean equivalent of the English Twilight Masquerade set</strong> (alongside Crimson Haze). This beautifully themed set introduces powerful cards and unique artwork inspired by the legends of Kitakami.</p>\n<p data-start=\"817\" data-end=\"994\">Featuring the mythical Pokémon <strong data-start=\"848\" data-end=\"859\">Ogerpon</strong> and its various mask forms, this set offers deep lore, striking designs, and exciting pull potential for collectors and players alike.</p>\n<p data-start=\"996\" data-end=\"1173\">Each sealed booster box contains 30 Korean-language packs, with 5 randomly selected cards per pack. Look out for Art Rares, Secret Rares, and Pokémon with unique Terastal forms.</p>\n<p data-start=\"1175\" data-end=\"1193\"><strong data-start=\"1175\" data-end=\"1193\">What’s Inside:</strong></p>\n<ul data-start=\"1194\" data-end=\"1434\">\n<li data-start=\"1194\" data-end=\"1231\">\n<p data-start=\"1196\" data-end=\"1231\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1232\" data-end=\"1272\">\n<p data-start=\"1234\" data-end=\"1272\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1273\" data-end=\"1320\">\n<p data-start=\"1275\" data-end=\"1320\">Expansion Code: SV6 (Scarlet &amp; Violet ",
+   "published_at": "2025-06-03T09:55:15+01:00",
+   "created_at": "2025-06-03T09:55:15+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50982395609418,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "87.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216717910346,
+     "created_at": "2025-06-03T09:55:16+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15219063325002,
+   "title": "Pokemon Wild Force SV5K Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-wild-force-sv5k-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"235\" data-end=\"523\"><strong data-start=\"235\" data-end=\"315\">Unleash the power of nature with the Korean edition of <em data-start=\"292\" data-end=\"312\">Pokémon Wild Force</em>!</strong><br data-start=\"315\" data-end=\"318\">Part of the <em data-start=\"330\" data-end=\"348\">Scarlet &amp; Violet</em> series, this exciting set features stunning artwork, powerful new Pokémon, and thrilling gameplay mechanics straight from Korea — perfect for collectors and battlers alike.</p>\n<p data-start=\"525\" data-end=\"738\">Each <strong data-start=\"530\" data-end=\"556\">Wild Force Booster Box</strong> includes <strong data-start=\"566\" data-end=\"601\">30 factory-sealed booster packs</strong>, with <strong data-start=\"608\" data-end=\"635\">5 random cards per pack</strong>. Discover dazzling holo cards, new Paradox Pokémon, and rare pulls that will elevate any collection.</p>\n<p data-start=\"740\" data-end=\"919\">Whether you’re expanding your personal collection or searching for the ideal gift for a Pokémon fan, the <em data-start=\"845\" data-end=\"874\">Wild Force SV5K Booster Box</em> delivers genuine excitement in every pack.</p>\n<hr data-start=\"921\" data-end=\"924\">\n<p data-start=\"926\" data-end=\"951\"><strong data-start=\"926\" data-end=\"949\">Product Highlights:</strong></p>\n<ul data-start=\"952\" data-end=\"1343\">\n<li data-start=\"952\" data-end=\"1039\">\n<p data-start=\"954\" data-end=\"1039\">🌀 <strong data-start=\"957\" data-end=\"996\">Official Korean Pokémon TCG product</strong> – part of the <em data-star",
+   "published_at": "2025-10-24T10:25:49+01:00",
+   "created_at": "2025-10-24T10:25:48+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53133971292490,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "76.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15219063325002,
+     "created_at": "2025-10-24T10:25:48+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123322130762,
+   "title": "Pokemon TCG Raging Surf SV3A Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-raging-surf-sv3a-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"139\" data-end=\"267\" class=\"\"><strong data-start=\"139\" data-end=\"203\">Pokémon TCG – Raging Surf SV3A Korean Booster Box (30 Packs)</strong><br data-start=\"203\" data-end=\"206\">🌊 Big waves, big hits—get ready to ride the <strong data-start=\"251\" data-end=\"266\">Raging Surf</strong>!</p>\n<p data-start=\"269\" data-end=\"584\" class=\"\">The <strong data-start=\"273\" data-end=\"312\">Raging Surf SV3A Korean Booster Box</strong> brings a tidal wave of excitement straight from the Scarlet &amp; Violet series! This set includes <strong data-start=\"408\" data-end=\"435\">30 Korean booster packs</strong>, each with <strong data-start=\"447\" data-end=\"458\">5 cards</strong>, featuring powerful new Pokémon, stunning artwork, and the chance to pull rare cards that’ll make a splash in any collection.</p>\n<p data-start=\"586\" data-end=\"881\" class=\"\">With standout cards like <strong data-start=\"611\" data-end=\"626\">Garchomp EX</strong>, <strong data-start=\"628\" data-end=\"647\">Paradox Pokémon</strong>, and more, this expansion is a must-have for collectors and competitive players alike. Whether you're expanding your Korean TCG lineup or diving in for the first time, <em data-start=\"816\" data-end=\"829\">Raging Surf</em> is the perfect blend of fun, rarity, and adventure.</p>\n<p data-start=\"883\" data-end=\"901\" class=\"\"><strong data-start=\"883\" data-end=\"901\">What’s inside:</strong></p>\n<ul data-start=\"902\" data-end=\"1149\">\n<li data-start=\"902\" data-end=\"939\" class=\"\">\n<p data-start=\"904\" data-end",
+   "published_at": "2025-04-02T17:24:13+01:00",
+   "created_at": "2025-04-02T17:24:13+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602215244106,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV3A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "97.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123322130762,
+     "created_at": "2025-04-02T17:24:15+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123343102282,
+   "title": "Pokemon TCG Triplet Beat SV1A Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-triplet-beat-sv1a-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"131\" data-end=\"281\" class=\"\"><strong data-start=\"131\" data-end=\"196\">Pokémon TCG – Triplet Beat SV1A Korean Booster Box (30 Packs)</strong><br data-start=\"196\" data-end=\"199\">🔥 Three times the power. Three times the excitement. Welcome to <strong data-start=\"264\" data-end=\"280\">Triplet Beat</strong>!</p>\n<p data-start=\"283\" data-end=\"620\" class=\"\">The <strong data-start=\"287\" data-end=\"327\">Triplet Beat SV1A Korean Booster Box</strong> is an action-packed expansion from the Scarlet &amp; Violet series, featuring <strong data-start=\"402\" data-end=\"429\">30 Korean booster packs</strong> with <strong data-start=\"435\" data-end=\"455\">5 cards per pack</strong>. This vibrant set showcases the evolved forms of the Paldean starters—<strong data-start=\"526\" data-end=\"568\">Meowscarada, Skeledirge, and Quaquaval</strong>—alongside stunning artwork and game-changing cards.</p>\n<p data-start=\"622\" data-end=\"777\" class=\"\">Whether you're chasing rare pulls, building your deck, or expanding your Korean-language collection, <strong data-start=\"723\" data-end=\"739\">Triplet Beat</strong> delivers dynamic energy in every rip!</p>\n<p data-start=\"779\" data-end=\"797\" class=\"\"><strong data-start=\"779\" data-end=\"797\">What’s inside:</strong></p>\n<ul data-start=\"798\" data-end=\"1050\">\n<li data-start=\"798\" data-end=\"835\" class=\"\">\n<p data-start=\"800\" data-end=\"835\" class=\"\">🎴 30 sealed Korean booster packs</p>\n</li>\n<li data-start=\"836\" data-end=\"878\" class=\"\">\n<p data-start=\"838\" data-end=",
+   "published_at": "2025-04-02T17:33:03+01:00",
+   "created_at": "2025-04-02T17:33:03+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50602256728394,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV1A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "97.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123343102282,
+     "created_at": "2025-04-02T17:33:05+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10215466238282,
+   "title": "Pokemon TCG Future Flash SV4M Korean Booster Box",
+   "handle": "pokemon-tcg-future-flash-sv4m-korean-booster-box",
+   "body_html": "<p data-start=\"472\" data-end=\"781\">Enter the high-tech world of the <strong data-start=\"505\" data-end=\"521\">Future Flash</strong> expansion with this Korean-language booster box, featuring sleek, futuristic Pokémon like <strong data-start=\"612\" data-end=\"628\">Iron Valiant</strong>, <strong data-start=\"630\" data-end=\"644\">Iron Hands</strong>, and more. This set is part of the <strong data-start=\"680\" data-end=\"707\">Scarlet &amp; Violet series</strong> and serves as the <strong data-start=\"726\" data-end=\"776\">Korean counterpart to the English Paradox Rift</strong> set.</p>\n<p data-start=\"783\" data-end=\"1001\">Each sealed booster box includes 30 booster packs, with 5 randomly selected Korean cards per pack. Whether you're hunting Future-style Pokémon or unique art and secret rares, this box delivers excitement in every pull.</p>\n<p data-start=\"1003\" data-end=\"1021\"><strong data-start=\"1003\" data-end=\"1021\">What’s Inside:</strong></p>\n<ul data-start=\"1022\" data-end=\"1286\">\n<li data-start=\"1022\" data-end=\"1059\">\n<p data-start=\"1024\" data-end=\"1059\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1060\" data-end=\"1098\">\n<p data-start=\"1062\" data-end=\"1098\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1099\" data-end=\"1159\">\n<p data-start=\"1101\" data-end=\"1159\">Expansion Code: SV4M (Part of the Scarlet &amp; Violet Series)</p>\n</li>\n<li data-start=\"1160\" data-end=\"1224\">\n<p data-start=\"1162\" data-end=\"1224\">Features futuristic Pokémon like Iron Valiant a",
+   "published_at": "2025-06-02T11:14:42+01:00",
+   "created_at": "2025-06-02T11:14:42+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50975526224202,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV4M-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "80.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10215466238282,
+     "created_at": "2025-06-02T11:14:44+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10123188994378,
+   "title": "Pokemon TCG Snow Hazard SV2P Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-scarlet-violet-snow-hazard-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"214\" data-end=\"305\" class=\"\">❄️ Brace yourself—<strong data-start=\"232\" data-end=\"247\">Snow Hazard</strong> is bringing the chill AND the thrills to your collection!</p>\n<p data-start=\"307\" data-end=\"534\" class=\"\">This <strong data-start=\"312\" data-end=\"334\">Korean booster box</strong> includes <strong data-start=\"344\" data-end=\"363\">30 sealed packs</strong>, each with <strong data-start=\"375\" data-end=\"395\">5 icy-cool cards</strong> just waiting to be discovered. From powerful new Pokémon to frosty surprises, this set is loaded with cool pulls and collectible goodness.</p>\n<p data-start=\"536\" data-end=\"688\" class=\"\">Whether you're building your Korean TCG collection or just love the thrill of opening packs, <strong data-start=\"629\" data-end=\"644\">Snow Hazard</strong> is the perfect storm of fun and excitement.</p>\n<p data-start=\"690\" data-end=\"708\" class=\"\"><strong data-start=\"690\" data-end=\"708\">What’s inside:</strong></p>\n<ul data-start=\"709\" data-end=\"908\">\n<li data-start=\"709\" data-end=\"739\" class=\"\">\n<p data-start=\"711\" data-end=\"739\" class=\"\">❄️ 30 Korean booster packs</p>\n</li>\n<li data-start=\"740\" data-end=\"782\" class=\"\">\n<p data-start=\"742\" data-end=\"782\" class=\"\">🧊 5 cards per pack (150 cards total!)</p>\n</li>\n<li data-start=\"783\" data-end=\"842\" class=\"\">\n<p data-start=\"785\" data-end=\"842\" class=\"\">🌟 Part of the Scarlet &amp; Violet series – Korean edition</p>\n</li>\n<li data-start=\"843\" data-end=\"908\" class=\"\">\n<p data-start=\"845\" data-end=\"908\" cl",
+   "published_at": "2025-04-02T16:52:35+01:00",
+   "created_at": "2025-04-02T16:52:35+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50601819996490,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV2P-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "97.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10123188994378,
+     "created_at": "2025-04-02T16:52:36+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10215481573706,
+   "title": "Pokemon TCG Shiny Treasures EX SV4A Korean Booster Box",
+   "handle": "pokemon-tcg-shiny-treasures-ex-sv4a-korean-booster-box",
+   "body_html": "<p data-start=\"511\" data-end=\"833\">Experience the shimmer and sparkle of one of the most exciting releases in the Scarlet &amp; Violet era — <strong data-start=\"613\" data-end=\"635\">Shiny Treasures EX</strong>, now available in Korean! This is a <strong data-start=\"672\" data-end=\"698\">high-class booster box</strong>, packed with premium pulls and loaded with <strong data-start=\"742\" data-end=\"759\">Shiny Pokémon</strong>, and is the <strong data-start=\"772\" data-end=\"822\">Korean equivalent of the English Paldean Fates</strong> expansion.</p>\n<p data-start=\"835\" data-end=\"1005\">Featuring popular Shiny Pokémon like <strong data-start=\"872\" data-end=\"885\">Charizard</strong>, <strong data-start=\"887\" data-end=\"898\">Mimikyu</strong>, <strong data-start=\"900\" data-end=\"912\">Tinkaton</strong>, and many more, this box is a dream for collectors and fans of rare, beautiful card designs.</p>\n<p data-start=\"1007\" data-end=\"1216\">Each box includes 10 booster packs, and each pack is loaded with <strong data-start=\"1072\" data-end=\"1102\">10 randomly selected cards</strong>, including multiple holographic and shiny hits per pack — making this one of the most rewarding products to open.</p>\n<p data-start=\"1218\" data-end=\"1236\"><strong data-start=\"1218\" data-end=\"1236\">What’s Inside:</strong></p>\n<ul data-start=\"1237\" data-end=\"1510\">\n<li data-start=\"1237\" data-end=\"1285\">\n<p data-start=\"1239\" data-end=\"1285\">10x High-Class Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1286\" data-end=",
+   "published_at": "2025-06-02T11:25:38+01:00",
+   "created_at": "2025-06-02T11:25:38+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50975723782474,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV4A-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "145.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10215481573706,
+     "created_at": "2025-06-02T11:25:40+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8710401687882,
+   "title": "Pokemon 2x Random JUMBO (Oversized) Cards Mystery Bundle",
+   "handle": "pokemon-2x-random-jumbo-oversized-cards-bundle",
+   "body_html": "<div>A bundle of two jumbo oversized Pokemon Cards - which will you get?</div>\n<div>\n<br>Please note these not standard size Pokemon Cards. Each Card measures approx 20x14.5cm.<br><br>All Cards within this bundle are supplied at Random and may vary from those shown in the photo.</div>\n<ul>\n<li>100% Genuine JUMBO OVERSIZED Pokemon Cards. Jumbo cards are much bigger than standard Pokemon cards and great to display!</li>\n<li>Pack of 2 different Jumbo Oversized cards - (the cards are prepacked and sent at Random and may vary from those shown in the photo)</li>\n</ul>",
+   "published_at": "2024-03-07T00:10:58+00:00",
+   "created_at": "2024-03-07T00:10:58+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Jumbo Pokemon Cards",
+    "Oversized Pokemon Cards",
+    "Pokemon Card Bundle"
+   ],
+   "variants": [
+    {
+     "id": 47737932153162,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JUMBO2PK",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "7.00",
+     "grams": 60,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8710401687882,
+     "created_at": "2024-03-07T00:11:00+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8711335903562,
+   "title": "Pokemon Wild Force SV5K Japanese Booster Box (30 Booster Packs)",
+   "handle": "pokemon-wild-force-sv5k-japanese-booster-box-30-booster-packs",
+   "body_html": "<p>A sealed Pokemon Wild Force Booster Box from the Japanese Scarlet &amp; Violet era of the Pokemon Trading Card Game.</p>\n<p>Each booster box contains 30 booster packs, each pack contains 5 cards. An official Japanese Pokemon TCG Product.</p>",
+   "published_at": "2024-03-07T18:56:23+00:00",
+   "created_at": "2024-03-07T18:56:23+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Japanese Pokemon Booster Box",
+    "Pokemon. Pokemon: Japanese Booster Boxes"
+   ],
+   "variants": [
+    {
+     "id": 47740817113418,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-SV5KJP-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "130.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8711335903562,
+     "created_at": "2024-03-07T18:56:24+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10215434682698,
+   "title": "Pokemon TCG Clay Burst SV2D Korean Booster Box",
+   "handle": "pokemon-tcg-clay-burst-s9d-korean-booster-box",
+   "body_html": "<p data-start=\"319\" data-end=\"670\">Discover the strength of Earth-type Pokémon in this exciting Korean-language Clay Burst booster box, part of the Scarlet &amp; Violet era and the <strong data-start=\"461\" data-end=\"516\">Korean equivalent of the English Paldea Evolved set</strong>. Packed with powerful cards and stunning art, this expansion features standout Pokémon like <strong data-start=\"609\" data-end=\"620\">Ting-Lu</strong>, alongside a range of rare and collectible cards.</p>\n<p data-start=\"672\" data-end=\"864\">Each sealed booster box contains 30 packs, and each pack includes 5 randomly selected Korean-language cards – making it perfect for collectors, battlers, and fans of unique international sets.</p>\n<p data-start=\"866\" data-end=\"884\"><strong data-start=\"866\" data-end=\"884\">What’s Inside:</strong></p>\n<ul data-start=\"885\" data-end=\"1102\">\n<li data-start=\"885\" data-end=\"922\">\n<p data-start=\"887\" data-end=\"922\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"923\" data-end=\"961\">\n<p data-start=\"925\" data-end=\"961\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"962\" data-end=\"1021\">\n<p data-start=\"964\" data-end=\"1021\">Expansion Code: S9D (Part of the Scarlet &amp; Violet Series)</p>\n</li>\n<li data-start=\"1022\" data-end=\"1102\">\n<p data-start=\"1024\" data-end=\"1102\">Features rare and powerful Pokémon cards, including Art Rares and Secret Rares</p>\n</li>\n</ul>\n<p data-start=\"1104\" data-end=\"1257\">Perfect as a gift or for your own collection, this ",
+   "published_at": "2025-06-02T10:55:37+01:00",
+   "created_at": "2025-06-02T10:55:37+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50975452561738,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-S9D-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "97.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10215434682698,
+     "created_at": "2025-06-02T10:55:39+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15985318265162,
+   "title": "Korean Pokémon Card Mystery Bundle – 10 Sealed Booster Packs | Authentic Random Packs from Korea",
+   "handle": "korean-pokemon-card-mystery-bundle-10-sealed-booster-packs-authentic-random-packs-from-korea",
+   "body_html": "<p>Give the gift of surprise with our <strong>Korean Pokémon Booster Pack Mystery Bundle</strong>! Each bundle contains <strong>10 authentic, factory-sealed booster packs</strong> from a mix of Korean Pokémon TCG expansions. The fun starts the moment they open it — and the thrill of what’s inside makes it unforgettable.</p>\n<ul>\n<li>\n<p><strong>10 sealed Korean booster packs</strong> per bundle</p>\n</li>\n<li>\n<p>Selected from a variety of exciting expansions</p>\n</li>\n<li>\n<p>All cards and packaging in <strong>Korean language</strong></p>\n</li>\n<li>\n<p>Sourced from trusted Korean suppliers — <strong>100% genuine</strong></p>\n</li>\n<li>\n<p>UK-based dispatch for fast, customs-free delivery</p>\n</li>\n<li>\n<p><strong>Ideal for birthdays, Christmas, or any Pokémon fan who loves surprises</strong></p>\n</li>\n</ul>\n<p>From rare pulls to stunning Korean-exclusive artwork, this mystery bundle is a gift that keeps on giving. Perfect for collectors, players, and anyone ready for an adventure in every pack.</p>\n<p>Please note that the picture is for illustration purposes and does not represent which packs will/won't be received. But you will definitely get 10x Booster Packs, and at least 5 of them will be different, but we will try to give 10 different packs where availability allows.</p>",
+   "published_at": "2026-08-21T13:15:16+01:00",
+   "created_at": "2026-08-21T13:15:14+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Pokemon Mystery Bundle"
+   ],
+   "variants": [
+    {
+     "id": 63069187277130,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "25.00",
+     "grams": 120,
+     "compare_at_price": "28.00",
+     "position": 1,
+     "product_id": 15985318265162,
+     "created_at": "2026-08-21T13:15:14+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15665588633930,
+   "title": "Pokémon TCG Ninja Spinner M4 Korean Booster Box | 30 Packs | 5 Cards Per Pack",
+   "handle": "pokemon-tcg-ninja-spinner-m4-korean-booster-box-30-packs",
+   "body_html": "<p data-start=\"83\" data-end=\"457\">Enter the next stage of the Korean Pokémon TCG with the exciting <strong data-start=\"148\" data-end=\"168\">Ninja Spinner M4</strong> expansion. This authentic Korean booster box contains <strong data-start=\"223\" data-end=\"250\">30 sealed booster packs</strong>, with <strong data-start=\"257\" data-end=\"295\">5 randomly assorted cards per pack</strong>, offering collectors and players the thrill of discovering powerful Pokémon, stunning artwork, and rare card pulls from the latest Scarlet &amp; Violet era releases.</p>\n<p data-start=\"459\" data-end=\"729\">Perfect for collectors, rip-and-ship fans, and Pokémon enthusiasts looking for a unique opening experience, Korean Pokémon cards continue to grow in popularity thanks to their excellent print quality, distinctive finish, and incredible value compared to other languages.</p>\n<p data-start=\"731\" data-end=\"934\">Whether you are hunting for ultra rare cards, building your binder collection, or opening packs for fun, Ninja Spinner delivers an exciting mix of cards inspired by the fast-paced modern Pokémon TCG era.</p>\n<h3 data-start=\"936\" data-end=\"980\">Why Choose Korean Pokémon Booster Boxes?</h3>\n<ul data-start=\"981\" data-end=\"1225\">\n<li data-start=\"981\" data-end=\"1019\">Authentic Korean Pokémon TCG product</li>\n<li data-start=\"1020\" data-end=\"1053\">30 sealed booster packs per box</li>\n<li data-start=\"1054\" data-end=\"1079\">5 random cards per pack</li>\n<li data-start=\"1080\" data-end=\"1114\">Distinct Korean ",
+   "published_at": "2026-05-19T09:38:27+01:00",
+   "created_at": "2026-05-19T09:38:26+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 61868710920522,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-M4-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "60.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15665588633930,
+     "created_at": "2026-05-19T09:38:26+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15306584916298,
+   "title": "Pokemon TCG Mega Dream EX Japanese Booster Box | M2A | High Class Packs (10 Booster Packs)",
+   "handle": "pokemon-tcg-mega-dream-ex-japanese-booster-box-m2a-high-class-packs-10-booster-packs",
+   "body_html": "<p data-start=\"150\" data-end=\"382\">Experience the excitement of premium Pokémon pack opening with the Japanese Pokémon TCG <strong data-start=\"238\" data-end=\"273\">Mega Dream EX Booster Box (M2A)</strong> — a <strong data-start=\"278\" data-end=\"292\">high-class</strong> release featuring elevated card quality, stunning artwork, and exceptional hit potential.</p>\n<p data-start=\"384\" data-end=\"669\">This <strong data-start=\"389\" data-end=\"449\">high-class booster box includes 10 premium booster packs</strong>, and each pack contains <strong data-start=\"474\" data-end=\"486\">10 cards</strong>, offering multiple holos and strong chances at ultra-rare EX Pokémon. A perfect choice for collectors who love the thrill of big pulls and the premium feel of Japanese print quality.</p>\n<p data-start=\"671\" data-end=\"974\">Whether you’re expanding a showcase binder, hunting display-worthy hits, or adding to a sealed collection, Mega Dream EX delivers a luxurious opening experience that Japanese Pokémon sets are famous for. Ideal for collectors, content creators, and anyone chasing the excitement of premium pack openings.</p>\n<p data-start=\"976\" data-end=\"1063\">Perfect as a gift for Pokémon fans — or an unforgettable treat for your own collection.</p>\n<h3 data-start=\"1065\" data-end=\"1083\">What’s inside:</h3>\n<p data-start=\"1084\" data-end=\"1320\">• 10 Mega Dream EX high-class booster packs<br data-start=\"1127\" data-end=\"1130\">• <strong data-start=\"1132\" data-end=\"1153\">10 cards per pack</strong><br da",
+   "published_at": "2025-11-30T15:36:15+00:00",
+   "created_at": "2025-11-30T15:36:13+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon",
+   "tags": [
+    "Japanese Booster Box",
+    "Japanese Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 53486435467594,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-M2A-BOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "131.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15306584916298,
+     "created_at": "2025-11-30T15:36:13+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10048405078346,
+   "title": "Pokemon TCG Night Wanderer SV6A Booster Box | 30x Night Wanderer Booster Packs | Japanese Pokemon Cards",
+   "handle": "pokemon-tcg-night-wanderer-sv6-booster-box-30x-night-wanderer-booster-packs-japanese-pokemon-cards",
+   "body_html": "<p>Boost your Pokemon TCG collection with the Night Wanderer SV6A Booster Box! This box contains 30 Night Wanderer Booster Packs, each pack including 5 Japanese Pokemon cards. Get ready to wander into the night with new, exciting cards to add to your collection.</p>",
+   "published_at": "2025-02-25T08:30:27+00:00",
+   "created_at": "2025-02-25T08:30:27+00:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Pokemon TCG",
+   "tags": [
+    "Japanese Pokemon Booster Box",
+    "Pokemon. Pokemon: Japanese Booster Boxes"
+   ],
+   "variants": [
+    {
+     "id": 50353023680842,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-JP-NW-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "109.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10048405078346,
+     "created_at": "2025-02-25T08:30:29+00:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216846655818,
+   "title": "Pokemon TCG Time Gazer S10D Korean Booster Box",
+   "handle": "pokemon-tcg-time-gazer-s10d-korean-booster-box",
+   "body_html": "<p data-start=\"554\" data-end=\"870\">Journey through time with the <strong data-start=\"584\" data-end=\"598\">Time Gazer</strong> expansion — part of the Sword &amp; Shield series and one of the <strong data-start=\"660\" data-end=\"718\">Korean counterparts to the English Astral Radiance set</strong>, alongside Battle Region and Space Juggler. This exciting set features <strong data-start=\"790\" data-end=\"813\">Origin Forme Dialga</strong>, <strong data-start=\"815\" data-end=\"834\">Hisuian Pokémon</strong>, and powerful new VSTAR evolutions.</p>\n<p data-start=\"872\" data-end=\"1124\">Each sealed booster box includes 30 Korean-language packs, with 5 randomly selected cards per pack. Look out for holo rares, V and VSTAR cards, and dazzling Secret Rares — all showcasing the unique energy of the Hisui region and the distortion of time.</p>\n<p data-start=\"1126\" data-end=\"1144\"><strong data-start=\"1126\" data-end=\"1144\">What’s Inside:</strong></p>\n<ul data-start=\"1145\" data-end=\"1401\">\n<li data-start=\"1145\" data-end=\"1184\">\n<p data-start=\"1147\" data-end=\"1184\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1185\" data-end=\"1225\">\n<p data-start=\"1187\" data-end=\"1225\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1226\" data-end=\"1274\">\n<p data-start=\"1228\" data-end=\"1274\">Expansion Code: S10D (Sword &amp; Shield Series)</p>\n</li>\n<li data-start=\"1275\" data-end=\"1346\">\n<p data-start=\"1277\" data-end=\"1346\">Features Origin Forme Dialga, Hisuian Pokémon, and VSTAR Evolutio",
+   "published_at": "2025-06-03T11:33:43+01:00",
+   "created_at": "2025-06-03T11:33:43+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50983071154506,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-S10D-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "110.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216846655818,
+     "created_at": "2025-06-03T11:33:44+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10216830239050,
+   "title": "Pokemon TCG Star Birth S9 Korean Booster Box (30 Booster Packs)",
+   "handle": "pokemon-tcg-star-birth-s9-korean-booster-box-30-booster-packs",
+   "body_html": "<p data-start=\"516\" data-end=\"819\">Unleash celestial power with the <strong data-start=\"549\" data-end=\"563\">Star Birth</strong> expansion — the <strong data-start=\"580\" data-end=\"636\">Korean equivalent of the English Brilliant Stars set</strong>, and a standout release from the Sword &amp; Shield series. This set introduces the powerful <strong data-start=\"726\" data-end=\"744\">VSTAR mechanic</strong> and features iconic Pokémon like <strong data-start=\"778\" data-end=\"794\">Arceus VSTAR</strong> and <strong data-start=\"799\" data-end=\"818\">Charizard VSTAR</strong>.</p>\n<p data-start=\"821\" data-end=\"1061\">Each sealed booster box contains 30 Korean-language packs, with 5 randomly selected cards per pack. With exciting ultra rares, VSTAR evolutions, and beautiful holographics, Star Birth is perfect for collectors and competitive players alike.</p>\n<p data-start=\"1063\" data-end=\"1081\"><strong data-start=\"1063\" data-end=\"1081\">What’s Inside:</strong></p>\n<ul data-start=\"1082\" data-end=\"1327\">\n<li data-start=\"1082\" data-end=\"1121\">\n<p data-start=\"1084\" data-end=\"1121\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1122\" data-end=\"1162\">\n<p data-start=\"1124\" data-end=\"1162\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1163\" data-end=\"1209\">\n<p data-start=\"1165\" data-end=\"1209\">Expansion Code: S9 (Sword &amp; Shield Series)</p>\n</li>\n<li data-start=\"1210\" data-end=\"1277\">\n<p data-start=\"1212\" data-end=\"1277\">Features Arceus VSTAR, Charizard VSTAR, and mor",
+   "published_at": "2025-06-03T11:23:36+01:00",
+   "created_at": "2025-06-03T11:23:36+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50983018561866,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-S9-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "110.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10216830239050,
+     "created_at": "2025-06-03T11:23:38+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10215459094858,
+   "title": "Pokemon TCG Ancient Roar SV4K Korean Booster Box",
+   "handle": "pokemon-tcg-ancient-roar-sv4k-korean-booster-box",
+   "body_html": "<p data-start=\"468\" data-end=\"764\">Step into the prehistoric power of Pokémon with the <strong data-start=\"520\" data-end=\"536\">Ancient Roar</strong> expansion – now available in this Korean-language booster box. This set is the <strong data-start=\"616\" data-end=\"665\">Korean equivalent of the English Paradox Rift</strong> expansion and showcases fearsome ancient Pokémon like <strong data-start=\"720\" data-end=\"736\">Roaring Moon</strong>, <strong data-start=\"738\" data-end=\"753\">Scream Tail</strong>, and more.</p>\n<p data-start=\"766\" data-end=\"979\">Each sealed booster box contains 30 packs, with 5 randomly selected cards per pack. With the chance to pull powerful Ancient-style Pokémon, Art Rares, and Secret Rares, it’s a thrilling addition to any collection.</p>\n<p data-start=\"981\" data-end=\"999\"><strong data-start=\"981\" data-end=\"999\">What’s Inside:</strong></p>\n<ul data-start=\"1000\" data-end=\"1275\">\n<li data-start=\"1000\" data-end=\"1037\">\n<p data-start=\"1002\" data-end=\"1037\">30x Booster Packs (Korean Language)</p>\n</li>\n<li data-start=\"1038\" data-end=\"1076\">\n<p data-start=\"1040\" data-end=\"1076\">5 Cards Per Pack – Randomly Selected</p>\n</li>\n<li data-start=\"1077\" data-end=\"1137\">\n<p data-start=\"1079\" data-end=\"1137\">Expansion Code: sv4K (Part of the Scarlet &amp; Violet Series)</p>\n</li>\n<li data-start=\"1138\" data-end=\"1205\">\n<p data-start=\"1140\" data-end=\"1205\">Features Ancient Pokémon including Roaring Moon and Scream Tail</p>\n</li>\n<li data-start=\"1206\" data-end=\"1275\">\n<p dat",
+   "published_at": "2025-06-02T11:06:46+01:00",
+   "created_at": "2025-06-02T11:06:46+01:00",
+   "updated_at": "2026-10-05T08:38:32+01:00",
+   "vendor": "Pokemon TCG",
+   "product_type": "Booster Box",
+   "tags": [
+    "Korean Pokemon Booster Box"
+   ],
+   "variants": [
+    {
+     "id": 50975511314762,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "POK-KR-SV4K-BBOX",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "90.00",
+     "grams": 250,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10215459094858,
+     "created_at": "2025-06-02T11:06:48+01:00",
+     "updated_at": "2026-10-05T08:38:32+01:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -36,6 +36,8 @@ const Category = z.object({
   publishers: z.array(z.string()).min(1),
   /** Titles must match at least one of these to be classified into the category. */
   match: Keywords,
+  /** Shop product types and tags that also place an item in the category. */
+  match_taxonomy: Keywords,
   /** Titles matching any of these are excluded from the category, with the rule shown in the UI. */
   exclude: z
     .array(z.object({ rule: z.string(), keywords: z.array(z.string().min(1)).min(1) }))
@@ -129,6 +131,10 @@ export const RulesConfig = z.object({
     }),
   ),
   categories: z.record(z.string(), Category),
+  normalise: z.object({
+    synonyms: z.record(z.string(), z.string()),
+    noise: z.array(z.string()),
+  }),
   /** Exclusions that apply to every category (non-sealed items, graded slabs, etc.). */
   global_exclude: z.array(z.object({ rule: z.string(), keywords: z.array(z.string().min(1)).min(1) })),
   scarcity: z.object({

@@ -1,0 +1,9 @@
+{
+ "url": "https://southernlight.store/collections/pokemon-english/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:60469510205:ProductListController:0f45fc0103de247ae6892b5b7be1d4b7\""
+ }
+}

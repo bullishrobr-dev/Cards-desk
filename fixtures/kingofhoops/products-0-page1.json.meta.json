@@ -1,0 +1,9 @@
+{
+ "url": "https://kingofhoops.co.uk/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:45526450334:ProductListController:ad04281d2d1a8313da1c24796f8a59fa\""
+ }
+}

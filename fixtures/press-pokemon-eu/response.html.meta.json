@@ -1,0 +1,9 @@
+{
+ "url": "https://pokemon.gamespress.com/en-GB/",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "cache-control": "private, s-maxage=0",
+  "content-type": "text/html; charset=utf-8"
+ }
+}

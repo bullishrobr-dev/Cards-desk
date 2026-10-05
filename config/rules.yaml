@@ -60,19 +60,52 @@ publishers:
     aliases: [pokemon, pokémon, the pokemon company, tpci]
     tier_multiplier: 1.0
 
-# Applies to every category. These are not sealed product.
+# Applies to every category. Matched against the title, variant name and product type
+# (never shop tags, which are too noisy: one shop tags every product "Español - Inglés").
 global_exclude:
   - rule: Graded or single cards
-    keywords: [psa 10, psa 9, bgs, cgc, graded, slab, slabbed, single card, auto card]
-  - rule: Baseball
-    keywords: [baseball, mlb]
+    keywords: [psa 10, psa 9, bgs, cgc, beckett 9, beckett 10, graded, slab, slabs, slabbed, single card, singles, auto card, oversized, promo card, living set, grading]
+  - rule: Accessories and supplies
+    keywords: [protector, pet protector, display case, acrylic, toploader, toploaders, top loader, topload, sleeves, binder, one touch, magnetic holder, card holder, storage box, deck box, playmat, supplies]
+  - rule: Group breaks and live openings
+    keywords: ['break #', pick your team, random team, filler, abrir en directo, apri in live, live opening, solo directo]
+  - rule: Mystery and repacks
+    keywords: [mystery, repack, random packs, lote especial]
+  - rule: Damaged stock
+    keywords: [damaged, dañada, danada, imperfections, daño en caja]
+  - rule: Single packs
+    keywords: [single pack, hobby pack, booster pack, sleeved booster, premium pack, eco pack, starter pack, sobre]
+  - rule: Cases (multiple boxes) # REVIEW: cases are sealed, but priced per case not per box
+    keywords: [hobby case, master case, mini case, box case, full case, international case]
+  - rule: Baseball and other sports
+    keywords: [baseball, mlb, basketball, nba, wnba, hockey, nhl, nfl, tennis, golf, wwe, ufc, snooker]
+
+# Text normalisation applied to every title before matching, on both sides of a match.
+normalise:
+  # Abbreviations expanded to the full phrase (whole words only).
+  synonyms:
+    f1: formula 1
+    formula one: formula 1
+    ucl: uefa champions league
+    ucc: uefa club competitions
+    epl: premier league
+    laliga: la liga
+    etb: elite trainer box
+    boosterbox: booster box
+    pokémon: pokemon
+    collectors: collector
+  # Words that never distinguish one release from another.
+  noise: [box, boxes, pre, order, preorder, pre-order, reserva, precommande, précommande, trading, cards, card, tcg, sealed, english, ingles, inglés, anglais, anglaise, eng, en, version, new, the, of, and, edition, soccer, football, racing, sports, sport, ecom, international, display]
 
 categories:
   football:
     label: Football
     enabled: true
     publishers: [topps, panini]
-    match: [football, soccer, fútbol, futbol, uefa, champions league, premier league, la liga, laliga, bundesliga, serie a, fifa, world cup, euro 2028, mls, nwsl, club competitions]
+    # "football" alone is not enough in a title: Topps "Chrome Football" is NFL.
+    match: [soccer, fútbol, futbol, uefa, champions league, premier league, la liga, bundesliga, serie a, ligue 1, fifa, world cup, euro 2028, mls, nwsl, club competitions, national football team, collector tin, arsenal, chelsea, liverpool, manchester united, manchester city, real madrid, barcelona, psg, paris saint germain, juventus, bayern]
+    # Shop taxonomy (product type and tags) where "football" does mean soccer.
+    match_taxonomy: [football, soccer, calcio, fussball, fútbol]
     exclude:
       - { rule: Stickers, keywords: [sticker, stickers, album, cromos] }
       - { rule: Match Attax / Turbo Attax, keywords: [match attax, turbo attax] }
@@ -103,7 +136,8 @@ categories:
     label: Formula 1
     enabled: true
     publishers: [topps, panini]
-    match: [formula 1, formula one, f1, grand prix, mclaren, ferrari racing, williams racing, red bull racing, racing cards]
+    match: [formula 1, grand prix, mclaren, scuderia ferrari, williams racing, topps williams, red bull racing]
+    match_taxonomy: [f1, formula 1]
     exclude:
       - { rule: Stickers, keywords: [sticker, stickers, album] }
       - { rule: Turbo Attax, keywords: [turbo attax] }
@@ -130,7 +164,8 @@ categories:
     label: Pokémon TCG
     enabled: true
     publishers: [pokemon]
-    match: [pokemon, pokémon, mega evolution, elite trainer box, booster bundle]
+    match: [pokemon, mega evolution, elite trainer box, booster bundle]
+    match_taxonomy: [pokemon]
     exclude:
       - { rule: Single packs, keywords: [single pack, booster pack, sleeved booster, 1 pack, checklane, check lane] }
       - { rule: Blisters, keywords: [blister, 3 pack blister, 3-pack blister] }

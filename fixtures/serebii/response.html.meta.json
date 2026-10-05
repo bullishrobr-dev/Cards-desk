@@ -1,0 +1,8 @@
+{
+ "url": "https://www.serebii.net/card/english.shtml",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "text/html; charset=ISO-8859-1"
+ }
+}

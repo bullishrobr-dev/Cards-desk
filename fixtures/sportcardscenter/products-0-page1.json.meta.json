@@ -1,0 +1,9 @@
+{
+ "url": "https://sportcardscenter.com/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:80807559512:ProductListController:b82a833b061a4a68fa4027d390050786\""
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "url": "https://dutchbreakers.com/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:75644666182:ProductListController:2b41c73ba1313126c40d88ddb29216a8\""
+ }
+}

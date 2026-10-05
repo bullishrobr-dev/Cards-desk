@@ -1,0 +1,4544 @@
+{
+ "products": [
+  {
+   "id": 14961490428227,
+   "title": "Pack 5 Sobres Pokémon TCG",
+   "handle": "pack-de-5-sobres-pokemon-tcg",
+   "body_html": "<p>Descubre la emoción con este pack de <strong>5 sobres de cartas,</strong> sellados y listos para abrir. Perfecto para los pequeños coleccionistas y los fans de todas las edades que disfrutan de la sorpresa y la aventura de descubrir nuevas cartas.</p>\n<p><strong>¿Qué incluye este lote?</strong> 📦</p>\n<ul>\n<li>\n<p><strong>5 sobres sellados</strong> con :</p>\n</li>\n<li>\n<strong>10 cartas</strong> los sobres en <strong>inglés o español</strong>.</li>\n<li>\n<strong>5 cartas</strong> los sobres en <strong>coreano o japonés </strong> <strong></strong>\n</li>\n</ul>\n<blockquote>\n<p><strong>***Nota:</strong> Pueden incluirse sobres repetidos, añadiendo un toque de sorpresa a cada apertura. </p>\n</blockquote>\n<p><strong>Perfecto para coleccionistas, fanáticos de los juegos de cartas y quienes buscan sorpresas emocionantes en cada sobre!</strong> 🌟</p>",
+   "published_at": "2025-05-18T22:49:31+02:00",
+   "created_at": "2025-05-18T22:34:17+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas Misteriosas",
+    "Coreano - Japonés",
+    "Español - Inglés",
+    "Mistery Box",
+    "Pokémon",
+    "Sobres",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53160321581379,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 62063962620227,
+      "product_id": 14961490428227,
+      "position": 3,
+      "created_at": "2025-05-18T22:46:12+02:00",
+      "updated_at": "2025-09-04T21:12:44+02:00",
+      "alt": "Pack 5 Sobres Pokémon TCG",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Packs_528b2920-eeea-4763-bb2c-e9153244d4d0.png?v=1757013164",
+      "variant_ids": [
+       53160321581379
+      ]
+     },
+     "available": true,
+     "price": "27.90",
+     "grams": 24,
+     "compare_at_price": "31.90",
+     "position": 1,
+     "product_id": 14961490428227,
+     "created_at": "2025-05-18T22:39:24+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53160321548611,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 66170975256899,
+      "product_id": 14961490428227,
+      "position": 2,
+      "created_at": "2025-08-03T11:56:03+02:00",
+      "updated_at": "2025-09-04T21:12:44+02:00",
+      "alt": "Pack 5 Sobres Pokémon TCG",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Sobres_Ingles__Pokemillon.png?v=1757013164",
+      "variant_ids": [
+       53160321548611
+      ]
+     },
+     "available": false,
+     "price": "37.90",
+     "grams": 24,
+     "compare_at_price": "37.90",
+     "position": 2,
+     "product_id": 14961490428227,
+     "created_at": "2025-05-18T22:39:24+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53160321515843,
+     "title": "Japonés",
+     "option1": "Japonés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 62063962259779,
+      "product_id": 14961490428227,
+      "position": 5,
+      "created_at": "2025-05-18T22:46:12+02:00",
+      "updated_at": "2025-09-04T21:12:44+02:00",
+      "alt": "Pack 5 Sobres Pokémon TCG",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/5-sobres-japones_dc7cfa26-4afc-4893-aaf8-5c81cdb28412.png?v=1757013164",
+      "variant_ids": [
+       53160321515843
+      ]
+     },
+     "available": false,
+     "price": "19.90",
+     "grams": 24,
+     "compare_at_price": "19.90",
+     "position": 3,
+     "product_id": 14961490428227,
+     "created_at": "2025-05-18T22:39:24+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53160321483075,
+     "title": "Coreano",
+     "option1": "Coreano",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 62063961801027,
+      "product_id": 14961490428227,
+      "position": 4,
+      "created_at": "2025-05-18T22:46:12+02:00",
+      "updated_at": "2025-09-04T21:12:44+02:00",
+      "alt": "Pack 5 Sobres Pokémon TCG",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Pack5SObres_917c0b3a-565b-445c-9fb2-d83a0c47bf1d.png?v=1757013164",
+      "variant_ids": [
+       53160321483075
+      ]
+     },
+     "available": false,
+     "price": "9.90",
+     "grams": 24,
+     "compare_at_price": "9.90",
+     "position": 4,
+     "product_id": 14961490428227,
+     "created_at": "2025-05-18T22:39:24+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés",
+      "Japonés",
+      "Coreano"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14729680683331,
+   "title": "Caja 36 Sobres Juntos de Aventura | Journey Together Booster Box sv9",
+   "handle": "journey-together",
+   "body_html": "<h2>Caja 36 Sobres Juntos de Aventura | Journey Together Booster Box<br>\n</h2>\n<p>¡Nuevos Pokémon invaden Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura Juntos de Aventura de JCC Pokémon!</p>\n<p>Mejores Cartas de la colección Journey Together:</p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Journey_Together.png?v=1749859390\" alt=\"\"></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2025-01-15T00:12:39+01:00",
+   "created_at": "2025-01-15T00:08:53+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Journey Together",
+    "Juntos de Aventura",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54226364858691,
+     "title": "Caja 18 Sobres Español",
+     "option1": "Caja 18 Sobres Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "92.99",
+     "grams": 0,
+     "compare_at_price": "92.99",
+     "position": 1,
+     "product_id": 14729680683331,
+     "created_at": "2026-02-24T20:25:53+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54046216945987,
+     "title": "Caja 18 Sobres Inglés",
+     "option1": "Caja 18 Sobres Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73339363787075,
+      "product_id": 14729680683331,
+      "position": 9,
+      "created_at": "2026-01-02T11:36:14+01:00",
+      "updated_at": "2026-04-07T13:42:09+02:00",
+      "alt": "Caja de 36 sobres Pokémon Juntos de Aventura con diseño azul, ilustraciones de personajes y logo de Escarlata y Púrpura.",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/half-box-journey-together.png?v=1775562129",
+      "variant_ids": [
+       54046216945987
+      ]
+     },
+     "available": false,
+     "price": "119.90",
+     "grams": 0,
+     "compare_at_price": "119.90",
+     "position": 2,
+     "product_id": 14729680683331,
+     "created_at": "2025-12-31T15:11:55+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53378076508483,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "154.90",
+     "grams": 0,
+     "compare_at_price": "169.90",
+     "position": 3,
+     "product_id": 14729680683331,
+     "created_at": "2025-06-28T20:30:40+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53378076541251,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "259.90",
+     "grams": 0,
+     "compare_at_price": "259.90",
+     "position": 4,
+     "product_id": 14729680683331,
+     "created_at": "2025-06-28T20:30:40+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Caja 18 Sobres Español",
+      "Caja 18 Sobres Inglés",
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15087388033347,
+   "title": "Mega Lucario ex Figure Collection Megaevolución | Mega Evolution",
+   "handle": "mega-lucario-ex-figure-collection",
+   "body_html": "<p>Siente toda la fuerza y el poder de <strong data-start=\"236\" data-end=\"252\">Mega Lucario</strong> con esta edición de colección exclusiva. Esta caja especial celebra la Megaevolución con una espectacular figura de Mega Lucario y cartas promocionales únicas, perfectas para jugadores, coleccionistas y fans de Pokémon TCG.<br><br>Contenido:</p>\n<ul>\n<li>5 sobres de la colección</li>\n<li>1 Figura de Mega Lucario<br>\n</li>\n<li>2 Cartas Promocionales    <br>\n</li>\n<li>Código del TCG live</li>\n</ul>\n<h2 data-end=\"667\" data-start=\"254\">Mejores Cartas de Mega Evolution: <img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Megaevolutions_Cartas_Pokemillon.png?v=1759174559\">\n</h2>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2025-08-19T12:44:00+02:00",
+   "created_at": "2025-08-19T12:41:26+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Mega Evolucion",
+    "Mega Evolution",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53581911490883,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "39.95",
+     "grams": 0,
+     "compare_at_price": "39.95",
+     "position": 1,
+     "product_id": 15087388033347,
+     "created_at": "2025-08-19T12:41:26+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53581911523651,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "54.95",
+     "grams": 0,
+     "compare_at_price": "54.95",
+     "position": 2,
+     "product_id": 15087388033347,
+     "created_at": "2025-08-19T12:41:26+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7950528250102,
+   "title": "Caja 36 Sobres Escarlata y Púrpura | Scarlet & Violet",
+   "handle": "caja-36-escarlata-y-purpura",
+   "body_html": "<p>¡Embárcate en un viaje por la región de Paldea! Conoce a los primeros compañeros Sprigatito, Fuecoco y Quaxly, y explora el poder de los Pokémon legendarios Koraidon y Miraidon como Pokémon ex. Además, otros Pokémon ex evolucionan para entrar en combate, como Arcanine y Gyarados con una nueva apariencia deslumbrante. Y llegan todavía más Pokémon en cartas con ilustraciones impresionantes de una rareza única. ¡Descúbrelos a todos en la expansión Escarlata y Púrpura de JCC Pokémon!</p>\n<ul>\n<li>Más de 190 cartas</li>\n<li>Más de 10 nuevos Pokémon ex y el retorno de una mecánica de juego revisada</li>\n<li>Una increíble apariencia reluciente para los Pokémon ex Teracristal</li>\n<li>Más de 30 cartas de Entrenador</li>\n<li>Montones de cartas de Pokémon y de Entrenador con ilustraciones especiales</li>\n</ul>\n<h2>Mejores Cartas Escarlata y<span> </span><span class=\"a-size-large product-title-word-break\">Púrpura:</span>\n</h2>\n<p><span class=\"a-size-large product-title-word-break\"><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Scarlet_and_Violet_Mejores_Cartas_Pokemillon.png?v=1774355058\" alt=\"\"></span></p>",
+   "published_at": "2023-02-17T12:30:32+01:00",
+   "created_at": "2023-01-13T21:08:38+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Escarlata y Púrpura",
+    "Español - Inglés",
+    "Pokémon",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 53418137485635,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "169.90",
+     "grams": 900,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 7950528250102,
+     "created_at": "2025-07-08T18:00:44+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53418137518403,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "239.90",
+     "grams": 900,
+     "compare_at_price": "239.90",
+     "position": 2,
+     "product_id": 7950528250102,
+     "created_at": "2025-07-08T18:00:44+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8611084337475,
+   "title": "Caja Morpeko V-Union Cenit Supremo | Crown Zenith",
+   "handle": "morpeko-cenit-supremo",
+   "body_html": "<p>La <strong>Caja Morpeko V-Union Premium Playmat</strong> (Crown Zenith en su edición inglesa, Cenit Supremo en castellano) es la <strong>Colección Premium con tapete oficial</strong> dedicada al exclusivo Pokémon Morpeko V-Union, una de las cartas más icónicas del set Cenit Supremo. <span>Disponible en español o inglés.</span></p>\n<h2>Qué incluye la caja</h2>\n<ul>\n<li>5 sobres de mejora de Cenit Supremo</li>\n<li>4 cartas Morpeko V-Union que se combinan para formar 1 carta gigante</li>\n<li>1 carta jumbo de Morpeko V-Union</li>\n<li>1 tapete oficial de juego (Premium Playmat) con el diseño de Morpeko</li>\n</ul>\n<p><span>Cenit Supremo es el último set de la era Espada y Escudo del JCC Pokémon. Incluye más de 160 cartas, la subcolección \"Galería de Galar\" con ilustraciones especiales (Mewtwo VSTAR, Darkrai VSTAR, Hisuian Zoroark VSTAR) y los Pokémon Radiantes Shiny Charizard, Charjabug y Eternatus.</span></p>\n<h2>Mejores cartas de Crown Zenith</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Crown_Zenith.webp?v=1751403858\" alt=\"\"></p>\n<ul></ul>\n<p> </p>",
+   "published_at": "2023-05-18T16:51:56+02:00",
+   "created_at": "2023-05-18T16:39:17+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas Temáticas",
+    "Cenit Supremo",
+    "Crown Zenith",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53389611794755,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "78.27",
+     "grams": 610,
+     "compare_at_price": "68.27",
+     "position": 1,
+     "product_id": 8611084337475,
+     "created_at": "2025-07-01T22:56:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53389611827523,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "47.90",
+     "grams": 610,
+     "compare_at_price": "47.90",
+     "position": 2,
+     "product_id": 8611084337475,
+     "created_at": "2025-07-01T22:56:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9077727691075,
+   "title": "Caja 36 Sobres Mascarada Crepuscular | Twilight Masquerade Booster Box",
+   "handle": "caja-sobres-twilight-masquerade",
+   "body_html": "<p>¡Nuevos Pokémon invaden Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura Mascarada Crepúscular de JCC Pokémon!</p>\n<h2>Mejores Cartas de la colección Twilight Masquerade:</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Twilight_Masquerade.webp?v=1754154999\" alt=\"\"></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2024-03-14T19:11:19+01:00",
+   "created_at": "2024-03-14T19:11:19+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Greninja",
+    "Mascarada Crepuscular",
+    "Pokémon",
+    "Twilight Masquerade"
+   ],
+   "variants": [
+    {
+     "id": 53381162041667,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "184.90",
+     "grams": 835,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9077727691075,
+     "created_at": "2025-06-30T00:33:09+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53381162074435,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "369.90",
+     "grams": 835,
+     "compare_at_price": "0.00",
+     "position": 2,
+     "product_id": 9077727691075,
+     "created_at": "2025-06-30T00:33:09+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7819062903030,
+   "title": "Caja 36 Sobres Tempestad Plateada | Silver Tempest",
+   "handle": "caja-36-tempesta-plateada",
+   "body_html": "<p>La Caja con 36 Sobres de Tempestad Plateada (Silver Tempest en su edición inglesa) es la booster box oficial del JCC Pokémon. Cada caja incluye 36 sobres de mejora del set para abrir, jugar y coleccionar. Disponible en español o inglés.<br></p>\n<h2>Qué incluye la caja</h2>\n<ul>\n<li>36 sobres de mejora de Tempestad Plateada</li>\n<li>10 cartas aleatorias del set por sobre</li>\n<li>360 cartas en total por caja completa</li>\n</ul>\n<h2><span>Sobre el set Tempestad Plateada</span></h2>\n<p>Un siniestro estruendo resuena a lo lejos, ¡provocando que Lugia V-ASTRO emerja de las oscuras profundidades oceánicas para responder a la llamada! Explora tierras ignotas junto a unos aventureros compañeros de expedición como Vulpix de Alola V-ASTRO, Serperior V-ASTRO, Unown V-ASTRO y Mawile V-ASTRO. Y prepárate para el combate legendario que se aproxima mientras Regieleki VMAX y Regidrago V-ASTRO despiertan de su letargo. ¡Descubre poderosos aliados en la Galería de Entrenadores y pon rumbo a la aventura con la expansión<span> </span><em>Espada y Escudo-Tempestad Plateada</em><span> </span>de JCC Pokémon!</p>\n<p><strong>Listado de cartas del set:</strong></p>\n<ul>\n<li>Más de 190 cartas</li>\n<li>3 nuevos Pokémon Radiantes (Shiny Charizard, Shiny Charjabug y Shiny Eternatus)</li>\n<li>6 increíbles Pokémon V-ASTRO</li>\n<li>15 poderosos Pokémon V y 1 gigantesco Pokémon VMAX (Regieleki VMAX)</li>\n<li>30 cartas con ilustraciones especiales en el subconjunto de Galería de Entrenadores</li>\n<li>Más de",
+   "published_at": "2022-09-26T11:52:49+02:00",
+   "created_at": "2022-09-03T17:21:34+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Pokémon",
+    "Silver Tempest",
+    "Tempestad Plateada"
+   ],
+   "variants": [
+    {
+     "id": 53418124214595,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "209.90",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7819062903030,
+     "created_at": "2025-07-08T17:56:27+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53418124247363,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "219.90",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 7819062903030,
+     "created_at": "2025-07-08T17:56:27+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8955206336835,
+   "title": "Caja 36 Sobres Fuerzas Temporales | Temporal Forces Booster Box",
+   "handle": "temporal-forces-caja-sobres",
+   "body_html": "<p>¡Nuevos Pokémon <span>como Ondulagua y Ferroverdor</span> invaden Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura Fuerzas Temporales de JCC Pokémon!</p>\n<h2>Mejores Cartas de Temporal Forces:</h2>\n<h2><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Temporal_Forces_Cartas_Pokemillon.png?v=1774210496\" alt=\"\"></h2>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2024-01-11T01:35:04+01:00",
+   "created_at": "2024-01-11T01:31:36+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Fuerzas Temporales",
+    "Pokémon",
+    "Temporal Forces"
+   ],
+   "variants": [
+    {
+     "id": 53498876690755,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "189.90",
+     "grams": 0,
+     "compare_at_price": "184.90",
+     "position": 1,
+     "product_id": 8955206336835,
+     "created_at": "2025-07-30T11:54:25+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53498876723523,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "199.90",
+     "grams": 0,
+     "compare_at_price": "199.90",
+     "position": 2,
+     "product_id": 8955206336835,
+     "created_at": "2025-07-30T11:54:25+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7738553630966,
+   "title": "Caja 36 Sobres Origen Perdido | Lost Origin",
+   "handle": "pokemon-lost-origin",
+   "body_html": "<h2><strong>Caja de sobres Origen Perdido (Lost Origin) - Espada y Escudo </strong></h2>\n<p>Cuando los límites interdimensionales se desgarran, ¡Giratina V-ASTRO sumerge al mundo en el oscuro abismo de la Zona Perdida!</p>\n<p>Ten cuidado con el poder de la Zona Perdida, pues, a diferencia de lo que ocurre con la pila de descartes, las cartas que se envíen aquí ya no se podrán recuperar. Aerodactyl V-ASTRO aprovechará este distorsionado poder, mientras que Magnezone, Drapion, Goodra de Hisui y Zoroark de Hisui emergen también como Pokémon V-ASTRO para deslumbrar con sus increíbles habilidades, acompañados por Kyurem VMAX.</p>\n<p>Y, desde lo alto de las sombras, ¡Enamorus V y Gardevoir Radiante invocan una magia que resplandecerá en la expansión Espada y Escudo-Lost Origin!<br></p>\n<ul>\n<li>Más de 190 cartas 3 nuevos Pokémon Radiantes</li>\n<li>6 increíbles Pokémon V-ASTRO</li>\n<li>14 Pokémon V y 1 Pokémon VMAX</li>\n<li>30 <span>cartas con ilustraciones especiales en el subconjunto de Galería de Entrenadores</span>\n</li>\n<li>Más de 15 cartas de Entrenador</li>\n</ul>\n<h2>Mejores Cartas colección Origen Perdido:</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Lost_Origin_Mejores_Cartas_Pokemillon.png?v=1778160706\" alt=\"POKEMILLON Origen Perdido | Lost Origin\"></p>\n<p> </p>\n<p>Los sobres sueltos vienen de cajas de 36 abiertas. </p>",
+   "published_at": "2022-06-28T11:04:14+02:00",
+   "created_at": "2022-06-28T10:42:24+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Lost Origin",
+    "Origen Perdido",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53876885258563,
+     "title": "Caja 18 Español",
+     "option1": "Caja 18 Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 71095729914179,
+      "product_id": 7738553630966,
+      "position": 8,
+      "created_at": "2025-11-11T11:47:19+01:00",
+      "updated_at": "2026-04-07T13:49:27+02:00",
+      "alt": "Caja de 36 sobres Pokémon Espada y Escudo Origen Perdido con diseño de Giratina en tonos morados y blancos.",
+      "width": 660,
+      "height": 660,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/caja_18_sobres_pokemillon.png?v=1775562567",
+      "variant_ids": [
+       53876885258563,
+       53876890730819
+      ]
+     },
+     "available": false,
+     "price": "229.00",
+     "grams": 900,
+     "compare_at_price": "250.99",
+     "position": 1,
+     "product_id": 7738553630966,
+     "created_at": "2025-11-11T11:46:14+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53876890730819,
+     "title": "Caja 18 Inglés",
+     "option1": "Caja 18 Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 71095729914179,
+      "product_id": 7738553630966,
+      "position": 8,
+      "created_at": "2025-11-11T11:47:19+01:00",
+      "updated_at": "2026-04-07T13:49:27+02:00",
+      "alt": "Caja de 36 sobres Pokémon Espada y Escudo Origen Perdido con diseño de Giratina en tonos morados y blancos.",
+      "width": 660,
+      "height": 660,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/caja_18_sobres_pokemillon.png?v=1775562567",
+      "variant_ids": [
+       53876885258563,
+       53876890730819
+      ]
+     },
+     "available": false,
+     "price": "480.00",
+     "grams": 900,
+     "compare_at_price": "500.99",
+     "position": 2,
+     "product_id": 7738553630966,
+     "created_at": "2025-11-11T11:50:24+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53583949201731,
+     "title": "Caja 36 Español",
+     "option1": "Caja 36 Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 69733545115971,
+      "product_id": 7738553630966,
+      "position": 3,
+      "created_at": "2025-10-07T21:00:18+02:00",
+      "updated_at": "2026-04-07T13:49:27+02:00",
+      "alt": "Caja de 36 sobres Pokémon Espada y Escudo Origen Perdido con diseño de Giratina y Zoroark de Hisui en tonos oscuros.",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_36_Sobres_Lost_Origin_Sin_Fondo_Pokemillon.png?v=1775562567",
+      "variant_ids": [
+       53583949201731,
+       53583949234499
+      ]
+     },
+     "available": false,
+     "price": "389.99",
+     "grams": 900,
+     "compare_at_price": "469.99",
+     "position": 3,
+     "product_id": 7738553630966,
+     "created_at": "2025-08-19T21:57:49+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53583949234499,
+     "title": "Caja 36 Inglés",
+     "option1": "Caja 36 Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 69733545115971,
+      "product_id": 7738553630966,
+      "position": 3,
+      "created_at": "2025-10-07T21:00:18+02:00",
+      "updated_at": "2026-04-07T13:49:27+02:00",
+      "alt": "Caja de 36 sobres Pokémon Espada y Escudo Origen Perdido con diseño de Giratina y Zoroark de Hisui en tonos oscuros.",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_36_Sobres_Lost_Origin_Sin_Fondo_Pokemillon.png?v=1775562567",
+      "variant_ids": [
+       53583949201731,
+       53583949234499
+      ]
+     },
+     "available": false,
+     "price": "599.00",
+     "grams": 900,
+     "compare_at_price": "663.99",
+     "position": 4,
+     "product_id": 7738553630966,
+     "created_at": "2025-08-19T21:57:49+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Caja 18 Español",
+      "Caja 18 Inglés",
+      "Caja 36 Español",
+      "Caja 36 Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8848560292163,
+   "title": "Caja 36 Sobres Brecha Paradójica | Paradox Rift Booster Box",
+   "handle": "paradox-rift-caja-sobres",
+   "body_html": "<p>¡Embárcate en un viaje por la región de Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura de JCC Pokémon!</p>\n<ul>\n<li><span><span>Más de 190 cartas</span></span></li>\n<li><span><span>15 Pokémon ex y seis Tera Pokémon ex</span></span></li>\n<li><span><span>12 ilustraciones raras de Pokémon</span></span></li>\n<li><span><span>Seis ilustraciones especiales de cartas raras de Pokémon y Partidario</span></span></li>\n<li><span><span>12 tarjetas ultra raras grabadas de arte completo de Pokemon ex y Supporter</span></span></li>\n<li><span><span>Más de 15 cartas de Entrenador</span></span></li>\n<li><span><span>Tres cartas hiper raras grabadas en oro</span></span></li>\n</ul>\n<h2>\n<span>Mejores Cartas Brecha Paradójica</span><span>: <img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Paradox_Rift_Mejores_Cartas_Pokemillon.png?v=1776692984\" alt=\"POKEMILLON Sobre Brecha Paradójica | Paradox Rift Booster\"></span>\n</h2>",
+   "published_at": "2023-11-02T23:14:08+01:00",
+   "created_at": "2023-11-02T23:10:05+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Brecha Paradójica",
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Paradox Rift",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54226357354819,
+     "title": "Caja de 18 Sobres Español",
+     "option1": "Caja de 18 Sobres Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "92.99",
+     "grams": 835,
+     "compare_at_price": "92.99",
+     "position": 1,
+     "product_id": 8848560292163,
+     "created_at": "2026-02-24T20:24:36+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53381179670851,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 68880351985987,
+      "product_id": 8848560292163,
+      "position": 1,
+      "created_at": "2025-09-05T15:39:00+02:00",
+      "updated_at": "2026-04-20T15:46:08+02:00",
+      "alt": "Caja expositora de sobres Pokémon JCC Brecha Paradójica con ilustraciones de Iron Valiant y Roaring Moon en tonos azul y rojo.",
+      "width": 530,
+      "height": 530,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_36_Paradox_Rift_Sin_Fondo_Pokemillon.png?v=1776692768",
+      "variant_ids": [
+       53381179670851,
+       53381179703619
+      ]
+     },
+     "available": true,
+     "price": "179.99",
+     "grams": 835,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 8848560292163,
+     "created_at": "2025-06-30T01:05:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53381179703619,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 68880351985987,
+      "product_id": 8848560292163,
+      "position": 1,
+      "created_at": "2025-09-05T15:39:00+02:00",
+      "updated_at": "2026-04-20T15:46:08+02:00",
+      "alt": "Caja expositora de sobres Pokémon JCC Brecha Paradójica con ilustraciones de Iron Valiant y Roaring Moon en tonos azul y rojo.",
+      "width": 530,
+      "height": 530,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_36_Paradox_Rift_Sin_Fondo_Pokemillon.png?v=1776692768",
+      "variant_ids": [
+       53381179670851,
+       53381179703619
+      ]
+     },
+     "available": false,
+     "price": "239.90",
+     "grams": 835,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 8848560292163,
+     "created_at": "2025-06-30T01:05:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Caja de 18 Sobres Español",
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8621180649795,
+   "title": "Caja de 36 Sobres Llamas Obsidiana | Obsidian Flames Booster Box",
+   "handle": "llamas-obsidianas-caja-36",
+   "body_html": "<p><span style=\"font-size: 0.875rem;\">Embárcate en un viaje por la región de Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura de JCC Pokémon!</span></p>\n<ul>\n<li><span><span>Más de 190 cartas</span></span></li>\n<li><span><span>15 Pokémon ex y seis Tera Pokémon ex</span></span></li>\n<li><span><span>12 ilustraciones raras de Pokémon</span></span></li>\n<li><span><span>Seis ilustraciones especiales de cartas raras de Pokémon y Partidario</span></span></li>\n<li><span><span>12 tarjetas ultra raras grabadas de arte completo de Pokemon ex y Supporter</span></span></li>\n<li><span><span>Más de 15 cartas de Entrenador</span></span></li>\n<li><span><span>Tres cartas hiper raras grabadas en oro</span></span></li>\n</ul>\n<h2><span>Mejores Cartas Llamas Obsidianas:</span></h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Obsidian_Flames_Mejores_Cartas_Pokemillon.png?v=1778231670\" alt=\"POKEMILLON Llamas Obsidianas | Obsidian Flames\"></p>",
+   "published_at": "2023-05-25T23:19:17+02:00",
+   "created_at": "2023-05-25T22:51:42+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Llamas Obsidianas",
+    "Obsidian Flames",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53381177246019,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 49631202967875,
+      "product_id": 8621180649795,
+      "position": 1,
+      "created_at": "2023-05-25T22:51:54+02:00",
+      "updated_at": "2026-03-27T14:59:56+01:00",
+      "alt": "Caja expositora de sobres Pokémon Escarlata y Púrpura Llamas Obsidianas con ilustraciones de Charizard y Tyranitar ex.",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/P8979_699-86374_01_f7fb7aee-ddac-40ad-ac34-4d05d85895b5.jpg?v=1774619996",
+      "variant_ids": [
+       53381177246019,
+       53381177278787
+      ]
+     },
+     "available": false,
+     "price": "199.90",
+     "grams": 900,
+     "compare_at_price": "189.90",
+     "position": 1,
+     "product_id": 8621180649795,
+     "created_at": "2025-06-30T01:00:21+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53381177278787,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 49631202967875,
+      "product_id": 8621180649795,
+      "position": 1,
+      "created_at": "2023-05-25T22:51:54+02:00",
+      "updated_at": "2026-03-27T14:59:56+01:00",
+      "alt": "Caja expositora de sobres Pokémon Escarlata y Púrpura Llamas Obsidianas con ilustraciones de Charizard y Tyranitar ex.",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/P8979_699-86374_01_f7fb7aee-ddac-40ad-ac34-4d05d85895b5.jpg?v=1774619996",
+      "variant_ids": [
+       53381177246019,
+       53381177278787
+      ]
+     },
+     "available": false,
+     "price": "279.90",
+     "grams": 900,
+     "compare_at_price": "279.90",
+     "position": 2,
+     "product_id": 8621180649795,
+     "created_at": "2025-06-30T01:00:21+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9631291343171,
+   "title": "Caja 36 Sobres Evoluciones en Paldea | Paldea Evolved",
+   "handle": "paldea-evolved-caja-sobres",
+   "body_html": "<p>La <strong>Caja con 36 Sobres de Paldea Evolved</strong> (Evoluciones en Paldea en su edición castellana) es la booster box oficial del set Escarlata y Púrpura 2 del JCC Pokémon. Cada caja incluye 36 sobres de mejora del set para abrir, jugar y coleccionar. Disponible en español o inglés.</p>\n<h2>Qué incluye la caja</h2>\n<ul>\n<li>36 sobres de mejora de Paldea Evolved</li>\n<li>Cartas raras, Pokémon ex y Tera Pokémon ex en sobres aleatorios</li>\n<li>Cartas con código para JCC Pokémon Live</li>\n</ul>\n<h2>Sobre el set Paldea Evolved</h2>\n<p>¡La energía aumenta mientras nuevos poderes despiertan! Los compañeros iniciales Meowscarada ex, Skeledirge ex y Quaquaval ex evolucionan para tomar el escenario. Forretress, Slowking y Dedenne brillan como Tera Pokémon ex, y Pikachu ex se une a la fiesta en la expansión Evoluciones en Paldea.<br></p>\n<p><strong>Listado de cartas del set:</strong></p>\n<ul>\n<li>Más de 190 cartas</li>\n<li>15 Pokémon ex (incluidos Meowscarada ex, Skeledirge ex, Quaquaval ex, Chien-Pao ex y Pikachu ex)</li>\n<li>3 Tera Pokémon ex (Forretress, Slowking y Dedenne)</li>\n<li>36 ilustraciones raras de Pokémon</li>\n<li>18 Pokémon ex ultra raros y 8 cartas de Partidario ultra raras</li>\n<li>15 ilustraciones especiales de cartas raras de Pokémon y Partidario</li>\n<li>9 cartas hiper raras grabadas en oro</li>\n</ul>\n<h2><span>Mejores cartas de este set</span></h2>\n<p><span><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Paldea_Evolved_Mejores_Cartas_Pokem",
+   "published_at": "2024-10-11T11:33:56+02:00",
+   "created_at": "2024-10-11T11:32:06+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Evoluciones en Paldea",
+    "Paldea Evolved",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53371312341315,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "184.90",
+     "grams": 835,
+     "compare_at_price": "199.90",
+     "position": 1,
+     "product_id": 9631291343171,
+     "created_at": "2025-06-27T02:06:48+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53371312374083,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "299.90",
+     "grams": 835,
+     "compare_at_price": "299.90",
+     "position": 2,
+     "product_id": 9631291343171,
+     "created_at": "2025-06-27T02:06:48+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8810367222083,
+   "title": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+   "handle": "capsula-tiempo",
+   "body_html": "<p data-start=\"1883\" data-end=\"2060\">Descubre nuestras Cápsulas del Tiempo Pokémon desde 400€, cuidadosamente preparadas con artículos Pokémon seleccionados, incluyendo sobres y cajas de sobres de cartas Pokémon.</p>\n<p data-start=\"2067\" data-end=\"2226\">No se incluyen mazos, figuras ni merchandising. Cada cápsula puede contener productos modernos y vintage, seleccionados de un amplio repertorio de artículos.</p>\n<p data-start=\"2233\" data-end=\"2387\">Aunque la personalización no está garantizada, puedes dejar tus preferencias en la nota del pedido, que se tendrán en cuenta en la medida de lo posible.</p>\n<p data-start=\"2394\" data-end=\"2470\">Producto de coleccionismo pensado para conservar y disfrutar en el futuro.</p>\n<p data-start=\"2477\" data-end=\"2667\">Producto personalizado preparado bajo pedido.<br data-start=\"2522\" data-end=\"2525\">En virtud del art. 103.c del RDL 1/2007, no admite derecho de desistimiento ni devolución una vez confirmado el pedido o preparado el envío.</p>\n<ul></ul>",
+   "published_at": "2023-10-11T17:37:28+02:00",
+   "created_at": "2023-10-11T13:53:20+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas Misteriosas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 47274762862915,
+     "title": "400",
+     "option1": "400",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": false,
+     "price": "400.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274762928451,
+     "title": "600",
+     "option1": "600",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73006292861251,
+      "product_id": 8810367222083,
+      "position": 6,
+      "created_at": "2025-12-23T16:47:34+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula-600.jpg?v=1769158014",
+      "variant_ids": [
+       47274762928451
+      ]
+     },
+     "available": true,
+     "price": "600.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 2,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274762961219,
+     "title": "800",
+     "option1": "800",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73006292894019,
+      "product_id": 8810367222083,
+      "position": 7,
+      "created_at": "2025-12-23T16:47:34+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula-800.jpg?v=1769158014",
+      "variant_ids": [
+       47274762961219
+      ]
+     },
+     "available": true,
+     "price": "800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274762993987,
+     "title": "1.000",
+     "option1": "1.000",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": true,
+     "price": "1000.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 4,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274763026755,
+     "title": "1.500",
+     "option1": "1.500",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": true,
+     "price": "1500.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 5,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274763059523,
+     "title": "2.000",
+     "option1": "2.000",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": true,
+     "price": "2000.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 6,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274763092291,
+     "title": "3.000",
+     "option1": "3.000",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": true,
+     "price": "3000.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 7,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 47274763125059,
+     "title": "5.000",
+     "option1": "5.000",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73005187629379,
+      "product_id": 8810367222083,
+      "position": 4,
+      "created_at": "2025-12-23T16:27:23+01:00",
+      "updated_at": "2026-01-23T09:46:54+01:00",
+      "alt": "Cápsula del Tiempo Pokémon Mystery Box Español e Inglés 1999-2026",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/capsula_del_tiempo-pokemillon.jpg?v=1769158014",
+      "variant_ids": [
+       47274762862915,
+       47274762993987,
+       47274763026755,
+       47274763059523,
+       47274763092291,
+       47274763125059
+      ]
+     },
+     "available": true,
+     "price": "5000.00",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 8,
+     "product_id": 8810367222083,
+     "created_at": "2023-10-11T13:53:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Valor",
+     "position": 1,
+     "values": [
+      "400",
+      "600",
+      "800",
+      "1.000",
+      "1.500",
+      "2.000",
+      "3.000",
+      "5.000"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14982938198339,
+   "title": "Caja Palkia Origen VSTAR Premium Collection",
+   "handle": "caja-palkia-vstar-premium-collection",
+   "body_html": "<p>La <strong>Caja Palkia VSTAR Premium Collection</strong> (también conocida como Palkia Origen V-Astro en su edición española) reúne las cartas más buscadas del Pokémon legendario del tiempo y el espacio. Disponible en español o inglés.<br></p>\n<h2>Qué incluye la caja Palkia VSTAR</h2>\n<ul>\n<li>1 carta promocional de Palkia Origen V</li>\n<li>1 carta promocional de Palkia Origen VSTAR</li>\n<li>1 carta jumbo de Palkia Origen VSTAR</li>\n<li>1 pin coleccionable de Palkia Origen</li>\n<li>1 moneda metálica de Palkia Origen</li>\n<li>1 marcador VSTAR</li>\n<li>5 sobres de mejora JCC Pokémon*</li>\n<li>1 carta con código para JCC Pokémon Live</li>\n</ul>\n<p><strong>Palkia Origen VSTAR</strong> pertenece al set Crown Zenith / Cenit Supremo y combina ataque masivo con la mecánica VSTAR Power, capaz de cambiar el curso de un combate competitivo en un turno. Es una de las colecciones premium más buscadas por coleccionistas de Pokémon legendarios.</p>\n<p>*Los sobres pueden variar respecto a la imagen.</p>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/b_480x480.png?v=1658039544\"></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2025-06-04T21:59:34+02:00",
+   "created_at": "2025-06-01T13:34:15+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Astral Radiance",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Fusion Strike",
+    "Golpe Fusión",
+    "Lost Origin",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53420387795267,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76032643072323,
+      "product_id": 14982938198339,
+      "position": 1,
+      "created_at": "2026-04-30T23:33:35+02:00",
+      "updated_at": "2026-04-30T23:33:40+02:00",
+      "alt": "Caja Palkia Origen VSTAR con cartas promocionales, pin, moneda y cinco sobres de mejora de JCC Pokémon en su empaque original.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_Palkia_Espanol___Sobres_Pokemillon.png?v=1777584820",
+      "variant_ids": [
+       53420387795267
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 322,
+     "compare_at_price": "49.90",
+     "position": 1,
+     "product_id": 14982938198339,
+     "created_at": "2025-07-09T04:22:46+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53420387828035,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76032597393731,
+      "product_id": 14982938198339,
+      "position": 2,
+      "created_at": "2026-04-30T23:08:57+02:00",
+      "updated_at": "2026-04-30T23:09:02+02:00",
+      "alt": "Caja Palkia Origen VSTAR Premium Collection con cartas promocionales, pin, moneda metálica y cinco sobres de mejora Pokémon.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_Palkia___Sobres_Pokemillon.png?v=1777583342",
+      "variant_ids": [
+       53420387828035
+      ]
+     },
+     "available": false,
+     "price": "89.90",
+     "grams": 322,
+     "compare_at_price": "89.90",
+     "position": 2,
+     "product_id": 14982938198339,
+     "created_at": "2025-07-09T04:22:46+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15204433101123,
+   "title": "Lata Mega Charizard ex X",
+   "handle": "lata-mega-charizard-ex-x",
+   "body_html": "<p>¡El fuego ancestral nunca se extingue… solo aguarda el momento de desatarse!</p>\n<p>La nueva <strong>Lata Mega Charizard ex</strong> llega al JCC Pokémon en sus dos variantes legendarias: la Mega Charizard X ex (llamas azules) y la Mega Charizard Y ex (forma alada). Cartas exclusivas, edición limitada y todo el poder del dragón más imponente del universo Pokémon.</p>\n<p data-end=\"547\" data-start=\"424\"><strong>Dentro de cada lata encontrarás:</strong><br data-end=\"459\" data-start=\"456\">🔹 1 carta promocional holográfica de <strong>Mega Charizard X ex</strong> (modelo aleatorio).</p>\n<p data-end=\"547\" data-start=\"424\">🔹 4 sobres de expansión de Pokémon TCG</p>\n<p data-end=\"547\" data-start=\"424\">🔹<span> 1 código para Pokémon TCG Live</span></p>\n<p data-end=\"547\" data-start=\"424\">🔹Lata coleccionable con ilustración exclusiva</p>\n<p data-is-only-node=\"\" data-is-last-node=\"\" data-end=\"740\" data-start=\"549\"><span>Una pieza imprescindible para fans de Charizard y la era Mega Evolución, ideal tanto para abrir y construir mazos como para mantener sellada en tu colección.</span></p>\n<h2>¿La carta promocional es holográfica?</h2>\n<p>Sí, viene en versión foil holográfica de edición limitada.</p>\n<h2>¿La lata viene en español o en inglés?</h2>\n<p>Disponemos de la lata Mega Charizard en ambas versiones (ver selector de idioma).</p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2025-12-04T17:19:52+01:00",
+   "created_at": "2025-12-04T17:18:24+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Char",
+    "Charizards",
+    "Español - Inglés",
+    "Fuegos Fantasmales",
+    "Latas",
+    "Phantasmal Flames",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53954119631171,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "35.90",
+     "grams": 200,
+     "compare_at_price": "29.90",
+     "position": 1,
+     "product_id": 15204433101123,
+     "created_at": "2025-12-04T17:18:24+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53954119663939,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "42.90",
+     "grams": 0,
+     "compare_at_price": "36.90",
+     "position": 2,
+     "product_id": 15204433101123,
+     "created_at": "2025-12-04T17:18:24+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14630217154883,
+   "title": "Ogerpon ex Premium Collection",
+   "handle": "caja-ogerpon-ex-premium",
+   "body_html": "<p>Démasquez la leyenda con esta edición premium que incluye <strong data-end=\"1777\" data-start=\"1753\">Ogerpon ex Teal Mask</strong> en Full Art foil, además de versiones foil de Ogerpon y Ogre’s Mask. Completa el set con 6 sobres (Étincelles Déferlantes, Couronne Stellaire, Mascarade Crépusculaire, Faille Paradoxe), <strong data-end=\"1992\" data-start=\"1964\">protector magnético+base</strong>, 65 fundas temáticas y carta de código digital. Perfecto para coleccionistas y jugadores que buscan algo más que simples sobres.</p>\n<h3>Contenido <strong style=\"color: #000000;\">Ogerpon ex Premium Collection:</strong>\n</h3>\n<ul>\n<li>Una carta promocional holográfica grabada con Ogerpon ex<br>\n</li>\n<li>2 cartas holográficas con Ogerpon y Mask</li>\n<li>6 paquetes de refuerzo de Pokémon TCG</li>\n<li>Un protector magnético de carta con base de exhibición</li>\n<li>65 fundas de carta con Charizard como Pokémon Tera</li>\n<li>Una carta de código para Pokémon TCG Live.</li>\n</ul>\n<h2><strong>Mejores Cartas de Chispas Fulgurantes: </strong></h2>\n<p><strong><img height=\"919\" width=\"655\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Top_Chispas.png?v=1732497269\" alt=\"\"></strong></p>",
+   "published_at": "2024-11-26T21:53:04+01:00",
+   "created_at": "2024-11-25T22:08:43+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas Temáticas",
+    "Chispas Fulgurantes",
+    "Español - Inglés",
+    "Pokémon",
+    "Surging Sparks"
+   ],
+   "variants": [
+    {
+     "id": 53420370755907,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "39.90",
+     "grams": 450,
+     "compare_at_price": "47.90",
+     "position": 1,
+     "product_id": 14630217154883,
+     "created_at": "2025-07-09T03:58:23+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53420370788675,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "49.90",
+     "grams": 450,
+     "compare_at_price": "49.90",
+     "position": 2,
+     "product_id": 14630217154883,
+     "created_at": "2025-07-09T03:58:23+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14771326550339,
+   "title": "Lillie's Clefairy ex Premium Tournament Collection",
+   "handle": "lillies-clefairy-ex-tournament-collection",
+   "body_html": "<p style=\"font-size: 0.875rem;\">Celebra el poder de la amistad con esta edición especial: incluye una carta promo <em data-start=\"2119\" data-end=\"2155\">Foil Full Art Lillie’s Clefairy ex</em> con arte exclusivo, tres cartas Tool <em data-start=\"2193\" data-end=\"2209\">Lillie’s Pearl</em>, 65 fundas, caja rígida, moneda metálica, 2 marcadores, 6 dados de daño, pegatina, 6 sobres y una carta de código digital. Todo lo que necesitas para entrenar, jugar o coleccionar.</p>\n<p style=\"font-size: 0.875rem;\"><br>Contenido:</p>\n<ul>\n<li>1 carta promocional full-art de Lillie</li>\n<li>3 cartas foil de Iono</li>\n<li>65 fundas para cartas con la imagen de Iono</li>\n<li>Una resistente caja para mazos con la imagen de Iono</li>\n<li>Una gran moneda metálica con la imagen de Iono</li>\n<li>2 marcadores de condición de moneda</li>\n<li>6 dados de daño listos para torneos</li>\n<li>6 paquetes de refuerzo del Juego de Cartas Coleccionables Pokémon</li>\n<li>Una tarjeta con código para Pokémon TCG Live</li>\n</ul>",
+   "published_at": "2025-02-06T19:35:10+01:00",
+   "created_at": "2025-02-06T19:33:46+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "2024",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Greninja",
+    "Journey Together",
+    "Juntos de Aventura",
+    "Obsidian Flames",
+    "Paldea Evolved",
+    "Pokémon",
+    "Premium Tournament",
+    "Surging Sparks",
+    "Twilight Masquerade"
+   ],
+   "variants": [
+    {
+     "id": 53337925779779,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 75687463092547,
+      "product_id": 14771326550339,
+      "position": 1,
+      "created_at": "2026-04-09T23:20:22+02:00",
+      "updated_at": "2026-04-10T12:26:58+02:00",
+      "alt": "Lillie's Clefairy ex Premium Tournament Collection",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Lillie_Clefairy_Tournament___Sobres_Pokemillon.png?v=1775816818",
+      "variant_ids": [
+       53337925779779
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 910,
+     "compare_at_price": "49.90",
+     "position": 1,
+     "product_id": 14771326550339,
+     "created_at": "2025-06-20T13:24:59+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53337925812547,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 58896975626563,
+      "product_id": 14771326550339,
+      "position": 3,
+      "created_at": "2025-02-06T19:34:03+01:00",
+      "updated_at": "2026-04-09T23:20:50+02:00",
+      "alt": "Lillie's Clefairy ex Premium Tournament Collection",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Capturadepantalla2025-02-06193210.png?v=1775769650",
+      "variant_ids": [
+       53337925812547
+      ]
+     },
+     "available": false,
+     "price": "57.90",
+     "grams": 910,
+     "compare_at_price": "57.90",
+     "position": 2,
+     "product_id": 14771326550339,
+     "created_at": "2025-06-20T13:24:59+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9699510157635,
+   "title": "Maletín Collecionista Dialga y Palkia",
+   "handle": "pokemon-maletin-palkia-y-dialga",
+   "body_html": "<div class=\"full-article-body\">\n<p>El maletín coleccionista de Dialga y Palkia de JCC Pokémon incluye:<strong data-mce-fragment=\"1\"><br></strong></p>\n<ul>\n<li><span style=\"font-size: 0.875rem;\">5 paquetes de mejora adicionales de JCC Pokémon</span></li>\n<li><span style=\"font-size: 0.875rem;\">¡3 tarjetas promocionales holográficas!</span></li>\n<li><span style=\"font-size: 0.875rem;\">Una moneda Pokémon</span></li>\n<li><span style=\"font-size: 0.875rem;\">Una mini álbum para guardar tus tarjetas favoritas</span></li>\n<li><span style=\"font-size: 0.875rem;\">Una tarjeta de código para Pokémon TCG Live</span></li>\n<li><span style=\"font-size: 0.875rem;\">4 hojas de pegatinas de colores</span></li>\n<li><span style=\"font-size: 0.875rem;\">Un cuaderno Pokémon</span></li>\n</ul>\n<ul></ul>\n<ul></ul>\n<ul></ul>\n<ul></ul>\n</div>",
+   "published_at": "2024-11-07T03:06:51+01:00",
+   "created_at": "2024-11-07T03:05:07+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Astral Radiance",
+    "Cajas",
+    "Español - Inglés",
+    "Latas",
+    "Pokémon",
+    "Resplandor Astral"
+   ],
+   "variants": [
+    {
+     "id": 53426770051395,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "39.90",
+     "grams": 0,
+     "compare_at_price": "39.90",
+     "position": 1,
+     "product_id": 9699510157635,
+     "created_at": "2025-07-10T01:21:43+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53426770084163,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "49.90",
+     "grams": 0,
+     "compare_at_price": "49.90",
+     "position": 2,
+     "product_id": 9699510157635,
+     "created_at": "2025-07-10T01:21:43+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15235524231491,
+   "title": "ETB Equilibrio Perfecto | Perfect Order",
+   "handle": "etb-perfect-order",
+   "body_html": "<p><span>La <strong>ETB Equilibrio Perfecto</strong> (Perfect Order en su edición inglesa) llega como la Caja de Entrenador Élite oficial del segundo set de la era Mega Evolución del JCC Pokémon. La opción más completa para abrir, jugar y coleccionar el sucesor de Caos Creciente. <strong>Disponible en español o inglés</strong>.</span></p>\n<h2><span>Qué incluye la caja</span></h2>\n<ul>\n<li>9 Sobres del set especial </li>\n<li>1 Carta promocional</li>\n<li>65 Fundas para cartas</li>\n<li>1 Guía del jugador</li>\n<li>1 Referencia de reglas</li>\n<li>6 Contadores de daño</li>\n<li>1 Moneda</li>\n<li>2 Marcadores de condiciones</li>\n<li>1 Caja del coleccionista con separadores</li>\n<li>1 Tarjeta de código</li>\n</ul>\n<p><span>El set Equilibrio Perfecto continúa la era Mega Evolución del JCC Pokémon iniciada con Caos Creciente, con más de 120 cartas entre Mega Pokémon ex, ultra raras e ilustraciones especiales.</span></p>\n<h2>Mejores cartas de Perfect Order<img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Perfect_Order_Mejores_Cartas_Pokemillon.png?v=1774779997\">\n</h2>\n<p> </p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-01-08T20:07:14+01:00",
+   "created_at": "2026-01-08T20:05:03+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Español - Inglés",
+    "Perfect Order",
+    "Pokémon",
+    "Élites"
+   ],
+   "variants": [
+    {
+     "id": 54068354154819,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "69.90",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15235524231491,
+     "created_at": "2026-01-08T20:05:03+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54068354187587,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "79.90",
+     "grams": 0,
+     "compare_at_price": "79.90",
+     "position": 2,
+     "product_id": 15235524231491,
+     "created_at": "2026-01-08T20:05:03+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14924888015171,
+   "title": "Caja Iono Bellibolt ex Premium",
+   "handle": "iono-bellibolt",
+   "body_html": "<p>Energiza tu colección con esta edición especial que incluye una carta Full Art foil de <em data-end=\"1796\" data-start=\"1775\">Iono’s Bellibolt ex</em> (habilidad <em data-end=\"1827\" data-start=\"1808\">Electric Streamer</em>), carta foil de <em data-end=\"1860\" data-start=\"1844\">Iono’s Tadbulb</em>, lámina de standees acrílicos, fondo de exhibición doble, pegatina, 6 sobres variados y una carta de código digital. Edición ideal para coleccionistas, jugadores y fans de Iono y Bellibolt, destacando su diseño visual y contenido innovador.</p>\n<p><br>Contenido : <br></p>\n<ul>\n<li>6 sobre de refuerzos de Pokémon TCG - Journey Together</li>\n<li>1 Diorama de Iono’s Bellibolt ex<br>\n</li>\n<li>1 carta promocionales</li>\n<li>1 carta promocional de Iono Bellibolt ex  <br>\n</li>\n<li>\n<p>1 código para el juego de Pokémon TCG Live <br></p>\n</li>\n</ul>\n<h2>Mejores Cartas de Juntos de Aventuras:<br><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Journey_Together_1.png?v=1750840012\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Journey_Together.png?v=1757079189\"><br>\n</h2>",
+   "published_at": "2025-04-25T01:45:53+02:00",
+   "created_at": "2025-04-25T01:45:14+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Black Friday",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Journey Together",
+    "Juntos de Aventura",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53371277738307,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 63629948322115,
+      "product_id": 14924888015171,
+      "position": 7,
+      "created_at": "2025-06-27T01:27:36+02:00",
+      "updated_at": "2025-09-09T14:05:22+02:00",
+      "alt": "Caja premium Pokémon de Iono con Bellibolt ex, figuras acrílicas, sobres de cartas y diseño colorido en negro, rosa y amarillo.",
+      "width": 416,
+      "height": 416,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/caja-premium-bellibolt-ex-de-e-nigma-cartas-pokemon-exclusivas.png?v=1757419522",
+      "variant_ids": [
+       53371277738307
+      ]
+     },
+     "available": false,
+     "price": "47.95",
+     "grams": 500,
+     "compare_at_price": "47.95",
+     "position": 1,
+     "product_id": 14924888015171,
+     "created_at": "2025-06-27T01:21:44+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53371277771075,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "49.95",
+     "grams": 500,
+     "compare_at_price": "49.95",
+     "position": 2,
+     "product_id": 14924888015171,
+     "created_at": "2025-06-27T01:21:44+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7918060601590,
+   "title": "Electrode Hisui V",
+   "handle": "caja-electrode-hisui",
+   "body_html": "<p>En esta Caja de Electrode de Hisui V, encontrarás:</p>\n<ul>\n<li> Una carta holográfica promocional con <span data-mce-fragment=\"1\">Electrode de Hisui V</span>.</li>\n<li> Una carta holográfica con <span data-mce-fragment=\"1\">Electrode de Hisui V</span>.</li>\n<li> Una carta holográfica de gran tamaño con <span data-mce-fragment=\"1\">Electrode de Hisui V</span>.</li>\n<li> 4 paquetes de mejora de JCC Pokémon</li>\n<li> Una tarjeta con código para Pokémon TCG Live</li>\n</ul>\n<p><br></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-02-23T13:27:00+01:00",
+   "created_at": "2022-11-26T18:42:42+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Gengar",
+    "Lost Origin",
+    "Origen Perdido",
+    "Pokémon",
+    "Resplandor Astral"
+   ],
+   "variants": [
+    {
+     "id": 53418500325699,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "29.90",
+     "grams": 0,
+     "compare_at_price": "29.90",
+     "position": 1,
+     "product_id": 7918060601590,
+     "created_at": "2025-07-08T19:49:12+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53418500358467,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "29.90",
+     "grams": 0,
+     "compare_at_price": "29.90",
+     "position": 2,
+     "product_id": 7918060601590,
+     "created_at": "2025-07-08T19:49:12+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9118260756803,
+   "title": "Mini Lata Vibrant Paldea",
+   "handle": "mini-lata-vibrant-paldea",
+   "body_html": "<p><span>En cada Mini Lata de Vibrant Paldea de JCC Pokémon, encontrarás: </span></p>\n<ul>\n<li><span>2 paquetes de mejora de Expansiones de Escarlata y Purpura de JCC Pokémon </span></li>\n<li><span>Una hoja de pegatinas </span></li>\n<li><span>Una carta con arte de Pokémon que muestra el arte de este Mini lata</span></li>\n</ul>\n<p><span>¡Puedes coleccionar y combinar los 5 diseños existentes!</span></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2024-04-13T15:25:40+02:00",
+   "created_at": "2024-04-07T22:43:06+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Brecha Paradójica",
+    "Español - Inglés",
+    "Latas",
+    "Llamas Obsidianas",
+    "Obsidian Flames",
+    "Paradox Rift",
+    "Pokémon",
+    "Reserva"
+   ],
+   "variants": [
+    {
+     "id": 53974342598979,
+     "title": "Mini Lata Español",
+     "option1": "Mini Lata Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 53644386271555,
+      "product_id": 9118260756803,
+      "position": 7,
+      "created_at": "2024-04-07T22:44:03+02:00",
+      "updated_at": "2025-12-17T00:04:37+01:00",
+      "alt": "POKEMILLON Pokémon | Caja 10 Mini Lata Vibrant Paldea Inglés Summer 2024",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Lata5_png.png?v=1765926277",
+      "variant_ids": [
+       53974342598979,
+       53974342631747
+      ]
+     },
+     "available": true,
+     "price": "15.90",
+     "grams": 0,
+     "compare_at_price": "19.90",
+     "position": 1,
+     "product_id": 9118260756803,
+     "created_at": "2025-12-10T13:35:37+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53974342631747,
+     "title": "Mini Lata Inglés",
+     "option1": "Mini Lata Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 53644386271555,
+      "product_id": 9118260756803,
+      "position": 7,
+      "created_at": "2024-04-07T22:44:03+02:00",
+      "updated_at": "2025-12-17T00:04:37+01:00",
+      "alt": "POKEMILLON Pokémon | Caja 10 Mini Lata Vibrant Paldea Inglés Summer 2024",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Lata5_png.png?v=1765926277",
+      "variant_ids": [
+       53974342598979,
+       53974342631747
+      ]
+     },
+     "available": false,
+     "price": "18.90",
+     "grams": 0,
+     "compare_at_price": "18.90",
+     "position": 2,
+     "product_id": 9118260756803,
+     "created_at": "2025-12-10T13:35:37+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53974342664515,
+     "title": "10 Mini Latas Español",
+     "option1": "10 Mini Latas Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 53644383519043,
+      "product_id": 9118260756803,
+      "position": 2,
+      "created_at": "2024-04-07T22:43:16+02:00",
+      "updated_at": "2025-08-02T19:18:58+02:00",
+      "alt": "POKEMILLON Pokémon | Caja 10 Mini Lata Vibrant Paldea Inglés Summer 2024",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/VibrantPaldeaMiniTinDisplay.png?v=1754155138",
+      "variant_ids": [
+       53974342664515,
+       53974342697283
+      ]
+     },
+     "available": false,
+     "price": "149.90",
+     "grams": 0,
+     "compare_at_price": "189.90",
+     "position": 3,
+     "product_id": 9118260756803,
+     "created_at": "2025-12-10T13:35:37+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53974342697283,
+     "title": "10 Mini Latas Inglés",
+     "option1": "10 Mini Latas Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 53644383519043,
+      "product_id": 9118260756803,
+      "position": 2,
+      "created_at": "2024-04-07T22:43:16+02:00",
+      "updated_at": "2025-08-02T19:18:58+02:00",
+      "alt": "POKEMILLON Pokémon | Caja 10 Mini Lata Vibrant Paldea Inglés Summer 2024",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/VibrantPaldeaMiniTinDisplay.png?v=1754155138",
+      "variant_ids": [
+       53974342664515,
+       53974342697283
+      ]
+     },
+     "available": false,
+     "price": "179.90",
+     "grams": 0,
+     "compare_at_price": "179.90",
+     "position": 4,
+     "product_id": 9118260756803,
+     "created_at": "2025-12-10T13:35:37+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idiomas",
+     "position": 1,
+     "values": [
+      "Mini Lata Español",
+      "Mini Lata Inglés",
+      "10 Mini Latas Español",
+      "10 Mini Latas Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15235527803203,
+   "title": "Caja 36 Sobres Equilibrio Perfecto | Perfect Order",
+   "handle": "orden-perfecta-perfect-order",
+   "body_html": "<p><span>La Caja de Sobres Equilibrio Perfecto (Perfect Order en su edición inglesa) es la booster box oficial del set de la era Mega Evolución del JCC Pokémon. Cada caja incluye </span><strong>36 sobres</strong><span> del set para abrir, jugar y coleccionar. Disponible en español o inglés.</span></p>\n<h2>Qué incluye la caja</h2>\n<ul>\n<li>36 sobres de mejora de Equilibrio Perfecto</li>\n<li>Cartas raras, Pokémon ex y Mega Pokémon ex en sobres aleatorios</li>\n<li>Cartas con código para JCC Pokémon Live</li>\n</ul>\n<h2 data-start=\"187\" data-end=\"420\"><span>Sobre el set Equilibrio Perfecto</span></h2>\n<p>Perfect Order se revela como un set compacto pero explosivo, donde cada carta cuenta. Encabezando la colección hay cuatro impresionantes <strong>Mega Evolution Pokémon ex</strong>: Mega Zygarde ex, Mega Clefable ex, Mega Starmie ex y Mega Skarmory ex, auténticos pilares tanto para jugadores competitivos como para coleccionistas exigentes.</p>\n<p>A ellos se suman nueve Pokémon ex y una cuidada selección de cartas de Entrenador.</p>\n<p>Con más de 120 cartas en total y solo <strong>88 cartas</strong> en el set principal, es uno de los sets principales más pequeños lanzados en años, lo que eleva su sensación de exclusividad. Inspirado en el set japonés Nihil Zero.</p>\n<p><strong>Listado de cartas del set:</strong></p>\n<ul>\n<li>4 Mega Evolution Pokémon ex (Mega Zygarde ex, Mega Clefable ex, Mega Starmie ex, Mega Skarmory ex)</li>\n<li>9 Pokémon ex</li>\n<li>11 Pokémon con ilustración rar",
+   "published_at": "2026-01-08T20:12:14+01:00",
+   "created_at": "2026-01-08T20:09:15+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Perfect Order",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54068366442819,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "164.90",
+     "grams": 0,
+     "compare_at_price": "159.90",
+     "position": 1,
+     "product_id": 15235527803203,
+     "created_at": "2026-01-08T20:09:15+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54068366475587,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "199.90",
+     "grams": 0,
+     "compare_at_price": "199.90",
+     "position": 2,
+     "product_id": 15235527803203,
+     "created_at": "2026-01-08T20:09:15+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15134671077699,
+   "title": "Lote Especial Vending – Pokémon Multidioma",
+   "handle": "lote-vending",
+   "body_html": "<p data-start=\"50\" data-end=\"180\">Pensado para surtir máquinas de vending con productos de gran rotación y atractivo para todo tipo de coleccionistas y jugadores.</p>\n<p data-start=\"182\" data-end=\"192\">Ejemplo de Contenido*:</p>\n<ul>\n<li data-start=\"195\" data-end=\"280\">\n<strong data-start=\"195\" data-end=\"226\">150 Sobres en japonés y/o coreano</strong>, muy buscados por su exclusividad y diseños únicos.</li>\n<li data-start=\"283\" data-end=\"349\">\n<strong data-start=\"283\" data-end=\"313\">50 Sobres en español y/o inglés</strong>, ideales para el público general.</li>\n<li data-start=\"352\" data-end=\"424\">\n<strong data-start=\"352\" data-end=\"365\">20 Cartas AR</strong> de alta demanda, perfectas para añadir variedad y valor.</li>\n<li data-start=\"427\" data-end=\"505\">\n<strong data-start=\"427\" data-end=\"448\">10 Promos de Pikachu</strong>, un auténtico imán de ventas gracias a su popularidad.</li>\n</ul>\n<p data-start=\"507\" data-end=\"658\">✅ Variedad de idiomas y rarezas en un solo pack<br data-start=\"554\" data-end=\"557\">✅ Selección pensada para maximizar ventas en vending<br>✅ Lote para llenar la máquina<br data-start=\"609\" data-end=\"612\">✅ Productos originales y listos para colocar</p>\n<p data-start=\"660\" data-end=\"790\">Un lote equilibrado y atractivo, con cartas y sobres que generan impacto visual y aseguran movimiento constante en las máquinas.</p>\n<p data-start=\"660\" data-end=\"790\"><strong>*Importante:</strong><br>El contenido puede variar por fluctuaciones del mercado, disponibilidad o ",
+   "published_at": "2025-09-28T12:39:10+02:00",
+   "created_at": "2025-09-28T10:32:00+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas Misteriosas",
+    "Coreano - Japonés",
+    "Español - Inglés",
+    "Mistery Box",
+    "Pokémon",
+    "Sobres",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53733243519299,
+     "title": "Multidioma",
+     "option1": "Multidioma",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "690.00",
+     "grams": 24,
+     "compare_at_price": "690.00",
+     "position": 1,
+     "product_id": 15134671077699,
+     "created_at": "2025-09-28T10:32:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53733243584835,
+     "title": "Sin Coreano",
+     "option1": "Sin Coreano",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "890.00",
+     "grams": 24,
+     "compare_at_price": "890.00",
+     "position": 2,
+     "product_id": 15134671077699,
+     "created_at": "2025-09-28T10:32:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Multidioma",
+      "Sin Coreano"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15274213671235,
+   "title": "Zeraora VStar & VMax Battle Box",
+   "handle": "zeraora-deoxys",
+   "body_html": "<p>Elige un Pokémon mítico para que esté a tu lado: ¡llega como un trío de poderosos Pokémon V que pueden llevar tu baraja al siguiente nivel!</p>\n<p>Puedes evolucionar a Zeraora V para aprovechar el alto HP de Zeraora VMAX o el devastador VSTAR Power de Zeraora VSTAR, y contrarrestar la estrategia de tu oponente con ataques contundentes y un relámpago llamativo. También encontrarás una impresionante carta de gran tamaño que muestra el Pokémon VSTAR destacado, paquetes de refuerzo, una guía de estrategia y un marcador VSTAR para la batalla.</p>\n<p>Esta caja contiene:</p>\n<ul>\n<li>Una carta de Zeraora VMAX<br>\n</li>\n<li>Una carta de Zeraora VSTAR<br>\n</li>\n<li>Una carta de Zeraora V</li>\n<li>Una carta Jumbo de Zeraora VSTAR</li>\n<li><span style=\"font-size: 0.875rem;\">Un código para el Juego Online JCC Pokémon Live</span></li>\n<li><span style=\"font-size: 0.875rem;\">4 sobres de mejora JCC Pokémon</span></li>\n</ul>\n<ul></ul>",
+   "published_at": "2026-02-26T13:55:02+01:00",
+   "created_at": "2026-02-26T13:54:55+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Astral Radiance",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54233269469507,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 37529697845494,
+      "product_id": 15274213671235,
+      "position": 1,
+      "created_at": "2022-08-05T12:31:58+02:00",
+      "updated_at": "2026-03-22T11:39:16+01:00",
+      "alt": "Caja de colección Pokémon JCC Zeraora VMAX y VSTAR con cartas promocionales, sobres de mejora y diseño en amarillo y negro.",
+      "width": 1769,
+      "height": 1769,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/products/Zeraora-VMAX-VSTAR-Battle-Box_EN-1770x1500-f3a2c67.jpg?v=1774175956",
+      "variant_ids": [
+       54233269469507,
+       54233269535043
+      ]
+     },
+     "available": true,
+     "price": "49.90",
+     "grams": 0,
+     "compare_at_price": "49.90",
+     "position": 1,
+     "product_id": 15274213671235,
+     "created_at": "2026-02-26T13:54:55+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54233269535043,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 37529697845494,
+      "product_id": 15274213671235,
+      "position": 1,
+      "created_at": "2022-08-05T12:31:58+02:00",
+      "updated_at": "2026-03-22T11:39:16+01:00",
+      "alt": "Caja de colección Pokémon JCC Zeraora VMAX y VSTAR con cartas promocionales, sobres de mejora y diseño en amarillo y negro.",
+      "width": 1769,
+      "height": 1769,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/products/Zeraora-VMAX-VSTAR-Battle-Box_EN-1770x1500-f3a2c67.jpg?v=1774175956",
+      "variant_ids": [
+       54233269469507,
+       54233269535043
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 0,
+     "compare_at_price": "49.90",
+     "position": 2,
+     "product_id": 15274213671235,
+     "created_at": "2026-02-26T13:54:55+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15270192611651,
+   "title": "Deoxys VStar & VMax Battle Box",
+   "handle": "deoxys-battle-box",
+   "body_html": "<p data-start=\"0\" data-end=\"139\">Elige un Pokémon mítico para que esté a tu lado: ¡llega como un trío de poderosos Pokémon V que pueden llevar tu baraja al siguiente nivel!</p>\n<p data-start=\"141\" data-end=\"471\">Puedes evolucionar a Deoxys V para aprovechar el alto HP de Deoxys VMAX en Defense Forme o el devastador VSTAR Power de Deoxys VSTAR en Attack Forme. También encontrarás una impresionante carta de gran tamaño que muestra el Pokémon VSTAR destacado, paquetes de refuerzo, una guía de estrategia y un marcador VSTAR para la batalla.</p>\n<p><span style=\"color: rgb(0, 0, 0);\">Esta caja contiene: </span></p>\n<ul>\n<li>Una carta de Deoxys Vmax</li>\n<li>Una carta de Deoxys Vstar</li>\n<li>\n<span>Una carta de </span>Deoxys<span></span><span> V</span>\n</li>\n<li>Una Carta Jumbo de <span>Deoxys Vstar</span><br>\n</li>\n<li>Un código para el Juego online Jcc/Live</li>\n<li>4 Sobres de mejora JCC Pokémon<br>\n</li>\n</ul>\n<ul></ul>",
+   "published_at": "2026-02-22T13:16:11+01:00",
+   "created_at": "2026-02-22T13:13:44+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Astral Radiance",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54212753916227,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 58349499580739,
+      "product_id": 15270192611651,
+      "position": 1,
+      "created_at": "2025-01-11T13:43:01+01:00",
+      "updated_at": "2026-02-23T00:07:04+01:00",
+      "alt": "Caja de colección Pokémon Deoxys VMAX y VSTAR con cartas holográficas, carta gigante, sobres y marcador en empaque negro y morado.",
+      "width": 2560,
+      "height": 2560,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/91gzkJfkEXL.png?v=1771801624",
+      "variant_ids": [
+       54212753916227
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 0,
+     "compare_at_price": "49.90",
+     "position": 1,
+     "product_id": 15270192611651,
+     "created_at": "2026-02-22T13:13:45+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54212753981763,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "49.90",
+     "grams": 0,
+     "compare_at_price": "49.90",
+     "position": 2,
+     "product_id": 15270192611651,
+     "created_at": "2026-02-22T13:13:45+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15229394977091,
+   "title": "Deluxe Pin Collection Ascended Heroes | Heroes Ascendentes",
+   "handle": "pin-collection-heroes-ascendentes-ascended-heroes",
+   "body_html": "<p>La <strong>Pin Collection Heroes Ascendentes</strong> (First Partners Deluxe Pin Collection) es una colección oficial del JCC Pokémon que celebra a los <strong>3 primeros compañeros de Pokémon Leyendas: Z-A</strong>: Chikorita, Tepig y Totodile. Una pieza imprescindible para coleccionistas y fans de los starters.</p>\n<h2>¿Qué incluye esta colección?</h2>\n<ul>\n<li>🟠 3 cartas promocionales holográficas:<span> </span><strong>Chikorita</strong>,<span> </span><strong>Tepig</strong><span> </span>y<span> </span><strong>Totodile</strong>\n</li>\n<li>🟪 5 sobres del set<span> </span><strong>Heroes Ascendentes</strong><span> </span>(Ascended Heroes)</li>\n<li>📌 1 pin oficial Pokémon con los 3 starters</li>\n<li>🔵 Disponible en<span> </span><strong>español</strong><span> </span>o<span> </span><strong>inglés</strong>\n</li>\n</ul>\n<h2>¿Cuál elegir, español o inglés?</h2>\n<ul>\n<li>\n<strong>Español</strong>: producto oficial JCC Pokémon España, ideal para coleccionistas locales.</li>\n<li>\n<strong>Inglés</strong>: edición internacional First Partners Deluxe Pin Collection.</li>\n</ul>\n<h2>Mejores cartas de Ascended Heroes: <img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Ascended_Heroes.png?v=1775417331\" alt=\"POKEMILLON ETB Héroes Ascendentes | Élite Ascended Heroes\">\n</h2>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:45:28+01:00",
+   "created_at": "2025-12-31T22:13:15+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Ascended Heroes",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54046673994051,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "38.90",
+     "grams": 0,
+     "compare_at_price": "40.90",
+     "position": 1,
+     "product_id": 15229394977091,
+     "created_at": "2025-12-31T22:13:15+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54046674026819,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "99.90",
+     "grams": 0,
+     "compare_at_price": "59.90",
+     "position": 2,
+     "product_id": 15229394977091,
+     "created_at": "2025-12-31T22:13:15+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15190831235395,
+   "title": "Premium Poster Collection Mega Gardevoir Héroes Ascendentes | Ascended Heroes",
+   "handle": "premium-poster-collection-mega-gardevoir",
+   "body_html": "<p><span>Contenido de la Caja Premium Collection: </span></p>\n<ul>\n<li><span>10 Sobres de Ascended Heroes</span></li>\n<li><span>1 Carta Promocional</span></li>\n<li><span>1 Poster de Gran Tamaño</span></li>\n</ul>\n<h2><span>Mejores cartas de Ascended Heroes: <img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Ascended_Heroes.png?v=1775417331\" alt=\"POKEMILLON ETB Héroes Ascendentes | Élite Ascended Heroes\"></span></h2>\n<p> </p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:42:41+01:00",
+   "created_at": "2025-11-20T11:41:08+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Ascended Heroes",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53909120024899,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "134.90",
+     "grams": 0,
+     "compare_at_price": "79.90",
+     "position": 1,
+     "product_id": 15190831235395,
+     "created_at": "2025-11-20T11:41:08+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53909120057667,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "219.90",
+     "grams": 0,
+     "compare_at_price": "159.90",
+     "position": 2,
+     "product_id": 15190831235395,
+     "created_at": "2025-11-20T11:41:08+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15190829171011,
+   "title": "Premium Poster Collection Mega Lucario Héroes Ascendentes | Ascended Heroes",
+   "handle": "premium-poster-collection-mega-lucario",
+   "body_html": "<p><span>Contenido de la Caja Premium Collection: </span></p>\n<ul>\n<li><span>10 Sobres de Ascended Heroes</span></li>\n<li><span>1 Carta Promocional</span></li>\n<li><span>1 Poster de Gran Tamaño</span></li>\n</ul>\n<h2><span>Mejores Cartas de Ascended Heroes: <img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Ascended_Heroes.png?v=1775417331\" alt=\"POKEMILLON ETB Héroes Ascendentes | Élite Ascended Heroes\"></span></h2>\n<p> </p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:42:40+01:00",
+   "created_at": "2025-11-20T11:37:39+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Ascended Heroes",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53909115601219,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "129.90",
+     "grams": 0,
+     "compare_at_price": "99.90",
+     "position": 1,
+     "product_id": 15190829171011,
+     "created_at": "2025-11-20T11:37:39+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53909115633987,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "219.90",
+     "grams": 0,
+     "compare_at_price": "159.90",
+     "position": 2,
+     "product_id": 15190829171011,
+     "created_at": "2025-11-20T11:37:39+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14943805899075,
+   "title": "Booster Bundle Llama Blanca | White Flare",
+   "handle": "bundle-white-flare",
+   "body_html": "<p><span>En cada Caja de Bundle de Unova del set especial encontrarás:</span></p>\n<ul>\n<li>6 Sobres del set especial Black Bolt or White Flare<span style=\"color: #ff0000;\"><span style=\"color: rgb(0, 0, 0);\"></span></span>\n</li>\n</ul>\n<h2>\n<br>Mejores Cartas de White Flare:</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_White_Flare.webp?v=1754039880\" alt=\"\"></p>\n<p><br></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:47:13+01:00",
+   "created_at": "2025-05-06T22:04:47+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Black Bolt and White Flare",
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53559685054787,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "44.90",
+     "grams": 0,
+     "compare_at_price": "44.90",
+     "position": 1,
+     "product_id": 14943805899075,
+     "created_at": "2025-08-13T20:26:41+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53559685087555,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "79.90",
+     "grams": 0,
+     "compare_at_price": "79.90",
+     "position": 2,
+     "product_id": 14943805899075,
+     "created_at": "2025-08-13T20:26:41+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15295901335875,
+   "title": "Caja 36 Sobres Invasion Carmesi | Crimson Invasion",
+   "handle": "caja-de-sobres-invasion-carmensin-crimson-invasion",
+   "body_html": "<p data-start=\"131\" data-end=\"436\">La región de Alola se ve amenazada por la llegada de misteriosas y poderosas criaturas: las Ultrabestias. El equilibrio de las islas está en peligro y solo los entrenadores más preparados podrán hacerles frente.</p>\n<p data-start=\"438\" data-end=\"753\">Sumérgete en una expansión llena de acción donde podrás descubrir más de 110 cartas, incluyendo impresionantes Pokémon-GX y la primera aparición de las Ultrabestias en el juego. Entre ellas destacan poderosos ejemplares como Guzzlord-GX y Nihilego-GX, que aportan nuevas estrategias y un toque único a cada partida.</p>\n<p data-start=\"755\" data-end=\"896\">Tanto si eres coleccionista como jugador, esta colección es perfecta para ampliar tu baraja y vivir intensos combates en el universo Pokémon.</p>",
+   "published_at": "2026-03-25T19:46:43+01:00",
+   "created_at": "2026-03-25T19:43:22+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas de Sobres Pokémon",
+    "Crimson Invasion",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54303276925251,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "499.90",
+     "grams": 900,
+     "compare_at_price": "499.90",
+     "position": 1,
+     "product_id": 15295901335875,
+     "created_at": "2026-03-25T19:43:22+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54303276958019,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1199.90",
+     "grams": 900,
+     "compare_at_price": "1199.90",
+     "position": 2,
+     "product_id": 15295901335875,
+     "created_at": "2026-03-25T19:43:22+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54765940212035,
+     "title": "Inglés (dañada)",
+     "option1": "Inglés (dañada)",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1099.90",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 15295901335875,
+     "created_at": "2026-08-24T17:42:07+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés",
+      "Inglés (dañada)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15297378058563,
+   "title": "Sobre Evoluciones de Paldea | Paldea Evolved Booster",
+   "handle": "paldea-evolved-sobre",
+   "body_html": "<p>¡Embárcate en un viaje por la región de Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura de JCC Pokémon!</p>\n<ul>\n<li><span>Más de 190 cartas</span></li>\n<li><span>15 Pokémon ex y tres Tera Pokémon ex</span></li>\n<li><span>36 ilustraciones raras de Pokémon</span></li>\n<li><span>18 Pokémon ex ultra raros y ocho cartas de Partidario ultra raras</span></li>\n<li><span>15 ilustraciones especiales de cartas raras de Pokémon y de Partidario</span></li>\n<li><span>Nueve tarjetas hiper raras grabadas en oro, que pueden incluir tarjetas Pokemon ex, Trainer y Energy</span></li>\n</ul>\n<h2><span>Mejores Cartas Paldea Evolved:</span></h2>\n<p><span><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Paldea_Evolved_Mejores_Cartas_Pokemillon.png?v=1774280770\" alt=\"\"></span></p>\n<p> </p>",
+   "published_at": "2026-03-27T14:49:42+01:00",
+   "created_at": "2026-03-27T14:45:58+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Español - Inglés",
+    "Evoluciones en Paldea",
+    "Paldea Evolved",
+    "Pokémon",
+    "Sobres",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54308405051715,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "5.33",
+     "grams": 835,
+     "compare_at_price": "5.33",
+     "position": 1,
+     "product_id": 15297378058563,
+     "created_at": "2026-03-27T14:45:59+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54308405084483,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 48907691721027,
+      "product_id": 15297378058563,
+      "position": 6,
+      "created_at": "2023-03-24T02:21:51+01:00",
+      "updated_at": "2026-04-07T13:39:40+02:00",
+      "alt": "Sobre de expansión Pokémon Escarlata y Púrpura Evoluciones de Paldea con Skeledirge en el empaque brillante.",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/products/Pokemon_TCG_Scarlet_Violet_Paldea_Evolved_Booster_Wrap_Skeledirge_pokemillon.png?v=1775561980",
+      "variant_ids": [
+       54308405084483
+      ]
+     },
+     "available": false,
+     "price": "8.12",
+     "grams": 835,
+     "compare_at_price": "8.12",
+     "position": 2,
+     "product_id": 15297378058563,
+     "created_at": "2026-03-27T14:45:59+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15297513718083,
+   "title": "Sobre Fuerzas Temporales | Temporal Forces Booster",
+   "handle": "fuerzas-temporales-temporal-forces-copia",
+   "body_html": "<p>¡Nuevos Pokémon <span>como Ondulagua y Ferroverdor</span> invaden Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura Fuerzas Temporales de JCC Pokémon!</p>\n<h2>Mejores Cartas de Temporal Forces:</h2>\n<h2><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Temporal_Forces_Cartas_Pokemillon.png?v=1774210496\" alt=\"\"></h2>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-27T17:08:02+01:00",
+   "created_at": "2026-03-27T17:03:18+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Español - Inglés",
+    "Fuerzas Temporales",
+    "Pokémon",
+    "Sobres Pokémon",
+    "Temporal Forces"
+   ],
+   "variants": [
+    {
+     "id": 54308784374083,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 52400668705091,
+      "product_id": 15297513718083,
+      "position": 5,
+      "created_at": "2024-01-11T01:31:48+01:00",
+      "updated_at": "2026-04-07T13:44:27+02:00",
+      "alt": "Sobre de cartas Pokémon Escarlata y Púrpura Fuerzas Temporales con la ilustración de Ondulagua en tonos violeta y amarillo.",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Pokemon_TCG_Scarlet_Violet_Temporal_Forces_Booster_Wrap_Raging_Bolt_png_jpgcopy_8abf88d8-bc17-400e-bc07-d750c0e483a3.jpg?v=1775562267",
+      "variant_ids": [
+       54308784341315,
+       54308784374083
+      ]
+     },
+     "available": true,
+     "price": "5.90",
+     "grams": 0,
+     "compare_at_price": "5.27",
+     "position": 1,
+     "product_id": 15297513718083,
+     "created_at": "2026-03-27T17:03:18+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54308784341315,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 52400668705091,
+      "product_id": 15297513718083,
+      "position": 5,
+      "created_at": "2024-01-11T01:31:48+01:00",
+      "updated_at": "2026-04-07T13:44:27+02:00",
+      "alt": "Sobre de cartas Pokémon Escarlata y Púrpura Fuerzas Temporales con la ilustración de Ondulagua en tonos violeta y amarillo.",
+      "width": 733,
+      "height": 733,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Pokemon_TCG_Scarlet_Violet_Temporal_Forces_Booster_Wrap_Raging_Bolt_png_jpgcopy_8abf88d8-bc17-400e-bc07-d750c0e483a3.jpg?v=1775562267",
+      "variant_ids": [
+       54308784341315,
+       54308784374083
+      ]
+     },
+     "available": false,
+     "price": "10.90",
+     "grams": 0,
+     "compare_at_price": "10.90",
+     "position": 2,
+     "product_id": 15297513718083,
+     "created_at": "2026-03-27T17:03:18+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54703966093635,
+     "title": "Español (Emblistado)",
+     "option1": "Español (Emblistado)",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "6.90",
+     "grams": 0,
+     "compare_at_price": "5.27",
+     "position": 3,
+     "product_id": 15297513718083,
+     "created_at": "2026-08-04T22:27:26+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés",
+      "Español (Emblistado)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15297520468291,
+   "title": "Sobre Mascarada Crepuscular | Twilight Masquerade Booster",
+   "handle": "sobre-mascarada-crepuscular-twilight-masquerade-booster",
+   "body_html": "<p>¡Nuevos Pokémon invaden Paldea! ¡Descúbrelos a todos en la expansión Escarlata y Púrpura Mascarada Crepúscular de JCC Pokémon!</p>\n<h2>Mejores Cartas de la colección Twilight Masquerade:</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Twilight_Masquerade.webp?v=1754154999\" alt=\"\"></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-27T17:26:28+01:00",
+   "created_at": "2026-03-27T17:23:39+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Español - Inglés",
+    "Greninja",
+    "Mascarada Crepuscular",
+    "Pokémon",
+    "Sobres",
+    "Sobres Pokémon",
+    "Twilight Masquerade"
+   ],
+   "variants": [
+    {
+     "id": 54308825301315,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "6.90",
+     "grams": 835,
+     "compare_at_price": "6.90",
+     "position": 1,
+     "product_id": 15297520468291,
+     "created_at": "2026-03-27T17:23:39+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54308825334083,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "11.90",
+     "grams": 835,
+     "compare_at_price": "11.90",
+     "position": 2,
+     "product_id": 15297520468291,
+     "created_at": "2026-03-27T17:23:39+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15279890170179,
+   "title": "Sobre Escarlata y Púrpura | Scarlet & Violet sv1",
+   "handle": "sobre-escarlata-y-purpura-scarlet-violet",
+   "body_html": "<p>¡Embárcate en un viaje por la región de Paldea! Conoce a los primeros compañeros Sprigatito, Fuecoco y Quaxly, y explora el poder de los Pokémon legendarios Koraidon y Miraidon como Pokémon ex. Además, otros Pokémon ex evolucionan para entrar en combate, como Arcanine y Gyarados con una nueva apariencia deslumbrante. Y llegan todavía más Pokémon en cartas con ilustraciones impresionantes de una rareza única. ¡Descúbrelos a todos en la expansión Escarlata y Púrpura de JCC Pokémon!</p>\n<ul>\n<li>Más de 190 cartas</li>\n<li>Más de 10 nuevos Pokémon ex y el retorno de una mecánica de juego revisada</li>\n<li>Una increíble apariencia reluciente para los Pokémon ex Teracristal</li>\n<li>Más de 30 cartas de Entrenador</li>\n<li>Montones de cartas de Pokémon y de Entrenador con ilustraciones especiales</li>\n</ul>\n<h2>Mejores Cartas Escarlata y<span> </span><span class=\"a-size-large product-title-word-break\">Púrpura:</span>\n</h2>\n<p><span class=\"a-size-large product-title-word-break\"><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Scarlet_and_Violet_Mejores_Cartas_Pokemillon.png?v=1774355256\" alt=\"POKEMILLON Caja 36 Escarlata y Púrpura | Scarlet &amp; Violet\"></span></p>",
+   "published_at": "2026-03-06T11:34:53+01:00",
+   "created_at": "2026-03-06T11:34:01+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Escarlata y Púrpura",
+    "Español - Inglés",
+    "Pokémon",
+    "Scarlet & Violet",
+    "Sobres",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54473148465475,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5.90",
+     "grams": 900,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 15279890170179,
+     "created_at": "2026-05-10T23:44:33+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54473148498243,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "10.90",
+     "grams": 900,
+     "compare_at_price": "10.90",
+     "position": 2,
+     "product_id": 15279890170179,
+     "created_at": "2026-05-10T23:44:33+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15229397041475,
+   "title": "Mega Feraligatr Box Collection Héroes Ascendentes | Ascended Heroes",
+   "handle": "mega-box-ascendentes-heroes",
+   "body_html": "<p><span>Contenido de la Caja ex Collection: </span></p>\n<ul>\n<li><span>4 Sobres de Ascended Heroes</span></li>\n<li><span>1 Carta Promocional</span></li>\n<li><span>1 Carta Jumbo</span></li>\n</ul>\n<h2>Mejores cartas de Ascended Heroes: <img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Ascended_Heroes.png?v=1775417331\" alt=\"POKEMILLON ETB Héroes Ascendentes | Élite Ascended Heroes\">\n</h2>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:45:28+01:00",
+   "created_at": "2025-12-31T22:20:01+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Ascended Heroes",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54046679728451,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73292535791939,
+      "product_id": 15229397041475,
+      "position": 1,
+      "created_at": "2025-12-31T22:20:43+01:00",
+      "updated_at": "2026-03-15T12:17:42+01:00",
+      "alt": "Caja de colección Pokémon Mega Feraligatr ex con carta promocional, carta jumbo y cuatro sobres de Ascended Heroes.",
+      "width": 1080,
+      "height": 1080,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Screenshot_20251219_181140_X.jpg?v=1773573462",
+      "variant_ids": [
+       54046679728451,
+       54046679761219
+      ]
+     },
+     "available": false,
+     "price": "36.90",
+     "grams": 220,
+     "compare_at_price": "36.90",
+     "position": 1,
+     "product_id": 15229397041475,
+     "created_at": "2025-12-31T22:20:01+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54046679761219,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 73292535791939,
+      "product_id": 15229397041475,
+      "position": 1,
+      "created_at": "2025-12-31T22:20:43+01:00",
+      "updated_at": "2026-03-15T12:17:42+01:00",
+      "alt": "Caja de colección Pokémon Mega Feraligatr ex con carta promocional, carta jumbo y cuatro sobres de Ascended Heroes.",
+      "width": 1080,
+      "height": 1080,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Screenshot_20251219_181140_X.jpg?v=1773573462",
+      "variant_ids": [
+       54046679728451,
+       54046679761219
+      ]
+     },
+     "available": false,
+     "price": "63.90",
+     "grams": 220,
+     "compare_at_price": "61.90",
+     "position": 2,
+     "product_id": 15229397041475,
+     "created_at": "2025-12-31T22:20:01+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15304219525443,
+   "title": "Pack 5 Sobres Pokémon TCG en Lata Pokeball",
+   "handle": "pack-5-sobres-pokeball",
+   "body_html": "<p>Descubre la emoción con este pack de <strong>5 sobres de cartas,</strong> sellados y listos para abrir, junto a una lata metalica de pokeball vacia. Perfecto para los pequeños coleccionistas y los fans de todas las edades que disfrutan de la sorpresa y la aventura de descubrir nuevas cartas.</p>\n<p><strong>¿Qué incluye este lote?</strong> 📦</p>\n<ul>\n<li>\n<p><strong>5 sobres sellados</strong> con :</p>\n<ul>\n<li>\n<p><strong>10 cartas</strong> los sobres en <strong>español</strong>. <strong></strong></p>\n</li>\n</ul>\n</li>\n<li>1 Lata tematica de Pokeball vacia</li>\n</ul>\n<blockquote>\n<p><strong>***Nota:</strong> Pueden incluirse sobres repetidos, añadiendo un toque de sorpresa a cada apertura. </p>\n</blockquote>\n<p><strong>Perfecto para coleccionistas, fanáticos de los juegos de cartas y quienes buscan sorpresas emocionantes en cada sobre!</strong> 🌟</p>",
+   "published_at": "2026-04-05T22:11:08+02:00",
+   "created_at": "2026-04-05T21:15:01+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas Misteriosas",
+    "Español - Inglés",
+    "Mistery Box",
+    "Pokémon",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54329753829699,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "29.90",
+     "grams": 24,
+     "compare_at_price": "29.90",
+     "position": 1,
+     "product_id": 15304219525443,
+     "created_at": "2026-04-05T21:15:01+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15235533209923,
+   "title": "Blister 3 Sobre Equilibrio Perfecto | Perfect Order",
+   "handle": "blister-3-sobre-orden-perfecta-perfect-order",
+   "body_html": "<p data-start=\"187\" data-end=\"420\">La nueva colección <strong data-start=\"206\" data-end=\"223\">Perfect Order</strong> se revela como un set compacto pero explosivo, donde cada carta cuenta. Con un diseño cuidado y una selección muy afinada, este lanzamiento destaca por su enfoque en poder, estética y jugabilidad.</p>\n<p data-start=\"422\" data-end=\"820\">Encabezando la colección encontramos <strong data-start=\"459\" data-end=\"510\">cuatro impresionantes Mega Evolution Pokémon ex</strong> —<strong data-start=\"512\" data-end=\"585\">Mega Zygarde ex, Mega Clefable ex, Mega Starmie ex y Mega Skarmory ex</strong>— auténticos pilares tanto para jugadores competitivos como para coleccionistas exigentes. A ellos se suman <strong data-start=\"693\" data-end=\"713\">nueve Pokémon ex</strong>, junto a una cuidada selección de <strong data-start=\"748\" data-end=\"772\">cartas de Entrenador</strong> que refuerzan la identidad estratégica del set.</p>\n<p data-start=\"822\" data-end=\"1144\">Con <strong data-start=\"826\" data-end=\"856\">más de 120 cartas en total</strong>, incluyendo secret rares, <strong data-start=\"883\" data-end=\"900\">Perfect Order</strong> sorprende al concentrar su set principal en solo <strong data-start=\"950\" data-end=\"963\">88 cartas</strong>, convirtiéndose en <strong data-start=\"983\" data-end=\"1054\">uno de los sets principales más pequeños lanzados en años en inglés</strong>. Esta decisión eleva notablemente la sensación de exclusividad y coherencia del conjunto.</p>\n<p data-start=\"1146\"",
+   "published_at": "2026-03-05T14:41:34+01:00",
+   "created_at": "2026-01-08T20:17:43+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Español - Inglés",
+    "Perfect Order",
+    "Pokémon",
+    "Sobres",
+    "Sobres Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54068384235843,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "14.90",
+     "grams": 0,
+     "compare_at_price": "14.90",
+     "position": 1,
+     "product_id": 15235533209923,
+     "created_at": "2026-01-08T20:17:43+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54068384268611,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "25.90",
+     "grams": 0,
+     "compare_at_price": "25.90",
+     "position": 2,
+     "product_id": 15235533209923,
+     "created_at": "2026-01-08T20:17:43+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15235575284035,
+   "title": "Booster Bundle Equilibrio Perfecto | Perfect Order",
+   "handle": "bundle-perfect-order",
+   "body_html": "<p data-start=\"187\" data-end=\"420\">La nueva colección <strong data-start=\"206\" data-end=\"223\">Perfect Order</strong> se revela como un set compacto pero explosivo, donde cada carta cuenta. Con un diseño cuidado y una selección muy afinada, este lanzamiento destaca por su enfoque en poder, estética y jugabilidad.</p>\n<p data-start=\"422\" data-end=\"820\">Encabezando la colección encontramos <strong data-start=\"459\" data-end=\"510\">cuatro impresionantes Mega Evolution Pokémon ex</strong> —<strong data-start=\"512\" data-end=\"585\">Mega Zygarde ex, Mega Clefable ex, Mega Starmie ex y Mega Skarmory ex</strong>— auténticos pilares tanto para jugadores competitivos como para coleccionistas exigentes. A ellos se suman <strong data-start=\"693\" data-end=\"713\">nueve Pokémon ex</strong>, junto a una cuidada selección de <strong data-start=\"748\" data-end=\"772\">cartas de Entrenador</strong> que refuerzan la identidad estratégica del set.</p>\n<p data-start=\"822\" data-end=\"1144\">Con <strong data-start=\"826\" data-end=\"856\">más de 120 cartas en total</strong>, incluyendo secret rares, <strong data-start=\"883\" data-end=\"900\">Perfect Order</strong> sorprende al concentrar su set principal en solo <strong data-start=\"950\" data-end=\"963\">88 cartas</strong>, convirtiéndose en <strong data-start=\"983\" data-end=\"1054\">uno de los sets principales más pequeños lanzados en años en inglés</strong>. Esta decisión eleva notablemente la sensación de exclusividad y coherencia del conjunto.</p>\n<p data-start=\"1146\"",
+   "published_at": "2026-03-05T14:41:35+01:00",
+   "created_at": "2026-01-08T21:32:56+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Perfect Order",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54068758708547,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "29.90",
+     "grams": 0,
+     "compare_at_price": "29.90",
+     "position": 1,
+     "product_id": 15235575284035,
+     "created_at": "2026-01-08T21:32:56+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54068758741315,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "36.90",
+     "grams": 0,
+     "compare_at_price": "48.90",
+     "position": 2,
+     "product_id": 15235575284035,
+     "created_at": "2026-01-08T21:32:56+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9736164737347,
+   "title": "Blooming Waters Premium Collection Pokémon 151",
+   "handle": "blooming-waters-151",
+   "body_html": "<p><span style=\"font-size: 0.875rem;\">Sumérgete en la nostalgia del Kanto original con esta edición premium que incluye 12 sobres de la expansión 151, cuatro cartas foil de los starters ex (Venusaur, Blastoise, Bulbasaur, Squirtle), una carta jumbo de Blastoise ex y una carta de código digital. Con una rica combinación de juego y colección, ideal para aficionados, jugadores y coleccionistas.</span><strong style=\"font-size: 0.875rem;\"><br><br>Contenido de Booster Bundle 151:</strong></p>\n<ul>\n<li><span>12 sobres de la colección Scarlet &amp; Violet 151</span></li>\n<li><span>4 cartas promocionales </span></li>\n<li><span>1 carta jumbo </span></li>\n</ul>\n<h2><span>Mejores cartas colección Scarlet &amp; Violet 151:</span></h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_151_Pokemon.webp?v=1751060496\" alt=\"\"><br><br>*Se permite pedir una caja por persona cómo máximo. En caso de realizar pedidos de más cajas por persona serán canceladas y reembolsadas.</p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2024-11-20T23:58:50+01:00",
+   "created_at": "2024-11-20T23:55:26+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "151",
+    "Blastoise",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53420413354307,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "459.90",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9736164737347,
+     "created_at": "2025-07-09T04:56:20+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54776484102467,
+     "title": "Inglés (Daño en Caja/Tocada)",
+     "option1": "Inglés (Daño en Caja/Tocada)",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "449.90",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9736164737347,
+     "created_at": "2026-08-30T00:38:13+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Inglés",
+      "Inglés (Daño en Caja/Tocada)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15279889121603,
+   "title": "Sobre Tempestad Plateada | Silver Tempest",
+   "handle": "sobre-tempestad-plateada-silver-tempest",
+   "body_html": "<p>Un siniestro estruendo resuena a lo lejos, ¡provocando que Lugia V-ASTRO emerja de las oscuras profundidades oceánicas para responder a la llamada! Explora tierras ignotas junto a unos aventureros compañeros de expedición como Vulpix de Alola V-ASTRO, Serperior V-ASTRO, Unown V-ASTRO y Mawile V-ASTRO. Y prepárate para el combate legendario que se aproxima mientras Regieleki VMAX y Regidrago V-ASTRO despiertan de su letargo. ¡Descubre poderosos aliados en la Galería de Entrenadores y pon rumbo a la aventura con la expansión<span> </span><em>Espada y Escudo-Tempestad Plateada</em><span> </span>de JCC Pokémon!</p>\n<ul>\n<li>Más de 190 cartas</li>\n<li>3 nuevos Pokémon Radiantes</li>\n<li>6 increíbles Pokémon V-ASTRO</li>\n<li>15 poderosos Pokémon V y 1 gigantesco Pokémon VMAX</li>\n<li>30 cartas con ilustraciones especiales en el subconjunto de Galería de Entrenadores</li>\n<li>Más de 15 cartas de Entrenador</li>\n</ul>\n<h2>Mejores cartas colección Tempestad Plateada:</h2>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/hitssilver_480x480.jpg?v=1695226478\"></p>",
+   "published_at": "2026-03-06T11:32:54+01:00",
+   "created_at": "2026-03-06T11:32:17+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Español - Inglés",
+    "Pokémon",
+    "Silver Tempest",
+    "Sobres",
+    "Sobres Pokémon",
+    "Tempestad Plateada"
+   ],
+   "variants": [
+    {
+     "id": 54252920242499,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "6.90",
+     "grams": 900,
+     "compare_at_price": "5.90",
+     "position": 1,
+     "product_id": 15279889121603,
+     "created_at": "2026-03-06T11:32:17+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54252920275267,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "6.90",
+     "grams": 900,
+     "compare_at_price": "6.90",
+     "position": 2,
+     "product_id": 15279889121603,
+     "created_at": "2026-03-06T11:32:17+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15190837788995,
+   "title": "Booster Bundle Ascended Heroes | Héroes Ascendentes",
+   "handle": "booster-bundle-ascended-heroes",
+   "body_html": "<p>El <strong>Booster Bundle Ascended Heroes</strong> trae 6 sobres sellados de <strong>Héroes Ascendentes</strong> (Mega Evolución 2.5), una de las expansiones más esperadas del JCC Pokémon en 2026.</p>\n<p>Una colección liderada por <strong>Mega Dragonite ex</strong> y los primeros compañeros de Pokémon Leyendas: Z-A en sus formas Mega: <strong>Mega-Meganium ex</strong>, <strong>Mega-Emboar ex</strong> y <strong>Mega-Feraligatr ex</strong>. Además, debutan los <strong>Stellar Tera Pokémon ex</strong> y vuelven los Pokémon de Entrenadores legendarios como Vileplume ex de Erika y Staraptor de Laureano.</p>\n<p>Dentro de cada Booster Bundle:</p>\n<p>🔹 <strong>6 sobres</strong> de Ascended Heroes (Héroes Ascendentes). 60 cartas en total, 10 por sobre</p>\n<p>🔹 Disponible en <strong>español</strong>, <strong>inglés</strong>, <strong>caja de 10 bundles</strong> o <strong>caja sellada de 25 bundles</strong> </p>\n<p><span>El Booster Bundle es el formato más eficiente para abrir volumen al mejor precio por sobre. Ideal para cazar las nuevas </span><strong>Mega ex</strong><span> y </span><strong>Stellar Tera ex</strong><span> de la expansión, o ampliar rápido tu colección de la era Mega Evolución. Si buscas inversión coleccionable, opta por la caja sellada de 25 bundles.</span></p>\n<h2>¿El Booster Bundle trae carta promo o código TCG Live?<span> </span>\n</h2>\n<p><span>No, el Booster Bundle solo incluye los 6 sobres sellados. Si buscas carta promo, considera la Caja Élite de Entrenador ",
+   "published_at": "2026-03-05T14:42:42+01:00",
+   "created_at": "2025-11-20T11:55:09+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Ascended Heroes",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 53909141815619,
+     "title": "Bundle Español",
+     "option1": "Bundle Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76265688039747,
+      "product_id": 15190837788995,
+      "position": 4,
+      "created_at": "2026-05-20T15:02:12+02:00",
+      "updated_at": "2026-05-20T15:02:17+02:00",
+      "alt": "Booster Bundle de Pokémon Héroes Ascendentes con caja expositora y seis sobres sellados con arte de Mega Dragonite.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Sobres___Bundle_Ascended_Heroes_Espanol_Pokemillon.png?v=1779282137",
+      "variant_ids": [
+       53909141815619
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 250,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 15190837788995,
+     "created_at": "2025-11-20T11:55:09+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53909141848387,
+     "title": "Bundle Inglés",
+     "option1": "Bundle Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76265688072515,
+      "product_id": 15190837788995,
+      "position": 7,
+      "created_at": "2026-05-20T15:02:13+02:00",
+      "updated_at": "2026-05-20T15:02:18+02:00",
+      "alt": "Caja Booster Bundle de Pokémon Héroes Ascendentes con 6 sobres ilustrados con Mega Dragonite y otros Pokémon legendarios.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Sobres___Bundle_Ascended_Heroes_Ingles_Pokemillon.png?v=1779282138",
+      "variant_ids": [
+       53909141848387
+      ]
+     },
+     "available": false,
+     "price": "126.90",
+     "grams": 250,
+     "compare_at_price": "126.90",
+     "position": 2,
+     "product_id": 15190837788995,
+     "created_at": "2025-11-20T11:55:09+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54375425573187,
+     "title": "Caja 10 Bundles Español",
+     "option1": "Caja 10 Bundles Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76258240004419,
+      "product_id": 15190837788995,
+      "position": 5,
+      "created_at": "2026-05-20T01:31:55+02:00",
+      "updated_at": "2026-07-16T02:40:42+02:00",
+      "alt": "Caja sellada de Booster Bundle Pokémon Héroes Ascendentes con diseño colorido, logo de Mega Dragonite y acabado brillante.",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/rn-image_picker_lib_temp_b5aac839-6cbd-44ed-a0cf-64d473373581.jpg?v=1784162442",
+      "variant_ids": [
+       53909141913923,
+       54375425573187
+      ]
+     },
+     "available": false,
+     "price": "469.90",
+     "grams": 250,
+     "compare_at_price": "469.90",
+     "position": 3,
+     "product_id": 15190837788995,
+     "created_at": "2026-04-21T22:08:17+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53909141913923,
+     "title": "Caja 10 Bundles Inglés",
+     "option1": "Caja 10 Bundles Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76258240004419,
+      "product_id": 15190837788995,
+      "position": 5,
+      "created_at": "2026-05-20T01:31:55+02:00",
+      "updated_at": "2026-07-16T02:40:42+02:00",
+      "alt": "Caja sellada de Booster Bundle Pokémon Héroes Ascendentes con diseño colorido, logo de Mega Dragonite y acabado brillante.",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/rn-image_picker_lib_temp_b5aac839-6cbd-44ed-a0cf-64d473373581.jpg?v=1784162442",
+      "variant_ids": [
+       53909141913923,
+       54375425573187
+      ]
+     },
+     "available": false,
+     "price": "1349.00",
+     "grams": 250,
+     "compare_at_price": "1249.00",
+     "position": 4,
+     "product_id": 15190837788995,
+     "created_at": "2025-11-20T11:55:09+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54601105441091,
+     "title": "Bundle Español Latam",
+     "option1": "Bundle Español Latam",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76690147049795,
+      "product_id": 15190837788995,
+      "position": 6,
+      "created_at": "2026-07-01T22:17:46+02:00",
+      "updated_at": "2026-07-01T22:17:51+02:00",
+      "alt": "Caja de Booster Bundle Pokémon Héroes Ascendentes con Mega Dragonite y Lucario sobre fondo negro y azul brillante.",
+      "width": 1254,
+      "height": 1254,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/ChatGPT_Image_1_jul_2026_22_17_32.png?v=1782937071",
+      "variant_ids": [
+       54601105441091
+      ]
+     },
+     "available": false,
+     "price": "42.90",
+     "grams": 250,
+     "compare_at_price": "0.00",
+     "position": 5,
+     "product_id": 15190837788995,
+     "created_at": "2026-07-01T16:47:05+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Bundle Español",
+      "Bundle Inglés",
+      "Caja 10 Bundles Español",
+      "Caja 10 Bundles Inglés",
+      "Bundle Español Latam"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9531761262915,
+   "title": "Maletín Coleccionista Pikachu",
+   "handle": "maletin-pikachu",
+   "body_html": "<div class=\"full-article-body\">\n<p>El maletín coleccionista de Pikachu de JCC Pokémon incluye:<strong><br></strong></p>\n<ul>\n<li><span style=\"font-size: 0.875rem;\">6 paquetes de mejora adicionales de JCC Pokémon</span></li>\n<li><span style=\"font-size: 0.875rem;\">¡3 cartas promocionales de Pikachu, Dipplin y Ogerpon!</span></li>\n<li><span style=\"font-size: 0.875rem;\">Una moneda Pokémon de Terapagos<br></span></li>\n<li><span style=\"font-size: 0.875rem;\">Una mini álbum para guardar tus tarjetas favoritas</span></li>\n<li><span style=\"font-size: 0.875rem;\">Una tarjeta de código para Pokémon TCG Live</span></li>\n<li><span style=\"font-size: 0.875rem;\">4 hojas de pegatinas de colores</span></li>\n</ul>\n<h2>Mejores Cartas de la colección Chispas Fulgurantes:<img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Surging_Spark.webp?v=1750953792\" alt=\"\">\n</h2>\n<ul></ul>\n<ul></ul>\n<ul></ul>\n<ul></ul>\n</div>",
+   "published_at": "2026-03-05T15:22:17+01:00",
+   "created_at": "2024-08-29T23:25:23+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Chispas Fulgurantes",
+    "Español - Inglés",
+    "Greninja",
+    "Latas",
+    "Paradox Rift",
+    "Pikachu",
+    "Pokémon",
+    "Stellar Crown",
+    "Surging Sparks",
+    "Twilight Masquerade"
+   ],
+   "variants": [
+    {
+     "id": 53371310080323,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "46.90",
+     "grams": 0,
+     "compare_at_price": "46.90",
+     "position": 1,
+     "product_id": 9531761262915,
+     "created_at": "2025-06-27T02:03:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53371310113091,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "36.90",
+     "grams": 0,
+     "compare_at_price": "36.90",
+     "position": 2,
+     "product_id": 9531761262915,
+     "created_at": "2025-06-27T02:03:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15268173087043,
+   "title": "Mega Zygarde ex Premium Collection",
+   "handle": "mega-zygarde-ex-premium",
+   "body_html": "<p><span>En cada Mega Zygarde ex Premium Collection encontrarás:</span></p>\n<ul>\n<li>8 Sobres </li>\n<li>1 Carta Jumbo </li>\n<li>1 Cartas promocionales </li>\n</ul>\n<h2><span style=\"color: rgb(0, 0, 0);\">Mejores Cartas de Perfect Order:<img src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Perfect_Order_Mejores_Cartas_Pokemillon.png?v=1774780217\" alt=\"POKEMILLON ETB Equilibrio Perfecto | Élite Perfect Order\"></span></h2>\n<p><span style=\"color: #ff0000;\"><span style=\"color: rgb(0, 0, 0);\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Cartas_Black_Bolt_and_White_Flare.webp?v=1754039240\"></span></span></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-05T14:40:38+01:00",
+   "created_at": "2026-02-19T00:23:41+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Perfect Order",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54205071884611,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "45.90",
+     "grams": 295,
+     "compare_at_price": "46.90",
+     "position": 1,
+     "product_id": 15268173087043,
+     "created_at": "2026-02-19T00:23:41+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54205071917379,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "64.90",
+     "grams": 295,
+     "compare_at_price": "64.90",
+     "position": 2,
+     "product_id": 15268173087043,
+     "created_at": "2026-02-19T00:23:41+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15294435754307,
+   "title": "Mini Lata Lumiose City | Ciudad Luminalia",
+   "handle": "mini-lata-lumiose-city",
+   "body_html": "<h2 data-start=\"117\" data-end=\"181\">Mini Lata Ciudad Luminaria<br><br>\n</h2>\n<p data-start=\"117\" data-end=\"181\">Las luces de la ciudad nunca se apagan… y las aventuras tampoco.</p>\n<p data-start=\"183\" data-end=\"393\">Las nuevas <strong data-start=\"194\" data-end=\"223\">Mini Tins de Lumiose City</strong> capturan la esencia vibrante de una de las ciudades más icónicas del mundo Pokémon, donde cada esquina esconde una historia y cada entrenador está listo para el desafío.</p>\n<p data-start=\"395\" data-end=\"432\">Dentro de cada mini lata encontrarás:</p>\n<p data-start=\"434\" data-end=\"529\">🔹 2 sobres de expansión de Pokémon TCG<br data-start=\"473\" data-end=\"476\">🔹 1 ilustración especial de Lumiose City</p>\n<p data-start=\"531\" data-end=\"710\">Compactas, coleccionables y llenas de sorpresas, estas mini tins son perfectas para quienes buscan ampliar su colección con estilo y descubrir nuevas estrategias en cada apertura.</p>\n<p data-start=\"712\" data-end=\"798\">Explora, colecciona y deja que el espíritu de Lumiose City ilumine tu próxima batalla.</p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-24T00:05:04+01:00",
+   "created_at": "2026-03-24T00:02:34+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Español - Inglés",
+    "Latas",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54298258211139,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "11.90",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 15294435754307,
+     "created_at": "2026-03-24T00:02:34+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54298258243907,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "19.90",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 2,
+     "product_id": 15294435754307,
+     "created_at": "2026-03-24T00:02:34+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15294434476355,
+   "title": "Lata Mega Clefable ex",
+   "handle": "lata-mega-clefable-ex",
+   "body_html": "<p data-start=\"163\" data-end=\"239\">Las sombras ancestrales nunca desaparecen… solo esperan el momento perfecto para manifestarse.</p>\n<p data-start=\"139\" data-end=\"224\">Las estrellas susurran secretos antiguos… y su brillo nunca deja de guiar el destino.</p>\n<p data-start=\"226\" data-end=\"437\">Las nuevas latas de colección de Mega Clefable ex celebran el poder místico de uno de los Pokémon más enigmáticos, combinando elegancia, magia y una fuerza sorprendente con cartas exclusivas de edición limitada.</p>\n<p data-start=\"439\" data-end=\"471\">Dentro de cada lata encontrarás:</p>\n<p data-start=\"473\" data-end=\"559\">🔹 1 carta promocional de Mega Clefable ex<br data-start=\"515\" data-end=\"518\">🔹 4 sobres de expansión de Pokémon TCG</p>\n<p data-start=\"561\" data-end=\"750\">Déjate envolver por la energía lunar y domina el campo de batalla con un set lleno de estrategia, encanto y movimientos impredecibles, donde la magia y la fuerza se fusionan en cada jugada.</p>\n<p><br></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-03-23T23:59:05+01:00",
+   "created_at": "2026-03-23T23:57:19+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Español - Inglés",
+    "Latas",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54298254180675,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "23.90",
+     "grams": 0,
+     "compare_at_price": "32.90",
+     "position": 1,
+     "product_id": 15294434476355,
+     "created_at": "2026-03-23T23:57:20+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54298254213443,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "39.90",
+     "grams": 0,
+     "compare_at_price": "0.90",
+     "position": 2,
+     "product_id": 15294434476355,
+     "created_at": "2026-03-23T23:57:20+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15285516960067,
+   "title": "Blister 3 Sobre Caos Creciente | Chaos Rising",
+   "handle": "blister-3-sobres-chaos-rising",
+   "body_html": "<p data-end=\"332\" data-start=\"0\">La nueva colección <strong data-end=\"35\" data-start=\"19\">Chaos Rising</strong> irrumpe en el <strong data-end=\"65\" data-start=\"50\">Pokémon TCG</strong> como una de las expansiones más esperadas dentro de la nueva línea dedicada a las <strong data-end=\"168\" data-start=\"148\">Mega Evoluciones</strong>. Con un enfoque explosivo en poder, estrategia y espectáculo visual, este set marca el regreso de algunos de los Pokémon más icónicos en sus formas Mega Evolution.</p>\n<p data-end=\"745\" data-start=\"334\">Encabezando la colección encontramos a <strong data-end=\"393\" data-start=\"373\">Mega Greninja ex</strong>, uno de los grandes protagonistas del set y una carta que promete convertirse en pieza clave tanto para jugadores competitivos como para coleccionistas. Junto a él, regresan otras impresionantes Mega Evoluciones como <strong data-end=\"629\" data-start=\"611\">Mega Pyroar ex</strong>, <strong data-end=\"650\" data-start=\"631\">Mega Floette ex</strong> y <strong data-end=\"673\" data-start=\"653\">Mega Dragalge ex</strong>, aportando variedad estratégica y un gran atractivo visual al conjunto.</p>\n<p data-end=\"1040\" data-start=\"747\">La expansión cuenta con <strong data-end=\"792\" data-start=\"771\">más de 120 cartas</strong>, incluyendo poderosos <strong data-end=\"829\" data-start=\"815\">Pokémon ex</strong>, cartas <strong data-end=\"853\" data-start=\"838\">ultra raras</strong> y una cuidada selección de <strong data-end=\"897\" data-start=\"881\">Entrenadores</strong> q",
+   "published_at": "2026-03-12T19:39:54+01:00",
+   "created_at": "2026-03-12T19:38:56+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Cajas de Sobres",
+    "Cajas de Sobres Pokémon",
+    "Chaos Rising",
+    "Español - Inglés",
+    "Pokémon"
+   ],
+   "variants": [
+    {
+     "id": 54269861822787,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "14.90",
+     "grams": 0,
+     "compare_at_price": "0.00",
+     "position": 1,
+     "product_id": 15285516960067,
+     "created_at": "2026-03-12T19:38:56+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54269861855555,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "31.90",
+     "grams": 0,
+     "compare_at_price": "31.90",
+     "position": 2,
+     "product_id": 15285516960067,
+     "created_at": "2026-03-12T19:38:56+01:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15326400348483,
+   "title": "ETB Oscuridad Absoluta | Élite Pitch Black",
+   "handle": "etb-pitch-black",
+   "body_html": "<p>La ETB Oscuridad Absoluta es la Elite Trainer Box oficial de Pitch Black. Es el formato más completo para entrar al set de una sola vez: 9 sobres para abrir, la carta promo Zarude full-art que solo viene en esta caja, y los accesorios necesarios para jugar directamente (65 fundas del set, 40 energías, guía, dados y moneda). Disponible en español y en inglés.</p>\n<h2>Qué incluye la ETB</h2>\n<ul>\n<li>9 sobres de Oscuridad Absoluta</li>\n<li>1 carta promocional Zarude full-art foil (exclusiva de esta caja, no viene en ningún otro formato del set)</li>\n<li>65 fundas para cartas con arte exclusivo del set</li>\n<li>40 cartas de Energía básicas</li>\n<li>1 Guía del jugador con listado completo de la expansión</li>\n<li>6 contadores de daño y 1 moneda</li>\n<li>2 marcadores de condición acrílicos</li>\n<li>1 Caja del coleccionista con separadores</li>\n<li>1 Tarjeta de código para Pokémon TCG Live</li>\n</ul>\n<h2>Sobre el set Oscuridad Absoluta</h2>\n<p>Pitch Black marca el regreso de las Mega Evoluciones al JCC Pokémon tras casi 8 años sin verlas en el juego, desde las últimas de la era XY-Sun &amp; Moon. Mega Darkrai ex es el protagonista de la portada de la caja, acompañado por otras cinco nuevas Mega Evoluciones ex (Slowbro, Chandelure, Zeraora, Excadrill y Delphox), varias con Illustration Rare entre las cartas con más demanda del año. La expansión completa la línea con ex regulares muy jugables como Wailord ex, Rampardos ex y Morpeko ex.</p>\n<p>Es la adaptación occidental del set ja",
+   "published_at": "2026-05-01T21:31:02+02:00",
+   "created_at": "2026-05-01T21:28:03+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "Pokémon",
+   "tags": [
+    "Cajas",
+    "Español - Inglés",
+    "Novedades",
+    "Pitch Black",
+    "Pokémon",
+    "Élites"
+   ],
+   "variants": [
+    {
+     "id": 54451707707715,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76114070864195,
+      "product_id": 15326400348483,
+      "position": 4,
+      "created_at": "2026-05-04T17:05:34+02:00",
+      "updated_at": "2026-05-07T15:41:48+02:00",
+      "alt": "Caja de Entrenador Élite Pokémon Oscuridad Absoluta con diseño en tonos negros y grises y arte de Megaevolución.",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Oscuridad_Absoluta_Pitch_black_ETB_Espa_ol.jpg?v=1778161308",
+      "variant_ids": [
+       54451707707715
+      ]
+     },
+     "available": false,
+     "price": "79.90",
+     "grams": 720,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 15326400348483,
+     "created_at": "2026-05-01T21:28:03+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54451707740483,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76047048540483,
+      "product_id": 15326400348483,
+      "position": 1,
+      "created_at": "2026-05-01T21:29:02+02:00",
+      "updated_at": "2026-07-13T00:06:01+02:00",
+      "alt": "Caja de Entrenador Élite Pokémon Pitch Black con diseño oscuro, detalles en gris y logo de Mega Evolución en una caja de cartón.",
+      "width": 652,
+      "height": 652,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Capturadepantalla2026-05-01212422.png?v=1783893961",
+      "variant_ids": [
+       54451707740483
+      ]
+     },
+     "available": false,
+     "price": "89.90",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 15326400348483,
+     "created_at": "2026-05-01T21:28:03+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7571784401142,
+   "title": "Ultra Premium 25th Celebrations",
+   "handle": "ultrapremium-25-aniversario",
+   "body_html": "<p><strong>Ultra Premium 25th Celebrations UPC</strong><br>Juego de intercambio de cartas de Pokémon. La colección Celebrations Ultra-Premium incluye 2 tarjetas metálicas conmemorativas con Pikachu y Charizard de la colección básica, 1 versión especial de oro de Pikachu V y 1 versión especial de oro de la Pokebola.</p>\n<p>También viene con un impresionante pin de esmalte de Charizard y Pikachu, 1 moneda metálica de Pokémon y 3 cajas de almacenamiento para mantener todo junto.</p>\n<p>También recibirás 17 Pokémon TCG: Los sobres de 4 cartas de Celebrations y 8 sobres adicionales de Pokémon TCG.</p>",
+   "published_at": "2026-03-05T15:29:17+01:00",
+   "created_at": "2022-02-18T22:14:45+01:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Cajas",
+    "Cajas de Entrenador",
+    "Celebraciones",
+    "Celebrations",
+    "Español - Inglés",
+    "Especiales",
+    "Pokémon",
+    "Ultra Premium",
+    "Élites"
+   ],
+   "variants": [
+    {
+     "id": 53461644935491,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": "820650829147",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "2799.90",
+     "grams": 0,
+     "compare_at_price": "799.90",
+     "position": 1,
+     "product_id": 7571784401142,
+     "created_at": "2025-07-20T16:24:28+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 53461644968259,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": "820650829148",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1699.90",
+     "grams": 0,
+     "compare_at_price": "1699.90",
+     "position": 2,
+     "product_id": 7571784401142,
+     "created_at": "2025-07-20T16:24:28+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54824035778883,
+     "title": "Inglés (Dañada)",
+     "option1": "Inglés (Dañada)",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 77730637250883,
+      "product_id": 7571784401142,
+      "position": 8,
+      "created_at": "2026-09-20T00:22:33+02:00",
+      "updated_at": "2026-09-20T00:22:36+02:00",
+      "alt": "Caja blanca de colección Pokémon Celebrations Ultra-Premium con acabado brillante y detalles en relieve, envuelta en plástico.",
+      "width": 758,
+      "height": 496,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Captura_de_pantalla_2026-09-20_002225.png?v=1789856556",
+      "variant_ids": [
+       54824035778883
+      ]
+     },
+     "available": true,
+     "price": "1599.90",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 7571784401142,
+     "created_at": "2026-09-20T00:22:04+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés",
+      "Inglés (Dañada)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15327402262851,
+   "title": "Dialga Forma Origen VAstro Premium Collection",
+   "handle": "dialga-vstar-box",
+   "body_html": "<p>Dialga Forma Origen ejerce una fuerza colosal para doblar el tiempo a su voluntad<span data-mce-fragment=\"1\">. Cada Pokémon legendario antiguo cuenta con un poder VSTAR que puede cambiar el juego</span></p>\n<p>Esta Caja contiene: </p>\n<ul>\n<li>Una carta de Dialga Forma Origen V</li>\n<li>Una carta de Dialga Forma Origen Vstar</li>\n<li>Una Carta Jumbo de Dialga Forma Origen Vstar</li>\n<li>Un código para el Juego online Jcc/Live</li>\n<li>Una moneda metálica de <span data-mce-fragment=\"1\">Dialga Forma Origen</span>\n</li>\n<li><span data-mce-fragment=\"1\">Un Pin de Dialga Forma Origen</span></li>\n<li>5 Sobres de mejora JCC Pokémon*</li>\n</ul>\n<p>*Los sobres pueden variar respecto a la imagen.</p>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0608/8045/3878/files/b_480x480.png?v=1658039544\"></p>\n<ul></ul>\n<ul></ul>",
+   "published_at": "2026-05-04T00:25:21+02:00",
+   "created_at": "2026-05-04T00:24:59+02:00",
+   "updated_at": "2026-10-05T09:38:15+02:00",
+   "vendor": "POKEMILLON",
+   "product_type": "",
+   "tags": [
+    "Astral Radiance",
+    "Cajas",
+    "Cajas Temáticas",
+    "Español - Inglés",
+    "Fusion Strike",
+    "Golpe Fusión",
+    "Lost Origin",
+    "Origen Perdido",
+    "Pokémon",
+    "Resplandor Astral"
+   ],
+   "variants": [
+    {
+     "id": 54456538104131,
+     "title": "Español",
+     "option1": "Español",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76032643105091,
+      "product_id": 15327402262851,
+      "position": 1,
+      "created_at": "2026-04-30T23:33:37+02:00",
+      "updated_at": "2026-04-30T23:33:41+02:00",
+      "alt": "Caja de colección Dialga Forma Origen VSTAR con cartas promocionales, pin metálico, moneda y cinco sobres de mejora Pokémon.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_Dialga_Espanol___Sobres_Pokemillon.png?v=1777584821",
+      "variant_ids": [
+       54456538104131
+      ]
+     },
+     "available": false,
+     "price": "49.90",
+     "grams": 322,
+     "compare_at_price": "49.90",
+     "position": 1,
+     "product_id": 15327402262851,
+     "created_at": "2026-05-04T00:25:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    },
+    {
+     "id": 54456538136899,
+     "title": "Inglés",
+     "option1": "Inglés",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": {
+      "id": 76032597295427,
+      "product_id": 15327402262851,
+      "position": 2,
+      "created_at": "2026-04-30T23:08:56+02:00",
+      "updated_at": "2026-04-30T23:09:01+02:00",
+      "alt": "Caja Dialga Forma Origen VASTRO con cartas, sobres, pin y moneda metálica en empaque azul y dorado de Pokémon JCC.",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0608/8045/3878/files/Caja_Dialga___Sobres_Pokemillon.png?v=1777583341",
+      "variant_ids": [
+       54456538136899
+      ]
+     },
+     "available": false,
+     "price": "89.90",
+     "grams": 322,
+     "compare_at_price": "89.90",
+     "position": 2,
+     "product_id": 15327402262851,
+     "created_at": "2026-05-04T00:25:00+02:00",
+     "updated_at": "2026-10-05T09:38:15+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Idioma",
+     "position": 1,
+     "values": [
+      "Español",
+      "Inglés"
+     ]
+    }
+   ]
+  }
+ ]
+}

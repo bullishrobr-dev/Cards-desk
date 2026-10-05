@@ -1,0 +1,2859 @@
+{
+ "products": [
+  {
+   "id": 9371793686857,
+   "title": "Heimdall® Pokémon PET Protector – Elite Trainer Box / Top Trainer Box",
+   "handle": "pokemon-pet-protector-elite-trainer-box",
+   "body_html": "<p>The Heimdall® Pokémon PET Protector for Elite Trainer Boxes and Top Trainer Boxes is the go-to solution for collectors safeguarding one of the most popular sealed Pokémon products. Designed to fit both ETB and TTB formats without squeezing or loose fit.</p>\n<p>ETBs are frequently bought and held as sealed investments — a proper protector prevents corner damage, shrink lifting, and dust accumulation that can affect condition grades and resale value.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n<li>Available with or without Heimdall® branding</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Elite Trainer Boxes (ETB) and Top Trainer Boxes (TTB) in standard EU/EN format.</p>",
+   "published_at": "2024-10-23T22:11:06+02:00",
+   "created_at": "2024-10-23T22:11:06+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Bestseller",
+    "English",
+    "ETB",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "TTB"
+   ],
+   "variants": [
+    {
+     "id": 52012810174793,
+     "title": "With Branding",
+     "option1": "With Branding",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-ETB-B",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1.80",
+     "grams": 80,
+     "compare_at_price": "3.75",
+     "position": 1,
+     "product_id": 9371793686857,
+     "created_at": "2025-03-31T16:22:33+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 52012810207561,
+     "title": "Without Branding",
+     "option1": "Without Branding",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-ETB-NB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.85",
+     "grams": 80,
+     "compare_at_price": "3.75",
+     "position": 2,
+     "product_id": 9371793686857,
+     "created_at": "2025-03-31T16:22:33+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Version",
+     "position": 1,
+     "values": [
+      "With Branding",
+      "Without Branding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9053693051209,
+   "title": "Heimdall® Pokémon PET Protector – English Booster Box 36",
+   "handle": "pokemon-pet-protector-english-booster-box-36",
+   "body_html": "<p>Protect your English Pokémon booster boxes with the Heimdall® Pokémon PET Protector — precision-fitted for the standard 36-pack English booster box format used across modern and vintage sets. Available with or without Heimdall® branding.</p>\n<p>A sealed Pokémon booster box in a tight-fitting protector retains maximum collector and resale value. This protector keeps shrink, corners, and edges safe from everyday handling.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n<li>Available with or without Heimdall® branding</li>\n</ul>\n<p><strong>Compatible with:</strong> English 36-pack booster boxes including Evolving Skies, Lost Origins, Fusion Strike, and most standard English booster box releases.</p>",
+   "published_at": "2024-08-01T23:41:51+02:00",
+   "created_at": "2024-05-17T11:50:24+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Bestseller",
+    "Booster Box",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 51841950810441,
+     "title": "With Branding",
+     "option1": "With Branding",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-ENBB36-B",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1.80",
+     "grams": 80,
+     "compare_at_price": "3.00",
+     "position": 1,
+     "product_id": 9053693051209,
+     "created_at": "2025-03-04T22:43:52+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 51841950843209,
+     "title": "Without Branding",
+     "option1": "Without Branding",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-ENBB36-NB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.85",
+     "grams": 80,
+     "compare_at_price": "3.00",
+     "position": 2,
+     "product_id": 9053693051209,
+     "created_at": "2025-03-04T22:43:52+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Version",
+     "position": 1,
+     "values": [
+      "With Branding",
+      "Without Branding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9371816395081,
+   "title": "Heimdall® Pokémon PET Protector – Booster Bundle",
+   "handle": "pokemon-pet-protector-booster-bundle",
+   "body_html": "<p>Keep your Pokémon Booster Bundles protected and shelf-ready with the Heimdall® Pokémon PET Protector — custom-fitted for the standard Booster Bundle format sold across Europe and most international markets.</p>\n<p>Booster Bundles are increasingly popular sealed collector items. A well-fitted protector ensures the packaging stays factory-fresh for display or future sale.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Standard Pokémon Booster Bundles (EU/EN format). <strong>Note:</strong> Does not fit the USA-format Crown Zenith Booster Bundle.</p>",
+   "published_at": "2024-10-23T22:21:07+02:00",
+   "created_at": "2024-10-23T22:21:07+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Booster Bundle",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 51009661206857,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.60",
+     "grams": 80,
+     "compare_at_price": "3.00",
+     "position": 1,
+     "product_id": 9371816395081,
+     "created_at": "2024-10-23T22:21:07+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9371822653769,
+   "title": "Heimdall® Pokémon PET Protector – Booster Bundle Display",
+   "handle": "pokemon-pet-protector-booster-bundle-display",
+   "body_html": "<p>Protect the full 10-piece Pokémon Booster Bundle Display with the Heimdall® Pokémon PET Protector — built to fit the complete display box housing 10 individual Booster Bundles. Perfect for retailers and collectors holding stock in display-ready condition.</p>\n<p>Display boxes in pristine condition are increasingly sought after by collectors. This protector keeps the outer display box structurally intact and dust-free while remaining fully transparent for showcasing.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Booster Bundle 10-piece display box (EU/EN format). <strong>Note:</strong> Does not fit the USA-format Crown Zenith Booster Bundle display.</p>",
+   "published_at": "2024-10-23T22:24:05+02:00",
+   "created_at": "2024-10-23T22:24:05+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Booster Bundle Display",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 51009683390793,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BBDISP",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2.30",
+     "grams": 80,
+     "compare_at_price": "10.00",
+     "position": 1,
+     "product_id": 9371822653769,
+     "created_at": "2024-10-23T22:24:06+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579784012105,
+   "title": "Heimdall® Pokémon PET Protector – 151 Ultra Premium Collection",
+   "handle": "pokemon-pet-protector-151-ultra-premium-collection",
+   "body_html": "<p>Protect one of the most sought-after modern Pokémon sealed products with the Heimdall® Pokémon PET Protector, purpose-built for the Pokémon 151 Ultra Premium Collection. A precision-fitted case that keeps the UPC box in pristine, display-ready condition.</p>\n<p>The 151 UPC is a top-tier collector's item — its value depends heavily on condition. This protector shields corners, edges, and shrink from handling damage while the lock-tab design accommodates the box's larger format.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Lock-tab closure (designed for larger UPC format)</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon 151 Ultra Premium Collection (UPC). Mega Charizard 2026 UPC</p>",
+   "published_at": "2025-03-11T23:22:49+01:00",
+   "created_at": "2025-03-11T23:22:49+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "151",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "UPC"
+   ],
+   "variants": [
+    {
+     "id": 51890066424137,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-UPC151",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3.10",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579784012105,
+     "created_at": "2025-03-11T23:22:49+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9679489597769,
+   "title": "Heimdall® Pokémon PET Protector – Super Premium Collection / Super Premium Kollektion",
+   "handle": "pokemon-pet-protector-super-premium-collection",
+   "body_html": "<p>Protect the Pokémon Super Premium Collection — including Prismatic Evolutions — with the Heimdall® Pokémon PET Protector. This is the V2 version with slightly adjusted sizing for an optimal fit on current Super Premium Collection boxes.</p>\n<p>The Super Premium Collection is one of the most premium sealed Pokémon products available. A proper-fitting protector is essential for maintaining the box condition that serious collectors and buyers expect.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-folding closure mechanism</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n<li>Available with or without Heimdall® branding</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Super Premium Collection (SPC/SPK), including Prismatic Evolutions Super Premium Collection. V2 — updated sizing for current production boxes.</p>",
+   "published_at": "2025-08-17T22:36:16+02:00",
+   "created_at": "2025-05-26T15:32:28+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "SPC"
+   ],
+   "variants": [
+    {
+     "id": 52375549215049,
+     "title": "Without Branding",
+     "option1": "Without Branding",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-MISC-NB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3.10",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9679489597769,
+     "created_at": "2025-05-26T15:37:50+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Version",
+     "position": 1,
+     "values": [
+      "Without Branding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579782308169,
+   "title": "Heimdall® Pokémon PET Protector – Mini-Tin Display 8",
+   "handle": "pokemon-pet-protector-mini-tin-display-8",
+   "body_html": "<p>Specifically sized for the Pokémon Mini-Tin Display in 8-tin format, the Heimdall® Pokémon PET Protector delivers a perfect fit for protecting and displaying this format. The correct choice for Prismatic Evolutions Mini-Tin Displays.</p>\n<p>The Prismatic Evolutions Mini-Tin Display is a highly collectible sealed product — keeping the display box in mint condition with a proper-fitting protector is essential for long-term value.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Mini-Tin Display boxes with 8 tins, including the Prismatic Evolutions Mini-Tin Display. <strong>Note:</strong> Standard 10-tin displays require the <a href=\"/products/pokemon-pet-protector-mini-tin-display-10\">Mini-Tin Display 10 protector</a>.</p>",
+   "published_at": "2025-03-11T23:20:04+01:00",
+   "created_at": "2025-03-11T23:20:04+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "English",
+    "Heimdall",
+    "Mini Tin",
+    "New",
+    "PET Protector",
+    "Prismatic Evolutions"
+   ],
+   "variants": [
+    {
+     "id": 51890054529353,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-MTD8",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2.30",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579782308169,
+     "created_at": "2025-03-11T23:20:04+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579785453897,
+   "title": "Heimdall® Pokémon PET Protector – Charizard Ultra Premium Collection",
+   "handle": "pokemon-pet-protector-charizard-ultra-premium-collection",
+   "body_html": "<p>Safeguard the iconic Sword &amp; Shield Charizard Ultra Premium Collection with the Heimdall® Pokémon PET Protector — custom-fitted to the exact dimensions of this highly collectible Pokémon UPC box.</p>\n<p>The Charizard UPC is one of the most valuable modern sealed Pokémon products. Condition is everything — this protector prevents corner dents, shrink damage, and surface scratches that directly impact resale value.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Lock-tab closure (designed for larger UPC format)</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Sword &amp; Shield Charizard Ultra Premium Collection (UPC).</p>",
+   "published_at": "2025-03-11T23:25:31+01:00",
+   "created_at": "2025-03-11T23:25:31+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Charizard",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "UPC"
+   ],
+   "variants": [
+    {
+     "id": 51890076582217,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-UPCCHAR",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3.90",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579785453897,
+     "created_at": "2025-03-11T23:25:31+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579777786185,
+   "title": "Heimdall® Pokémon PET Protector – Mini-Tin Display 10",
+   "handle": "pokemon-pet-protector-mini-tin-display-10",
+   "body_html": "<p>Display and protect your Pokémon Mini-Tin Display with the Heimdall® Pokémon PET Protector — tailored for the standard 10-tin display format. Keeps the outer box in flawless condition while your sealed tins stay fully visible.</p>\n<p>Mini-Tin Displays are popular collector and gift items. Storing them in a protector maintains the outer box quality critical for display value and resale.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Mini-Tin Display boxes with 10 tins. <strong>Note:</strong> The Prismatic Evolutions Mini-Tin Display contains 8 tins and requires the <a href=\"/products/pokemon-pet-protector-mini-tin-display-8\">Mini-Tin Display 8 protector</a> instead.</p>",
+   "published_at": "2025-03-11T23:14:27+01:00",
+   "created_at": "2025-03-11T23:14:27+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "English",
+    "Heimdall",
+    "Mini Tin",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 51890036310345,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-MTD10",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2.30",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579777786185,
+     "created_at": "2025-03-11T23:14:27+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9385066791241,
+   "title": "Pokémon 151: Costco 5-Pack Mini Tin Bundle (North America Exclusive) Box Set - English",
+   "handle": "pokemon-costco-151-5-pack-mini-tins-english-north-america-exclusive",
+   "body_html": "<h2 automation-id=\"featuresLabel\">NOTE: Box may contain imperfections due to transport from the US</h2>\n<h2 automation-id=\"featuresLabel\"></h2>\n<h2 id=\"a11y-features\" automation-id=\"featuresLabel\">Features:</h2>\n<ul class=\"pdp-features\">\n<li>(5) Mini Tins – Scarlet &amp; Violet – 151</li>\n<li>(4) Foil Promo Cards with exclusive holo pattern</li>\n<li>Booster Packs Vary by Products</li>\n<li>Cards Vary by Booster Pack</li>\n<li>Recommended Age: 6+ years</li>\n</ul>",
+   "published_at": "2024-11-03T21:03:30+01:00",
+   "created_at": "2024-11-03T21:03:30+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "151",
+    "Box Sets",
+    "Costco",
+    "English",
+    "Exclusive",
+    "Mini Tin",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 51200613351753,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-COSTCO5-TIN-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "155.00",
+     "grams": 1000,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9385066791241,
+     "created_at": "2024-11-20T11:50:09+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461606461769,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-COSTCO5-TIN-BI",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "280.00",
+     "grams": 1000,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9385066791241,
+     "created_at": "2026-05-23T14:09:05+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9595684913481,
+   "title": "Pokémon 151: Blooming Waters Premium Collection Box Set - English",
+   "handle": "pokemon-151-blooming-waters-premium-collection-english-box-set",
+   "body_html": "<h2>NOTE: Box may contain imperfections or damage to the exterior due to transport from the US. Contents are fine.</h2>\n<h2></h2>\n<meta charset=\"utf-8\">\n<p><span>A special Blooming Waters Premium Collection collector's box from Pokémon.</span><br><br><span>The highly sought-after and sought-after series of Pokémon Scarlet &amp; Violet 151 returns with a special collector's box including beautiful foil cards including Blastoise and Venusaur!</span><br><br><span>Pokémon Scarlet &amp; Violet 151 goes back to where it all began for long-time Pokémon players. This special expansion pack brings you all 151 Pokémon first discovered in the Kanto region, the home of Pikachu, Squirtle, Charmander, and Bulbasaur!</span><br><br><span>Collect all 151 original Pokémon with Scarlet &amp; Violet 151. All Pokémon are beautifully illustrated and a joy to collect, whether you are new to Pokémon or have been playing for years. In addition to the 151 Pokémon, there are tons of special cards to collect such as ultra rare full-art etched Pokémon and hyper rare gold etched cards. Relive your most beloved Pokémon memories with Scarlet &amp; Violet 151!</span><br><br><span>In this box you will find no less than 12 booster packs of Scarlet &amp; Violet 151, one oversized Blastoise ex foil card and four foil cards of Venusaur ex, Blastoise ex, Bulbasaur and Squirtle. A must have for every collector!</span><br><br><span>This Scarlet &amp; Violet Binder Collection Box contains:</span><br><br><span>- 12 bo",
+   "published_at": "2025-03-23T20:28:14+01:00",
+   "created_at": "2025-03-23T20:24:06+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "151",
+    "Blooming Waters",
+    "Box Sets",
+    "English",
+    "Premium Collection",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 51965952721225,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-BLOOM-PC-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "197.50",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9595684913481,
+     "created_at": "2025-03-23T20:24:06+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613506889,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-BLOOM-PC-BI",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "197.50",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9595684913481,
+     "created_at": "2026-05-23T14:09:26+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9847610638665,
+   "title": "Pokémon TCG: Prismatic Evolutions - Booster Bundle - English",
+   "handle": "pokemon-tcg-prismatic-evolutions-booster-bundle-english",
+   "body_html": "<p data-end=\"547\" data-start=\"226\">Step into a world of sparkling colors and powerful transformations with the <strong data-end=\"366\" data-start=\"302\">Pokémon TCG: Scarlet &amp; Violet—Prismatic Evolutions expansion</strong>! From <strong data-end=\"406\" data-start=\"373\">Eevee and its many Evolutions</strong> to brand-new <strong data-end=\"447\" data-start=\"420\">Stellar Tera Pokémon ex</strong>, this set shines with dazzling artwork, unique abilities, and treasures waiting to be discovered.</p>\n<h3 data-end=\"609\" data-start=\"549\">What’s Inside the Prismatic Evolutions Booster Bundle?</h3>\n<ul data-end=\"901\" data-start=\"610\">\n<li data-end=\"700\" data-start=\"610\">\n<p data-end=\"700\" data-start=\"612\"><strong data-end=\"638\" data-start=\"612\">6 sealed booster packs</strong> from <strong data-end=\"698\" data-start=\"644\">Pokémon TCG: Scarlet &amp; Violet—Prismatic Evolutions</strong></p>\n</li>\n<li data-end=\"789\" data-start=\"701\">\n<p data-end=\"732\" data-start=\"703\">Each booster pack includes:</p>\n<ul data-end=\"789\" data-start=\"735\">\n<li data-end=\"759\" data-start=\"735\">\n<p data-end=\"759\" data-start=\"737\"><strong data-end=\"757\" data-start=\"737\">10 Pokémon cards</strong></p>\n</li>\n<li data-end=\"789\" data-start=\"762\">\n<p data-end=\"789\" data-start=\"764\"><strong data-end=\"787\" data-start=\"764\">1 Basic Energy card</strong></p>\n</li>\n</ul>\n</li>\n<li data-end=\"901\" data-start=\"790\">\n<p data-end=\"901\" data-start=\"792\">Cards vary by pack—try your luck at pulling <strong data-end=\"898\" data-start=\"836",
+   "published_at": "2025-10-01T16:51:31+02:00",
+   "created_at": "2025-10-01T16:49:04+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Bundle",
+   "tags": [
+    "Booster Bundle",
+    "English",
+    "Prismatic Evolutions",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 53127215841609,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-BUNDLE-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "103.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9847610638665,
+     "created_at": "2025-10-14T18:47:22+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 53127215874377,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-BUNDLE-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "99.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9847610638665,
+     "created_at": "2025-10-14T18:47:22+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9578557702473,
+   "title": "Pokémon TCG: Scarlet & Violet - 151 Collection - Booster Bundle English",
+   "handle": "pokemon-tcg-scarlet-violet-151-collection-booster-bundle",
+   "body_html": "<div class=\"product-features\">\n<div class=\"row\">\n<div class=\"col col-sm-12\">\n<ul>\n<li>Expand your collection with this Booster Bundle containing six booster packs from Pokémon TCG: Scarlet &amp; Violet --151!</li>\n<li>Battle it out with friends to see who comes out on top.</li>\n<li>Use critical thinking and play a variety of ways with these trading cards.</li>\n<li>Trade, collect, or duel with these cards.</li>\n<li>Whether you are starting or growing your collection the Pokémon TCG: Scarlet &amp; Violet—151 Booster Bundle expansion is for you!</li>\n</ul>\n</div>\n</div>\n</div>\n<h3 class=\"product-description-heading col-12\" role=\"heading\" aria-level=\"2\">Product Description</h3>\n<div id=\"product-info-panel\">\n<div>\n<div class=\"short-description\">Gotta Catch ’Em All! Team up with Bulbasaur, Charmander, and Squirtle, and witness a brand-new dawn in Kanto! With this new day comes a new chance to track down old friends, make new partners, and capture every last one of the original 151. Discover the extraordinary Venusaur ex, Charizard ex, and Blastoise ex in special cards with captivating illustrations, and explore the cities and countryside of a reinvigorated land—you might even find the elusive Mew ex in your travels. New adventures will unfold and new horizons will be revealed in the Scarlet &amp; Violet—151 expansion!</div>\n</div>\n</div>",
+   "published_at": "2025-03-10T22:36:13+01:00",
+   "created_at": "2025-03-10T22:36:13+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Bundle",
+   "tags": [
+    "151",
+    "Booster Bundle",
+    "English",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 52555158651209,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-BUNDLE-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "168.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9578557702473,
+     "created_at": "2025-06-24T22:09:33+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 52555159044425,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-BUNDLE-BI",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "92.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9578557702473,
+     "created_at": "2025-06-24T22:10:17+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579787419977,
+   "title": "Heimdall® Pokémon PET Protector – Tin Box EU",
+   "handle": "pokemon-pet-protector-tin-box-eu",
+   "body_html": "<p>Protect your Pokémon Tin Boxes with the Heimdall® Pokémon PET Protector, designed for the European variant tin box format. Keeps the tin and its outer packaging in display-perfect condition.</p>\n<p>Tin Boxes are popular gifts and collector items — a well-kept outer box in a protector significantly improves display quality and holds long-term value.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Tin Box EU variant format. Please verify the EU format applies to your specific tin before purchasing.</p>",
+   "published_at": "2025-03-11T23:29:14+01:00",
+   "created_at": "2025-03-11T23:29:14+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "English",
+    "EU",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "Tin Box"
+   ],
+   "variants": [
+    {
+     "id": 51890089918793,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-TINEU",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1.80",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579787419977,
+     "created_at": "2025-03-11T23:29:14+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9804528255305,
+   "title": "Pokémon TCG: Destined Rivals - Booster Bundle - English",
+   "handle": "pokemon-tcg-destined-rivals-booster-bundle-english",
+   "body_html": "<h3 class=\"product-description-heading col-12 font-bold\">Features</h3>\n<div class=\"product-features\">\n<div class=\"row\">\n<div class=\"col col-sm-12\">\n<ul>\n<li>Contains six booster packs from Pokémon TCG: Scarlet &amp; Violet—Destined Rivals</li>\n<li>Team up with powerful allies like Cynthia and Garchomp ex, Ethan and Ho-Oh ex, or Arven and Mabosstiff ex</li>\n<li>Make your choice, gather your team, and prepare for epic battles</li>\n</ul>\n</div>\n</div>\n</div>\n<h3 class=\"product-description-heading col-12\">Product Description</h3>\n<div id=\"product-info-panel\">\n<div>\n<div class=\"short-description\">Whose Side Are You On? Pokémon Trainers, be on high alert! The nefarious Team Rocket is setting its latest plan into motion, and heroic Trainers are racing to stop it. Join forces with the likes of Cynthia and Garchomp ex, Ethan and Ho-Oh ex, or Arven and Mabosstiff ex… Or reconsider your loyalties and fight alongside Team Rocket’s Pokémon like Mewtwo ex—under the command of Giovanni! Choose a side, assemble your allies, and battle boldly in the Pokémon TCG: Scarlet &amp; Violet—Destined Rivals expansion!</div>\n</div>\n</div>",
+   "published_at": "2025-09-04T15:17:35+02:00",
+   "created_at": "2025-09-04T15:17:33+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Bundle",
+   "tags": [
+    "Booster Bundle",
+    "Destined Rivals",
+    "English",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 53851409875273,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-BUNDLE-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "72.45",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9804528255305,
+     "created_at": "2026-02-12T17:56:38+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 53851409908041,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-BUNDLE-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "72.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9804528255305,
+     "created_at": "2026-02-12T17:56:38+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9584944546121,
+   "title": "Pokémon Crown Zenith: Sea and Sky Premium Collection (North America Exclusive) Box Set - English",
+   "handle": "pokemon-crown-zenith-sea-and-sky-premium-collection-english",
+   "body_html": "<h2>NOTE: Box may contain imperfections and blemishes due to transport from the US</h2>\n<h2><br></h2>\n<h2 id=\"a11y-features\">Features:</h2>\n<ul class=\"pdp-features\">\n<li>\n<meta charset=\"utf-8\">\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">14 Pokemon TCG: Crown Zenith booster packs</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1 foil promo card featuring Rayquaza V and Rayquaza</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1 foil promo card featuring Kyogre V and Kyogre</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1 oversized/jumbo promo card featuring Rayquaza V</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">A code card for Pokemon TCG Live</span></li>\n</ul>\n</li>\n</ul>",
+   "published_at": "2025-03-16T19:54:22+01:00",
+   "created_at": "2025-03-16T19:29:26+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "Crown Zenith",
+    "English",
+    "Exclusive",
+    "Premium Collection",
+    "Sword & Shield"
+   ],
+   "variants": [
+    {
+     "id": 51919302754633,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-CRZ-PC-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "385.00",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9584944546121,
+     "created_at": "2025-03-16T19:29:26+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613539657,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-CRZ-PC-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "385.00",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9584944546121,
+     "created_at": "2026-05-23T14:09:26+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9844392493385,
+   "title": "Pokémon TCG: Prismatic Evolutions Lucario ex & Tyranitar ex Premium Collection - English",
+   "handle": "pokemon-tcg-prismatic-evolutions-lucario-ex-tyranitar-ex-premium-collection-english",
+   "body_html": "<p data-start=\"64\" data-end=\"403\"><strong data-start=\"64\" data-end=\"119\"><meta charset=\"utf-8\"> <span style=\"text-decoration: underline;\">Please note that this item may contain packaging damage from transport and shelving. These type of boxes are incredibly fragile and we can not guarantee a \"perfect\" box. Contents are of course in all cases undamaged</span></strong></p>\n<p data-start=\"64\" data-end=\"403\"> </p>\n<p data-start=\"64\" data-end=\"403\"><strong data-start=\"64\" data-end=\"119\">Power and Dominance Combined in One Epic Collection</strong><br data-start=\"119\" data-end=\"122\">Unleash the might of two of the most legendary and fearsome Pokémon with the <strong data-start=\"199\" data-end=\"247\">Lucario ex &amp; Tyranitar ex Premium Collection</strong>. This deluxe set is ideal for both players and collectors looking to strengthen their decks and expand their collections with exclusive foil promo cards.</p>\n<p data-start=\"405\" data-end=\"467\"><strong data-start=\"405\" data-end=\"465\">Inside the Lucario ex &amp; Tyranitar ex Premium Collection:</strong></p>\n<ul data-start=\"468\" data-end=\"721\">\n<li data-start=\"468\" data-end=\"519\">\n<p data-start=\"470\" data-end=\"519\">2 foil promo cards: Lucario ex and Tyranitar ex</p>\n</li>\n<li data-start=\"520\" data-end=\"576\">\n<p data-start=\"522\" data-end=\"576\">2 additional foil promo cards: Lucario and Tyranitar</p>\n</li>\n<li data-start=\"577\" data-end=\"623\">\n<p data-start=\"579\" data-end=\"623\">1 oversized foil card featuring Lucario ex</p>\n</li>\n<li data",
+   "published_at": "2025-09-29T13:37:13+02:00",
+   "created_at": "2025-09-29T13:28:56+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "English",
+    "Lucario",
+    "Premium Collection",
+    "Prismatic Evolutions",
+    "Scarlet & Violet",
+    "Tyranitar"
+   ],
+   "variants": [
+    {
+     "id": 53032844427593,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-PC-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "217.50",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9844392493385,
+     "created_at": "2025-09-29T13:37:10+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613670729,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-PC-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "227.50",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9844392493385,
+     "created_at": "2026-05-23T14:09:28+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9579790172489,
+   "title": "Heimdall® Pokémon PET Protector – Build & Battle Stadium",
+   "handle": "pokemon-pet-protector-build-battle-stadium",
+   "body_html": "<p>The Heimdall® Pokémon PET Protector for the Build &amp; Battle Stadium keeps this large-format sealed product protected and presentation-ready. Precision-fitted to the Stadium box dimensions for a secure, clean fit.</p>\n<p>Build &amp; Battle Stadium boxes are popular for organised play and collecting alike. Keeping the outer box in factory condition maximises display appeal and resale potential.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Build &amp; Battle Stadium box.</p>",
+   "published_at": "2025-03-11T23:33:56+01:00",
+   "created_at": "2025-03-11T23:33:56+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Build & Battle Stadium",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 51890102698313,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BUILD",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.95",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9579790172489,
+     "created_at": "2025-03-11T23:33:56+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9804425298249,
+   "title": "Pokémon TCG: Prismatic Evolutions - Elite Trainer Box - English",
+   "handle": "pokemon-prismatic-evolutions-elite-trainer-box-english",
+   "body_html": "<p><strong>Corner wear is possible due to shelving.</strong></p>\n<p>Step into a colourful world of evolving power with the Prismatic Evolutions Elite Trainer Box! This dazzling expansion from the Scarlet &amp; Violet era celebrates the evolutions of iconic Pokémon such as Eevee, Charizard, Garchomp and more — with breathtaking illustrations and Tera Pokémon ex.</p>\n<p><br></p>\n<p>The Elite Trainer Box is perfect for players and collectors alike, containing everything you need to get started right away or expand your collection in style.</p>\n<p><br></p>\n<p>Contents:</p>\n<p>9x Prismatic Evolutions booster packs</p>\n<p>1x full-art foil promo card</p>\n<p>65x sleeves with exclusive artwork</p>\n<p>45x energy cards</p>\n<p>6x dice for damage counters</p>\n<p>1x tournament-legal coin die</p>\n<p>2x plastic condition markers</p>\n<p>1x player guide for Prismatic Evolutions</p>\n<p>1x collector's box + 4 dividers</p>\n<p>1x code card for Pokémon TCG Live</p>\n<p><br></p>\n<p> </p>",
+   "published_at": "2025-09-04T14:59:18+02:00",
+   "created_at": "2025-09-04T14:59:17+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "Bestseller",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Prismatic Evolutions",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 52888777654601,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-ETB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "165.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9804425298249,
+     "created_at": "2025-09-04T14:59:17+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54775320904009,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "190.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9804425298249,
+     "created_at": "2026-07-03T17:43:41+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed – Box Imperfections Possible",
+      "Sealed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9688727617865,
+   "title": "Pokémon TCG: Scarlet & Violet: 151 (SV3.5) - Booster Pack - English",
+   "handle": "pokemon-scarlet-violet-151-booster-pack",
+   "body_html": "<p>The Pokémon 151 Booster is a must-have for any Pokémon fan looking to expand their collection. With this booster pack, you can expand your Pokémon card collection with 10 random cards from the original 151 Pokémon. Whether you're looking for rare cards, shiny cards, or just want to add to your collection, this booster pack has it all. Increase your chances of success in battles and impress your friends with your impressive collection. Order the Pokémon 151 Booster today and start expanding your collection!</p>\n<p> </p>\n<p><meta charset=\"utf-8\"><span>Each pack contains 10 cards.</span></p>\n<p><span>Language: English</span></p>",
+   "published_at": "2025-06-02T16:15:42+02:00",
+   "created_at": "2025-06-02T16:09:18+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Boosters",
+   "tags": [
+    "151",
+    "Booster Pack",
+    "Boosters",
+    "English",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 52419570696521,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-PACK-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "14.75",
+     "grams": 30,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9688727617865,
+     "created_at": "2025-06-02T16:09:18+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9804444467529,
+   "title": "Pokémon TCG: Surging Sparks Elite Trainer Box - English",
+   "handle": "pokemon-surging-sparks-elite-trainer-box-english",
+   "body_html": "<p><strong>Corner wear is possible due to shelving.</strong></p>\n<p>Step into a colourful world of evolving power with the Prismatic Evolutions Elite Trainer Box! This dazzling expansion from the Scarlet &amp; Violet era celebrates the evolutions of iconic Pokémon such as Eevee, Charizard, Garchomp and more — with breathtaking illustrations and Tera Pokémon ex.</p>\n<p><br></p>\n<p>The Elite Trainer Box is perfect for players and collectors alike, containing everything you need to get started right away or expand your collection in style.</p>\n<p><br></p>\n<p>Contents:</p>\n<p>9x Prismatic Evolutions booster packs</p>\n<p>1x full-art foil promo card</p>\n<p>65x sleeves with exclusive artwork</p>\n<p>45x energy cards</p>\n<p>6x dice for damage counters</p>\n<p>1x tournament-legal coin die</p>\n<p>2x plastic condition markers</p>\n<p>1x player guide for Prismatic Evolutions</p>\n<p>1x collector's box + 4 dividers</p>\n<p>1x code card for Pokémon TCG Live</p>\n<p><br></p>\n<p> </p>",
+   "published_at": "2025-09-04T15:03:35+02:00",
+   "created_at": "2025-09-04T15:03:35+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "Bestseller",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Scarlet & Violet",
+    "Surging Sparks"
+   ],
+   "variants": [
+    {
+     "id": 52888828543305,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SSP-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "139.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9804444467529,
+     "created_at": "2025-09-04T15:03:35+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9869885997385,
+   "title": "Heimdall® Pokémon Booster Box Acrylic Display Case – Rhino Strength",
+   "handle": "heimdall-pokemon-booster-box-acrylic-rhino-strength",
+   "body_html": "<p><strong>Protect your Pokémon booster box in bold style with the Heimdall® Pokémon Booster Box Acrylic – Rhino Strength Edition.</strong> Crafted from sleek, ultra-durable virgin acrylic, this modern display case offers unmatched clarity and toughness — keeping your sealed booster boxes safe while showcasing them with fearless elegance. Trusted by collectors across the EU including the Netherlands, Germany, France, and Belgium.</p>\n<p>This case is precision-fit for <strong>English Pokémon booster boxes (36 packs)</strong>, including releases such as:</p>\n<ul>\n<li>Scarlet &amp; Violet booster boxes (Paldea Evolved, Obsidian Flames, Paradox Rift, Surging Sparks, Prismatic Evolutions, Destined Rivals)</li>\n<li>Sword &amp; Shield booster boxes (Brilliant Stars, Lost Origin, Silver Tempest, Crown Zenith)</li>\n<li>Other English Pokémon TCG booster boxes of the same standard 36-pack format</li>\n</ul>\n<p><strong>Product Features:</strong></p>\n<ul>\n<li>\n<strong>6 + 8 mm thick virgin acrylic</strong> – strongest on the market</li>\n<li>\n<strong>Strong N52 Neodymium magnetic lid closure</strong> for secure sealing</li>\n<li>\n<strong>Smoothened edges</strong> for premium look and safe handling</li>\n<li>\n<strong>Special UV-blocking coating</strong> to preserve vibrant packaging colors</li>\n<li>\n<strong>Crystal-clear display</strong> – showcase your booster box like a museum piece</li>\n</ul>\n<p>The <strong>Heimdall® Pokémon Booster Box Acrylic – Rhino Strength Edition</strong> offers fearl",
+   "published_at": "2025-10-15T15:11:47+02:00",
+   "created_at": "2025-10-15T15:07:34+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "Acrylic",
+   "tags": [
+    "Acrylic",
+    "Booster Box",
+    "Display Case",
+    "English",
+    "Heimdall",
+    "Magnetic",
+    "New",
+    "Rhino Strength",
+    "UV Protection"
+   ],
+   "variants": [
+    {
+     "id": 53131708760393,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-RHINO-BB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "19.95",
+     "grams": 500,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9869885997385,
+     "created_at": "2025-10-15T15:07:34+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9792022413641,
+   "title": "Heimdall® Pokémon PET Protector – Poster Collection",
+   "handle": "pokemon-pet-protector-poster-collection",
+   "body_html": "<p>Keep your Pokémon Poster Collection sets in pristine sealed condition with the Heimdall® Pokémon PET Protector — designed to fit the Poster Collection box format used across sets like Pokémon 151 and Black &amp; White.</p>\n<p>Poster Collection boxes are popular display pieces. A sealed, well-protected Poster Collection holds significantly more value than one with corner wear or surface damage.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Pokémon Poster Collection format, including 151 Poster Collection and Black &amp; White Poster Collection.</p>",
+   "published_at": "2025-08-27T11:23:35+02:00",
+   "created_at": "2025-08-27T11:23:35+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector",
+    "Poster Collection"
+   ],
+   "variants": [
+    {
+     "id": 52847141060937,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-POSTER",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.95",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9792022413641,
+     "created_at": "2025-08-27T11:23:35+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9689509855561,
+   "title": "Pokémon TCG: Scarlet & Violet (SV3.5) - 151 Collection - Poster Collection English",
+   "handle": "pokemon-tcg-scarlet-violet-sv3-5-151-collection-poster-collection-english",
+   "body_html": "<div class=\"product-features\">\n<div class=\"row\">\n<div class=\"col col-sm-12\">\n<p> </p>\n<p data-start=\"81\" data-end=\"526\"><strong data-start=\"81\" data-end=\"121\">Unfold Your Very Own Pokémon Legend!</strong><br data-start=\"121\" data-end=\"124\">Embark on an epic journey through the Kanto region with the <em data-start=\"184\" data-end=\"237\">Pokémon TCG: Scarlet &amp; Violet—151 Poster Collection</em>. No adventure is complete without a first partner Pokémon—add <strong data-start=\"300\" data-end=\"313\">Bulbasaur</strong>, <strong data-start=\"315\" data-end=\"329\">Charmander</strong>, and <strong data-start=\"335\" data-end=\"347\">Squirtle</strong> to your team as playable foil promo cards. Then, continue your quest to complete the Kanto Pokédex by opening booster packs from the exclusive <strong data-start=\"491\" data-end=\"525\">Scarlet &amp; Violet—151 expansion</strong>.</p>\n<p data-start=\"528\" data-end=\"675\">To top it all off, this collection includes a <strong data-start=\"574\" data-end=\"604\">vibrant, full-color poster</strong> that’s perfect for displaying your love for Pokémon anywhere you like!</p>\n<hr data-start=\"677\" data-end=\"680\">\n<h3 data-start=\"682\" data-end=\"756\">What's Inside the Pokémon TCG: Scarlet &amp; Violet—151 Poster Collection?</h3>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul data-start=\"758\" data-end=\"1023\">\n<li data-start=\"758\" data-end=\"842\">\n<p data-start=\"760\" data-end=\"842\">3 <strong data-start=\"762\" data-end=\"782\">foil promo cards</strong> featuring <strong data",
+   "published_at": "2025-06-03T15:25:12+02:00",
+   "created_at": "2025-06-03T15:20:18+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "151",
+    "Box Sets",
+    "English",
+    "Poster Collection",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 52424680669513,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-COLL-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "49.00",
+     "grams": 400,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9689509855561,
+     "created_at": "2025-06-03T15:20:18+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9359412003145,
+   "title": "Pokémon TCG: Surging Sparks - Pokémon Center Elite Trainer Box - English",
+   "handle": "scarlet-violet-surging-sparks-pokemon-center-elite-trainer-box",
+   "body_html": "<p><meta charset=\"utf-8\"><span>As is common with Pokemon Center items, we can not guarantee a 100% undamaged product. Order at your own risk. Returns are accepted.</span></p>\n<div class=\"product-info-description--U6UnG\">\n<div>\n<h2>A Growing Storm of Stellar Strength!</h2>\n<p>Terawatts of electricity crash down from the sky in a tropical paradise, setting the stage for the supercharged Pikachu ex! With the power of a Stellar Tera Pokémon ex, it lights up the shoreline, revealing a parade of dragon Pokémon led by the towering Alolan Exeggutor ex! Archaludon ex and Latias ex round out the horde, while new<span> </span><em>ACE SPEC</em><span> </span>cards and more new Pokémon ex bring surprises of their own. Currents crackle and dragons roar in the Pokémon TCG:<span> </span><em>Scarlet &amp; Violet—Surging Sparks</em><span> </span>expansion!</p>\n<p>The Pokémon TCG:<span> </span><em>Scarlet &amp; Violet—Surging Sparks</em><span> </span>Pokémon Center Elite Trainer Box includes:</p>\n<ul>\n<li>11 Pokémon TCG:<em><span> </span>Scarlet &amp; Violet—Surging Sparks</em><span> </span>booster packs\n<ul>\n<li>Each booster pack contains 10 cards and 1 Basic Energy. Cards vary by pack.</li>\n</ul>\n</li>\n<li>1 full-art foil promo card featuring Magneton with a Pokémon Center logo</li>\n<li>1 full-art foil promo card featuring Magneton</li>\n<li>65 card sleeves</li>\n<li>45 Pokémon TCG Energy cards</li>\n<li>A player’s guide to the<span> </span><em>Scarlet &amp; Violet—Surging Sparks</em><span> </spa",
+   "published_at": "2025-10-03T17:30:35+02:00",
+   "created_at": "2024-10-20T20:14:00+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "Bestseller",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Pokemon Center",
+    "Scarlet & Violet",
+    "Surging Sparks"
+   ],
+   "variants": [
+    {
+     "id": 51304990081353,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SSP-PC-ETB-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "350.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9359412003145,
+     "created_at": "2024-12-05T22:38:02+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461605970249,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SSP-PC-ETB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "450.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9359412003145,
+     "created_at": "2026-05-23T14:08:37+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9810191941961,
+   "title": "Pokémon TCG: Prismatic Evolutions Surprise Box - English",
+   "handle": "pokemon-prismatic-evolutions-surprise-box-english",
+   "body_html": "<p>Eevee &amp; Friends shine with brilliant colours!</p>\n<p><br></p>\n<p>From fluffy and fiery to ice-cold and imaginative, Eevee and its many Evolutions hold a special place in the hearts of Pokémon Trainers!</p>\n<p><br></p>\n<p>Discover their unique new powers as Stellar Tera Pokémon ex and search for your own valuable Pokémon in a large collection of Pokémon ex from Paldea and beyond. Sparkling gems and hidden patterns await at the end of the rainbow in the Pokémon TCG: Scarlet &amp; Violet Prismatic Evolutions expansion!</p>\n<p><br></p>\n<p><br></p>\n<p>In the Pokémon TCG: Scarlet &amp; Violet - Prismatic Evolutions Mini Tin, you'll find:</p>\n<p>- 1 Foil Promo card featuring Eevee or one of the Eeveelutions</p>\n<p>- 4 Booster packs of Pokémon Prismatic Evolutions</p>\n<p>- Dividers to use the Surprise Box as a storage box for your cards</p>\n<p> </p>",
+   "published_at": "2025-09-08T17:41:18+02:00",
+   "created_at": "2025-09-08T17:37:39+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "English",
+    "Prismatic Evolutions",
+    "Scarlet & Violet",
+    "Surprise Box"
+   ],
+   "variants": [
+    {
+     "id": 52907329945929,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-COLL-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "64.95",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9810191941961,
+     "created_at": "2025-09-08T17:37:39+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10244210655561,
+   "title": "Heimdall® Pokémon PET Protector – Booster Bundle (Ascended Heroes & Newer)",
+   "handle": "pokemon-pet-protector-booster-bundle-ascended-heroes",
+   "body_html": "<p>Keep your new-size Pokémon Booster Bundles protected and shelf-ready with the Heimdall® Pokémon PET Protector — custom-fitted for the larger Booster Bundle packaging introduced in the Mega Evolution era, from Ascended Heroes onward.</p>\n<p>Booster Bundles are increasingly popular sealed collector items. A well-fitted protector keeps the packaging factory-fresh for display or future sale.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> The new-size Pokémon Booster Bundle used across the Mega Evolution era — Ascended Heroes, Perfect Order, Chaos Rising, Pitch Black, Storm Emerald, the 30th Anniversary Celebration set and newer releases.</p>\n<p><strong>Note:</strong> Sized for the newer Mega Evolution-era packaging. It does not fit the older pre-2026 Booster Bundles — for those, use the original <a href=\"/products/pokemon-pet-protector-booster-bundle\">Heimdall® Booster Bundle protector</a>.</p>",
+   "published_at": "2026-06-16T21:56:53+02:00",
+   "created_at": "2026-06-16T21:50:45+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Ascended Heroes",
+    "Booster Bundle",
+    "English",
+    "Heimdall",
+    "Mega Evolution",
+    "New",
+    "PET Protector",
+    "pre-order-Q42026"
+   ],
+   "variants": [
+    {
+     "id": 54616230101321,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BB-V2",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1.60",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10244210655561,
+     "created_at": "2026-06-16T21:50:45+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9881389564233,
+   "title": "Pokémon TCG: Prismatic Evolutions - Costco 8-Pack Mini Tin Box Set - English",
+   "handle": "pokemon-tcg-prismatic-evolutions-costco-8-pack-mini-tin-box-set-english",
+   "body_html": "<h2>NOTE: Box may contain imperfections or damage to the exterior due to transport from the US. Contents are fine.</h2>\n<p> </p>\n<h4 data-end=\"318\" data-start=\"222\">Shine Bright with Shiny Pokémon from Paldea in the Scarlet &amp; Violet—Paldean Fates Expansion!</h4>\n<p data-end=\"613\" data-start=\"320\">The spotlight is back on <strong data-end=\"362\" data-start=\"345\">Shiny Pokémon</strong> as they make their long-awaited return to the <strong data-end=\"438\" data-start=\"409\">Pokémon Trading Card Game</strong>! Leading the way is <strong data-end=\"476\" data-start=\"459\">Shiny Pikachu</strong>, blazing a trail as over 100 Shiny Pokémon join the expansion—including <strong data-end=\"582\" data-start=\"549\">Tinkaton, Ceruledge, Dondozo,</strong> and many more fan favorites.</p>\n<p data-start=\"0\" data-end=\"325\"><strong data-start=\"0\" data-end=\"28\">Pokémon Fans, Take Note!</strong><br data-start=\"28\" data-end=\"31\">The <strong data-start=\"35\" data-end=\"86\">Prismatic Evolutions Costco 8-Pack Mini Tin Box</strong> is the ultimate collector’s bundle from the <em data-start=\"131\" data-end=\"149\">Scarlet &amp; Violet</em> series. This <strong data-start=\"163\" data-end=\"184\">exclusive edition</strong>, available only through selected retailers like Costco, is a true <strong data-start=\"251\" data-end=\"271\">collector’s item</strong> for Pokémon fans across the Netherlands and Europe.</p>\n<p data-start=\"327\" data-end=\"583\">Each mini tin features one of the beloved <strong data-start=\"369\" data-end=\"",
+   "published_at": "2025-10-20T14:11:37+02:00",
+   "created_at": "2025-10-20T14:04:41+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "Costco",
+    "English",
+    "Exclusive",
+    "Mini Tin",
+    "Prismatic Evolutions",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 53167241265481,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-COSTCO8-TIN-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "195.00",
+     "grams": 1400,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9881389564233,
+     "created_at": "2025-10-20T14:09:53+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613736265,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-PRE-COSTCO8-TIN-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "195.00",
+     "grams": 1400,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9881389564233,
+     "created_at": "2026-05-23T14:09:29+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10006295216457,
+   "title": "Heimdall® Team Rocket's Moltres ex Ultra-Premium Collection (UPC) Acrylic Display Case – Rhino Strength",
+   "handle": "heimdall-team-rockets-moltres-ex-ultra-premium-collection-rhino-strength",
+   "body_html": "<p><strong>Protect your Team Rocket's Moltres ex Ultra Premium Collection in bold style with the Heimdall® Moltres ex UPC Acrylic – Rhino Strength Edition.</strong> Crafted from sleek, ultra-durable virgin acrylic, this modern magnetic display case offers unmatched clarity and toughness — keeping your sealed Moltres ex UPC safe while showcasing it with fearless elegance. Trusted by collectors across the EU including the Netherlands, Germany, France, and Belgium.</p>\n<p>This case is precision-fit for the <strong>Pokémon Scarlet &amp; Violet — Team Rocket's Moltres ex Ultra-Premium Collection (English)</strong>, one of the most sought-after sealed releases in the Destined Rivals era.</p>\n<p><strong>Product Features:</strong></p>\n<ul>\n<li>\n<strong>6 + 8 mm thick virgin acrylic</strong> – strongest on the market</li>\n<li>\n<strong>Strong N52 Neodymium magnetic lid closure</strong> for secure sealing</li>\n<li>\n<strong>Smoothened edges</strong> for premium look and safe handling</li>\n<li>\n<strong>Special UV-blocking coating</strong> to preserve vibrant packaging colors</li>\n<li>\n<strong>Tailored fit</strong> precisely sized for the Moltres ex UPC dimensions</li>\n</ul>\n<p>The <strong>Heimdall® Team Rocket's Moltres ex UPC Acrylic – Rhino Strength Edition</strong> offers fearless protection for one of the hobby's most coveted sealed products. Its sturdy, ultra-clear acrylic safeguards your collectible from dust, scratches, and UV damage, while the precision-fit magnetic lid keeps the ",
+   "published_at": "2026-01-02T15:09:02+01:00",
+   "created_at": "2026-01-02T15:04:32+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "Acrylic",
+   "tags": [
+    "Acrylic",
+    "Display Case",
+    "English",
+    "Heimdall",
+    "Magnetic",
+    "Moltres",
+    "New",
+    "Rhino Strength",
+    "Team Rocket",
+    "UPC",
+    "UV Protection"
+   ],
+   "variants": [
+    {
+     "id": 53600729858377,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-RHINO-UPCMOLTRES",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "34.00",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 10006295216457,
+     "created_at": "2026-01-02T15:04:32+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9939588317513,
+   "title": "Heimdall® Pokémon Elite Trainer Box (ETB / TTB) Acrylic Display Case – Rhino Strength",
+   "handle": "heimdall-pokemon-elite-trainer-box-acrylic-rhino-strength",
+   "body_html": "<p><strong>Protect your Pokémon Elite Trainer Box in bold style with the Heimdall® Pokémon ETB / TTB Acrylic – Rhino Strength Edition.</strong> Crafted from sleek, ultra-durable virgin acrylic, this modern display case offers unmatched clarity and toughness — keeping your sealed ETBs and TTBs safe while showcasing them with fearless elegance. Trusted by collectors across the EU including the Netherlands, Germany, France, and Belgium.</p>\n<p>This case is precision-fit for <strong>standard English Pokémon Elite Trainer Boxes (ETB) and Top Trainer Boxes (TTB)</strong>, including releases such as:</p>\n<ul>\n<li>Scarlet &amp; Violet ETBs (Paldea Evolved, Obsidian Flames, Paradox Rift, Surging Sparks, Prismatic Evolutions, Destined Rivals)</li>\n<li>Sword &amp; Shield ETBs (Brilliant Stars, Lost Origin, Silver Tempest, Crown Zenith)</li>\n<li>Pokémon Center Elite Trainer Boxes</li>\n<li>European Top Trainer Boxes (TTB)</li>\n<li>Other Pokémon ETBs/TTBs of the same standard format</li>\n</ul>\n<p><strong>Product Features:</strong></p>\n<ul>\n<li>\n<strong>6 + 8 mm thick virgin acrylic</strong> – strongest on the market</li>\n<li>\n<strong>Strong N52 Neodymium magnetic lid closure</strong> for secure sealing</li>\n<li>\n<strong>Smoothened edges</strong> for premium look and safe handling</li>\n<li>\n<strong>Special UV-blocking coating</strong> to preserve vibrant packaging colors</li>\n<li>\n<strong>Tailored fit</strong> for the standard ETB / TTB dimensions</li>\n</ul>\n<p>The <strong>Heimdall® Pokémon",
+   "published_at": "2025-11-24T17:24:08+01:00",
+   "created_at": "2025-11-24T17:20:10+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "Acrylic",
+   "tags": [
+    "Acrylic",
+    "Display Case",
+    "English",
+    "ETB",
+    "Heimdall",
+    "Magnetic",
+    "New",
+    "Rhino Strength",
+    "TTB",
+    "UV Protection"
+   ],
+   "variants": [
+    {
+     "id": 53388400689481,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-RHINO-ETB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "22.50",
+     "grams": 600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9939588317513,
+     "created_at": "2025-11-24T17:20:10+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9217921253705,
+   "title": "Pokémon TCG: Lost Origin (SS11) - 3-Pack Blister - English",
+   "handle": "lost-origin-3-pack-blister",
+   "body_html": "<p>Random artwork 3-Pack Blister from Lost Origin</p>\n<!---->",
+   "published_at": "2025-09-29T16:35:02+02:00",
+   "created_at": "2024-07-31T20:53:43+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Boosters",
+   "tags": [
+    "3-Pack Blister",
+    "Boosters",
+    "English",
+    "Lost Origin",
+    "Sword & Shield"
+   ],
+   "variants": [
+    {
+     "id": 50495026299209,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-LOR-PACK-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "33.50",
+     "grams": 120,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9217921253705,
+     "created_at": "2024-07-31T20:53:45+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10244210884937,
+   "title": "Heimdall® Pokémon PET Protector – Booster Bundle Display (Ascended Heroes & Newer)",
+   "handle": "pokemon-pet-protector-booster-bundle-display-ascended-heroes",
+   "body_html": "<p>Protect the full 10-piece Pokémon Booster Bundle Display with the Heimdall® Pokémon PET Protector — built for the new-size display box introduced in the Mega Evolution era, from Ascended Heroes onward. Perfect for retailers and collectors holding stock in display-ready condition.</p>\n<p>Display boxes in pristine condition are increasingly sought after by collectors. This protector keeps the outer display box structurally intact and dust-free while remaining fully transparent for showcasing.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> The new-size Pokémon Booster Bundle Display (10-piece display box) used across the Mega Evolution era — Ascended Heroes, Perfect Order, Chaos Rising, Pitch Black, Storm Emerald, the 30th Anniversary Celebration set and newer releases.</p>\n<p><strong>Note:</strong> Sized for the newer Mega Evolution-era packaging. It does not fit the older pre-2026 Booster Bundle Displays — for those, use the original <a href=\"/products/pokemon-pet-protector-booster-bundle-display\">Heimdall® Booster Bundle Display protector</a>.</p>",
+   "published_at": "2026-06-16T22:01:39+02:00",
+   "created_at": "2026-06-16T21:50:52+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Ascended Heroes",
+    "Booster Bundle Display",
+    "English",
+    "Heimdall",
+    "Mega Evolution",
+    "New",
+    "PET Protector",
+    "pre-order-Q42026"
+   ],
+   "variants": [
+    {
+     "id": 54616234492233,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BBDISP-V2",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "2.30",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10244210884937,
+     "created_at": "2026-06-16T21:50:52+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9847575740745,
+   "title": "Pokémon TCG: Mega Evolution Enhanced - Booster Box - English",
+   "handle": "pokemon-mega-evolution-enhanced-booster-box-english",
+   "body_html": "<p data-start=\"406\" data-end=\"674\">Experience the excitement of the brand-new <strong data-start=\"449\" data-end=\"482\">Pokémon Mega Evolution series</strong> with the <strong data-start=\"492\" data-end=\"531\">Mega Evolution Enhanced Booster Box</strong>! Officially released on <strong data-start=\"556\" data-end=\"578\">September 26, 2025</strong>, this <strong data-start=\"585\" data-end=\"623\">first-ever Mega Evolution Base Set</strong> is a must-have for collectors and players alike.</p>\n<h3 data-start=\"676\" data-end=\"734\">What’s Inside the Mega Evolution Enhanced Booster Box?</h3>\n<ul data-start=\"735\" data-end=\"923\">\n<li data-start=\"735\" data-end=\"781\">\n<p data-start=\"737\" data-end=\"781\"><strong data-start=\"737\" data-end=\"779\">36 sealed Mega Evolution booster packs</strong></p>\n</li>\n<li data-start=\"782\" data-end=\"856\">\n<p data-start=\"784\" data-end=\"856\"><strong data-start=\"784\" data-end=\"828\">1 exclusive stamped Bulbasaur promo card</strong> (limited to this product)</p>\n</li>\n<li data-start=\"857\" data-end=\"923\">\n<p data-start=\"859\" data-end=\"923\">Each booster pack contains <strong data-start=\"886\" data-end=\"921\">10 Pokémon Mega Evolution cards</strong></p>\n</li>\n</ul>\n<p data-start=\"925\" data-end=\"1101\">That’s a total of <strong data-start=\"943\" data-end=\"980\">360 cards plus a guaranteed promo</strong>—perfect for completing your collection, pulling rare Mega Evolution cards, or boosting your deck for competitive play.</p>\n<h3 data-start=\"1103\" data-end=\"1158\">Why Choose the Mega",
+   "published_at": "2025-10-01T16:40:43+02:00",
+   "created_at": "2025-10-01T16:35:27+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Box",
+   "tags": [
+    "Booster Box",
+    "English",
+    "Enhanced",
+    "Mega Evolution",
+    "New"
+   ],
+   "variants": [
+    {
+     "id": 53046025322825,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-ME01E-BB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "299.95",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9847575740745,
+     "created_at": "2025-10-01T16:35:27+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461606101321,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-ME01E-BB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "299.95",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9847575740745,
+     "created_at": "2026-05-23T14:08:38+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9596493365577,
+   "title": "Pokémon Journey Together Enhanced Booster Box - English",
+   "handle": "pokemon-journey-together-english-enhanced-booster-box",
+   "body_html": "<p> </p>\n<h4 class=\"jw-heading-70\"> <strong>Product Features</strong>\n</h4>\n<ul></ul>\n<ul></ul>\n<ul></ul>\n<p><meta charset=\"utf-8\"><span>A Pokémon enhanced Booster Box from the Scarlet &amp; Violet Journey Together set.</span><br><br><span>Bring out the best in your Pokémon through deep trust and strong leadership! The bond between you and your Pokémon ensures that they will go all out in the heat of battle and give their all to win! Journey Together marks the return of </span><em>Owner's Pokémon</em><span>, now </span><strong>called Trainer's Pokémon</strong><span>. Team up with N's Zoroark ex, Iono's Bellibolt ex, Lillie's Clefairy ex, or Hop's Zacian ex, among others. Discover all the Trainers and their loyal companions, as well as many other rare and sought-after cards in Journey Together!</span><br><br><span>Scarlet &amp; Violet Journey Together consists of over 180 cards including 40 Trainer's Pokémon, 15 Pokémon ex cards and over 15 trainer cards. You might find one of the 30 different rare illustration Pokémon or Supporters. In addition, every Scarlet &amp; Violet Journey Together booster pack is guaranteed to contain three foil cards!</span><br><br><span>A Scarlet &amp; Violet Journey Together enhanced Booster Box consists of 36 boosters and one box topper. Each booster Scarlet &amp; Violet Journey Together contains 11 Pokémon cards of which:</span><br><br><span>- 10 Pokémon cards.</span><br><span>- Guaranteed 3 foil cards per pack.</span><br><span>- 1 Energy card.</",
+   "published_at": "2025-03-24T13:55:26+01:00",
+   "created_at": "2025-03-24T13:45:33+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Box",
+   "tags": [
+    "Bestseller",
+    "Booster Box",
+    "English",
+    "Enhanced",
+    "Journey Together",
+    "New",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 51969029210441,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SV09-BB-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "270.00",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9596493365577,
+     "created_at": "2025-03-24T13:45:33+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461606396233,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SV09-BB-BI",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "275.00",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9596493365577,
+     "created_at": "2026-05-23T14:09:04+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9578361356617,
+   "title": "Pokémon Sword & Shield (SWSH12.5) : Crown Zenith - Booster Pack - English",
+   "handle": "sword-shield-crown-zenith-booster-packs",
+   "body_html": "<p><meta charset=\"utf-8\"><span>Each pack contains 10 cards.</span></p>\n<p> </p>\n<p><span>Language: English</span></p>",
+   "published_at": "2025-03-10T19:55:28+01:00",
+   "created_at": "2025-03-10T19:55:28+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Boosters",
+   "tags": [
+    "Booster Pack",
+    "Boosters",
+    "Crown Zenith",
+    "English",
+    "Sword & Shield"
+   ],
+   "variants": [
+    {
+     "id": 51880414085449,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-CRZ-PACK-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "14.10",
+     "grams": 30,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9578361356617,
+     "created_at": "2025-03-10T19:55:30+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9932712018249,
+   "title": "Pokémon TCG: Destined Rivals - Sleeved Booster - English",
+   "handle": "pokemon-tcg-destined-rivals-sleeved-booster-english",
+   "body_html": "<p data-start=\"0\" data-end=\"47\"><strong data-start=\"0\" data-end=\"45\">Pokémon TCG: Destined Rivals Booster Pack</strong></p>\n<p data-start=\"49\" data-end=\"289\">Get ready for the ultimate showdown with the <strong data-start=\"94\" data-end=\"139\">Pokémon TCG: Destined Rivals Booster Pack</strong>. This thrilling expansion introduces powerful new Pokémon, intense battles, and game-changing cards that will take your strategy to the next level.</p>\n<p data-start=\"291\" data-end=\"475\">Whether you’re a seasoned Trainer or just starting your Pokémon journey, each booster pack offers the perfect opportunity to <strong data-start=\"416\" data-end=\"440\">strengthen your deck</strong> and <strong data-start=\"445\" data-end=\"472\">outsmart your opponents</strong>.</p>\n<p data-start=\"477\" data-end=\"573\">Will you rise victorious or face your ultimate rival?<br data-start=\"530\" data-end=\"533\">Open a pack and discover your destiny!</p>\n<hr data-start=\"575\" data-end=\"578\">\n<h3 data-start=\"580\" data-end=\"596\"><strong data-start=\"584\" data-end=\"596\">Contents</strong></h3>\n<ul data-start=\"597\" data-end=\"715\">\n<li data-start=\"597\" data-end=\"671\">\n<p data-start=\"599\" data-end=\"671\">Each <em data-start=\"604\" data-end=\"634\">Pokémon TCG: Destined Rivals</em> booster pack contains <strong data-start=\"657\" data-end=\"669\">10 cards</strong></p>\n</li>\n<li data-start=\"672\" data-end=\"715\">\n<p data-start=\"674\" data-end=\"715\">Packs are shipped <strong data-start=\"692\" data-end=\"713\">randomly assorted</strong></p>\n</li>",
+   "published_at": "2025-11-20T14:13:33+01:00",
+   "created_at": "2025-11-20T14:09:13+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Boosters",
+   "tags": [
+    "Boosters",
+    "Destined Rivals",
+    "English",
+    "Scarlet & Violet",
+    "Sleeved Booster"
+   ],
+   "variants": [
+    {
+     "id": 53358389723465,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-SLEEVED-TIN-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "12.88",
+     "grams": 30,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9932712018249,
+     "created_at": "2025-11-20T14:09:13+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9844353302857,
+   "title": "Pokémon TCG: Mega Evolution - Sleeved Booster - English",
+   "handle": "pokemon-tcg-mega-evolution-sleeved-booster-english",
+   "body_html": "<p>Discover the power of Mega Evolution with a single sleeved booster pack from this exciting expansion. Each pack offers the chance to find powerful Mega Pokémon ex, rare cards, and surprising strategies that will take your deck to the next level.</p>\n<p><br></p>\n<p>Contents of a Mega Evolution Booster Pack:</p>\n<ul>\n<li>10 Pokémon TCG cards</li>\n<li>1 basic Energy card</li>\n<li>1 code card for Pokémon TCG Live</li>\n</ul>\n<p> </p>\n<p>Each booster pack offers new surprises and is perfect for expanding your collection or strengthening your strategy.</p>",
+   "published_at": "2025-09-29T12:48:49+02:00",
+   "created_at": "2025-09-29T12:45:04+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Boosters",
+   "tags": [
+    "Boosters",
+    "English",
+    "Mega Evolution",
+    "New",
+    "Sleeved Booster"
+   ],
+   "variants": [
+    {
+     "id": 53032635138377,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-ME01-SLEEVED-PACK-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "8.99",
+     "grams": 30,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9844353302857,
+     "created_at": "2025-09-29T12:45:04+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8841741533513,
+   "title": "Pokémon Lost Origin Booster Box - English",
+   "handle": "lost-origin-booster-box",
+   "body_html": "<p><strong>Sealed Pokémon Lost Origin Booster Box (English).</strong> Released September 2022, Lost Origin is the Sword &amp; Shield-era expansion that brought back the Lost Zone mechanic and introduced Giratina VSTAR as one of the most powerful chase cards.</p>\n<p><strong>Product features:</strong></p>\n<ul>\n<li>36 booster packs per box</li>\n<li>10 cards + 1 basic energy per pack</li>\n<li>English Sword &amp; Shield era expansion</li>\n<li>Factory-sealed, sourced through official EU distribution</li>\n</ul>\n<p>Lost Origin features the chase Giratina VSTAR (regular and gold), Aerodactyl VSTAR, Hisuian Decidueye, and the highly collectible Alolan Vulpix VSTAR. The Lost Zone mechanic also made this a tournament-relevant set, keeping demand strong long after release.</p>\n<p>Ships fast across the EU from Pikamon's Netherlands warehouse — tracked delivery to Germany, France, Belgium, Italy and beyond.</p>",
+   "published_at": "2026-07-30T20:32:11+02:00",
+   "created_at": "2024-01-03T22:32:44+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Box",
+   "tags": [
+    "Booster Box",
+    "English",
+    "Featured",
+    "Lost Origin",
+    "Sword & Shield"
+   ],
+   "variants": [
+    {
+     "id": 51297763787081,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-LOR-BB-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "610.00",
+     "grams": 1000,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 8841741533513,
+     "created_at": "2024-12-04T18:13:23+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 51297763819849,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-LOR-BB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "131.50",
+     "grams": 1000,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 8841741533513,
+     "created_at": "2024-12-04T18:13:23+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8675842228553,
+   "title": "Pokémon Special Delivery Charizard (SWSH 075) English 🇬🇧 S&S Promo Card",
+   "handle": "special-delivery-charizard-swsh-075",
+   "body_html": "<p><strong>Sealed Pokémon Special Delivery Charizard (SWSH 075) English Promo Card.</strong> One of the most iconic English promo cards from the Sword &amp; Shield era — a holographic Charizard mid-flight delivering mail, originally distributed via Pokémon Center's promotional mailing campaign.</p>\n<p><strong>Product features:</strong></p>\n<ul>\n<li>Single Special Delivery Charizard promo card</li>\n<li>Set code: SWSH 075 (Sword &amp; Shield Black Star Promos)</li>\n<li>English-language print, holographic finish</li>\n<li>Sealed in original packaging</li>\n</ul>\n<p>Special Delivery Charizard is one of the highest-demand English promos in recent memory, with steady appreciation since release. A staple for serious Charizard collectors and a strong long-term hold for English promo specialists.</p>\n<p>Ships fast across the EU from Pikamon's Netherlands warehouse — tracked delivery with secure packaging.</p>",
+   "published_at": "2025-10-02T19:28:48+02:00",
+   "created_at": "2023-09-02T12:50:15+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Singles",
+   "tags": [
+    "Charizard",
+    "English",
+    "Promo",
+    "Singles",
+    "Special Delivery",
+    "SWSH Black Star Promos"
+   ],
+   "variants": [
+    {
+     "id": 53051581694281,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SWSH075-SGL-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "315.00",
+     "grams": 20,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8675842228553,
+     "created_at": "2025-10-02T19:28:26+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9978487701833,
+   "title": "Pokémon TCG: Mega Charizard X ex Ultra Premium Collection - English",
+   "handle": "pokemon-tcg-mega-charizard-x-ex-ultra-premium-collection-english",
+   "body_html": "<p><strong data-start=\"0\" data-end=\"60\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Pokémon TCG: Ultra Premium Collection – Mega Charizard X</strong></p>\n<p data-start=\"64\" data-end=\"335\">Unleash the primal power of fire and dragon with the <strong data-start=\"117\" data-end=\"177\">Pokémon TCG: Ultra Premium Collection – Mega Charizard X</strong>. This <strong data-start=\"184\" data-end=\"210\">luxury collector’s box</strong> is the crown jewel of the <strong data-start=\"237\" data-end=\"262\">Mega Evolution Series</strong>, celebrating one of the most iconic Pokémon of all time in true style.</p>\n<p data-start=\"337\" data-end=\"496\">Packed with <strong data-start=\"349\" data-end=\"419\">exclusive promo cards, metal collectibles, and premium accessories</strong>, this set is the ultimate Charizard edition for collectors and fans alike.</p>\n<hr data-start=\"498\" data-end=\"501\">\n<h3 data-start=\"503\" data-end=\"530\"><strong data-start=\"507\" data-end=\"530\">Contents of the Box</strong></h3>\n<ul data-start=\"531\" data-end=\"845\">\n<li data-start=\"531\" data-end=\"586\">\n<p data-start=\"533\" data-end=\"586\">1 × Special foil promo card of <strong data-start=\"564\" data-end=\"584\">Mega Charizard X</strong></p>\n</li>\n<li data-start=\"587\" data-end=\"629\">\n<p data-start=\"589\" data-end=\"629\">1 × Metallic <strong data-start=\"602\" data-end=\"627\">Mega Charizard X coin</strong></p>\n</li>\n<li data-start=\"630\" data-end=\"6",
+   "published_at": "2025-12-16T21:01:06+01:00",
+   "created_at": "2025-12-16T20:57:34+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "Charizard",
+    "English",
+    "Mega Evolution",
+    "New",
+    "Premium Collection",
+    "UPC"
+   ],
+   "variants": [
+    {
+     "id": 53519872065865,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-MEGACHARX-CHARIZARD-UPC-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "240.00",
+     "grams": 1200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9978487701833,
+     "created_at": "2025-12-16T20:57:34+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10218825023817,
+   "title": "Heimdall® Pokémon PET Protector – Half Booster Box (18-er)",
+   "handle": "heimdall-pokemon-pet-protector-half-booster-box",
+   "body_html": "<p>Keep your Pokémon Half Booster Boxes protected and shelf-ready with the Heimdall® Pokémon PET Protector — custom-fitted for the half-size booster box that holds half the packs of a standard booster box.</p>\n<p>Half Booster Boxes are a popular, more affordable sealed format and increasingly collectible. A precision-fit protector keeps the box factory-fresh for display or future sale.</p>\n<ul>\n<li>0.5 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free material</li>\n<li>Auto-lock bottom closure</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Standard Pokémon Half Booster Boxes (EU/EN format).</p>",
+   "published_at": "2026-06-16T22:37:59+02:00",
+   "created_at": "2026-05-29T12:00:23+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Booster Box",
+    "English",
+    "Half Booster Box",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 54500865769801,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-HBB",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.70",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10218825023817,
+     "created_at": "2026-05-29T12:00:23+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10244246831433,
+   "title": "Heimdall® Pokémon PET Protector – 2-Pack / 3-Pack Blister",
+   "handle": "pokemon-pet-protector-blister-2-3-pack",
+   "body_html": "<p>Keep your Pokémon 2-pack and 3-pack blisters protected and shelf-ready with the Heimdall® Pokémon PET Protector — precision-fitted for the standard 2-pack and 3-pack blister format.</p>\n<p>Sealed blisters are popular, affordable collector items. A well-fitted protector keeps the blister card and packaging factory-fresh for display or future sale.</p>\n<ul>\n<li>0.4 mm laser-welded PET construction</li>\n<li>Ultra-clear, UV-protective, toxic-free and acid-free material<br>\n</li>\n<li>Stable when empty — no sagging or collapsing</li>\n<li>100% transparent — display without removing</li>\n</ul>\n<p><strong>Compatible with:</strong> Standard Pokémon 2-pack and 3-pack blisters (EU/EN format).</p>",
+   "published_at": "2026-06-16T22:10:50+02:00",
+   "created_at": "2026-06-16T22:08:44+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "PET Protector",
+   "tags": [
+    "Blister",
+    "English",
+    "Heimdall",
+    "New",
+    "PET Protector"
+   ],
+   "variants": [
+    {
+     "id": 54616535105865,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-PET-BLISTER",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1.95",
+     "grams": 80,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10244246831433,
+     "created_at": "2026-06-16T22:08:44+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9702635733321,
+   "title": "Pokémon TCG: Destined Rivals Pokemon Center - Elite Trainer Box - English",
+   "handle": "pokemon-destined-rivals-pokemon-center-elite-trainer-box-english",
+   "body_html": "<p data-start=\"0\" data-end=\"352\">The battle between good and evil ignites in the <em data-start=\"48\" data-end=\"82\">Scarlet &amp; Violet—Destined Rivals</em> expansion of the Pokémon Trading Card Game. In the exclusive Pokémon Center Elite Trainer Box, you’ll experience this conflict up close: join brave Trainers like Cynthia and Ethan, or embrace the dark side with Giovanni and his Team Rocket Pokémon, including Mewtwo ex.</p>\n<p data-start=\"354\" data-end=\"625\">This comprehensive set is perfect for both competitive players and collectors. With 11 booster packs and two unique promo cards of Team Rocket’s Wobbuffet — one featuring the exclusive Pokémon Center logo — you’ll instantly add rare and playable cards to your collection.</p>\n<p data-start=\"627\" data-end=\"680\"><strong data-start=\"627\" data-end=\"680\">Contents of the Pokémon Center Elite Trainer Box:</strong></p>\n<ul data-start=\"682\" data-end=\"1162\">\n<li data-start=\"682\" data-end=\"737\">\n<p data-start=\"684\" data-end=\"737\">11 <em data-start=\"687\" data-end=\"721\">Scarlet &amp; Violet—Destined Rivals</em> booster packs</p>\n</li>\n<li data-start=\"738\" data-end=\"795\">\n<p data-start=\"740\" data-end=\"795\">1 full-art foil promo card of Team Rocket’s Wobbuffet</p>\n</li>\n<li data-start=\"796\" data-end=\"878\">\n<p data-start=\"798\" data-end=\"878\">1 full-art foil promo card of Team Rocket’s Wobbuffet with Pokémon Center logo</p>\n</li>\n<li data-start=\"879\" data-end=\"907\">\n<p data-start=\"881\" data-end=\"907\">65 matching card sleeves</p>\n</li>\n<",
+   "published_at": "2025-06-13T13:50:31+02:00",
+   "created_at": "2025-06-13T13:47:22+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "Destined Rivals",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "New",
+    "Pokemon Center",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 52907293376841,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-PC-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "575.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9702635733321,
+     "created_at": "2025-09-08T17:30:29+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461606068553,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-PC-ETB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "560.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9702635733321,
+     "created_at": "2026-05-23T14:08:38+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9910677504329,
+   "title": "Pokémon TCG: Sam's Club Elite Trainer Box And Pokeball set - English",
+   "handle": "pokemon-tcg-sams-club-elite-trainer-box-and-pokeball-set-english",
+   "body_html": "<p data-start=\"0\" data-end=\"67\"><strong data-start=\"0\" data-end=\"65\">Pokémon TCG: Prismatic Evolutions Sam’s Club Exclusive Bundle</strong></p>\n<p data-start=\"69\" data-end=\"348\">This <strong data-start=\"74\" data-end=\"117\">Sam’s Club exclusive Pokémon collection</strong> combines two amazing products in one: an <strong data-start=\"159\" data-end=\"180\">Elite Trainer Box</strong> and a <strong data-start=\"187\" data-end=\"204\">Poké Ball Tin</strong>. It’s the perfect bundle for collectors and players eager to explore the brilliance of the <em data-start=\"296\" data-end=\"335\">Scarlet &amp; Violet Prismatic Evolutions</em> expansion.</p>\n<p data-start=\"350\" data-end=\"739\">From fluffy and fiery to freezing and fantastical, <strong data-start=\"401\" data-end=\"434\">Eevee and its many Evolutions</strong> have always held a special place in the hearts of Pokémon Trainers. Now, you can discover their dazzling new forms as <strong data-start=\"553\" data-end=\"580\">Stellar Tera Pokémon ex</strong> and uncover hidden treasures from <strong data-start=\"615\" data-end=\"636\">Paldea and beyond</strong>. Glittering gems and secret patterns await at the end of the rainbow in this stunning new expansion.</p>\n<hr data-start=\"741\" data-end=\"744\">\n<h3 data-start=\"746\" data-end=\"807\"><strong data-start=\"750\" data-end=\"807\">What’s Inside the Sam’s Club Pokémon Exclusive Bundle</strong></h3>\n<h4 data-start=\"809\" data-end=\"905\"><strong data-start=\"814\" data-end=\"905\">1 × Pokémon TCG: Scarlet &amp; Violet Prisma",
+   "published_at": "2025-11-07T13:30:01+01:00",
+   "created_at": "2025-11-07T13:24:40+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Exclusive",
+    "Pokeball",
+    "Sam's Club"
+   ],
+   "variants": [
+    {
+     "id": 53274081755465,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SAMSCLUB-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "240.00",
+     "grams": 1400,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9910677504329,
+     "created_at": "2025-11-07T13:24:40+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613605193,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SAMSCLUB-ETB-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "240.00",
+     "grams": 1400,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9910677504329,
+     "created_at": "2026-05-23T14:09:27+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9844589822281,
+   "title": "Pokémon TCG: Surging Sparks - Booster Bundle - English",
+   "handle": "pokemon-tcg-surging-sparks-booster-bundle-english",
+   "body_html": "<p data-start=\"81\" data-end=\"642\"><strong data-start=\"81\" data-end=\"247\">Massive surges of electricity crash down in a tropical paradise, setting the stage for the supercharged Pikachu ex with its dazzlingly powerful Topaz Bolt attack!</strong> As a Stellar Tera Pokémon ex, Pikachu lights up the coastline, unveiling a parade of Dragon-type Pokémon led by the towering Alolan Exeggutor ex. Archaludon ex and Latias ex join the lineup, while new ACE SPEC cards and even more Pokémon ex bring fresh surprises to the battle. Thunder roars, currents spark, and dragons awaken in the <strong data-start=\"583\" data-end=\"642\">Pokémon TCG: Scarlet &amp; Violet—Surging Sparks expansion!</strong></p>\n<p data-start=\"644\" data-end=\"896\">In this new set, players can collect and battle with cards inspired by the <strong data-start=\"719\" data-end=\"731\">Terarium</strong>, an artificial paradise first introduced in <em data-start=\"776\" data-end=\"834\">The Hidden Treasure of Area Zero Part 2: The Indigo Disk</em> DLC for the Pokémon Scarlet and Pokémon Violet video games.</p>\n<p data-start=\"644\" data-end=\"896\"> </p>",
+   "published_at": "2025-10-01T16:56:25+02:00",
+   "created_at": "2025-09-29T16:22:10+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Booster Bundle",
+   "tags": [
+    "Booster Bundle",
+    "English",
+    "Scarlet & Violet",
+    "Surging Sparks"
+   ],
+   "variants": [
+    {
+     "id": 53033672376649,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SSP-BUNDLE-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "70.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9844589822281,
+     "created_at": "2025-09-29T16:22:10+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54775320838473,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SSP-BUNDLE-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "70.00",
+     "grams": 200,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9844589822281,
+     "created_at": "2026-07-03T17:43:40+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed – Box Imperfections Possible",
+      "Sealed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9807406891337,
+   "title": "Pokémon TCG: Sword & Shield Charizard Ultra Premium Collection - English",
+   "handle": "pokemon-sword-shield-charizard-ultra-premium-collection-english",
+   "body_html": "<h2 data-oe-version=\"1.2\">Pokémon TCG: Charizard Ultra Premium Collection Box</h2>\n<p>Bring fire to your collection with the legendary<span> </span><strong>Charizard Ultra Premium Collection Box</strong>! This ultimate box is a tribute to the iconic<span> </span><strong>Charizard</strong><span> </span>and contains<span> </span><strong>three full-art promo cards</strong><span> </span>of Charizard V, VMAX and VSTAR in unique artworks - exclusive to this set.</p>\n<p>With as many as 16 booster packs, deluxe accessories and a metal Charizard coin, this is a dream item for collectors and fans of this fire-breathing favorite.</p>\n<h3>Contents:</h3>\n<ul>\n<li>\n<p>16x Pokémon TCG booster packs (various sets)</p>\n</li>\n<li>\n<p>3x exclusive foil promo cards: Charizard V, VMAX &amp; VSTAR</p>\n</li>\n<li>\n<p>1x deluxe play mat with Charizard design</p>\n</li>\n<li>\n<p>1x metal Charizard coin</p>\n</li>\n<li>\n<p>65x sleeves with Charizard artwork</p>\n</li>\n<li>\n<p>1x metal status markers &amp; dice</p>\n</li>\n<li>\n<p>1x premium storage box with three drawers</p>\n</li>\n<li>\n<p>1x code card for Pokémon TCG Live</p>\n</li>\n</ul>\n<p> </p>",
+   "published_at": "2025-10-14T18:05:03+02:00",
+   "created_at": "2025-09-05T17:15:29+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Bestseller",
+    "Box Sets",
+    "Charizard",
+    "English",
+    "Premium Collection",
+    "Sword & Shield",
+    "UPC"
+   ],
+   "variants": [
+    {
+     "id": 52895487754569,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-SWSHUPC-UPC-S",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "480.00",
+     "grams": 1200,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9807406891337,
+     "created_at": "2025-09-05T17:15:29+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10367287820617,
+   "title": "Pokémon TCG: Destined Rivals - Elite Trainer Box - English",
+   "handle": "pokemon-tcg-destined-rivals-elite-trainer-box-english",
+   "body_html": "<p>The <strong>Pokémon TCG: Scarlet &amp; Violet—Destined Rivals Elite Trainer Box</strong> is the English-language ETB for one of the most sought-after Scarlet &amp; Violet era sets, where Team Rocket's schemes bring a wave of fan-favourite Trainer's Pokémon into the spotlight. Every box is <strong>factory-sealed</strong> and sourced through official EU distribution, making it a solid pick for collectors, players and long-term investors alike.</p><p>Elite Trainer Boxes are the most complete way to enter a set in one purchase, pairing booster packs with the card sleeves, dice, counters and storage accessories you need to play and protect your pulls straight away. The sturdy outer box doubles as long-term storage for your collection.</p><p>Browse more <a href=\"/collections/elite-trainer-boxes\">Elite Trainer Boxes</a> and <a href=\"/collections/pokemon-english\">English Pokémon products</a> at Pikamon. Ships with fast, tracked EU shipping from Pikamon's Netherlands warehouse.</p>",
+   "published_at": "2026-09-15T22:54:54+02:00",
+   "created_at": "2026-08-30T20:41:07+02:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "Bestseller",
+    "Destined Rivals",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 55176357577033,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-DRI-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "125.00",
+     "grams": 900,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10367287820617,
+     "created_at": "2026-08-30T20:41:07+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10006269395273,
+   "title": "Heimdall® Pokémon Booster Bundle Display Acrylic Case (Magnetic) – Rhino Strength",
+   "handle": "heimdall-pokemon-booster-bundle-display-acrylic-rhino-strength",
+   "body_html": "<p><strong>Protect your Pokémon Booster Bundle in bold style with the Heimdall® Pokémon Booster Bundle Display Acrylic – Rhino Strength Edition.</strong> Crafted from sleek, ultra-durable virgin acrylic, this modern magnetic display case offers unmatched clarity and toughness — keeping your booster bundle safe while showcasing it with fearless elegance. Trusted by collectors across the EU including the Netherlands, Germany, France, and Belgium.</p>\n<p>This case is precision-fit for <strong>English Pokémon Booster Bundles (6-pack)</strong>, including releases such as:</p>\n<ul>\n<li>Scarlet &amp; Violet Booster Bundles (Paldea Evolved, Obsidian Flames, Paradox Rift, Surging Sparks, Prismatic Evolutions, Destined Rivals)</li>\n<li>Sword &amp; Shield Booster Bundles</li>\n<li>Other English Pokémon TCG Booster Bundles of the same standard 6-pack format</li>\n</ul>\n<p><strong>Product Features:</strong></p>\n<ul>\n<li>\n<strong>6 + 8 mm thick virgin acrylic</strong> – strongest on the market</li>\n<li>\n<strong>Strong N52 Neodymium magnetic lid closure</strong> for secure sealing</li>\n<li>\n<strong>Smoothened edges</strong> for premium look and safe handling</li>\n<li>\n<strong>Special UV-blocking coating</strong> to preserve vibrant packaging colors</li>\n<li>\n<strong>Display-ready design</strong> – showcase your bundle like a museum piece</li>\n</ul>\n<p>The <strong>Heimdall® Pokémon Booster Bundle Display Acrylic – Rhino Strength Edition</strong> offers fearless protection for your sealed boost",
+   "published_at": "2026-01-02T14:30:04+01:00",
+   "created_at": "2026-01-02T14:23:06+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Heimdall TCG",
+   "product_type": "Acrylic",
+   "tags": [
+    "Acrylic",
+    "Booster Bundle",
+    "Display Case",
+    "English",
+    "Heimdall",
+    "Magnetic",
+    "New",
+    "Rhino Strength",
+    "UV Protection"
+   ],
+   "variants": [
+    {
+     "id": 53600654164297,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "HMD-RHINO-BBDISP",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "35.00",
+     "grams": 400,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 10006269395273,
+     "created_at": "2026-01-02T14:23:06+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9899925569865,
+   "title": "Pokémon TCG: Mega Evolution - Mega Heroes Mini Tin Display - English",
+   "handle": "pokemon-tcg-mega-evolution-mega-heroes-mini-tin-display-english",
+   "body_html": "<p data-start=\"39\" data-end=\"388\">The <strong data-start=\"43\" data-end=\"78\">Mega Evolution Mini Tin Display</strong> is the ultimate way to collect every Mini Tin from this exciting new Pokémon set. This <strong data-start=\"166\" data-end=\"184\">sealed display</strong> contains a total of <strong data-start=\"205\" data-end=\"231\">10 Mega Evolution tins</strong>, each featuring different artwork and packed with great surprises inside. Perfect for collectors and players looking to expand their collection in one go!</p>\n<hr data-start=\"390\" data-end=\"393\">\n<h3 data-start=\"395\" data-end=\"450\"><strong data-start=\"399\" data-end=\"450\">Contents of the Mega Evolution Mini Tin Display</strong></h3>\n<ul data-start=\"451\" data-end=\"633\">\n<li data-start=\"451\" data-end=\"515\">\n<p data-start=\"453\" data-end=\"515\">10 × <strong data-start=\"458\" data-end=\"486\">Mega Evolution Mini Tins</strong> (each with unique artwork)</p>\n</li>\n<li data-start=\"516\" data-end=\"633\">\n<p data-start=\"518\" data-end=\"538\">Each tin includes:</p>\n<ul data-start=\"541\" data-end=\"633\">\n<li data-start=\"541\" data-end=\"574\">\n<p data-start=\"543\" data-end=\"574\">2 × <strong data-start=\"547\" data-end=\"572\">Pokémon Booster Packs</strong></p>\n</li>\n<li data-start=\"577\" data-end=\"602\">\n<p data-start=\"579\" data-end=\"602\">1 × <strong data-start=\"583\" data-end=\"600\">Sticker sheet</strong></p>\n</li>\n<li data-start=\"605\" data-end=\"633\">\n<p data-start=\"607\" data-end=\"633\">1 × <strong data-start=\"611\" data-end=\"631\">Collectible coin</strong></",
+   "published_at": "2025-10-31T09:50:44+01:00",
+   "created_at": "2025-10-31T09:45:32+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Box Sets",
+   "tags": [
+    "Box Sets",
+    "Display",
+    "English",
+    "Mega Evolution",
+    "Mega Heroes",
+    "Mini Tin"
+   ],
+   "variants": [
+    {
+     "id": 53231345795401,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-ME01-MTD-TIN-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "165.00",
+     "grams": 1600,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9899925569865,
+     "created_at": "2025-10-31T09:45:32+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461613572425,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-ME01-MTD-TIN-BI",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "165.00",
+     "grams": 1600,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9899925569865,
+     "created_at": "2026-05-23T14:09:27+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9431336255817,
+   "title": "Pokémon TCG: 151 Pokémon Center - Elite Trainer Box - English",
+   "handle": "151-pokemon-center-elite-trainer-box",
+   "body_html": "<p>The Pokémon TCG:<span> </span><em>Scarlet &amp; Violet—151</em><span> </span>Pokémon Center Elite Trainer Box takes us back to where many Pokémon adventures originally started. Meet familiar faces with first partner Pokémon Bulbasaur, Charmander, and Squirtle, and see how far they’ve come as extraordinarily powerful Venusaur ex, Charizard ex, and Blastoise ex. With 11 booster packs, this box has everything you need to continue your journey through Kanto and beyond. And full-art foil promo cards offer a fun and beautiful addition to any collection. Take on new challenges with confidence with this Elite Trainer Box, available exclusively at the Pokémon Center.</p>\n<p>The Pokémon TCG:<span> </span><em>Scarlet &amp; Violet—151</em><span> </span>Pokémon Center Elite Trainer Box includes:</p>\n<ul class=\"list\">\n<li>\n<p>11 Pokémon TCG:<span> </span><em>Scarlet &amp; Violet—151</em><span> </span>booster packs</p>\n</li>\n<li>\n<p>1 full-art foil promo card featuring Snorlax with a Pokémon Center logo</p>\n</li>\n<li>\n<p>1 full-art foil promo card featuring Snorlax</p>\n</li>\n<li>\n<p>65 card sleeves</p>\n</li>\n<li>\n<p>45 Pokémon TCG Energy cards</p>\n</li>\n<li>\n<p>A player’s guide to the<span> </span><em>Scarlet &amp; Violet—151</em><span> </span>expansion</p>\n</li>\n<li>\n<p>6 damage-counter dice</p>\n</li>\n<li>\n<p>1 competition-legal coin-flip die</p>\n</li>\n<li>\n<p>2 plastic condition markers</p>\n</li>\n<li>\n<p>A collector’s box to hold everything, with 4 dividers to keep it organized</p>\n</l",
+   "published_at": "2025-10-04T21:37:51+02:00",
+   "created_at": "2024-12-03T16:41:00+01:00",
+   "updated_at": "2026-10-05T09:38:26+02:00",
+   "vendor": "Pokémon",
+   "product_type": "Elite Trainer Box",
+   "tags": [
+    "151",
+    "Elite Trainer Box",
+    "English",
+    "ETB",
+    "Pokemon Center",
+    "Scarlet & Violet"
+   ],
+   "variants": [
+    {
+     "id": 51310819901769,
+     "title": "Sealed",
+     "option1": "Sealed",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-PC-ETB-S",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "1000.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9431336255817,
+     "created_at": "2024-12-07T13:36:26+01:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    },
+    {
+     "id": 54461606003017,
+     "title": "Sealed – Box Imperfections Possible",
+     "option1": "Sealed – Box Imperfections Possible",
+     "option2": null,
+     "option3": null,
+     "sku": "PKM-EN-151-PC-ETB-BI",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "1100.00",
+     "grams": 1100,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9431336255817,
+     "created_at": "2026-05-23T14:08:37+02:00",
+     "updated_at": "2026-10-05T09:38:26+02:00"
+    }
+   ],
+   "options": [
+    {
+     "name": "Condition",
+     "position": 1,
+     "values": [
+      "Sealed",
+      "Sealed – Box Imperfections Possible"
+     ]
+    }
+   ]
+  }
+ ]
+}

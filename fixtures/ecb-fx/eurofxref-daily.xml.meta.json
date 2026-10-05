@@ -1,0 +1,10 @@
+{
+ "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "cache-control": "max-age=300",
+  "content-type": "text/xml",
+  "last-modified": "Fri, 02 Oct 2026 13:56:23 GMT"
+ }
+}

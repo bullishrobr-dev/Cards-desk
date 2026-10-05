@@ -1,0 +1,9 @@
+{
+ "url": "https://titancards.co.uk/collections/pokemon/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:79523971402:ProductListController:0957d0317c1e19361b9487f9ddb85cb6\""
+ }
+}

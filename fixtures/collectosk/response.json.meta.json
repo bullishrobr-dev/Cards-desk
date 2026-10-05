@@ -1,0 +1,11 @@
+{
+ "url": "https://www.collectosk.com/wp-json/wp/v2/pages?slug=new-release-calendar&_fields=id,modified_gmt,link,content",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "cache-control": "no-cache, must-revalidate, max-age=0",
+  "content-type": "application/json; charset=UTF-8",
+  "x-wp-total": "1",
+  "x-wp-totalpages": "1"
+ }
+}

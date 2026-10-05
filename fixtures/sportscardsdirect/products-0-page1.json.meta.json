@@ -1,0 +1,9 @@
+{
+ "url": "https://www.sportscardsdirect.co.uk/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:53098676400:ProductListController:831f5fd997648c0b36ced9ff149287ef\""
+ }
+}

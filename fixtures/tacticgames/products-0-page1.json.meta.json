@@ -1,0 +1,9 @@
+{
+ "url": "https://tacticgames.fr/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:57112953008:ProductListController:566e5cc0a1b139335d4bcc3d0164aaca\""
+ }
+}

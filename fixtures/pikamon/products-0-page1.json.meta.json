@@ -1,0 +1,9 @@
+{
+ "url": "https://pikamon.eu/collections/pokemon-english/products.json?limit=50&page=1",
+ "captured": "2026-10-05",
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "etag": "\"page_cache:72158118206:ProductListController:19070c04e0a229dc5de6d4f46a16603b\""
+ }
+}
