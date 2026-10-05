@@ -111,6 +111,9 @@ CREATE TABLE title_matches (
   title_hash   TEXT PRIMARY KEY,                  -- sha-256 of source id + normalised title
   raw_title    TEXT NOT NULL,
   source_id    TEXT NOT NULL,
+  category     TEXT NOT NULL,
+  subject      TEXT NOT NULL,                     -- subject tokens at classification time
+  season       TEXT,
   release_id   TEXT REFERENCES releases (id),     -- NULL = no release (old stock, unmatched)
   method       TEXT NOT NULL CHECK (method IN ('deterministic', 'created', 'llm', 'manual', 'unmatched')),
   created_at   TEXT NOT NULL

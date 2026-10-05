@@ -20,6 +20,7 @@
     "node": ">=22"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
     "hono": "^4.13.13",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",

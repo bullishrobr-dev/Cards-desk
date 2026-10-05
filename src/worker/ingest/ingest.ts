@@ -126,8 +126,8 @@ async function resolveReleases(deps: IngestDeps, entries: Entry[], stats: Ingest
     resolved.set(e.hash, releaseId);
     writes.push(
       db
-        .prepare('INSERT OR IGNORE INTO title_matches (title_hash, raw_title, source_id, release_id, method, created_at) VALUES (?, ?, ?, ?, ?, ?)')
-        .bind(e.hash, e.title, e.sourceId, releaseId, method, ts),
+        .prepare('INSERT OR IGNORE INTO title_matches (title_hash, raw_title, source_id, category, subject, season, release_id, method, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)')
+        .bind(e.hash, e.title, e.sourceId, cat, e.c.subject.join(' '), e.c.season, releaseId, method, ts),
     );
   }
   return resolved;
