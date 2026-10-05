@@ -67,40 +67,54 @@ CREATE TABLE retailers (
 );
 
 -- =====================================================================
--- SHARED: products and matching
+-- SHARED: releases, products (box SKUs) and matching
 -- =====================================================================
 
-CREATE TABLE products (
+-- A release is what calendars announce: "2026 Topps Chrome Formula 1", "Mega Evolution—Delta Reign".
+CREATE TABLE releases (
   id             TEXT PRIMARY KEY,                -- ULID
-  match_key      TEXT NOT NULL UNIQUE,            -- deterministic canonical key
-  category       TEXT NOT NULL,                   -- football | f1 | pokemon | ...
-  publisher      TEXT,                            -- topps | panini | pokemon
-  line           TEXT,                            -- product line, e.g. "stadium club chrome"
-  season         TEXT,                            -- "2025-26", "2026"
-  name           TEXT NOT NULL,                   -- display name
-  configuration  TEXT,                            -- hobby | jumbo | etb | booster_box | ...
-  language       TEXT NOT NULL DEFAULT 'en',
-  set_code       TEXT,                            -- Pokémon set id once known
-  excluded_rule  TEXT,                            -- set when an exclusion rule matched
-  rrp_minor      INTEGER,
-  rrp_currency   TEXT,
-  rrp_source     TEXT CHECK (rrp_source IN ('config', 'manual', 'estimated')),
-  image_key      TEXT,                            -- R2 object key
+  match_key      TEXT NOT NULL UNIQUE,            -- category|season|sorted subject tokens
+  category       TEXT NOT NULL,
+  publisher      TEXT,
+  season         TEXT,
+  line           TEXT,
+  tier           TEXT,
+  tier_points_pct INTEGER NOT NULL DEFAULT 0,
+  name           TEXT NOT NULL,
+  subject        TEXT NOT NULL,                   -- space-separated subject tokens
+  players        TEXT,                            -- JSON array of watchlist players seen
+  scarcity       TEXT,                            -- JSON array of scarcity signal ids
+  origin_source  TEXT NOT NULL,                   -- source that first reported it
   created_at     TEXT NOT NULL,
   updated_at     TEXT NOT NULL
 );
-CREATE INDEX idx_products_category ON products (category);
+CREATE INDEX idx_releases_category ON releases (category, season);
 
--- Raw titles seen anywhere, mapped to a product. Deterministic first, LLM only on failure.
-CREATE TABLE product_aliases (
-  title_hash   TEXT PRIMARY KEY,                  -- sha-256 of the normalised title
+-- A product is a sealed box type of a release: hobby, jumbo, ETB, booster box ...
+CREATE TABLE products (
+  id             TEXT PRIMARY KEY,                -- ULID
+  release_id     TEXT NOT NULL REFERENCES releases (id),
+  configuration  TEXT NOT NULL,                   -- config id, or 'unknown'
+  name           TEXT NOT NULL,
+  rrp_minor      INTEGER,
+  rrp_currency   TEXT,
+  rrp_source     TEXT CHECK (rrp_source IN ('config', 'estimated')),
+  image_key      TEXT,                            -- R2 object key
+  created_at     TEXT NOT NULL,
+  updated_at     TEXT NOT NULL,
+  UNIQUE (release_id, configuration)
+);
+
+-- Raw titles seen anywhere, mapped to a release. Deterministic first, LLM only on failure.
+CREATE TABLE title_matches (
+  title_hash   TEXT PRIMARY KEY,                  -- sha-256 of source id + normalised title
   raw_title    TEXT NOT NULL,
   source_id    TEXT NOT NULL,
-  product_id   TEXT REFERENCES products (id),     -- NULL = seen but unmatched / excluded
-  method       TEXT NOT NULL CHECK (method IN ('deterministic', 'llm', 'manual', 'unmatched')),
+  release_id   TEXT REFERENCES releases (id),     -- NULL = no release (old stock, unmatched)
+  method       TEXT NOT NULL CHECK (method IN ('deterministic', 'created', 'llm', 'manual', 'unmatched')),
   created_at   TEXT NOT NULL
 );
-CREATE INDEX idx_aliases_product ON product_aliases (product_id);
+CREATE INDEX idx_title_matches_release ON title_matches (release_id);
 
 CREATE TABLE llm_match_cache (
   title_hash  TEXT PRIMARY KEY,
@@ -115,7 +129,7 @@ CREATE TABLE llm_match_cache (
 
 CREATE TABLE drops (
   id                TEXT PRIMARY KEY,             -- ULID
-  product_id        TEXT NOT NULL REFERENCES products (id),
+  release_id        TEXT NOT NULL REFERENCES releases (id),
   kind              TEXT NOT NULL DEFAULT 'release' CHECK (kind IN ('release', 'preorder_open', 'timed_window')),
   starts_at         TEXT,                         -- NULL while TBD
   ends_at           TEXT,                         -- timed windows only
@@ -125,7 +139,7 @@ CREATE TABLE drops (
   status            TEXT NOT NULL DEFAULT 'upcoming' CHECK (status IN ('upcoming', 'live', 'past', 'cancelled')),
   created_at        TEXT NOT NULL,
   updated_at        TEXT NOT NULL,
-  UNIQUE (product_id, kind)
+  UNIQUE (release_id, kind)
 );
 CREATE INDEX idx_drops_starts ON drops (starts_at);
 
@@ -136,6 +150,8 @@ CREATE TABLE drop_observations (
   starts_at    TEXT,
   precision    TEXT NOT NULL,
   confidence   TEXT NOT NULL,
+  precedence   INTEGER NOT NULL,                  -- lower wins
+  region       TEXT,
   raw          TEXT,                              -- the date text exactly as published
   first_seen_at TEXT NOT NULL,
   last_seen_at TEXT NOT NULL,
@@ -160,8 +176,9 @@ CREATE INDEX idx_date_history_drop ON drop_date_history (drop_id, changed_at);
 -- Shared event stream. Personal notifications are derived from it per owner.
 CREATE TABLE events (
   id          INTEGER PRIMARY KEY AUTOINCREMENT,
-  type        TEXT NOT NULL,                      -- drop_discovered | date_changed | went_live | restock | price_changed | source_failing | shipping_reverify ...
+  type        TEXT NOT NULL,                      -- release_discovered | date_changed | went_live | restock | source_failing | shipping_reverify ...
   drop_id     TEXT,
+  release_id  TEXT,
   product_id  TEXT,
   listing_id  TEXT,
   source_id   TEXT,
@@ -188,7 +205,8 @@ CREATE TABLE listings (
   release_text   TEXT,                            -- release date text found on the listing
   purchase_limit INTEGER,
   first_seen_at  TEXT NOT NULL,
-  last_seen_at   TEXT NOT NULL,
+  last_seen_at   TEXT NOT NULL,                   -- refreshed at most daily to save D1 writes
+  last_changed_at TEXT NOT NULL,
   gone_at        TEXT,                            -- disappeared from the feed
   UNIQUE (retailer_id, external_id)
 );
@@ -239,7 +257,7 @@ INSERT INTO owners (id, name, created_at) VALUES ('owner_1', 'Owner', strftime('
 
 CREATE TABLE watchlist (
   owner_id    TEXT NOT NULL REFERENCES owners (id),
-  target_type TEXT NOT NULL CHECK (target_type IN ('product', 'drop', 'player', 'line')),
+  target_type TEXT NOT NULL CHECK (target_type IN ('release', 'product', 'player', 'line')),
   target_id   TEXT NOT NULL,
   created_at  TEXT NOT NULL,
   PRIMARY KEY (owner_id, target_type, target_id)

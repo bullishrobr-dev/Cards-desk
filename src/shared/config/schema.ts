@@ -50,6 +50,8 @@ const Category = z.object({
   exclude: z.array(ExcludeRule).default([]),
   /** Exclude items whose box type is not recognised (used for Pokémon). */
   require_configuration: z.boolean().default(false),
+  /** Series names shared by many releases; ignored when telling releases apart. */
+  series: Keywords,
   /** Only these product languages are in scope. */
   languages: z.array(z.string()).default(['en']),
   weights: Weights,

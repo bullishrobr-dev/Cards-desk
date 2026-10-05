@@ -52,6 +52,8 @@ interface CompiledCategory {
 export interface Classifier {
   classify(input: ClassifyInput, ctx: ClassifyContext): Classification;
   normaliser: Normaliser;
+  /** Per category: tokens of series names (never distinguishing) and of product lines (always). */
+  matchTokens(category: string): { series: ReadonlySet<string>; lines: ReadonlySet<string> };
 }
 
 const isPattern = (k: string) => k.length > 2 && k.startsWith('/') && k.endsWith('/');
@@ -190,5 +192,22 @@ export function createClassifier(rules: RulesConfig): Classifier {
     };
   }
 
-  return { classify, normaliser: n };
+  const tokenCache = new Map<string, { series: ReadonlySet<string>; lines: ReadonlySet<string> }>();
+  function matchTokens(category: string) {
+    const cached = tokenCache.get(category);
+    if (cached) return cached;
+    const c = rules.categories[category];
+    const cat = categories.get(category);
+    const series = new Set(kw(c?.series ?? []).flatMap((k) => k.split(' ')).map(singular));
+    const generic = new Set<string>([...noise, ...series]);
+    for (const p of cat?.publishers ?? []) for (const a of p.aliases) for (const t of a.split(' ')) generic.add(t);
+    for (const k of [...(cat?.match ?? []), ...(cat?.matchTaxonomy ?? [])]) for (const t of k.split(' ')) generic.add(singular(t));
+    const lines = new Set<string>();
+    for (const t of cat?.tiers ?? []) for (const l of t.lines) for (const tok of l.split(' ')) if (!generic.has(tok)) lines.add(singular(tok));
+    const out = { series, lines };
+    tokenCache.set(category, out);
+    return out;
+  }
+
+  return { classify, normaliser: n, matchTokens };
 }

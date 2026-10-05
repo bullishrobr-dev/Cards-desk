@@ -192,11 +192,13 @@ categories:
     languages: [en]
     # Pokémon items with no recognised box type are excluded rather than guessed.
     require_configuration: true
+    # Series names shared by many sets. They never tell two releases apart.
+    series: [mega evolution, scarlet and violet, scarlet violet, sword and shield, sword shield, sun and moon, sun moon]
     weights: { tier: 40, configuration: 20, scarcity: 20, relevance: 20 }
     tiers:
       - tier: Premium collection
         points_pct: 100
-        lines: [ultra premium collection, super premium collection, premium collection, pokemon center elite trainer box]
+        lines: [ultra premium collection, super premium collection, premium collection]
       - tier: Special set # REVIEW: add special-set names as they are announced
         points_pct: 85
         lines: [30th celebration, ascended heroes]
@@ -205,6 +207,7 @@ categories:
         lines: [mega evolution]
     configurations:
       - { id: booster_box, label: Booster box / display, points_pct: 100, keywords: [booster box, booster display, display box, 36 pack, 36-pack, 36 booster, caja 36 sobres, caja de 36 sobres, 36 sobres] }
+      - { id: pc_etb, label: Pokémon Center Elite Trainer Box, points_pct: 80, keywords: [pokemon center elite trainer box] }
       - { id: etb, label: Elite Trainer Box, points_pct: 75, keywords: [elite trainer box, etb, caja entrenador de elite, coffret dresseur d elite] }
       - { id: booster_bundle, label: Booster bundle, points_pct: 50, keywords: [booster bundle] }
       - { id: other, label: Other sealed, points_pct: 25, keywords: [premium collection, ultra premium, collection, coffret, box, tin, lata, maletin] }
