@@ -4,8 +4,8 @@ import { baseNormalise, createNormaliser, decodeEntities } from './text.ts';
 import { createClassifier } from './classify.ts';
 
 const { classify } = createClassifier(rules);
-const SPORTS = { categories: ['football', 'f1'] };
-const POKEMON = { categories: ['pokemon'] };
+const SPORTS = { categories: ['football', 'f1'], listing: true };
+const POKEMON = { categories: ['pokemon'], listing: true };
 
 describe('text normalisation', () => {
   it('decodes WooCommerce HTML entities', () => {
@@ -89,6 +89,11 @@ describe('classification: in scope', () => {
   it('excludes a half-box variant of a full-box listing', () => {
     const c = classify({ title: 'Caja 36 Sobres Origen Perdido | Lost Origin', variantTitle: 'Caja 18 Inglés' }, { ...POKEMON, englishMarkers: ['inglés'] });
     expect(c.excludedRule).toBe('Half boxes');
+  });
+
+  it('applies box-type rules to shop listings only, not calendar rows', () => {
+    expect(classify({ title: 'Pokémon TCG: Mega Evolution—Delta Reign' }, { categories: ['pokemon'] }).excludedRule).toBeNull();
+    expect(classify({ title: 'Pokémon TCG: Mega Evolution—Delta Reign' }, POKEMON).excludedRule).toBe('Unrecognised product type');
   });
 
   it('flags watchlist players', () => {

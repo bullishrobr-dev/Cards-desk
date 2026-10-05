@@ -81,6 +81,7 @@ CREATE TABLE releases (
   tier           TEXT,
   tier_points_pct INTEGER NOT NULL DEFAULT 0,
   name           TEXT NOT NULL,
+  name_precedence INTEGER NOT NULL,               -- precedence of the source that named it; lower wins
   subject        TEXT NOT NULL,                   -- space-separated subject tokens
   players        TEXT,                            -- JSON array of watchlist players seen
   scarcity       TEXT,                            -- JSON array of scarcity signal ids

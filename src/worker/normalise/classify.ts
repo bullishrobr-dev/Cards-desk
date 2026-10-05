@@ -14,6 +14,11 @@ export interface ClassifyContext {
   categories: string[];
   /** Shop-specific markers that confirm English-language stock. */
   englishMarkers?: string[];
+  /**
+   * True for shop listings (a box you can buy); false for calendar rows, which name a release
+   * rather than a box type, so box-type rules do not apply to them.
+   */
+  listing?: boolean;
 }
 
 export interface Classification {
@@ -128,7 +133,7 @@ export function createClassifier(rules: RulesConfig): Classifier {
     // 3. Exclusions: the category's own (more specific) first, then global. The first match is named.
     let excludedRule: string | null = null;
     for (const r of [...cat.exclude, ...globalExclude]) {
-      if (r.whenNoConfiguration && configuration) continue;
+      if (r.whenNoConfiguration && (configuration || !ctx.listing)) continue;
       if (r.phrases.some((k) => n.has(main, k)) || r.patterns.some((re) => re.test(main))) {
         excludedRule = r.rule;
         break;
@@ -138,7 +143,7 @@ export function createClassifier(rules: RulesConfig): Classifier {
       const markers = kw(ctx.englishMarkers);
       if (!markers.some((m) => n.has(main, m))) excludedRule = 'Not confirmed English-language';
     }
-    if (!excludedRule && cat.requireConfiguration && !configuration) excludedRule = 'Unrecognised product type';
+    if (!excludedRule && ctx.listing && cat.requireConfiguration && !configuration) excludedRule = 'Unrecognised product type';
 
     // 4. Publisher: an alias in the title or vendor; a single-publisher category defaults to it.
     const vendorText = n.text(input.vendor ?? '');
