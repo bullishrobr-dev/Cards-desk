@@ -66,6 +66,18 @@ export interface DropDetail extends DropSummary {
   history: Array<{ changedAt: string; oldStartsAt: string | null; newStartsAt: string | null; oldConfidence: string | null; newConfidence: string; sourceId: string }>;
   products: ProductView[];
   costNotes: Array<{ region: 'gi' | 'es'; from: string; text: string; source: string }>;
+  watched?: boolean;
+}
+
+export interface NotificationItem {
+  id: string;
+  trigger: string;
+  critical: number;
+  title: string;
+  body: string;
+  url: string | null;
+  created_at: string;
+  read_at: string | null;
 }
 
 export interface SourceHealth {

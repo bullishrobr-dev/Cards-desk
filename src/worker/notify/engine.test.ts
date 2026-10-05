@@ -13,14 +13,14 @@ import { runNotificationPass, type EngineDeps } from './engine.ts';
 const b64url = (b: ArrayBuffer | Uint8Array) => Buffer.from(b instanceof Uint8Array ? b : new Uint8Array(b)).toString('base64url');
 
 async function vapidKeys() {
-  const pair = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify']);
-  const jwk = await crypto.subtle.exportKey('jwk', pair.privateKey);
-  return { subject: 'mailto:test@example.com', publicKey: b64url(await crypto.subtle.exportKey('raw', pair.publicKey)), privateKey: jwk.d ?? '' };
+  const pair = (await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify'])) as CryptoKeyPair;
+  const jwk = (await crypto.subtle.exportKey('jwk', pair.privateKey)) as JsonWebKey;
+  return { subject: 'mailto:test@example.com', publicKey: b64url((await crypto.subtle.exportKey('raw', pair.publicKey)) as ArrayBuffer), privateKey: jwk.d ?? '' };
 }
 
 async function browserSubscriptionKeys() {
-  const pair = await crypto.subtle.generateKey({ name: 'ECDH', namedCurve: 'P-256' }, true, ['deriveBits']);
-  return { p256dh: b64url(await crypto.subtle.exportKey('raw', pair.publicKey)), auth: b64url(crypto.getRandomValues(new Uint8Array(16))) };
+  const pair = (await crypto.subtle.generateKey({ name: 'ECDH', namedCurve: 'P-256' }, true, ['deriveBits'])) as CryptoKeyPair;
+  return { p256dh: b64url((await crypto.subtle.exportKey('raw', pair.publicKey)) as ArrayBuffer), auth: b64url(crypto.getRandomValues(new Uint8Array(16))) };
 }
 
 let db: D1Database;

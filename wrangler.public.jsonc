@@ -1,0 +1,12 @@
+// Public Worker: push delivery receipts and the iCal feed only. Not behind Cloudflare Access;
+// every path needs a long random token. Shares the D1 database with the main Worker.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "card-desk-public",
+  "main": "./src/public-worker/index.ts",
+  "compatibility_date": "2026-10-02",
+  "workers_dev": true,
+  "d1_databases": [{ "binding": "DB", "database_name": "card_desk", "database_id": "REPLACE", "migrations_dir": "migrations" }],
+  "vars": { "APP_URL": "REPLACE" }
+  // Secrets: RECEIPT_TOKEN, ICAL_TOKEN (wrangler secret put … --config wrangler.public.jsonc)
+}

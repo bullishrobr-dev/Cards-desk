@@ -28,6 +28,7 @@
   "vars": {
     "APP_ENV": "production",
     "CLAUDE_MATCH_MODEL": "claude-haiku-4-5",
+    "APP_URL": "REPLACE",
     "PUBLIC_BASE_URL": "REPLACE"
   },
   "observability": { "enabled": true },

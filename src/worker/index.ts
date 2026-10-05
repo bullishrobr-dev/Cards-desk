@@ -33,8 +33,10 @@ async function handleJob(msg: JobMessage, env: Env): Promise<void> {
 
 export default {
   fetch: app.fetch,
-  async scheduled(controller, env) {
+  async scheduled(controller, env, ctx) {
     await dispatch({ db: env.DB, queue: env.JOBS, rules, sources, now: new Date(controller.scheduledTime), llmEnabled: Boolean(env.ANTHROPIC_API_KEY) });
+    // Safety net for alerts: event-driven notifications every 15 min; exact times come from the alarm.
+    ctx.waitUntil(env.ALARMS.get(env.ALARMS.idFromName('owner_1')).tick().then(() => undefined));
   },
   async queue(batch, env) {
     // Batch size is 1 (wrangler.jsonc), so each job gets the invocation's whole CPU budget.

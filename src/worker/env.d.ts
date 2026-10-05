@@ -12,4 +12,6 @@ interface Env {
   ANTHROPIC_API_KEY?: string;
   RECEIPT_TOKEN?: string;
   ICAL_TOKEN?: string;
+  /** Resend sender; defaults to onboarding@resend.dev, which only delivers to the Resend account's own address. */
+  RESEND_FROM?: string;
 }

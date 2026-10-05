@@ -26,7 +26,7 @@ export interface EngineDeps {
   fetchImpl?: typeof fetch;
 }
 
-interface NewNotification {
+export interface NewNotification {
   dedupeKey: string;
   trigger: string;
   title: string;
@@ -38,7 +38,7 @@ interface NewNotification {
 const LEAD_LABEL: Record<number, string> = { 1440: '24 hours', 60: '1 hour', 10: '10 minutes' };
 
 function isCritical(rules: RulesConfig, trigger: string): boolean {
-  return rules.alerts.critical.includes(trigger);
+  return trigger === 'test_critical' || rules.alerts.critical.includes(trigger);
 }
 
 async function watchedReleaseIds(db: D1Database, ownerId: string): Promise<Set<string>> {
@@ -281,10 +281,10 @@ export async function reportDeadSubscriptions(deps: EngineDeps): Promise<number>
 }
 
 /** One full pass. Returns when the alarm should next fire. */
-export async function runNotificationPass(deps: EngineDeps): Promise<{ created: number; pushed: number; emailed: number; nextAt: Date | null }> {
+export async function runNotificationPass(deps: EngineDeps, extra: NewNotification[] = []): Promise<{ created: number; pushed: number; emailed: number; nextAt: Date | null }> {
   const fromEvents = await notificationsFromEvents(deps);
   const lead = await dueLeadAlerts(deps);
-  const created = await insertNotifications(deps, [...fromEvents, ...lead]);
+  const created = await insertNotifications(deps, [...fromEvents, ...lead, ...extra]);
   const { pushed, emailed } = await deliver(deps, created);
   const fellBack = await fallbackUnconfirmed(deps);
   await reportDeadSubscriptions(deps);
