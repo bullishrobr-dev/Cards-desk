@@ -358,3 +358,10 @@ CREATE TABLE notification_deliveries (
   fallback_checked_at TEXT
 );
 CREATE INDEX idx_deliveries_pending ON notification_deliveries (status, sent_at);
+
+-- How far each owner's notification generator has read the shared event stream.
+CREATE TABLE notification_cursor (
+  owner_id      TEXT PRIMARY KEY REFERENCES owners (id),
+  last_event_id INTEGER NOT NULL DEFAULT 0
+);
+INSERT INTO notification_cursor (owner_id, last_event_id) VALUES ('owner_1', 0);
