@@ -7,6 +7,7 @@ import { runMaintenance } from './jobs/maintenance.ts';
 import { syncRetailers } from './ingest/retailers.ts';
 import { createAnthropicClient, llmMatchPending } from './ingest/llm-match.ts';
 import type { JobMessage } from './jobs/types.ts';
+import { api } from './api/routes.ts';
 
 export { AlertScheduler } from './alerts/scheduler-do.ts';
 
@@ -16,6 +17,7 @@ const classifier = createClassifier(rules);
 const app = new Hono<{ Bindings: Env }>();
 
 app.get('/api/health', (c) => c.json({ ok: true, env: c.env.APP_ENV }));
+app.route('/api', api);
 
 async function handleJob(msg: JobMessage, env: Env): Promise<void> {
   const now = new Date();
