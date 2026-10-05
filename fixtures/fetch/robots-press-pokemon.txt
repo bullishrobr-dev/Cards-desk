@@ -1,0 +1,7 @@
+﻿User-agent: *
+Crawl-Delay: 5
+# don't crawl /Files/File
+Disallow: /Files/File
+Disallow: /Files/Download
+Disallow: /User/CheckPayment
+Disallow: /User/PaymentPending

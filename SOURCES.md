@@ -62,7 +62,7 @@ Not used: Get Sports Cards (UK-only for now), ScuzzCards and Otakura (no relevan
 
 | Rank | ID | Retailer | Country | Platform / status | GI | ES | English marker | Pre-order signal |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `zatu` | Zatu | UK | Shopify, live JSON (`Crawl-delay: 10`) | **yes**, FedEx £17–22 | yes, £9.50–10.29 | default English | collection `pokemon-pre-orders` |
+| 1 | `zatu` | Zatu | UK | Shopify, live JSON (we wait 10 s between requests as a courtesy; its `Crawl-delay: 10` only names SEO bots) | **yes**, FedEx £17–22 | yes, £9.50–10.29 | default English | collection `pokemon-pre-orders` |
 | 2 | `pokemillon` | Pokemillon | ES | Shopify, live JSON | **yes**, €19.90 certified | yes, from €4.50 | variant option `Idioma: Inglés` | tag `Reserva` |
 | 3 | `pokegeek` | Poke-Geek | FR | Shopify, live JSON | **yes**, €33–42.50 | yes, from €6.99 | collection `etb-anglaise` | |
 | 4 | `southernlight` | Southern Light TCG | **GI** | Shopify, live JSON | **yes**, local £0 | no | collection `pokemon-english` | Mostly JP/CN/KR; local pickup. |
