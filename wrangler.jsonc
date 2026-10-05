@@ -20,7 +20,7 @@
   "kv_namespaces": [{ "binding": "KV", "id": "REPLACE" }],
   "queues": {
     "producers": [{ "binding": "JOBS", "queue": "card-desk-jobs" }],
-    "consumers": [{ "queue": "card-desk-jobs", "max_batch_size": 1, "max_retries": 2 }]
+    "consumers": [{ "queue": "card-desk-jobs", "max_batch_size": 1, "max_retries": 2, "max_concurrency": 1 }]
   },
   // Exact-time alerts (T-24h, T-1h, T-10m, live) are scheduled as Durable Object alarms.
   "durable_objects": { "bindings": [{ "name": "ALARMS", "class_name": "AlertScheduler" }] },

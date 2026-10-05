@@ -15,6 +15,9 @@ PRAGMA foreign_keys = ON;
 CREATE TABLE source_state (
   source_id            TEXT NOT NULL,          -- id from config/sources.yaml
   unit_key             TEXT NOT NULL,          -- URL path + page, e.g. "/products.json?page=2"
+  unit_kind            TEXT NOT NULL CHECK (unit_kind IN ('root', 'page', 'followup', 'listing')),
+  url                  TEXT NOT NULL,
+  has_more             INTEGER NOT NULL DEFAULT 0, -- a full page: the next page exists
   etag                 TEXT,
   last_modified        TEXT,
   content_hash         TEXT,                   -- for sources without validators
@@ -29,7 +32,7 @@ CREATE TABLE source_state (
   last_item_count      INTEGER,
   PRIMARY KEY (source_id, unit_key)
 );
-CREATE INDEX idx_source_state_due ON source_state (next_due_at);
+CREATE INDEX idx_source_state_due ON source_state (unit_kind, next_due_at);
 
 -- Every run of every unit. Feeds the Source health view.
 CREATE TABLE source_runs (
