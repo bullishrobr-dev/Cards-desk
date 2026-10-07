@@ -12,7 +12,7 @@ import {
   parsePressPokemonNa,
   parseSerebii,
 } from './calendars.ts';
-import { detectPreorder, parseShopify, parseWooCommerce, shopifyUnit, wooUnit } from './shops.ts';
+import { descriptionSignals, detectPreorder, parseShopify, parseWooCommerce, shopifyUnit, wooUnit } from './shops.ts';
 import type { ListingObservation, ReleaseObservation } from './types.ts';
 
 const fx = (p: string) => readFileSync(`fixtures/${p}`, 'utf8');
@@ -187,6 +187,20 @@ describe('pre-order rules', () => {
     expect(detectPreorder({ tags: [], title_prefixes: ['Pre Order - '], title_suffixes: [], title_contains: [] }, 'Pre Order - 2026 Topps', [], '').isPreorder).toBe(true);
     const v = detectPreorder({ tags: [], title_prefixes: [], title_suffixes: [], title_contains: [], body_date_regex: 'RELEASE DATE:\\s*(\\d{1,2}/\\d{1,2}/\\d{4})' }, 'x', [], 'Box. RELEASE DATE: 27/08/2026.');
     expect(v).toEqual({ isPreorder: true, releaseText: '27/08/2026' });
+  });
+});
+
+describe('description signals', () => {
+  it.each([
+    ['Strict limit of 2 per customer.', 2, []],
+    ['Max 1 per household please', 1, []],
+    ['Only 1 per customer', 1, []],
+    ['A premium soccer card release, limited to only 500 cases worldwide.', null, ['numbered']],
+    ['This exclusive series is strictly limited to just 30 boxes', null, ['numbered']],
+    ['Base cards are limited to /80, with parallels', null, []],
+    ['Free delivery on orders over £50', null, []],
+  ])('%s', (text, limit, scarcity) => {
+    expect(descriptionSignals(text)).toEqual({ purchaseLimit: limit, scarcity });
   });
 });
 

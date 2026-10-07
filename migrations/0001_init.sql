@@ -211,6 +211,7 @@ CREATE TABLE listings (
   is_preorder    INTEGER NOT NULL DEFAULT 0,
   release_text   TEXT,                            -- release date text found on the listing
   purchase_limit INTEGER,
+  scarcity       TEXT,                            -- JSON array of signal ids from the description
   first_seen_at  TEXT NOT NULL,
   last_seen_at   TEXT NOT NULL,                   -- refreshed at most daily to save D1 writes
   last_changed_at TEXT NOT NULL,

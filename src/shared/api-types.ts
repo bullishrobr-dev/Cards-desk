@@ -92,3 +92,33 @@ export interface SourceHealth {
   itemCount: number;
   status: 'ok' | 'failing' | 'never_run' | 'degraded';
 }
+
+export interface GateResult {
+  id: 'scope' | 'purchasable' | 'price';
+  pass: boolean;
+  /** Passed, but on missing information (e.g. shipping unknown, no RRP yet). */
+  flagged: boolean;
+  label: string;
+  detail: string;
+}
+
+export interface ScoreComponent {
+  id: 'tier' | 'configuration' | 'scarcity' | 'relevance';
+  label: string;
+  points: number;
+  max: number;
+  reason: string;
+}
+
+export interface DeskScore {
+  score: number;
+  /** What the rules gave before any owner override. */
+  rawScore: number;
+  label: 'Priority' | 'Watch' | 'Ignore';
+  /** Failed a hard gate: shown greyed out, never alerts unless watched. */
+  gated: boolean;
+  gates: GateResult[];
+  breakdown: ScoreComponent[];
+  overridden: boolean;
+  overrideNote: string | null;
+}

@@ -28,6 +28,18 @@ export function detectPreorder(rules: Retailer['preorder'], title: string, tags:
   return { isPreorder: tagHit || titleHit || releaseText !== null, releaseText };
 }
 
+const LIMIT_RE = /(?:limit(?:ed)?(?:\s+(?:of|to))?|max(?:imum)?(?:\s+of)?)\s+(\d{1,2})\s+(?:units?\s+|boxes\s+|items\s+)?(?:per|each)\s+(?:customer|household|order|person|account)/i;
+const PER_RE = /\b(\d{1,2})\s+per\s+(?:customer|household|person|account)\b/i;
+const LIMITED_RUN_RE = /\b(?:strictly\s+)?limited\s+to\s+(?:only\s+|just\s+)?\d[\d,.]*\s+(?:cases|boxes|copies|units|sets|tins)\b|\blimited\s+(?:edition|run)\b|\bnumbered\s+to\b/i;
+
+/** Scarcity read from a description: purchase limits and limited or numbered runs. */
+export function descriptionSignals(bodyText: string): { purchaseLimit: number | null; scarcity: string[] } {
+  const m = bodyText.match(LIMIT_RE) ?? bodyText.match(PER_RE);
+  const scarcity: string[] = [];
+  if (LIMITED_RUN_RE.test(bodyText)) scarcity.push('numbered');
+  return { purchaseLimit: m ? Number(m[1]) : null, scarcity };
+}
+
 /** Next page of the same path, when this page came back full. */
 function nextPage(unit: Unit, count: number): Unit[] {
   if (count < PAGE_SIZE) return [];
@@ -64,6 +76,7 @@ export function parseShopify(body: string, unit: Unit, retailer: Retailer): Pars
     const tags = Array.isArray(p.tags) ? p.tags : (p.tags ?? '').split(',').map((t) => t.trim()).filter(Boolean);
     const bodyText = textOf(p.body_html ?? '');
     const pre = detectPreorder(retailer.preorder, p.title, tags, bodyText);
+    const signals = descriptionSignals(bodyText);
     for (const v of p.variants) {
       const variantTitle = v.title === 'Default Title' ? null : v.title;
       items.push({
@@ -82,6 +95,7 @@ export function parseShopify(body: string, unit: Unit, retailer: Retailer): Pars
         isPreorder: pre.isPreorder,
         releaseText: pre.releaseText,
         publishedAt: p.published_at ?? null,
+        ...signals,
       });
     }
   }
@@ -116,7 +130,8 @@ export function parseWooCommerce(body: string, unit: Unit, retailer: Retailer): 
     const title = decodeEntities(p.name);
     const minorUnit = p.prices?.currency_minor_unit ?? 2;
     const raw = p.prices?.price ? Number(p.prices.price) : null;
-    const pre = detectPreorder(retailer.preorder, title, tags, textOf(p.description ?? ''));
+    const body = textOf(p.description ?? '');
+    const pre = detectPreorder(retailer.preorder, title, tags, body);
     return {
       kind: 'listing',
       externalId: String(p.id),
@@ -133,6 +148,7 @@ export function parseWooCommerce(body: string, unit: Unit, retailer: Retailer): 
       isPreorder: pre.isPreorder,
       releaseText: pre.releaseText,
       publishedAt: null,
+      ...descriptionSignals(body),
     };
   });
   return { items, followUps: nextPage(unit, json.length) };

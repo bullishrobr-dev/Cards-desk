@@ -36,6 +36,10 @@ export interface ListingObservation {
   isPreorder: boolean;
   releaseText: string | null;
   publishedAt: string | null;
+  /** "Limit 2 per customer" in the description. */
+  purchaseLimit: number | null;
+  /** Scarcity signal ids found in the description (e.g. "limited to 500 cases" → numbered). */
+  scarcity: string[];
 }
 
 export interface FxObservation {
