@@ -3,11 +3,11 @@ import { Notice } from './components.tsx';
 import { Link, useApi, usePath } from './lib.tsx';
 import { refreshReceiptUrl, registerServiceWorker, setBadge } from './push.ts';
 import { HomeScreenCoach } from './coach.tsx';
-import { BriefView, DetailView, LiveView, NotificationsView, SettingsView, SourcesView, UpcomingView, WatchlistView, type AppConfig } from './views.tsx';
+import { BriefView, DetailView, SignalsView, LiveView, NotificationsView, SettingsView, SourcesView, UpcomingView, WatchlistView, type AppConfig } from './views.tsx';
 
 const TABS = [
   { to: '/', label: 'Upcoming', match: (p: string) => p === '/' || p.startsWith('/drop/') || p.startsWith('/brief') },
-  { to: '/live', label: 'Live', match: (p: string) => p.startsWith('/live') },
+  { to: '/live', label: 'Live', match: (p: string) => p.startsWith('/live') || p.startsWith('/signals') },
   { to: '/watchlist', label: 'Watchlist', match: (p: string) => p.startsWith('/watchlist') },
   { to: '/notifications', label: 'Alerts', match: (p: string) => p.startsWith('/notifications') },
   { to: '/settings', label: 'Settings', match: (p: string) => p.startsWith('/settings') || p.startsWith('/sources') },
@@ -36,6 +36,7 @@ export function App() {
     if (drop?.[1]) view = <DetailView id={decodeURIComponent(drop[1])} config={config} />;
     else if (pathname === '/live') view = <LiveView config={config} />;
     else if (pathname === '/brief') view = <BriefView config={config} />;
+    else if (pathname === '/signals') view = <SignalsView />;
     else if (pathname === '/watchlist') view = <WatchlistView config={config} />;
     else if (pathname === '/sources') view = <SourcesView />;
     else if (pathname === '/notifications') view = <NotificationsView onRead={unread.reload} />;

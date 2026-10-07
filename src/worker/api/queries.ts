@@ -1,5 +1,5 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
-import type { Confidence, DeskScore, DropDetail, DropSummary, ListingView, Money, Precision, ProductView, RrpSource, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
+import type { Confidence, DeskScore, DropDetail, DropSummary, ListingHistoryPoint, ListingView, Money, Precision, ProductView, RrpSource, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
 import { convertMinor, placeholders } from '../ingest/util.ts';
 import { addMinutes, dropInstant, localDate } from '../time.ts';
 import { loadScoreInputs } from '../score/load.ts';
@@ -215,6 +215,7 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
       .all<{ id: string; configuration: string; name: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: RrpSource | null }>(),
   ]);
   const labels = new Map([...cfg.sources.map((s) => [s.id, s.label] as const), ...cfg.retailers.map((r) => [r.id, r.name] as const)]);
+  const history = await listingHistory(db, listingRows.results.map((l) => l.id as string));
   const configLabel = (c: string) => rules.categories[d.category]?.configurations.find((x) => x.id === c)?.label ?? 'Sealed (type not recognised)';
 
   const productViews: ProductView[] = products.results.map((p) => {
@@ -234,6 +235,7 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
         shipsEs: { value: l.ships_es as ShipFlag, verifiedAt: (l.ships_es_verified_at as string) ?? null, note: (l.ships_es_note as string) ?? null },
         priceVsRrp: l.price_minor === null ? null : ratio(l.price_minor as number, l.currency as string, p.rrp_minor, p.rrp_currency, rates),
         lastChangedAt: l.last_changed_at as string,
+        history: history.get(l.id as string) ?? [],
       }));
     return {
       id: p.id,
@@ -276,6 +278,33 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     products: productViews,
     costNotes: rules.cost_notes.map((n) => ({ region: n.applies_to.region, from: n.applies_to.from, text: n.text, source: n.source })),
   };
+}
+
+const HISTORY_POINTS = 30;
+
+/** Price and stock changes per listing, merged by time; the latest HISTORY_POINTS kept. Two reads. */
+async function listingHistory(db: D1Database, listingIds: string[]): Promise<Map<string, ListingHistoryPoint[]>> {
+  const out = new Map<string, ListingHistoryPoint[]>();
+  for (let i = 0; i < listingIds.length; i += 90) {
+    const chunk = listingIds.slice(i, i + 90);
+    const ph = placeholders(chunk.length);
+    const [prices, stock] = await Promise.all([
+      db.prepare(`SELECT listing_id, at, price_minor, ratio_to_rrp FROM price_events WHERE listing_id IN (${ph})`).bind(...chunk).all<{ listing_id: string; at: string; price_minor: number; ratio_to_rrp: number | null }>(),
+      db.prepare(`SELECT listing_id, at, available FROM stock_events WHERE listing_id IN (${ph})`).bind(...chunk).all<{ listing_id: string; at: string; available: number }>(),
+    ]);
+    const merged = new Map<string, Map<string, ListingHistoryPoint>>();
+    const point = (id: string, at: string) => {
+      const m = merged.get(id) ?? new Map<string, ListingHistoryPoint>();
+      merged.set(id, m);
+      const p = m.get(at) ?? { at, priceMinor: null, available: null, ratio: null };
+      m.set(at, p);
+      return p;
+    };
+    for (const p of prices.results) Object.assign(point(p.listing_id, p.at), { priceMinor: p.price_minor, ratio: p.ratio_to_rrp });
+    for (const s of stock.results) point(s.listing_id, s.at).available = Boolean(s.available);
+    for (const [id, m] of merged) out.set(id, [...m.values()].sort((a, b) => a.at.localeCompare(b.at)).slice(-HISTORY_POINTS));
+  }
+  return out;
 }
 
 export async function sourceHealth(db: D1Database, cfg: SourcesConfig): Promise<SourceHealth[]> {

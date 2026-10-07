@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
-import type { DropDetail, DropSummary, NotificationItem, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
+import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSignals, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ScoreBadge, ShipTag } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
-import { dateLabel, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
+import { dateLabel, formatMinor as formatMinorText, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { Link, navigate, useApi } from './lib.tsx';
 import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
 
@@ -138,6 +138,7 @@ export function LiveView({ config }: { config: AppConfig }) {
     <section>
       <div className="view-head">
         <h1>Live now</h1>
+        <Link to="/signals" className="chip">Market signals</Link>
       </div>
       <Filters config={config} f={f} />
       {error ? <Notice tone="error">{error}</Notice> : null}
@@ -170,6 +171,109 @@ export function BriefView({ config }: { config: AppConfig }) {
       {gated.length ? <h2>Failing a hard rule</h2> : null}
       {gated.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
     </section>
+  );
+}
+
+const signedPct = (ratio: number) => {
+  const p = Math.round((ratio - 1) * 100);
+  return `${p > 0 ? '+' : ''}${p}%`;
+};
+
+const KIND_LABEL: Record<SectorSignals['moves'][number]['kind'], string> = { sold_out: 'Sold out', restock: 'Restock', price_up: 'Price up', price_down: 'Price down' };
+
+function hoursLabel(h: number | null): string {
+  if (h === null) return '—';
+  return h < 48 ? `${Math.round(h)} h` : `${Math.round(h / 24)} days`;
+}
+
+/** Sell-out speed, prices against RRP and recent moves, from what the shops have shown us. */
+export function SignalsView() {
+  const [days, setDays] = useState<'7' | '30' | '90'>('30');
+  const { data, error } = useApi<SectorSignals>(`/api/signals?days=${days}`);
+  return (
+    <section>
+      <div className="view-head">
+        <h1>Market signals</h1>
+        <Chips<'7' | '30' | '90'> label="Window" value={days} onChange={setDays} options={[{ id: '7', label: '7 days' }, { id: '30', label: '30 days' }, { id: '90', label: '90 days' }]} />
+      </div>
+      <p className="small muted">From the shops this app watches: stock changes and price changes since each box was first seen. Shop asking prices, not sold prices.</p>
+      {error ? <Notice tone="error">{error}</Notice> : null}
+      {data ? (
+        <table className="table signals">
+          <thead>
+            <tr>
+              <th />
+              <th>Sell-outs</th>
+              <th>Typical time to sell out</th>
+              <th>Typical price vs RRP</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.categories.map((c) => (
+              <tr key={c.category}>
+                <td>{CATEGORY_LABEL[c.category] ?? c.label}</td>
+                <td>{c.soldOut}</td>
+                <td>{hoursLabel(c.medianHoursToSellOut)}</td>
+                <td>
+                  {c.medianRatio === null ? '—' : signedPct(c.medianRatio)}
+                  {c.aboveTolerance !== null ? <div className="small muted">{Math.round(c.aboveTolerance * 100)}% of {c.pricedListings} above RRP</div> : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : null}
+      <h2>Recent moves</h2>
+      {data && data.moves.length === 0 ? <Empty>No sell-outs, restocks or price moves of 10% or more in this window.</Empty> : null}
+      {data?.moves.map((m, i) => {
+        const body = (
+          <>
+            <div className="small muted">
+              {formatStamp(m.at)} · {m.retailer}
+            </div>
+            <div>
+              <span className={`move move-${m.kind}`}>{KIND_LABEL[m.kind]}</span> {m.release}
+            </div>
+            <div className="small">{m.detail}</div>
+          </>
+        );
+        return m.dropId ? (
+          <Link key={i} to={`/drop/${m.dropId}`} className="move-row">
+            {body}
+          </Link>
+        ) : (
+          <div key={i} className="move-row">
+            {body}
+          </div>
+        );
+      })}
+    </section>
+  );
+}
+
+/** A listing's price and stock changes, newest last, folded away by default. */
+function PriceHistory({ listing }: { listing: ListingView }) {
+  if (listing.history.length < 2) return null;
+  let lastPrice: number | null = null;
+  return (
+    <details className="history-fold">
+      <summary className="small">Price and stock history ({listing.history.length})</summary>
+      <ol className="history small">
+        {listing.history.map((h) => {
+          const parts: string[] = [];
+          if (h.priceMinor !== null && h.priceMinor !== lastPrice) {
+            parts.push(`${formatMinorText(h.priceMinor, listing.price?.currency ?? 'GBP')}${h.ratio ? ` (${signedPct(h.ratio)} vs RRP)` : ''}`);
+            lastPrice = h.priceMinor;
+          }
+          if (h.available !== null) parts.push(h.available ? 'in stock' : 'out of stock');
+          return (
+            <li key={h.at}>
+              <span className="muted">{formatStamp(h.at)}</span> {parts.join(', ')}
+            </li>
+          );
+        })}
+      </ol>
+    </details>
   );
 }
 
@@ -306,6 +410,7 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
                 <RrpNote ratio={l.priceVsRrp} tolerance={tolerance} estimated={p.rrp?.source === 'estimated'} />
                 <a className="shop-link" href={l.url} target="_blank" rel="noopener noreferrer">View at shop ↗</a>
               </div>
+              <PriceHistory listing={l} />
             </div>
           ))}
         </div>

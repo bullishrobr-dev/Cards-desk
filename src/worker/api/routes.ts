@@ -4,6 +4,7 @@ import { requireAccess, type AccessIdentity } from './access.ts';
 import { dropDetail, listDrops, sourceHealth } from './queries.ts';
 import { buildCalendar, watchedCalendarDrops } from '../notify/ical.ts';
 import { buildBrief } from '../notify/brief.ts';
+import { sectorSignals } from './signals.ts';
 
 export const api = new Hono<{ Bindings: Env; Variables: { identity: AccessIdentity } }>();
 
@@ -29,6 +30,12 @@ api.get('/drops/:id', async (c) => {
 });
 
 api.get('/brief', async (c) => c.json(await buildBrief(c.env.DB, rules, new Date(), c.get('identity').ownerId)));
+
+api.get('/signals', async (c) => {
+  const days = Number(c.req.query('days') ?? 30);
+  if (![7, 30, 90].includes(days)) return c.json({ error: 'days must be 7, 30 or 90' }, 400);
+  return c.json(await sectorSignals(c.env.DB, rules, new Date(), days));
+});
 
 api.get('/sources/health', async (c) => c.json(await sourceHealth(c.env.DB, sources)));
 

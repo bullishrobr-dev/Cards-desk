@@ -55,6 +55,8 @@ export interface ListingView {
   shipsEs: { value: ShipFlag; verifiedAt: string | null; note: string | null };
   priceVsRrp: number | null;
   lastChangedAt: string;
+  /** Price and stock changes since first seen, oldest first (up to 30). */
+  history: ListingHistoryPoint[];
 }
 
 export interface ProductView {
@@ -140,4 +142,39 @@ export interface WeeklyBrief {
   watch: number;
   gated: number;
   drops: DropSummary[];
+}
+
+/** One point in a listing's price or stock history. */
+export interface ListingHistoryPoint {
+  at: string;
+  priceMinor: number | null;
+  available: boolean | null;
+  /** Price ÷ the RRP in force at the time, when one was known. */
+  ratio: number | null;
+}
+
+/** What shops have done lately, per category: sell-out speed, price against RRP, recent moves. */
+export interface SectorSignals {
+  days: number;
+  categories: Array<{
+    category: string;
+    label: string;
+    /** Listings still on shop sites (in stock or not) whose box type has a known RRP. */
+    pricedListings: number;
+    /** Median current price ÷ RRP; null when nothing is priced against an RRP. */
+    medianRatio: number | null;
+    /** Share of those listings above the RRP tolerance (0–1). */
+    aboveTolerance: number | null;
+    soldOut: number;
+    /** Median hours from going on sale (or first seen) to selling out. */
+    medianHoursToSellOut: number | null;
+  }>;
+  moves: Array<{
+    at: string;
+    kind: 'sold_out' | 'restock' | 'price_up' | 'price_down';
+    dropId: string | null;
+    release: string;
+    retailer: string;
+    detail: string;
+  }>;
 }
