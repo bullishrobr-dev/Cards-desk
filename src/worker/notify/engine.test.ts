@@ -110,6 +110,29 @@ describe('lead-time alerts for a watched drop (Chrome F1, live 14 Oct 22:00 UTC)
 });
 
 describe('events become notifications', () => {
+  it('a newly found drop that ranks Priority alerts once; lower scores and watched drops do not', async () => {
+    const pick = async (like: string) => (await db.prepare(`SELECT id FROM releases WHERE name LIKE ?`).bind(like).first<string>('id')) ?? '';
+    const flawless = await pick('%Flawless%');
+    const carbon = await pick('%Carbon Formula 1%');
+    expect(flawless && carbon).toBeTruthy();
+    // Calendar rows alone cannot reach 75 yet, so an owner override stands in for a strong score.
+    await db.prepare(`INSERT INTO score_overrides (owner_id, release_id, score, created_at) VALUES ('owner_1', ?, 85, 'now'), ('owner_1', ?, 60, 'now'), ('owner_1', ?, 95, 'now')`).bind(flawless, carbon, f1Release).run();
+    const discover = (rid: string) => db.prepare(`INSERT INTO events (type, release_id, payload, created_at) VALUES ('release_discovered', ?, '{}', '2026-10-06T08:00:00Z')`).bind(rid).run();
+    await discover(flawless);
+    await discover(carbon);
+    await discover(f1Release); // watched: it already has its own alerts
+    // Failing a hard gate (here: publisher out of scope) never alerts, whatever the score.
+    const gated = await pick('%Arsenal FC%');
+    await db.prepare(`UPDATE releases SET publisher = NULL WHERE id = ?`).bind(gated).run();
+    await db.prepare(`INSERT INTO score_overrides (owner_id, release_id, score, created_at) VALUES ('owner_1', ?, 99, 'now')`).bind(gated).run();
+    await discover(gated);
+    await runNotificationPass(deps('2026-10-06T08:00:30Z').d);
+    expect(await notifications()).toEqual([{ trigger: 'priority_new', critical: 0, title: expect.stringMatching(/^New Priority drop: .*Flawless/) }]);
+    await discover(flawless);
+    await runNotificationPass(deps('2026-10-06T09:00:00Z').d);
+    expect(await notifications()).toHaveLength(1);
+  });
+
   it('a date change on a watched drop is critical; on an unwatched drop it is silent', async () => {
     await db
       .prepare(`INSERT INTO events (type, drop_id, release_id, payload, created_at) VALUES ('date_changed', ?, ?, ?, '2026-10-06T08:00:00Z')`)

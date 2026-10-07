@@ -3,10 +3,13 @@ import type { RulesConfig } from '../../shared/config/schema.ts';
 import { ulid } from '../ingest/util.ts';
 import { addMinutes, dropInstant } from '../time.ts';
 import { sendEmail, sendPush, type EmailConfig, type PushBody } from './channels.ts';
+import { latestRates } from '../api/queries.ts';
+import { scoreReleases } from '../score/load.ts';
 
 /**
  * Notifications for one owner:
- * 1. turn new shared events into personal notifications (watched drops, failing sources …);
+ * 1. turn new shared events into personal notifications (watched drops, failing sources, a
+ *    drop newly ranked Priority …);
  * 2. create lead-time alerts (T-24h, T-1h, T-10m) when they fall due;
  * 3. deliver new notifications by Web Push, recording every attempt;
  * 4. email a critical alert whose push is not confirmed within the receipt timeout,
@@ -88,9 +91,42 @@ export async function notificationsFromEvents(deps: EngineDeps): Promise<NewNoti
       out.push({ dedupeKey: `event:${e.id}`, trigger: 'shipping_reverify', title: `Re-check shipping: ${e.source_id}`, body: `The shop's country list changed (${String(p.before)} → ${String(p.after)}). Re-verify Gibraltar/Spain shipping.`, url: `${deps.appUrl}/sources`, eventId: e.id });
     }
   }
+  out.push(...(await newPriorityAlerts(deps, events.results, watched)));
   const last = events.results[events.results.length - 1]?.id ?? cursor;
   await db.prepare('UPDATE notification_cursor SET last_event_id = ? WHERE owner_id = ?').bind(last, ownerId).run();
   return out;
+}
+
+/** Events after which a release's Desk Score may have changed. */
+const RESCORE_EVENTS = new Set(['release_discovered', 'date_set', 'date_changed', 'confidence_changed', 'restock']);
+
+/**
+ * "New Priority drop": once per release, the first time it scores Priority and passes every hard
+ * gate. Watched releases are skipped (you already have their alerts); gated ones never alert.
+ */
+async function newPriorityAlerts(deps: EngineDeps, events: Array<{ type: string; release_id: string | null; release_name: string | null }>, watched: Set<string>): Promise<NewNotification[]> {
+  const names = new Map<string, string>();
+  for (const e of events) if (e.release_id && RESCORE_EVENTS.has(e.type) && !watched.has(e.release_id)) names.set(e.release_id, e.release_name ?? 'A new drop');
+  if (names.size === 0) return [];
+  const scores = await scoreReleases(deps.db, deps.rules, await latestRates(deps.db), [...names.keys()], deps.ownerId);
+  const ids = [...scores].filter(([, s]) => s.label === 'Priority' && !s.gated).map(([id]) => id);
+  if (ids.length === 0) return [];
+  const drops = await deps.db
+    .prepare(`SELECT id, release_id FROM drops WHERE kind = 'release' AND status IN ('upcoming', 'live') AND release_id IN (${ids.map(() => '?').join(',')})`)
+    .bind(...ids)
+    .all<{ id: string; release_id: string }>();
+  return drops.results.map((d) => {
+    const s = scores.get(d.release_id);
+    const why = s?.breakdown.filter((b) => b.points > 0).map((b) => b.label.toLowerCase()).join(', ');
+    return {
+      dedupeKey: `priority:${d.release_id}`,
+      trigger: 'priority_new',
+      title: `New Priority drop: ${names.get(d.release_id)}`,
+      body: `Desk Score ${s?.score ?? ''}${why ? ` (${why})` : ''}. Watch it to get countdown alerts.`,
+      url: `${deps.appUrl}/drop/${d.id}`,
+      eventId: null,
+    };
+  });
 }
 
 interface WatchedDrop {
