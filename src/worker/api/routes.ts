@@ -3,6 +3,7 @@ import { rules, sources } from '../../shared/config/index.ts';
 import { requireAccess, type AccessIdentity } from './access.ts';
 import { dropDetail, listDrops, sourceHealth } from './queries.ts';
 import { buildCalendar, watchedCalendarDrops } from '../notify/ical.ts';
+import { buildBrief } from '../notify/brief.ts';
 
 export const api = new Hono<{ Bindings: Env; Variables: { identity: AccessIdentity } }>();
 
@@ -26,6 +27,8 @@ api.get('/drops/:id', async (c) => {
   if (!detail) return c.json({ error: 'Not found' }, 404);
   return c.json(detail);
 });
+
+api.get('/brief', async (c) => c.json(await buildBrief(c.env.DB, rules, new Date(), c.get('identity').ownerId)));
 
 api.get('/sources/health', async (c) => c.json(await sourceHealth(c.env.DB, sources)));
 

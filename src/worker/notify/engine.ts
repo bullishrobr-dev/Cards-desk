@@ -5,6 +5,7 @@ import { addMinutes, dropInstant } from '../time.ts';
 import { sendEmail, sendPush, type EmailConfig, type PushBody } from './channels.ts';
 import { latestRates } from '../api/queries.ts';
 import { scoreReleases } from '../score/load.ts';
+import { briefMoments, briefSummary, buildBrief } from './brief.ts';
 
 /**
  * Notifications for one owner:
@@ -175,6 +176,20 @@ export async function dueLeadAlerts(deps: EngineDeps): Promise<NewNotification[]
   return out;
 }
 
+/** How long after its time a missed weekly brief is still sent (a cron tick, a brief outage). */
+const BRIEF_GRACE_MS = 90 * 60_000;
+
+/** 2b. The weekly brief push, once per week, within its grace period. */
+export async function dueBrief(deps: EngineDeps): Promise<NewNotification[]> {
+  const { last } = briefMoments(deps.now, deps.rules);
+  if (deps.now.getTime() - last.at.getTime() > BRIEF_GRACE_MS) return [];
+  const dedupeKey = `brief:${last.date}`;
+  const sent = await deps.db.prepare('SELECT 1 AS x FROM notifications WHERE owner_id = ? AND dedupe_key = ?').bind(deps.ownerId, dedupeKey).first('x');
+  if (sent) return [];
+  const brief = await buildBrief(deps.db, deps.rules, deps.now, deps.ownerId);
+  return [{ dedupeKey, trigger: 'weekly_brief', title: 'Your weekly brief', body: briefSummary(brief), url: `${deps.appUrl}/brief`, eventId: null }];
+}
+
 /** When the next lead-time alert falls due, for the Durable Object alarm. */
 export async function nextLeadAlertAt(deps: EngineDeps): Promise<Date | null> {
   let next: Date | null = null;
@@ -320,13 +335,14 @@ export async function reportDeadSubscriptions(deps: EngineDeps): Promise<number>
 export async function runNotificationPass(deps: EngineDeps, extra: NewNotification[] = []): Promise<{ created: number; pushed: number; emailed: number; nextAt: Date | null }> {
   const fromEvents = await notificationsFromEvents(deps);
   const lead = await dueLeadAlerts(deps);
-  const created = await insertNotifications(deps, [...fromEvents, ...lead, ...extra]);
+  const brief = await dueBrief(deps);
+  const created = await insertNotifications(deps, [...fromEvents, ...lead, ...brief, ...extra]);
   const { pushed, emailed } = await deliver(deps, created);
   const fellBack = await fallbackUnconfirmed(deps);
   await reportDeadSubscriptions(deps);
 
-  // Next wake: the next lead alert, or the receipt deadline of a critical push still pending.
-  const candidates: Date[] = [];
+  // Next wake: the next lead alert, the next weekly brief, or the receipt deadline of a critical push still pending.
+  const candidates: Date[] = [briefMoments(deps.now, deps.rules).next];
   const lead2 = await nextLeadAlertAt(deps);
   if (lead2) candidates.push(lead2);
   const oldestPending = await deps.db

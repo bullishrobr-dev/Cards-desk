@@ -9,6 +9,7 @@ import { ingestReleases } from '../ingest/ingest.ts';
 import { parseCollectosk } from '../adapters/calendars.ts';
 import type { ReleaseObservation } from '../adapters/types.ts';
 import { runNotificationPass, type EngineDeps } from './engine.ts';
+import { briefMoments, buildBrief } from './brief.ts';
 
 const b64url = (b: ArrayBuffer | Uint8Array) => Buffer.from(b instanceof Uint8Array ? b : new Uint8Array(b)).toString('base64url');
 
@@ -161,5 +162,48 @@ describe('dead subscriptions', () => {
     await runNotificationPass(next.d);
     expect(next.pushes()).toBe(0);
     expect(next.emails()).toBe(1); // T-10m by email; no second "push stopped" email
+  });
+});
+
+describe('weekly brief (Sunday 18:00 Gibraltar)', () => {
+  it('finds the brief either side of now, keeping 18:00 local across the clock change', () => {
+    // Summer time: 18:00 CEST is 16:00 UTC.
+    expect(briefMoments(new Date('2026-10-13T09:00:00Z'), rules)).toEqual({ last: { at: new Date('2026-10-11T16:00:00Z'), date: '2026-10-11' }, next: new Date('2026-10-18T16:00:00Z') });
+    // Clocks go back on Sunday 25 Oct: that brief is 17:00 UTC.
+    expect(briefMoments(new Date('2026-10-25T16:30:00Z'), rules).next).toEqual(new Date('2026-10-25T17:00:00Z'));
+    expect(briefMoments(new Date('2026-10-25T17:00:00Z'), rules).last).toEqual({ at: new Date('2026-10-25T17:00:00Z'), date: '2026-10-25' });
+  });
+
+  it('pushes once at the brief time, ranked by Desk Score, and sets the alarm for it', async () => {
+    const before = await runNotificationPass(deps('2026-10-11T15:00:00Z').d);
+    expect(before.nextAt?.toISOString()).toBe('2026-10-11T16:00:00.000Z');
+    expect(await notifications()).toEqual([]);
+
+    const at = deps('2026-10-11T16:00:00Z');
+    await runNotificationPass(at.d);
+    const [n] = (await db.prepare(`SELECT trigger, title, body, url, critical FROM notifications`).all<Record<string, unknown>>()).results;
+    expect(n).toMatchObject({ trigger: 'weekly_brief', title: 'Your weekly brief', url: 'https://drops.test/brief', critical: 0 });
+    expect(n?.body).toMatch(/^\d+ drops? in the next 14 days/);
+    expect(n?.body).toContain('Top: 2026 TOPPS Chrome Formula 1');
+    expect(at.pushes()).toBe(1);
+
+    await runNotificationPass(deps('2026-10-11T16:15:00Z').d);
+    expect(await notifications()).toHaveLength(1);
+  });
+
+  it('a brief missed by more than 90 minutes is skipped, not sent late', async () => {
+    await runNotificationPass(deps('2026-10-11T18:00:00Z').d);
+    expect(await notifications()).toEqual([]);
+  });
+
+  it('the brief lists only dated drops inside the window, gated ones last', async () => {
+    const b = await buildBrief(db, rules, new Date('2026-10-11T16:00:00Z'), 'owner_1');
+    expect(b).toMatchObject({ from: '2026-10-11', to: '2026-10-25' });
+    expect(b.drops.length).toBeGreaterThan(0);
+    expect(b.drops.every((d) => d.startsAt && d.startsAt.slice(0, 10) <= '2026-10-25' && ['day', 'time', 'week'].includes(d.precision))).toBe(true);
+    const firstGated = b.drops.findIndex((d) => d.desk.gated);
+    if (firstGated >= 0) expect(b.drops.slice(firstGated).every((d) => d.desk.gated)).toBe(true);
+    const scores = b.drops.filter((d) => !d.desk.gated && !d.pinned).map((d) => d.desk.score);
+    expect(scores).toEqual([...scores].sort((x, y) => y - x));
   });
 });

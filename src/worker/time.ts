@@ -22,8 +22,14 @@ export function tzOffsetMinutes(at: Date, tz: string): number {
 
 /** UTC instant of local midnight on `ymd` in `tz`. */
 export function localMidnightUtc(ymd: string, tz: string): Date {
+  return localTimeUtc(ymd, '00:00', tz);
+}
+
+/** UTC instant of wall-clock `hhmm` on `ymd` in `tz` (DST-safe: 18:00 stays 18:00 local). */
+export function localTimeUtc(ymd: string, hhmm: string, tz: string): Date {
   const [y, m, d] = ymd.split('-').map(Number);
-  const guess = new Date(Date.UTC(y ?? 1970, (m ?? 1) - 1, d ?? 1));
+  const [hh, mm] = hhmm.split(':').map(Number);
+  const guess = new Date(Date.UTC(y ?? 1970, (m ?? 1) - 1, d ?? 1, hh ?? 0, mm ?? 0));
   // Two passes handle a DST change between the guess and the real instant.
   let t = guess.getTime() - tzOffsetMinutes(guess, tz) * 60_000;
   t = guess.getTime() - tzOffsetMinutes(new Date(t), tz) * 60_000;
@@ -43,3 +49,8 @@ export function localDate(at: Date, tz: string): string {
 }
 
 export const addMinutes = (d: Date, m: number) => new Date(d.getTime() + m * 60_000);
+
+/** YYYY-MM-DD plus `days`. */
+export function addDays(ymd: string, days: number): string {
+  return new Date(Date.parse(`${ymd}T12:00:00Z`) + days * 86_400_000).toISOString().slice(0, 10);
+}

@@ -4,4 +4,4 @@ A personal PWA that tracks trading-card drops for football, Formula 1 and Englis
 
 The brief is in [`docs/brief.md`](docs/brief.md) and the project conventions are in [`CLAUDE.md`](CLAUDE.md).
 
-Status: Phase 1 (MVP) is built. To deploy it, see [`docs/deploy.md`](docs/deploy.md).
+Status: Phases 1 and 2 are built: drops, shops and alerts, plus the Desk Score, watchlist, pins, tags, overrides, the weekly brief and the iOS Home Screen coach. To deploy it, see [`docs/deploy.md`](docs/deploy.md).

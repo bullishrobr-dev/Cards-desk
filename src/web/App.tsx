@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import { Notice } from './components.tsx';
 import { Link, useApi, usePath } from './lib.tsx';
 import { refreshReceiptUrl, registerServiceWorker, setBadge } from './push.ts';
-import { DetailView, LiveView, NotificationsView, SettingsView, SourcesView, UpcomingView, WatchlistView, type AppConfig } from './views.tsx';
+import { HomeScreenCoach } from './coach.tsx';
+import { BriefView, DetailView, LiveView, NotificationsView, SettingsView, SourcesView, UpcomingView, WatchlistView, type AppConfig } from './views.tsx';
 
 const TABS = [
-  { to: '/', label: 'Upcoming', match: (p: string) => p === '/' || p.startsWith('/drop/') },
+  { to: '/', label: 'Upcoming', match: (p: string) => p === '/' || p.startsWith('/drop/') || p.startsWith('/brief') },
   { to: '/live', label: 'Live', match: (p: string) => p.startsWith('/live') },
   { to: '/watchlist', label: 'Watchlist', match: (p: string) => p.startsWith('/watchlist') },
   { to: '/notifications', label: 'Alerts', match: (p: string) => p.startsWith('/notifications') },
@@ -34,6 +35,7 @@ export function App() {
     const drop = pathname.match(/^\/drop\/([^/]+)$/);
     if (drop?.[1]) view = <DetailView id={decodeURIComponent(drop[1])} config={config} />;
     else if (pathname === '/live') view = <LiveView config={config} />;
+    else if (pathname === '/brief') view = <BriefView config={config} />;
     else if (pathname === '/watchlist') view = <WatchlistView config={config} />;
     else if (pathname === '/sources') view = <SourcesView />;
     else if (pathname === '/notifications') view = <NotificationsView onRead={unread.reload} />;
@@ -52,6 +54,7 @@ export function App() {
             Push notifications have stopped reaching your device. <Link to="/settings">Turn them back on</Link>.
           </Notice>
         ) : null}
+        <HomeScreenCoach />
         {error ? <Notice tone="error">{error}</Notice> : view}
       </main>
       <nav className="tabs" aria-label="Main">

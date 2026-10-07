@@ -6,7 +6,9 @@ The product brief is `docs/brief.md`; read it first. Verified sources are listed
 
 ## Current phase
 
-Phase 1 (MVP) is built and tested locally; deployment waits for the owner's Cloudflare account (`docs/deploy.md`). Phase 2 (Desk Score, full watchlist view, weekly brief, iOS coach) has not started.
+Phases 1 (MVP) and 2 (Desk Score, watchlist, pins, tags, overrides, "New Priority drop" alerts, weekly brief, iOS coach) are built and tested locally. Deployment waits for the owner's Cloudflare account (`docs/deploy.md`). Phase 3 (market data, checklists) has not started.
+
+The Desk Score lives in `src/worker/score/`. `desk-score.ts` is pure and unit-tested; `load.ts` builds its input from D1. Overrides and tags are per release (the scored unit); owner RRPs are per box type.
 
 Hosting is the Workers **Free** plan by owner decision: keep every queue job small (one catalogue page, bulk reads, one batched D1 write; at most ~12 D1 calls per page, enforced by a test).
 
@@ -44,7 +46,8 @@ src/worker/fetch/         polite fetch: robots.txt, challenge detection, back-of
 src/worker/normalise/     title normalisation, classification, release matching
 src/worker/ingest/        D1 ingestion, date decisions, market signals, LLM match pass
 src/worker/jobs/          15-min dispatcher, queue job runner, hourly maintenance
-src/worker/notify/        notification engine, Web Push, email fallback, iCal
+src/worker/score/         Desk Score (pure) and its D1 loader
+src/worker/notify/        notification engine, Web Push, email fallback, iCal, weekly brief
 src/worker/alerts/        AlertScheduler Durable Object (exact-time alarms)
 src/worker/api/           Hono API behind Cloudflare Access (JWT re-checked)
 src/public-worker/        public Worker: push receipts + iCal feed (token paths)
@@ -68,4 +71,6 @@ tools/                    deploy script, VAPID generator, fixture capture, local
 - **Box-type rules apply to shop listings only**; calendar rows name releases, not boxes.
 - **Shopify collection pages are not reliable filters**, so poll full catalogues for sports shops.
 - **A 304 on a full page still walks on to the next page.**
+- **"Numbered to /22" in a shop description is about parallels, not the box.** Only a stated run size ("limited to 500 cases") counts as scarcity from a description.
+- **Schedule local wall-clock times with `localTimeUtc`, never midnight plus hours.** The brief falls on Sundays, which is when the clocks change.
 - **Never `git checkout -- .` with uncommitted work.**

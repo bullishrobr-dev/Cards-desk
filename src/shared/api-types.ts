@@ -127,3 +127,15 @@ export interface DeskScore {
   overridden: boolean;
   overrideNote: string | null;
 }
+
+/** The weekly brief: the next N days of dated drops, ranked by Desk Score. */
+export interface WeeklyBrief {
+  /** Local dates (Europe/Gibraltar), inclusive. */
+  from: string;
+  to: string;
+  generatedAt: string;
+  priority: number;
+  watch: number;
+  gated: number;
+  drops: DropSummary[];
+}

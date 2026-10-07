@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import type { DropDetail, DropSummary, NotificationItem, SourceHealth } from '../shared/api-types.ts';
+import type { DropDetail, DropSummary, NotificationItem, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ScoreBadge, ShipTag } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
 import { dateLabel, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
@@ -143,6 +143,32 @@ export function LiveView({ config }: { config: AppConfig }) {
       {error ? <Notice tone="error">{error}</Notice> : null}
       {data && data.length === 0 ? <Empty>Nothing is live right now.</Empty> : null}
       {data?.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+    </section>
+  );
+}
+
+const briefDay = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short' });
+
+export function BriefView({ config }: { config: AppConfig }) {
+  const { data, error } = useApi<WeeklyBrief>('/api/brief');
+  const day = (ymd: string) => briefDay.format(new Date(`${ymd}T12:00:00Z`));
+  const open = data?.drops.filter((d) => !d.desk.gated) ?? [];
+  const gated = data?.drops.filter((d) => d.desk.gated) ?? [];
+  return (
+    <section>
+      <div className="view-head">
+        <h1>Weekly brief</h1>
+      </div>
+      {error ? <Notice tone="error">{error}</Notice> : null}
+      {data ? (
+        <p className="small muted">
+          {day(data.from)} to {day(data.to)}, ranked by Desk Score. {data.priority} Priority, {data.watch} Watch. A push arrives every Sunday at 18:00.
+        </p>
+      ) : null}
+      {data && data.drops.length === 0 ? <Empty>Nothing has a confirmed day in the next two weeks.</Empty> : null}
+      {open.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      {gated.length ? <h2>Failing a hard rule</h2> : null}
+      {gated.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
     </section>
   );
 }
