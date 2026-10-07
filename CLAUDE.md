@@ -6,7 +6,11 @@ The product brief is `docs/brief.md`; read it first. Verified sources are listed
 
 ## Current phase
 
-Phases 1 (MVP) and 2 (Desk Score, watchlist, pins, tags, overrides, "New Priority drop" alerts, weekly brief, iOS coach) are built and tested locally. Deployment waits for the owner's Cloudflare account (`docs/deploy.md`). Phase 3 (market data, checklists) has not started.
+Phases 1 (MVP) and 2 (Desk Score, watchlist, pins, tags, overrides, "New Priority drop" alerts, weekly brief, iOS coach) are built and tested locally. Deployment waits for the owner's Cloudflare account (`docs/deploy.md`).
+
+Phase 3 is partly built:
+- **Done:** collectosk release-page enrichment (box types, published RRPs, checklists with watchlist players and rookies), per-listing price history, and the Market signals view.
+- **Waiting on the owner:** the choice of a secondary-market price source. The recommendation is the Cardmarket price-guide files for Pokémon sealed, with PriceCharting as runner-up. The Cardmarket file is 15.6 MB, which cannot be parsed within the Free plan's 10 ms CPU, so it needs a GitHub Action pre-filter or Workers Paid.
 
 The Desk Score lives in `src/worker/score/`. `desk-score.ts` is pure and unit-tested; `load.ts` builds its input from D1. Overrides and tags are per release (the scored unit); owner RRPs are per box type.
 
@@ -72,5 +76,7 @@ tools/                    deploy script, VAPID generator, fixture capture, local
 - **Shopify collection pages are not reliable filters**, so poll full catalogues for sports shops.
 - **A 304 on a full page still walks on to the next page.**
 - **"Numbered to /22" in a shop description is about parallels, not the box.** Only a stated run size ("limited to 500 cases") counts as scarcity from a description.
+- **RRP precedence is owner > rules.yaml > published (collectosk) > estimated.** An estimate (the median of the first shop prices) can hide a 2× markup: the Chrome F1 hobby box was estimated at £783 against a published £415.
+- **"1st" badges on collectosk checklists are not rookies.** Legends get them too; only `RC` counts.
 - **Schedule local wall-clock times with `localTimeUtc`, never midnight plus hours.** The brief falls on Sundays, which is when the clocks change.
 - **Never `git checkout -- .` with uncommitted work.**
