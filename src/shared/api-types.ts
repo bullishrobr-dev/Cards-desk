@@ -197,3 +197,27 @@ export interface MarketView {
   /** Daily trend and low, oldest first (up to 90 days). */
   history: Array<{ date: string; trendMinor: number | null; lowMinor: number | null }>;
 }
+
+/** Every notification trigger the owner can switch off, in display order. */
+export const NOTIFICATION_TRIGGERS = [
+  { id: 'priority_new', label: 'New Priority drop', group: 'Discovery' },
+  { id: 'weekly_brief', label: 'Weekly brief (Sunday 18:00)', group: 'Discovery' },
+  { id: 't_minus_1440', label: '24 hours before a watched drop', group: 'Watched drops' },
+  { id: 't_minus_60', label: '1 hour before', group: 'Watched drops' },
+  { id: 't_minus_10', label: '10 minutes before', group: 'Watched drops' },
+  { id: 'live', label: 'When it goes live', group: 'Watched drops' },
+  { id: 'date_changed_watched', label: 'Date moved', group: 'Watched drops' },
+  { id: 'date_update_watched', label: 'Date set or confirmed', group: 'Watched drops' },
+  { id: 'restock', label: 'Back in stock', group: 'Watched drops' },
+  { id: 'source_failing', label: 'A source keeps failing', group: 'System' },
+  { id: 'shipping_reverify', label: "A shop's ship-to list changed", group: 'System' },
+] as const;
+
+export interface NotificationPref {
+  id: (typeof NOTIFICATION_TRIGGERS)[number]['id'];
+  label: string;
+  group: string;
+  enabled: boolean;
+  /** Critical alerts fall back to email when the push is not confirmed. */
+  critical: boolean;
+}

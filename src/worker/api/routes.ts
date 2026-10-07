@@ -5,6 +5,7 @@ import { dropDetail, listDrops, sourceHealth } from './queries.ts';
 import { buildCalendar, watchedCalendarDrops } from '../notify/ical.ts';
 import { buildBrief } from '../notify/brief.ts';
 import { sectorSignals } from './signals.ts';
+import { NOTIFICATION_TRIGGERS, type NotificationPref } from '../../shared/api-types.ts';
 
 export const api = new Hono<{ Bindings: Env; Variables: { identity: AccessIdentity } }>();
 
@@ -147,9 +148,31 @@ api.delete('/watch/:releaseId', async (c) => {
   return c.json({ watched: false });
 });
 
-// ---------- Pins, tags, score overrides, RRPs (personal; every row carries owner_id) ----------
+// ---------- Notification toggles ----------
 
 const jsonBody = async (c: { req: { json: () => Promise<unknown> } }) => ((await c.req.json().catch(() => null)) ?? {}) as Record<string, unknown>;
+
+api.get('/notification-prefs', async (c) => {
+  const rows = await c.env.DB.prepare('SELECT trigger, enabled FROM notification_prefs WHERE owner_id = ?').bind(c.get('identity').ownerId).all<{ trigger: string; enabled: number }>();
+  const off = new Set(rows.results.filter((r) => !r.enabled).map((r) => r.trigger));
+  const prefs: NotificationPref[] = NOTIFICATION_TRIGGERS.map((t) => ({ ...t, enabled: !off.has(t.id), critical: rules.alerts.critical.includes(t.id) }));
+  return c.json(prefs);
+});
+
+api.put('/notification-prefs/:trigger', async (c) => {
+  const trigger = c.req.param('trigger');
+  if (!NOTIFICATION_TRIGGERS.some((t) => t.id === trigger)) return c.json({ error: 'Unknown trigger' }, 400);
+  const enabled = (await jsonBody(c)).enabled;
+  if (typeof enabled !== 'boolean') return c.json({ error: 'enabled must be true or false' }, 400);
+  await c.env.DB
+    .prepare(`INSERT INTO notification_prefs (owner_id, trigger, enabled) VALUES (?, ?, ?) ON CONFLICT (owner_id, trigger) DO UPDATE SET enabled = excluded.enabled`)
+    .bind(c.get('identity').ownerId, trigger, enabled ? 1 : 0)
+    .run();
+  return c.json({ trigger, enabled });
+});
+
+// ---------- Pins, tags, score overrides, RRPs (personal; every row carries owner_id) ----------
+
 const exists = (db: D1Database, table: 'drops' | 'releases' | 'products', id: string) => db.prepare(`SELECT 1 AS x FROM ${table} WHERE id = ?`).bind(id).first('x');
 
 api.post('/pins/:dropId', async (c) => {

@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSignals, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ScoreBadge, ShipTag } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
+import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
+import type { RulesConfig } from '../shared/config/schema.ts';
 import { dateLabel, formatMinor as formatMinorText, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { Link, navigate, useApi } from './lib.tsx';
 import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
@@ -531,6 +533,7 @@ export function SettingsView({ config }: { config: AppConfig }) {
         <h1>Settings</h1>
       </div>
       <PushSettings />
+      <NotificationToggles />
       <CalendarSettings />
       <div className="card">
         <h3>Sources</h3>
@@ -541,7 +544,7 @@ export function SettingsView({ config }: { config: AppConfig }) {
       </div>
       <h2>Buying rules</h2>
       <p className="small muted">These come from config/rules.yaml in the repository. Change them there; the app is rebuilt on deploy.</p>
-      <pre className="rules">{JSON.stringify(config.rules, null, 2)}</pre>
+      <RulesViewer rules={config.rules as unknown as RulesConfig} />
     </section>
   );
 }

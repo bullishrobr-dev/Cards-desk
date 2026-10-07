@@ -189,3 +189,9 @@ main { padding: 12px 16px; }
 .move-price_down { background: var(--panel-2); color: var(--muted); }
 .history-fold { flex-basis: 100%; margin-top: 6px; }
 .history-fold summary { cursor: pointer; color: var(--accent); }
+
+/* Settings */
+.toggle { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; font-size: 0.9rem; cursor: pointer; }
+.toggle input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--accent); flex: none; }
+.card.off { opacity: 0.6; }
+details.card summary { cursor: pointer; padding: 8px 0; color: var(--accent); }

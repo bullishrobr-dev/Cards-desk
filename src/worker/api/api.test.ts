@@ -138,3 +138,16 @@ describe('API', () => {
     expect((await send('POST', '/pins/nope')).status).toBe(404);
   });
 });
+
+describe('notification toggles', () => {
+  it('lists every trigger, on by default, with critical ones marked; switching one off sticks', async () => {
+    const { body } = await get<Array<{ id: string; enabled: boolean; critical: boolean }>>('/notification-prefs');
+    expect(body.every((p) => p.enabled)).toBe(true);
+    expect(body.find((p) => p.id === 't_minus_60')?.critical).toBe(true);
+    expect(body.find((p) => p.id === 'priority_new')?.critical).toBe(false);
+    expect((await send('PUT', '/notification-prefs/restock', { enabled: false })).status).toBe(200);
+    expect((await get<Array<{ id: string; enabled: boolean }>>('/notification-prefs')).body.find((p) => p.id === 'restock')?.enabled).toBe(false);
+    expect((await send('PUT', '/notification-prefs/nope', { enabled: false })).status).toBe(400);
+    expect((await send('PUT', '/notification-prefs/restock', { enabled: 'no' })).status).toBe(400);
+  });
+});
