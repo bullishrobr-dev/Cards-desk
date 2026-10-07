@@ -43,9 +43,9 @@ export async function ingestEnrichment(deps: IngestDeps, releaseId: string, post
   const [release, products] = await Promise.all([
     db.prepare('SELECT id, category, players FROM releases WHERE id = ?').bind(releaseId).first<{ id: string; category: string; players: string | null }>(),
     db
-      .prepare('SELECT id, configuration, rrp_minor, rrp_currency, rrp_source FROM products WHERE release_id = ?')
+      .prepare('SELECT id, configuration, rrp_minor, rrp_currency, rrp_source, image_url FROM products WHERE release_id = ?')
       .bind(releaseId)
-      .all<{ id: string; configuration: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: string | null }>(),
+      .all<{ id: string; configuration: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: string | null; image_url: string | null }>(),
   ]);
   if (!release) throw new Error(`release ${releaseId} no longer exists`);
 
@@ -70,12 +70,16 @@ export async function ingestEnrichment(deps: IngestDeps, releaseId: string, post
       writes.push(
         db
           .prepare(
-            `INSERT OR IGNORE INTO products (id, release_id, configuration, name, rrp_minor, rrp_currency, rrp_source, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+            `INSERT OR IGNORE INTO products (id, release_id, configuration, name, rrp_minor, rrp_currency, rrp_source, image_url, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
           )
-          .bind(ulid(now.getTime()), releaseId, cfg, f.title, rrp?.minor ?? null, rrp?.currency ?? null, rrp ? 'published' : null, ts, ts),
+          .bind(ulid(now.getTime()), releaseId, cfg, f.title, rrp?.minor ?? null, rrp?.currency ?? null, rrp ? 'published' : null, f.imageUrl, ts, ts),
       );
-    } else if (rrp && existing.rrp_source !== 'config' && (existing.rrp_minor !== rrp.minor || existing.rrp_currency !== rrp.currency || existing.rrp_source !== 'published')) {
+    } else if (f.imageUrl && existing.image_url !== f.imageUrl) {
+      // A box photo is not a score change: no event, just the picture.
+      writes.push(db.prepare('UPDATE products SET image_url = ?, updated_at = ? WHERE id = ?').bind(f.imageUrl, ts, existing.id));
+    }
+    if (existing && rrp && existing.rrp_source !== 'config' && (existing.rrp_minor !== rrp.minor || existing.rrp_currency !== rrp.currency || existing.rrp_source !== 'published')) {
       stats.rrpsSet += 1;
       rrpChanges.push({ configuration: cfg, ...rrp });
       writes.push(

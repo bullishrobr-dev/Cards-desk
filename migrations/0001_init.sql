@@ -106,7 +106,7 @@ CREATE TABLE products (
   rrp_minor      INTEGER,
   rrp_currency   TEXT,
   rrp_source     TEXT CHECK (rrp_source IN ('config', 'published', 'estimated')), -- config > published > estimated
-  image_key      TEXT,                            -- R2 object key
+  image_url      TEXT,                            -- box photo (collectosk or a shop's CDN); shown, never fetched by the Worker
   created_at     TEXT NOT NULL,
   updated_at     TEXT NOT NULL,
   UNIQUE (release_id, configuration)
@@ -216,6 +216,7 @@ CREATE TABLE listings (
   release_text   TEXT,                            -- release date text found on the listing
   purchase_limit INTEGER,
   scarcity       TEXT,                            -- JSON array of signal ids from the description
+  image_url      TEXT,                            -- the shop's first product photo (its own CDN)
   first_seen_at  TEXT NOT NULL,
   last_seen_at   TEXT NOT NULL,                   -- refreshed at most daily to save D1 writes
   last_changed_at TEXT NOT NULL,

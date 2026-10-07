@@ -55,6 +55,7 @@ describe('API', () => {
     // All three boxes are pre-orders (not in stock), so they still count as buyable.
     expect(f1?.bestPrice?.currency).toBe('GBP');
     expect(f1?.bestPrice?.eur).toBeGreaterThan(f1?.bestPrice?.minor ?? 0);
+    expect(f1?.imageUrl).toMatch(/^https:\/\//);
     // Dated first, undated (TBD) last.
     const firstTbd = body.findIndex((d) => d.startsAt === null);
     expect(body.slice(firstTbd).every((d) => d.startsAt === null)).toBe(true);

@@ -364,9 +364,9 @@ export async function ingestListings(deps: IngestDeps, retailer: Retailer, items
 
   const existing = new Map(
     (
-      await selectIn<{ id: string; product_id: string | null; price_minor: number | null; available: number; is_preorder: number; release_text: string | null; purchase_limit: number | null; scarcity: string | null; last_seen_at: string; raw_title: string }>(
+      await selectIn<{ id: string; product_id: string | null; price_minor: number | null; available: number; is_preorder: number; release_text: string | null; purchase_limit: number | null; scarcity: string | null; image_url: string | null; last_seen_at: string; raw_title: string }>(
         db,
-        (ph) => `SELECT id, product_id, price_minor, available, is_preorder, release_text, purchase_limit, scarcity, last_seen_at, raw_title FROM listings WHERE id IN (${ph})`,
+        (ph) => `SELECT id, product_id, price_minor, available, is_preorder, release_text, purchase_limit, scarcity, image_url, last_seen_at, raw_title FROM listings WHERE id IN (${ph})`,
         kept.map((k) => `${retailer.id}:${k.obs.externalId}`),
       )
     ).map((l) => [l.id, l]),
@@ -421,10 +421,10 @@ export async function ingestListings(deps: IngestDeps, retailer: Retailer, items
       writes.push(
         db
           .prepare(
-            `INSERT INTO listings (id, retailer_id, external_id, product_id, url, raw_title, price_minor, currency, available, is_preorder, release_text, purchase_limit, scarcity, first_seen_at, last_seen_at, last_changed_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+            `INSERT INTO listings (id, retailer_id, external_id, product_id, url, raw_title, price_minor, currency, available, is_preorder, release_text, purchase_limit, scarcity, image_url, first_seen_at, last_seen_at, last_changed_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
           )
-          .bind(id, retailer.id, obs.externalId, product?.id ?? null, obs.url, obs.variantTitle ? `${obs.title} — ${obs.variantTitle}` : obs.title, obs.priceMinor, obs.currency, obs.available ? 1 : 0, obs.isPreorder ? 1 : 0, obs.releaseText, obs.purchaseLimit, JSON.stringify(obs.scarcity), ts, ts, ts),
+          .bind(id, retailer.id, obs.externalId, product?.id ?? null, obs.url, obs.variantTitle ? `${obs.title} — ${obs.variantTitle}` : obs.title, obs.priceMinor, obs.currency, obs.available ? 1 : 0, obs.isPreorder ? 1 : 0, obs.releaseText, obs.purchaseLimit, JSON.stringify(obs.scarcity), obs.imageUrl, ts, ts, ts),
         ...stockEvent(),
         ...priceEvent(),
       );
@@ -437,13 +437,15 @@ export async function ingestListings(deps: IngestDeps, retailer: Retailer, items
       Boolean(prev.is_preorder) !== obs.isPreorder ||
       prev.release_text !== obs.releaseText ||
       prev.purchase_limit !== obs.purchaseLimit ||
-      (prev.scarcity ?? '[]') !== JSON.stringify(obs.scarcity);
+      (prev.scarcity ?? '[]') !== JSON.stringify(obs.scarcity) ||
+      // A first photo is worth a write; a CDN version bump on an existing one is not.
+      (prev.image_url === null && obs.imageUrl !== null);
     if (priceChanged || stockChanged || otherChanged) {
       stats.changed += 1;
       writes.push(
         db
-          .prepare('UPDATE listings SET product_id = ?, url = ?, price_minor = ?, available = ?, is_preorder = ?, release_text = ?, purchase_limit = ?, scarcity = ?, last_seen_at = ?, last_changed_at = ?, gone_at = NULL WHERE id = ?')
-          .bind(product?.id ?? null, obs.url, obs.priceMinor, obs.available ? 1 : 0, obs.isPreorder ? 1 : 0, obs.releaseText, obs.purchaseLimit, JSON.stringify(obs.scarcity), ts, ts, id),
+          .prepare('UPDATE listings SET product_id = ?, url = ?, price_minor = ?, available = ?, is_preorder = ?, release_text = ?, purchase_limit = ?, scarcity = ?, image_url = COALESCE(?, image_url), last_seen_at = ?, last_changed_at = ?, gone_at = NULL WHERE id = ?')
+          .bind(product?.id ?? null, obs.url, obs.priceMinor, obs.available ? 1 : 0, obs.isPreorder ? 1 : 0, obs.releaseText, obs.purchaseLimit, JSON.stringify(obs.scarcity), obs.imageUrl, ts, ts, id),
       );
       if (priceChanged) writes.push(...priceEvent());
       if (stockChanged) {

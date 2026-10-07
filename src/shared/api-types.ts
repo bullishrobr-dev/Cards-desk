@@ -39,6 +39,8 @@ export interface DropSummary {
   desk: DeskScore;
   pinned: boolean;
   watched: boolean;
+  /** A box photo: the release page's own, else a shop's. Null when nobody has one yet. */
+  imageUrl: string | null;
 }
 
 export interface ListingView {
@@ -55,6 +57,7 @@ export interface ListingView {
   shipsEs: { value: ShipFlag; verifiedAt: string | null; note: string | null };
   priceVsRrp: number | null;
   lastChangedAt: string;
+  imageUrl: string | null;
   /** Price and stock changes since first seen, oldest first (up to 30). */
   history: ListingHistoryPoint[];
 }
@@ -65,6 +68,7 @@ export interface ProductView {
   configurationLabel: string;
   name: string;
   rrp: (Money & { source: RrpSource }) | null;
+  imageUrl: string | null;
   listings: ListingView[];
 }
 

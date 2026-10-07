@@ -15,6 +15,8 @@ export interface PostFormat {
   title: string;
   /** Minor units by currency, as published. */
   rrp: Partial<Record<'GBP' | 'EUR' | 'USD', number>>;
+  /** The box photo: the full-size image the product's lightbox link opens. */
+  imageUrl: string | null;
 }
 
 export interface PostEnrichment {
@@ -61,7 +63,8 @@ export function parseCollectoskPost(body: string): PostEnrichment {
       const p = priceMinor(decodeEntities(m[1] ?? ''));
       if (p && rrp[p.currency] === undefined) rrp[p.currency] = p.minor;
     }
-    formats.push({ title: textOf(title), rrp });
+    const img = block.match(/class="sac-product-image"><a href="(https:\/\/www\.collectosk\.com\/wp-content\/uploads\/[^"\s]+)"/)?.[1] ?? null;
+    formats.push({ title: textOf(title), rrp, imageUrl: img });
   }
 
   const names: string[] = [];

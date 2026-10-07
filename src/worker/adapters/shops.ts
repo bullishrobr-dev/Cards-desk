@@ -68,7 +68,11 @@ interface ShopifyProduct {
   product_type?: string | null;
   tags?: string[] | string;
   variants: Array<{ id: number; title: string; price: string; available: boolean }>;
+  images?: Array<{ src?: string }>;
 }
+
+/** Only https image addresses are kept; anything else is dropped rather than shown. */
+const httpsUrl = (s: string | undefined | null) => (s && /^https:\/\/[^\s"'<>]+$/.test(s) ? s : null);
 
 export function parseShopify(body: string, unit: Unit, retailer: Retailer): ParseResult {
   const json = JSON.parse(body) as { products?: ShopifyProduct[] };
@@ -98,6 +102,7 @@ export function parseShopify(body: string, unit: Unit, retailer: Retailer): Pars
         releaseText: pre.releaseText,
         publishedAt: p.published_at ?? null,
         ...signals,
+        imageUrl: httpsUrl(p.images?.[0]?.src),
       });
     }
   }
@@ -121,6 +126,7 @@ interface WooProduct {
   is_purchasable?: boolean;
   categories?: Array<{ name: string }>;
   tags?: Array<{ name: string }>;
+  images?: Array<{ src?: string }>;
 }
 
 /** WooCommerce Store API. Variable products are kept as one listing at the parent price. */
@@ -151,6 +157,7 @@ export function parseWooCommerce(body: string, unit: Unit, retailer: Retailer): 
       releaseText: pre.releaseText,
       publishedAt: null,
       ...descriptionSignals(body),
+      imageUrl: httpsUrl(p.images?.[0]?.src),
     };
   });
   return { items, followUps: nextPage(unit, json.length) };

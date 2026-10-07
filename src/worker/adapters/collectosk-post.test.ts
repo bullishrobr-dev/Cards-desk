@@ -10,6 +10,7 @@ describe('collectosk product post', () => {
     expect(p.formats.map((f) => f.title.replace('2026 TOPPS Chrome Formula 1 Racing Cards ', ''))).toEqual(['Hobby Box', 'FDI Box', 'Mega Box', 'Value Blaster Box', 'Logofractor Box', 'Hongbao Box']);
     expect(p.formats[0]?.rrp).toEqual({ EUR: 48500, USD: 46999, GBP: 41500 });
     expect(p.formats[1]?.rrp).toEqual({});
+    expect(p.formats[0]?.imageUrl).toBe('https://www.collectosk.com/wp-content/uploads/racing/2026/2026-topps-chrome-formula-1/2026-topps-chrome-formula-1-racing-cards-hobby-box.avif');
     expect(p.formats[3]?.rrp).toEqual({ EUR: 3500, USD: 3499, GBP: 3000 });
     expect(p.modifiedAt).toMatch(/^2026-/);
   });
@@ -36,7 +37,7 @@ describe('collectosk product post', () => {
   it('a post with no checklist or RRP yet', () => {
     const p = parseCollectoskPost(fixture('2026-panini-prizm-black-nwsl-soccer-cards'));
     expect(p).toMatchObject({ cardCount: 0, names: [], rookies: [] });
-    expect(p.formats).toEqual([{ title: '2026 PANINI Prizm Black NWSL Soccer Cards Hobby Box', rrp: {} }]);
+    expect(p.formats.map((f) => ({ title: f.title, rrp: f.rrp }))).toEqual([{ title: '2026 PANINI Prizm Black NWSL Soccer Cards Hobby Box', rrp: {} }]);
   });
 
   it('a missing post is a failure, not an empty result', () => {

@@ -49,6 +49,8 @@ interface ListingRow {
   retailer: string;
   ships_gi: ShipFlag;
   ships_es: ShipFlag;
+  image_url: string | null;
+  product_image_url: string | null;
 }
 
 const DROP_COLUMNS = `d.id, d.release_id, r.name, r.category, r.publisher, r.season, r.tier, d.starts_at, d.precision, d.confidence, d.status`;
@@ -60,7 +62,8 @@ async function listingsFor(db: D1Database, releaseIds: string[]): Promise<Listin
     const res = await db
       .prepare(
         `SELECT l.id, p.release_id, p.id AS product_id, p.configuration, p.rrp_minor, p.rrp_currency, l.price_minor, l.currency,
-                l.available, l.is_preorder, ret.id AS retailer_id, ret.name AS retailer, ret.ships_gi, ret.ships_es
+                l.available, l.is_preorder, ret.id AS retailer_id, ret.name AS retailer, ret.ships_gi, ret.ships_es,
+                l.image_url, p.image_url AS product_image_url
          FROM listings l JOIN products p ON p.id = l.product_id JOIN retailers ret ON ret.id = l.retailer_id
          WHERE l.gone_at IS NULL AND p.release_id IN (${placeholders(chunk.length)})`,
       )
@@ -81,23 +84,50 @@ function ratio(priceMinor: number, priceCurrency: string, rrpMinor: number | nul
 /** The owner's view of a set of drops: Desk Scores, pins, watched releases and tags. */
 interface OwnerView {
   desk: Map<string, DeskScore>;
+  /** Release photo from its box types (collectosk), best box type first. */
+  images: Map<string, string>;
   tags: Map<string, string[]>;
   pinned: Set<string>;
   watched: Set<string>;
 }
 
 async function ownerView(db: D1Database, rules: RulesConfig, rates: Rates, releaseIds: string[], ownerId: string): Promise<OwnerView> {
-  const [{ inputs, marks }, pins, watch] = await Promise.all([
+  const [{ inputs, marks }, pins, watch, images] = await Promise.all([
     loadScoreInputs(db, releaseIds, ownerId),
     db.prepare('SELECT drop_id FROM pins WHERE owner_id = ?').bind(ownerId).all<{ drop_id: string }>(),
     db.prepare(`SELECT target_id FROM watchlist WHERE owner_id = ? AND target_type = 'release'`).bind(ownerId).all<{ target_id: string }>(),
+    releaseImages(db, releaseIds, rules),
   ]);
   return {
     desk: new Map([...inputs].map(([id, input]) => [id, deskScore(input, rules, rates)])),
+    images,
     tags: marks.tags,
     pinned: new Set(pins.results.map((p) => p.drop_id)),
     watched: new Set(watch.results.map((w) => w.target_id)),
   };
+}
+
+/** One photo per release from its box types, preferring the highest-scoring box (hobby, booster box). */
+async function releaseImages(db: D1Database, releaseIds: string[], rules: RulesConfig): Promise<Map<string, string>> {
+  const out = new Map<string, string>();
+  const rank = new Map<string, number>();
+  for (const c of Object.values(rules.categories)) for (const cfg of c.configurations) rank.set(cfg.id, Math.max(rank.get(cfg.id) ?? 0, cfg.points_pct));
+  const best = new Map<string, number>();
+  for (let i = 0; i < releaseIds.length; i += 90) {
+    const chunk = releaseIds.slice(i, i + 90);
+    const rows = await db
+      .prepare(`SELECT release_id, configuration, image_url FROM products WHERE image_url IS NOT NULL AND release_id IN (${placeholders(chunk.length)})`)
+      .bind(...chunk)
+      .all<{ release_id: string; configuration: string; image_url: string }>();
+    for (const r of rows.results) {
+      const score = rank.get(r.configuration) ?? 0;
+      if (score > (best.get(r.release_id) ?? -1)) {
+        best.set(r.release_id, score);
+        out.set(r.release_id, r.image_url);
+      }
+    }
+  }
+  return out;
 }
 
 const NO_SCORE: DeskScore = { score: 0, rawScore: 0, label: 'Ignore', gated: false, gates: [], breakdown: [], overridden: false, overrideNote: null };
@@ -139,6 +169,7 @@ function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | nul
     bestPrice: best,
     priceVsRrp: bestRatio,
     desk: view.desk.get(d.release_id) ?? NO_SCORE,
+    imageUrl: view.images.get(d.release_id) ?? mine.find((l) => l.image_url)?.image_url ?? null,
     pinned: view.pinned.has(d.id),
     watched: view.watched.has(d.release_id),
   };
@@ -196,7 +227,7 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     db.prepare('SELECT changed_at, old_starts_at, new_starts_at, old_confidence, new_confidence, source_id FROM drop_date_history WHERE drop_id = ? ORDER BY id').bind(id).all<{ changed_at: string; old_starts_at: string | null; new_starts_at: string | null; old_confidence: string | null; new_confidence: string; source_id: string }>(),
     db
       .prepare(
-        `SELECT l.id, l.product_id, l.url, l.raw_title, l.price_minor, l.currency, l.available, l.is_preorder, l.last_changed_at,
+        `SELECT l.id, l.product_id, l.url, l.raw_title, l.price_minor, l.currency, l.available, l.is_preorder, l.last_changed_at, l.image_url,
                 ret.id AS retailer_id, ret.name AS retailer, ret.country, ret.ships_gi, ret.ships_gi_verified_at, ret.ships_gi_note,
                 ret.ships_es, ret.ships_es_verified_at, ret.ships_es_note
          FROM listings l JOIN products p ON p.id = l.product_id JOIN retailers ret ON ret.id = l.retailer_id
@@ -206,13 +237,13 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
       .all<Record<string, unknown>>(),
     db
       .prepare(
-        `SELECT p.id, p.configuration, p.name, COALESCE(o.rrp_minor, p.rrp_minor) AS rrp_minor, COALESCE(o.currency, p.rrp_currency) AS rrp_currency,
+        `SELECT p.id, p.configuration, p.name, p.image_url, COALESCE(o.rrp_minor, p.rrp_minor) AS rrp_minor, COALESCE(o.currency, p.rrp_currency) AS rrp_currency,
                 CASE WHEN o.rrp_minor IS NOT NULL THEN 'owner' ELSE p.rrp_source END AS rrp_source
          FROM products p LEFT JOIN rrp_overrides o ON o.product_id = p.id AND o.owner_id = ?
          WHERE p.release_id = ?`,
       )
       .bind(ownerId, d.release_id)
-      .all<{ id: string; configuration: string; name: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: RrpSource | null }>(),
+      .all<{ id: string; configuration: string; name: string; image_url: string | null; rrp_minor: number | null; rrp_currency: string | null; rrp_source: RrpSource | null }>(),
   ]);
   const labels = new Map([...cfg.sources.map((s) => [s.id, s.label] as const), ...cfg.retailers.map((r) => [r.id, r.name] as const)]);
   const history = await listingHistory(db, listingRows.results.map((l) => l.id as string));
@@ -236,6 +267,7 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
         priceVsRrp: l.price_minor === null ? null : ratio(l.price_minor as number, l.currency as string, p.rrp_minor, p.rrp_currency, rates),
         lastChangedAt: l.last_changed_at as string,
         history: history.get(l.id as string) ?? [],
+        imageUrl: (l.image_url as string | null) ?? null,
       }));
     return {
       id: p.id,
@@ -243,6 +275,7 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
       configurationLabel: configLabel(p.configuration),
       name: p.name,
       rrp: p.rrp_minor !== null && p.rrp_currency && p.rrp_source ? { ...money(p.rrp_minor, p.rrp_currency, rates), source: p.rrp_source } : null,
+      imageUrl: p.image_url ?? listings.find((l) => l.imageUrl)?.imageUrl ?? null,
       listings,
     };
   });

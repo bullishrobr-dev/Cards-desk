@@ -22,7 +22,8 @@ async function get(url, accept) {
 
 function trimShopify(json) {
   for (const p of json.products ?? []) if (p.body_html) p.body_html = p.body_html.slice(0, 1500);
-  for (const p of json.products ?? []) delete p.images;
+  // Keep only the first image's address: enough for the app, a fraction of the size.
+  for (const p of json.products ?? []) p.images = (p.images ?? []).slice(0, 1).map((i) => ({ src: i.src }));
   return json;
 }
 
@@ -48,7 +49,7 @@ for (const j of jobs) {
   if (j.kind === 'shopify') body = JSON.stringify(trimShopify(JSON.parse(body)), null, 1);
   else if (j.kind === 'woocommerce') {
     const arr = JSON.parse(body);
-    for (const p of arr) { if (p.description) p.description = p.description.slice(0, 1500); if (p.short_description) p.short_description = p.short_description.slice(0, 500); delete p.images; }
+    for (const p of arr) { if (p.description) p.description = p.description.slice(0, 1500); if (p.short_description) p.short_description = p.short_description.slice(0, 500); p.images = (p.images ?? []).slice(0, 1).map((i) => ({ src: i.src })); }
     body = JSON.stringify(arr, null, 1);
   }
   writeFileSync(`fixtures/${j.dir}/${j.file}`, body);

@@ -190,6 +190,18 @@ describe('pre-order rules', () => {
   });
 });
 
+describe('product photos', () => {
+  it('keeps the first https image of a Shopify product, and drops anything else', () => {
+    const scd = sources.retailers.find((r) => r.id === 'sportscardsdirect');
+    if (!scd) throw new Error();
+    const items = parseShopify(readFileSync('fixtures/sportscardsdirect/products-0-page1.json', 'utf8'), shopifyUnit(scd, '/products.json'), scd).items as Array<{ title: string; imageUrl: string | null }>;
+    const hobby = items.find((i) => /Chrome Formula 1 2026 Hobby/i.test(i.title));
+    expect(hobby?.imageUrl).toMatch(/^https:\/\/(cdn\.shopify\.com|www\.sportscardsdirect\.co\.uk)\//);
+    const odd = JSON.stringify({ products: [{ id: 1, title: 'x', handle: 'x', variants: [{ id: 2, title: 'Default Title', price: '1.00', available: true }], images: [{ src: 'javascript:alert(1)' }] }] });
+    expect((parseShopify(odd, shopifyUnit(scd, '/products.json'), scd).items[0] as { imageUrl: string | null }).imageUrl).toBeNull();
+  });
+});
+
 describe('description signals', () => {
   it.each([
     ['Strict limit of 2 per customer.', 2, []],

@@ -40,6 +40,8 @@ export interface ListingObservation {
   purchaseLimit: number | null;
   /** Scarcity signal ids found in the description (e.g. "limited to 500 cases" → numbered). */
   scarcity: string[];
+  /** The product's first photo on the shop's own CDN, when it has one. */
+  imageUrl: string | null;
 }
 
 export interface FxObservation {
