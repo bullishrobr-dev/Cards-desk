@@ -23,6 +23,8 @@ export interface ScoreListing {
   shipsGi: ShipFlag;
   shipsEs: ShipFlag;
   purchaseLimit: number | null;
+  /** Shop name, used to say where the best price is. */
+  retailer?: string;
 }
 
 export interface ScoreProduct {
@@ -90,6 +92,7 @@ export function deskScore(input: ScoreInput, rules: RulesConfig, rates: Record<s
   // Gate 3: price vs RRP, on the cheapest price you can act on at a shop that can ship to you.
   const tolerance = rules.rrp.tolerance;
   let bestRatio: number | null = null;
+  let bestAt: ScoreListing | null = null;
   let anyPriced = false;
   for (const p of input.products) {
     if (p.rrpMinor === null || !p.rrpCurrency) continue;
@@ -99,13 +102,19 @@ export function deskScore(input: ScoreInput, rules: RulesConfig, rates: Record<s
       if (!rrp) continue;
       anyPriced = true;
       const ratio = l.priceMinor / rrp;
-      if (bestRatio === null || ratio < bestRatio) bestRatio = ratio;
+      if (bestRatio === null || ratio < bestRatio) {
+        bestRatio = ratio;
+        bestAt = l;
+      }
     }
   }
   if (!anyPriced || bestRatio === null) {
     gates.push({ id: 'price', pass: true, flagged: true, label: 'At or below RRP', detail: 'No price against a known RRP yet' });
   } else if (bestRatio <= tolerance) {
-    gates.push({ id: 'price', pass: true, flagged: false, label: 'At or below RRP', detail: `At RRP — fine to rip for fun (best price ${Math.round((bestRatio - 1) * 100)}% vs RRP)` });
+    const pct = Math.round((bestRatio - 1) * 100);
+    const vs = pct < 0 ? `${-pct}% under RRP` : pct === 0 ? 'matches RRP' : `${pct}% over RRP, within tolerance`;
+    const where = bestAt?.retailer ? ` at ${bestAt.retailer}${bestAt.shipsGi !== 'yes' && bestAt.shipsEs === 'yes' ? ', Spain address only' : ''}` : '';
+    gates.push({ id: 'price', pass: true, flagged: false, label: 'At or below RRP', detail: `At RRP — fine to rip for fun (best price ${vs}${where})` });
   } else {
     gates.push({ id: 'price', pass: false, flagged: false, label: 'At or below RRP', detail: `Above RRP — buy singles instead (cheapest is ${Math.round((bestRatio - 1) * 100)}% over)` });
   }

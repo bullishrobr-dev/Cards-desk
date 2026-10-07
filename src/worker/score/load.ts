@@ -56,11 +56,11 @@ export async function loadScoreInputs(db: D1Database, releaseIds: string[], owne
          WHERE p.release_id IN (${ph})`,
       [ownerId],
     ),
-    inChunks<{ product_id: string; price_minor: number | null; currency: string; available: number; is_preorder: number; purchase_limit: number | null; scarcity: string | null; ships_gi: ShipFlag; ships_es: ShipFlag }>(
+    inChunks<{ product_id: string; price_minor: number | null; currency: string; available: number; is_preorder: number; purchase_limit: number | null; scarcity: string | null; retailer: string; ships_gi: ShipFlag; ships_es: ShipFlag }>(
       db,
       ids,
       (ph) =>
-        `SELECT l.product_id, l.price_minor, l.currency, l.available, l.is_preorder, l.purchase_limit, l.scarcity, ret.ships_gi, ret.ships_es
+        `SELECT l.product_id, l.price_minor, l.currency, l.available, l.is_preorder, l.purchase_limit, l.scarcity, ret.name AS retailer, ret.ships_gi, ret.ships_es
          FROM listings l JOIN products p ON p.id = l.product_id JOIN retailers ret ON ret.id = l.retailer_id
          WHERE l.gone_at IS NULL AND p.release_id IN (${ph})`,
     ),
@@ -98,6 +98,7 @@ export async function loadScoreInputs(db: D1Database, releaseIds: string[], owne
       shipsGi: l.ships_gi,
       shipsEs: l.ships_es,
       purchaseLimit: l.purchase_limit,
+      retailer: l.retailer,
     });
     listingScarcity.set(p, [...(listingScarcity.get(p) ?? []), ...parseList(l.scarcity)]);
   }

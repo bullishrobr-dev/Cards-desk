@@ -198,6 +198,8 @@ describe('description signals', () => {
     ['A premium soccer card release, limited to only 500 cases worldwide.', null, ['numbered']],
     ['This exclusive series is strictly limited to just 30 boxes', null, ['numbered']],
     ['Base cards are limited to /80, with parallels', null, []],
+    ['including the new Full Grid Refractors numbered to 22 featuring the current F1 driver line-up', null, []],
+    ['A limited edition collector tin', null, []],
     ['Free delivery on orders over £50', null, []],
   ])('%s', (text, limit, scarcity) => {
     expect(descriptionSignals(text)).toEqual({ purchaseLimit: limit, scarcity });

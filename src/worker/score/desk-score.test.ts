@@ -94,7 +94,9 @@ describe('hard gates', () => {
     const s = deskScore(chromeF1({ products: [{ configuration: 'hobby', rrpMinor: 78352, rrpCurrency: 'GBP', rrpSource: 'estimated', listings: [shop({ priceMinor: 91000, currency: 'EUR', shipsGi: 'no' })] }] }), rules, rates);
     // €910 ≈ £776.89, under the £783.52 RRP.
     expect(gate(s, 'price')?.pass).toBe(true);
-    expect(gate(s, 'price')?.detail).toMatch(/^At RRP — fine to rip for fun/);
+    expect(gate(s, 'price')?.detail).toMatch(/^At RRP — fine to rip for fun \(best price 1% under RRP\)$/);
+    const named = deskScore(chromeF1({ products: [{ configuration: 'hobby', rrpMinor: 78352, rrpCurrency: 'GBP', rrpSource: 'estimated', listings: [shop({ priceMinor: 91000, currency: 'EUR', shipsGi: 'no', retailer: 'DutchBreakers' })] }] }), rules, rates);
+    expect(gate(named, 'price')?.detail).toBe('At RRP — fine to rip for fun (best price 1% under RRP at DutchBreakers, Spain address only)');
   });
 
   it('ignores prices at shops that ship to neither Gibraltar nor Spain', () => {

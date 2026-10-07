@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { Confidence, DropSummary, ShipFlag } from '../shared/api-types.ts';
+import type { Confidence, DeskScore, DropSummary, ShipFlag } from '../shared/api-types.ts';
 import { CONFIDENCE_LABEL, countdown, dateLabel, formatMoney, percentVsRrp, rrpLabel, showCountdown } from './format.ts';
 import { Link, useNow } from './lib.tsx';
 
@@ -36,16 +36,34 @@ export function RrpNote({ ratio, tolerance, estimated }: { ratio: number | null;
   );
 }
 
-export function DropRow({ drop, tolerance }: { drop: DropSummary; tolerance: number }) {
+/** Score and label; a drop failing a hard gate is shown greyed with the reason. */
+export function ScoreBadge({ desk }: { desk: DeskScore }) {
+  const failed = desk.gates.find((g) => !g.pass);
   return (
-    <Link to={`/drop/${drop.id}`} className="drop-row">
+    <span className={`score score-${desk.label.toLowerCase()}${desk.gated ? ' score-gated' : ''}`} title={failed ? failed.detail : desk.overridden ? `Your score (rules say ${desk.rawScore})` : undefined}>
+      {desk.score} {desk.label}
+      {desk.overridden ? ' ✎' : ''}
+    </span>
+  );
+}
+
+export function DropRow({ drop, tolerance }: { drop: DropSummary; tolerance: number }) {
+  const failed = drop.desk.gates.find((g) => !g.pass);
+  return (
+    <Link to={`/drop/${drop.id}`} className={drop.desk.gated ? 'drop-row gated' : 'drop-row'}>
       <div className="drop-main">
-        <div className="drop-name">{drop.name}</div>
+        <div className="drop-name">
+          {drop.pinned ? <span className="pin" aria-label="Pinned">📌 </span> : null}
+          {drop.watched ? <span className="star" aria-label="Watching">★ </span> : null}
+          {drop.name}
+        </div>
         <div className="drop-meta">
           <span className={`cat cat-${drop.category}`}>{CATEGORY_LABEL[drop.category] ?? drop.category}</span>
           {showCountdown(drop.precision, drop.confidence) && drop.liveAt ? <Countdown to={drop.liveAt} /> : <span>{dateLabel(drop.startsAt, drop.precision)}</span>}
           <ConfidenceBadge confidence={drop.confidence} />
+          <ScoreBadge desk={drop.desk} />
         </div>
+        {failed ? <div className="small gate-note">{failed.detail}</div> : null}
       </div>
       <div className="drop-side">
         {drop.bestPrice ? (

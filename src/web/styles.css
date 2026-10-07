@@ -151,3 +151,25 @@ main { padding: 12px 16px; }
 .alert-title { font-weight: 600; }
 .alert-row:not(.unread) { opacity: 0.75; }
 .tab .count { display: inline-block; min-width: 18px; margin-left: 4px; padding: 0 5px; border-radius: 999px; background: var(--bad); color: #fff; font-size: 0.7rem; font-weight: 700; line-height: 18px; }
+
+/* Desk Score */
+.score { font-size: 0.72rem; padding: 2px 7px; border-radius: 999px; font-weight: 700; white-space: nowrap; }
+.score-priority { background: color-mix(in srgb, var(--ok) 20%, transparent); color: var(--ok); }
+.score-watch { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+.score-ignore { background: var(--panel-2); color: var(--muted); }
+.score-gated { text-decoration: line-through; opacity: 0.8; }
+.drop-row.gated { opacity: 0.55; }
+.gate-note { color: var(--warn); }
+.desk-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.gates { list-style: none; padding: 0; margin: 8px 0; font-size: 0.9rem; }
+.gate { padding: 4px 0; }
+.gate.pass span { color: var(--ok); }
+.gate.flag span { color: var(--warn); }
+.gate.fail { color: var(--bad); }
+.breakdown .pts { white-space: nowrap; font-weight: 600; }
+.inline-form { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin: 6px 0; }
+.inline-form input, .inline-form select { font: inherit; padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--text); min-width: 0; flex: 1 1 140px; }
+.inline-form input.num { flex: 0 1 90px; }
+.inline-form select { flex: 0 0 auto; }
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: inherit; }
+.btn[disabled] { opacity: 0.5; cursor: default; }

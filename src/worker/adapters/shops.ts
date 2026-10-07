@@ -30,7 +30,9 @@ export function detectPreorder(rules: Retailer['preorder'], title: string, tags:
 
 const LIMIT_RE = /(?:limit(?:ed)?(?:\s+(?:of|to))?|max(?:imum)?(?:\s+of)?)\s+(\d{1,2})\s+(?:units?\s+|boxes\s+|items\s+)?(?:per|each)\s+(?:customer|household|order|person|account)/i;
 const PER_RE = /\b(\d{1,2})\s+per\s+(?:customer|household|person|account)\b/i;
-const LIMITED_RUN_RE = /\b(?:strictly\s+)?limited\s+to\s+(?:only\s+|just\s+)?\d[\d,.]*\s+(?:cases|boxes|copies|units|sets|tins)\b|\blimited\s+(?:edition|run)\b|\bnumbered\s+to\b/i;
+// Only a stated run size for the product counts. "Numbered to 22" describes parallels, which
+// every modern release has, and "limited edition" is marketing copy.
+const LIMITED_RUN_RE = /\b(?:strictly\s+)?limited\s+to\s+(?:only\s+|just\s+)?\d[\d,.]*\s+(?:cases|boxes|copies|units|sets|tins)\b/i;
 
 /** Scarcity read from a description: purchase limits and limited or numbered runs. */
 export function descriptionSignals(bodyText: string): { purchaseLimit: number | null; scarcity: string[] } {

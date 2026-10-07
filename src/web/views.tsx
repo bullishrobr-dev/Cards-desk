@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DropDetail, DropSummary, NotificationItem, SourceHealth } from '../shared/api-types.ts';
-import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ShipTag } from './components.tsx';
+import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ScoreBadge, ShipTag } from './components.tsx';
+import { DeskPanel, RrpEditor } from './desk.tsx';
 import { dateLabel, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { Link, navigate, useApi } from './lib.tsx';
 import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
@@ -12,15 +13,20 @@ export interface AppConfig {
 }
 
 type Region = 'any' | 'gi' | 'es';
+type LabelFilter = 'all' | 'watch' | 'priority';
+const LABEL_QUERY: Record<LabelFilter, string | null> = { all: null, watch: 'Priority,Watch', priority: 'Priority' };
 
 function useFilters() {
   const params = new URLSearchParams(window.location.search);
   const [category, setCategory] = useState(params.get('category') ?? 'all');
   const [region, setRegion] = useState<Region>((params.get('region') as Region) ?? 'any');
+  const [label, setLabel] = useState<LabelFilter>((params.get('rank') as LabelFilter) ?? 'all');
   const query = new URLSearchParams();
   if (category !== 'all') query.set('category', category);
   if (region !== 'any') query.set('region', region);
-  return { category, setCategory, region, setRegion, query: query.toString() };
+  const labels = LABEL_QUERY[label];
+  if (labels) query.set('label', labels);
+  return { category, setCategory, region, setRegion, label, setLabel, query: query.toString() };
 }
 
 function Filters({ config, f }: { config: AppConfig; f: ReturnType<typeof useFilters> }) {
@@ -28,6 +34,7 @@ function Filters({ config, f }: { config: AppConfig; f: ReturnType<typeof useFil
     <div className="filters">
       <Chips label="Category" value={f.category} onChange={f.setCategory} options={[{ id: 'all', label: 'All' }, ...config.categories.map((c) => ({ id: c.id, label: CATEGORY_LABEL[c.id] ?? c.label }))]} />
       <Chips<Region> label="Ships to" value={f.region} onChange={f.setRegion} options={[{ id: 'any', label: 'Any' }, { id: 'gi', label: 'Gibraltar' }, { id: 'es', label: 'Spain' }]} />
+      <Chips<LabelFilter> label="Desk Score" value={f.label} onChange={f.setLabel} options={[{ id: 'all', label: 'Everything' }, { id: 'watch', label: 'Watch and up' }, { id: 'priority', label: 'Priority only' }]} />
     </div>
   );
 }
@@ -104,6 +111,7 @@ export function UpcomingView({ config }: { config: AppConfig }) {
     <section>
       <div className="view-head">
         <h1>Upcoming</h1>
+        <Link to="/brief" className="chip">Weekly brief</Link>
         <Chips<'list' | 'calendar'> label="View" value={mode} onChange={setMode} options={[{ id: 'list', label: 'List' }, { id: 'calendar', label: 'Calendar' }]} />
       </div>
       <Filters config={config} f={f} />
@@ -139,14 +147,33 @@ export function LiveView({ config }: { config: AppConfig }) {
   );
 }
 
+export function WatchlistView({ config }: { config: AppConfig }) {
+  const { data, error } = useApi<DropSummary[]>('/api/drops?view=watchlist');
+  return (
+    <section>
+      <div className="view-head">
+        <h1>Watchlist</h1>
+      </div>
+      {error ? <Notice tone="error">{error}</Notice> : null}
+      {data && data.length === 0 ? <Empty>Nothing watched or pinned yet. Open a drop and tap Watch or Pin.</Empty> : null}
+      {data?.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      <p className="small muted">Watched drops alert 24 hours, 1 hour and 10 minutes before they go live, when they go live, and if the date moves. Pinned drops sort first everywhere.</p>
+    </section>
+  );
+}
+
 function sourceName(id: string) {
   return id.replace(/-/g, ' ');
 }
 
 export function DetailView({ id, config }: { id: string; config: AppConfig }) {
-  const { data: d, error } = useApi<DropDetail>(`/api/drops/${encodeURIComponent(id)}`);
+  const { data: d, error, reload } = useApi<DropDetail>(`/api/drops/${encodeURIComponent(id)}`);
   const [watched, setWatched] = useState<boolean | null>(null);
-  useEffect(() => setWatched(d?.watched ?? null), [d]);
+  const [pinned, setPinned] = useState<boolean | null>(null);
+  useEffect(() => {
+    setWatched(d?.watched ?? null);
+    setPinned(d?.pinned ?? null);
+  }, [d]);
   if (error) return <Notice tone="error">{error}</Notice>;
   if (!d) return <Empty>Loading…</Empty>;
   const tolerance = config.rules.rrp.tolerance;
@@ -155,6 +182,12 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
     setWatched(next);
     const res = await fetch(`/api/watch/${encodeURIComponent(d.releaseId)}`, { method: next ? 'POST' : 'DELETE' });
     if (!res.ok) setWatched(!next);
+  };
+  const togglePin = async () => {
+    const next = !pinned;
+    setPinned(next);
+    const res = await fetch(`/api/pins/${encodeURIComponent(d.id)}`, { method: next ? 'POST' : 'DELETE' });
+    if (!res.ok) setPinned(!next);
   };
   return (
     <article className="detail">
@@ -175,10 +208,14 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
         <span className={`cat cat-${d.category}`}>{CATEGORY_LABEL[d.category] ?? d.category}</span>
         {d.season ? <span>{d.season}</span> : null}
         {d.tier ? <span>{d.tier} line</span> : null}
+        <ScoreBadge desk={d.desk} />
       </div>
       <div className="actions">
         <button type="button" className={watched ? 'btn on' : 'btn'} aria-pressed={Boolean(watched)} onClick={toggleWatch}>
           {watched ? '★ Watching' : '☆ Watch'}
+        </button>
+        <button type="button" className={pinned ? 'btn on' : 'btn'} aria-pressed={Boolean(pinned)} onClick={togglePin}>
+          {pinned ? '📌 Pinned' : 'Pin'}
         </button>
         {d.startsAt && (d.precision === 'day' || d.precision === 'time') ? (
           <a className="btn" href={`/api/drops/${encodeURIComponent(d.id)}/ics`}>Add to calendar</a>
@@ -186,14 +223,17 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
       </div>
       {watched ? <p className="small muted">You will be alerted 24 hours, 1 hour and 10 minutes before, when it goes live, and if the date moves.</p> : null}
 
+      <DeskPanel drop={d} onChange={reload} />
+
       <h2>Where to buy</h2>
       {d.products.length === 0 ? <Empty>No shop lists this yet. It will appear here as soon as one does.</Empty> : null}
       {d.products.map((p) => (
         <div key={p.id} className="product">
           <h3>
             {p.configurationLabel}
-            {p.rrp ? <span className="muted small"> · RRP {formatMoney(p.rrp)}{p.rrp.source === 'estimated' ? ' (estimated from first shop prices)' : ''}</span> : <span className="muted small"> · RRP unknown</span>}
+            {p.rrp ? <span className="muted small"> · RRP {formatMoney(p.rrp)}{p.rrp.source === 'estimated' ? ' (estimated from first shop prices)' : p.rrp.source === 'owner' ? ' (yours)' : ''}</span> : <span className="muted small"> · RRP unknown</span>}
           </h3>
+          <RrpEditor product={p} onChange={reload} />
           {p.listings.map((l) => (
             <div key={l.id} className="listing">
               <div className="listing-main">
@@ -289,6 +329,13 @@ export function SettingsView({ config }: { config: AppConfig }) {
       </div>
       <PushSettings />
       <CalendarSettings />
+      <div className="card">
+        <h3>Sources</h3>
+        <p className="small">Which calendars and shops are being read, and whether any are failing.</p>
+        <div className="actions">
+          <Link to="/sources" className="btn">Source health</Link>
+        </div>
+      </div>
       <h2>Buying rules</h2>
       <p className="small muted">These come from config/rules.yaml in the repository. Change them there; the app is rebuilt on deploy.</p>
       <pre className="rules">{JSON.stringify(config.rules, null, 2)}</pre>
