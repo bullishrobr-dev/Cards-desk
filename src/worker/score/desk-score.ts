@@ -1,5 +1,5 @@
 import type { RulesConfig, ShipFlag } from '../../shared/config/schema.ts';
-import type { DeskScore, GateResult, ScoreComponent } from '../../shared/api-types.ts';
+import type { DeskScore, GateResult, RrpSource, ScoreComponent } from '../../shared/api-types.ts';
 import { convertMinor } from '../ingest/util.ts';
 
 /**
@@ -29,7 +29,7 @@ export interface ScoreProduct {
   configuration: string;
   rrpMinor: number | null;
   rrpCurrency: string | null;
-  rrpSource: 'config' | 'estimated' | null;
+  rrpSource: RrpSource | null;
   listings: ScoreListing[];
 }
 

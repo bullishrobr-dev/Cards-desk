@@ -271,13 +271,14 @@ CREATE TABLE watchlist (
   PRIMARY KEY (owner_id, target_type, target_id)
 );
 
+-- Overrides and tags apply to a release: the Desk Score is per release (its best box type).
 CREATE TABLE score_overrides (
   owner_id    TEXT NOT NULL REFERENCES owners (id),
-  product_id  TEXT NOT NULL REFERENCES products (id),
+  release_id  TEXT NOT NULL REFERENCES releases (id),
   score       INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
   note        TEXT,
   created_at  TEXT NOT NULL,
-  PRIMARY KEY (owner_id, product_id)
+  PRIMARY KEY (owner_id, release_id)
 );
 
 CREATE TABLE pins (
@@ -290,10 +291,10 @@ CREATE TABLE pins (
 -- Manual relevance tags (chase card, set, player) until checklist ingestion exists.
 CREATE TABLE manual_tags (
   owner_id    TEXT NOT NULL REFERENCES owners (id),
-  product_id  TEXT NOT NULL REFERENCES products (id),
+  release_id  TEXT NOT NULL REFERENCES releases (id),
   tag         TEXT NOT NULL,
   created_at  TEXT NOT NULL,
-  PRIMARY KEY (owner_id, product_id, tag)
+  PRIMARY KEY (owner_id, release_id, tag)
 );
 
 -- Owner-entered RRPs. Kept personal so one user's guess never rewrites shared data.

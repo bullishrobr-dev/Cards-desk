@@ -17,6 +17,11 @@ const get = async <T,>(path: string, e: Env = env()) => {
   const res = await api.request(path, {}, e);
   return { status: res.status, body: (await res.json()) as T };
 };
+const send = async (method: string, path: string, body?: unknown) => {
+  const res = await api.request(path, { method, headers: { 'content-type': 'application/json' }, body: body === undefined ? undefined : JSON.stringify(body) }, env());
+  return { status: res.status, body: (await res.json()) as Record<string, unknown> };
+};
+const f1Drop = async () => (await get<DropSummary[]>('/drops?category=f1')).body.find((d) => /chrome formula 1/i.test(d.name)) as DropSummary;
 
 beforeAll(async () => {
   db = createTestD1();
@@ -80,5 +85,56 @@ describe('API', () => {
   it('reports source health, including sources that never ran', async () => {
     const { body } = await get<SourceHealth[]>('/sources/health');
     expect(body.find((s) => s.id === 'zatu')).toMatchObject({ kind: 'shop', status: 'never_run' });
+  });
+
+  it('scores every drop and explains each point', async () => {
+    const f1 = await f1Drop();
+    expect(f1.desk.breakdown.map((b) => b.id)).toEqual(['tier', 'configuration', 'scarcity', 'relevance']);
+    expect(f1.desk.gates.map((g) => g.id)).toEqual(['scope', 'purchasable', 'price']);
+    expect(f1.desk.breakdown.find((b) => b.id === 'tier')?.points).toBe(40);
+    expect(f1.desk.breakdown.find((b) => b.id === 'configuration')?.points).toBe(20);
+    expect(f1.desk.gates.find((g) => g.id === 'purchasable')?.detail).toBe('At least one shop ships to Gibraltar');
+  });
+
+  it('a manual tag adds relevance; an override replaces the number but keeps the raw score', async () => {
+    const before = (await f1Drop()).desk.rawScore;
+    expect((await send('POST', `/releases/${(await f1Drop()).releaseId}/tags`, { tag: 'Bearman rookie' })).status).toBe(200);
+    const tagged = await f1Drop();
+    expect(tagged.desk.rawScore).toBe(before + 20);
+    expect((await get<DropDetail>(`/drops/${tagged.id}`)).body.tags).toEqual(['Bearman rookie']);
+
+    expect((await send('PUT', `/releases/${tagged.releaseId}/override`, { score: 101 })).status).toBe(400);
+    await send('PUT', `/releases/${tagged.releaseId}/override`, { score: 30, note: 'Too dear this year' });
+    const overridden = await f1Drop();
+    expect(overridden.desk).toMatchObject({ score: 30, rawScore: before + 20, label: 'Ignore', overridden: true, overrideNote: 'Too dear this year' });
+    expect((await get<DropSummary[]>('/drops?category=f1&label=Priority,Watch')).body.some((d) => d.id === overridden.id)).toBe(false);
+
+    await send('DELETE', `/releases/${tagged.releaseId}/override`);
+    await send('DELETE', `/releases/${tagged.releaseId}/tags?tag=${encodeURIComponent('Bearman rookie')}`);
+    expect((await f1Drop()).desk).toMatchObject({ rawScore: before, overridden: false });
+  });
+
+  it('your own RRP drives the price gate', async () => {
+    const f1 = await f1Drop();
+    const hobby = (await get<DropDetail>(`/drops/${f1.id}`)).body.products.find((p) => p.configuration === 'hobby');
+    if (!hobby) throw new Error('no hobby box');
+    await send('PUT', `/products/${hobby.id}/rrp`, { minor: 10000, currency: 'GBP' });
+    const cheap = await get<DropDetail>(`/drops/${f1.id}`);
+    expect(cheap.body.products.find((p) => p.id === hobby.id)?.rrp).toMatchObject({ minor: 10000, source: 'owner' });
+    expect(cheap.body.desk.gates.find((g) => g.id === 'price')).toMatchObject({ pass: false });
+    expect(cheap.body.desk.gated).toBe(true);
+    await send('DELETE', `/products/${hobby.id}/rrp`);
+  });
+
+  it('pins sort first and appear on the watchlist with watched releases', async () => {
+    const all = (await get<DropSummary[]>('/drops?view=upcoming')).body;
+    const last = all[all.length - 1] as DropSummary;
+    expect((await send('POST', `/pins/${last.id}`)).body).toEqual({ pinned: true });
+    const pinnedFirst = (await get<DropSummary[]>('/drops?view=upcoming')).body;
+    expect(pinnedFirst[0]).toMatchObject({ id: last.id, pinned: true });
+    expect((await get<DropSummary[]>('/drops?view=watchlist')).body.map((d) => d.id)).toEqual([last.id]);
+    await send('DELETE', `/pins/${last.id}`);
+    expect((await get<DropSummary[]>('/drops?view=watchlist')).body).toEqual([]);
+    expect((await send('POST', '/pins/nope')).status).toBe(404);
   });
 });

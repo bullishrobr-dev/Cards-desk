@@ -1,7 +1,9 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
-import type { Confidence, DropDetail, DropSummary, ListingView, Money, Precision, ProductView, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
+import type { Confidence, DeskScore, DropDetail, DropSummary, ListingView, Money, Precision, ProductView, RrpSource, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
 import { convertMinor, placeholders } from '../ingest/util.ts';
 import { addMinutes, dropInstant, localDate } from '../time.ts';
+import { loadScoreInputs } from '../score/load.ts';
+import { deskScore } from '../score/desk-score.ts';
 
 type Rates = Record<string, number>;
 
@@ -76,7 +78,31 @@ function ratio(priceMinor: number, priceCurrency: string, rrpMinor: number | nul
   return rrp ? Math.round((priceMinor / rrp) * 1000) / 1000 : null;
 }
 
-function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | null, rates: Rates, tz: string): DropSummary {
+/** The owner's view of a set of drops: Desk Scores, pins, watched releases and tags. */
+interface OwnerView {
+  desk: Map<string, DeskScore>;
+  tags: Map<string, string[]>;
+  pinned: Set<string>;
+  watched: Set<string>;
+}
+
+async function ownerView(db: D1Database, rules: RulesConfig, rates: Rates, releaseIds: string[], ownerId: string): Promise<OwnerView> {
+  const [{ inputs, marks }, pins, watch] = await Promise.all([
+    loadScoreInputs(db, releaseIds, ownerId),
+    db.prepare('SELECT drop_id FROM pins WHERE owner_id = ?').bind(ownerId).all<{ drop_id: string }>(),
+    db.prepare(`SELECT target_id FROM watchlist WHERE owner_id = ? AND target_type = 'release'`).bind(ownerId).all<{ target_id: string }>(),
+  ]);
+  return {
+    desk: new Map([...inputs].map(([id, input]) => [id, deskScore(input, rules, rates)])),
+    tags: marks.tags,
+    pinned: new Set(pins.results.map((p) => p.drop_id)),
+    watched: new Set(watch.results.map((w) => w.target_id)),
+  };
+}
+
+const NO_SCORE: DeskScore = { score: 0, rawScore: 0, label: 'Ignore', gated: false, gates: [], breakdown: [], overridden: false, overrideNote: null };
+
+function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | null, rates: Rates, tz: string, view: OwnerView): DropSummary {
   const mine = listings.filter((l) => l.release_id === d.release_id);
   const shipsTo = (l: ListingRow, r: 'gi' | 'es') => (r === 'gi' ? l.ships_gi : l.ships_es) !== 'no';
   const priced = mine.filter((l) => l.price_minor !== null && (!region || shipsTo(l, region)));
@@ -112,19 +138,31 @@ function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | nul
     shipsEs: mine.some((l) => l.ships_es === 'yes'),
     bestPrice: best,
     priceVsRrp: bestRatio,
+    desk: view.desk.get(d.release_id) ?? NO_SCORE,
+    pinned: view.pinned.has(d.id),
+    watched: view.watched.has(d.release_id),
   };
 }
 
 export interface DropQuery {
-  view: 'upcoming' | 'live';
+  view: 'upcoming' | 'live' | 'watchlist';
   category: string | null;
   region: 'gi' | 'es' | null;
+  /** Keep only these Desk Score labels. */
+  labels?: Array<DeskScore['label']> | null;
 }
 
-/** Upcoming: dated drops in the next 120 days, then undated (TBD) ones. Live: drops now live. */
-export async function listDrops(db: D1Database, rules: RulesConfig, q: DropQuery, now: Date): Promise<DropSummary[]> {
-  const conditions = [`d.kind = 'release'`, q.view === 'live' ? `d.status = 'live'` : `d.status = 'upcoming'`];
+/**
+ * Upcoming: dated drops in the next 120 days, then undated (TBD) ones. Live: drops now live.
+ * Watchlist: upcoming or live drops you watch or pinned, at any distance. Pins sort first.
+ */
+export async function listDrops(db: D1Database, rules: RulesConfig, q: DropQuery, now: Date, ownerId: string): Promise<DropSummary[]> {
+  const conditions = [`d.kind = 'release'`, q.view === 'live' ? `d.status = 'live'` : q.view === 'upcoming' ? `d.status = 'upcoming'` : `d.status IN ('upcoming', 'live')`];
   const binds: unknown[] = [];
+  if (q.view === 'watchlist') {
+    conditions.push(`(d.release_id IN (SELECT target_id FROM watchlist WHERE owner_id = ? AND target_type = 'release') OR d.id IN (SELECT drop_id FROM pins WHERE owner_id = ?))`);
+    binds.push(ownerId, ownerId);
+  }
   if (q.view === 'upcoming') {
     // Not yet live (maintenance flips status hourly; this keeps a just-passed date out meanwhile).
     conditions.push(`(d.starts_at IS NULL OR (d.starts_at <= ? AND d.starts_at >= ?))`);
@@ -139,13 +177,17 @@ export async function listDrops(db: D1Database, rules: RulesConfig, q: DropQuery
     .bind(...binds)
     .all<DropRow>();
   const rates = await latestRates(db);
-  const listings = await listingsFor(db, rows.results.map((r) => r.release_id));
-  const out = rows.results.map((d) => summarise(d, listings, q.region, rates, rules.owner.timezone));
+  const releaseIds = rows.results.map((r) => r.release_id);
+  const [listings, view] = await Promise.all([listingsFor(db, releaseIds), ownerView(db, rules, rates, releaseIds, ownerId)]);
+  let out = rows.results.map((d) => summarise(d, listings, q.region, rates, rules.owner.timezone, view));
   // A region filter keeps drops buyable there, plus calendar-only drops with no shop listing yet.
-  return q.region ? out.filter((d) => d.shopCount === 0 || (q.region === 'gi' ? d.shipsGi : d.shipsEs) || d.bestPrice !== null) : out;
+  if (q.region) out = out.filter((d) => d.shopCount === 0 || (q.region === 'gi' ? d.shipsGi : d.shipsEs) || d.bestPrice !== null);
+  if (q.labels?.length) out = out.filter((d) => q.labels?.includes(d.desk.label));
+  // Pinned first; otherwise the date order from the query is kept (sort is stable).
+  return out.sort((a, b) => Number(b.pinned) - Number(a.pinned));
 }
 
-export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: SourcesConfig, id: string): Promise<DropDetail | null> {
+export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: SourcesConfig, id: string, ownerId: string): Promise<DropDetail | null> {
   const d = await db.prepare(`SELECT ${DROP_COLUMNS} FROM drops d JOIN releases r ON r.id = d.release_id WHERE d.id = ?`).bind(id).first<DropRow>();
   if (!d) return null;
   const rates = await latestRates(db);
@@ -162,7 +204,15 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
       )
       .bind(d.release_id)
       .all<Record<string, unknown>>(),
-    db.prepare('SELECT id, configuration, name, rrp_minor, rrp_currency, rrp_source FROM products WHERE release_id = ?').bind(d.release_id).all<{ id: string; configuration: string; name: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: 'config' | 'estimated' | null }>(),
+    db
+      .prepare(
+        `SELECT p.id, p.configuration, p.name, COALESCE(o.rrp_minor, p.rrp_minor) AS rrp_minor, COALESCE(o.currency, p.rrp_currency) AS rrp_currency,
+                CASE WHEN o.rrp_minor IS NOT NULL THEN 'owner' ELSE p.rrp_source END AS rrp_source
+         FROM products p LEFT JOIN rrp_overrides o ON o.product_id = p.id AND o.owner_id = ?
+         WHERE p.release_id = ?`,
+      )
+      .bind(ownerId, d.release_id)
+      .all<{ id: string; configuration: string; name: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: RrpSource | null }>(),
   ]);
   const labels = new Map([...cfg.sources.map((s) => [s.id, s.label] as const), ...cfg.retailers.map((r) => [r.id, r.name] as const)]);
   const configLabel = (c: string) => rules.categories[d.category]?.configurations.find((x) => x.id === c)?.label ?? 'Sealed (type not recognised)';
@@ -195,9 +245,10 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     };
   });
 
-  const allListings = await listingsFor(db, [d.release_id]);
+  const [allListings, view] = await Promise.all([listingsFor(db, [d.release_id]), ownerView(db, rules, rates, [d.release_id], ownerId)]);
   return {
-    ...summarise(d, allListings, null, rates, rules.owner.timezone),
+    ...summarise(d, allListings, null, rates, rules.owner.timezone, view),
+    tags: view.tags.get(d.release_id) ?? [],
     observations: obs.results.map((o) => ({ sourceId: o.source_id, sourceLabel: labels.get(o.source_id) ?? o.source_id, startsAt: o.starts_at, precision: o.precision, confidence: o.confidence, raw: o.raw, region: o.region, lastSeenAt: o.last_seen_at })),
     history: hist.results.map((h) => ({ changedAt: h.changed_at, oldStartsAt: h.old_starts_at, newStartsAt: h.new_starts_at, oldConfidence: h.old_confidence, newConfidence: h.new_confidence, sourceId: h.source_id })),
     products: productViews,

@@ -8,23 +8,23 @@ export const api = new Hono<{ Bindings: Env; Variables: { identity: AccessIdenti
 
 api.use('*', requireAccess());
 
+const LABELS = ['Priority', 'Watch', 'Ignore'] as const;
+
 api.get('/drops', async (c) => {
-  const view = c.req.query('view') === 'live' ? 'live' : 'upcoming';
+  const v = c.req.query('view');
+  const view = v === 'live' || v === 'watchlist' ? v : 'upcoming';
+  const labels = (c.req.query('label') ?? '').split(',').filter((l): l is (typeof LABELS)[number] => (LABELS as readonly string[]).includes(l));
   const category = c.req.query('category') || null;
   const regionParam = c.req.query('region');
   const region = regionParam === 'gi' || regionParam === 'es' ? regionParam : null;
   if (category && !rules.categories[category]) return c.json({ error: 'Unknown category' }, 400);
-  return c.json(await listDrops(c.env.DB, rules, { view, category, region }, new Date()));
+  return c.json(await listDrops(c.env.DB, rules, { view, category, region, labels }, new Date(), c.get('identity').ownerId));
 });
 
 api.get('/drops/:id', async (c) => {
-  const detail = await dropDetail(c.env.DB, rules, sources, c.req.param('id'));
+  const detail = await dropDetail(c.env.DB, rules, sources, c.req.param('id'), c.get('identity').ownerId);
   if (!detail) return c.json({ error: 'Not found' }, 404);
-  const watched = await c.env.DB
-    .prepare(`SELECT 1 AS x FROM watchlist WHERE owner_id = ? AND target_type = 'release' AND target_id = ?`)
-    .bind(c.get('identity').ownerId, detail.releaseId)
-    .first('x');
-  return c.json({ ...detail, watched: Boolean(watched) });
+  return c.json(detail);
 });
 
 api.get('/sources/health', async (c) => c.json(await sourceHealth(c.env.DB, sources)));
@@ -135,6 +135,88 @@ api.delete('/watch/:releaseId', async (c) => {
   const { ownerId } = c.get('identity');
   await c.env.DB.prepare(`DELETE FROM watchlist WHERE owner_id = ? AND target_type = 'release' AND target_id = ?`).bind(ownerId, c.req.param('releaseId')).run();
   return c.json({ watched: false });
+});
+
+// ---------- Pins, tags, score overrides, RRPs (personal; every row carries owner_id) ----------
+
+const jsonBody = async (c: { req: { json: () => Promise<unknown> } }) => ((await c.req.json().catch(() => null)) ?? {}) as Record<string, unknown>;
+const exists = (db: D1Database, table: 'drops' | 'releases' | 'products', id: string) => db.prepare(`SELECT 1 AS x FROM ${table} WHERE id = ?`).bind(id).first('x');
+
+api.post('/pins/:dropId', async (c) => {
+  const dropId = c.req.param('dropId');
+  if (!(await exists(c.env.DB, 'drops', dropId))) return c.json({ error: 'Not found' }, 404);
+  await c.env.DB.prepare('INSERT OR IGNORE INTO pins (owner_id, drop_id, created_at) VALUES (?, ?, ?)').bind(c.get('identity').ownerId, dropId, new Date().toISOString()).run();
+  return c.json({ pinned: true });
+});
+
+api.delete('/pins/:dropId', async (c) => {
+  await c.env.DB.prepare('DELETE FROM pins WHERE owner_id = ? AND drop_id = ?').bind(c.get('identity').ownerId, c.req.param('dropId')).run();
+  return c.json({ pinned: false });
+});
+
+/** A manual relevance tag (chase card, player, set) until checklists are ingested. */
+api.post('/releases/:releaseId/tags', async (c) => {
+  const releaseId = c.req.param('releaseId');
+  const tag = (await jsonBody(c)).tag;
+  if (typeof tag !== 'string' || !tag.trim() || tag.length > 60) return c.json({ error: 'A tag is 1–60 characters' }, 400);
+  if (!(await exists(c.env.DB, 'releases', releaseId))) return c.json({ error: 'Not found' }, 404);
+  await c.env.DB.prepare('INSERT OR IGNORE INTO manual_tags (owner_id, release_id, tag, created_at) VALUES (?, ?, ?, ?)').bind(c.get('identity').ownerId, releaseId, tag.trim(), new Date().toISOString()).run();
+  return c.json({ ok: true });
+});
+
+api.delete('/releases/:releaseId/tags', async (c) => {
+  const tag = c.req.query('tag');
+  if (!tag) return c.json({ error: 'Which tag?' }, 400);
+  await c.env.DB.prepare('DELETE FROM manual_tags WHERE owner_id = ? AND release_id = ? AND tag = ?').bind(c.get('identity').ownerId, c.req.param('releaseId'), tag).run();
+  return c.json({ ok: true });
+});
+
+/** Replace the Desk Score with your own number; the breakdown still shows what the rules said. */
+api.put('/releases/:releaseId/override', async (c) => {
+  const releaseId = c.req.param('releaseId');
+  const body = await jsonBody(c);
+  const score = body.score;
+  const note = typeof body.note === 'string' && body.note.trim() ? body.note.trim().slice(0, 200) : null;
+  if (typeof score !== 'number' || !Number.isInteger(score) || score < 0 || score > 100) return c.json({ error: 'Score must be a whole number from 0 to 100' }, 400);
+  if (!(await exists(c.env.DB, 'releases', releaseId))) return c.json({ error: 'Not found' }, 404);
+  await c.env.DB
+    .prepare(
+      `INSERT INTO score_overrides (owner_id, release_id, score, note, created_at) VALUES (?, ?, ?, ?, ?)
+       ON CONFLICT (owner_id, release_id) DO UPDATE SET score = excluded.score, note = excluded.note, created_at = excluded.created_at`,
+    )
+    .bind(c.get('identity').ownerId, releaseId, score, note, new Date().toISOString())
+    .run();
+  return c.json({ ok: true });
+});
+
+api.delete('/releases/:releaseId/override', async (c) => {
+  await c.env.DB.prepare('DELETE FROM score_overrides WHERE owner_id = ? AND release_id = ?').bind(c.get('identity').ownerId, c.req.param('releaseId')).run();
+  return c.json({ ok: true });
+});
+
+/** Your own RRP for a box type, when the rules have none or the estimate looks wrong. */
+api.put('/products/:productId/rrp', async (c) => {
+  const productId = c.req.param('productId');
+  const body = await jsonBody(c);
+  const minor = body.minor;
+  const currency = body.currency;
+  if (typeof minor !== 'number' || !Number.isInteger(minor) || minor <= 0 || (currency !== 'GBP' && currency !== 'EUR' && currency !== 'USD')) {
+    return c.json({ error: 'RRP needs a positive amount in pence/cents and a currency (GBP, EUR or USD)' }, 400);
+  }
+  if (!(await exists(c.env.DB, 'products', productId))) return c.json({ error: 'Not found' }, 404);
+  await c.env.DB
+    .prepare(
+      `INSERT INTO rrp_overrides (owner_id, product_id, rrp_minor, currency, created_at) VALUES (?, ?, ?, ?, ?)
+       ON CONFLICT (owner_id, product_id) DO UPDATE SET rrp_minor = excluded.rrp_minor, currency = excluded.currency, created_at = excluded.created_at`,
+    )
+    .bind(c.get('identity').ownerId, productId, minor, currency, new Date().toISOString())
+    .run();
+  return c.json({ ok: true });
+});
+
+api.delete('/products/:productId/rrp', async (c) => {
+  await c.env.DB.prepare('DELETE FROM rrp_overrides WHERE owner_id = ? AND product_id = ?').bind(c.get('identity').ownerId, c.req.param('productId')).run();
+  return c.json({ ok: true });
 });
 
 api.get('/drops/:id/ics', async (c) => {

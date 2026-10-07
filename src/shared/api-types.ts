@@ -3,6 +3,8 @@
 export type Confidence = 'rumoured' | 'announced' | 'confirmed_date' | 'confirmed_time';
 export type Precision = 'time' | 'day' | 'week' | 'month' | 'unknown';
 export type ShipFlag = 'yes' | 'no' | 'unknown';
+/** Where an RRP came from: rules.yaml, the median of shop prices, or the owner. */
+export type RrpSource = 'config' | 'estimated' | 'owner';
 
 export interface Money {
   minor: number;
@@ -34,6 +36,9 @@ export interface DropSummary {
   bestPrice: (Money & { retailer: string; configuration: string }) | null;
   /** Price ÷ RRP for the best price, when an RRP is known. */
   priceVsRrp: number | null;
+  desk: DeskScore;
+  pinned: boolean;
+  watched: boolean;
 }
 
 export interface ListingView {
@@ -57,7 +62,7 @@ export interface ProductView {
   configuration: string;
   configurationLabel: string;
   name: string;
-  rrp: (Money & { source: 'config' | 'estimated' }) | null;
+  rrp: (Money & { source: RrpSource }) | null;
   listings: ListingView[];
 }
 
@@ -66,7 +71,7 @@ export interface DropDetail extends DropSummary {
   history: Array<{ changedAt: string; oldStartsAt: string | null; newStartsAt: string | null; oldConfidence: string | null; newConfidence: string; sourceId: string }>;
   products: ProductView[];
   costNotes: Array<{ region: 'gi' | 'es'; from: string; text: string; source: string }>;
-  watched?: boolean;
+  tags: string[];
 }
 
 export interface NotificationItem {
