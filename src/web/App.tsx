@@ -3,6 +3,8 @@ import { Notice } from './components.tsx';
 import { Link, useApi, usePath } from './lib.tsx';
 import { refreshReceiptUrl, registerServiceWorker, setBadge } from './push.ts';
 import { HomeScreenCoach } from './coach.tsx';
+import { DemoBanner } from './demo/banner.tsx';
+import { DEMO } from './lib.tsx';
 import { BriefView, DetailView, SignalsView, LiveView, NotificationsView, SettingsView, SourcesView, UpcomingView, WatchlistView, type AppConfig } from './views.tsx';
 
 const TABS = [
@@ -55,7 +57,7 @@ export function App() {
             Push notifications have stopped reaching your device. <Link to="/settings">Turn them back on</Link>.
           </Notice>
         ) : null}
-        <HomeScreenCoach />
+        {DEMO ? <DemoBanner /> : <HomeScreenCoach />}
         {error ? <Notice tone="error">{error}</Notice> : view}
       </main>
       <nav className="tabs" aria-label="Main">

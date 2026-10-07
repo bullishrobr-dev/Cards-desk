@@ -9,7 +9,7 @@ export const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (nav
 export const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
 
 export async function registerServiceWorker(): Promise<ServiceWorkerRegistration | null> {
-  if (!('serviceWorker' in navigator)) return null;
+  if (import.meta.env.VITE_DEMO === '1' || !('serviceWorker' in navigator)) return null;
   try {
     return await navigator.serviceWorker.register('/sw.js', { scope: '/' });
   } catch {

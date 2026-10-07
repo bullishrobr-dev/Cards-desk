@@ -5,7 +5,7 @@ import { DeskPanel, RrpEditor } from './desk.tsx';
 import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
 import type { RulesConfig } from '../shared/config/schema.ts';
 import { dateLabel, formatMinor as formatMinorText, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
-import { Link, navigate, useApi } from './lib.tsx';
+import { DEMO, Link, navigate, useApi } from './lib.tsx';
 import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
 
 export interface AppConfig {
@@ -19,7 +19,7 @@ type LabelFilter = 'all' | 'watch' | 'priority';
 const LABEL_QUERY: Record<LabelFilter, string | null> = { all: null, watch: 'Priority,Watch', priority: 'Priority' };
 
 function useFilters() {
-  const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(DEMO ? '' : window.location.search);
   const [category, setCategory] = useState(params.get('category') ?? 'all');
   const [region, setRegion] = useState<Region>((params.get('region') as Region) ?? 'any');
   const [label, setLabel] = useState<LabelFilter>((params.get('rank') as LabelFilter) ?? 'all');

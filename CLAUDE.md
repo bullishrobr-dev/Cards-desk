@@ -69,6 +69,12 @@ tools/                    deploy script, VAPID generator, fixture capture, local
 - `npm run build`
 - `npm run seed:local && npm run dev` gives a local app with real fixture data (`.dev.vars` sets `APP_ENV=development`).
 - `node tools/deploy.mjs` deploys (see `docs/deploy.md`).
+- **Static demo** (for showing the owner without a deployment):
+  1. With `npm run dev` running on seeded data, run `node tools/demo-snapshot.mjs [extra drop ids]`.
+  2. Run `npx vite build --config vite.demo.config.ts`. Set `VITE_DEMO_DATE` and `VITE_DEMO_HIGHLIGHTS` (a JSON array of `{label, to}`) for the banner.
+  3. Run `node tools/demo-page.mjs <out.html>`. It inlines everything into one page.
+
+  The snapshot and `dist-demo/` are gitignored. In the demo build, `/api` calls are answered by `src/web/demo/shim.ts` and routing lives in memory.
 
 ## Gotchas learnt the hard way
 

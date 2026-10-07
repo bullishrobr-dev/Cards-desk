@@ -20,7 +20,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
     --bg: #f5f7fa;
     --panel: #ffffff;
     --panel-2: #eef1f5;
@@ -29,6 +30,16 @@
     --muted: #5d6876;
   }
 }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f7fa;
+  --panel: #ffffff;
+  --panel-2: #eef1f5;
+  --line: #dde3ea;
+  --text: #12161b;
+  --muted: #5d6876;
+}
+:root[data-theme="dark"] { color-scheme: dark; }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--text); }
@@ -195,3 +206,7 @@ main { padding: 12px 16px; }
 .toggle input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--accent); flex: none; }
 .card.off { opacity: 0.6; }
 details.card summary { cursor: pointer; padding: 8px 0; color: var(--accent); }
+
+/* Demo build banner */
+.demo-banner { background: var(--panel); border: 1px dashed var(--accent); border-radius: var(--radius); padding: 10px 12px; margin-bottom: 12px; font-size: 0.85rem; }
+.demo-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }

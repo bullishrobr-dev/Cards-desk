@@ -1,10 +1,16 @@
 import { useCallback, useEffect, useState, type MouseEvent, type ReactNode } from 'react';
 
+export const DEMO = import.meta.env.VITE_DEMO === '1';
+
+/** The demo build keeps its path in memory: it runs inside a sandboxed frame with its own URL. */
+let demoPath = '/';
+const currentPath = () => (DEMO ? demoPath : window.location.pathname + window.location.search);
+
 /** A tiny History-API router: the app has a handful of fixed paths. */
 export function usePath(): string {
-  const [path, setPath] = useState(() => window.location.pathname + window.location.search);
+  const [path, setPath] = useState(currentPath);
   useEffect(() => {
-    const onPop = () => setPath(window.location.pathname + window.location.search);
+    const onPop = () => setPath(currentPath());
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
@@ -12,8 +18,9 @@ export function usePath(): string {
 }
 
 export function navigate(to: string) {
-  if (to === window.location.pathname + window.location.search) return;
-  window.history.pushState(null, '', to);
+  if (to === currentPath()) return;
+  if (DEMO) demoPath = to;
+  else window.history.pushState(null, '', to);
   window.dispatchEvent(new PopStateEvent('popstate'));
   window.scrollTo(0, 0);
 }

@@ -8,3 +8,5 @@ dist/
 *.log
 .DS_Store
 coverage/
+dist-demo/
+src/web/demo/snapshot.json
