@@ -78,7 +78,8 @@ export function DropRow({ drop, tolerance }: { drop: DropSummary; tolerance: num
           <ShipTag region="GI" value={drop.shopCount ? drop.shipsGi : 'unknown'} />
           <ShipTag region="ES" value={drop.shopCount ? drop.shipsEs : 'unknown'} />
         </div>
-        <RrpNote ratio={drop.priceVsRrp} tolerance={tolerance} />
+        {/* A failed gate already explains itself; a second RRP note for another box type would contradict it. */}
+        {failed ? null : <RrpNote ratio={drop.priceVsRrp} tolerance={tolerance} />}
       </div>
     </Link>
   );

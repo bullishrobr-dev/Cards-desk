@@ -147,9 +147,13 @@ describe('job runner', () => {
 describe('hot polling and going live', () => {
   it('never raises went_live for a release first seen after its date', async () => {
     const routes = { 'https://www.collectosk.com/robots.txt': robotsOk, [COLLECTOSK]: { file: 'fixtures/collectosk/response.json' } };
-    await runFetchJob(runner('2026-10-20T10:00:00Z', routes).deps, calendarMsg('collectosk'));
-    expect((await runMaintenance(db, rules, new Date('2026-10-20T11:00:00Z'))).wentLive).toBe(0);
+    await runFetchJob(runner('2026-10-16T10:00:00Z', routes).deps, calendarMsg('collectosk'));
+    expect((await runMaintenance(db, rules, new Date('2026-10-16T11:00:00Z'))).wentLive).toBe(0);
     expect(await db.prepare(`SELECT COUNT(*) AS n FROM drops WHERE status = 'live'`).first<number>('n')).toBeGreaterThan(0);
+    // Dates more than 3 days back skip "live" and go straight to "past", in one pass.
+    const stale = await db.prepare(`SELECT COUNT(*) AS n FROM drops WHERE status = 'live' AND starts_at < '2026-10-13'`).first<number>('n');
+    expect(stale).toBe(0);
+    expect(await db.prepare(`SELECT COUNT(*) AS n FROM drops WHERE status = 'past'`).first<number>('n')).toBeGreaterThan(0);
   });
 
   async function seedChromeF1() {

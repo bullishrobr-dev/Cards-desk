@@ -24,8 +24,10 @@ export async function runMaintenance(db: D1Database, rules: RulesConfig, now: Da
     if (!at || at > now) continue;
     // Month- or week-precision dates are windows, not moments: they never "go live" by the clock.
     if (d.precision !== 'day' && d.precision !== 'time') continue;
+    const stale = now.getTime() - at.getTime() > 3 * 86400_000;
     if (d.status === 'upcoming') {
-      writes.push(db.prepare(`UPDATE drops SET status = 'live', updated_at = ? WHERE id = ?`).bind(ts, d.id));
+      // An old date seen for the first time (a back catalogue row) goes straight to "past".
+      writes.push(db.prepare(`UPDATE drops SET status = ?, updated_at = ? WHERE id = ?`).bind(stale ? 'past' : 'live', ts, d.id));
       // Only a drop we knew about before it went live raises the event: a release first seen
       // after its date (an old calendar row, back stock) must never trigger a "live now" alert.
       if (Date.parse(d.created_at) <= at.getTime()) {
@@ -34,7 +36,7 @@ export async function runMaintenance(db: D1Database, rules: RulesConfig, now: Da
           db.prepare('INSERT INTO events (type, drop_id, release_id, payload, created_at) VALUES (?, ?, ?, ?, ?)').bind('went_live', d.id, d.release_id, JSON.stringify({ starts_at: d.starts_at }), ts),
         );
       }
-    } else if (now.getTime() - at.getTime() > 3 * 86400_000) {
+    } else if (stale) {
       writes.push(db.prepare(`UPDATE drops SET status = 'past', updated_at = ? WHERE id = ?`).bind(ts, d.id));
     }
   }
