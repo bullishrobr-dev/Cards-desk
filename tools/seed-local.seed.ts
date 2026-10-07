@@ -14,6 +14,8 @@ import { calendarRootUnit, parseCalendar, parseRetailer, retailerRootUnits } fro
 import type { ListingObservation, ReleaseObservation } from '../src/worker/adapters/types.ts';
 import { parseCollectoskPost } from '../src/worker/adapters/collectosk-post.ts';
 import { ingestEnrichment } from '../src/worker/ingest/enrich.ts';
+import { ingestMarketPrices } from '../src/worker/ingest/market.ts';
+import { selectSealed } from '../src/shared/cardmarket.ts';
 
 it('seed', async () => {
   const db = createTestD1();
@@ -49,9 +51,14 @@ it('seed', async () => {
       await ingestListings(deps, r, parsed.items.filter((x): x is ListingObservation => x.kind === 'listing'));
     }
   }
+  // Cardmarket: the saved subset of the real price file.
+  const cm = JSON.parse(readFileSync('fixtures/cardmarket/products_nonsingles_6.subset.json', 'utf8'));
+  const cmPrices = JSON.parse(readFileSync('fixtures/cardmarket/price_guide_6.subset.json', 'utf8'));
+  const rows = selectSealed(cm.products, cmPrices.priceGuides, '2023-10-01');
+  for (let i = 0; i < rows.length; i += 50) await ingestMarketPrices(deps, { source: 'cardmarket', asOf: new Date(cmPrices.createdAt).toISOString(), rows: rows.slice(i, i + 50) });
   await runMaintenance(db, rules, now);
 
-  const tables = ['retailers', 'releases', 'products', 'title_matches', 'drops', 'drop_observations', 'drop_date_history', 'events', 'listings', 'stock_events', 'price_events', 'fx_rates'];
+  const tables = ['retailers', 'releases', 'products', 'title_matches', 'drops', 'drop_observations', 'drop_date_history', 'events', 'listings', 'stock_events', 'price_events', 'fx_rates', 'market_prices', 'market_price_history', 'source_state', 'source_runs'];
   const lines: string[] = ['PRAGMA foreign_keys = OFF;'];
   for (const t of [...tables].reverse()) lines.push(`DELETE FROM ${t};`);
   const q = (v: unknown) => (v === null || v === undefined ? 'NULL' : typeof v === 'number' ? String(v) : `'${String(v).replace(/'/g, "''")}'`);

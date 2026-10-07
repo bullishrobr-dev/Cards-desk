@@ -1,0 +1,29 @@
+# Daily Cardmarket import for Pokémon sealed prices (see tools/cardmarket-import.ts).
+# Needs two repository secrets, printed by `node tools/deploy.mjs`:
+#   CARD_DESK_PUBLIC_URL    https://card-desk-public.<subdomain>.workers.dev
+#   CARD_DESK_INGEST_TOKEN  the public Worker's INGEST_TOKEN
+# Until they are set, the job exits cleanly without sending anything.
+name: Cardmarket import
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # Cardmarket publishes its price file around 01:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Import
+        run: node --experimental-strip-types tools/cardmarket-import.ts
+        env:
+          CARD_DESK_PUBLIC_URL: ${{ secrets.CARD_DESK_PUBLIC_URL }}
+          CARD_DESK_INGEST_TOKEN: ${{ secrets.CARD_DESK_INGEST_TOKEN }}

@@ -1,6 +1,7 @@
 import type { RulesConfig } from '../../shared/config/schema.ts';
 import { convertMinor, median } from '../ingest/util.ts';
 import { dropInstant } from '../time.ts';
+import { checkMarketFreshness } from '../ingest/market.ts';
 
 /**
  * Hourly housekeeping:
@@ -74,5 +75,6 @@ export async function runMaintenance(db: D1Database, rules: RulesConfig, now: Da
   }
 
   if (writes.length) await db.batch(writes);
+  await checkMarketFreshness(db, rules.alerts.source_failures_before_alert, now);
   return { wentLive, estimated };
 }

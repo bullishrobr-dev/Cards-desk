@@ -179,6 +179,16 @@ const signedPct = (ratio: number) => {
   return `${p > 0 ? '+' : ''}${p}%`;
 };
 
+/** "Trend +12% over 30 days" from the oldest to the newest point. */
+function trendChange(history: Array<{ date: string; trendMinor: number | null }>): string {
+  const pts = history.filter((h) => h.trendMinor !== null);
+  const first = pts[0];
+  const last = pts[pts.length - 1];
+  if (!first || !last || first === last || !first.trendMinor || !last.trendMinor) return '';
+  const days = Math.round((Date.parse(last.date) - Date.parse(first.date)) / 86_400_000);
+  return `Trend ${signedPct(last.trendMinor / first.trendMinor)} over ${days} day${days === 1 ? '' : 's'}`;
+}
+
 const KIND_LABEL: Record<SectorSignals['moves'][number]['kind'], string> = { sold_out: 'Sold out', restock: 'Restock', price_up: 'Price up', price_down: 'Price down' };
 
 function hoursLabel(h: number | null): string {
@@ -415,6 +425,40 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
           ))}
         </div>
       ))}
+
+      {d.market.length ? (
+        <>
+          <h2>Market price (Cardmarket, EU)</h2>
+          <p className="small muted">
+            What the box sells for on Cardmarket, all language editions. Trend and average come from sales; low is the cheapest listing. For context only: it never changes the Desk Score.
+          </p>
+          <table className="table market">
+            <tbody>
+              {d.market.map((m) => (
+                <tr key={m.name}>
+                  <td>
+                    {m.configurationLabel}
+                    <div className="small muted">{m.name}</div>
+                  </td>
+                  <td>
+                    {m.trend ? <strong>{formatMoney(m.trend)}</strong> : '—'} <span className="small muted">trend</span>
+                    {m.low ? <div className="small">from {formatMoney(m.low)}</div> : null}
+                    {m.trendVsRrp !== null ? <div className="small muted">{signedPct(m.trendVsRrp)} vs RRP</div> : null}
+                    {m.history.length > 1 ? <div className="small muted">{trendChange(m.history)}</div> : null}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="small muted">
+            Prices of {formatStamp(d.market[0]?.asOf ?? null)} from{' '}
+            <a href="https://www.cardmarket.com/" target="_blank" rel="noopener noreferrer">
+              Cardmarket
+            </a>
+            .
+          </p>
+        </>
+      ) : null}
 
       <h2>Costs to bear in mind</h2>
       <ul className="notes">

@@ -247,6 +247,34 @@ CREATE TABLE price_events (
 );
 CREATE INDEX idx_price_events_listing ON price_events (listing_id, at);
 
+-- Secondary-market prices (Cardmarket for Pokémon sealed), matched to a release and box type.
+-- Not a shop: never counts towards the purchasable or price gates.
+CREATE TABLE market_prices (
+  source        TEXT NOT NULL,
+  external_id   TEXT NOT NULL,
+  name          TEXT NOT NULL,
+  release_id    TEXT REFERENCES releases (id),    -- NULL: no release matched
+  configuration TEXT,
+  currency      TEXT NOT NULL,
+  low_minor     INTEGER,                          -- cheapest listing
+  trend_minor   INTEGER,                          -- sold-price trend
+  avg_minor     INTEGER,                          -- average sold price
+  as_of         TEXT NOT NULL,                    -- the source file's timestamp
+  updated_at    TEXT NOT NULL,
+  PRIMARY KEY (source, external_id)
+);
+CREATE INDEX idx_market_prices_release ON market_prices (release_id, configuration);
+
+CREATE TABLE market_price_history (
+  source        TEXT NOT NULL,
+  external_id   TEXT NOT NULL,
+  date          TEXT NOT NULL,                    -- YYYY-MM-DD of the source file
+  low_minor     INTEGER,
+  trend_minor   INTEGER,
+  avg_minor     INTEGER,
+  PRIMARY KEY (source, external_id, date)
+);
+
 -- ECB reference rates: 1 EUR = rate units of currency.
 CREATE TABLE fx_rates (
   date      TEXT NOT NULL,

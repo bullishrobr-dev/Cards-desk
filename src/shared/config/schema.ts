@@ -239,7 +239,8 @@ const Source = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   label: z.string(),
   adapter: z.string(),
-  role: z.enum(['calendar', 'signal', 'reference']),
+  /** "market" sources are pushed in by an external job (see tools/), never fetched by the dispatcher. */
+  role: z.enum(['calendar', 'signal', 'reference', 'market']),
   enabled: z.boolean(),
   categories: z.array(z.string()),
   urls: z.array(z.string().url()).min(1),

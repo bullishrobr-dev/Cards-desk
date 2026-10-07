@@ -94,6 +94,12 @@ if (rotate || !existing.has('RECEIPT_TOKEN')) {
   mainSecrets.RECEIPT_TOKEN = publicSecrets.RECEIPT_TOKEN = b64url(crypto.getRandomValues(new Uint8Array(32)));
   mainSecrets.ICAL_TOKEN = publicSecrets.ICAL_TOKEN = b64url(crypto.getRandomValues(new Uint8Array(32)));
 }
+// The Cardmarket import posts to the public Worker with its own token (only that Worker has it).
+const publicExisting = new Set(JSON.parse(tryRun(['secret', 'list', '--format', 'json', '--config', 'wrangler.public.jsonc']).out || '[]').map((s) => s.name));
+let ingestToken = null;
+if (rotate || !publicExisting.has('INGEST_TOKEN')) {
+  ingestToken = publicSecrets.INGEST_TOKEN = b64url(crypto.getRandomValues(new Uint8Array(32)));
+}
 if (rotate || !existing.has('VAPID_PRIVATE_KEY')) {
   const pair = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify']);
   mainSecrets.VAPID_PUBLIC_KEY = b64url(new Uint8Array(await crypto.subtle.exportKey('raw', pair.publicKey)));
@@ -115,6 +121,15 @@ try {
   rmSync(dir, { recursive: true, force: true });
 }
 console.log(`  set: ${Object.keys(mainSecrets).join(', ')}`);
+
+if (ingestToken) {
+  console.log(`
+Cardmarket import: add these two secrets to the GitHub repository
+(Settings → Secrets and variables → Actions → New repository secret).
+This token is shown once; run with ROTATE=1 to make a new one.
+  CARD_DESK_PUBLIC_URL   = ${publicUrl}
+  CARD_DESK_INGEST_TOKEN = ${ingestToken}`);
+}
 
 console.log(`
 Done.

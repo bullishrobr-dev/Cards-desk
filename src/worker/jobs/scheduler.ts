@@ -43,7 +43,7 @@ export async function dispatch(deps: DispatchDeps): Promise<{ queued: number; se
 
   // 1. Root units from config: calendars and shop catalogues.
   const roots: Planned[] = [];
-  for (const s of sources.sources.filter((x) => x.enabled)) {
+  for (const s of sources.sources.filter((x) => x.enabled && x.role !== 'market')) {
     const unit = calendarRootUnit(s);
     roots.push({
       message: { type: 'fetch', sourceKind: 'calendar', unitKind: 'root', unit },

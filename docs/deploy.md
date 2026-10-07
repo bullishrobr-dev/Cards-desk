@@ -63,6 +63,16 @@ ACCESS_TEAM_DOMAIN=<team>.cloudflareaccess.com ACCESS_AUD=<aud tag> \
 CLOUDFLARE_API_TOKEN=<token> CLOUDFLARE_ACCOUNT_ID=<account id> node tools/deploy.mjs
 ```
 
+## 3b. Turn on the daily Cardmarket import (2 minutes)
+
+The first deploy prints `CARD_DESK_PUBLIC_URL` and `CARD_DESK_INGEST_TOKEN` once.
+
+1. On GitHub, open the repository, then **Settings → Secrets and variables → Actions → New repository secret**.
+2. Add both values under exactly those names.
+3. Open **Actions → Cardmarket import → Run workflow** to try it straight away. After that it runs every day at 03:17 UTC.
+
+Until both secrets are set, the job does nothing and still passes. Once imports have started, a feed that stops for more than 50 hours shows as failing in Source health and raises an alert. If you lose the token, re-run the deploy with `ROTATE=1` and update the GitHub secret.
+
 ## 4. On your iPhone
 
 1. Open the app URL in Safari and sign in with the emailed code.
@@ -87,6 +97,7 @@ CLOUDFLARE_API_TOKEN=<token> CLOUDFLARE_ACCOUNT_ID=<account id> node tools/deplo
 | Resend (`RESEND_API_KEY`, `ALERT_EMAIL`) | Email fallback for critical alerts and dead-subscription notices | Push only. Without a verified domain, Resend can only send to the email you signed up with, which is all this app needs. |
 | Anthropic (`ANTHROPIC_API_KEY`) | The cheap LLM pass for titles the matcher can't place (model in `CLAUDE_MATCH_MODEL`) | Those titles stay unmatched |
 | Sentry (`SENTRY_DSN`) | Error reports | Errors appear only in Cloudflare's logs |
+| GitHub Actions secrets (`CARD_DESK_PUBLIC_URL`, `CARD_DESK_INGEST_TOKEN`) | Daily Cardmarket prices for Pokémon sealed (step 3b) | No market prices |
 
 ## Free plan limits to watch
 

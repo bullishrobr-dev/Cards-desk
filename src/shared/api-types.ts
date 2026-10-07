@@ -74,6 +74,8 @@ export interface DropDetail extends DropSummary {
   products: ProductView[];
   costNotes: Array<{ region: 'gi' | 'es'; from: string; text: string; source: string }>;
   tags: string[];
+  /** Secondary-market prices per box type (Cardmarket, EU, EUR); empty when none matched. */
+  market: MarketView[];
   /** From the release's collectosk page; null until it has been read. */
   checklist: { cards: number | null; rookies: string[]; players: string[]; readAt: string; url: string | null } | null;
 }
@@ -92,7 +94,7 @@ export interface NotificationItem {
 export interface SourceHealth {
   id: string;
   label: string;
-  kind: 'calendar' | 'signal' | 'reference' | 'shop';
+  kind: 'calendar' | 'signal' | 'reference' | 'market' | 'shop';
   enabled: boolean;
   lastSuccessAt: string | null;
   lastFailureAt: string | null;
@@ -177,4 +179,21 @@ export interface SectorSignals {
     retailer: string;
     detail: string;
   }>;
+}
+
+export interface MarketView {
+  source: 'cardmarket';
+  name: string;
+  configuration: string;
+  configurationLabel: string;
+  /** Cheapest listing, sold-price trend and average sold price. */
+  low: Money | null;
+  trend: Money | null;
+  avg: Money | null;
+  /** Trend ÷ the box type's RRP, when both are known. */
+  trendVsRrp: number | null;
+  asOf: string;
+  url: string;
+  /** Daily trend and low, oldest first (up to 90 days). */
+  history: Array<{ date: string; trendMinor: number | null; lowMinor: number | null }>;
 }

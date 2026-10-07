@@ -10,7 +10,7 @@ Phases 1 (MVP) and 2 (Desk Score, watchlist, pins, tags, overrides, "New Priorit
 
 Phase 3 is partly built:
 - **Done:** collectosk release-page enrichment (box types, published RRPs, checklists with watchlist players and rookies), per-listing price history, and the Market signals view.
-- **Waiting on the owner:** the choice of a secondary-market price source. The recommendation is the Cardmarket price-guide files for Pokémon sealed, with PriceCharting as runner-up. The Cardmarket file is 15.6 MB, which cannot be parsed within the Free plan's 10 ms CPU, so it needs a GitHub Action pre-filter or Workers Paid.
+- **Secondary market:** Cardmarket price-guide files for Pokémon sealed, chosen on the owner's delegation. The 15.6 MB file can't be parsed within the Free plan's 10 ms CPU, so `.github/workflows/cardmarket.yml` runs `tools/cardmarket-import.ts` daily. It filters the file to single sealed boxes and posts them in batches of 50 to the public Worker at `/ingest/market/<INGEST_TOKEN>`. Market prices are shown for context only; they never touch the Desk Score gates. A box type Cardmarket sells does create the product, though.
 
 The Desk Score lives in `src/worker/score/`. `desk-score.ts` is pure and unit-tested; `load.ts` builds its input from D1. Overrides and tags are per release (the scored unit); owner RRPs are per box type.
 
@@ -54,11 +54,12 @@ src/worker/score/         Desk Score (pure) and its D1 loader
 src/worker/notify/        notification engine, Web Push, email fallback, iCal, weekly brief
 src/worker/alerts/        AlertScheduler Durable Object (exact-time alarms)
 src/worker/api/           Hono API behind Cloudflare Access (JWT re-checked)
-src/public-worker/        public Worker: push receipts + iCal feed (token paths)
+src/public-worker/        public Worker: push receipts, iCal feed, market import (token paths)
 src/web/                  Vite + React PWA; public/sw.js is the service worker
 migrations/               D1 schema
 fixtures/<source>/        real captured responses used by tests
-tools/                    deploy script, VAPID generator, fixture capture, local seed
+tools/                    deploy script, VAPID generator, fixture capture, local seed, Cardmarket import
+.github/workflows/        daily Cardmarket import (needs two repository secrets, see docs/deploy.md)
 ```
 
 ## Commands
@@ -79,4 +80,5 @@ tools/                    deploy script, VAPID generator, fixture capture, local
 - **RRP precedence is owner > rules.yaml > published (collectosk) > estimated.** An estimate (the median of the first shop prices) can hide a 2× markup: the Chrome F1 hobby box was estimated at £783 against a published £415.
 - **"1st" badges on collectosk checklists are not rookies.** Legends get them too; only `RC` counts.
 - **Schedule local wall-clock times with `localTimeUtc`, never midnight plus hours.** The brief falls on Sundays, which is when the clocks change.
+- **Cardmarket names Asian and regional editions like English ones** ("30th Celebration Indonesian & Thai Booster Box", "151C: Collect 151 …"). Filter them out before matching, or they attach to the English release.
 - **Never `git checkout -- .` with uncommitted work.**

@@ -100,6 +100,24 @@ sources:
     precedence: 9
     notes: Daily GBP/EUR/USD conversion.
 
+  - id: cardmarket
+    label: Cardmarket price guide (Pokémon sealed)
+    adapter: cardmarket-import
+    role: market
+    enabled: true
+    categories: [pokemon]
+    urls:
+      - https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json
+      - https://downloads.s3.cardmarket.com/productCatalog/productList/products_nonsingles_6.json
+    cadence_minutes: 1440
+    crawl_delay_seconds: 0
+    max_confidence: rumoured
+    precedence: 9
+    notes: >-
+      EU market prices in EUR (sold-based avg/trend, cheapest listing). The 16 MB file is too big
+      for a Free-plan Worker, so .github/workflows/cardmarket.yml pre-filters it daily and posts
+      the sealed boxes to the public Worker. Public data, free to use (Cardmarket, July 2025).
+
 retailers:
   # ---- Sports: ship to Gibraltar ----
   - id: sportscardsworldwide

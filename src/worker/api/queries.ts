@@ -1,5 +1,5 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
-import type { Confidence, DeskScore, DropDetail, DropSummary, ListingHistoryPoint, ListingView, Money, Precision, ProductView, RrpSource, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
+import type { Confidence, DeskScore, DropDetail, DropSummary, ListingHistoryPoint, ListingView, MarketView, Money, Precision, ProductView, RrpSource, ShipFlag, SourceHealth } from '../../shared/api-types.ts';
 import { convertMinor, placeholders } from '../ingest/util.ts';
 import { addMinutes, dropInstant, localDate } from '../time.ts';
 import { loadScoreInputs } from '../score/load.ts';
@@ -267,8 +267,10 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
       return [];
     }
   };
+  const market = await marketFor(db, d.release_id, productViews, rates, configLabel);
   return {
     ...summarise(d, allListings, null, rates, rules.owner.timezone, view),
+    market,
     tags: view.tags.get(d.release_id) ?? [],
     checklist: enrich?.enriched_at
       ? { cards: enrich.checklist_cards, rookies: list(enrich.rookies), players: list(enrich.players), readAt: enrich.enriched_at, url: enrich.url }
@@ -278,6 +280,42 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     products: productViews,
     costNotes: rules.cost_notes.map((n) => ({ region: n.applies_to.region, from: n.applies_to.from, text: n.text, source: n.source })),
   };
+}
+
+/** Cardmarket prices for a release, per box type, with up to 90 days of history. Two reads. */
+async function marketFor(db: D1Database, releaseId: string, products: ProductView[], rates: Rates, configLabel: (c: string) => string): Promise<MarketView[]> {
+  const rows = (
+    await db
+      .prepare(`SELECT external_id, name, configuration, currency, low_minor, trend_minor, avg_minor, as_of FROM market_prices WHERE release_id = ? AND source = 'cardmarket' ORDER BY configuration`)
+      .bind(releaseId)
+      .all<{ external_id: string; name: string; configuration: string; currency: string; low_minor: number | null; trend_minor: number | null; avg_minor: number | null; as_of: string }>()
+  ).results;
+  if (!rows.length) return [];
+  const hist = (
+    await db
+      .prepare(`SELECT external_id, date, trend_minor, low_minor FROM market_price_history WHERE source = 'cardmarket' AND external_id IN (${placeholders(rows.length)}) AND date >= ? ORDER BY date`)
+      .bind(...rows.map((r) => r.external_id), addMinutes(new Date(), -90 * 1440).toISOString().slice(0, 10))
+      .all<{ external_id: string; date: string; trend_minor: number | null; low_minor: number | null }>()
+  ).results;
+  return rows.map((r) => {
+    const rrp = products.find((p) => p.configuration === r.configuration)?.rrp ?? null;
+    const m = (v: number | null) => (v === null ? null : money(v, r.currency, rates));
+    return {
+      source: 'cardmarket' as const,
+      name: r.name,
+      configuration: r.configuration,
+      configurationLabel: configLabel(r.configuration),
+      low: m(r.low_minor),
+      trend: m(r.trend_minor),
+      avg: m(r.avg_minor),
+      trendVsRrp: r.trend_minor !== null && rrp ? ratio(r.trend_minor, r.currency, rrp.minor, rrp.currency, rates) : null,
+      asOf: r.as_of,
+      // Product page URLs are not in the data files and the site is behind a bot check, so a deep
+      // link could not be verified: link the home page and show the exact product name.
+      url: 'https://www.cardmarket.com/',
+      history: hist.filter((h) => h.external_id === r.external_id).map((h) => ({ date: h.date, trendMinor: h.trend_minor, lowMinor: h.low_minor })),
+    };
+  });
 }
 
 const HISTORY_POINTS = 30;
