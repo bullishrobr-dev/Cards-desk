@@ -8,6 +8,8 @@ import { parseShopify, shopifyUnit } from '../adapters/shops.ts';
 import type { ListingObservation, ReleaseObservation } from '../adapters/types.ts';
 import { ingestListings, ingestReleases, type IngestDeps } from './ingest.ts';
 import { syncRetailers } from './retailers.ts';
+import { ingestEnrichment } from './enrich.ts';
+import { parseCollectoskPost } from '../adapters/collectosk-post.ts';
 
 const fx = (p: string) => readFileSync(`fixtures/${p}`, 'utf8');
 const classifier = createClassifier(rules);
@@ -197,5 +199,76 @@ describe('Pokémon: official dates win, everything lands on one release', () => 
     expect((await q('SELECT * FROM releases')).length).toBe(0);
     // Listings are still recorded for market signals.
     expect((await q('SELECT * FROM listings')).length).toBeGreaterThan(0);
+  });
+});
+
+describe('collectosk enrichment (product posts)', () => {
+  const post = (slug: string) => parseCollectoskPost(fx(`collectosk-post/${slug}.json`));
+  const releaseLike = async (like: string) => (await q<{ id: string }>(`SELECT id FROM releases WHERE name LIKE ?`, like))[0]?.id ?? '';
+
+  it('keeps the calendar link to each release page', async () => {
+    await loadSportsCalendars();
+    const rows = await q<{ url: string }>(`SELECT url FROM drop_observations WHERE source_id = 'collectosk' AND url IS NOT NULL`);
+    expect(rows.map((r) => r.url)).toContain('https://www.collectosk.com/2026-topps-chrome-formula-1-racing-cards/');
+  });
+
+  it('adds box types with published RRPs, rookies and the checklist size; within budget', async () => {
+    await loadSportsCalendars();
+    const f1 = await releaseLike('%Chrome Formula 1%');
+    const c = counting(db);
+    const stats = await ingestEnrichment({ ...deps, db: c.db }, f1, post('2026-topps-chrome-formula-1-racing-cards'));
+    expect(c.calls()).toBeLessThanOrEqual(3);
+    expect(stats).toMatchObject({ productsCreated: 3, rrpsSet: 3 });
+    const boxes = await q<{ configuration: string; rrp_minor: number; rrp_currency: string; rrp_source: string }>(
+      `SELECT configuration, rrp_minor, rrp_currency, rrp_source FROM products WHERE release_id = ? ORDER BY configuration`,
+      f1,
+    );
+    expect(boxes).toEqual([
+      { configuration: 'hobby', rrp_minor: 41500, rrp_currency: 'GBP', rrp_source: 'published' },
+      { configuration: 'mega', rrp_minor: 6000, rrp_currency: 'GBP', rrp_source: 'published' },
+      { configuration: 'retail', rrp_minor: 3000, rrp_currency: 'GBP', rrp_source: 'published' },
+    ]);
+    const [r] = await q<{ rookies: string; checklist_cards: number; enriched_at: string }>(`SELECT rookies, checklist_cards, enriched_at FROM releases WHERE id = ?`, f1);
+    expect(JSON.parse(r?.rookies ?? '[]')).toEqual(['Arvid Lindblad']);
+    expect(r?.checklist_cards).toBeGreaterThan(500);
+    expect(await q(`SELECT type FROM events WHERE type = 'release_enriched' AND release_id = ?`, f1)).toHaveLength(1);
+  });
+
+  it('shop listings then attach to the same box types, and a re-read changes nothing', async () => {
+    await loadSportsCalendars();
+    const f1 = await releaseLike('%Chrome Formula 1%');
+    await ingestEnrichment(deps, f1, post('2026-topps-chrome-formula-1-racing-cards'));
+    const scd = retailer('sportscardsdirect');
+    await ingestListings(deps, scd, parseShopify(fx('sportscardsdirect/products-0-page1.json'), shopifyUnit(scd, '/products.json'), scd).items as ListingObservation[]);
+    const products = await q<{ configuration: string; n: number }>(
+      `SELECT p.configuration, COUNT(l.id) AS n FROM products p LEFT JOIN listings l ON l.product_id = p.id WHERE p.release_id = ? GROUP BY p.id ORDER BY p.configuration`,
+      f1,
+    );
+    expect(products.map((p) => p.configuration)).toEqual(['hobby', 'mega', 'retail']);
+    expect(products.every((p) => p.n >= 1)).toBe(true);
+    const again = await ingestEnrichment(at('2026-10-08T08:00:00Z'), f1, post('2026-topps-chrome-formula-1-racing-cards'));
+    expect(again).toMatchObject({ productsCreated: 0, rrpsSet: 0, playersAdded: [] });
+    expect(await q(`SELECT type FROM events WHERE type = 'release_enriched'`)).toHaveLength(1);
+  });
+
+  it('finds watchlist players on a checklist', async () => {
+    await loadSportsCalendars();
+    const ucl = await releaseLike('%Stadium Club Chrome%');
+    const stats = await ingestEnrichment(deps, ucl, post('2025-26-topps-stadium-club-chrome-uefa-champions-league-soccer-cards'));
+    expect(stats.playersAdded.sort()).toEqual(['Florian Wirtz', 'Lamine Yamal']);
+    const [r] = await q<{ players: string }>(`SELECT players FROM releases WHERE id = ?`, ucl);
+    expect(JSON.parse(r?.players ?? '[]').sort()).toEqual(['Florian Wirtz', 'Lamine Yamal']);
+  });
+
+  it('a published RRP replaces an estimate but never a rules.yaml RRP', async () => {
+    await loadSportsCalendars();
+    const f1 = await releaseLike('%Chrome Formula 1%');
+    await db.prepare(`INSERT INTO products (id, release_id, configuration, name, rrp_minor, rrp_currency, rrp_source, created_at, updated_at) VALUES ('p1', ?, 'hobby', 'x', 78352, 'GBP', 'estimated', 'now', 'now'), ('p2', ?, 'mega', 'y', 9999, 'GBP', 'config', 'now', 'now')`).bind(f1, f1).run();
+    await ingestEnrichment(deps, f1, post('2026-topps-chrome-formula-1-racing-cards'));
+    const rows = await q<{ id: string; rrp_minor: number; rrp_source: string }>(`SELECT id, rrp_minor, rrp_source FROM products WHERE id IN ('p1', 'p2') ORDER BY id`);
+    expect(rows).toEqual([
+      { id: 'p1', rrp_minor: 41500, rrp_source: 'published' },
+      { id: 'p2', rrp_minor: 9999, rrp_source: 'config' },
+    ]);
   });
 });

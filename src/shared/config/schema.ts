@@ -176,6 +176,8 @@ export const RulesConfig = z.object({
     hot_window_hours: z.number().positive(),
     final_window_hours: z.number().positive(),
     shipping_check_minutes: z.number().int().positive(),
+    enrichment_minutes: z.number().int().positive(),
+    enrichment_horizon_days: z.number().int().positive(),
   }),
   alerts: z.object({
     lead_times_minutes: z.array(z.number().int().positive()),

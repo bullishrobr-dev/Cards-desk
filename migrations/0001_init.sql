@@ -15,7 +15,7 @@ PRAGMA foreign_keys = ON;
 CREATE TABLE source_state (
   source_id            TEXT NOT NULL,          -- id from config/sources.yaml
   unit_key             TEXT NOT NULL,          -- URL path + page, e.g. "/products.json?page=2"
-  unit_kind            TEXT NOT NULL CHECK (unit_kind IN ('root', 'page', 'followup', 'listing')),
+  unit_kind            TEXT NOT NULL CHECK (unit_kind IN ('root', 'page', 'followup', 'listing', 'enrich')),
   url                  TEXT NOT NULL,
   has_more             INTEGER NOT NULL DEFAULT 0, -- a full page: the next page exists
   etag                 TEXT,
@@ -88,6 +88,9 @@ CREATE TABLE releases (
   subject        TEXT NOT NULL,                   -- space-separated subject tokens
   players        TEXT,                            -- JSON array of watchlist players seen
   scarcity       TEXT,                            -- JSON array of scarcity signal ids
+  rookies        TEXT,                            -- JSON array of rookie-card names from the checklist
+  checklist_cards INTEGER,                        -- checklist entries seen (NULL: no checklist read yet)
+  enriched_at    TEXT,                            -- last successful read of the release's product post
   origin_source  TEXT NOT NULL,                   -- source that first reported it
   created_at     TEXT NOT NULL,
   updated_at     TEXT NOT NULL
@@ -102,7 +105,7 @@ CREATE TABLE products (
   name           TEXT NOT NULL,
   rrp_minor      INTEGER,
   rrp_currency   TEXT,
-  rrp_source     TEXT CHECK (rrp_source IN ('config', 'estimated')),
+  rrp_source     TEXT CHECK (rrp_source IN ('config', 'published', 'estimated')), -- config > published > estimated
   image_key      TEXT,                            -- R2 object key
   created_at     TEXT NOT NULL,
   updated_at     TEXT NOT NULL,
@@ -160,6 +163,7 @@ CREATE TABLE drop_observations (
   precedence   INTEGER NOT NULL,                  -- lower wins
   region       TEXT,
   raw          TEXT,                              -- the date text exactly as published
+  url          TEXT,                              -- the source's page for this release, when it links one
   first_seen_at TEXT NOT NULL,
   last_seen_at TEXT NOT NULL,
   PRIMARY KEY (drop_id, source_id)

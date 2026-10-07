@@ -204,3 +204,44 @@ describe('shipping hint from /meta.json', () => {
     expect(await db.prepare(`SELECT ships_gi FROM retailers WHERE id = 'zatu'`).first<string>('ships_gi')).toBe('yes');
   });
 });
+
+describe('collectosk enrichment jobs', () => {
+  const loadCalendar = async () => {
+    const r = runner('2026-10-05T10:00:00Z', { 'https://www.collectosk.com/robots.txt': robotsOk, [COLLECTOSK]: { file: 'fixtures/collectosk/response.json' } });
+    await runFetchJob(r.deps, calendarMsg('collectosk'));
+  };
+
+  it('queues each linked upcoming release page once, every 3 days', async () => {
+    await loadCalendar();
+    const q = fakeQueue();
+    await dispatch({ db, queue: q.queue, rules, sources, now: new Date('2026-10-05T10:20:00Z'), llmEnabled: false });
+    const enrich = q.sent.flatMap((m) => (m.body.type === 'fetch' && m.body.unitKind === 'enrich' ? [m.body] : []));
+    expect(enrich.length).toBeGreaterThan(3);
+    const f1 = enrich.find((m) => m.unit.key === 'post:2026-topps-chrome-formula-1-racing-cards');
+    expect(f1?.unit.url).toBe('https://www.collectosk.com/wp-json/wp/v2/posts?slug=2026-topps-chrome-formula-1-racing-cards&_fields=id%2Cslug%2Cmodified_gmt%2Ccontent');
+    expect(f1?.unit.context?.releaseId).toMatch(/^[0-9A-Z]{26}$/);
+    const due = await db.prepare(`SELECT next_due_at FROM source_state WHERE unit_key = ?`).bind(f1?.unit.key).first<string>('next_due_at');
+    expect(due).toBe('2026-10-08T10:20:00.000Z');
+    const q2 = fakeQueue();
+    await dispatch({ db, queue: q2.queue, rules, sources, now: new Date('2026-10-07T10:20:00Z'), llmEnabled: false });
+    expect(q2.sent.some((m) => m.body.type === 'fetch' && m.body.unitKind === 'enrich')).toBe(false);
+  });
+
+  it('runs a post job end to end; a vanished post fails loudly', async () => {
+    await loadCalendar();
+    const q = fakeQueue();
+    await dispatch({ db, queue: q.queue, rules, sources, now: new Date('2026-10-05T10:20:00Z'), llmEnabled: false });
+    const msg = q.sent.map((m) => m.body).find((b): b is FetchMsg => b.type === 'fetch' && b.unit.key === 'post:2026-topps-chrome-formula-1-racing-cards');
+    if (!msg) throw new Error('not queued');
+    const POSTS = 'https://www.collectosk.com/wp-json/wp/v2/posts';
+    const ok = runner('2026-10-05T10:30:00Z', { 'https://www.collectosk.com/robots.txt': robotsOk, [POSTS]: { file: 'fixtures/collectosk-post/2026-topps-chrome-formula-1-racing-cards.json' } });
+    const res = await runFetchJob(ok.deps, msg);
+    expect(res).toMatchObject({ outcome: 'ok', stats: { seen: 6, changed: 6 } });
+    expect(await db.prepare(`SELECT COUNT(*) AS n FROM products WHERE rrp_source = 'published'`).first<number>('n')).toBe(3);
+
+    const gone = runner('2026-10-08T10:30:00Z', { 'https://www.collectosk.com/robots.txt': robotsOk, [POSTS]: { body: '[]' } });
+    const failed = await runFetchJob(gone.deps, msg);
+    expect(failed.outcome).toBe('failed');
+    expect(failed.error).toMatch(/no post with this slug/);
+  });
+});

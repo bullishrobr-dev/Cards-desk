@@ -99,7 +99,7 @@ export async function notificationsFromEvents(deps: EngineDeps): Promise<NewNoti
 }
 
 /** Events after which a release's Desk Score may have changed. */
-const RESCORE_EVENTS = new Set(['release_discovered', 'date_set', 'date_changed', 'confidence_changed', 'restock']);
+const RESCORE_EVENTS = new Set(['release_discovered', 'release_enriched', 'date_set', 'date_changed', 'confidence_changed', 'restock']);
 
 /**
  * "New Priority drop": once per release, the first time it scores Priority and passes every hard

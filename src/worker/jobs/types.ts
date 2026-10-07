@@ -1,6 +1,6 @@
 import type { Unit } from '../adapters/types.ts';
 
-export type UnitKind = 'root' | 'page' | 'followup' | 'listing';
+export type UnitKind = 'root' | 'page' | 'followup' | 'listing' | 'enrich';
 
 export type JobMessage =
   | { type: 'fetch'; sourceKind: 'calendar' | 'retailer'; unitKind: UnitKind; unit: Unit }

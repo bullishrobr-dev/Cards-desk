@@ -42,12 +42,12 @@ export async function loadScoreInputs(db: D1Database, releaseIds: string[], owne
   if (!ids.length) return { inputs, marks };
 
   const [releases, products, listings, tags, overrides] = await Promise.all([
-    inChunks<{ id: string; category: string; publisher: string | null; line: string | null; tier: string | null; tier_points_pct: number; players: string | null; scarcity: string | null }>(
+    inChunks<{ id: string; category: string; publisher: string | null; line: string | null; tier: string | null; tier_points_pct: number; players: string | null; scarcity: string | null; rookies: string | null }>(
       db,
       ids,
-      (ph) => `SELECT id, category, publisher, line, tier, tier_points_pct, players, scarcity FROM releases WHERE id IN (${ph})`,
+      (ph) => `SELECT id, category, publisher, line, tier, tier_points_pct, players, scarcity, rookies FROM releases WHERE id IN (${ph})`,
     ),
-    inChunks<{ id: string; release_id: string; configuration: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: 'config' | 'estimated' | null; own_minor: number | null; own_currency: string | null }>(
+    inChunks<{ id: string; release_id: string; configuration: string; rrp_minor: number | null; rrp_currency: string | null; rrp_source: 'config' | 'published' | 'estimated' | null; own_minor: number | null; own_currency: string | null }>(
       db,
       ids,
       (ph) =>
@@ -114,6 +114,7 @@ export async function loadScoreInputs(db: D1Database, releaseIds: string[], owne
       tierPointsPct: r.tier_points_pct,
       scarcity: [...scarcity],
       players: parseList(r.players),
+      rookies: parseList(r.rookies),
       products: prods.map(({ id: _id, ...p }) => p),
       manualTags: marks.tags.get(r.id) ?? [],
       override: marks.overrides.get(r.id) ?? null,

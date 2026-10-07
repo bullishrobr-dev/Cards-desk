@@ -146,7 +146,7 @@ categories:
       - { id: jumbo, label: Jumbo, points_pct: 75, keywords: [jumbo] }
       - { id: collector, label: Collector box / tin, points_pct: 55, keywords: [collector tin, collector box, collectors box] } # REVIEW
       - { id: mega, label: Mega, points_pct: 50, keywords: [mega box, mega] }
-      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box, fat pack] }
+      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box, blaster, fat pack] } # a blaster is a retail format
 
   f1:
     label: Formula 1
@@ -175,7 +175,7 @@ categories:
       - { id: hobby, label: Hobby / Breaker, points_pct: 100, keywords: [hobby, breaker, breakers delight, breaker's delight] }
       - { id: jumbo, label: Jumbo, points_pct: 75, keywords: [jumbo] }
       - { id: mega, label: Mega, points_pct: 50, keywords: [mega box, mega] }
-      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box] }
+      - { id: retail, label: Retail, points_pct: 20, keywords: [retail, value box, blaster] }
 
   pokemon:
     label: Pokémon TCG
@@ -248,6 +248,8 @@ cadence:
   hot_window_hours: 48
   final_window_hours: 2
   shipping_check_minutes: 10080 # weekly look at each Shopify shop's /meta.json ship-to list
+  enrichment_minutes: 4320 # every 3 days: re-read a release's collectosk post (formats, RRPs, checklist)
+  enrichment_horizon_days: 120 # only releases due within this many days (or still TBD)
 
 alerts:
   lead_times_minutes: [1440, 60, 10] # T-24h, T-1h, T-10m, plus "live"

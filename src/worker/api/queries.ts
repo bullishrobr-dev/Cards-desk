@@ -245,10 +245,32 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     };
   });
 
-  const [allListings, view] = await Promise.all([listingsFor(db, [d.release_id]), ownerView(db, rules, rates, [d.release_id], ownerId)]);
+  const [allListings, view, enrich] = await Promise.all([
+    listingsFor(db, [d.release_id]),
+    ownerView(db, rules, rates, [d.release_id], ownerId),
+    db
+      .prepare(
+        `SELECT r.players, r.rookies, r.checklist_cards, r.enriched_at,
+                (SELECT o.url FROM drop_observations o WHERE o.drop_id = ? AND o.source_id = 'collectosk') AS url
+         FROM releases r WHERE r.id = ?`,
+      )
+      .bind(id, d.release_id)
+      .first<{ players: string | null; rookies: string | null; checklist_cards: number | null; enriched_at: string | null; url: string | null }>(),
+  ]);
+  const list = (j: string | null | undefined): string[] => {
+    try {
+      const v = JSON.parse(j ?? '[]') as unknown;
+      return Array.isArray(v) ? (v as string[]) : [];
+    } catch {
+      return [];
+    }
+  };
   return {
     ...summarise(d, allListings, null, rates, rules.owner.timezone, view),
     tags: view.tags.get(d.release_id) ?? [],
+    checklist: enrich?.enriched_at
+      ? { cards: enrich.checklist_cards, rookies: list(enrich.rookies), players: list(enrich.players), readAt: enrich.enriched_at, url: enrich.url }
+      : null,
     observations: obs.results.map((o) => ({ sourceId: o.source_id, sourceLabel: labels.get(o.source_id) ?? o.source_id, startsAt: o.starts_at, precision: o.precision, confidence: o.confidence, raw: o.raw, region: o.region, lastSeenAt: o.last_seen_at })),
     history: hist.results.map((h) => ({ changedAt: h.changed_at, oldStartsAt: h.old_starts_at, newStartsAt: h.new_starts_at, oldConfidence: h.old_confidence, newConfidence: h.new_confidence, sourceId: h.source_id })),
     products: productViews,

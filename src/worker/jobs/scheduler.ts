@@ -1,5 +1,5 @@
 import type { RulesConfig, SourcesConfig } from '../../shared/config/schema.ts';
-import { calendarRootUnit, retailerListingUnit, retailerMetaUnit, retailerRootUnits } from '../adapters/registry.ts';
+import { calendarRootUnit, collectoskPostUnit, retailerListingUnit, retailerMetaUnit, retailerRootUnits } from '../adapters/registry.ts';
 import { addMinutes, dropInstant } from '../time.ts';
 import { MAX_DELAY_SECONDS, type JobMessage, type JobQueue } from './types.ts';
 
@@ -11,7 +11,8 @@ import { MAX_DELAY_SECONDS, type JobMessage, type JobQueue } from './types.ts';
  * - calendars: their own cadence (daily);
  * - shop catalogues: every 6 h;
  * - individual products whose release is within 48 h (or live in the last 24 h): hourly,
- *   and every 15 min inside the final 2 h.
+ *   and every 15 min inside the final 2 h;
+ * - collectosk product posts of upcoming releases (formats, RRPs, checklist): every 3 days.
  */
 
 interface Planned {
@@ -20,7 +21,7 @@ interface Planned {
   crawlDelay: number;
   sourceId: string;
   unitKey: string;
-  unitKind: 'root' | 'listing';
+  unitKind: 'root' | 'listing' | 'enrich';
   url: string;
   cadenceMinutes: number;
 }
@@ -84,7 +85,7 @@ export async function dispatch(deps: DispatchDeps): Promise<{ queued: number; se
   }
 
   const state = await db
-    .prepare(`SELECT source_id, unit_key, next_due_at, backoff_until FROM source_state WHERE unit_kind IN ('root', 'listing')`)
+    .prepare(`SELECT source_id, unit_key, next_due_at, backoff_until FROM source_state WHERE unit_kind IN ('root', 'listing', 'enrich')`)
     .all<{ source_id: string; unit_key: string; next_due_at: string; backoff_until: string | null }>();
   const stateByKey = new Map(state.results.map((s) => [`${s.source_id}|${s.unit_key}`, s]));
   const isDue = (sourceId: string, key: string) => {
@@ -130,6 +131,34 @@ export async function dispatch(deps: DispatchDeps): Promise<{ queued: number; se
       url: unit.url,
       cadenceMinutes: final ? rules.cadence.final_minutes : rules.cadence.hot_minutes,
     });
+  }
+
+  // 2b. Enrichment: the product post of each upcoming release the collectosk calendar links.
+  const ck = sources.sources.find((s) => s.adapter === 'collectosk' && s.enabled);
+  if (ck) {
+    const posts = await db
+      .prepare(
+        `SELECT o.url, d.release_id FROM drop_observations o JOIN drops d ON d.id = o.drop_id
+         WHERE o.source_id = ? AND o.url IS NOT NULL AND d.kind = 'release' AND d.status = 'upcoming'
+           AND (d.starts_at IS NULL OR d.starts_at <= ?)`,
+      )
+      .bind(ck.id, addMinutes(now, rules.cadence.enrichment_horizon_days * 1440).toISOString())
+      .all<{ url: string; release_id: string }>();
+    for (const p of posts.results) {
+      const unit = collectoskPostUnit(ck, p.url, p.release_id);
+      if (!unit || seenUnits.has(`${ck.id}|${unit.key}`) || !isDue(ck.id, unit.key)) continue;
+      seenUnits.add(`${ck.id}|${unit.key}`);
+      planned.push({
+        message: { type: 'fetch', sourceKind: 'calendar', unitKind: 'enrich', unit },
+        host: new URL(unit.url).host,
+        crawlDelay: ck.crawl_delay_seconds,
+        sourceId: ck.id,
+        unitKey: unit.key,
+        unitKind: 'enrich',
+        url: unit.url,
+        cadenceMinutes: rules.cadence.enrichment_minutes,
+      });
+    }
   }
 
   // 3. Space requests to the same host by its crawl delay.

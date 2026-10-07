@@ -23,6 +23,26 @@ const EXPECTED: Record<string, Unit['expected']> = {
   'ecb-fx': 'xml',
 };
 
+/**
+ * The WordPress REST read of a collectosk product post, from the post URL the calendar links.
+ * Only collectosk.com post URLs qualify; the release id rides along in the unit context.
+ */
+export function collectoskPostUnit(source: Source, postUrl: string, releaseId: string): Unit | null {
+  let url: URL;
+  try {
+    url = new URL(postUrl);
+  } catch {
+    return null;
+  }
+  if (url.hostname !== 'www.collectosk.com') return null;
+  const slug = url.pathname.split('/').filter(Boolean).pop();
+  if (!slug || !/^[a-z0-9-]+$/.test(slug)) return null;
+  const api = new URL('/wp-json/wp/v2/posts', url.origin);
+  api.searchParams.set('slug', slug);
+  api.searchParams.set('_fields', 'id,slug,modified_gmt,content');
+  return { sourceId: source.id, url: api.toString(), key: `post:${slug}`, expected: 'json', context: { releaseId } };
+}
+
 export function calendarRootUnit(source: Source): Unit {
   const expected = EXPECTED[source.adapter];
   if (!expected) throw new Error(`No adapter registered for ${source.adapter}`);

@@ -4,7 +4,7 @@ export type Confidence = 'rumoured' | 'announced' | 'confirmed_date' | 'confirme
 export type Precision = 'time' | 'day' | 'week' | 'month' | 'unknown';
 export type ShipFlag = 'yes' | 'no' | 'unknown';
 /** Where an RRP came from: rules.yaml, the median of shop prices, or the owner. */
-export type RrpSource = 'config' | 'estimated' | 'owner';
+export type RrpSource = 'config' | 'published' | 'estimated' | 'owner';
 
 export interface Money {
   minor: number;
@@ -72,6 +72,8 @@ export interface DropDetail extends DropSummary {
   products: ProductView[];
   costNotes: Array<{ region: 'gi' | 'es'; from: string; text: string; source: string }>;
   tags: string[];
+  /** From the release's collectosk page; null until it has been read. */
+  checklist: { cards: number | null; rookies: string[]; players: string[]; readAt: string; url: string | null } | null;
 }
 
 export interface NotificationItem {

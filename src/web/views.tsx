@@ -251,13 +251,41 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
 
       <DeskPanel drop={d} onChange={reload} />
 
+      {d.checklist ? (
+        <>
+          <h2>Checklist</h2>
+          <p className="small">
+            {d.checklist.cards ? `${d.checklist.cards} checklist entries` : 'No checklist published yet'}
+            {d.checklist.players.length ? <> · <strong>Your players: {d.checklist.players.join(', ')}</strong></> : null}
+          </p>
+          {d.checklist.rookies.length ? (
+            <p className="small">
+              Rookie cards ({d.checklist.rookies.length}): {d.checklist.rookies.slice(0, 12).join(', ')}
+              {d.checklist.rookies.length > 12 ? ` and ${d.checklist.rookies.length - 12} more` : ''}
+            </p>
+          ) : null}
+          <p className="small muted">
+            Read {formatStamp(d.checklist.readAt)}
+            {d.checklist.url ? (
+              <>
+                {' '}from{' '}
+                <a href={d.checklist.url} target="_blank" rel="noopener noreferrer">
+                  collectosk
+                </a>
+              </>
+            ) : null}
+            .
+          </p>
+        </>
+      ) : null}
+
       <h2>Where to buy</h2>
       {d.products.length === 0 ? <Empty>No shop lists this yet. It will appear here as soon as one does.</Empty> : null}
       {d.products.map((p) => (
         <div key={p.id} className="product">
           <h3>
             {p.configurationLabel}
-            {p.rrp ? <span className="muted small"> · RRP {formatMoney(p.rrp)}{p.rrp.source === 'estimated' ? ' (estimated from first shop prices)' : p.rrp.source === 'owner' ? ' (yours)' : ''}</span> : <span className="muted small"> · RRP unknown</span>}
+            {p.rrp ? <span className="muted small"> · RRP {formatMoney(p.rrp)}{p.rrp.source === 'estimated' ? ' (estimated from first shop prices)' : p.rrp.source === 'owner' ? ' (yours)' : p.rrp.source === 'published' ? ' (published, via collectosk)' : ''}</span> : <span className="muted small"> · RRP unknown</span>}
           </h3>
           <RrpEditor product={p} onChange={reload} />
           {p.listings.map((l) => (

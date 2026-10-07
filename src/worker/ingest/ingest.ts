@@ -142,6 +142,7 @@ interface ObservationInput {
   precedence: number;
   region: string | null;
   raw: string;
+  url?: string | null;
 }
 
 /** Records each source's date observation and re-decides the drop date, keeping history. */
@@ -184,13 +185,13 @@ async function applyObservations(deps: IngestDeps, inputs: ObservationInput[], s
       obsWrites.push(
         db
           .prepare(
-            `INSERT INTO drop_observations (drop_id, source_id, starts_at, precision, confidence, precedence, region, raw, first_seen_at, last_seen_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            `INSERT INTO drop_observations (drop_id, source_id, starts_at, precision, confidence, precedence, region, raw, url, first_seen_at, last_seen_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
              ON CONFLICT (drop_id, source_id) DO UPDATE SET starts_at = excluded.starts_at, precision = excluded.precision,
                confidence = excluded.confidence, precedence = excluded.precedence, region = excluded.region, raw = excluded.raw,
-               last_seen_at = excluded.last_seen_at`,
+               url = COALESCE(excluded.url, drop_observations.url), last_seen_at = excluded.last_seen_at`,
           )
-          .bind(drop.id, i.sourceId, i.startsAt, i.precision, i.confidence, i.precedence, i.region, i.raw, ts, ts),
+          .bind(drop.id, i.sourceId, i.startsAt, i.precision, i.confidence, i.precedence, i.region, i.raw, i.url ?? null, ts, ts),
       );
       if (prev && !same) stats.changed += 1;
     }
@@ -284,6 +285,7 @@ export async function ingestReleases(deps: IngestDeps, source: CalendarSource, i
       precedence: source.precedence,
       region: e.obs.region ?? null,
       raw: e.obs.rawDate,
+      url: e.obs.url,
     });
   }
   // Several rows (e.g. Pokémon Center products of one set) may hit the same release; keep the

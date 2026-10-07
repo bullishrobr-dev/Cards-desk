@@ -83,6 +83,15 @@ describe('score components (every point explained)', () => {
   });
 });
 
+describe('rookie class', () => {
+  it('rookie cards on the checklist give half the relevance points; a watchlist player still wins', () => {
+    const s = deskScore(chromeF1({ rookies: ['Arvid Lindblad'] }), rules, rates);
+    expect(pts(s, 'relevance')).toBe(10);
+    expect(s.breakdown.find((b) => b.id === 'relevance')?.reason).toBe('Rookie class: 1 rookie card (Arvid Lindblad)');
+    expect(pts(deskScore(chromeF1({ rookies: ['A', 'B', 'C', 'D'], players: ['Lamine Yamal'] }), rules, rates), 'relevance')).toBe(20);
+  });
+});
+
 describe('hard gates', () => {
   it('above RRP × 1.05 fails: "Above RRP — buy singles instead"', () => {
     const s = deskScore(chromeF1(), rules, rates); // £840 vs £783.52 = 7% over

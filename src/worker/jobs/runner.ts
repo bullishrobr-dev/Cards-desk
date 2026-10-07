@@ -5,6 +5,8 @@ import { nextBackoff } from '../fetch/backoff.ts';
 import { politeFetch } from '../fetch/polite-fetch.ts';
 import { isAllowed, parseRobots, type RobotsPolicy } from '../fetch/robots.ts';
 import { ingestListings, ingestReleases, type IngestStats } from '../ingest/ingest.ts';
+import { ingestEnrichment } from '../ingest/enrich.ts';
+import { parseCollectoskPost } from '../adapters/collectosk-post.ts';
 import type { Classifier } from '../normalise/classify.ts';
 import { addMinutes } from '../time.ts';
 import { MAX_DELAY_SECONDS, type JobMessage, type JobQueue } from './types.ts';
@@ -130,7 +132,14 @@ export async function runFetchJob(deps: RunnerDeps, msg: Extract<JobMessage, { t
       try {
         let parsed: ParseResult;
         const ingestDeps = { db, classifier: deps.classifier, rules: deps.rules, now };
-        if (source) {
+        if (source && msg.unitKind === 'enrich') {
+          const releaseId = unit.context?.releaseId;
+          if (!releaseId) throw new Error('enrichment unit has no release id');
+          const post = parseCollectoskPost(res.body);
+          const e = await ingestEnrichment(ingestDeps, releaseId, post);
+          const changed = e.productsCreated + e.rrpsSet + e.playersAdded.length;
+          stats = { seen: post.formats.length, kept: post.formats.length, changed, createdReleases: 0, unmatched: 0, ambiguous: 0, excluded: {} };
+        } else if (source) {
           parsed = parseCalendar(source, unit, res.body);
           const fx = parsed.items.find((i) => i.kind === 'fx');
           if (fx?.kind === 'fx') {
@@ -207,7 +216,7 @@ export async function runFetchJob(deps: RunnerDeps, msg: Extract<JobMessage, { t
     writes.push(db.prepare('INSERT INTO events (type, source_id, payload, created_at) VALUES (?, ?, ?, ?)').bind('source_recovered', unit.sourceId, JSON.stringify({ unit: unit.key }), ts));
   }
   // Dispatcher leases keep root/listing cadence; only restore it here when backing off.
-  if (backoff && (msg.unitKind === 'root' || msg.unitKind === 'listing')) {
+  if (backoff && (msg.unitKind === 'root' || msg.unitKind === 'listing' || msg.unitKind === 'enrich')) {
     writes.push(db.prepare('UPDATE source_state SET next_due_at = MAX(next_due_at, ?) WHERE source_id = ? AND unit_key = ?').bind(backoff.until.toISOString(), unit.sourceId, unit.key));
   }
   await db.batch(writes);

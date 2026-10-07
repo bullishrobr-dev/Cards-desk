@@ -43,6 +43,8 @@ export interface ScoreInput {
   tierPointsPct: number;
   scarcity: string[];
   players: string[];
+  /** Rookie-card names on the checklist (empty until a checklist is read). */
+  rookies?: string[];
   products: ScoreProduct[];
   manualTags: string[];
   override: { score: number; note: string | null } | null;
@@ -173,12 +175,18 @@ export function deskScore(input: ScoreInput, rules: RulesConfig, rates: Record<s
     relPct = Math.max(relPct, rules.relevance.manual_tag_points_pct);
     rel.push(`Your tag: ${input.manualTags.join(', ')}`);
   }
+  const rookies = input.rookies ?? [];
+  if (rookies.length) {
+    relPct = Math.max(relPct, rules.relevance.rookie_class_points_pct);
+    const shown = rookies.slice(0, 3).join(', ');
+    rel.push(`Rookie class: ${rookies.length} rookie card${rookies.length === 1 ? '' : 's'} (${shown}${rookies.length > 3 ? ' …' : ''})`);
+  }
   breakdown.push({
     id: 'relevance',
     label: 'Relevance',
     points: round((w.relevance * Math.min(100, relPct)) / 100),
     max: w.relevance,
-    reason: rel.length ? rel.join('; ') : 'No watchlist player or tag yet (checklists arrive in Phase 3)',
+    reason: rel.length ? rel.join('; ') : 'No watchlist player, rookie card or tag found',
   });
 
   const rawScore = Math.round(breakdown.reduce((t, c) => t + c.points, 0));

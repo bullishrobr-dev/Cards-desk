@@ -12,6 +12,8 @@ import { ingestListings, ingestReleases } from '../src/worker/ingest/ingest.ts';
 import { runMaintenance } from '../src/worker/jobs/maintenance.ts';
 import { calendarRootUnit, parseCalendar, parseRetailer, retailerRootUnits } from '../src/worker/adapters/registry.ts';
 import type { ListingObservation, ReleaseObservation } from '../src/worker/adapters/types.ts';
+import { parseCollectoskPost } from '../src/worker/adapters/collectosk-post.ts';
+import { ingestEnrichment } from '../src/worker/ingest/enrich.ts';
 
 it('seed', async () => {
   const db = createTestD1();
@@ -26,6 +28,15 @@ it('seed', async () => {
     if (fx?.kind === 'fx') await db.batch(Object.entries(fx.rates).map(([c, r]) => db.prepare('INSERT OR REPLACE INTO fx_rates VALUES (?, ?, ?)').bind(fx.date, c, r)));
     const rel = parsed.items.filter((i): i is ReleaseObservation => i.kind === 'release');
     if (rel.length) await ingestReleases(deps, { id: s.id, categories: s.categories, precedence: s.precedence }, rel);
+  }
+  // Release pages saved under fixtures/collectosk-post/<slug>.json.
+  const posts = await db
+    .prepare(`SELECT o.url, d.release_id FROM drop_observations o JOIN drops d ON d.id = o.drop_id WHERE o.source_id = 'collectosk' AND o.url IS NOT NULL`)
+    .all<{ url: string; release_id: string }>();
+  for (const p of posts.results) {
+    const slug = new URL(p.url).pathname.split('/').filter(Boolean).pop();
+    const f = `fixtures/collectosk-post/${slug}.json`;
+    if (existsSync(f)) await ingestEnrichment(deps, p.release_id, parseCollectoskPost(readFileSync(f, 'utf8')));
   }
   for (const r of sources.retailers.filter((x) => x.enabled)) {
     const units = retailerRootUnits(r);
