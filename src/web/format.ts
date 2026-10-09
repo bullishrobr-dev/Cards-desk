@@ -30,6 +30,28 @@ export function dateLabel(startsAt: string | null, precision: Precision): string
   return 'Date to be confirmed';
 }
 
+const longDayFmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', weekday: 'long', day: 'numeric', month: 'short' });
+const rangeDay = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', day: 'numeric' });
+const rangeDayMonth = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'short' });
+
+/** The short date line on a drop card: "Thursday 15 Oct", "Week of 12 Oct", "Sometime in November". */
+export function cardDate(startsAt: string | null, precision: Precision): string {
+  if (!startsAt) return 'Date to be confirmed';
+  if (precision === 'time') return `${longDayFmt.format(new Date(startsAt))} at ${timeFmt.format(new Date(startsAt))}`;
+  if (precision === 'day') return longDayFmt.format(asDay(startsAt));
+  if (precision === 'week') return `Week of ${rangeDayMonth.format(asDay(weekStart(startsAt)))}`;
+  if (precision === 'month') return `Sometime in ${new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', month: 'long' }).format(asDay(startsAt))}`;
+  return 'Date to be confirmed';
+}
+
+/** A week heading in the Topps style: "12 – 18 Oct 2026", "28 Sep – 4 Oct 2026". */
+export function weekRange(mondayYmd: string): string {
+  const start = asDay(mondayYmd);
+  const end = new Date(start.getTime() + 6 * 86_400_000);
+  const sameMonth = start.getUTCMonth() === end.getUTCMonth();
+  return `${(sameMonth ? rangeDay : rangeDayMonth).format(start)} – ${rangeDayMonth.format(end)} ${end.getUTCFullYear()}`;
+}
+
 export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   rumoured: 'Rumoured',
   announced: 'Announced',
@@ -50,7 +72,7 @@ export function countdown(target: Date, now: Date): string {
   const m = Math.floor(s / 60);
   s -= m * 60;
   const pad = (n: number) => String(n).padStart(2, '0');
-  return d > 0 ? `${d}d ${pad(h)}h ${pad(m)}m` : `${pad(h)}:${pad(m)}:${pad(s)}`;
+  return d > 0 ? `${d}d ${pad(h)}h ${pad(m)}m` : `${h}h ${pad(m)}m ${pad(s)}s`;
 }
 
 const SYMBOL: Record<string, string> = { GBP: '£', EUR: '€', USD: '$' };

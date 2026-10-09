@@ -24,7 +24,7 @@ describe('countdown', () => {
   });
   it('formats days, then hh:mm:ss in the final day', () => {
     expect(countdown(new Date('2026-10-15T10:00:00Z'), new Date('2026-10-13T08:30:00Z'))).toBe('2d 01h 30m');
-    expect(countdown(new Date('2026-10-15T10:00:00Z'), new Date('2026-10-15T09:50:05Z'))).toBe('00:09:55');
+    expect(countdown(new Date('2026-10-15T10:00:00Z'), new Date('2026-10-15T09:50:05Z'))).toBe('0h 09m 55s');
   });
 });
 
@@ -45,5 +45,16 @@ describe('RRP wording never implies returns', () => {
   it('states the gap plainly', () => {
     expect(percentVsRrp(1.3)).toBe('30% over RRP');
     expect(percentVsRrp(0.9)).toBe('10% under RRP');
+  });
+});
+
+describe('card dates', () => {
+  it('reads like a release calendar', async () => {
+    const { cardDate, weekRange } = await import('./format.ts');
+    expect(cardDate('2026-10-15', 'day')).toBe('Thursday 15 Oct');
+    expect(cardDate('2026-11-01', 'month')).toBe('Sometime in November');
+    expect(cardDate(null, 'unknown')).toBe('Date to be confirmed');
+    expect(weekRange('2026-10-12')).toBe('12 – 18 Oct 2026');
+    expect(weekRange('2026-09-28')).toBe('28 Sept – 4 Oct 2026');
   });
 });

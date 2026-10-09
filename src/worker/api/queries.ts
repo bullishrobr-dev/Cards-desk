@@ -107,7 +107,10 @@ async function ownerView(db: D1Database, rules: RulesConfig, rates: Rates, relea
   };
 }
 
-/** One photo per release from its box types, preferring the highest-scoring box (hobby, booster box). */
+/**
+ * One photo per release: a box type's photo from its release page (best box first), else the
+ * calendar's photo of the sealed product. Shop photos are the last resort (in summarise).
+ */
 async function releaseImages(db: D1Database, releaseIds: string[], rules: RulesConfig): Promise<Map<string, string>> {
   const out = new Map<string, string>();
   const rank = new Map<string, number>();
@@ -116,11 +119,14 @@ async function releaseImages(db: D1Database, releaseIds: string[], rules: RulesC
   for (let i = 0; i < releaseIds.length; i += 90) {
     const chunk = releaseIds.slice(i, i + 90);
     const rows = await db
-      .prepare(`SELECT release_id, configuration, image_url FROM products WHERE image_url IS NOT NULL AND release_id IN (${placeholders(chunk.length)})`)
-      .bind(...chunk)
+      .prepare(
+        `SELECT release_id, configuration, image_url FROM products WHERE image_url IS NOT NULL AND release_id IN (${placeholders(chunk.length)})
+         UNION ALL SELECT id, '', image_url FROM releases WHERE image_url IS NOT NULL AND id IN (${placeholders(chunk.length)})`,
+      )
+      .bind(...chunk, ...chunk)
       .all<{ release_id: string; configuration: string; image_url: string }>();
     for (const r of rows.results) {
-      const score = rank.get(r.configuration) ?? 0;
+      const score = r.configuration ? (rank.get(r.configuration) ?? 0) : -0.5; // calendar photo ranks below any box photo
       if (score > (best.get(r.release_id) ?? -1)) {
         best.set(r.release_id, score);
         out.set(r.release_id, r.image_url);
@@ -170,6 +176,7 @@ function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | nul
     priceVsRrp: bestRatio,
     desk: view.desk.get(d.release_id) ?? NO_SCORE,
     imageUrl: view.images.get(d.release_id) ?? mine.find((l) => l.image_url)?.image_url ?? null,
+    preorder: mine.some((l) => Boolean(l.is_preorder)),
     pinned: view.pinned.has(d.id),
     watched: view.watched.has(d.release_id),
   };

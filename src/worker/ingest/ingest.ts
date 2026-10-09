@@ -290,6 +290,13 @@ export async function ingestReleases(deps: IngestDeps, source: CalendarSource, i
   }
   // Several rows (e.g. Pokémon Center products of one set) may hit the same release; keep the
   // most precise per source so one release gets one observation per source.
+  // A calendar photo of the sealed product: the first one seen is kept (never overwritten).
+  const withImage = new Map<string, string>();
+  for (const e of entries) {
+    const releaseId = resolved.get(e.hash);
+    if (releaseId && e.obs.imageUrl && !withImage.has(releaseId)) withImage.set(releaseId, e.obs.imageUrl);
+  }
+  for (const [releaseId, url] of withImage) writes.push(deps.db.prepare('UPDATE releases SET image_url = ? WHERE id = ? AND image_url IS NULL').bind(url, releaseId));
   await applyObservations(deps, dedupeObservations(inputs), stats, writes);
   if (writes.length) await deps.db.batch(writes);
   return stats;

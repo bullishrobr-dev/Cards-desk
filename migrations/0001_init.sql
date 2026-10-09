@@ -89,6 +89,7 @@ CREATE TABLE releases (
   players        TEXT,                            -- JSON array of watchlist players seen
   scarcity       TEXT,                            -- JSON array of scarcity signal ids
   rookies        TEXT,                            -- JSON array of rookie-card names from the checklist
+  image_url      TEXT,                            -- a calendar's photo of the sealed product (first one kept)
   checklist_cards INTEGER,                        -- checklist entries seen (NULL: no checklist read yet)
   enriched_at    TEXT,                            -- last successful read of the release's product post
   origin_source  TEXT NOT NULL,                   -- source that first reported it

@@ -41,6 +41,8 @@ export interface DropSummary {
   watched: boolean;
   /** A box photo: the release page's own, else a shop's. Null when nobody has one yet. */
   imageUrl: string | null;
+  /** At least one shop lists it as a pre-order. */
+  preorder: boolean;
 }
 
 export interface ListingView {

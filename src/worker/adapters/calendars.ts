@@ -51,17 +51,19 @@ export function parseCollectosk(body: string, maxConfidence: Confidence): ParseR
 
 /** Checklist Insider: list view; each item has a <time datetime> and a titled link. */
 export function parseChecklistInsider(body: string, maxConfidence: Confidence): ParseResult {
-  // The first link wraps the thumbnail; the second carries the title.
-  const re = /<div class="release-date-stamp[^"]*"[^>]*><time datetime="([^"]+)">[\s\S]*?<\/div>\s*<a href="[^"]+">[\s\S]*?<\/a>\s*<a href="([^"]+)">([^<]+)<\/a>/g;
-  const items = [...body.matchAll(re)].map((m) =>
-    release(
-      decodeEntities(m[3] ?? '').replace(/\s+(Checklist( and)?\s+)?Guide$|\s+Checklist$/i, '').trim(),
-      m[2] ?? null,
+  // The first link wraps the thumbnail (lazy-loaded: the real address is in data-src); the
+  // second carries the title.
+  const re = /<div class="release-date-stamp[^"]*"[^>]*><time datetime="([^"]+)">[\s\S]*?<\/div>\s*<a href="[^"]+">([\s\S]*?)<\/a>\s*<a href="([^"]+)">([^<]+)<\/a>/g;
+  const items = [...body.matchAll(re)].map((m) => ({
+    ...release(
+      decodeEntities(m[4] ?? '').replace(/\s+(Checklist( and)?\s+)?Guide$|\s+Checklist$/i, '').trim(),
+      m[3] ?? null,
       (m[1] ?? '').slice(0, 10),
       maxConfidence,
       null,
     ),
-  );
+    imageUrl: (m[2] ?? '').match(/data-src="(https:\/\/xcdn\.checklistinsider\.com\/[^"\s]+)"/)?.[1] ?? null,
+  }));
   if (items.length === 0) throw new Error('checklistinsider: no release items found (markup changed?)');
   return { items, followUps: [] };
 }

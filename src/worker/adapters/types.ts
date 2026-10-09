@@ -17,6 +17,8 @@ export interface ReleaseObservation {
   categoryHint: string | null;
   /** Region the date applies to, when the source says (e.g. Pokémon Center "UK"). */
   region?: string | null;
+  /** A photo of the sealed product, when the calendar shows one. */
+  imageUrl?: string | null;
 }
 
 /** One purchasable variant at one shop. */

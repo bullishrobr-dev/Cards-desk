@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSignals, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
-import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropRow, Empty, Notice, RrpNote, ScoreBadge, ShipTag } from './components.tsx';
+import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropCard, DropImage, Empty, Notice, RrpNote, ScoreBadge, ShipTag, ViewSwitch } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
 import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
 import type { RulesConfig } from '../shared/config/schema.ts';
-import { dateLabel, formatMinor as formatMinorText, formatMoney, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
+import { dateLabel, formatMinor as formatMinorText, formatMoney, weekRange, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { DEMO, Link, navigate, useApi } from './lib.tsx';
 import { pushState, setBadge, turnOnPush, type PushState } from './push.ts';
 
@@ -41,7 +41,6 @@ function Filters({ config, f }: { config: AppConfig; f: ReturnType<typeof useFil
   );
 }
 
-const groupFmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'short' });
 const monthFmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', month: 'long', year: 'numeric' });
 
 function groupByWeek(drops: DropSummary[]) {
@@ -58,7 +57,7 @@ function groupByWeek(drops: DropSummary[]) {
         ? 'Date to be confirmed'
         : key.startsWith('month:')
           ? `Sometime in ${monthFmt.format(new Date(`${key.slice(6)}-15T12:00:00Z`))}`
-          : `Week of ${groupFmt.format(new Date(`${key}T12:00:00Z`))}`,
+          : weekRange(key),
     items,
   }));
 }
@@ -112,9 +111,11 @@ export function UpcomingView({ config }: { config: AppConfig }) {
   return (
     <section>
       <div className="view-head">
-        <h1>Upcoming</h1>
-        <Link to="/brief" className="chip">Weekly brief</Link>
-        <Chips<'list' | 'calendar'> label="View" value={mode} onChange={setMode} options={[{ id: 'list', label: 'List' }, { id: 'calendar', label: 'Calendar' }]} />
+        <ViewSwitch current="upcoming" />
+        <div className="head-tools">
+          <Link to="/brief" className="chip">Weekly brief</Link>
+          <Chips<'list' | 'calendar'> label="View" value={mode} onChange={setMode} options={[{ id: 'list', label: 'Cards' }, { id: 'calendar', label: 'Calendar' }]} />
+        </div>
       </div>
       <Filters config={config} f={f} />
       {error ? <Notice tone="error">{error}</Notice> : null}
@@ -124,8 +125,8 @@ export function UpcomingView({ config }: { config: AppConfig }) {
       {data && mode === 'list'
         ? groups.map((g) => (
             <div key={g.key} className="group">
-              <h2>{g.title}</h2>
-              {g.items.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+              <h2 className="range">{g.title}</h2>
+              <div className="grid">{g.items.map((d) => <DropCard key={d.id} drop={d} />)}</div>
             </div>
           ))
         : null}
@@ -139,13 +140,13 @@ export function LiveView({ config }: { config: AppConfig }) {
   return (
     <section>
       <div className="view-head">
-        <h1>Live now</h1>
+        <ViewSwitch current="live" />
         <Link to="/signals" className="chip">Market signals</Link>
       </div>
       <Filters config={config} f={f} />
       {error ? <Notice tone="error">{error}</Notice> : null}
       {data && data.length === 0 ? <Empty>Nothing is live right now.</Empty> : null}
-      {data?.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      {data?.length ? <div className="grid">{data.map((d) => <DropCard key={d.id} drop={d} />)}</div> : null}
     </section>
   );
 }
@@ -169,9 +170,9 @@ export function BriefView({ config }: { config: AppConfig }) {
         </p>
       ) : null}
       {data && data.drops.length === 0 ? <Empty>Nothing has a confirmed day in the next two weeks.</Empty> : null}
-      {open.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      {open.length ? <div className="grid">{open.map((d) => <DropCard key={d.id} drop={d} />)}</div> : null}
       {gated.length ? <h2>Failing a hard rule</h2> : null}
-      {gated.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      {gated.length ? <div className="grid">{gated.map((d) => <DropCard key={d.id} drop={d} />)}</div> : null}
     </section>
   );
 }
@@ -298,7 +299,7 @@ export function WatchlistView({ config }: { config: AppConfig }) {
       </div>
       {error ? <Notice tone="error">{error}</Notice> : null}
       {data && data.length === 0 ? <Empty>Nothing watched or pinned yet. Open a drop and tap Watch or Pin.</Empty> : null}
-      {data?.map((d) => <DropRow key={d.id} drop={d} tolerance={config.rules.rrp.tolerance} />)}
+      {data?.length ? <div className="grid">{data.map((d) => <DropCard key={d.id} drop={d} />)}</div> : null}
       <p className="small muted">Watched drops alert 24 hours, 1 hour and 10 minutes before they go live, when they go live, and if the date moves. Pinned drops sort first everywhere.</p>
     </section>
   );
@@ -333,7 +334,13 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
   };
   return (
     <article className="detail">
-      <Link to="/" className="back">‹ Upcoming</Link>
+      <Link to={d.status === 'live' ? '/live' : '/'} className="back">‹ {d.status === 'live' ? 'Live now' : 'Dropping soon'}</Link>
+      <div className="detail-hero">
+        <div className="detail-media">
+          <DropImage drop={d} large />
+          {d.status === 'live' ? <span className="media-tag">Live</span> : d.preorder ? <span className="media-tag">Pre-order</span> : null}
+        </div>
+        <div className="detail-head">
       <h1>{d.name}</h1>
       <div className="detail-when">
         {showCountdown(d.precision, d.confidence) && d.liveAt ? (
@@ -353,17 +360,22 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
         <ScoreBadge desk={d.desk} />
       </div>
       <div className="actions">
-        <button type="button" className={watched ? 'btn on' : 'btn'} aria-pressed={Boolean(watched)} onClick={toggleWatch}>
-          {watched ? '★ Watching' : '☆ Watch'}
+        <button type="button" className={watched ? 'notify on' : 'notify'} aria-pressed={Boolean(watched)} onClick={toggleWatch}>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.4A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.6L18 12.6V9a6 6 0 0 0-6-6Zm0 19a3 3 0 0 0 2.8-2H9.2A3 3 0 0 0 12 22Z" fill="currentColor" />
+          </svg>
+          {watched ? 'Notifying' : 'Notify me'}
         </button>
         <button type="button" className={pinned ? 'btn on' : 'btn'} aria-pressed={Boolean(pinned)} onClick={togglePin}>
-          {pinned ? '📌 Pinned' : 'Pin'}
+          {pinned ? 'Pinned' : 'Pin to top'}
         </button>
         {d.startsAt && (d.precision === 'day' || d.precision === 'time') ? (
           <a className="btn" href={`/api/drops/${encodeURIComponent(d.id)}/ics`}>Add to calendar</a>
         ) : null}
       </div>
       {watched ? <p className="small muted">You will be alerted 24 hours, 1 hour and 10 minutes before, when it goes live, and if the date moves.</p> : null}
+        </div>
+      </div>
 
       <DeskPanel drop={d} onChange={reload} />
 

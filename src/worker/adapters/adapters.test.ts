@@ -88,6 +88,11 @@ describe('Checklist Insider', () => {
     expect(r.length).toBeGreaterThan(30);
     expect(r[0]).toMatchObject({ title: '2026 Topps Atlassian Williams Racing', date: '2026-10-01', precision: 'day' });
   });
+
+  it('keeps the sealed-box photo from the lazy-loaded thumbnail', () => {
+    expect(r[0]?.imageUrl).toBe('https://xcdn.checklistinsider.com/public/2026/10/2026-Topps-Atlassian-Williams-Racing-Sealed-Hobby-box-thumb-1200-500x500.jpg');
+    expect(r.filter((x) => x.imageUrl).length).toBeGreaterThan(20);
+  });
 });
 
 describe('Pokémon press (NA)', () => {
