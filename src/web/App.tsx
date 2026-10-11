@@ -57,7 +57,7 @@ export function App() {
             Push notifications have stopped reaching your device. <Link to="/settings">Turn them back on</Link>.
           </Notice>
         ) : null}
-        {DEMO ? <DemoBanner /> : <HomeScreenCoach />}
+        {DEMO ? pathname === '/' ? <DemoBanner /> : null : <HomeScreenCoach />}
         {error ? <Notice tone="error">{error}</Notice> : view}
       </main>
       <nav className="tabs" aria-label="Main">
