@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSignals, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
-import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropCard, DropImage, Empty, Notice, RrpNote, ScoreBadge, ShipTag, ViewSwitch } from './components.tsx';
+import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropCard, DropImage, Empty, Notice, RrpNote, ScoreBadge, ShipTag, StockTag, ViewSwitch } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
 import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
 import type { RulesConfig } from '../shared/config/schema.ts';
@@ -264,6 +264,32 @@ export function SignalsView() {
   );
 }
 
+/**
+ * Shops that list the box but will not sell it now, folded away: there is no point showing a
+ * sold-out price. The shop page is still one tap away (many shops take back-in-stock emails).
+ */
+function SoldOutShops({ listings }: { listings: ListingView[] }) {
+  if (!listings.length) return null;
+  return (
+    <details className="sold-fold">
+      <summary className="small">
+        Sold out at {listings.length} shop{listings.length === 1 ? '' : 's'}
+      </summary>
+      <ul className="sold-list small">
+        {listings.map((l) => (
+          <li key={l.id}>
+            <strong>{l.retailer}</strong> <span className="muted">{l.isPreorder ? 'pre-order not taking orders' : 'sold out'}</span>{' '}
+            <a href={l.url} target="_blank" rel="noopener noreferrer">
+              Shop page ↗
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="small muted">Many shops offer a back-in-stock email on the product page.</p>
+    </details>
+  );
+}
+
 /** A listing's price and stock changes, newest last, folded away by default. */
 function PriceHistory({ listing }: { listing: ListingView }) {
   if (listing.history.length < 2) return null;
@@ -338,7 +364,7 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
       <div className="detail-hero">
         <div className="detail-media">
           <DropImage drop={d} large />
-          {d.status === 'live' ? <span className="media-tag">Live</span> : d.preorder ? <span className="media-tag">Pre-order</span> : null}
+          <StockTag drop={d} />
         </div>
         <div className="detail-head">
       <h1>{d.name}</h1>
@@ -416,7 +442,8 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
             {p.rrp ? <span className="muted small"> · RRP {formatMoney(p.rrp)}{p.rrp.source === 'estimated' ? ' (estimated from first shop prices)' : p.rrp.source === 'owner' ? ' (yours)' : p.rrp.source === 'published' ? ' (published, via collectosk)' : ''}</span> : <span className="muted small"> · RRP unknown</span>}
           </h3>
           <RrpEditor product={p} onChange={reload} />
-          {p.listings.map((l) => (
+          {p.listings.some((l) => l.available) ? null : <p className="small muted">Nobody is selling this box right now.</p>}
+          {p.listings.filter((l) => l.available).map((l) => (
             <div key={l.id} className="listing">
               <div className="listing-main">
                 <div>
@@ -426,7 +453,7 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
                 <div className="ships">
                   <ShipTag region="GI" value={l.shipsGi.value} title={`Gibraltar: ${l.shipsGi.note ?? l.shipsGi.value}${l.shipsGi.verifiedAt ? ` (checked ${l.shipsGi.verifiedAt})` : ''}`} />
                   <ShipTag region="ES" value={l.shipsEs.value} title={`Spain: ${l.shipsEs.note ?? l.shipsEs.value}${l.shipsEs.verifiedAt ? ` (checked ${l.shipsEs.verifiedAt})` : ''}`} />
-                  <span className={l.available ? 'stock in' : 'stock out'}>{l.isPreorder ? (l.available ? 'Pre-order open' : 'Pre-order unavailable') : l.available ? 'In stock' : 'Out of stock'}</span>
+                  <span className={l.isPreorder ? 'stock pre' : 'stock in'}>{l.isPreorder ? 'Pre-order open' : 'In stock'}</span>
                 </div>
               </div>
               <div className="listing-side">
@@ -437,6 +464,7 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
               <PriceHistory listing={l} />
             </div>
           ))}
+          <SoldOutShops listings={p.listings.filter((l) => !l.available)} />
         </div>
       ))}
 

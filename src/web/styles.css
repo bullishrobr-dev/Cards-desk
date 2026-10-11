@@ -247,3 +247,12 @@ details.card summary { cursor: pointer; padding: 8px 0; color: var(--link); }
 /* Demo build banner */
 .demo-banner { background: var(--panel-2); border: 0; border-radius: var(--radius); padding: 10px 12px; margin-bottom: 12px; font-size: 0.85rem; }
 .demo-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+
+/* Stock */
+.media-tag.tag-in { background: var(--ok); }
+.media-tag.tag-out { background: #fff; color: var(--muted); border: 1px solid var(--line); }
+.stock.pre { color: var(--text); font-weight: 700; }
+.sold-fold { margin-top: 8px; }
+.sold-fold summary { cursor: pointer; color: var(--muted); padding: 6px 0; }
+.sold-list { list-style: none; padding: 0; margin: 4px 0; display: grid; gap: 6px; }
+.dcard.soldout .drop-img { opacity: 0.6; }

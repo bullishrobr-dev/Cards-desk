@@ -3,7 +3,7 @@ import { rules } from '../../shared/config/index.ts';
 import { deskScore, labelFor, type ScoreInput, type ScoreListing } from './desk-score.ts';
 
 const rates = { EUR: 1, GBP: 0.85373, USD: 1.1298 };
-const shop = (o: Partial<ScoreListing> = {}): ScoreListing => ({ priceMinor: 84000, currency: 'GBP', available: false, isPreorder: true, shipsGi: 'yes', shipsEs: 'yes', purchaseLimit: null, ...o });
+const shop = (o: Partial<ScoreListing> = {}): ScoreListing => ({ priceMinor: 84000, currency: 'GBP', available: true, isPreorder: true, shipsGi: 'yes', shipsEs: 'yes', purchaseLimit: null, ...o });
 
 /** Topps Chrome Formula 1 2026, hobby box at Sports Cards Direct (£840 on 5 Oct). */
 const chromeF1 = (o: Partial<ScoreInput> = {}): ScoreInput => ({
@@ -120,6 +120,13 @@ describe('hard gates', () => {
     expect(only('no', 'no')).toMatchObject({ pass: false });
     expect(only('unknown', 'no')).toMatchObject({ pass: true, flagged: true });
     expect(gate(deskScore(chromeF1({ products: [] }), rules, rates), 'purchasable')).toMatchObject({ pass: true, flagged: true, detail: 'No shop lists it yet' });
+  });
+
+  it('ignores sold-out listings: a cheap price you cannot buy proves nothing', () => {
+    const s = deskScore(chromeF1({ products: [{ configuration: 'hobby', rrpMinor: 78352, rrpCurrency: 'GBP', rrpSource: 'estimated', listings: [shop({ priceMinor: 70000, available: false }), shop()] }] }), rules, rates);
+    expect(gate(s, 'price')?.pass).toBe(false);
+    const gone = deskScore(chromeF1({ products: [{ configuration: 'hobby', rrpMinor: 78352, rrpCurrency: 'GBP', rrpSource: 'estimated', listings: [shop({ available: false })] }] }), rules, rates);
+    expect(gate(gone, 'price')).toMatchObject({ pass: true, flagged: true, detail: 'Sold out at every shop right now' });
   });
 
   it('no RRP yet passes the price gate, flagged', () => {

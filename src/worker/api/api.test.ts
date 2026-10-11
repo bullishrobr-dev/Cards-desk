@@ -33,7 +33,11 @@ beforeAll(async () => {
   await ingestReleases(deps, { id: 'collectosk', categories: ['football', 'f1'], precedence: 2 }, parseCollectosk(readFileSync('fixtures/collectosk/response.json', 'utf8'), 'confirmed_date').items as ReleaseObservation[]);
   const scd = sources.retailers.find((r) => r.id === 'sportscardsdirect');
   if (!scd) throw new Error();
-  await ingestListings(deps, scd, parseShopify(readFileSync('fixtures/sportscardsdirect/products-0-page1.json', 'utf8'), shopifyUnit(scd, '/products.json'), scd).items as ListingObservation[]);
+  // In the capture all three Chrome F1 pre-orders were closed; open hobby and mega here so the
+  // tests see both an orderable pre-order and a sold-out box (the value box stays closed).
+  const items = parseShopify(readFileSync('fixtures/sportscardsdirect/products-0-page1.json', 'utf8'), shopifyUnit(scd, '/products.json'), scd).items as ListingObservation[];
+  for (const i of items) if (/Chrome Formula 1 2026 (Hobby|Mega)/i.test(i.title)) i.available = true;
+  await ingestListings(deps, scd, items);
 });
 
 describe('API', () => {
@@ -52,8 +56,10 @@ describe('API', () => {
     const f1 = body.find((d) => /chrome formula 1/i.test(d.name));
     expect(f1).toMatchObject({ startsAt: '2026-10-15', liveAt: '2026-10-14T22:00:00.000Z', confidence: 'confirmed_date', shipsGi: true, shipsEs: true, shopCount: 1 });
     expect(f1?.configurations.sort()).toEqual(['hobby', 'mega', 'retail']);
-    // All three boxes are pre-orders (not in stock), so they still count as buyable.
-    expect(f1?.bestPrice?.currency).toBe('GBP');
+    // Open pre-orders count as buyable and the drop is marked as a pre-order; the sold-out value
+    // box never sets the price.
+    expect(f1).toMatchObject({ stock: 'preorder', preorder: true, sellingShopCount: 1 });
+    expect(f1?.bestPrice).toMatchObject({ currency: 'GBP', configuration: 'mega' });
     expect(f1?.bestPrice?.eur).toBeGreaterThan(f1?.bestPrice?.minor ?? 0);
     expect(f1?.imageUrl).toMatch(/^https:\/\//);
     // Dated first, undated (TBD) last.

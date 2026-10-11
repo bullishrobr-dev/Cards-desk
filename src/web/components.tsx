@@ -97,13 +97,12 @@ function CardWhen({ drop }: { drop: DropSummary }) {
 /** A drop as a release-calendar card: photo, when, name, the buying verdict, Notify me. */
 export function DropCard({ drop }: { drop: DropSummary }) {
   const failed = drop.desk.gates.find((g) => !g.pass);
-  const tag = drop.status === 'live' ? 'Live' : drop.preorder ? 'Pre-order' : null;
   return (
-    <article className={drop.desk.gated ? 'dcard gated' : 'dcard'}>
+    <article className={`dcard${drop.desk.gated ? ' gated' : ''}${drop.stock === 'sold_out' ? ' soldout' : ''}`}>
       <Link to={`/drop/${drop.id}`} className="dcard-link">
         <div className="dcard-media">
           <DropImage drop={drop} />
-          {tag ? <span className="media-tag">{tag}</span> : null}
+          <StockTag drop={drop} />
           {drop.pinned ? <span className="media-pin" aria-label="Pinned">Pinned</span> : null}
           <span className={`media-score score-${drop.desk.label.toLowerCase()}`}>
             {drop.desk.score}
@@ -136,6 +135,14 @@ export function DropCard({ drop }: { drop: DropSummary }) {
       </div>
     </article>
   );
+}
+
+/** What you can do now, on the photo: In stock, Pre-order, or Sold out. Nothing when no shop lists it. */
+export function StockTag({ drop }: { drop: Pick<DropSummary, 'stock' | 'status'> }) {
+  if (drop.stock === 'in_stock') return <span className="media-tag tag-in">In stock</span>;
+  if (drop.stock === 'preorder') return <span className="media-tag">Pre-order</span>;
+  if (drop.stock === 'sold_out') return <span className="media-tag tag-out">Sold out</span>;
+  return drop.status === 'live' ? <span className="media-tag">Live</span> : null;
 }
 
 /** One line on a card for a failed hard rule; the drop page has the full sentence. */

@@ -11,7 +11,7 @@ import { convertMinor } from '../ingest/util.ts';
  *   3. sealed price at or below RRP × tolerance ("Above RRP — buy singles instead").
  *
  * Score 0–100 from per-category weights: product tier, box configuration, scarcity, relevance.
- * Every point carries a reason. A drop scores as its best box type. An owner override replaces
+ * Prices count only where a shop will sell now (in stock or pre-order open). Every point carries a reason. A drop scores as its best box type. An owner override replaces
  * the number (the breakdown still shows what the rules said).
  */
 
@@ -99,7 +99,7 @@ export function deskScore(input: ScoreInput, rules: RulesConfig, rates: Record<s
   for (const p of input.products) {
     if (p.rrpMinor === null || !p.rrpCurrency) continue;
     for (const l of p.listings) {
-      if (l.priceMinor === null || (l.shipsGi === 'no' && l.shipsEs === 'no')) continue;
+      if (l.priceMinor === null || !l.available || (l.shipsGi === 'no' && l.shipsEs === 'no')) continue;
       const rrp = convertMinor(p.rrpMinor, p.rrpCurrency, l.currency, rates);
       if (!rrp) continue;
       anyPriced = true;
@@ -110,8 +110,9 @@ export function deskScore(input: ScoreInput, rules: RulesConfig, rates: Record<s
       }
     }
   }
+  const soldOutEverywhere = allListings.length > 0 && !allListings.some((l) => l.available);
   if (!anyPriced || bestRatio === null) {
-    gates.push({ id: 'price', pass: true, flagged: true, label: 'At or below RRP', detail: 'No price against a known RRP yet' });
+    gates.push({ id: 'price', pass: true, flagged: true, label: 'At or below RRP', detail: soldOutEverywhere ? 'Sold out at every shop right now' : 'No price against a known RRP yet' });
   } else if (bestRatio <= tolerance) {
     const pct = Math.round((bestRatio - 1) * 100);
     const vs = pct < 0 ? `${-pct}% under RRP` : pct === 0 ? 'matches RRP' : `${pct}% over RRP, within tolerance`;

@@ -41,8 +41,15 @@ export interface DropSummary {
   watched: boolean;
   /** A box photo: the release page's own, else a shop's. Null when nobody has one yet. */
   imageUrl: string | null;
-  /** At least one shop lists it as a pre-order. */
+  /** Pre-orders are open and nobody has it in stock yet. */
   preorder: boolean;
+  /**
+   * What you can do right now: buy it in stock, pre-order it, nothing (every shop sold out or not
+   * taking orders yet), or no shop we watch lists it.
+   */
+  stock: 'in_stock' | 'preorder' | 'sold_out' | 'no_shop';
+  /** Shops selling it now (in stock or pre-order open). */
+  sellingShopCount: number;
 }
 
 export interface ListingView {

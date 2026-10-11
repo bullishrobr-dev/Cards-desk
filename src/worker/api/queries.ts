@@ -141,10 +141,11 @@ const NO_SCORE: DeskScore = { score: 0, rawScore: 0, label: 'Ignore', gated: fal
 function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | null, rates: Rates, tz: string, view: OwnerView): DropSummary {
   const mine = listings.filter((l) => l.release_id === d.release_id);
   const shipsTo = (l: ListingRow, r: 'gi' | 'es') => (r === 'gi' ? l.ships_gi : l.ships_es) !== 'no';
-  const priced = mine.filter((l) => l.price_minor !== null && (!region || shipsTo(l, region)));
-  // Prefer prices you can act on (in stock or pre-order open); fall back to any listed price.
-  const open = priced.filter((l) => l.available || l.is_preorder);
-  const buyable = open.length ? open : priced;
+  // Only what a shop will sell you now counts: in stock, or a pre-order that is open. A sold-out
+  // listing (or a pre-order not taking orders) is never shown as a price.
+  const selling = mine.filter((l) => l.available);
+  const buyable = selling.filter((l) => l.price_minor !== null && (!region || shipsTo(l, region)));
+  const stock: DropSummary['stock'] = mine.length === 0 ? 'no_shop' : selling.length === 0 ? 'sold_out' : selling.some((l) => !l.is_preorder) ? 'in_stock' : 'preorder';
   let best: DropSummary['bestPrice'] = null;
   let bestRatio: number | null = null;
   for (const l of buyable) {
@@ -170,13 +171,15 @@ function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | nul
     status: d.status,
     configurations: [...new Set(mine.map((l) => l.configuration))],
     shopCount: new Set(mine.map((l) => l.retailer_id)).size,
-    shipsGi: mine.some((l) => l.ships_gi === 'yes'),
-    shipsEs: mine.some((l) => l.ships_es === 'yes'),
+    sellingShopCount: new Set(selling.map((l) => l.retailer_id)).size,
+    stock,
+    shipsGi: selling.some((l) => l.ships_gi === 'yes'),
+    shipsEs: selling.some((l) => l.ships_es === 'yes'),
     bestPrice: best,
     priceVsRrp: bestRatio,
     desk: view.desk.get(d.release_id) ?? NO_SCORE,
     imageUrl: view.images.get(d.release_id) ?? mine.find((l) => l.image_url)?.image_url ?? null,
-    preorder: mine.some((l) => Boolean(l.is_preorder)),
+    preorder: stock === 'preorder',
     pinned: view.pinned.has(d.id),
     watched: view.watched.has(d.release_id),
   };
@@ -220,6 +223,8 @@ export async function listDrops(db: D1Database, rules: RulesConfig, q: DropQuery
   let out = rows.results.map((d) => summarise(d, listings, q.region, rates, rules.owner.timezone, view));
   // A region filter keeps drops buyable there, plus calendar-only drops with no shop listing yet.
   if (q.region) out = out.filter((d) => d.shopCount === 0 || (q.region === 'gi' ? d.shipsGi : d.shipsEs) || d.bestPrice !== null);
+  // Live now means buyable now: a live drop every shop has sold out of is not shown.
+  if (q.view === 'live') out = out.filter((d) => d.stock === 'in_stock' || d.stock === 'preorder');
   if (q.labels?.length) out = out.filter((d) => q.labels?.includes(d.desk.label));
   // Pinned first; otherwise the date order from the query is kept (sort is stable).
   return out.sort((a, b) => Number(b.pinned) - Number(a.pinned));
