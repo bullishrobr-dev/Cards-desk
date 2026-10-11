@@ -50,6 +50,8 @@ export interface DropSummary {
   stock: 'in_stock' | 'preorder' | 'sold_out' | 'no_shop';
   /** Shops selling it now (in stock or pre-order open). */
   sellingShopCount: number;
+  /** You ticked "I've signed up" (official notify list, raffle, reservation). */
+  signedUp: boolean;
 }
 
 export interface ListingView {
@@ -89,6 +91,11 @@ export interface DropDetail extends DropSummary {
   tags: string[];
   /** Secondary-market prices per box type (Cardmarket, EU, EUR); empty when none matched. */
   market: MarketView[];
+  /** Your own note on this release. */
+  note: string | null;
+  signedUpAt: string | null;
+  /** Official pages to sign up for news of this drop, from config/sources.yaml. */
+  officialSignups: Array<{ label: string; url: string; how: string; verifiedAt: string }>;
   /** From the release's collectosk page; null until it has been read. */
   checklist: { cards: number | null; rookies: string[]; players: string[]; readAt: string; url: string | null } | null;
 }

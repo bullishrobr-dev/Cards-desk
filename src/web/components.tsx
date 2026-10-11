@@ -103,7 +103,12 @@ export function DropCard({ drop }: { drop: DropSummary }) {
         <div className="dcard-media">
           <DropImage drop={drop} />
           <StockTag drop={drop} />
-          {drop.pinned ? <span className="media-pin" aria-label="Pinned">Pinned</span> : null}
+          {drop.pinned || drop.signedUp ? (
+            <span className="media-marks">
+              {drop.signedUp ? <span className="media-pin signed">✓ Signed up</span> : null}
+              {drop.pinned ? <span className="media-pin">Pinned</span> : null}
+            </span>
+          ) : null}
           <span className={`media-score score-${drop.desk.label.toLowerCase()}`}>
             {drop.desk.score}
             <small>{drop.desk.label}</small>

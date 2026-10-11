@@ -256,3 +256,18 @@ details.card summary { cursor: pointer; padding: 8px 0; color: var(--link); }
 .sold-fold summary { cursor: pointer; color: var(--muted); padding: 6px 0; }
 .sold-list { list-style: none; padding: 0; margin: 4px 0; display: grid; gap: 6px; }
 .dcard.soldout .drop-img { opacity: 0.6; }
+
+/* Get on the list */
+.signup { background: var(--panel-2); border-radius: var(--radius); padding: 2px 14px 14px; margin: 18px 0; }
+.signup h2 { margin-top: 14px; }
+.signup-link { display: grid; gap: 3px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 12px; color: var(--text); margin-bottom: 10px; }
+.signup-link:hover { border-color: var(--text); }
+.signup-label { font-family: var(--display); font-weight: 800; font-size: 1.05rem; }
+.toggle.signed { padding: 8px 0; }
+.note-form { display: grid; gap: 6px; margin-top: 4px; }
+.note-form textarea { font: inherit; font-size: 0.92rem; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--text); resize: vertical; min-height: 72px; width: 100%; }
+.note-actions { display: flex; gap: 10px; align-items: center; }
+.ok-text { color: var(--ok); }
+.media-marks { position: absolute; bottom: 8px; left: 8px; display: flex; gap: 4px; flex-wrap: wrap; }
+.media-marks .media-pin { position: static; }
+.media-pin.signed { background: var(--ok); color: #fff; border-color: var(--ok); }

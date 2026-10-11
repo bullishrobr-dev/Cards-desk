@@ -351,3 +351,19 @@ retailers:
     ships_gi: { value: 'no', verified_at: 2026-10-02, note: Country/region not supported }
     ships_es: { value: 'yes', verified_at: 2026-10-02, note: International Tracked ~17 (quoted in USD) }
     notes: Policy says quantities may be limited per household.
+
+# Official pages to sign up for news of a drop (or reserve one), shown on every matching drop.
+# Add one only after checking it works; it is shown to the owner as an official route.
+official_signups:
+  - id: topps-release-calendar
+    label: Topps release calendar
+    url: https://www.topps.com/release-calendar
+    publishers: [topps]
+    categories: [football, f1]
+    how: Find the release under "Dropping soon" and tap "Notify me" to get an email when it goes on sale.
+    verified_at: 2026-10-07
+    evidence: >-
+      Owner's screenshot of topps.com/release-calendar on 7 Oct 2026 showing "Dropping soon" with a
+      "Notify me" button per release, and the owner signed up for Topps Chrome there. Topps blocks
+      automated requests from the build sandbox, so this page is not read by the app.
+

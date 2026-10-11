@@ -254,12 +254,28 @@ const Source = z.object({
 });
 export type Source = z.infer<typeof Source>;
 
+/** An official page where the owner can sign up to hear about (or reserve) a drop. */
+const OfficialSignup = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  label: z.string(),
+  url: z.string().url(),
+  /** Matches releases by publisher id (rules.yaml), within these categories. */
+  publishers: z.array(z.string()).min(1),
+  categories: z.array(z.string()).min(1),
+  /** What to do on that page, in one line. */
+  how: z.string(),
+  verified_at: z.string(),
+  evidence: z.string(),
+});
+export type OfficialSignup = z.infer<typeof OfficialSignup>;
+
 export const SourcesConfig = z
   .object({
     version: z.literal(1),
     user_agent: z.string().min(10),
     sources: z.array(Source),
     retailers: z.array(Retailer),
+    official_signups: z.array(OfficialSignup).default([]),
   })
   .superRefine((cfg, ctx) => {
     const ids = [...cfg.sources.map((s) => s.id), ...cfg.retailers.map((r) => r.id)];

@@ -102,3 +102,14 @@ Lower value, kept in reserve: Poke Iberian, PokedealTCG, PokeFamily, BaruZcard (
 |---|---|---|---|
 | `ecb-fx` | ECB euro reference rates, `https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml` | live XML, Last-Modified (verified 2 Oct) | Daily GBP/EUR/USD conversion. |
 | `tcgdex` | api.tcgdex.net | live JSON, ETag → 304 | Canonical Pokémon set IDs **after** release (useful for de-dup). |
+
+## Official sign-up pages
+
+These are shown on matching drops under "Get on the list". They come from `official_signups` in `config/sources.yaml`. Add a page only after checking it works.
+
+| Page | Publishers | What to do | Verified |
+|---|---|---|---|
+| [Topps release calendar](https://www.topps.com/release-calendar) | Topps (football, F1) | Under "Dropping soon", tap **Notify me** for an email when the release goes on sale. | 7 Oct 2026, from the owner's screenshot (the owner signed up for Topps Chrome). Topps blocks the build sandbox, so the app links to this page but never reads it. |
+
+There is no official page yet for Panini or Pokémon. Pokémon Center UK ships to UK addresses only (see §3), so it is not a route for the owner.
+

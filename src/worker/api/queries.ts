@@ -84,6 +84,7 @@ function ratio(priceMinor: number, priceCurrency: string, rrpMinor: number | nul
 /** The owner's view of a set of drops: Desk Scores, pins, watched releases and tags. */
 interface OwnerView {
   desk: Map<string, DeskScore>;
+  notes: Map<string, { note: string | null; signed_up_at: string | null }>;
   /** Release photo from its box types (collectosk), best box type first. */
   images: Map<string, string>;
   tags: Map<string, string[]>;
@@ -92,15 +93,17 @@ interface OwnerView {
 }
 
 async function ownerView(db: D1Database, rules: RulesConfig, rates: Rates, releaseIds: string[], ownerId: string): Promise<OwnerView> {
-  const [{ inputs, marks }, pins, watch, images] = await Promise.all([
+  const [{ inputs, marks }, pins, watch, images, notes] = await Promise.all([
     loadScoreInputs(db, releaseIds, ownerId),
     db.prepare('SELECT drop_id FROM pins WHERE owner_id = ?').bind(ownerId).all<{ drop_id: string }>(),
     db.prepare(`SELECT target_id FROM watchlist WHERE owner_id = ? AND target_type = 'release'`).bind(ownerId).all<{ target_id: string }>(),
     releaseImages(db, releaseIds, rules),
+    db.prepare('SELECT release_id, note, signed_up_at FROM release_notes WHERE owner_id = ?').bind(ownerId).all<{ release_id: string; note: string | null; signed_up_at: string | null }>(),
   ]);
   return {
     desk: new Map([...inputs].map(([id, input]) => [id, deskScore(input, rules, rates)])),
     images,
+    notes: new Map(notes.results.map((n) => [n.release_id, n])),
     tags: marks.tags,
     pinned: new Set(pins.results.map((p) => p.drop_id)),
     watched: new Set(watch.results.map((w) => w.target_id)),
@@ -182,6 +185,7 @@ function summarise(d: DropRow, listings: ListingRow[], region: 'gi' | 'es' | nul
     preorder: stock === 'preorder',
     pinned: view.pinned.has(d.id),
     watched: view.watched.has(d.release_id),
+    signedUp: Boolean(view.notes.get(d.release_id)?.signed_up_at),
   };
 }
 
@@ -317,6 +321,11 @@ export async function dropDetail(db: D1Database, rules: RulesConfig, cfg: Source
     ...summarise(d, allListings, null, rates, rules.owner.timezone, view),
     market,
     tags: view.tags.get(d.release_id) ?? [],
+    note: view.notes.get(d.release_id)?.note ?? null,
+    signedUpAt: view.notes.get(d.release_id)?.signed_up_at ?? null,
+    officialSignups: cfg.official_signups
+      .filter((o) => d.publisher !== null && o.publishers.includes(d.publisher) && o.categories.includes(d.category))
+      .map((o) => ({ label: o.label, url: o.url, how: o.how, verifiedAt: o.verified_at })),
     checklist: enrich?.enriched_at
       ? { cards: enrich.checklist_cards, rookies: list(enrich.rookies), players: list(enrich.players), readAt: enrich.enriched_at, url: enrich.url }
       : null,

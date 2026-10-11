@@ -3,6 +3,7 @@ import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSign
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropCard, DropImage, Empty, Notice, RrpNote, ScoreBadge, ShipTag, StockTag, ViewSwitch } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
 import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
+import { SignupPanel } from './signup.tsx';
 import type { RulesConfig } from '../shared/config/schema.ts';
 import { dateLabel, formatMinor as formatMinorText, formatMoney, weekRange, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { DEMO, Link, navigate, useApi } from './lib.tsx';
@@ -402,6 +403,8 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
       {watched ? <p className="small muted">You will be alerted 24 hours, 1 hour and 10 minutes before, when it goes live, and if the date moves.</p> : null}
         </div>
       </div>
+
+      <SignupPanel drop={d} onChange={reload} />
 
       <DeskPanel drop={d} onChange={reload} />
 

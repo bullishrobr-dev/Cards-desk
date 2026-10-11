@@ -204,6 +204,32 @@ api.delete('/releases/:releaseId/tags', async (c) => {
   return c.json({ ok: true });
 });
 
+/** Your note on a release and whether you have signed up somewhere official. Either field may be sent alone. */
+api.put('/releases/:releaseId/note', async (c) => {
+  const releaseId = c.req.param('releaseId');
+  const body = await jsonBody(c);
+  const hasNote = 'note' in body;
+  const hasSigned = 'signedUp' in body;
+  if (!hasNote && !hasSigned) return c.json({ error: 'Send note, signedUp or both' }, 400);
+  if (hasNote && body.note !== null && (typeof body.note !== 'string' || body.note.length > 2000)) return c.json({ error: 'A note is text up to 2,000 characters' }, 400);
+  if (hasSigned && typeof body.signedUp !== 'boolean') return c.json({ error: 'signedUp must be true or false' }, 400);
+  if (!(await exists(c.env.DB, 'releases', releaseId))) return c.json({ error: 'Not found' }, 404);
+  const ts = new Date().toISOString();
+  const note = hasNote ? (typeof body.note === 'string' && body.note.trim() ? body.note.trim() : null) : undefined;
+  const signed = hasSigned ? (body.signedUp ? ts : null) : undefined;
+  await c.env.DB
+    .prepare(
+      `INSERT INTO release_notes (owner_id, release_id, note, signed_up_at, updated_at) VALUES (?, ?, ?, ?, ?)
+       ON CONFLICT (owner_id, release_id) DO UPDATE SET
+         note = CASE WHEN ? THEN excluded.note ELSE release_notes.note END,
+         signed_up_at = CASE WHEN ? THEN excluded.signed_up_at ELSE release_notes.signed_up_at END,
+         updated_at = excluded.updated_at`,
+    )
+    .bind(c.get('identity').ownerId, releaseId, note ?? null, signed ?? null, ts, hasNote ? 1 : 0, hasSigned ? 1 : 0)
+    .run();
+  return c.json({ ok: true });
+});
+
 /** Replace the Desk Score with your own number; the breakdown still shows what the rules said. */
 api.put('/releases/:releaseId/override', async (c) => {
   const releaseId = c.req.param('releaseId');

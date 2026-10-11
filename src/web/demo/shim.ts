@@ -16,12 +16,13 @@ const lists = {
   live: (snap['/api/drops?view=live'] as DropSummary[] | undefined) ?? [],
 };
 const watched = new Set<string>([...lists.upcoming, ...lists.live].filter((d) => d.watched).map((d) => d.releaseId));
+const signed = new Set<string>([...lists.upcoming, ...lists.live].filter((d) => d.signedUp).map((d) => d.releaseId));
 const pinned = new Set<string>([...lists.upcoming, ...lists.live].filter((d) => d.pinned).map((d) => d.id));
 const prefs = (snap['/api/notification-prefs'] as NotificationPref[] | undefined) ?? [];
 const notes = (snap['/api/notifications'] as { unread: number; items: Array<{ id: string; read_at: string | null }> } | undefined) ?? { unread: 0, items: [] };
 
 function overlay<T extends DropSummary>(d: T): T {
-  return { ...d, watched: watched.has(d.releaseId), pinned: pinned.has(d.id) };
+  return { ...d, watched: watched.has(d.releaseId), pinned: pinned.has(d.id), signedUp: signed.has(d.releaseId) };
 }
 
 function dropsFor(params: URLSearchParams): DropSummary[] {
@@ -75,6 +76,23 @@ async function handle(url: URL, method: string, body: unknown): Promise<Response
     return json({ ok: true });
   }
   if (path.startsWith('/api/push')) return unavailable('Push notifications');
+  const note = path.match(/^\/api\/releases\/([^/]+)\/note$/);
+  if (note) {
+    const b = (body ?? {}) as { note?: string | null; signedUp?: boolean };
+    for (const [k, v] of Object.entries(snap)) {
+      const d = v as Partial<DropDetail>;
+      if (k.startsWith('/api/drops/') && d.releaseId === note[1]) {
+        if ('note' in b) d.note = b.note?.trim() || null;
+        if ('signedUp' in b) d.signedUpAt = b.signedUp ? new Date().toISOString() : null;
+      }
+    }
+    const rid = note[1] ?? '';
+    if ('signedUp' in b) {
+      if (b.signedUp) signed.add(rid);
+      else signed.delete(rid);
+    }
+    return json({ ok: true });
+  }
   if (path.includes('/tags')) return unavailable('Saving tags');
   if (path.includes('/override')) return unavailable('Saving a score override');
   if (path.includes('/rrp')) return unavailable('Saving your RRP');

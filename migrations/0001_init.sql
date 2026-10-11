@@ -331,6 +331,16 @@ CREATE TABLE manual_tags (
   PRIMARY KEY (owner_id, release_id, tag)
 );
 
+-- Your notes on a release, and whether you have signed up for it somewhere official.
+CREATE TABLE release_notes (
+  owner_id     TEXT NOT NULL REFERENCES owners (id),
+  release_id   TEXT NOT NULL REFERENCES releases (id),
+  note         TEXT,
+  signed_up_at TEXT,                              -- when you ticked "I've signed up"
+  updated_at   TEXT NOT NULL,
+  PRIMARY KEY (owner_id, release_id)
+);
+
 -- Owner-entered RRPs. Kept personal so one user's guess never rewrites shared data.
 CREATE TABLE rrp_overrides (
   owner_id    TEXT NOT NULL REFERENCES owners (id),

@@ -158,3 +158,28 @@ describe('notification toggles', () => {
     expect((await send('PUT', '/notification-prefs/restock', { enabled: 'no' })).status).toBe(400);
   });
 });
+
+describe('your notes and official sign-ups', () => {
+  it('saves a note and an "I\'ve signed up" tick separately, and shows Topps\' official sign-up page', async () => {
+    const f1 = await f1Drop();
+    expect((await send('PUT', `/releases/${f1.releaseId}/note`, { note: '  Signed up on topps.com with the main email  ' })).status).toBe(200);
+    expect((await send('PUT', `/releases/${f1.releaseId}/note`, { signedUp: true })).status).toBe(200);
+    const d = (await get<DropDetail>(`/drops/${f1.id}`)).body;
+    expect(d.note).toBe('Signed up on topps.com with the main email');
+    expect(d.signedUpAt).toMatch(/^\d{4}-/);
+    expect(d.officialSignups).toEqual([expect.objectContaining({ label: 'Topps release calendar', url: 'https://www.topps.com/release-calendar' })]);
+    expect((await f1Drop()).signedUp).toBe(true);
+    // Clearing one field leaves the other.
+    await send('PUT', `/releases/${f1.releaseId}/note`, { note: null });
+    const after = (await get<DropDetail>(`/drops/${f1.id}`)).body;
+    expect(after).toMatchObject({ note: null, signedUpAt: expect.any(String) });
+    expect((await send('PUT', `/releases/${f1.releaseId}/note`, {})).status).toBe(400);
+    expect((await send('PUT', `/releases/${f1.releaseId}/note`, { signedUp: 'yes' })).status).toBe(400);
+  });
+
+  it('a Pokémon release has no Topps sign-up', async () => {
+    const pk = (await get<DropSummary[]>('/drops?category=pokemon')).body[0];
+    if (!pk) return;
+    expect((await get<DropDetail>(`/drops/${pk.id}`)).body.officialSignups).toEqual([]);
+  });
+});
