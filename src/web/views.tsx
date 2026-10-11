@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { DropDetail, DropSummary, ListingView, NotificationItem, SectorSignals, SourceHealth, WeeklyBrief } from '../shared/api-types.ts';
 import { CATEGORY_LABEL, Chips, ConfidenceBadge, Countdown, DropCard, DropImage, Empty, Notice, RrpNote, ScoreBadge, ShipTag, StockTag, ViewSwitch } from './components.tsx';
 import { DeskPanel, RrpEditor } from './desk.tsx';
 import { NotificationToggles, RulesViewer } from './settings-extra.tsx';
 import { SignupPanel } from './signup.tsx';
+import { groupByWeek, HeroDrop, pickHero, Sheet, SkeletonGrid, WeekSection, WeekStrip } from './feed.tsx';
 import type { RulesConfig } from '../shared/config/schema.ts';
 import { dateLabel, formatMinor as formatMinorText, formatMoney, weekRange, formatStamp, relativeFromNow, showCountdown, TZ, weekStart } from './format.ts';
 import { DEMO, Link, navigate, useApi } from './lib.tsx';
@@ -32,35 +33,24 @@ function useFilters() {
   return { category, setCategory, region, setRegion, label, setLabel, query: query.toString() };
 }
 
+/** Categories as one row of chips; ship-to and score live in a sheet behind "Filters". */
 function Filters({ config, f }: { config: AppConfig; f: ReturnType<typeof useFilters> }) {
+  const [open, setOpen] = useState(false);
+  const extra = (f.region !== 'any' ? 1 : 0) + (f.label !== 'all' ? 1 : 0);
   return (
-    <div className="filters">
+    <div className="filter-bar">
       <Chips label="Category" value={f.category} onChange={f.setCategory} options={[{ id: 'all', label: 'All' }, ...config.categories.map((c) => ({ id: c.id, label: CATEGORY_LABEL[c.id] ?? c.label }))]} />
-      <Chips<Region> label="Ships to" value={f.region} onChange={f.setRegion} options={[{ id: 'any', label: 'Any' }, { id: 'gi', label: 'Gibraltar' }, { id: 'es', label: 'Spain' }]} />
-      <Chips<LabelFilter> label="Desk Score" value={f.label} onChange={f.setLabel} options={[{ id: 'all', label: 'Everything' }, { id: 'watch', label: 'Watch and up' }, { id: 'priority', label: 'Priority only' }]} />
+      <button type="button" className={extra ? 'chip on' : 'chip'} onClick={() => setOpen(true)}>
+        Filters{extra ? ` · ${extra}` : ''}
+      </button>
+      <Sheet open={open} title="Filters" onClose={() => setOpen(false)}>
+        <h4>Ships to</h4>
+        <Chips<Region> label="Ships to" value={f.region} onChange={f.setRegion} options={[{ id: 'any', label: 'Anywhere' }, { id: 'gi', label: 'Gibraltar' }, { id: 'es', label: 'Spain' }]} />
+        <h4>Desk Score</h4>
+        <Chips<LabelFilter> label="Desk Score" value={f.label} onChange={f.setLabel} options={[{ id: 'all', label: 'Everything' }, { id: 'watch', label: 'Watch and up' }, { id: 'priority', label: 'Priority only' }]} />
+      </Sheet>
     </div>
   );
-}
-
-const monthFmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', month: 'long', year: 'numeric' });
-
-function groupByWeek(drops: DropSummary[]) {
-  const groups = new Map<string, DropSummary[]>();
-  for (const d of drops) {
-    // Month-level dates get a month heading: filing them under a week would claim false precision.
-    const key = !d.startsAt ? 'tbd' : d.precision === 'month' ? `month:${d.startsAt.slice(0, 7)}` : weekStart(d.startsAt);
-    groups.set(key, [...(groups.get(key) ?? []), d]);
-  }
-  return [...groups.entries()].map(([key, items]) => ({
-    key,
-    title:
-      key === 'tbd'
-        ? 'Date to be confirmed'
-        : key.startsWith('month:')
-          ? `Sometime in ${monthFmt.format(new Date(`${key.slice(6)}-15T12:00:00Z`))}`
-          : weekRange(key),
-    items,
-  }));
 }
 
 function Calendar({ drops }: { drops: DropSummary[] }) {
@@ -108,7 +98,8 @@ export function UpcomingView({ config }: { config: AppConfig }) {
   const f = useFilters();
   const [mode, setMode] = useState<'list' | 'calendar'>('list');
   const { data, error, loading } = useApi<DropSummary[]>(`/api/drops?view=upcoming${f.query ? `&${f.query}` : ''}`);
-  const groups = useMemo(() => groupByWeek(data ?? []), [data]);
+  const hero = useMemo(() => (data ? pickHero(data) : null), [data]);
+  const groups = useMemo(() => groupByWeek((data ?? []).filter((d) => d.id !== hero?.id), weekRange), [data, hero]);
   return (
     <section>
       <div className="view-head">
@@ -120,17 +111,18 @@ export function UpcomingView({ config }: { config: AppConfig }) {
       </div>
       <Filters config={config} f={f} />
       {error ? <Notice tone="error">{error}</Notice> : null}
-      {loading && !data ? <Empty>Loading…</Empty> : null}
+      {loading && !data ? <SkeletonGrid /> : null}
       {data && data.length === 0 ? <Empty>Nothing upcoming matches these filters.</Empty> : null}
       {data && mode === 'calendar' ? <Calendar drops={data} /> : null}
-      {data && mode === 'list'
-        ? groups.map((g) => (
-            <div key={g.key} className="group">
-              <h2 className="range">{g.title}</h2>
-              <div className="grid">{g.items.map((d) => <DropCard key={d.id} drop={d} />)}</div>
-            </div>
-          ))
-        : null}
+      {data && mode === 'list' ? (
+        <>
+          {hero ? <HeroDrop drop={hero} /> : null}
+          <WeekStrip groups={groups} />
+          {groups.map((g) => (
+            <WeekSection key={g.key} group={g} />
+          ))}
+        </>
+      ) : null}
     </section>
   );
 }
@@ -265,6 +257,63 @@ export function SignalsView() {
   );
 }
 
+/** The facts that matter at a glance, as a two-column grid. */
+function Facts({ drop: d }: { drop: DropDetail }) {
+  const rrps = d.products.filter((p) => p.rrp).map((p) => ({ label: p.configurationLabel, rrp: p.rrp }));
+  const ships = d.sellingShopCount ? [d.shipsGi ? 'Gibraltar' : null, d.shipsEs ? 'Spain' : null].filter(Boolean).join(' · ') || 'Neither' : '—';
+  const facts: Array<[string, ReactNode]> = [
+    ['Desk Score', <ScoreBadge key="s" desk={d.desk} />],
+    ['Selling now', d.stock === 'in_stock' ? `In stock at ${d.sellingShopCount} shop${d.sellingShopCount === 1 ? '' : 's'}` : d.stock === 'preorder' ? `Pre-order at ${d.sellingShopCount} shop${d.sellingShopCount === 1 ? '' : 's'}` : d.stock === 'sold_out' ? 'Sold out everywhere' : 'No shop yet'],
+    ['Cheapest', d.bestPrice ? formatMoney(d.bestPrice) : '—'],
+    ['RRP', rrps[0]?.rrp ? `${formatMoney(rrps[0].rrp)} · ${rrps[0].label}` : 'Not known yet'],
+    ['Ships to', ships],
+    ['Box types', d.products.length ? d.products.map((p) => p.configurationLabel).join(', ') : '—'],
+  ];
+  return (
+    <dl className="facts">
+      {facts.map(([k, v]) => (
+        <div key={k}>
+          <dt>{k}</dt>
+          <dd>{v}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+/**
+ * The two things you come here to do, always in reach above the tabs: get notified, and open the
+ * cheapest shop selling it (or the official sign-up page when nobody sells it yet).
+ */
+function ActionBar({ drop: d, watched, onToggleWatch }: { drop: DropDetail; watched: boolean; onToggleWatch: () => void }) {
+  const cheapest = d.products
+    .flatMap((p) => p.listings)
+    .filter((l) => l.available && l.price)
+    .sort((a, b) => (a.price?.gbp ?? Infinity) - (b.price?.gbp ?? Infinity))[0];
+  const signup = d.officialSignups[0];
+  return (
+    <div className="action-bar">
+      <button type="button" className={watched ? 'notify on' : 'notify'} aria-pressed={watched} onClick={onToggleWatch}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.4A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.6L18 12.6V9a6 6 0 0 0-6-6Zm0 19a3 3 0 0 0 2.8-2H9.2A3 3 0 0 0 12 22Z" fill="currentColor" />
+        </svg>
+        {watched ? 'Notifying' : 'Notify me'}
+      </button>
+      {cheapest ? (
+        <a className="bar-shop" href={cheapest.url} target="_blank" rel="noopener noreferrer">
+          <span>{cheapest.retailer} ↗</span>
+          <small>{cheapest.price ? formatMoney(cheapest.price) : ''}</small>
+        </a>
+      ) : signup ? (
+        <a className="bar-shop" href={signup.url} target="_blank" rel="noopener noreferrer">
+          <span>Official sign-up ↗</span>
+          <small>{signup.label}</small>
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
 /**
  * Shops that list the box but will not sell it now, folded away: there is no point showing a
  * sold-out price. The shop page is still one tap away (many shops take back-in-stock emails).
@@ -384,25 +433,21 @@ export function DetailView({ id, config }: { id: string; config: AppConfig }) {
         <span className={`cat cat-${d.category}`}>{CATEGORY_LABEL[d.category] ?? d.category}</span>
         {d.season ? <span>{d.season}</span> : null}
         {d.tier ? <span>{d.tier} line</span> : null}
-        <ScoreBadge desk={d.desk} />
       </div>
-      <div className="actions">
-        <button type="button" className={watched ? 'notify on' : 'notify'} aria-pressed={Boolean(watched)} onClick={toggleWatch}>
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.4A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.6L18 12.6V9a6 6 0 0 0-6-6Zm0 19a3 3 0 0 0 2.8-2H9.2A3 3 0 0 0 12 22Z" fill="currentColor" />
-          </svg>
-          {watched ? 'Notifying' : 'Notify me'}
-        </button>
-        <button type="button" className={pinned ? 'btn on' : 'btn'} aria-pressed={Boolean(pinned)} onClick={togglePin}>
+      <Facts drop={d} />
+      <div className="actions secondary">
+        <button type="button" className={pinned ? 'chip on' : 'chip'} aria-pressed={Boolean(pinned)} onClick={togglePin}>
           {pinned ? 'Pinned' : 'Pin to top'}
         </button>
         {d.startsAt && (d.precision === 'day' || d.precision === 'time') ? (
-          <a className="btn" href={`/api/drops/${encodeURIComponent(d.id)}/ics`}>Add to calendar</a>
+          <a className="chip" href={`/api/drops/${encodeURIComponent(d.id)}/ics`}>Add to calendar</a>
         ) : null}
       </div>
       {watched ? <p className="small muted">You will be alerted 24 hours, 1 hour and 10 minutes before, when it goes live, and if the date moves.</p> : null}
         </div>
       </div>
+
+      <ActionBar drop={d} watched={Boolean(watched)} onToggleWatch={toggleWatch} />
 
       <SignupPanel drop={d} onChange={reload} />
 

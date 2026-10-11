@@ -60,6 +60,8 @@ export function DeskPanel({ drop, onChange }: { drop: DropDetail; onChange: () =
         </tbody>
       </table>
 
+      <details className="adjust">
+        <summary>Adjust the score: your tags and override</summary>
       <h3>Your tags</h3>
       <p className="small muted">Tag a chase card, player or set you care about. Any tag gives full relevance points.</p>
       <div className="chips">
@@ -85,6 +87,7 @@ export function DeskPanel({ drop, onChange }: { drop: DropDetail; onChange: () =
           </button>
         ) : null}
       </form>
+      </details>
       {error ? <p className="small error-text">{error}</p> : null}
     </div>
   );

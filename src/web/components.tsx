@@ -1,4 +1,4 @@
-import { useState, type MouseEvent, type ReactNode } from 'react';
+import { useEffect, useState, type MouseEvent, type ReactNode } from 'react';
 import type { Confidence, DeskScore, DropSummary, ShipFlag } from '../shared/api-types.ts';
 import { cardDate, CONFIDENCE_LABEL, countdown, dateLabel, formatMoney, percentVsRrp, rrpLabel, showCountdown } from './format.ts';
 import { Link, useNow } from './lib.tsx';
@@ -47,6 +47,20 @@ export function ScoreBadge({ desk }: { desk: DeskScore }) {
   );
 }
 
+const MONTH_STAMP = new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', month: 'short' });
+
+/** Month over day, like a desk calendar page. Month-level dates read "NOV / TBC". */
+export function DateStamp({ drop }: { drop: Pick<DropSummary, 'startsAt' | 'precision'> }) {
+  if (!drop.startsAt || drop.precision === 'unknown') return <span className="stamp"><b>TBC</b></span>;
+  const day = new Date(`${drop.startsAt.slice(0, 10)}T12:00:00Z`);
+  return (
+    <span className="stamp">
+      <small>{MONTH_STAMP.format(day).toUpperCase().slice(0, 3)}</small>
+      <b>{drop.precision === 'month' ? 'TBC' : day.getUTCDate()}</b>
+    </span>
+  );
+}
+
 const BOX_WORD: Record<string, string> = { football: 'Football', f1: 'Formula 1', pokemon: 'Pokémon' };
 
 /** The box photo, or a designed stand-in naming the category when no photo exists yet. */
@@ -66,6 +80,8 @@ export function DropImage({ drop, large }: { drop: Pick<DropSummary, 'imageUrl' 
 /** "Notify me": watching a drop is what turns on its alerts. Works from a card without opening it. */
 export function NotifyButton({ releaseId, watched, compact }: { releaseId: string; watched: boolean; compact?: boolean }) {
   const [on, setOn] = useState(watched);
+  // The list may first show from cache, then refresh: follow the fresh value.
+  useEffect(() => setOn(watched), [watched]);
   const click = async (e: MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -102,13 +118,12 @@ export function DropCard({ drop }: { drop: DropSummary }) {
       <Link to={`/drop/${drop.id}`} className="dcard-link">
         <div className="dcard-media">
           <DropImage drop={drop} />
-          <StockTag drop={drop} />
-          {drop.pinned || drop.signedUp ? (
-            <span className="media-marks">
-              {drop.signedUp ? <span className="media-pin signed">✓ Signed up</span> : null}
-              {drop.pinned ? <span className="media-pin">Pinned</span> : null}
-            </span>
-          ) : null}
+          <DateStamp drop={drop} />
+          <span className="media-marks">
+            <StockTag drop={drop} />
+            {drop.signedUp ? <span className="media-pin signed">✓ Signed up</span> : null}
+            {drop.pinned ? <span className="media-pin">Pinned</span> : null}
+          </span>
           <span className={`media-score score-${drop.desk.label.toLowerCase()}`}>
             {drop.desk.score}
             <small>{drop.desk.label}</small>
